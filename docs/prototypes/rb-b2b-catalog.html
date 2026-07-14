@@ -119,19 +119,19 @@
       .information-strip strong { display: block; margin-bottom: 2px; color: #213f6c; }
       .information-strip p { margin: 0; font-size: 13px; }
       .product-list { display: grid; gap: 13px; }
+      .product-list[hidden], .fixture-note[hidden], .pagination[hidden] { display: none; }
       .product-card { display: grid; grid-template-columns: 132px minmax(240px, 1.2fr) minmax(250px, 1fr) 190px; gap: 18px; align-items: center; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: 0 3px 11px rgba(30, 48, 80, .025); transition: .16s ease; }
       .product-card:hover { border-color: #bbcff9; box-shadow: var(--shadow); }
-      .product-thumb { display: grid; aspect-ratio: 1; place-items: center; overflow: hidden; border: 1px solid #e0e7f0; border-radius: 12px; background: linear-gradient(135deg, #f7f9fc, #ecf1f8); color: #58708f; }
-      .battery { position: relative; width: 78px; height: 92px; border: 5px solid #536982; border-radius: 9px; background: linear-gradient(135deg, #293c56, #6d8196); box-shadow: inset 0 0 0 3px rgba(255,255,255,.11), 0 14px 16px rgba(24,44,70,.17); }
-      .battery::before { content: "+"; position: absolute; top: -15px; right: 11px; width: 15px; height: 14px; display: grid; place-items: center; border-radius: 3px 3px 0 0; color: #fff; background: #b93638; font-size: 11px; font-weight: 800; }
-      .battery::after { content: "UPS"; position: absolute; right: 7px; bottom: 12px; left: 7px; padding: 3px 0; border-radius: 3px; color: #eef5ff; background: rgba(13, 35, 62, .74); text-align: center; font-size: 10px; font-weight: 800; letter-spacing: .08em; }
-      .battery--wide { width: 96px; height: 75px; }
-      .battery--tall { height: 103px; }
+      .product-thumb { display: grid; min-height: 112px; aspect-ratio: 1; place-content: center; gap: 7px; overflow: hidden; border: 1px dashed #b7c6d9; border-radius: 12px; background: linear-gradient(135deg, #f8fafd, #eef3f8); color: #60748d; text-align: center; font-size: 11px; font-weight: 750; }
+      .product-thumb svg { width: 28px; height: 28px; margin: 0 auto; color: #8092aa; }
+      .product-thumb--no-media { border-color: #d9b878; color: #86651d; background: #fffaf0; }
+      .product-thumb--no-media svg { color: #ad7b1f; }
       .product-meta { min-width: 0; }
       .status { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 7px; color: var(--amber); font-size: 12px; font-weight: 800; }
       .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
       .product-name { display: inline-block; margin-bottom: 7px; color: #1c3150; font-size: 18px; font-weight: 850; line-height: 1.25; }
       .product-name:hover { color: var(--brand); }
+      .product-name, .product-code, .spec-list dd { overflow-wrap: anywhere; }
       .product-code { margin: 0; color: #8190a5; font-size: 12px; }
       .spec-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; margin: 0; }
       .spec-list div { min-width: 0; }
@@ -141,9 +141,15 @@
       .product-action small { color: #7b8ba1; font-size: 11px; line-height: 1.35; }
       .compare-choice { display: flex; align-items: center; gap: 6px; color: #617089; font-size: 12px; }
       .compare-choice input { accent-color: var(--brand); }
-      .empty-state { display: none; padding: 46px 25px; border: 1px dashed #b7c7dc; border-radius: var(--radius); color: #61718a; background: #fafcff; text-align: center; }
+      .empty-state { padding: 46px 25px; border: 1px dashed #b7c7dc; border-radius: var(--radius); color: #61718a; background: #fafcff; text-align: center; }
+      .empty-state[hidden] { display: none; }
       .empty-state h3 { color: var(--ink); }
       .empty-state p { max-width: 470px; margin: 0 auto 16px; }
+      .fixture-note { margin: 16px 0 0; color: #718198; font-size: 12px; line-height: 1.45; }
+      .pagination { display: flex; align-items: center; justify-content: center; gap: 7px; margin-top: 20px; }
+      .pagination button { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid var(--line); border-radius: 8px; color: #53657e; background: #fff; font-weight: 800; }
+      .pagination button[aria-current="page"] { border-color: var(--brand); color: #fff; background: var(--brand); }
+      .pagination button:disabled { opacity: .5; cursor: not-allowed; }
 
       .compare-panel { display: grid; grid-template-columns: 1.25fr 2fr; gap: 20px; margin-top: 26px; padding: 23px; border: 1px solid #cfdbed; border-radius: var(--radius); background: #eef4fd; }
       .compare-panel > div { min-width: 0; }
@@ -155,6 +161,19 @@
       .compare-table th { color: #71829a; font-size: 11px; font-weight: 800; text-transform: uppercase; }
       .compare-table td { color: #354862; }
       .compare-table tr:last-child td { border-bottom: 0; }
+
+      .device-fixtures { margin-top: 28px; padding: 24px; border: 1px solid #d5dfed; border-radius: var(--radius); background: #fbfcff; }
+      .device-fixtures__heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 16px; }
+      .device-fixtures__heading h2 { margin: 0; font-size: 22px; }
+      .device-fixtures__heading p { max-width: 610px; margin: 5px 0 0; color: #64748b; font-size: 13px; }
+      .device-fixtures .product-list { gap: 11px; }
+      .series-card { margin-top: 16px; padding: 17px; border: 1px solid #d8e2f0; border-radius: 12px; background: #fff; }
+      .series-card h3 { margin: 0 0 5px; }
+      .series-card > p { margin: 0 0 13px; color: #65758c; font-size: 13px; }
+      .series-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+      .series-table th, .series-table td { padding: 9px 7px; border-top: 1px solid #e7edf5; text-align: left; }
+      .series-table th { color: #71829a; font-size: 11px; text-transform: uppercase; }
+      .series-table .button { min-height: 34px; padding: 0 10px; font-size: 12px; }
 
       .quote-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, .82fr); gap: 35px; margin-top: 48px; padding: clamp(25px, 4vw, 42px); border-radius: 22px; color: #fff; background: #172c4d; }
       .quote-section .eyebrow { color: #a9c9ff; }
@@ -244,9 +263,11 @@
         .results-toolbar { align-items: flex-start; flex-direction: column; }
         .sort { width: 100%; }
         .product-card { grid-template-columns: 1fr; }
-        .product-thumb { display: none; }
+        .product-thumb { display: grid; width: min(100%, 132px); min-height: 104px; }
         .product-action { grid-template-columns: 1fr; }
-        .compare-panel, .editorial, .assurance { padding: 18px; }
+        .compare-panel, .editorial, .assurance, .device-fixtures { padding: 18px; }
+        .device-fixtures__heading { display: block; }
+        .series-table { min-width: 400px; }
         .assurance-list div { grid-template-columns: 1fr; gap: 2px; }
         .footer__inner { grid-template-columns: 1fr; gap: 17px; }
       }
@@ -325,145 +346,143 @@
           </button>
 
           <aside class="filters" id="filters" aria-label="Фильтры каталога" data-filter-indexing="noindex">
-            <div class="filters__title">
-              <h2>Подбор по параметрам</h2>
-              <button class="link-button" type="button" id="clearFilters">Сбросить</button>
-            </div>
+            <div class="filters__title"><h2>Подбор по параметрам</h2><button class="link-button" type="button" id="clearFilters">Сбросить</button></div>
             <fieldset class="filter-group">
               <legend>Ёмкость, А·ч</legend>
-              <label class="choice"><input type="checkbox" name="capacity" value="small" /><span>до 20</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="capacity" value="medium" /><span>20–65</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="capacity" value="large" /><span>от 65</span><span>—</span></label>
+              <label class="choice"><input type="checkbox" name="capacity" value="small" /><span>до 20</span><span>1</span></label>
+              <label class="choice"><input type="checkbox" name="capacity" value="medium" /><span>20–65</span><span>1</span></label>
+              <label class="choice"><input type="checkbox" name="capacity" value="large" /><span>от 65</span><span>5</span></label>
             </fieldset>
             <fieldset class="filter-group">
-              <legend>Технология</legend>
-              <label class="choice"><input type="checkbox" name="technology" /><span>AGM / VRLA</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="technology" /><span>GEL</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="technology" /><span>Уточняется</span><span>—</span></label>
+              <legend>Технология — только подтверждённая в названии</legend>
+              <label class="choice"><input type="checkbox" name="technology" value="agm" /><span>AGM</span><span>1</span></label>
+              <label class="choice"><input type="checkbox" name="technology" value="gel" /><span>GEL</span><span>2</span></label>
+              <label class="choice"><input type="checkbox" name="technology" value="lifepo4" /><span>LiFePO4</span><span>3</span></label>
             </fieldset>
             <fieldset class="filter-group">
               <legend>Применение</legend>
-              <label class="choice"><input type="checkbox" name="use" /><span>ИБП</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="use" /><span>Связь и телеком</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="use" /><span>Охранные системы</span><span>—</span></label>
+              <label class="choice"><input type="checkbox" name="use" value="ups" /><span>Для ИБП</span><span>2</span></label>
+              <label class="choice"><input type="checkbox" name="use" value="telecom" disabled /><span>Связь и телеком</span><span>0</span></label>
+              <label class="choice"><input type="checkbox" name="use" value="security" disabled /><span>Охранные системы</span><span>0</span></label>
             </fieldset>
             <fieldset class="filter-group">
               <legend>Форм-фактор</legend>
-              <label class="choice"><input type="checkbox" name="form" /><span>Стандартный</span><span>—</span></label>
-              <label class="choice"><input type="checkbox" name="form" /><span>Фронт-терминал</span><span>—</span></label>
+              <label class="choice"><input type="checkbox" name="form" value="standard" disabled /><span>Стандартный</span><span>0</span></label>
+              <label class="choice"><input type="checkbox" name="form" value="front" disabled /><span>Фронт-терминал</span><span>0</span></label>
             </fieldset>
-            <div class="filter-footer">
-              <button class="button" id="applyFilters" type="button">Показать подбор</button>
-              <button class="button button--quiet" id="showEmpty" type="button">Проверить пустой результат</button>
-            </div>
-            <p class="filters__seo-note">В production фильтры, сортировка и поиск не должны создавать индексируемые дубликаты URL без редакционного правила.</p>
+            <div class="filter-footer"><button class="button" id="applyFilters" type="button">Показать подбор</button><button class="button button--quiet" id="showEmpty" type="button">GEL + до 20 А·ч</button></div>
+            <p class="filters__seo-note">Фильтры работают только как UI-состояние. В production их комбинации не создают индексируемые URL без отдельного редакционного правила.</p>
           </aside>
 
           <div class="catalog-content">
             <div class="results-toolbar">
-              <div>
-                <h2 id="catalog-title">Позиции для предварительного подбора</h2>
-                <p id="resultCounter">3 карточки с параметрами для проверки перед публикацией</p>
-              </div>
-              <label>
-                <span class="sr-only">Сортировка</span>
-                <select class="sort" aria-label="Сортировка каталога">
-                  <option>Сначала релевантные</option>
-                  <option>По ёмкости</option>
-                  <option>По алфавиту</option>
-                </select>
-              </label>
+              <div><h2 id="catalog-title">Аккумуляторы: тестовые позиции из legacy-источника</h2><p id="resultCounter" aria-live="polite">10 тестовых карточек: полные данные и честные неполные состояния</p></div>
+              <label><span class="sr-only">Сортировка</span><select class="sort" aria-label="Сортировка каталога"><option>Сначала тестовые сценарии</option><option>По ёмкости</option><option>По алфавиту</option></select></label>
             </div>
             <div class="information-strip">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10v6M12 7h.01"/></svg>
-              <div><strong>Коммерческие данные — по запросу</strong><p>Каталог показывает параметры и предполагаемое назначение. Цена, доступность, изображения и документы выдаются только после подтверждения для рынка BY.</p></div>
+              <div><strong>Это не витрина для публикации</strong><p>Названия взяты из legacy-среза и имеют статус <code>needs_review</code>. В карточках отображены только характеристики, буквально указанные в названии; цена, наличие, артикул, гарантия и фото не заявляются.</p></div>
             </div>
 
             <div class="product-list" id="productList">
-              <article class="product-card">
-                <div class="product-thumb" role="img" aria-label="Схематичное изображение аккумулятора, фото ожидает проверки"><span class="battery"></span></div>
-                <div class="product-meta">
-                  <span class="status">Требует подтверждения</span>
-                  <a class="product-name" href="#quote">АКБ для ИБП 12 В · 18 А·ч</a>
-                  <p class="product-code">Идентификатор поставщика и MPN добавляются после импорта</p>
-                </div>
-                <dl class="spec-list">
-                  <div><dt>Напряжение</dt><dd>12 В</dd></div>
-                  <div><dt>Ёмкость</dt><dd>18 А·ч</dd></div>
-                  <div><dt>Назначение</dt><dd>Резервное питание / ИБП</dd></div>
-                  <div><dt>Технология</dt><dd>Уточняется по документу</dd></div>
-                </dl>
-                <div class="product-action">
-                  <a class="button" href="#quote">Добавить в запрос</a>
-                  <label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label>
-                  <small>Цена, остаток и срок поставки не опубликованы.</small>
-                </div>
+              <article class="product-card" data-capacity="large" data-technology="agm">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор Fiamm 12FGL120 (AGM, 120Ah, 12V)</a><p class="product-code">«Полная» тестовая карточка; артикул и документы требуют подтверждения.</p></div>
+                <dl class="spec-list"><div><dt>Технология</dt><dd>AGM</dd></div><div><dt>Ёмкость</dt><dd>120 А·ч</dd></div><div><dt>Напряжение</dt><dd>12 В</dd></div><div><dt>Фото / артикул</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" checked /> Сравнить параметры</label><small>Параметры взяты только из явного текста названия.</small></div>
+              </article>
+
+              <article class="product-card" data-capacity="small">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор Robiton VRLA6-12 (12Ah, 6V)</a><p class="product-code">Ловушка: код модели VRLA6-12 не расшифровывается как характеристика.</p></div>
+                <dl class="spec-list"><div><dt>Ёмкость</dt><dd>12 А·ч</dd></div><div><dt>Напряжение</dt><dd>6 В</dd></div><div><dt>Технология</dt><dd>Требует подтверждения</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" checked /> Сравнить параметры</label><small>«VRLA» показано только как часть названия модели.</small></div>
+              </article>
+
+              <article class="product-card" data-capacity="large" data-technology="gel" data-use="ups">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор Sonnenschein Dryfit Solar Block SB 12/130 A для ИБП (GEL, 130Ah)</a><p class="product-code">Длинное название: проверка переноса в карточке, заголовке и хлебных крошках.</p></div>
+                <dl class="spec-list"><div><dt>Технология</dt><dd>GEL</dd></div><div><dt>Ёмкость</dt><dd>130 А·ч</dd></div><div><dt>Назначение</dt><dd>Для ИБП</dd></div><div><dt>Напряжение</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>«SB 12/130» — код модели, не источник напряжения.</small></div>
+              </article>
+
+              <article class="product-card" data-capacity="large" data-technology="gel" data-use="ups">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор Sonnenschein Dryfit Solar Block SB 6/200 A для ИБП (GEL, 200Ah)</a><p class="product-code">Длинное название и отдельная 6-вольтовая модельная линейка без расшифровки кода.</p></div>
+                <dl class="spec-list"><div><dt>Технология</dt><dd>GEL</dd></div><div><dt>Ёмкость</dt><dd>200 А·ч</dd></div><div><dt>Назначение</dt><dd>Для ИБП</dd></div><div><dt>Напряжение</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>Никаких характеристик из кода «SB 6/200» не выводится.</small></div>
               </article>
 
               <article class="product-card">
-                <div class="product-thumb" role="img" aria-label="Схематичное изображение аккумулятора, фото ожидает проверки"><span class="battery battery--wide"></span></div>
-                <div class="product-meta">
-                  <span class="status">Требует подтверждения</span>
-                  <a class="product-name" href="#quote">АКБ для промышленного ИБП 12 В · 65 А·ч</a>
-                  <p class="product-code">Нужна проверка производителя, габаритов, клемм и документации</p>
-                </div>
-                <dl class="spec-list">
-                  <div><dt>Напряжение</dt><dd>12 В</dd></div>
-                  <div><dt>Ёмкость</dt><dd>65 А·ч</dd></div>
-                  <div><dt>Назначение</dt><dd>ИБП / энергетика</dd></div>
-                  <div><dt>Форм-фактор</dt><dd>Подтверждается</dd></div>
-                </dl>
-                <div class="product-action">
-                  <a class="button" href="#quote">Запросить совместимость</a>
-                  <label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label>
-                  <small>Карточка не содержит неподтверждённых обещаний о наличии.</small>
-                </div>
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор KM-300 P</a><p class="product-code">Неполная карточка: код модели не превращается в ёмкость или напряжение.</p></div>
+                <dl class="spec-list"><div><dt>Спецификация</dt><dd>Требует подтверждения</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Запросить спецификацию</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>Карточка без искусственно заполненных строк.</small></div>
               </article>
 
               <article class="product-card">
-                <div class="product-thumb" role="img" aria-label="Схематичное изображение аккумулятора, фото ожидает проверки"><span class="battery battery--tall"></span></div>
-                <div class="product-meta">
-                  <span class="status">Требует подтверждения</span>
-                  <a class="product-name" href="#quote">АКБ для резервной системы 12 В · 100 А·ч</a>
-                  <p class="product-code">Связь с конкретным SKU появится после контроля дублей и импорта</p>
-                </div>
-                <dl class="spec-list">
-                  <div><dt>Напряжение</dt><dd>12 В</dd></div>
-                  <div><dt>Ёмкость</dt><dd>100 А·ч</dd></div>
-                  <div><dt>Применение</dt><dd>Резервное питание</dd></div>
-                  <div><dt>Документы</dt><dd>Ожидают валидации</dd></div>
-                </dl>
-                <div class="product-action">
-                  <a class="button" href="#quote">Включить в КП</a>
-                  <label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label>
-                  <small>Нельзя выпускать Offer-разметку до локального подтверждения данных.</small>
-                </div>
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор НК- 55П (без электролита) (ЗАИТ)</a><p class="product-code">Исходное «грязное» название сохраняется: число 55 не трактуется как ёмкость.</p></div>
+                <dl class="spec-list"><div><dt>Исполнение</dt><dd>Без электролита</dd></div><div><dt>Производитель</dt><dd>ЗАИТ</dd></div><div><dt>Технология</dt><dd>Требует подтверждения</dd></div><div><dt>Ёмкость / напряжение</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>Скобки отображаются как часть исходного текста, а не как нормализованная спецификация.</small></div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-thumb product-thumb--no-media" data-media-state="missing-in-source" role="img" aria-label="В исходной записи нет ссылки на медиафайл"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="m8 9 8 8M16 9l-8 8"/></svg><span>Нет медиа в источнике</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Батарея аккумуляторная Гарантия 14/24-1</a><p class="product-code">Слово «Гарантия» — часть названия, не обещание гарантийного обслуживания.</p></div>
+                <dl class="spec-list"><div><dt>Фото</dt><dd>Нет медиа в источнике</dd></div><div><dt>Спецификация</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Запросить данные</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>Плейсхолдер не маскирует отсутствие медиа.</small></div>
+              </article>
+
+              <article class="product-card" data-capacity="large" data-technology="lifepo4">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор LiitoKala LFP12100 (LiFePO4, 100Ah, 12.8V)</a><p class="product-code">Дробное напряжение выводится только потому, что оно явно указано в названии.</p></div>
+                <dl class="spec-list"><div><dt>Технология</dt><dd>LiFePO4</dd></div><div><dt>Ёмкость</dt><dd>100 А·ч</dd></div><div><dt>Напряжение</dt><dd>12,8 В</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" checked /> Сравнить параметры</label><small>Проверка дробного значения в таблице сравнения.</small></div>
+              </article>
+
+              <article class="product-card" data-capacity="medium" data-technology="lifepo4">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор Delta LFP Plastic 2454 (LiFePO4, 24Ah, 54V)</a><p class="product-code">Тест нестандартного напряжения 54 В и средней ёмкости.</p></div>
+                <dl class="spec-list"><div><dt>Технология</dt><dd>LiFePO4</dd></div><div><dt>Ёмкость</dt><dd>24 А·ч</dd></div><div><dt>Напряжение</dt><dd>54 В</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>Значения показаны только из текста в скобках.</small></div>
+              </article>
+
+              <article class="product-card" data-capacity="large" data-technology="lifepo4">
+                <div class="product-thumb" role="img" aria-label="Фото товара не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div>
+                <div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Аккумулятор Atlas Battery (LiFePO4, 480Ah, 48V)</a><p class="product-code">Большая ёмкость проверяет ширину колонок спецификации и адаптивной таблицы.</p></div>
+                <dl class="spec-list"><div><dt>Технология</dt><dd>LiFePO4</dd></div><div><dt>Ёмкость</dt><dd>480 А·ч</dd></div><div><dt>Напряжение</dt><dd>48 В</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl>
+                <div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><label class="compare-choice"><input type="checkbox" name="compare" /> Сравнить параметры</label><small>Ни цена, ни наличие, ни гарантия не показаны.</small></div>
               </article>
             </div>
 
-            <section class="empty-state" id="emptyState" aria-live="polite">
-              <h3>По заданным условиям пока нет подтверждённых позиций</h3>
-              <p>Не создаём пустую SEO-страницу и не подставляем похожие товары. Оставьте параметры — специалист проверит возможные варианты в источнике данных.</p>
+            <section class="empty-state" id="emptyState" data-empty-scenario="gel-up-to-20-ah" aria-live="polite" hidden>
+              <h3>GEL + до 20 А·ч: подтверждённых позиций нет</h3>
+              <p>Пустое состояние не подмешивает «похожие» товары и не создаёт SEO-страницу. Передайте параметры — инженер проверит их в источнике данных.</p>
               <a class="button" href="#quote">Отправить параметры подбора</a>
             </section>
+            <p class="fixture-note" id="fixtureNote">В QA-макете показаны все 10 тестовых карточек одной страницей. Ниже — визуальный вариант production-пагинации; реальный размер страницы задаётся после импорта.</p>
+            <nav class="pagination" id="pagination" aria-label="Демонстрация пагинации"><button type="button" disabled aria-label="Предыдущая страница">←</button><button type="button" aria-current="page">1</button><button type="button" aria-label="Страница 2">2</button><button type="button" aria-label="Следующая страница">→</button></nav>
 
-            <section class="compare-panel" aria-labelledby="compare-title">
-              <div>
-                <p class="eyebrow">Сравнение без маркетингового шума</p>
-                <h2 id="compare-title">Технические параметры — прежде цены</h2>
-                <p>В готовой версии таблица строится только из проверенных атрибутов общего каталога и видимости конкретного сайта.</p>
+            <section class="compare-panel" data-comparison-scope="batteries" aria-labelledby="compare-title">
+              <div><p class="eyebrow">Сравнение аккумуляторов</p><h2 id="compare-title">Три позиции — только данные из названий</h2><p>АКБ и ИБП не смешиваются. Для Robiton технология остаётся неизвестной: VRLA — часть кода модели, а не подтверждённая характеристика.</p></div>
+              <div class="compare-table-wrap" tabindex="0" aria-label="Таблица сравнения аккумуляторов">
+                <table class="compare-table"><thead><tr><th>Параметр</th><th>Fiamm 12FGL120</th><th>Robiton VRLA6-12</th><th>LiitoKala LFP12100</th></tr></thead><tbody>
+                  <tr><td>Напряжение</td><td>12 В</td><td>6 В</td><td>12,8 В</td></tr>
+                  <tr><td>Ёмкость</td><td>120 А·ч</td><td>12 А·ч</td><td>100 А·ч</td></tr>
+                  <tr><td>Технология</td><td>AGM</td><td>Требует подтверждения</td><td>LiFePO4</td></tr>
+                  <tr><td>Цена / наличие / артикул</td><td colspan="3">Требуют подтверждения</td></tr>
+                </tbody></table>
               </div>
-              <div class="compare-table-wrap" tabindex="0" aria-label="Таблица сравнения технических параметров">
-                <table class="compare-table">
-                  <thead><tr><th>Параметр</th><th>12 В · 18 А·ч</th><th>12 В · 65 А·ч</th><th>12 В · 100 А·ч</th></tr></thead>
-                  <tbody>
-                    <tr><td>Напряжение</td><td>12 В</td><td>12 В</td><td>12 В</td></tr>
-                    <tr><td>Ёмкость</td><td>18 А·ч</td><td>65 А·ч</td><td>100 А·ч</td></tr>
-                    <tr><td>Статус документации</td><td>Проверяется</td><td>Проверяется</td><td>Проверяется</td></tr>
-                    <tr><td>Условия поставки</td><td colspan="3">Запрашиваются отдельно для рынка Беларуси</td></tr>
-                  </tbody>
-                </table>
+            </section>
+
+            <section class="device-fixtures" data-product-kind="ups" aria-labelledby="device-fixtures-title">
+              <div class="device-fixtures__heading"><div><p class="eyebrow">Отдельный шаблон устройства</p><h2 id="device-fixtures-title">ИБП: мощность и тип, а не ёмкость</h2><p>Две похожие модификации должны оставаться различимыми в листинге. Их коды не расшифровываются в мощность или напряжение.</p></div></div>
+              <div class="product-list">
+                <article class="product-card"><div class="product-thumb" role="img" aria-label="Фото ИБП не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div><div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Источник бесперебойного питания Hiden Control HS20-3024P</a><p class="product-code">Код модификации отображается, но не преобразуется в технические параметры.</p></div><dl class="spec-list"><div><dt>Тип</dt><dd>ИБП</dd></div><div><dt>Мощность</dt><dd>Требует подтверждения</dd></div><div><dt>Топология</dt><dd>Требует подтверждения</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl><div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><small>В таблицу сравнения АКБ не добавляется.</small></div></article>
+                <article class="product-card"><div class="product-thumb" role="img" aria-label="Фото ИБП не добавлено"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg><span>Фото не добавлено</span></div><div class="product-meta"><span class="status">Данные уточняются</span><a class="product-name" href="#quote">Источник бесперебойного питания Hiden Control HS20-1012P</a><p class="product-code">Соседняя модификация: различие видно в названии и таблице серии.</p></div><dl class="spec-list"><div><dt>Тип</dt><dd>ИБП</dd></div><div><dt>Мощность</dt><dd>Требует подтверждения</dd></div><div><dt>Топология</dt><dd>Требует подтверждения</dd></div><div><dt>Артикул</dt><dd>Требует подтверждения</dd></div></dl><div class="product-action"><a class="button" href="#quote">Добавить в запрос</a><small>Параметры не выводятся из кода HS20-1012P.</small></div></article>
               </div>
+              <article class="series-card"><h3>Страница серии Hiden Control HS20</h3><p>Пример отдельного шаблона серии: модификации не превращаются в дубли и не скрываются друг за другом.</p><div class="compare-table-wrap" tabindex="0" aria-label="Модификации серии Hiden Control HS20"><table class="series-table"><thead><tr><th>Код модификации</th><th>Статус данных</th><th>Действие</th></tr></thead><tbody><tr><td>HS20-3024P</td><td>Требует подтверждения</td><td><a class="button" href="#quote">Добавить в запрос</a></td></tr><tr><td>HS20-1012P</td><td>Требует подтверждения</td><td><a class="button" href="#quote">Добавить в запрос</a></td></tr></tbody></table></div></article>
             </section>
           </div>
         </section>
@@ -553,8 +572,11 @@
       const filters = document.getElementById('filters');
       const filterToggle = document.getElementById('filterToggle');
       const productList = document.getElementById('productList');
+      const productCards = [...productList.querySelectorAll('.product-card')];
       const emptyState = document.getElementById('emptyState');
       const resultCounter = document.getElementById('resultCounter');
+      const fixtureNote = document.getElementById('fixtureNote');
+      const pagination = document.getElementById('pagination');
       const checkboxes = [...document.querySelectorAll('.filters input[type="checkbox"]')];
 
       filterToggle?.addEventListener('click', () => {
@@ -562,26 +584,57 @@
         filterToggle.setAttribute('aria-expanded', String(isOpen));
       });
 
+      function selectedValues(group) {
+        return checkboxes
+          .filter((checkbox) => checkbox.name === group && checkbox.checked)
+          .map((checkbox) => checkbox.value);
+      }
+
+      function matchesSelectedValues(card, group) {
+        const selected = selectedValues(group);
+        return selected.length === 0 || selected.includes(card.dataset[group]);
+      }
+
+      function applyCatalogFilters() {
+        let visibleCount = 0;
+
+        productCards.forEach((card) => {
+          const isVisible = ['capacity', 'technology', 'use', 'form']
+            .every((group) => matchesSelectedValues(card, group));
+          card.hidden = !isVisible;
+          if (isVisible) {
+            visibleCount += 1;
+          }
+        });
+
+        const activeCount = checkboxes.filter((checkbox) => checkbox.checked).length;
+        productList.hidden = visibleCount === 0;
+        emptyState.hidden = visibleCount !== 0;
+        fixtureNote.hidden = visibleCount === 0;
+        pagination.hidden = visibleCount === 0;
+
+        resultCounter.textContent = visibleCount === 0
+          ? '0 подтверждённых позиций по выбранным условиям'
+          : activeCount
+            ? `${visibleCount} тестовых позиций по ${activeCount} выбранным параметрам`
+            : '10 тестовых карточек: полные данные и честные неполные состояния';
+      }
+
       document.getElementById('clearFilters')?.addEventListener('click', () => {
         checkboxes.forEach((checkbox) => { checkbox.checked = false; });
-        productList.style.display = 'grid';
-        emptyState.style.display = 'none';
-        resultCounter.textContent = '3 карточки с параметрами для проверки перед публикацией';
+        applyCatalogFilters();
       });
 
       document.getElementById('applyFilters')?.addEventListener('click', () => {
-        const selected = checkboxes.filter((checkbox) => checkbox.checked).length;
-        productList.style.display = 'grid';
-        emptyState.style.display = 'none';
-        resultCounter.textContent = selected
-          ? `Подбор по ${selected} параметрам — результаты требуют валидации данных`
-          : 'Выберите параметры или отправьте запрос на технический подбор';
+        applyCatalogFilters();
       });
 
       document.getElementById('showEmpty')?.addEventListener('click', () => {
-        productList.style.display = 'none';
-        emptyState.style.display = 'block';
-        resultCounter.textContent = '0 подтверждённых позиций по выбранным условиям';
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = (checkbox.name === 'capacity' && checkbox.value === 'small')
+            || (checkbox.name === 'technology' && checkbox.value === 'gel');
+        });
+        applyCatalogFilters();
       });
 
       document.getElementById('quoteForm')?.addEventListener('submit', (event) => {

@@ -162,6 +162,33 @@ Require-Match 'data-seo-canonical\s*=\s*["'']self-on-published-route["'']' 'Miss
 Require-Match 'data-filter-indexing\s*=\s*["'']noindex["'']' 'Missing noindex contract marker for filter state.'
 Require-Match 'data-search-indexing\s*=\s*["'']noindex["'']' 'Missing noindex contract marker for search state.'
 
+$requiredFixtureMarkers = @(
+    '12FGL120 \(AGM, 120Ah, 12V\)',
+    'VRLA6-12 \(12Ah, 6V\)',
+    'SB 12/130 A',
+    'SB 6/200 A',
+    'KM-300 P',
+    '14/24-1',
+    'LFP12100 \(LiFePO4, 100Ah, 12\.8V\)',
+    'LFP Plastic 2454 \(LiFePO4, 24Ah, 54V\)',
+    'Atlas Battery \(LiFePO4, 480Ah, 48V\)',
+    'HS20-3024P',
+    'HS20-1012P'
+)
+
+foreach ($fixtureMarker in $requiredFixtureMarkers) {
+    Require-Match $fixtureMarker "Missing required legacy test fixture marker: $fixtureMarker"
+}
+
+Require-Match 'data-empty-scenario\s*=\s*["'']gel-up-to-20-ah["'']' 'Missing the required GEL + up-to-20Ah empty filter state.'
+Require-Match 'data-media-state\s*=\s*["'']missing-in-source["'']' 'Missing the explicit no-media placeholder for the legacy item without media.'
+Require-Match 'data-comparison-scope\s*=\s*["'']batteries["'']' 'Missing the battery-only comparison fixture.'
+Require-Match 'data-product-kind\s*=\s*["'']ups["'']' 'Missing the separate Hiden UPS series fixture.'
+Require-Match 'data-technology="agm"' 'Battery filter fixtures must classify only explicitly confirmed technologies.'
+Require-Match 'data-technology="gel"' 'Battery filter fixtures must include the GEL test case.'
+Require-Match 'data-technology="lifepo4"' 'Battery filter fixtures must include the LiFePO4 test case.'
+Forbid-Match 'data-technology="vrla"' 'VRLA must not be inferred from the Robiton model code as a confirmed technology.'
+
 $quoteFormMatch = [regex]::Match(
     $html,
     '(?is)(?<open><form\b(?=[^>]*\bid\s*=\s*["'']quoteForm["''])[^>]*>)(?<body>.*?)</form\s*>'
