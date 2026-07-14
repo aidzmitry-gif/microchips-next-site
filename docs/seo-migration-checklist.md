@@ -1,5 +1,23 @@
 # SEO migration checklist
 
+## Deterministic registry generation
+
+Generate the local, ignored decision registry only after regenerating the raw inventories:
+
+```powershell
+.\scripts\build-legacy-url-decision-registry.ps1
+```
+
+The command writes `docs/audits/generated/legacy-url-decision-registry.csv` and
+`legacy-url-decision-summary.json`. It assigns only evidence-based `keep`, `fix`,
+`redirect`, or `remove` decisions plus `needs_review`/`blocker` status. `final_url`
+is deliberately empty in every generated row: no legacy target is copied or invented
+as a new redirect destination. Run the embedded deterministic checks with:
+
+```powershell
+.\scripts\build-legacy-url-decision-registry.ps1 -RunSelfTest
+```
+
 ## До импорта
 
 - Получен полный crawl старого сайта и URL registry: `old_url`, page type, priority, keep/fix/redirect/remove, final URL и owner.
