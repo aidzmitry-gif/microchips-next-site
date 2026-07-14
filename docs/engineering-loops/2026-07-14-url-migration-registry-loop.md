@@ -37,6 +37,28 @@ If all objective gates pass, Part 2 reaches 90% and the verified total becomes *
 2. Inspect the public-crawl report and generated registry summary; no score is awarded for an incomplete or fabricated crawl.
 3. Merge only a green, reviewed change; then record the exact Part 2 readiness and overall formula in `docs/implementation-status.md`.
 
+## Cycle 4 — verified result
+
+Evidence completed on 2026-07-14:
+
+- `build-legacy-url-decision-registry.ps1 -RunSelfTest`: 6 assertions passed.
+- The generator processed 22,796 sitemap rows and 5,471 legacy redirect rules into 28,267 evidence rows: 501 `keep`, 22,295 `fix`, 5,471 `redirect`, 0 `remove`. All rows correctly remain `needs_review`; every `final_url` is empty.
+- The generated registry is deterministic for this input: SHA-256 `2F482B59D65B621792271A4EAD756E7A050E1A802F018A5B03C9E3CED89EB961`.
+- The public snapshot captured 15/15 priority URLs with HTTP 200 and zero observed redirect hops. It verified the root and three referenced sitemap files, live robots policy, 10 self-canonical HTML pages and 9 pages with both a title and H1.
+- Local quality gate passed: Pint, 17 PHPUnit tests / 81 assertions, Next.js production build and Compose validation.
+- GitHub Actions passed for both push and pull-request runs of commit `23634b3`.
+
+| Part 2 criterion | Verified result | Readiness | Contribution |
+| --- | --- | ---: | ---: |
+| Working registry | Deterministic evidence registry without invented destinations. | 40% | 5.2 points |
+| Tests and CI | Unsafe decision tests plus passing local and GitHub quality gates. | 25% | 3.25 points |
+| Data / SEO validation | Repeatable public capture covers the live priority URL patterns and sitemap evidence. | 25% | 3.25 points |
+| Documentation / reproducible deploy | Not credited: no preview/staging cutover deployment exists. | 0% | 0 points |
+
+Verified total: **34.5%**, an increase of **11.7 percentage points** from the 22.8% baseline. The +10 target is achieved.
+
+The result is intentionally not a launch authorization. No row has an approved final destination, no 301 has been published, and no regional commercial/legal data was inferred.
+
 ## Release blockers preserved
 
 - A legacy URL may not redirect to the homepage merely to avoid `404`.
