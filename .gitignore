@@ -1,0 +1,20 @@
+.tools/
+/node_modules/
+
+# Local infrastructure state
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.idea/
+.vscode/
+Thumbs.db
+
+# Generated application files
+backend/.env
+backend/vendor/
+backend/storage/*.key
+frontend/.next/
+frontend/node_modules/
+docs/audits/generated/

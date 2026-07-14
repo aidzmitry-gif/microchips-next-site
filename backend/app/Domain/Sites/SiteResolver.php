@@ -1,0 +1,217 @@
+<?php
+
+namespace App\Domain\Sites;
+
+use App\Models\Site;
+use App\Models\SiteCategory;
+use App\Models\SitePage;
+use App\Models\SiteProduct;
+use App\Models\SiteSeo;
+use App\Models\SiteUrl;
+use App\Models\SiteUrlAlternate;
+
+class SiteResolver
+{
+    public function resolve(string $host): ?Site
+    {
+        $domain = $this->normalizeHost($host);
+
+        return Site::query()
+            ->with(['locales' => fn ($query) => $query->where('is_enabled', true)])
+            ->where('domain', $domain)
+            ->where('is_active', true)
+            ->first();
+    }
+
+    /** @return array<string, mixed> */
+    public function resolvePath(Site $site, string $path): array
+    {
+        $path = $this->normalizePath($path);
+        $redirect = $site->redirects()
+            ->where('source_path', $path)
+            ->where('is_active', true)
+            ->first();
+
+        if ($redirect !== null) {
+            return [
+                'kind' => 'redirect',
+                'site' => $this->sitePayload($site),
+                'redirect' => [
+                    'to' => $redirect->target_path,
+                    'status' => $redirect->status_code,
+                ],
+            ];
+        }
+
+        $url = SiteUrl::query()
+            ->where('site_id', $site->id)
+            ->where('path', $path)
+            ->first();
+
+        if ($url === null) {
+            return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
+        }
+
+        return match ($url->target_type) {
+            'page' => $this->pagePayload($site, $url),
+            'product' => $this->productPayload($site, $url),
+            'category' => $this->categoryPayload($site, $url),
+            default => ['kind' => 'not_found', 'site' => $this->sitePayload($site)],
+        };
+    }
+
+    public function normalizeHost(string $host): string
+    {
+        $host = strtolower(trim($host));
+        $host = preg_replace('#^https?://#', '', $host) ?? $host;
+        $host = explode('/', $host)[0];
+        $host = explode(':', $host)[0];
+
+        return str_starts_with($host, 'www.') ? substr($host, 4) : $host;
+    }
+
+    public function normalizePath(string $path): string
+    {
+        $path = '/'.ltrim(parse_url($path, PHP_URL_PATH) ?: '/', '/');
+        $path = preg_replace('#/+#', '/', $path) ?? '/';
+
+        return $path === '/' ? $path : rtrim($path, '/');
+    }
+
+    /** @return array<string, mixed> */
+    private function pagePayload(Site $site, SiteUrl $url): array
+    {
+        $page = SitePage::published()
+            ->where('site_id', $site->id)
+            ->find($url->target_id);
+
+        if ($page === null) {
+            return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
+        }
+
+        return [
+            'kind' => 'page',
+            'site' => $this->sitePayload($site),
+            'path' => $url->path,
+            'page' => [
+                'title' => $page->title,
+                'h1' => $page->h1,
+                'content' => $page->content,
+                'locale' => $page->locale,
+            ],
+            'seo' => $this->seoPayload($site, $page->locale, 'page', $page->id, $url, $page->title),
+        ];
+    }
+
+    /** @return array<string, mixed> */
+    private function productPayload(Site $site, SiteUrl $url): array
+    {
+        $siteProduct = SiteProduct::query()
+            ->with('product')
+            ->published()
+            ->where('site_id', $site->id)
+            ->find($url->target_id);
+
+        if ($siteProduct === null || $siteProduct->product === null) {
+            return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
+        }
+
+        return [
+            'kind' => 'product',
+            'site' => $this->sitePayload($site),
+            'path' => $url->path,
+            'product' => [
+                'name' => $siteProduct->product->name,
+                'sku' => $siteProduct->product->sku,
+                'mpn' => $siteProduct->product->mpn,
+                'manufacturer' => $siteProduct->product->manufacturer,
+                'description' => $siteProduct->product->short_description,
+                'attributes' => $siteProduct->product->technical_attributes,
+                'availability' => $siteProduct->availability,
+                'price' => $siteProduct->price,
+                'currency' => $site->currency_code,
+            ],
+            'seo' => $this->seoPayload($site, $url->locale ?? $site->default_locale, 'product', $siteProduct->id, $url, $siteProduct->product->name),
+        ];
+    }
+
+    /** @return array<string, mixed> */
+    private function categoryPayload(Site $site, SiteUrl $url): array
+    {
+        $category = SiteCategory::query()
+            ->with('category')
+            ->where('site_id', $site->id)
+            ->where('is_published', true)
+            ->find($url->target_id);
+
+        if ($category === null || $category->category === null) {
+            return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
+        }
+
+        return [
+            'kind' => 'category',
+            'site' => $this->sitePayload($site),
+            'path' => $url->path,
+            'category' => [
+                'name' => $category->name ?? $category->category->name,
+                'slug' => $category->slug,
+            ],
+            'seo' => $this->seoPayload($site, $url->locale ?? $site->default_locale, 'category', $category->id, $url, $category->name ?? $category->category->name),
+        ];
+    }
+
+    /** @return array<string, mixed> */
+    private function sitePayload(Site $site): array
+    {
+        return [
+            'key' => $site->key,
+            'domain' => $site->domain,
+            'countryCode' => $site->country_code,
+            'currencyCode' => $site->currency_code,
+            'defaultLocale' => $site->default_locale,
+            'name' => $site->name,
+            'locales' => $site->locales->map(fn ($locale) => [
+                'locale' => $locale->locale,
+                'language' => $locale->language,
+                'isDefault' => $locale->is_default,
+            ])->values(),
+        ];
+    }
+
+    /** @return array<string, mixed> */
+    private function seoPayload(Site $site, string $locale, string $type, int $id, SiteUrl $url, string $fallbackTitle): array
+    {
+        $seo = SiteSeo::query()
+            ->where('site_id', $site->id)
+            ->where('locale', $locale)
+            ->where('resource_type', $type)
+            ->where('resource_id', $id)
+            ->first();
+
+        return [
+            'title' => $seo?->title ?? $fallbackTitle,
+            'description' => $seo?->description,
+            'canonicalPath' => $seo?->canonical_path ?? $url->path,
+            'isIndexable' => $seo?->is_indexable ?? true,
+            'schema' => $seo?->schema,
+            'hreflang' => $this->hreflangPayload($url, $locale, $site),
+        ];
+    }
+
+    /** @return array<string, string> */
+    private function hreflangPayload(SiteUrl $url, string $locale, Site $site): array
+    {
+        $alternates = SiteUrlAlternate::query()
+            ->with('alternateUrl.site')
+            ->where('source_url_id', $url->id)
+            ->get()
+            ->mapWithKeys(fn (SiteUrlAlternate $alternate) => [
+                $alternate->locale => "https://{$alternate->alternateUrl->site->domain}{$alternate->alternateUrl->path}",
+            ])
+            ->all();
+
+        $alternates[$url->locale ?? $locale] = "https://{$site->domain}{$url->path}";
+
+        return $alternates;
+    }
+}
