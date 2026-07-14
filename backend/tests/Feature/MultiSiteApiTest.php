@@ -94,6 +94,30 @@ class MultiSiteApiTest extends TestCase
         ]);
     }
 
+    public function test_quote_lead_rejects_the_legacy_prototype_shape(): void
+    {
+        $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+
+        $this->postJson('/api/v1/leads/quote', [
+            'site_key' => 'microchips-by',
+            'name' => 'Иван Иванов',
+            'contact' => 'ivan@example.test',
+            'requirement' => 'Аккумуляторы для ИБП',
+            'page_url' => '/catalog/akkumulyatory/promyshlennye/',
+            'cart' => '[]',
+            'utm_source' => 'prototype',
+        ])
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors([
+                'company',
+                'contact_name',
+                'email',
+                'phone',
+                'page_url',
+                'cart',
+            ]);
+    }
+
     private function site(string $key, string $domain, string $country, string $currency, string $locale): Site
     {
         return Site::create([
