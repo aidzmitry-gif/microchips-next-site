@@ -18,3 +18,7 @@ backend/storage/*.key
 frontend/.next/
 frontend/node_modules/
 docs/audits/generated/
+
+# Python bytecode cache (audit/report scripts)
+__pycache__/
+*.pyc

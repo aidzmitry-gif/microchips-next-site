@@ -7,6 +7,7 @@ script, missing specs). Produces an actionable findings CSV + summary the
 owner can use to fix 1C and the legacy site. No source is modified.
 """
 import csv
+import importlib.util
 import json
 import os
 import re
@@ -332,6 +333,25 @@ report_path = os.path.join(
 os.makedirs(os.path.dirname(report_path), exist_ok=True)
 with open(report_path, 'w', encoding='utf-8', newline='\n') as f:
     f.write('\n'.join(lines))
+
+# ---- Google-Sheets-ready workbook ----------------------------------------
+# Refresh docs/imports/microchips-nomenclature-fixes.xlsx on every run.
+# Non-fatal: the CSV + markdown report above are the primary outputs, so a
+# missing openpyxl only skips the workbook instead of failing the audit.
+xlsx_path = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    'docs', 'imports', 'microchips-nomenclature-fixes.xlsx')
+_builder = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        'build-nomenclature-xlsx.py')
+try:
+    _spec = importlib.util.spec_from_file_location('build_nomenclature_xlsx', _builder)
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)  # raises ImportError if openpyxl is absent
+    _mod.build_xlsx(findings, xlsx_path, focus_count=len(focus))
+    print('xlsx:', xlsx_path)
+except ImportError:
+    print('[warn] openpyxl not installed — skipped xlsx workbook; '
+          'install with: pip install openpyxl', file=sys.stderr)
 
 print(json.dumps(summary, ensure_ascii=False, indent=2))
 print('report:', report_path)
