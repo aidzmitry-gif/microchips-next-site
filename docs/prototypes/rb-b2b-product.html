@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ru" data-site-scope="site_id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Визуальное ТЗ карточки товара B2B-каталога промышленных аккумуляторов: состояния «полная» и «неполные данные», подбор замены и запрос КП." />
+    <title>Аккумулятор Fiamm 12FGL120 — карточка товара, визуальное ТЗ microchips.by</title>
+    <style>
+      :root {
+        --ink: #251d16;
+        --muted: #7f7568;
+        --line: #e5dfd4;
+        --canvas: #f6f1ea;
+        --panel: #ffffff;
+        --brand: #8a5a2c;
+        --brand-dark: #5c3c1c;
+        --brand-soft: #f4ebdf;
+        --green: #14804a;
+        --amber: #a36000;
+        --amber-soft: #fff7e6;
+        --danger: #c02e24;
+        --radius: 16px;
+        --shadow: 0 14px 40px rgba(28, 50, 84, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background: var(--canvas);
+        font: 15px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      button, input, select, textarea { font: inherit; }
+      button { cursor: pointer; }
+      a { color: inherit; text-decoration: none; }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 { font-size: clamp(30px, 4vw, 46px); line-height: 1.12; letter-spacing: -0.035em; }
+      h2 { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.18; letter-spacing: -0.025em; }
+      h3 { font-size: 17px; line-height: 1.25; }
+      .container { width: min(1400px, calc(100% - 48px)); margin: 0 auto; }
+      .eyebrow { margin-bottom: 10px; color: var(--brand); font-size: 12px; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+      .muted { color: var(--muted); }
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+      .topline { border-bottom: 1px solid rgba(220, 228, 238, 0.75); background: #fff; }
+      .topline__inner, .header__main, .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+      .topline__inner { min-height: 40px; color: var(--muted); font-size: 13px; }
+      .site-selector { display: flex; gap: 6px; align-items: center; }
+      .site-selector__label { color: var(--ink); font-weight: 700; }
+      .site-selector [aria-disabled="true"] { color: #9aa7b8; cursor: not-allowed; }
+      .link-button, .text-link { border: 0; background: transparent; color: var(--brand); padding: 0; font-weight: 700; }
+      .text-link:hover, .link-button:hover { color: var(--brand-dark); }
+
+      .header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.96); backdrop-filter: blur(14px); }
+      .header__main { min-height: 77px; }
+      .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-weight: 850; letter-spacing: -0.035em; font-size: 22px; }
+      .brand__mark { display: grid; width: 35px; height: 35px; place-items: center; color: #fff; border-radius: 10px; background: linear-gradient(145deg, #9a6a34, #5c3c1c); box-shadow: 0 8px 18px rgba(138, 90, 44, .28); }
+      .brand__mark svg { width: 22px; height: 22px; }
+      .brand__logo { display: block; height: 56px; width: auto; }
+      .brand__logo--sm { height: 44px; }
+      .search { display: flex; flex: 1 1 430px; max-width: 560px; min-height: 43px; align-items: center; gap: 8px; padding: 0 13px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+      .search:focus-within { outline: 3px solid rgba(138, 90, 44, .16); border-color: var(--brand); }
+      .search input { width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; }
+      .contact { text-align: right; white-space: nowrap; }
+      .contact__caption { display: block; color: var(--muted); font-size: 12px; }
+      .contact__value { font-weight: 800; }
+      .button { display: inline-flex; min-height: 43px; align-items: center; justify-content: center; gap: 8px; padding: 0 16px; border: 1px solid transparent; border-radius: 9px; color: #fff; background: var(--brand); font-weight: 800; transition: .16s ease; }
+      .button:hover { background: var(--brand-dark); transform: translateY(-1px); }
+      .button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(138, 90, 44, .30); outline-offset: 2px; }
+      .button--secondary { border-color: #d8c3a0; color: var(--brand); background: #fff; }
+      .button--secondary:hover { color: #fff; background: var(--brand); }
+      .button--quiet { border-color: var(--line); color: var(--ink); background: #fff; }
+      .button--quiet:hover { color: var(--brand); border-color: #d8c3a0; background: var(--brand-soft); }
+      .nav { border-top: 1px solid #eef2f7; }
+      .nav__inner { min-height: 46px; justify-content: flex-start; }
+      .nav a { color: #463726; font-size: 14px; font-weight: 700; }
+      .nav a:hover, .nav a[aria-current="page"] { color: var(--brand); }
+      .nav__spacer { flex: 1; }
+      .nav__note { color: var(--muted); font-size: 12px; }
+
+      main { padding: 28px 0 64px; }
+      .breadcrumbs { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 23px; color: var(--muted); font-size: 13px; }
+      .breadcrumbs span:not(:last-child)::after { content: "/"; margin-left: 7px; color: #a6b2c3; }
+      .breadcrumbs [aria-current="page"] { color: #4a3b28; }
+      .breadcrumbs span { overflow-wrap: anywhere; }
+      .prototype-note { margin-top: 14px; padding: 11px 14px; border: 1px solid #e4d5c0; border-radius: 10px; color: #5c4632; background: #f7f0e5; font-size: 13px; }
+      .prototype-note strong { color: #5c3f20; }
+      .prototype-note code { font-size: 12px; }
+
+      .status { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 7px; color: var(--amber); font-size: 12px; font-weight: 800; }
+      .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+      .product-head h1 { max-width: 980px; margin-bottom: 10px; font-size: clamp(26px, 3.4vw, 38px); overflow-wrap: anywhere; }
+      .product-head > p { max-width: 780px; color: var(--muted); }
+
+      .state-toggle { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 22px 0 16px; }
+      .state-toggle__label { color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+      .state-toggle .button[aria-pressed="true"] { border-color: var(--brand); color: var(--brand-dark); background: var(--brand-soft); }
+
+      .product-layout { display: grid; grid-template-columns: minmax(260px, 400px) minmax(0, 1fr); gap: 22px; align-items: start; }
+      #stateA[hidden], #stateB[hidden] { display: none; }
+      .photo-placeholder { display: grid; place-content: center; gap: 9px; min-height: 320px; padding: 20px; border: 1px dashed #b7c6d9; border-radius: var(--radius); background: linear-gradient(135deg, #f8fafd, #eef3f8); color: #60748d; text-align: center; font-size: 12px; font-weight: 750; }
+      .photo-placeholder svg { width: 46px; height: 46px; margin: 0 auto; color: #8092aa; }
+      .photo-placeholder small { max-width: 250px; margin: 0 auto; color: #7b8ba1; font-weight: 400; line-height: 1.4; }
+      .product-panel { min-width: 0; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 3px 11px rgba(30, 48, 80, .025); }
+      .product-panel h2 { margin-bottom: 6px; font-size: 20px; }
+      .product-panel > .muted { margin-bottom: 14px; font-size: 13px; }
+      .spec-table-wrap { max-width: 100%; overflow-x: auto; }
+      .spec-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      .spec-table th, .spec-table td { padding: 9px 8px; border-bottom: 1px solid #e8edf2; text-align: left; vertical-align: top; }
+      .spec-table tr:last-child th, .spec-table tr:last-child td { border-bottom: 0; }
+      .spec-table th { width: 42%; color: #8a7d69; font-size: 12px; font-weight: 800; }
+      .spec-table td { color: #352818; font-weight: 700; overflow-wrap: anywhere; }
+      .spec-source { display: block; color: #948877; font-size: 11px; font-weight: 400; }
+      .product-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+      .price-note { margin: 12px 0 0; padding: 10px 12px; border-radius: 9px; color: #7a5e24; background: var(--amber-soft); font-size: 13px; font-weight: 700; }
+
+      .demo-state { margin-top: 10px; padding: 24px; border: 1px dashed #d9b878; border-radius: var(--radius); background: #fffdf6; }
+      .demo-state > .demo-state__intro { max-width: 780px; color: #6a5a46; }
+      .demo-badge { display: inline-flex; align-items: center; gap: 7px; margin-bottom: 10px; padding: 4px 10px; border: 1px solid #e3c88e; border-radius: 999px; color: #86651d; background: var(--amber-soft); font-size: 12px; font-weight: 800; }
+      .demo-name { margin: 0 0 12px; color: #2c2016; font-size: 20px; font-weight: 850; overflow-wrap: anywhere; }
+      .lead-block { margin-top: 16px; padding: 17px; border: 1px solid #e4d3b8; border-radius: 12px; background: #f8f1e6; }
+      .lead-block strong { display: block; margin-bottom: 5px; color: #4e3a20; font-size: 16px; }
+      .lead-block p { margin: 0 0 13px; color: #5c4632; font-size: 13px; }
+
+      .replacement { margin-top: 44px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+      .replacement p { max-width: 740px; color: #5a4a37; }
+      .replacement__hint { margin: 14px 0 0; color: #7b8ba1; font-size: 12px; }
+
+      .links-block { margin-top: 26px; }
+      .links-block h2 { font-size: 20px; margin-bottom: 4px; }
+      .links-block > p { color: var(--muted); font-size: 13px; }
+      .internal-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+      .internal-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 15px 17px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: #2c2016; font-weight: 750; transition: .16s ease; }
+      .internal-link:hover { border-color: #dcc7a6; color: var(--brand); box-shadow: var(--shadow); }
+      .internal-link svg { flex: 0 0 auto; width: 18px; height: 18px; color: var(--brand); }
+      .internal-link span { overflow-wrap: anywhere; }
+
+      .quote-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, .82fr); gap: 35px; margin-top: 48px; padding: clamp(25px, 4vw, 42px); border-radius: 22px; color: #fff; background: #2c231b; }
+      .quote-section .eyebrow { color: #e6cfa6; }
+      .quote-section h2 { margin-bottom: 13px; }
+      .quote-section p { max-width: 620px; color: #e7dcc9; }
+      .quote-points { display: grid; gap: 11px; margin-top: 23px; }
+      .quote-point { display: flex; align-items: flex-start; gap: 9px; color: #e7dcc9; }
+      .quote-point svg { flex: 0 0 auto; width: 20px; height: 20px; color: #c79a5e; }
+      .quote-route-note { margin-top: 20px; padding: 10px 12px; border: 1px solid rgba(214, 190, 150, .30); border-radius: 9px; color: #d9ccb6; background: rgba(40, 30, 20, .28); font-size: 12px; overflow-wrap: anywhere; }
+      .quote-form { padding: 20px; border-radius: 15px; color: var(--ink); background: #fff; }
+      .quote-form h3 { margin-bottom: 5px; }
+      .quote-form__intro { margin-bottom: 16px; color: var(--muted); font-size: 13px; }
+      .field { display: grid; gap: 5px; margin-bottom: 12px; }
+      .field label { color: #463726; font-size: 12px; font-weight: 800; }
+      .field input, .field select, .field textarea { width: 100%; min-height: 42px; padding: 0 11px; border: 1px solid #cbd6e3; border-radius: 8px; outline: 0; color: var(--ink); background: #fff; }
+      .field textarea { min-height: 86px; padding-top: 10px; resize: vertical; }
+      .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(138, 90, 44, .15); }
+      .form-consent { margin: 10px 0 14px; color: #718198; font-size: 11px; line-height: 1.42; }
+      .form-message { display: none; margin-top: 12px; padding: 10px; border-radius: 8px; color: var(--green); background: #eaf8ef; font-size: 13px; font-weight: 700; }
+      .form-message.is-visible { display: block; }
+
+      .faq { margin-top: 48px; }
+      .faq h2 { margin-bottom: 19px; }
+      .faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      details { padding: 17px 18px; border: 1px solid var(--line); border-radius: 11px; background: #fff; }
+      summary { position: relative; padding-right: 25px; color: #33261a; cursor: pointer; font-weight: 800; list-style: none; }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { content: "+"; position: absolute; top: -4px; right: 0; color: var(--brand); font-size: 22px; font-weight: 400; }
+      details[open] summary::after { content: "–"; }
+      details p { margin: 12px 0 0; color: #6a5a46; font-size: 14px; }
+
+      footer { border-top: 1px solid var(--line); background: #fff; }
+      .footer__inner { display: grid; grid-template-columns: 1.1fr repeat(3, 1fr); gap: 25px; padding: 35px 0 27px; }
+      .footer__title { margin-bottom: 9px; color: #33261a; font-size: 13px; font-weight: 850; }
+      .footer__text, .footer a { display: block; margin-bottom: 6px; color: #7c6f5c; font-size: 13px; }
+      .footer__prototype { padding-top: 14px; border-top: 1px solid #ebeff4; color: #7c8ba0; font-size: 12px; }
+
+      .quote-dock { position: fixed; right: 0; bottom: 0; left: 0; z-index: 20; display: none; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(12px); box-shadow: 0 -8px 24px rgba(28, 50, 84, 0.09); }
+      .quote-dock__meta { min-width: 0; }
+      .quote-dock__count { display: block; color: var(--ink); font-size: 13px; font-weight: 800; }
+      .quote-dock__note { display: block; color: var(--muted); font-size: 11px; }
+      .quote-dock .button { flex: 0 0 auto; }
+
+      @media (max-width: 1120px) {
+        .contact__caption { display: none; }
+        .product-layout { grid-template-columns: minmax(220px, 320px) minmax(0, 1fr); }
+      }
+      @media (max-width: 820px) {
+        .container { width: min(100% - 32px, 680px); }
+        .topline__inner { min-height: 35px; }
+        .topline__inner > :last-child { display: none; }
+        .header__main { min-height: 63px; }
+        .brand { font-size: 19px; }
+        .brand__mark { width: 31px; height: 31px; }
+        .brand__logo { height: 40px; }
+        .search, .nav, .contact { display: none; }
+        .header .button { min-height: 38px; padding: 0 11px; font-size: 13px; }
+        main { padding-top: 20px; }
+        .product-layout { grid-template-columns: 1fr; }
+        .photo-placeholder { min-height: 220px; }
+        .quote-section { grid-template-columns: 1fr; gap: 22px; }
+        .faq-grid { grid-template-columns: 1fr; }
+        .footer__inner { grid-template-columns: 1fr 1fr; }
+        .quote-dock { display: flex; }
+        body { padding-bottom: 74px; }
+      }
+      @media (max-width: 520px) {
+        .container { width: min(100% - 24px, 680px); }
+        .site-selector__label { display: none; }
+        .product-panel, .demo-state, .replacement { padding: 18px; }
+        .product-cta { flex-direction: column; align-items: stretch; }
+        .internal-links { grid-template-columns: 1fr; }
+        .spec-table { min-width: 300px; }
+        .footer__inner { grid-template-columns: 1fr; gap: 17px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topline">
+      <div class="container topline__inner">
+        <div class="site-selector" aria-label="Рынок и язык">
+          <span class="site-selector__label">Рынок:</span>
+          <button class="link-button" type="button">Беларусь · Русский</button>
+          <span aria-hidden="true">·</span>
+          <button class="link-button" type="button" aria-disabled="true" title="Рынок готовится">Россия</button>
+          <button class="link-button" type="button" aria-disabled="true" title="Рынок готовится">Узбекистан</button>
+        </div>
+        <span>Оптовая продажа пром. аккумуляторов</span>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__main">
+        <a class="brand" href="rb-b2b-home.html" aria-label="microchips.by — прототип">
+          <img class="brand__logo" src="assets/logo-ar-final.png" alt="Аккумуляторные решения — microchips.by" />
+        </a>
+        <label class="search" data-search-indexing="noindex">
+          <span class="sr-only">Поиск по каталогу</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a7d69" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+          <input type="search" placeholder="Модель, ёмкость, применение…" />
+        </label>
+        <div class="contact">
+          <span class="contact__caption">пн–пт 9:00–18:00</span>
+          <a class="contact__value" href="tel:+375333477510">+375 (33) 347-75-10</a>
+          <a class="contact__caption" href="mailto:order@microchips.by">order@microchips.by</a>
+        </div>
+        <a class="button" href="#quote">Запросить КП</a>
+      </div>
+      <nav class="nav" aria-label="Основная навигация">
+        <div class="container nav__inner">
+          <a href="rb-b2b-home.html">Главная</a>
+          <a href="rb-b2b-catalog.html">Каталог</a>
+          <a href="#faq">Вопросы и ответы</a>
+          <a href="#quote">Запрос КП</a>
+          <span class="nav__spacer"></span>
+          <span class="nav__note">Визуальное ТЗ · не публичная страница</span>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" data-seo-canonical="self-on-published-route">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <span><a href="rb-b2b-home.html">Главная</a></span>
+          <span><a href="rb-b2b-catalog.html">Каталог</a></span>
+          <span>Аккумуляторы для ИБП</span>
+          <span aria-current="page">Аккумулятор Fiamm 12FGL120 (AGM, 120Ah, 12V)</span>
+        </nav>
+
+        <section class="product-head" aria-labelledby="product-title">
+          <span class="status">Данные уточняются</span>
+          <h1 id="product-title">Аккумулятор Fiamm 12FGL120 (AGM, 120Ah, 12V)</h1>
+          <p>Карточка B2B-каталога: в спецификации показаны только характеристики из явного текста названия. Код модели 12FGL120 не расшифровывается в параметры. Коммерческие условия подтверждаются специалистом по запросу.</p>
+        </section>
+        <p class="prototype-note"><strong>Маршрут страницы — плейсхолдер.</strong> Адрес <code>/catalog/akkumulyatory/dlya_ibp/fiamm-12fgl120/</code> используется в скрытом поле <code>page_url</code> формы до утверждения URL-реестра. Это визуальное ТЗ, а не публичная карточка.</p>
+
+        <div class="state-toggle" role="group" aria-label="Демонстрация двух состояний карточки по правилу М1">
+          <span class="state-toggle__label">Состояния М1:</span>
+          <button class="button button--quiet" type="button" id="showStateA" aria-pressed="true">A — полная по техпараметрам</button>
+          <button class="button button--quiet" type="button" id="showStateB" aria-pressed="false">B — демо неполных данных</button>
+        </div>
+
+        <section class="product-layout" id="stateA" aria-label="Состояние A: карточка, полная по техпараметрам">
+          <div class="photo-placeholder" role="img" aria-label="Фото товара не добавлено">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg>
+            <span>Фото не добавлено</span>
+            <small>Схематичный плейсхолдер: реальные изображения не публикуются до подтверждения источника.</small>
+          </div>
+          <div class="product-panel">
+            <h2>Технические параметры</h2>
+            <p class="muted">Технология, ёмкость и напряжение подтверждены явным текстом названия «(AGM, 120Ah, 12V)». Остальные поля — честный статус.</p>
+            <div class="spec-table-wrap" tabindex="0" aria-label="Спецификация Fiamm 12FGL120">
+              <table class="spec-table">
+                <tbody>
+                  <tr><th scope="row">Технология</th><td>AGM <span class="spec-source">явный текст названия</span></td></tr>
+                  <tr><th scope="row">Ёмкость</th><td>120 А·ч <span class="spec-source">явный текст названия</span></td></tr>
+                  <tr><th scope="row">Напряжение</th><td>12 В <span class="spec-source">явный текст названия</span></td></tr>
+                  <tr><th scope="row">Габариты</th><td>Требует подтверждения</td></tr>
+                  <tr><th scope="row">Клеммы</th><td>Требует подтверждения</td></tr>
+                  <tr><th scope="row">Артикул</th><td>Требует подтверждения</td></tr>
+                  <tr><th scope="row">Гарантия</th><td>Требует подтверждения</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="product-cta">
+              <a class="button" href="#quote">Запросить КП</a>
+              <a class="button button--secondary" href="#quote">Добавить в запрос</a>
+            </div>
+            <p class="price-note">Цена и наличие — по запросу. Карточка не публикует коммерческих обещаний.</p>
+          </div>
+        </section>
+
+        <section class="demo-state" id="stateB" aria-labelledby="demo-title" hidden>
+          <span class="demo-badge">Демонстрация шаблона · не отдельная страница</span>
+          <h2 id="demo-title">Демо-состояние: карточка с неполными данными</h2>
+          <p class="demo-state__intro">Тот же шаблон для товара «Аккумулятор KM-300 P» (правило М2): в названии нет явных техпараметров, поэтому вместо таблицы с прочерками остаются только подтверждённые строки, а недостаток данных превращается в лид.</p>
+          <div class="product-layout">
+            <div class="photo-placeholder" role="img" aria-label="Фото товара не добавлено">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m6 16 4-3 3 2 2-2 3 3"/></svg>
+              <span>Фото не добавлено</span>
+              <small>Плейсхолдер одинаков для обоих состояний и полноте карточки не мешает.</small>
+            </div>
+            <div class="product-panel">
+              <span class="status">Данные уточняются</span>
+              <p class="demo-name">Аккумулятор KM-300 P</p>
+              <div class="spec-table-wrap" tabindex="0" aria-label="Компактная спецификация KM-300 P">
+                <table class="spec-table">
+                  <tbody>
+                    <tr><th scope="row">Название из источника</th><td>Аккумулятор KM-300 P <span class="spec-source">единственная подтверждённая строка</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="muted">Ёмкость, напряжение и технология в названии не указаны; код KM-300 P не расшифровывается в параметры. Пустые строки спецификации не показываются.</p>
+              <div class="lead-block">
+                <strong>Запросить полную спецификацию у инженера</strong>
+                <p>Недостающие характеристики проверяются по источнику данных и документации производителя — без додумывания из кода модели.</p>
+                <a class="button" href="#quote">Запросить полную спецификацию у инженера</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="replacement" id="replacement" aria-labelledby="replacement-title">
+          <p class="eyebrow">Подбор замены и совместимости</p>
+          <h2 id="replacement-title">Замена подбирается инженером, а не списком «аналогов»</h2>
+          <p>Совместимость подтверждается сверкой напряжения, ёмкости, габаритов, полярности, типа клемм и режима нагрузки. Макет намеренно не показывает автоматический список похожих товаров: без подтверждённой технической связи это ложный контент и тупик для закупщика.</p>
+          <a class="button" href="#quote">Подобрать замену — запрос инженеру</a>
+          <p class="replacement__hint">В заявке достаточно модели ИБП или установленной батареи — параметры сверит специалист.</p>
+        </section>
+
+        <section class="links-block" aria-labelledby="links-title">
+          <h2 id="links-title">Шаблоны прототипа</h2>
+          <p>Навигационные ссылки между шаблонами визуального ТЗ — не подтверждённые каталожные связи товара Fiamm 12FGL120.</p>
+          <div class="internal-links">
+            <a class="internal-link" href="rb-b2b-catalog.html"><span>Вернуться в категорию «Аккумуляторы для ИБП»</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></a>
+            <a class="internal-link" href="rb-b2b-series.html"><span>Серия Hiden Control HS20 — страница серии</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          </div>
+        </section>
+
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+          <p class="eyebrow">FAQ по подбору</p>
+          <h2 id="faq-title">Вопросы перед заменой аккумулятора</h2>
+          <div class="faq-grid">
+            <details open><summary>Как убедиться, что Fiamm 12FGL120 подойдёт вместо установленной батареи?</summary><p>Сверяются напряжение, ёмкость, габариты, полярность и тип клемм, а также режим нагрузки оборудования. Пришлите модель ИБП или текущей батареи — инженер проверит совместимость по документации, а не по коду модели.</p></details>
+            <details><summary>Что делать, если в карточке не хватает параметров?</summary><p>Недостающие характеристики не выводятся из кода модели и не заполняются прочерками. Отправьте запрос полной спецификации — инженер сверит данные с источником и вернётся с подтверждёнными значениями.</p></details>
+            <details><summary>Можно ли подобрать замену по фото шильдика старой батареи?</summary><p>Да, фото шильдика — допустимый вход в заявку. Решение о замене принимается только после сверки критичных технических характеристик и документации производителя.</p></details>
+          </div>
+        </section>
+
+        <section class="quote-section" id="quote" aria-labelledby="quote-title">
+          <div>
+            <p class="eyebrow">От карточки товара к технической задаче</p>
+            <h2 id="quote-title">Получите подбор и КП по вашим условиям</h2>
+            <p>Заявка должна сохранять рынок, язык, страницу карточки, выбранные позиции и UTM-метки. Менеджер уточняет критичные характеристики до подтверждения предложения.</p>
+            <div class="quote-points">
+              <div class="quote-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg><span>Не обещаем цену и срок, пока не проверены источник и условия поставки.</span></div>
+              <div class="quote-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg><span>Один запрос может содержать замену, комплект и требования к автономии.</span></div>
+              <div class="quote-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg><span>Перед запуском форма связывается с локальным хранением лида и Bitrix24.</span></div>
+            </div>
+            <p class="quote-route-note">Скрытое поле page_url: <code>https://microchips.by/catalog/akkumulyatory/dlya_ibp/fiamm-12fgl120/</code> — плейсхолдер до утверждения URL-реестра.</p>
+          </div>
+          <form class="quote-form" id="quoteForm" data-lead-endpoint="/api/v1/leads/quote" data-prototype-submission="disabled" data-contact-rule="email-or-phone" novalidate>
+            <h3>Запросить техническое предложение</h3>
+            <p class="quote-form__intro">Визуальная форма повторяет контракт API. Макет не отправляет и не сохраняет персональные данные.</p>
+            <div class="field"><label for="company">Компания</label><input id="company" name="company" autocomplete="organization" placeholder="Например, ООО «Компания»" required /></div>
+            <div class="field"><label for="contact_name">Контактное лицо</label><input id="contact_name" name="contact_name" autocomplete="name" placeholder="Например, Алексей" required /></div>
+            <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.by" /></div>
+            <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__" /></div>
+            <div class="field"><label for="message">Комментарий или задача подбора</label><textarea id="message" name="message" autocomplete="off" placeholder="Модель ИБП, параметры замены или условия работы"></textarea></div>
+            <input type="hidden" name="site_key" value="microchips-by" />
+            <input type="hidden" name="locale" value="ru-BY" />
+            <input type="hidden" name="page_url" value="https://microchips.by/catalog/akkumulyatory/dlya_ibp/fiamm-12fgl120/" data-page-url="absolute-current-route" />
+            <input type="hidden" name="cart" value="[]" data-json="array" />
+            <input type="hidden" name="utm" value="{}" data-json="object" />
+            <p class="form-consent">В production клиентский mapper передаст JSON-поля <code>cart</code> и <code>utm</code>, а абсолютный URL будет сформирован из текущего published-route. Текст согласия и политика обработки персональных данных должны быть локально утверждены.</p>
+            <button class="button" type="submit">Проверить форму запроса</button>
+            <p class="form-message" id="formMessage" role="status">Макет не отправляет данные. В production заявка будет создана локально только после ответа API <code>201</code>.</p>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer__inner">
+        <div>
+          <div class="brand"><img class="brand__logo brand__logo--sm" src="assets/logo-ar-final.png" alt="Аккумуляторные решения" /></div>
+          <p class="footer__prototype">Прототип карточки товара первой B2B-категории для согласования до реализации SSR-компонентов.</p>
+        </div>
+        <div><div class="footer__title">Каталог</div><a href="rb-b2b-home.html">Главная</a><a href="rb-b2b-catalog.html">Аккумуляторы для ИБП</a><a href="rb-b2b-series.html">Серия HS20 (шаблон)</a></div>
+        <div><div class="footer__title">Экспертиза</div><a href="#replacement">Подбор замены</a><a href="#faq">Вопросы и ответы</a><a href="#quote">Запрос КП</a></div>
+        <div><div class="footer__title">ООО «Аккумуляторные решения» · реквизиты рабочие</div><span class="footer__text">220035, г. Минск, ул. Тимирязева, 65А, пом. 407</span><span class="footer__text">УНП 192766048</span><span class="footer__text">+375 (33) 347-75-10 · +375 (17) 396-23-02</span><span class="footer__text">order@microchips.by · пн–пт 9:00–18:00</span><span class="footer__text">р/с BY15 ALFA 3012 2190 5700 5027 0000, ЗАО «Альфа-Банк»</span><span class="footer__text">Реквизиты рабочие — финальная сверка перед запуском</span><span class="footer__text">Коммерческие правила — на проверке</span><span class="footer__text">Страница — не индексируется</span></div>
+      </div>
+    </footer>
+
+    <div class="quote-dock" aria-label="Быстрый запрос КП">
+      <div class="quote-dock__meta">
+        <span class="quote-dock__count">Запрос КП — без цены и сроков</span>
+        <span class="quote-dock__note">+375 (33) 347-75-10 · пн–пт 9:00–18:00</span>
+      </div>
+      <a class="button" href="#quote">Запросить КП</a>
+    </div>
+
+    <script>
+      const stateAButton = document.getElementById('showStateA');
+      const stateBButton = document.getElementById('showStateB');
+      const stateA = document.getElementById('stateA');
+      const stateB = document.getElementById('stateB');
+
+      function setCardState(showFull) {
+        stateA.hidden = !showFull;
+        stateB.hidden = showFull;
+        stateAButton.setAttribute('aria-pressed', String(showFull));
+        stateBButton.setAttribute('aria-pressed', String(!showFull));
+      }
+
+      stateAButton?.addEventListener('click', () => setCardState(true));
+      stateBButton?.addEventListener('click', () => setCardState(false));
+
+      document.getElementById('quoteForm')?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const email = form.elements.namedItem('email');
+        const phone = form.elements.namedItem('phone');
+        const contactError = email.value || phone.value
+          ? ''
+          : 'Укажите e-mail или телефон.';
+
+        email.setCustomValidity(contactError);
+        phone.setCustomValidity(contactError);
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        document.getElementById('formMessage').classList.add('is-visible');
+      });
+    </script>
+  </body>
+</html>

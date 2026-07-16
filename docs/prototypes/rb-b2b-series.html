@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru" data-site-scope="site_id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Визуальное ТЗ страницы серии ИБП Hiden Control HS20: таблица модификаций без расшифровки кодов моделей, состояние перехода на модификацию, форма запроса КП." />
+    <title>Серия Hiden Control HS20 — визуальное ТЗ microchips.by</title>
+    <style>
+      :root {
+        --ink: #251d16;
+        --muted: #7f7568;
+        --line: #e5dfd4;
+        --canvas: #f6f1ea;
+        --panel: #ffffff;
+        --brand: #8a5a2c;
+        --brand-dark: #5c3c1c;
+        --brand-soft: #f4ebdf;
+        --green: #14804a;
+        --amber: #a36000;
+        --amber-soft: #fff7e6;
+        --danger: #c02e24;
+        --radius: 16px;
+        --shadow: 0 14px 40px rgba(28, 50, 84, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background: var(--canvas);
+        font: 15px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      button, input, select, textarea { font: inherit; }
+      button { cursor: pointer; }
+      a { color: inherit; text-decoration: none; }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 { font-size: clamp(30px, 4vw, 46px); line-height: 1.12; letter-spacing: -0.035em; }
+      h2 { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.18; letter-spacing: -0.025em; }
+      h3 { font-size: 17px; line-height: 1.25; }
+      .container { width: min(1400px, calc(100% - 48px)); margin: 0 auto; }
+      .eyebrow { margin-bottom: 10px; color: var(--brand); font-size: 12px; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+      .muted { color: var(--muted); }
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+      .topline { border-bottom: 1px solid rgba(220, 228, 238, 0.75); background: #fff; }
+      .topline__inner, .header__main, .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+      .topline__inner { min-height: 40px; color: var(--muted); font-size: 13px; }
+      .site-selector { display: flex; gap: 6px; align-items: center; }
+      .site-selector__label { color: var(--ink); font-weight: 700; }
+      .site-selector [aria-disabled="true"] { color: #9aa7b8; cursor: not-allowed; }
+      .link-button, .text-link { border: 0; background: transparent; color: var(--brand); padding: 0; font-weight: 700; }
+      .text-link:hover, .link-button:hover { color: var(--brand-dark); }
+
+      .header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.96); backdrop-filter: blur(14px); }
+      .header__main { min-height: 77px; }
+      .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-weight: 850; letter-spacing: -0.035em; font-size: 22px; }
+      .brand__mark { display: grid; width: 35px; height: 35px; place-items: center; color: #fff; border-radius: 10px; background: linear-gradient(145deg, #9a6a34, #5c3c1c); box-shadow: 0 8px 18px rgba(138, 90, 44, .28); }
+      .brand__mark svg { width: 22px; height: 22px; }
+      .brand__logo { display: block; height: 56px; width: auto; }
+      .brand__logo--sm { height: 44px; }
+      .search { display: flex; flex: 1 1 430px; max-width: 560px; min-height: 43px; align-items: center; gap: 8px; padding: 0 13px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+      .search:focus-within { outline: 3px solid rgba(138, 90, 44, .16); border-color: var(--brand); }
+      .search input { width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; }
+      .contact { text-align: right; white-space: nowrap; }
+      .contact__caption { display: block; color: var(--muted); font-size: 12px; }
+      .contact__value { font-weight: 800; }
+      .button { display: inline-flex; min-height: 43px; align-items: center; justify-content: center; gap: 8px; padding: 0 16px; border: 1px solid transparent; border-radius: 9px; color: #fff; background: var(--brand); font-weight: 800; transition: .16s ease; }
+      .button:hover { background: var(--brand-dark); transform: translateY(-1px); }
+      .button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(138, 90, 44, .30); outline-offset: 2px; }
+      .button--secondary { border-color: #d8c3a0; color: var(--brand); background: #fff; }
+      .button--secondary:hover { color: #fff; background: var(--brand); }
+      .button--quiet { border-color: var(--line); color: var(--ink); background: #fff; }
+      .button--quiet:hover { color: var(--brand); border-color: #d8c3a0; background: var(--brand-soft); }
+      .nav { border-top: 1px solid #eef2f7; }
+      .nav__inner { min-height: 46px; justify-content: flex-start; }
+      .nav a { color: #463726; font-size: 14px; font-weight: 700; }
+      .nav a:hover, .nav a[aria-current="page"] { color: var(--brand); }
+      .nav__spacer { flex: 1; }
+      .nav__note { color: var(--muted); font-size: 12px; }
+
+      main { padding: 28px 0 64px; }
+      .breadcrumbs { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 23px; color: var(--muted); font-size: 13px; }
+      .breadcrumbs span:not(:last-child)::after { content: "/"; margin-left: 7px; color: #a6b2c3; }
+      .breadcrumbs [aria-current="page"] { color: #4a3b28; }
+      .category-hero { position: relative; overflow: hidden; padding: clamp(26px, 5vw, 50px); border-radius: 22px; color: #fff; background: linear-gradient(128deg, #241d17 0%, #3a2c20 55%, #4d3a29 100%); }
+      .category-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0; background:
+        linear-gradient(123deg, transparent 58%, rgba(138,90,44,.6) 58%, rgba(138,90,44,.6) 62%, transparent 62%),
+        linear-gradient(123deg, transparent 64%, rgba(226,220,210,.12) 64%, rgba(226,220,210,.12) 82%, transparent 82%); }
+      .category-hero::after { content: ""; position: absolute; right: 5%; bottom: -62px; width: 265px; height: 265px; border: 27px solid rgba(255,255,255,.08); border-radius: 50%; }
+      .category-hero__body { position: relative; z-index: 1; max-width: 780px; }
+      .category-hero .eyebrow { color: #e8d3b4; }
+      .category-hero h1 { max-width: 720px; margin-bottom: 13px; }
+      .category-hero p { max-width: 690px; margin-bottom: 24px; color: #ece2d3; font-size: 17px; }
+      .series-subtitle { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; margin: 0 0 17px; padding: 7px 13px; border: 1px solid rgba(214, 190, 150, .40); border-radius: 999px; color: #e7dcc9; background: rgba(40, 30, 20, .28); font-size: 13px; font-weight: 750; }
+      .series-subtitle.is-active { border-color: #fff; color: #5c3c1c; background: #fff; }
+      .hero-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; max-width: 780px; }
+      .hero-fact { min-height: 78px; padding: 13px 15px; border: 1px solid rgba(214, 190, 150, .30); border-radius: 12px; background: rgba(40, 30, 20, .22); }
+      .hero-fact strong { display: block; margin-bottom: 3px; font-size: 14px; }
+      .hero-fact span { display: block; color: #d9ccb6; font-size: 12px; line-height: 1.35; }
+      .prototype-note { margin-top: 14px; padding: 11px 14px; border: 1px solid #e4d5c0; border-radius: 10px; color: #5c4632; background: #f7f0e5; font-size: 13px; }
+      .prototype-note strong { color: #5c3f20; }
+
+      .series-panel { margin-top: 28px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 3px 11px rgba(30, 48, 80, .025); }
+      .series-panel__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 18px; margin-bottom: 15px; }
+      .series-panel__head h2 { margin: 0; font-size: 22px; }
+      .series-panel__head p { max-width: 620px; margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+      .compare-table-wrap { max-width: 100%; overflow-x: auto; }
+      .series-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+      .series-table th, .series-table td { padding: 9px 7px; border-top: 1px solid #e8edf2; text-align: left; }
+      .series-table th { color: #8a7d69; font-size: 11px; text-transform: uppercase; }
+      .series-table .button { min-height: 34px; padding: 0 10px; font-size: 12px; }
+      .series-table tr.is-highlighted td { background: #f6efe4; box-shadow: inset 3px 0 0 var(--brand); }
+      .series-table tr.is-highlighted td:first-child { color: var(--brand-dark); font-weight: 800; }
+      .fixture-note { margin: 16px 0 0; color: #7c6f5c; font-size: 12px; line-height: 1.45; }
+
+      .lead-strip { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; margin-top: 26px; padding: 22px 24px; border: 1px solid #e4d3b8; border-radius: var(--radius); background: #f8f1e6; }
+      .lead-strip h2 { margin: 0 0 6px; font-size: 22px; }
+      .lead-strip p { max-width: 640px; margin: 0; color: #5c4632; font-size: 14px; }
+
+      .internal-links { margin-top: 48px; }
+      .internal-links h2 { margin-bottom: 6px; }
+      .internal-links > p { max-width: 720px; color: var(--muted); font-size: 13px; }
+      .link-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+      .link-card { display: block; padding: 16px 17px; border: 1px solid var(--line); border-radius: 12px; background: #fff; transition: .16s ease; }
+      .link-card:hover { border-color: #dcc7a6; box-shadow: var(--shadow); }
+      .link-card strong { display: block; margin-bottom: 4px; color: #2c2016; }
+      .link-card span { color: var(--muted); font-size: 13px; }
+
+      .quote-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, .82fr); gap: 35px; margin-top: 48px; padding: clamp(25px, 4vw, 42px); border-radius: 22px; color: #fff; background: #2c231b; }
+      .quote-section .eyebrow { color: #e6cfa6; }
+      .quote-section h2 { margin-bottom: 13px; }
+      .quote-section p { max-width: 620px; color: #e7dcc9; }
+      .quote-points { display: grid; gap: 11px; margin-top: 23px; }
+      .quote-point { display: flex; align-items: flex-start; gap: 9px; color: #e7dcc9; }
+      .quote-point svg { flex: 0 0 auto; width: 20px; height: 20px; color: #c79a5e; }
+      .route-note { margin-top: 20px; padding: 10px 12px; border: 1px dashed rgba(214, 190, 150, .45); border-radius: 9px; color: #d9ccb6; font-size: 12px; line-height: 1.45; }
+      .quote-form { padding: 20px; border-radius: 15px; color: var(--ink); background: #fff; }
+      .quote-form h3 { margin-bottom: 5px; }
+      .quote-form__intro { margin-bottom: 16px; color: var(--muted); font-size: 13px; }
+      .field { display: grid; gap: 5px; margin-bottom: 12px; }
+      .field label { color: #463726; font-size: 12px; font-weight: 800; }
+      .field input, .field select, .field textarea { width: 100%; min-height: 42px; padding: 0 11px; border: 1px solid #cbd6e3; border-radius: 8px; outline: 0; color: var(--ink); background: #fff; }
+      .field textarea { min-height: 86px; padding-top: 10px; resize: vertical; }
+      .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(138,90,44,.15); }
+      .form-consent { margin: 10px 0 14px; color: #718198; font-size: 11px; line-height: 1.42; }
+      .form-message { display: none; margin-top: 12px; padding: 10px; border-radius: 8px; color: var(--green); background: #eaf8ef; font-size: 13px; font-weight: 700; }
+      .form-message.is-visible { display: block; }
+
+      .faq { margin-top: 48px; }
+      .faq h2 { margin-bottom: 19px; }
+      .faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      details { padding: 17px 18px; border: 1px solid var(--line); border-radius: 11px; background: #fff; }
+      summary { position: relative; padding-right: 25px; color: #33261a; cursor: pointer; font-weight: 800; list-style: none; }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { content: "+"; position: absolute; top: -4px; right: 0; color: var(--brand); font-size: 22px; font-weight: 400; }
+      details[open] summary::after { content: "–"; }
+      details p { margin: 12px 0 0; color: #6a5a46; font-size: 14px; }
+
+      footer { border-top: 1px solid var(--line); background: #fff; }
+      .footer__inner { display: grid; grid-template-columns: 1.1fr repeat(3, 1fr); gap: 25px; padding: 35px 0 27px; }
+      .footer__title { margin-bottom: 9px; color: #33261a; font-size: 13px; font-weight: 850; }
+      .footer__text, .footer a { display: block; margin-bottom: 6px; color: #7c6f5c; font-size: 13px; }
+      .footer__prototype { padding-top: 14px; border-top: 1px solid #ebeff4; color: #7c8ba0; font-size: 12px; }
+
+      .quote-dock { position: fixed; right: 0; bottom: 0; left: 0; z-index: 20; display: none; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(12px); box-shadow: 0 -8px 24px rgba(28, 50, 84, 0.09); }
+      .quote-dock__meta { min-width: 0; }
+      .quote-dock__count { display: block; color: var(--ink); font-size: 13px; font-weight: 800; }
+      .quote-dock__note { display: block; color: var(--muted); font-size: 11px; }
+      .quote-dock .button { flex: 0 0 auto; }
+
+      @media (max-width: 1120px) {
+        .contact__caption { display: none; }
+      }
+      @media (max-width: 820px) {
+        .container { width: min(100% - 32px, 680px); }
+        .topline__inner { min-height: 35px; }
+        .topline__inner > :last-child { display: none; }
+        .header__main { min-height: 63px; }
+        .brand { font-size: 19px; }
+        .brand__mark { width: 31px; height: 31px; }
+        .brand__logo { height: 40px; }
+        .search, .nav, .contact { display: none; }
+        .header .button { min-height: 38px; padding: 0 11px; font-size: 13px; }
+        main { padding-top: 20px; }
+        body { padding-bottom: 74px; }
+        .quote-dock { display: flex; }
+        .hero-facts { grid-template-columns: 1fr; }
+        .series-panel__head { display: block; }
+        .series-panel__head .button--secondary { margin-top: 12px; }
+        .lead-strip { grid-template-columns: 1fr; }
+        .link-grid { grid-template-columns: 1fr; }
+        .quote-section { grid-template-columns: 1fr; gap: 22px; }
+        .faq-grid { grid-template-columns: 1fr; }
+        .footer__inner { grid-template-columns: 1fr 1fr; }
+      }
+      @media (max-width: 520px) {
+        .container { width: min(100% - 24px, 680px); }
+        .site-selector__label { display: none; }
+        .category-hero { padding: 24px 19px; border-radius: 16px; }
+        .category-hero p { font-size: 15px; }
+        .series-panel, .lead-strip { padding: 18px; }
+        .series-table { min-width: 400px; }
+        .footer__inner { grid-template-columns: 1fr; gap: 17px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topline">
+      <div class="container topline__inner">
+        <div class="site-selector" aria-label="Рынок и язык">
+          <span class="site-selector__label">Рынок:</span>
+          <button class="link-button" type="button">Беларусь · Русский</button>
+          <span aria-hidden="true">·</span>
+          <button class="link-button" type="button" aria-disabled="true" title="Рынок готовится">Россия</button>
+          <button class="link-button" type="button" aria-disabled="true" title="Рынок готовится">Узбекистан</button>
+        </div>
+        <span>Оптовая продажа пром. аккумуляторов</span>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__main">
+        <a class="brand" href="rb-b2b-home.html" aria-label="microchips.by — прототип">
+          <img class="brand__logo" src="assets/logo-ar-final.png" alt="Аккумуляторные решения — microchips.by" />
+        </a>
+        <label class="search" data-search-indexing="noindex">
+          <span class="sr-only">Поиск по каталогу</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a7d69" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+          <input type="search" placeholder="Модель, ёмкость, применение…" />
+        </label>
+        <div class="contact">
+          <span class="contact__caption">пн–пт 9:00–18:00</span>
+          <a class="contact__value" href="tel:+375333477510">+375 (33) 347-75-10</a>
+          <a class="contact__caption" href="mailto:order@microchips.by">order@microchips.by</a>
+        </div>
+        <a class="button" href="#quote">Запросить КП</a>
+      </div>
+      <nav class="nav" aria-label="Основная навигация">
+        <div class="container nav__inner">
+          <a href="rb-b2b-home.html">Главная</a>
+          <a href="rb-b2b-catalog.html">Каталог</a>
+          <a href="#faq">Вопросы и ответы</a>
+          <a href="#quote">Запрос КП</a>
+          <span class="nav__spacer"></span>
+          <span class="nav__note">Визуальное ТЗ · не публичная страница</span>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" data-seo-canonical="self-on-published-route">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <span><a href="rb-b2b-home.html">Главная</a></span>
+          <span><a href="rb-b2b-catalog.html">Каталог</a></span>
+          <span>Источники бесперебойного питания</span>
+          <span aria-current="page">Серия Hiden Control HS20</span>
+        </nav>
+
+        <section class="category-hero" id="series" data-product-kind="ups" aria-labelledby="series-title">
+          <div class="category-hero__body">
+            <p class="eyebrow">Шаблон страницы серии · М3</p>
+            <h1 id="series-title">Серия Hiden Control HS20</h1>
+            <p class="series-subtitle" id="seriesSubtitle" aria-live="polite">Общая страница серии: модификация не выбрана</p>
+            <p>Серия источников бесперебойного питания Hiden Control HS20 объединяет модификации с почти одинаковыми названиями. Мощность, топология и комплектация каждой модификации требуют подтверждения: коды моделей не расшифровываются в технические параметры, а страница честно показывает статус данных вместо выдуманной спецификации.</p>
+            <div class="hero-facts" aria-label="Принципы шаблона серии">
+              <div class="hero-fact"><strong>Одна страница вместо дублей</strong><span>Серия заменяет N почти пустых страниц модификаций, а не строки листинга.</span></div>
+              <div class="hero-fact"><strong>Коды не расшифровываются</strong><span>HS20-3024P и HS20-1012P остаются кодами: мощность и напряжение из них не выводятся.</span></div>
+              <div class="hero-fact"><strong>Каждый пробел — лид</strong><span>Отсутствующие данные и модификации ведут в запрос КП, а не в тупик.</span></div>
+            </div>
+          </div>
+        </section>
+        <p class="prototype-note"><strong>Статус прототипа.</strong> Это самостоятельное HTML-визуальное ТЗ. Маршрут <code>/catalog/istochniki-pitaniya/ibp/hiden-control-hs20/</code> — плейсхолдер до утверждения URL-реестра. Цены, наличие, гарантия и артикулы намеренно показаны как требующие подтверждения.</p>
+
+        <section class="series-panel" aria-labelledby="modifications-title">
+          <div class="series-panel__head">
+            <div>
+              <p class="eyebrow">Модификации серии</p>
+              <h2 id="modifications-title">Таблица модификаций: код, статус данных, действие</h2>
+              <p>Обе модификации в источнике имеют статус <code>needs_review</code>. Параметры не публикуются, пока инженер не подтвердит их по документации — таблица не подменяет спецификацию догадками из кода модели.</p>
+            </div>
+            <button class="button button--secondary" id="highlightDemo" type="button" aria-pressed="false">Демо: переход по ссылке на HS20-1012P</button>
+          </div>
+          <div class="compare-table-wrap" tabindex="0" aria-label="Модификации серии Hiden Control HS20">
+            <table class="series-table">
+              <thead><tr><th>Код модификации</th><th>Статус данных</th><th>Действие</th></tr></thead>
+              <tbody>
+                <tr id="mod-hs20-3024p" data-modification="HS20-3024P"><td>HS20-3024P</td><td>Требует подтверждения</td><td><a class="button" href="#quote">Добавить в запрос</a></td></tr>
+                <tr id="mod-hs20-1012p" data-modification="HS20-1012P"><td>HS20-1012P</td><td>Требует подтверждения</td><td><a class="button" href="#quote">Добавить в запрос</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fixture-note">Состояние «переход по ссылке на конкретную модификацию»: строка выделяется акцентным фоном, а подпись под заголовком уточняет модификацию отдельным элементом — H1 страницы остаётся единственным и не дублируется.</p>
+          <p class="fixture-note">Примечание для реализации: исторические URL модификаций либо не публикуются, либо получают 301 на страницу серии с выделением соответствующей строки — одновременных индексируемых дублей не бывает; редирект на главную запрещён. Пара «не публиковать + точный 301/410» фиксируется в URL-реестре.</p>
+        </section>
+
+        <section class="lead-strip" aria-labelledby="missing-mod-title">
+          <div>
+            <p class="eyebrow">Нет нужной модификации?</p>
+            <h2 id="missing-mod-title">Опишите задачу — инженер проверит доступные варианты</h2>
+            <p>На странице показаны только модификации, присутствующие в источнике данных. Если требуемого кода нет в таблице, это не тупик: передайте модель, требуемую автономию и условия эксплуатации — подбор выполняется по запросу, без обещаний цены и срока.</p>
+          </div>
+          <a class="button" href="#quote">Запросить подбор</a>
+        </section>
+
+        <section class="internal-links" aria-labelledby="internal-links-title">
+          <p class="eyebrow">Связанные разделы</p>
+          <h2 id="internal-links-title">Куда ведёт страница серии</h2>
+          <p>Блок внутренних ссылок закладывает SEO-структуру: серия связана с категорией и шаблоном карточки товара, а не существует изолированно.</p>
+          <div class="link-grid">
+            <a class="link-card" href="rb-b2b-catalog.html"><strong>Категория: источники бесперебойного питания</strong><span>Листинг, где обе модификации серии остаются отдельными различимыми строками.</span></a>
+            <a class="link-card" href="rb-b2b-product.html"><strong>Карточка товара (шаблон)</strong><span>Полное и неполное состояния карточки: технические параметры прежде коммерческих.</span></a>
+            <a class="link-card" href="rb-b2b-home.html"><strong>Главная страница</strong><span>Категории каталога, сценарий «запрос → подбор инженером → КП» и блок доверия.</span></a>
+          </div>
+        </section>
+
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+          <p class="eyebrow">FAQ по сериям и модификациям</p>
+          <h2 id="faq-title">Вопросы о странице серии</h2>
+          <div class="faq-grid">
+            <details open><summary>Чем страница серии отличается от карточек модификаций?</summary><p>Серия объединяет почти одинаковые модификации на одной странице: общее описание, таблица кодов и статусов данных. В листинге категории модификации остаются отдельными строками, а в сравнении не схлопываются — серия заменяет отдельные страницы, а не позиции.</p></details>
+            <details><summary>Почему у модификаций не указаны мощность и топология?</summary><p>HS20-3024P и HS20-1012P — коды моделей, а не спецификация. Пока параметры не подтверждены инженером по документации, страница показывает честный статус «требует подтверждения» вместо расшифровки кода в характеристики.</p></details>
+            <details><summary>Что произойдёт со старыми ссылками на модификации?</summary><p>В реализации они либо не публикуются, либо получают 301-редирект на страницу серии с выделением нужной строки. Решение фиксируется в URL-реестре парой «страница + точный редирект»; редирект на главную запрещён.</p></details>
+          </div>
+        </section>
+
+        <section class="quote-section" id="quote" aria-labelledby="quote-title">
+          <div>
+            <p class="eyebrow">От кода модификации к технической задаче</p>
+            <h2 id="quote-title">Запросите КП по серии или конкретной модификации</h2>
+            <p>Заявка сохраняет рынок, язык, выбранные коды модификаций, страницу и UTM-метки. Менеджер уточняет мощность, топологию и комплектацию до подтверждения предложения — без публичных обещаний цены и срока.</p>
+            <div class="quote-points">
+              <div class="quote-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg><span>Не обещаем цену и срок, пока не проверены источник и условия поставки.</span></div>
+              <div class="quote-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg><span>Один запрос может содержать несколько модификаций серии и требования к автономии.</span></div>
+              <div class="quote-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg><span>Перед запуском форма связывается с локальным хранением лида и Bitrix24.</span></div>
+            </div>
+            <p class="route-note">Скрытое поле <code>page_url</code> заполнено адресом <code>https://microchips.by/catalog/istochniki-pitaniya/ibp/hiden-control-hs20/</code> — это плейсхолдер-маршрут до утверждения URL-реестра, показанный как пример абсолютного published-route.</p>
+          </div>
+          <form class="quote-form" id="quoteForm" data-lead-endpoint="/api/v1/leads/quote" data-prototype-submission="disabled" data-contact-rule="email-or-phone" novalidate>
+            <h3>Запросить техническое предложение</h3>
+            <p class="quote-form__intro">Визуальная форма повторяет контракт API. Макет не отправляет и не сохраняет персональные данные.</p>
+            <div class="field"><label for="company">Компания</label><input id="company" name="company" autocomplete="organization" placeholder="Например, ООО «Компания»" required /></div>
+            <div class="field"><label for="contact_name">Контактное лицо</label><input id="contact_name" name="contact_name" autocomplete="name" placeholder="Например, Алексей" required /></div>
+            <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.by" /></div>
+            <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__" /></div>
+            <div class="field"><label for="message">Комментарий или задача подбора</label><textarea id="message" name="message" autocomplete="off" placeholder="Модель ИБП, параметры замены или условия работы"></textarea></div>
+            <input type="hidden" name="site_key" value="microchips-by" />
+            <input type="hidden" name="locale" value="ru-BY" />
+            <input type="hidden" name="page_url" value="https://microchips.by/catalog/istochniki-pitaniya/ibp/hiden-control-hs20/" data-page-url="absolute-current-route" />
+            <input type="hidden" name="cart" value="[]" data-json="array" />
+            <input type="hidden" name="utm" value="{}" data-json="object" />
+            <p class="form-consent">В production клиентский mapper передаст JSON-поля <code>cart</code> и <code>utm</code>, а абсолютный URL будет сформирован из текущего published-route. Текст согласия и политика обработки персональных данных должны быть локально утверждены.</p>
+            <button class="button" type="submit">Проверить форму запроса</button>
+            <p class="form-message" id="formMessage" role="status">Макет не отправляет данные. В production заявка будет создана локально только после ответа API <code>201</code>.</p>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer__inner">
+        <div>
+          <div class="brand"><img class="brand__logo brand__logo--sm" src="assets/logo-ar-final.png" alt="Аккумуляторные решения — microchips.by" /></div>
+          <p class="footer__prototype">Прототип шаблона «страница серии» (М3) для согласования до реализации SSR-компонентов.</p>
+        </div>
+        <div><div class="footer__title">Каталог</div><a href="rb-b2b-catalog.html">Источники бесперебойного питания</a><a href="#series">Серия Hiden Control HS20</a><a href="#quote">Запрос КП</a></div>
+        <div><div class="footer__title">Экспертиза</div><a href="rb-b2b-home.html">Главная</a><a href="rb-b2b-product.html">Карточка товара</a><a href="#faq">Вопросы и ответы</a></div>
+        <div><div class="footer__title">ООО «Аккумуляторные решения» · реквизиты рабочие</div><span class="footer__text">220035, г. Минск, ул. Тимирязева, 65А, пом. 407</span><span class="footer__text">УНП 192766048</span><span class="footer__text">+375 (33) 347-75-10 · +375 (17) 396-23-02</span><span class="footer__text">order@microchips.by · пн–пт 9:00–18:00</span><span class="footer__text">р/с BY15 ALFA 3012 2190 5700 5027 0000, ЗАО «Альфа-Банк»</span><span class="footer__text">Реквизиты рабочие — финальная сверка перед запуском</span><span class="footer__text">Коммерческие правила — на проверке</span><span class="footer__text">Страница — не индексируется</span></div>
+      </div>
+    </footer>
+
+    <div class="quote-dock" aria-label="Быстрый запрос КП">
+      <div class="quote-dock__meta">
+        <span class="quote-dock__count">Запрос КП — без цены и сроков</span>
+        <span class="quote-dock__note">+375 (33) 347-75-10 · пн–пт 9:00–18:00</span>
+      </div>
+      <a class="button" href="#quote">Запросить КП</a>
+    </div>
+
+    <script>
+      const seriesSubtitle = document.getElementById('seriesSubtitle');
+      const highlightDemo = document.getElementById('highlightDemo');
+      const modificationRows = [...document.querySelectorAll('.series-table [data-modification]')];
+      let highlightedModification = null;
+
+      function applyModificationHighlight(code) {
+        highlightedModification = code;
+
+        modificationRows.forEach((row) => {
+          row.classList.toggle('is-highlighted', Boolean(code) && row.dataset.modification === code);
+        });
+
+        seriesSubtitle.textContent = code
+          ? 'Выбрана модификация ' + code + ' — данные требуют подтверждения'
+          : 'Общая страница серии: модификация не выбрана';
+        seriesSubtitle.classList.toggle('is-active', Boolean(code));
+
+        const isDemoState = code === 'HS20-1012P';
+        highlightDemo.textContent = isDemoState
+          ? 'Сбросить состояние перехода'
+          : 'Демо: переход по ссылке на HS20-1012P';
+        highlightDemo.setAttribute('aria-pressed', String(isDemoState));
+      }
+
+      highlightDemo?.addEventListener('click', () => {
+        applyModificationHighlight(highlightedModification === 'HS20-1012P' ? null : 'HS20-1012P');
+      });
+
+      // Deep-link: rb-b2b-series.html#mod-hs20-1012p (или #mod-hs20-3024p)
+      // активирует то же состояние выделения строки, что и демо-кнопка.
+      function applyModificationFromHash() {
+        const anchorId = decodeURIComponent(location.hash.slice(1)).toLowerCase();
+        const row = modificationRows.find((candidate) => candidate.id === anchorId);
+        if (row) {
+          applyModificationHighlight(row.dataset.modification);
+        }
+      }
+
+      applyModificationFromHash();
+      window.addEventListener('hashchange', applyModificationFromHash);
+
+      document.getElementById('quoteForm')?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const email = form.elements.namedItem('email');
+        const phone = form.elements.namedItem('phone');
+        const contactError = email.value || phone.value
+          ? ''
+          : 'Укажите e-mail или телефон.';
+
+        email.setCustomValidity(contactError);
+        phone.setCustomValidity(contactError);
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        document.getElementById('formMessage').classList.add('is-visible');
+      });
+    </script>
+  </body>
+</html>
