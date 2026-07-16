@@ -66,7 +66,8 @@ $typePrefixPattern = '^(?:Внешний\s+батарейный\s+блок|Мо�
 $twoWordBrandStarts = @('Hiden', 'Atlas', 'Keheng', 'General', 'Security', 'B.B.', 'Alarm')
 
 # Match key: uppercase, Cyrillic homoglyphs mapped to Latin, separators
-# dropped — used to group case/script variants and detect identity collisions.
+# dropped but the decimal point kept — used to group case/script variants and
+# detect identity collisions without conflating "1.2" and "12".
 $homoglyphs = @{
     [char]'А' = 'A'; [char]'В' = 'B'; [char]'Е' = 'E'; [char]'К' = 'K'
     [char]'М' = 'M'; [char]'Н' = 'H'; [char]'О' = 'O'; [char]'Р' = 'P'
@@ -76,6 +77,8 @@ $homoglyphs = @{
 function Get-IdentityMatchKey {
     param([string]$Brand, [string]$Mpn)
 
+    # Keep the decimal point significant: "FB 1.2-12" and "FB 12-12" are
+    # DIFFERENT products (1.2Ah vs 12Ah) and must not collapse to one key.
     $builder = [System.Text.StringBuilder]::new()
     foreach ($character in "$Brand $Mpn".ToUpperInvariant().ToCharArray()) {
         if ([char]::IsLetterOrDigit($character)) {
@@ -85,6 +88,9 @@ function Get-IdentityMatchKey {
             else {
                 [void]$builder.Append($character)
             }
+        }
+        elseif ($character -eq '.') {
+            [void]$builder.Append('.')
         }
     }
     return $builder.ToString()
