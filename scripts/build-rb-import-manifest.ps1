@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [string]$GeneratedDir = (Join-Path (Split-Path $PSScriptRoot -Parent) 'docs\audits\generated'),
     [string]$OutputDir = ''
@@ -59,6 +59,104 @@ function Get-ProposedCategory {
     return 'unmapped-review'
 }
 
+# Owner-approved rule (2026-07-16): the model code inside the source name is
+# the manufacturer identity CANDIDATE (brand + MPN). Candidates still require
+# supplier/1C confirmation before publication.
+$typePrefixPattern = '^(?:Внешний\s+батарейный\s+блок|Модуль\s+батарейный|Батарея\s+аккумуляторная|Источник\s+бесперебойного\s+питания|Аккумуляторная\s+батарея|Аккумулятор|ИБП)\s+(?:(?:для\s+)?ИБП\s+)?'
+$twoWordBrandStarts = @('Hiden', 'Atlas', 'Keheng', 'General', 'Security', 'B.B.', 'Alarm')
+
+# Match key: uppercase, Cyrillic homoglyphs mapped to Latin, separators
+# dropped — used to group case/script variants and detect identity collisions.
+$homoglyphs = @{
+    [char]'А' = 'A'; [char]'В' = 'B'; [char]'Е' = 'E'; [char]'К' = 'K'
+    [char]'М' = 'M'; [char]'Н' = 'H'; [char]'О' = 'O'; [char]'Р' = 'P'
+    [char]'С' = 'C'; [char]'Т' = 'T'; [char]'У' = 'Y'; [char]'Х' = 'X'
+}
+
+function Get-IdentityMatchKey {
+    param([string]$Brand, [string]$Mpn)
+
+    $builder = [System.Text.StringBuilder]::new()
+    foreach ($character in "$Brand $Mpn".ToUpperInvariant().ToCharArray()) {
+        if ([char]::IsLetterOrDigit($character)) {
+            if ($homoglyphs.ContainsKey($character)) {
+                [void]$builder.Append($homoglyphs[$character])
+            }
+            else {
+                [void]$builder.Append($character)
+            }
+        }
+    }
+    return $builder.ToString()
+}
+$specParenPattern = '(?i)(AGM|GEL|LiFePO4|Li-?ion|Li-?Pol|NiMH|NiCd|LTO|OPzV|OPzS|\d+\s*(mah|ah|а·ч|ач)|\d+(\.\d+)?\s*(v|в)\b)'
+
+function Get-IdentityCandidate {
+    param([string]$Name)
+
+    $working = $Name.Trim()
+    $working = ([regex]::Replace($working, $typePrefixPattern, '', 'IgnoreCase')).Trim()
+
+    $notes = [System.Collections.Generic.List[string]]::new()
+    $parenBrand = ''
+    foreach ($match in [regex]::Matches($working, '\(([^()]*)\)')) {
+        $inner = $match.Groups[1].Value.Trim()
+        if (-not [regex]::IsMatch($inner, $specParenPattern)) {
+            if ($inner -match '^[A-ZА-ЯЁ][A-ZА-ЯЁa-zа-яё\-]{1,14}$') {
+                $parenBrand = $inner
+            }
+            else {
+                $notes.Add($inner)
+            }
+        }
+    }
+    $working = ([regex]::Replace($working, '\([^()]*\)', ' ')).Trim()
+
+    # A trailing "для ИБП <Brand>" names the device vendor (e.g. APC battery
+    # packs) — keep it as the brand fallback before stripping the tail.
+    $tailBrand = ''
+    $tailMatch = [regex]::Match($working, '\s+для\s+ИБП\s+(?<vendor>[A-Za-zА-ЯЁа-яё][\w\-]*)\s*$')
+    if ($tailMatch.Success) {
+        $tailBrand = $tailMatch.Groups['vendor'].Value
+    }
+    $working = ([regex]::Replace($working, '\s+для\s+.+$', '')).Trim()
+    $working = ([regex]::Replace($working, '\s{2,}', ' '))
+
+    $tokens = @($working -split '\s+' | Where-Object { $_ })
+    $brand = ''
+    $modelTokens = $tokens
+    $firstIsBrandLike = $tokens.Count -gt 0 -and $tokens[0] -notmatch '\d' -and
+        $tokens[0].Length -ge 2 -and -not $tokens[0].EndsWith('-')
+    if ($firstIsBrandLike) {
+        $brandTokenCount = 1
+        if ($tokens.Count -ge 2 -and $twoWordBrandStarts -contains $tokens[0] -and $tokens[1] -notmatch '\d') {
+            $brandTokenCount = 2
+        }
+        $brand = ($tokens[0..($brandTokenCount - 1)] -join ' ')
+        $modelTokens = if ($tokens.Count -gt $brandTokenCount) { $tokens[$brandTokenCount..($tokens.Count - 1)] } else { @() }
+    }
+    if (-not $brand -and $parenBrand) { $brand = $parenBrand }
+    if (-not $brand -and $tailBrand) { $brand = $tailBrand }
+
+    $mpn = ($modelTokens -join ' ').Trim()
+    $status = if ($brand -and $mpn) {
+        'auto_from_name'
+    }
+    elseif ($mpn) {
+        'partial_no_brand'
+    }
+    else {
+        'needs_manual_review'
+    }
+
+    return [PSCustomObject]@{
+        Brand  = $brand
+        Mpn    = $mpn
+        Status = $status
+        Notes  = ($notes -join ' | ')
+    }
+}
+
 $quality = @{}
 foreach ($row in (Import-Csv -LiteralPath $qualityPath)) {
     $quality[$row.legacy_element_id] = $row
@@ -88,6 +186,8 @@ foreach ($product in $products) {
         'import_candidate_pending_identity'
     }
 
+    $identity = Get-IdentityCandidate -Name $product.name
+
     $focusRows.Add([PSCustomObject][ordered]@{
         legacy_element_id        = $product.legacy_element_id
         legacy_iblock_id         = $product.legacy_iblock_id
@@ -110,6 +210,12 @@ foreach ($product in $products) {
         series_hint_size         = 1
         proposed_shared_category = Get-ProposedCategory -FocusPath $focusPath
         proposed_disposition     = $disposition
+        brand_candidate          = $identity.Brand
+        mpn_candidate_from_name  = $identity.Mpn
+        identity_extraction      = $identity.Status
+        identity_match_key       = if ($identity.Mpn) { Get-IdentityMatchKey -Brand $identity.Brand -Mpn $identity.Mpn } else { '' }
+        identity_collision       = ''
+        name_extra_notes         = $identity.Notes
         supplier_or_1c_id        = ''
         sku                      = ''
         mpn                      = ''
@@ -119,6 +225,28 @@ foreach ($product in $products) {
         review_note              = ''
         review_status            = 'needs_review'
     })
+}
+
+# Identity collisions: rows sharing one match key are either true duplicates
+# or product variants (e.g. с/без электролита, AGM vs GEL) — reviewers must
+# split or merge them explicitly before import.
+$collisionGroups = @{}
+foreach ($row in $focusRows) {
+    if ($row.identity_match_key) {
+        if (-not $collisionGroups.ContainsKey($row.identity_match_key)) {
+            $collisionGroups[$row.identity_match_key] = [System.Collections.Generic.List[object]]::new()
+        }
+        $collisionGroups[$row.identity_match_key].Add($row)
+    }
+}
+$collisionGroupCount = 0
+foreach ($entry in $collisionGroups.GetEnumerator()) {
+    if ($entry.Value.Count -gt 1) {
+        $collisionGroupCount++
+        foreach ($row in $entry.Value) {
+            $row.identity_collision = "shared_key_x$($entry.Value.Count)"
+        }
+    }
 }
 
 # Series hints: names that only differ in digit runs are likely one model range.
@@ -167,6 +295,12 @@ $summary = [PSCustomObject][ordered]@{
     without_media_reference     = @($focusRows | Where-Object has_media_reference -eq 'false').Count
     series_hint_groups          = $seriesHintGroups
     rows_in_series_hints        = @($focusRows | Where-Object { $_.series_hint_size -gt 1 }).Count
+    identity_auto_from_name     = @($focusRows | Where-Object identity_extraction -eq 'auto_from_name').Count
+    identity_partial_no_brand   = @($focusRows | Where-Object identity_extraction -eq 'partial_no_brand').Count
+    identity_needs_manual       = @($focusRows | Where-Object identity_extraction -eq 'needs_manual_review').Count
+    distinct_brand_candidates   = @($focusRows | Where-Object brand_candidate | Select-Object -ExpandProperty brand_candidate -Unique).Count
+    identity_collision_groups   = $collisionGroupCount
+    identity_collision_rows     = @($focusRows | Where-Object identity_collision).Count
     by_proposed_category        = [PSCustomObject]([ordered]@{
         'akb-dlya-ibp'          = @($focusRows | Where-Object proposed_shared_category -eq 'akb-dlya-ibp').Count
         'ibp-ustroystva'        = @($focusRows | Where-Object proposed_shared_category -eq 'ibp-ustroystva').Count
