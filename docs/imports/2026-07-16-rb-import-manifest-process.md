@@ -93,6 +93,43 @@
 Достаточно начать с репрезентативной выборки 30–50 строк — этого хватит для
 первого staging-прогона импорта.
 
+## Конвертер в staging-CSV бэкенда (2026-07-17)
+
+Заполненный манифест превращается в CSV под контракт Laravel-команды
+`catalog:stage-1c` (`StageProductValidator`) скриптом:
+
+```powershell
+# Сухой прогон (файл не пишется, только сводка):
+./scripts/build-rb-staging-csv.ps1 -WhatIf
+# Реальный прогон (по умолчанию -> docs/audits/generated/rb-staging-1c.csv):
+./scripts/build-rb-staging-csv.ps1
+# Машинный гейт:
+./scripts/build-rb-staging-csv.ps1 -RunSelfTest
+```
+
+Выходные колонки: `external_id;name;sku;mpn;manufacturer;voltage;capacity;chemistry;slug`.
+Маппинг честный:
+
+- `external_id` ← `supplier_or_1c_id` (legacy XML_ID Bitrix НЕ подставляется);
+- `sku`/`mpn` ← подтверждённые бизнес-колонки (кандидаты из названия не текут);
+- `voltage`/`capacity`/`chemistry` ← `*_from_name` (явный текст названия, правило №2);
+- `manufacturer` пуст по умолчанию; с флагом `-IncludeBrandCandidate` бренд кладётся
+  только при `identity_extraction=auto_from_name` и без `identity_collision`;
+- цена/наличие НЕ выносятся — их нет в схеме валидатора (отдельный трек).
+
+Экспортируются только строки `final_disposition=import` с заполненными `external_id`
+и хотя бы одним идентификатором. Остальные попадают в сводку
+(`excluded_by_disposition` / `not_ready`), не выдумываются. На сыром драфте (бизнес
+ещё не заполнял) конвертер честно выдаёт 0 строк — это подтверждает блокер Gate 0
+сквозным прогоном.
+
+**Контрактная ловушка (закрыта):** выход пишется UTF-8 **без BOM** собственным
+сериализатором. `Export-Csv -Encoding UTF8` в PS 5.1 добавляет BOM и квотирует
+первый заголовок, из-за чего PHP `fgetcsv` получает `<BOM>"external_id"`,
+`normalizeHeader` снимает только BOM, и `external_id` не распознаётся у 100% строк —
+весь импорт молча падает на required-external_id. Проверено эмпирически `fgetcsv`
+PHP 8.5; регрессию ловит `-RunSelfTest` (проверка байтов файла).
+
 ## Гейт (неизменяемый)
 
 Публикация и автоматическое сопоставление общего каталога **заблокированы**,

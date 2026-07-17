@@ -42,6 +42,7 @@ git status --short
 | Extractor Bitrix (`scripts/extract-*.ps1`) | Dry-run гейт | `.\scripts\extract-bitrix-b2b-catalog-slice.ps1 -WhatIf` |
 | Manifest RB (1569 строк) | Встроенная сверка счётчиков | `.\scripts\build-rb-import-manifest.ps1` (падает при расхождении 1569/1445/124) |
 | Nomenclature audit (находки) | Адверсариальная проверка | Запустить `audit-rb-nomenclature.py`, прочитать findings CSV, проверить sample-строк вручную |
+| Staging-CSV конвертер (`scripts/build-rb-staging-csv.ps1`) | Встроенный self-test | `.\scripts\build-rb-staging-csv.ps1 -RunSelfTest` (маппинг, честность, отсутствие BOM в выходе) |
 
 **Обязательно перед Commit:**
 - Статические проверки должны пройти single-pass (не требуя переделок).
