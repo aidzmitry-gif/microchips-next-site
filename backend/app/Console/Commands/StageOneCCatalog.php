@@ -70,8 +70,12 @@ class StageOneCCatalog extends Command
                     continue;
                 }
 
-                $payload = array_combine($headers, array_pad($row, count($headers), null));
-                if ($payload === false) {
+                // array_pad only pads short rows; a row with MORE columns than the
+                // header stays longer, and on PHP 8 array_combine() throws instead of
+                // returning false. Guard the column-count mismatch explicitly so a
+                // ragged row is recorded invalid and the import continues.
+                $values = array_pad($row, count($headers), null);
+                if (count($values) !== count($headers)) {
                     StagedImportRecord::create([
                         'import_run_id' => $run->id,
                         'row_number' => $rowNumber,
@@ -84,6 +88,8 @@ class StageOneCCatalog extends Command
 
                     continue;
                 }
+
+                $payload = array_combine($headers, $values);
 
                 $validation = $this->validator->normalizeAndValidate($payload);
                 $externalId = $validation['data']['external_id'] ?? null;
