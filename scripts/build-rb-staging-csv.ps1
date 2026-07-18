@@ -38,11 +38,6 @@
 .PARAMETER Delimiter
     Разделитель выходного CSV. По умолчанию ';' (дефолт catalog:stage-1c).
 
-.PARAMETER IncludeBrandCandidate
-    Класть brand_candidate в колонку manufacturer. Выключено по умолчанию: бренд —
-    неподтверждённый кандидат. Даже при включении бренд кладётся ТОЛЬКО если
-    identity_extraction=auto_from_name и нет identity_collision.
-
 .PARAMETER WhatIf
     Только посчитать и напечатать сводку, файл не писать.
 
@@ -54,7 +49,6 @@ param(
     [string]$ManifestPath,
     [string]$OutFile,
     [string]$Delimiter = ';',
-    [switch]$IncludeBrandCandidate,
     [switch]$WhatIf,
     [switch]$RunSelfTest
 )
@@ -86,8 +80,7 @@ function Convert-ManifestRows {
         И реальный прогон, и self-test зовут именно эту функцию.
     #>
     param(
-        [object[]]$Rows,
-        [bool]$IncludeBrand
+        [object[]]$Rows
     )
 
     $output   = New-Object System.Collections.Generic.List[object]
@@ -126,23 +119,16 @@ function Convert-ManifestRows {
         $reviewStatus = (Get-Field $row 'review_status').ToLowerInvariant()
         if ($reviewStatus -eq 'approved') { $approved++ } else { $pending++ }
 
-        # Бренд — только при явном флаге И только если извлечение авто-достоверно
-        # и нет коллизии идентичности. Иначе колонка пуста (не показываем неподтверждённое).
-        $manufacturer = ''
-        if ($IncludeBrand) {
-            $extraction = (Get-Field $row 'identity_extraction').ToLowerInvariant()
-            $collision  = Get-Field $row 'identity_collision'
-            if ($extraction -eq 'auto_from_name' -and $collision -eq '') {
-                $manufacturer = Get-Field $row 'brand_candidate'
-            }
-        }
-
+        # manufacturer всегда пуст: подтверждённого источника бренда в манифесте нет.
+        # Класть эвристический brand_candidate = выдавать кандидата за подтверждённого
+        # производителя (Product.manufacturer не имеет пометки «кандидат») — нарушение
+        # правила честности. Заполнять только когда появится подтверждённая колонка бренда.
         $output.Add([pscustomobject][ordered]@{
             external_id  = $externalId
             name         = $name
             sku          = $sku
             mpn          = $mpn
-            manufacturer = $manufacturer
+            manufacturer = ''
             voltage      = Get-Field $row 'voltage_from_name'
             capacity     = Get-Field $row 'capacity_from_name'
             chemistry    = Get-Field $row 'technology_from_name'
@@ -269,8 +255,7 @@ function Invoke-SelfTest {
         & $mk @{ name = 'Brand collision'; final_disposition = 'import'; supplier_or_1c_id = '1C-107'; sku = 'SKU-7'; brand_candidate = 'BrandZ'; review_status = 'approved'; identity_extraction = 'auto_from_name'; identity_collision = 'shared_key_x2' }
     )
 
-    # Прогон БЕЗ бренда (дефолт).
-    $r = Convert-ManifestRows -Rows $rows -IncludeBrand $false
+    $r = Convert-ManifestRows -Rows $rows
 
     Assert-Eq $r.Output.Count 3 'emitted count'
     Assert-Eq $r.Report.EmittedApproved 2 'approved count'
@@ -286,21 +271,16 @@ function Invoke-SelfTest {
     Assert-Eq $first.mpn 'MPN-1' 'mpn maps'
     Assert-Eq $first.voltage '12V' 'voltage from name'
     Assert-Eq $first.chemistry 'AGM' 'chemistry from technology_from_name'
-    Assert-Eq $first.manufacturer '' 'manufacturer empty when brand candidate excluded'
     Assert-Eq $first.slug '' 'slug empty (backend derives)'
 
-    # Кандидат mpn НЕ должен утечь ни в один идентификатор.
+    # Честность: ни кандидат mpn не течёт в идентификаторы, ни эвристический бренд — в
+    # manufacturer. manufacturer всегда пуст (подтверждённого источника бренда нет).
     foreach ($o in $r.Output) {
         if ($o.mpn -eq 'CAND-SHOULD-NOT-LEAK' -or $o.sku -eq 'CAND-SHOULD-NOT-LEAK') {
             $failures.Add('mpn_candidate_from_name leaked into an identifier column')
         }
+        Assert-Eq $o.manufacturer '' 'manufacturer always empty (no heuristic brand leak)'
     }
-
-    # Прогон С брендом: авто-достоверный бренд кладётся, а коллизийный — нет.
-    $rb = Convert-ManifestRows -Rows $rows -IncludeBrand $true
-    Assert-Eq $rb.Output[0].manufacturer 'BrandX' 'brand mapped when auto_from_name and no collision'
-    Assert-Eq $rb.Output[2].manufacturer '' 'brand suppressed on identity_collision'
-    Assert-Eq $rb.Output[1].manufacturer '' 'brand suppressed when extraction not auto_from_name'
 
     # Сериализация: файл должен быть БЕЗ BOM, первый заголовок квотирован ("external_id").
     # Это ловит регрессию, из-за которой fgetcsv на бэкенде не распознавал external_id.
@@ -349,7 +329,7 @@ if (-not (Test-Path -LiteralPath $ManifestPath)) {
     exit 1
 }
 
-$rows = @(Import-Csv -LiteralPath $ManifestPath)
+$rows = @(Import-Csv -LiteralPath $ManifestPath -Encoding UTF8)
 
 # Гейт схемы/разделителя: манифест бизнес-редактируемый; если его пересохранили в Excel
 # с другим list-разделителем, Import-Csv схлопнет всё в одну колонку. Ловим это явно,
@@ -367,7 +347,7 @@ if ($rows.Count -gt 0) {
     }
 }
 
-$result = Convert-ManifestRows -Rows $rows -IncludeBrand ([bool]$IncludeBrandCandidate)
+$result = Convert-ManifestRows -Rows $rows
 
 $written = $false
 if (-not $WhatIf) {
