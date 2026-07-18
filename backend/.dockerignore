@@ -3,3 +3,7 @@ vendor
 storage/logs
 storage/framework
 tests
+# Сгенерированные кэши бутстрапа не копируем: локальный packages.php ссылается на
+# dev-пакеты (напр. Laravel Pail), которых нет в --no-dev образе → «Class not found».
+# Каталог остаётся (нужен для chown), Laravel пересоберёт кэш в рантайме.
+bootstrap/cache/*.php

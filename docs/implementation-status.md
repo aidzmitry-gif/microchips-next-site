@@ -1,6 +1,6 @@
 # Текущий статус реализации
 
-Дата фиксации: 2026-07-14. Обновлено: 2026-07-18 (конвертер staging CSV + E2E-тест, лист «Цены и наличие», аудит конвейера — проценты без изменений, см. ниже).
+Дата фиксации: 2026-07-14. Обновлено: 2026-07-18 (конвертер staging CSV + E2E-тест, лист «Цены и наличие», аудит конвейера; подтверждён полный Docker-контур Части 1 → готовность 38,25% → 40,05%).
 
 ## Доставлено и проверено
 
@@ -17,13 +17,13 @@
 - Добавлен конвертер `scripts/build-rb-staging-csv.ps1` (манифест → staging CSV для `catalog:stage-1c`): `external_id` берётся строго из `supplier_or_1c_id`, `sku`/`mpn` — только из подтверждённых колонок манифеста, кандидаты (`brand_candidate`, `mpn_candidate_from_name`) в `sku`/`mpn` не попадают ни при одном ветвлении. Добавлен E2E-тест `backend/tests/Feature/RbStagingConverterPipelineTest.php` (2 теста) на реальном байт-в-байт фикстурном выводе конвертера (`tests/Fixtures/rb-staging-1c.golden.csv`): проверяет отсутствие UTF-8 BOM, корректный quoted-заголовок `external_id`, приёмку `catalog:stage-1c` и то, что «отравленный» кандидат-сентинел не просачивается в staging. Прогнан локально зелёным (php с включёнными `pdo_sqlite`/`mbstring`): весь бэкенд-набор — 20 тестов/104 assertions, из них новый файл — 2 теста/15 assertions.
 - Добавлен лист «Цены и наличие» в `scripts/build-nomenclature-xlsx.py` (join с `docs/audits/generated/rb-import-manifest-draft.csv` по `legacy_element_id`): заголовок листа явно предупреждает «не живые данные, по состоянию на дату бэкапа Bitrix», пустые ячейки остаются пустыми (не подставляются). Открыт и проверен в этой сессии через `openpyxl.load_workbook`: лист присутствует, 91 строка (заголовки + 88 товаров), структура и предупреждение подтверждены.
 
-Проверки инженерного цикла: единый quality gate пройден локально и в GitHub Actions на `main` — PHP lint, Laravel Pint, PHPUnit (CI: 18 тестов/89 assertions; локально после +2 тестов конвертера — 20 тестов/104 assertions зелёные, CI-прогон для этой ветки ещё не запускался), Next.js production build и `docker compose config`. В частности, remote CI подтвердил тесты staging/review/publish для каталога. Локальный `seo:audit microchips-by --json` пройден: 1 индексируемый URL в sitemap, 0 блокирующих ошибок. Docker Desktop на рабочей машине в этой сессии запущен и отвечает: `docker compose config` прошёл валидацию, `docker compose build` стартовал без ошибок (пул базовых образов, первые build-стадии), но прогон был прерван по таймауту до завершения — полный build и PostgreSQL/Horizon integration-test (`docker compose up` + health checks) по-прежнему НЕ подтверждены.
+Проверки инженерного цикла: единый quality gate пройден локально и в GitHub Actions на `main` — PHP lint, Laravel Pint, PHPUnit (CI: 18 тестов/89 assertions; локально после +2 тестов конвертера — 20 тестов/104 assertions зелёные, CI-прогон для этой ветки ещё не запускался), Next.js production build и `docker compose config`. В частности, remote CI подтвердил тесты staging/review/publish для каталога. Локальный `seo:audit microchips-by --json` пройден: 1 индексируемый URL в sitemap, 0 блокирующих ошибок. Docker-контур подтверждён на рабочей машине (2026-07-18): `docker compose build` собирает все 6 образов, `docker compose up -d` поднимает стек (backend, worker, nginx, frontend + postgres/redis healthy), `php artisan migrate --force` создал 26 таблиц в PostgreSQL, Horizon-worker стабильно `running` (RestartCount=0, «Horizon is running»), backend роутит на Filament `/admin/login`. Для этого пришлось починить 5 реальных багов `backend/Dockerfile` (образ backend раньше не собирался вообще): `--ignore-platform-req` intl/pcntl для `composer install`; `--no-scripts` в `dump-autoload`; `libpq-dev`+`icu-dev` для `pdo_pgsql`/`intl`; убран `opcache` из ext-install (уже built-in); добавлен `phpredis` (нужен Horizon). Плюс `backend/.dockerignore` (не тащить stale `bootstrap/cache` с dev-пакетами) и `frontend/Dockerfile` (пути standalone в pnpm-монорепо). Остаётся неподтверждённым только развёрнутый staging/production (домен + внешняя доступность) и наполнение `sites`/каталога реальными данными.
 
 ## Честный прогресс
 
 | Часть | Вес | Подтверждённая готовность | Вклад |
 | --- | ---: | ---: | ---: |
-| 1. Multi-site foundation | 12% | 65% — функциональный каркас и tests/CI подтверждены; реальные staging/production ещё нет | 7,8% |
+| 1. Multi-site foundation | 12% | 80% — каркас, tests/CI и полный Docker-контур (build + up + Postgres-миграции + Horizon) подтверждены локально; остаётся развёрнутый staging/production | 9,6% |
 | 2. Source audit и SEO registry | 13% | 90% — есть повторяемый registry, regression tests/CI и live priority crawl; нет preview/staging для воспроизводимой cutover-проверки | 11,7% |
 | 3. Shared catalog и import core | 15% | 65% — подтверждены безопасный review/publish workflow и tests/CI; реальная 1С-выгрузка и воспроизводимый deploy ещё не подтверждены | 9,75% |
 | 4. Regional SEO/GEO | 10% | 90% — подтверждены release gate, sitemap-аудит и tests/CI; production crawl и локальный коммерческий контент не подтверждены | 9,0% |
@@ -31,7 +31,7 @@
 | 6. Россия | 15% | 0% | 0% |
 | 7. Узбекистан | 12% | 0% | 0% |
 | 8. Сайт 4 и operating standard | 8% | 0% | 0% |
-| **Итого** | **100%** |  | **38,25%** |
+| **Итого** | **100%** |  | **40,05%** |
 
 Формула: `Σ(вес части × verified readiness) / 100`. Частичный код не засчитывается как SEO-готовность: до заполнения всех критериев страны её готовность всегда `0%`.
 
