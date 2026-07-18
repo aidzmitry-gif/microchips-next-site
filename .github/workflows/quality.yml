@@ -26,7 +26,7 @@ jobs:
         uses: shivammathur/setup-php@bf6b4fbd49ca58e4608c9c89fba0b8d90bd2a39f # 2.35.5
         with:
           php-version: '8.5'
-          coverage: none
+          coverage: pcov
           extensions: ctype, curl, dom, fileinfo, intl, mbstring, openssl, pdo_pgsql, pgsql, pdo_sqlite, sqlite3, tokenizer, xml, xmlwriter, zip
 
       - name: Set up Node.js 24.14.1
@@ -49,3 +49,10 @@ jobs:
       - name: Run quality gate
         shell: pwsh
         run: ./scripts/quality-gate.ps1
+
+      # Line coverage is measured only in CI (local PHP has no pcov/xdebug). This
+      # step reports the % and writes clover XML; it does not yet hard-fail on a
+      # threshold — raise a minimum here once the baseline number is confirmed.
+      - name: Backend line coverage (pcov)
+        working-directory: backend
+        run: php vendor/bin/phpunit --coverage-text --coverage-clover=coverage.xml

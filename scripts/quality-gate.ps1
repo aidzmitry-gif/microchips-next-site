@@ -109,6 +109,16 @@ Invoke-CheckedCommand -Name 'PHPUnit' -Command {
     }
 }
 
+Invoke-CheckedCommand -Name 'Frontend tests (vitest)' -Command {
+    Push-Location $projectRoot
+    try {
+        & $pnpm --filter frontend test
+    }
+    finally {
+        Pop-Location
+    }
+}
+
 Invoke-CheckedCommand -Name 'Next.js production build' -Command {
     Push-Location $projectRoot
     try {
