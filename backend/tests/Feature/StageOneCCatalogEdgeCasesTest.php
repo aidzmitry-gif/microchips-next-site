@@ -6,7 +6,6 @@ use App\Domain\Imports\StageProductValidator;
 use App\Models\DuplicateConflict;
 use App\Models\ImportRun;
 use App\Models\Product;
-use App\Models\StagedImportRecord;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use RuntimeException;
 use Tests\TestCase;
