@@ -345,7 +345,7 @@ if ([string]::IsNullOrWhiteSpace($OutFile)) {
 }
 
 if (-not (Test-Path -LiteralPath $ManifestPath)) {
-    Write-Error ("Манифест не найден: {0}`nСгенерируйте его: .\scripts\build-rb-import-manifest.ps1" -f $ManifestPath)
+    Write-Error ("Манифест не найден: {0}`nСгенерируйте его: .\scripts\build-rb-import-manifest.ps1" -f $ManifestPath) -ErrorAction Continue
     exit 1
 }
 
@@ -362,7 +362,7 @@ if ($rows.Count -gt 0) {
             "В манифесте нет обязательных колонок: {0}.`n" -f ($missingColumns -join ', ') +
             "Похоже, сбит разделитель/схема CSV (ожидается запятая, как у генератора). " +
             "Проверьте, не пересохранён ли файл в Excel с другим list-разделителем."
-        )
+        ) -ErrorAction Continue
         exit 1
     }
 }
