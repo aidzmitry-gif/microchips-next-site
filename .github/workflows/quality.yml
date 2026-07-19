@@ -56,3 +56,11 @@ jobs:
       - name: Backend line coverage (pcov)
         working-directory: backend
         run: php vendor/bin/phpunit --coverage-text --coverage-clover=coverage.xml
+
+      # Prints the exact uncovered statement lines per file so real gaps can be
+      # targeted precisely (local PHP has no coverage driver to produce this).
+      - name: List uncovered statement lines
+        if: always()
+        working-directory: backend
+        run: |
+          php -r '$x=@simplexml_load_file("coverage.xml"); if(!$x){echo "no coverage.xml\n";exit;} $cwd=getcwd()."/"; foreach($x->project->file as $f){$n=str_replace($cwd,"",(string)$f["name"]); $u=[]; foreach($f->line as $l){ if((string)$l["type"]==="stmt" && (int)$l["count"]===0){$u[]=(int)$l["num"];} } if($u){echo $n.": ".implode(",",$u)."\n";} }'
