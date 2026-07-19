@@ -34,7 +34,7 @@ class AuditorErrorBranchesTest extends TestCase
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
         $page = $this->page($site, 'battery', true);
-        $url = $this->siteUrl($site, '/catalog/battery', 'page', $page->id, $site->default_locale);
+        $this->siteUrl($site, '/catalog/battery', 'page', $page->id, $site->default_locale);
         SiteSeo::create([
             'site_id' => $site->id,
             'locale' => $site->default_locale,
@@ -48,7 +48,6 @@ class AuditorErrorBranchesTest extends TestCase
 
         $this->assertFalse($report['passed']);
         $this->assertContains('SEO_CANONICAL_NOT_LOCAL_PATH', $this->issueCodes($report));
-        $this->assertSame($url->path, $url->path);
     }
 
     public function test_hreflang_duplicate_locale_from_the_same_source_is_blocked(): void

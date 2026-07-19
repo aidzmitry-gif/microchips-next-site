@@ -15,7 +15,7 @@ class SiteCatalogModelsTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_site_category_is_published_field_filters_which_categories_are_returned(): void
+    public function test_site_category_published_scope_only_returns_published_rows(): void
     {
         $site = $this->site();
         $visibleCategory = Category::create(['slug' => 'batteries', 'name' => 'Batteries', 'sort_order' => 1]);
@@ -36,7 +36,7 @@ class SiteCatalogModelsTest extends TestCase
             'is_published' => false,
         ]);
 
-        $published = SiteCategory::query()->where('site_id', $site->id)->where('is_published', true)->get();
+        $published = SiteCategory::query()->where('site_id', $site->id)->published()->get();
 
         $this->assertCount(1, $published);
         $this->assertSame($visible->id, $published->first()->id);

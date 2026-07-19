@@ -66,10 +66,13 @@ describe("POST /api/revalidate", () => {
     expect(revalidatePathMock).not.toHaveBeenCalled();
   });
 
-  it("returns 401 when NEXT_REVALIDATE_SECRET is not configured, even with a matching header", async () => {
+  it("returns 401 when NEXT_REVALIDATE_SECRET is not configured, even if the header matches the interpolated empty secret", async () => {
     delete process.env.NEXT_REVALIDATE_SECRET;
     const { POST } = await import("./route");
-    const request = makeRequest({ body: { paths: ["/foo"] }, authorization: `Bearer ${TEST_SECRET}` });
+    // With the secret unset, `Bearer ${secret}` interpolates to "Bearer undefined".
+    // Sending exactly that satisfies the equality check, so only the `!secret`
+    // guard can produce the 401 — this fails if that guard is ever removed.
+    const request = makeRequest({ body: { paths: ["/foo"] }, authorization: "Bearer undefined" });
 
     const response = await POST(request);
 
