@@ -314,6 +314,7 @@ class FilamentAdminResourcesTest extends TestCase
             ->fillForm([
                 'name' => 'Beta Battery',
                 'slug' => 'beta-battery',
+                'external_id' => 'manual-beta',
                 'sku' => 'BETA-02',
                 'status' => 'draft',
             ])

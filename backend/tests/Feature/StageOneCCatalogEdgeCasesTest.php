@@ -96,7 +96,7 @@ CSV, 'sku-collision.csv');
         $this->assertSame(1, $run->summary['duplicate_conflicts']);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('sku:gamma-01', $conflict->match_key);
+        $this->assertSame('sku:gamma01', $conflict->match_key);
         $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
 
         $this->assertDatabaseHas('staged_import_records', [

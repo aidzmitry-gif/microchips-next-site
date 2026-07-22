@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Domain\Imports\ProductIdentityConflict;
 use App\Domain\Imports\StagedProductPublisher;
 use App\Models\DuplicateConflict;
 use App\Models\ImportRun;
@@ -31,7 +32,7 @@ CSV, 'mpn-collision.csv');
         $this->assertSame(1, $run->summary['duplicate_conflicts']);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('mpn:mpn-100', $conflict->match_key);
+        $this->assertSame('mpn:mpn100', $conflict->match_key);
         $this->assertCount(2, $conflict->candidate_ids['staged_record_ids']);
         $this->assertSame([], $conflict->candidate_ids['product_ids']);
 
@@ -68,7 +69,7 @@ CSV, 'mpn-external-id-mismatch.csv');
         $this->assertSame('needs_review', $run->status);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('mpn:mpn-200', $conflict->match_key);
+        $this->assertSame('mpn:mpn200', $conflict->match_key);
         $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
 
         $this->assertDatabaseHas('staged_import_records', [
@@ -78,7 +79,26 @@ CSV, 'mpn-external-id-mismatch.csv');
         ]);
     }
 
-    public function test_publishing_a_known_external_id_updates_the_existing_product_and_reuses_the_existing_site_product(): void
+    public function test_a_punctuation_variant_of_an_existing_sku_is_reported_as_a_product_conflict(): void
+    {
+        $existing = Product::create([
+            'external_id' => '1c-other',
+            'sku' => 'DT-12012',
+            'slug' => 'delta-battery-existing',
+            'name' => 'Delta Battery (existing)',
+            'status' => 'active',
+        ]);
+
+        $file = $this->csvFile("external_id;name;sku\n1c-real;Delta Battery;DT 12012\n", 'sku-punctuation-variant.csv');
+
+        $this->artisan('catalog:stage-1c', ['file' => $file, '--delimiter' => ';'])->assertSuccessful();
+
+        $conflict = DuplicateConflict::query()->sole();
+        $this->assertSame('sku:dt12012', $conflict->match_key);
+        $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
+    }
+
+    public function test_publishing_a_known_external_id_updates_non_identity_data_and_reuses_the_existing_site_product(): void
     {
         $site = $this->site();
 
@@ -98,7 +118,7 @@ CSV, 'mpn-external-id-mismatch.csv');
             'availability' => 'in_stock',
         ]);
 
-        $record = $this->stagedRecordFor('1c-alpha', 'Alpha Battery (updated)', 'ALPHA-NEW');
+        $record = $this->stagedRecordFor('1c-alpha', 'Alpha Battery (updated)', 'ALPHA-OLD');
 
         $publisher = app(StagedProductPublisher::class);
         $publisher->review($record, null);
@@ -109,7 +129,7 @@ CSV, 'mpn-external-id-mismatch.csv');
         $this->assertDatabaseHas('products', [
             'id' => $product->id,
             'external_id' => '1c-alpha',
-            'sku' => 'ALPHA-NEW',
+            'sku' => 'ALPHA-OLD',
             'name' => 'Alpha Battery (updated)',
         ]);
 
@@ -126,7 +146,45 @@ CSV, 'mpn-external-id-mismatch.csv');
         $this->assertNotNull($snapshot['product_before']);
         $this->assertSame('ALPHA-OLD', $snapshot['product_before']['sku']);
         $this->assertSame('Alpha Battery (old name)', $snapshot['product_before']['name']);
-        $this->assertSame('ALPHA-NEW', $snapshot['product_after']['sku']);
+        $this->assertSame('ALPHA-OLD', $snapshot['product_after']['sku']);
+    }
+
+    public function test_publishing_cannot_change_the_identity_of_a_known_external_id(): void
+    {
+        $site = $this->site();
+        $product = Product::create([
+            'external_id' => '1c-alpha',
+            'sku' => 'ALPHA-OLD',
+            'slug' => 'alpha-battery',
+            'name' => 'Alpha Battery (old name)',
+            'status' => 'active',
+        ]);
+        $record = $this->stagedRecordFor('1c-alpha', 'Alpha Battery (updated)', 'ALPHA-NEW');
+
+        $publisher = app(StagedProductPublisher::class);
+        $publisher->review($record, null);
+
+        try {
+            $publisher->publishToSite($record, $site, null);
+            $this->fail('Expected an identity conflict when the existing external ID changes SKU.');
+        } catch (ProductIdentityConflict) {
+            // Expected: the staged row is preserved as a duplicate for explicit resolution.
+        }
+
+        $this->assertDatabaseHas('products', [
+            'id' => $product->id,
+            'sku' => 'ALPHA-OLD',
+            'name' => 'Alpha Battery (old name)',
+        ]);
+        $this->assertDatabaseHas('staged_import_records', [
+            'id' => $record->id,
+            'status' => 'duplicate',
+        ]);
+        $this->assertDatabaseHas('duplicate_conflicts', [
+            'import_run_id' => $record->import_run_id,
+            'match_key' => 'external_id:1calpha',
+            'status' => 'open',
+        ]);
     }
 
     private function stagedRecordFor(string $externalId, string $name, string $sku): StagedImportRecord

@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\DB;
 
 class StagedProductPublisher
 {
-    public function __construct(private readonly StageProductValidator $validator) {}
+    public function __construct(
+        private readonly StageProductValidator $validator,
+        private readonly ProductIdentityGuard $identityGuard,
+    ) {}
 
     public function review(StagedImportRecord $record, ?User $reviewer, ?string $note = null): StagedImportRecord
     {
@@ -34,7 +37,9 @@ class StagedProductPublisher
 
     public function publishToSite(StagedImportRecord $record, Site $site, ?User $publisher): StagedImportRecord
     {
-        $publishedRecord = DB::transaction(function () use ($record, $site, $publisher): ?StagedImportRecord {
+        $identityConflict = null;
+
+        $publishedRecord = DB::transaction(function () use ($record, $site, $publisher, &$identityConflict): ?StagedImportRecord {
             $record = StagedImportRecord::query()->lockForUpdate()->findOrFail($record->id);
             $this->assertCanBePublished($record);
 
@@ -52,13 +57,22 @@ class StagedProductPublisher
 
             /** @var array{external_id: string, sku?: string, mpn?: string, manufacturer?: string, name: string, slug: string, technical_attributes?: array<string, string>} $data */
             $data = $validation['data'];
-            $product = Product::query()->where('external_id', $data['external_id'])->first();
+            $product = $this->identityGuard->findByExternalId($data);
+
+            try {
+                $this->identityGuard->assertCanPersist($data, $product);
+            } catch (ProductIdentityConflict $conflict) {
+                $this->recordIdentityConflict($record, $conflict);
+                $identityConflict = $conflict;
+
+                return null;
+            }
+
             $productBefore = $product?->only(['external_id', 'sku', 'mpn', 'manufacturer', 'name', 'slug', 'technical_attributes', 'status']);
 
-            $product = Product::query()->updateOrCreate(
-                ['external_id' => $data['external_id']],
-                [...$data, 'status' => 'active'],
-            );
+            $product ??= new Product;
+            $product->fill([...$data, 'status' => 'active']);
+            $product->save();
 
             $conflictingSiteProduct = SiteProduct::query()
                 ->where('site_id', $site->id)
@@ -96,11 +110,38 @@ class StagedProductPublisher
             return $record->refresh();
         });
 
+        if ($identityConflict !== null) {
+            throw $identityConflict;
+        }
+
         if ($publishedRecord === null) {
             throw new DomainException('The staged record no longer passes validation. Review the errors before publishing.');
         }
 
         return $publishedRecord;
+    }
+
+    private function recordIdentityConflict(StagedImportRecord $record, ProductIdentityConflict $conflict): void
+    {
+        DuplicateConflict::query()->firstOrCreate(
+            [
+                'import_run_id' => $record->import_run_id,
+                'entity_type' => 'product',
+                'match_key' => $conflict->matchKey,
+                'status' => 'open',
+            ],
+            [
+                'candidate_ids' => [
+                    'staged_record_ids' => [$record->id],
+                    'product_ids' => $conflict->productIds,
+                ],
+            ],
+        );
+
+        $record->update([
+            'status' => 'duplicate',
+            'error' => "Duplicate conflict: {$conflict->matchKey}.",
+        ]);
     }
 
     private function assertCanBeReviewed(StagedImportRecord $record): void
