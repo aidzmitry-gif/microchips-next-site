@@ -166,4 +166,46 @@ describe("site-api", () => {
       expect(result).toEqual([]);
     });
   });
+
+  describe("fetchCatalogProducts", () => {
+    it("returns the site-scoped catalogue and sends pagination and search parameters", async () => {
+      const payload = {
+        data: [{ slug: "fiamm", name: "Fiamm", sku: null, mpn: null, availability: "on_request", price: null, currency: "BYN" }],
+        meta: { current_page: 2, last_page: 3, total: 25 },
+      };
+      const fetchMock = vi.fn().mockResolvedValue({ ok: true, json: async () => payload });
+      global.fetch = fetchMock;
+
+      const { fetchCatalogProducts } = await import("./site-api");
+      const result = await fetchCatalogProducts("microchips-by", { page: 2, perPage: 12, query: "AGM 120" });
+
+      expect(result).toEqual({ ...payload, available: true });
+      const calledUrl = fetchMock.mock.calls[0][0] as string;
+      expect(calledUrl).toContain("/sites/microchips-by/catalog/products?");
+      expect(calledUrl).toContain("page=2");
+      expect(calledUrl).toContain("per_page=12");
+      expect(calledUrl).toContain("q=AGM+120");
+    });
+
+    it("returns an unavailable empty catalogue on an API error", async () => {
+      global.fetch = vi.fn().mockResolvedValue({ ok: false });
+
+      const { fetchCatalogProducts } = await import("./site-api");
+      await expect(fetchCatalogProducts("microchips-by")).resolves.toEqual({
+        data: [],
+        meta: { current_page: 1, last_page: 1, total: 0 },
+        available: false,
+      });
+    });
+
+    it("returns an unavailable empty catalogue when fetch throws", async () => {
+      global.fetch = vi.fn().mockRejectedValue(new Error("network down"));
+
+      const { fetchCatalogProducts } = await import("./site-api");
+      const result = await fetchCatalogProducts("microchips-by");
+
+      expect(result.available).toBe(false);
+      expect(result.data).toEqual([]);
+    });
+  });
 });

@@ -2,12 +2,14 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 
 const resolveSitePathMock = vi.fn();
 const getCurrentHostMock = vi.fn();
+const fetchCatalogProductsMock = vi.fn();
 const redirectMock = vi.fn();
 const notFoundMock = vi.fn();
 
 vi.mock("@/lib/site-api", () => ({
   resolveSitePath: (...args: unknown[]) => resolveSitePathMock(...args),
   getCurrentHost: (...args: unknown[]) => getCurrentHostMock(...args),
+  fetchCatalogProducts: (...args: unknown[]) => fetchCatalogProductsMock(...args),
 }));
 
 vi.mock("next/navigation", () => ({
@@ -35,6 +37,7 @@ function makeParams(path?: string[]) {
 beforeEach(() => {
   resolveSitePathMock.mockReset();
   getCurrentHostMock.mockReset();
+  fetchCatalogProductsMock.mockReset();
   redirectMock.mockReset();
   notFoundMock.mockReset();
   getCurrentHostMock.mockResolvedValue("microchips.by");
@@ -208,5 +211,72 @@ describe("SitePage redirect/not_found branches", () => {
     // The component returns a React element tree for the Unavailable view.
     expect(result).toBeTruthy();
     expect(typeof result).toBe("object");
+  });
+});
+
+describe("SitePage category catalogue", () => {
+  it("fetches a site-scoped catalogue with normalized pagination and search", async () => {
+    resolveSitePathMock.mockResolvedValue({
+      kind: "category",
+      site,
+      path: "/catalog/ups",
+      category: { name: "UPS", slug: "ups" },
+      seo: {
+        title: "UPS category",
+        description: null,
+        canonicalPath: "/catalog/ups",
+        isIndexable: true,
+        hreflang: {},
+      },
+    });
+    fetchCatalogProductsMock.mockResolvedValue({
+      data: [],
+      meta: { current_page: 3, last_page: 3, total: 25 },
+      available: true,
+    });
+
+    const result = await SitePage({
+      ...makeParams(["catalog", "ups"]),
+      searchParams: Promise.resolve({ page: "3", q: "  Fiamm  " }),
+    });
+
+    expect(result).toBeTruthy();
+    expect(fetchCatalogProductsMock).toHaveBeenCalledWith("rb", {
+      page: 3,
+      perPage: 12,
+      query: "Fiamm",
+    });
+  });
+
+  it("falls back to page one for an invalid page value", async () => {
+    resolveSitePathMock.mockResolvedValue({
+      kind: "category",
+      site,
+      path: "/catalog/ups",
+      category: { name: "UPS", slug: "ups" },
+      seo: {
+        title: "UPS category",
+        description: null,
+        canonicalPath: "/catalog/ups",
+        isIndexable: true,
+        hreflang: {},
+      },
+    });
+    fetchCatalogProductsMock.mockResolvedValue({
+      data: [],
+      meta: { current_page: 1, last_page: 1, total: 0 },
+      available: true,
+    });
+
+    await SitePage({
+      ...makeParams(["catalog", "ups"]),
+      searchParams: Promise.resolve({ page: "-2" }),
+    });
+
+    expect(fetchCatalogProductsMock).toHaveBeenCalledWith("rb", {
+      page: 1,
+      perPage: 12,
+      query: "",
+    });
   });
 });

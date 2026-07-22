@@ -52,6 +52,27 @@ export type CategoryPayload = {
   seo: SeoPayload;
 };
 
+export type CatalogProduct = {
+  slug: string;
+  path?: string | null;
+  name: string;
+  sku: string | null;
+  mpn: string | null;
+  availability: string;
+  price: string | null;
+  currency: string;
+};
+
+export type CatalogPayload = {
+  data: CatalogProduct[];
+  meta: {
+    current_page: number;
+    last_page: number;
+    total: number;
+  };
+  available: boolean;
+};
+
 export type RedirectPayload = {
   kind: "redirect";
   site: SiteProfile;
@@ -100,6 +121,37 @@ export async function resolveSitePath(host: string, path: string): Promise<Resol
   }
 }
 
+export async function fetchCatalogProducts(
+  siteKey: string,
+  options: { page?: number; perPage?: number; query?: string } = {},
+): Promise<CatalogPayload> {
+  const params = new URLSearchParams({
+    page: String(options.page ?? 1),
+    per_page: String(options.perPage ?? 12),
+  });
+
+  if (options.query) {
+    params.set("q", options.query);
+  }
+
+  try {
+    const response = await fetch(
+      `${apiBaseUrl}/api/v1/sites/${encodeURIComponent(siteKey)}/catalog/products?${params.toString()}`,
+      { next: { revalidate: 300, tags: [`site:${siteKey}`, `catalog:${siteKey}`] } },
+    );
+
+    if (!response.ok) {
+      return emptyCatalog(false);
+    }
+
+    const payload = (await response.json()) as Omit<CatalogPayload, "available">;
+
+    return { ...payload, available: true };
+  } catch {
+    return emptyCatalog(false);
+  }
+}
+
 export async function fetchSitemap(host: string): Promise<Array<{ path: string; lastModified: string }>> {
   try {
     const response = await fetch(`${apiBaseUrl}/api/v1/sites/${encodeURIComponent(host)}/seo/sitemap`, {
@@ -124,5 +176,13 @@ function emptySite(domain: string): SiteProfile {
     defaultLocale: "ru",
     name: "Microchips",
     locales: [],
+  };
+}
+
+function emptyCatalog(available: boolean): CatalogPayload {
+  return {
+    data: [],
+    meta: { current_page: 1, last_page: 1, total: 0 },
+    available,
   };
 }
