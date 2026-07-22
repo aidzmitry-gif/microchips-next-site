@@ -1,6 +1,6 @@
 # Текущий статус реализации
 
-Дата фиксации: 2026-07-14.
+Дата фиксации: 2026-07-14. Обновлено: 2026-07-22 (полная выгрузка 1С 9 209 строк, очередь 109 связей Bitrix ↔ 1С, Filament-проверка и защита от перекрёстных дублей → готовность 40,05% → 43,8%).
 
 ## Доставлено и проверено
 
@@ -14,24 +14,33 @@
 - Добавлены read-only public SEO snapshot и migration regression gate. Они подтверждают priority URL-паттерны на старом сайте и блокируют цепочки 301, homepage fallback, cross-country URL/canonical и `remove` с HTTP 200.
 - Добавлены standalone HTML-визуальное ТЗ первой RB B2B-категории, статический SEO/lead gate и SSR/API-контракт переноса. Условия их использования и публикации определяет [политика допуска к публикации](standards/launch-policy.md).
 - Добавлен read-only B2B-срез резервной копии: 2 856 parent-кандидатов, из которых 1 569 входят в первый ИБП/резервный review-фокус с учётом всех section memberships. Guard обнаружил 12 активных SKU-offer записей в infoblock 28/67 и блокирует новый экспорт до reconciliation; отсутствие article/SKU/MPN у parent-строк не объявляется доказательством отсутствия идентичности во всём источнике.
+- Добавлен конвертер `scripts/build-rb-staging-csv.ps1` (манифест → staging CSV для `catalog:stage-1c`): `external_id` берётся строго из `supplier_or_1c_id`, `sku`/`mpn` — только из подтверждённых колонок манифеста, кандидаты (`brand_candidate`, `mpn_candidate_from_name`) в `sku`/`mpn` не попадают ни при одном ветвлении. Добавлен E2E-тест `backend/tests/Feature/RbStagingConverterPipelineTest.php` (2 теста) на реальном байт-в-байт фикстурном выводе конвертера (`tests/Fixtures/rb-staging-1c.golden.csv`): проверяет отсутствие UTF-8 BOM, корректный quoted-заголовок `external_id`, приёмку `catalog:stage-1c` и то, что «отравленный» кандидат-сентинел не просачивается в staging. Прогнан локально зелёным (php с включёнными `pdo_sqlite`/`mbstring`): весь бэкенд-набор — 20 тестов/104 assertions, из них новый файл — 2 теста/15 assertions.
+- Добавлен лист «Цены и наличие» в `scripts/build-nomenclature-xlsx.py` (join с `docs/audits/generated/rb-import-manifest-draft.csv` по `legacy_element_id`): заголовок листа явно предупреждает «не живые данные, по состоянию на дату бэкапа Bitrix», пустые ячейки остаются пустыми (не подставляются). Открыт и проверен в этой сессии через `openpyxl.load_workbook`: лист присутствует, 91 строка (заголовки + 88 товаров), структура и предупреждение подтверждены.
 
-Проверки инженерного цикла: единый quality gate пройден локально и в GitHub Actions на `main` — PHP lint, Laravel Pint, PHPUnit (18 тестов/89 assertions), Next.js production build и `docker compose config`. В частности, remote CI подтвердил тесты staging/review/publish для каталога. Локальный `seo:audit microchips-by --json` пройден: 1 индексируемый URL в sitemap, 0 блокирующих ошибок. Docker Desktop на рабочей машине не запущен, поэтому compose-build и PostgreSQL/Horizon integration-test ещё не подтверждены.
+Проверки инженерного цикла: единый quality gate пройден локально и в GitHub Actions — PHP lint, Laravel Pint, PHPUnit, frontend vitest, Next.js production build и `docker compose config`. Покрытие тестами резко поднято (2026-07-19): backend **143 теста / 492 assertions**, frontend **36 тестов** (vitest-инфраструктура добавлена с нуля), измеренный в CI **line-coverage 98.30%** (1390/1414, через pcov). Остаток непокрыт сознательно (недостижимые defensive-ветки под FK/контрактами + relation-boilerplate моделей). По пути найдено и починено 2 реальных бага: `StageOneCCatalog` ragged-row (array_combine ValueError на PHP 8 валил весь импорт) и `DuplicateConflictResource` (краш Filament-списка конфликтов). В частности, remote CI подтвердил тесты staging/review/publish для каталога. Локальный `seo:audit microchips-by --json` пройден: 1 индексируемый URL в sitemap, 0 блокирующих ошибок. Docker-контур подтверждён на рабочей машине (2026-07-18): `docker compose build` собирает все 6 образов, `docker compose up -d` поднимает стек (backend, worker, nginx, frontend + postgres/redis healthy), `php artisan migrate --force` создал 26 таблиц в PostgreSQL, Horizon-worker стабильно `running` (RestartCount=0, «Horizon is running»), backend роутит на Filament `/admin/login`. Для этого пришлось починить 5 реальных багов `backend/Dockerfile` (образ backend раньше не собирался вообще): `--ignore-platform-req` intl/pcntl для `composer install`; `--no-scripts` в `dump-autoload`; `libpq-dev`+`icu-dev` для `pdo_pgsql`/`intl`; убран `opcache` из ext-install (уже built-in); добавлен `phpredis` (нужен Horizon). Плюс `backend/.dockerignore` (не тащить stale `bootstrap/cache` с dev-пакетами) и `frontend/Dockerfile` (пути standalone в pnpm-монорепо). Остаётся неподтверждённым только развёрнутый staging/production (домен + внешняя доступность) и наполнение `sites`/каталога реальными данными.
 
 ## Честный прогресс
 
 | Часть | Вес | Подтверждённая готовность | Вклад |
 | --- | ---: | ---: | ---: |
-| 1. Multi-site foundation | 12% | 65% — функциональный каркас и tests/CI подтверждены; реальные staging/production ещё нет | 7,8% |
+| 1. Multi-site foundation | 12% | 80% — каркас, tests/CI и полный Docker-контур (build + up + Postgres-миграции + Horizon) подтверждены локально; остаётся развёрнутый staging/production | 9,6% |
 | 2. Source audit и SEO registry | 13% | 90% — есть повторяемый registry, regression tests/CI и live priority crawl; нет preview/staging для воспроизводимой cutover-проверки | 11,7% |
-| 3. Shared catalog и import core | 15% | 65% — подтверждены безопасный review/publish workflow и tests/CI; реальная 1С-выгрузка и воспроизводимый deploy ещё не подтверждены | 9,75% |
+| 3. Shared catalog и import core | 15% | 90% — подтверждены безопасный review/publish workflow, tests/CI, полная реальная выгрузка 1С (9 209 строк) и идемпотентная очередь 109 связей Bitrix ↔ 1С; воспроизводимый production-deploy и регламентный ночной обмен ещё не подтверждены | 13,5% |
 | 4. Regional SEO/GEO | 10% | 90% — подтверждены release gate, sitemap-аудит и tests/CI; production crawl и локальный коммерческий контент не подтверждены | 9,0% |
 | 5. Беларусь | 15% | 0% | 0% |
 | 6. Россия | 15% | 0% | 0% |
 | 7. Узбекистан | 12% | 0% | 0% |
 | 8. Сайт 4 и operating standard | 8% | 0% | 0% |
-| **Итого** | **100%** |  | **38,25%** |
+| **Итого** | **100%** |  | **43,8%** |
 
 Формула: `Σ(вес части × verified readiness) / 100`. Частичный код не засчитывается как SEO-готовность: до заполнения всех критериев страны её готовность всегда `0%`.
+
+## Находки аудита конвейера (2026-07-18) — исправлены
+
+Read-only аудит конвейера manifest → staging CSV → backend нашёл два дефекта; оба закрыты в этой сессии:
+
+- **CONFIRMED (утечка бренда) — исправлено.** Флаг `-IncludeBrandCandidate` мог писать неподтверждённый `brand_candidate` в `manufacturer` → `Product.manufacturer` без пометки «кандидат», делая эвристику неотличимой от подтверждённого производителя (запрещённый правилом честности сценарий). Флаг удалён целиком: `manufacturer` теперь всегда пуст (подтверждённого источника бренда в манифесте нет). Self-test проверяет инвариант «manufacturer всегда пуст» на всех выходных строках.
+- **PLAUSIBLE (кодировка) — исправлено.** `Import-Csv` манифеста получил явный `-Encoding UTF8` (как в родственном `scripts/build-legacy-url-decision-registry.ps1`) — снижает риск молчаливой порчи кириллицы при ре-сейве манифеста из Excel. Проверено, что реальный BOM-драфт по-прежнему читается корректно.
 
 ## Следующий объективный гейт — Gate 0
 

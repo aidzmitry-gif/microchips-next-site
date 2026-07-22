@@ -59,11 +59,85 @@ def _sev_fill(sev):
     }.get(sev, 'FFFFFF'))
 
 
-def build_xlsx(rows, out_path, focus_count=None):
-    """Write the two-sheet workbook to ``out_path``.
+PRICE_HEADERS = ['ID', 'Товар', 'Цена, BYN', 'В наличии', 'Статус цены', 'Источник цены']
+PRICE_WIDTHS = [8, 46, 14, 12, 16, 26]
+PRICE_WRAP_COLS = {2}
+
+
+def _load_manifest_price_rows(manifest_path):
+    """Read ``legacy_element_id`` -> price/stock fields from the RB import
+    manifest. Missing file/columns yield an empty dict — callers must not
+    invent data, only skip the sheet or leave cells blank."""
+    if not manifest_path or not os.path.exists(manifest_path):
+        return {}
+    with open(manifest_path, encoding='utf-8-sig', newline='') as f:
+        reader = csv.DictReader(f)
+        by_id = {}
+        for row in reader:
+            key = (row.get('legacy_element_id') or '').strip()
+            if not key:
+                continue
+            by_id[key] = row
+        return by_id
+
+
+def _add_prices_sheet(wb, price_rows_by_id, finding_ids, border, header_fill):
+    """Append the «Цены/наличие» sheet, joined by legacy_element_id against
+    the finding rows already in the workbook. Values come straight from the
+    RB import manifest (prices as of the Bitrix backup date, not live) —
+    empty manifest fields stay empty, never guessed."""
+    ws = wb.create_sheet('Цены и наличие')  # '/' is invalid in Excel sheet titles
+    ws.append(['Цены/наличие — по состоянию на дату бэкапа Bitrix, НЕ живые данные'])
+    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=len(PRICE_HEADERS))
+    ws['A1'].font = Font(name=FONT, bold=True, size=12, color='CC0000')
+    ws.append(['Источник: docs/audits/generated/rb-import-manifest-draft.csv '
+                '(price_byn, in_stock, price_status, price_source). '
+                'Пустая ячейка = данных нет, не выдумано.'])
+    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=len(PRICE_HEADERS))
+    ws['A2'].alignment = Alignment(wrap_text=True, vertical='top')
+    ws.row_dimensions[2].height = 30
+
+    head_row = 3
+    ws.append(PRICE_HEADERS)
+    for c in range(1, len(PRICE_HEADERS) + 1):
+        cell = ws.cell(row=head_row, column=c)
+        cell.font = Font(name=FONT, bold=True, color='FFFFFF', size=11)
+        cell.fill = header_fill
+        cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
+        cell.border = border
+
+    for element_id in sorted(finding_ids, key=lambda x: (len(x), x)):
+        src = price_rows_by_id.get(element_id, {})
+        ws.append([
+            element_id,
+            src.get('name', ''),
+            src.get('price_byn', ''),
+            src.get('in_stock', ''),
+            src.get('price_status', ''),
+            src.get('price_source', ''),
+        ])
+        rr = ws.max_row
+        for c in range(1, len(PRICE_HEADERS) + 1):
+            cell = ws.cell(row=rr, column=c)
+            cell.font = Font(name=FONT, size=10)
+            cell.alignment = Alignment(vertical='top', wrap_text=(c in PRICE_WRAP_COLS))
+            cell.border = border
+
+    for i, w in enumerate(PRICE_WIDTHS, 1):
+        ws.column_dimensions[get_column_letter(i)].width = w
+    ws.freeze_panes = f'A{head_row + 1}'
+    ws.auto_filter.ref = f'A{head_row}:{get_column_letter(len(PRICE_HEADERS))}{ws.max_row}'
+
+
+def build_xlsx(rows, out_path, focus_count=None, manifest_path=None):
+    """Write the workbook to ``out_path``.
 
     ``rows`` is a list of finding dicts (same shape as the findings CSV /
     the audit's in-memory findings). Returns ``(out_path, row_count)``.
+
+    ``manifest_path`` (optional), when it points at the RB import manifest
+    CSV, adds a «Цены/наличие» sheet joined by ``legacy_element_id`` against
+    the finding rows — prices as of the Bitrix backup date, not live.
     """
     rows = sorted(rows, key=lambda r: (SEV_ORDER.get(r['severity'], 9),
                                        r['error_class'], r['name']))
@@ -169,6 +243,12 @@ def build_xlsx(rows, out_path, focus_count=None):
     ws2.column_dimensions['B'].width = 14
     ws2.column_dimensions['C'].width = 12
 
+    # ---------------- Sheet 3: Цены/наличие ----------------
+    price_rows_by_id = _load_manifest_price_rows(manifest_path)
+    finding_ids = {r['legacy_element_id'] for r in rows if r.get('legacy_element_id')}
+    if finding_ids:
+        _add_prices_sheet(wb, price_rows_by_id, finding_ids, border, header_fill)
+
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     wb.save(out_path)
     return out_path, len(rows)
@@ -178,17 +258,18 @@ def _repo_paths():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     csv_path = os.path.join(root, 'docs', 'audits', 'generated', 'rb-nomenclature-findings.csv')
     out_path = os.path.join(root, 'docs', 'imports', 'microchips-nomenclature-fixes.xlsx')
-    return csv_path, out_path
+    manifest_path = os.path.join(root, 'docs', 'audits', 'generated', 'rb-import-manifest-draft.csv')
+    return csv_path, out_path, manifest_path
 
 
 def main():
-    csv_path, out_path = _repo_paths()
+    csv_path, out_path, manifest_path = _repo_paths()
     if not os.path.exists(csv_path):
         sys.exit(f'Missing findings CSV: {csv_path}. '
                  'Run scripts/audit-rb-nomenclature.py first.')
     with open(csv_path, encoding='utf-8-sig', newline='') as f:
         rows = list(csv.DictReader(f))
-    path, n = build_xlsx(rows, out_path)
+    path, n = build_xlsx(rows, out_path, manifest_path=manifest_path)
     print('saved', path, f'({n} rows)')
 
 

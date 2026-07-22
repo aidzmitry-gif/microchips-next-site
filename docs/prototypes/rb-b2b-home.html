@@ -75,11 +75,23 @@
       .button--quiet { border-color: var(--line); color: var(--ink); background: #fff; }
       .button--quiet:hover { color: var(--brand); border-color: #d8c3a0; background: var(--brand-soft); }
       .nav { border-top: 1px solid #eef2f7; }
-      .nav__inner { min-height: 46px; justify-content: flex-start; }
-      .nav a { color: #463726; font-size: 14px; font-weight: 700; }
-      .nav a:hover, .nav a[aria-current="page"] { color: var(--brand); }
-      .nav__spacer { flex: 1; }
-      .nav__note { color: var(--muted); font-size: 12px; }
+      .nav__inner { min-height: 46px; justify-content: flex-start; gap: 0; }
+      .nav a, .nav summary { color: #463726; font-size: 14px; font-weight: 700; }
+      .nav > .nav__inner > a, .nav > .nav__inner > details > summary { display: flex; min-height: 46px; align-items: center; padding: 0 15px; cursor: pointer; list-style: none; white-space: nowrap; }
+      .nav a:hover, .nav a[aria-current="page"], .nav details[open] > summary, .nav summary:hover { color: var(--brand); background: var(--brand-soft); }
+      .nav summary::-webkit-details-marker, .mobile-menu summary::-webkit-details-marker { display: none; }
+      .nav details { position: relative; }
+      .nav summary::after { content: "+"; margin-left: 8px; color: var(--brand); font-size: 17px; line-height: 1; }
+      .nav details[open] > summary::after { content: "−"; }
+      .nav__mega { position: absolute; top: calc(100% - 1px); left: 0; z-index: 20; display: grid; grid-template-columns: repeat(3, minmax(185px, 1fr)); gap: 16px; width: min(720px, calc(100vw - 48px)); padding: 18px; border: 1px solid var(--line); border-radius: 0 0 14px 14px; background: #fff; box-shadow: 0 18px 35px rgba(38, 28, 17, .14); }
+      .nav__mega section { min-width: 0; padding: 13px; border: 1px solid #eee4d7; border-radius: 10px; background: #fffdf9; }
+      .nav__mega strong { display: block; margin-bottom: 8px; color: #382916; font-size: 14px; }
+      .nav__mega a { display: block; padding: 6px 0; color: #6a5c4a; font-size: 13px; }
+      .nav__mega a:hover { background: transparent; color: var(--brand); }
+      .nav__dropdown { position: absolute; top: calc(100% - 1px); right: 0; z-index: 20; width: 238px; padding: 8px; border: 1px solid var(--line); border-radius: 0 0 12px 12px; background: #fff; box-shadow: 0 18px 35px rgba(38, 28, 17, .14); }
+      .nav__dropdown a { display: block; padding: 10px 11px; border-radius: 7px; font-size: 13px; }
+      .nav__dropdown a:hover { background: var(--brand-soft); }
+      .mobile-menu { display: none; }
 
       main { padding: 28px 0 64px; }
       .breadcrumbs { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 23px; color: var(--muted); font-size: 13px; }
@@ -186,6 +198,16 @@
         .brand__mark { width: 31px; height: 31px; }
         .brand__logo { height: 40px; }
         .search, .nav, .contact { display: none; }
+        .mobile-menu { display: block; border-top: 1px solid #eef2f7; }
+        .mobile-menu > summary { display: flex; min-height: 46px; align-items: center; justify-content: space-between; color: #463726; cursor: pointer; font-size: 14px; font-weight: 800; list-style: none; }
+        .mobile-menu > summary::after { content: "+"; color: var(--brand); font-size: 20px; }
+        .mobile-menu[open] > summary::after { content: "−"; }
+        .mobile-menu__panel { display: grid; gap: 2px; max-height: calc(100vh - 160px); overflow: auto; padding: 4px 0 15px; }
+        .mobile-menu__panel > a, .mobile-menu__panel summary { display: flex; min-height: 43px; align-items: center; justify-content: space-between; padding: 0 8px; border-bottom: 1px solid #eee8df; color: #463726; cursor: pointer; font-size: 14px; font-weight: 750; list-style: none; }
+        .mobile-menu__panel summary::after { content: "+"; color: var(--brand); font-size: 17px; }
+        .mobile-menu__panel details[open] > summary::after { content: "−"; }
+        .mobile-menu__catalog { display: grid; gap: 5px; padding: 7px 8px 10px 20px; }
+        .mobile-menu__catalog a { padding: 7px 0; color: #6a5c4a; font-size: 13px; }
         .header .button { min-height: 38px; padding: 0 11px; font-size: 13px; }
         main { padding-top: 20px; }
         .hero-facts { grid-template-columns: 1fr; }
@@ -245,13 +267,62 @@
       <nav class="nav" aria-label="Основная навигация">
         <div class="container nav__inner">
           <a href="#top" aria-current="page">Главная</a>
-          <a href="rb-b2b-catalog.html">Каталог</a>
-          <a href="#faq">Вопросы и ответы</a>
-          <a href="#quote">Запрос КП</a>
-          <span class="nav__spacer"></span>
-          <span class="nav__note">Визуальное ТЗ · не публичная страница</span>
+          <details>
+            <summary>Каталог</summary>
+            <div class="nav__mega">
+              <section>
+                <strong>Аккумуляторы для ИБП</strong>
+                <a href="rb-b2b-catalog.html#catalog">Все аккумуляторы для ИБП</a>
+                <a href="rb-b2b-catalog.html#catalog">AGM</a>
+                <a href="rb-b2b-catalog.html#catalog">GEL</a>
+                <a href="rb-b2b-catalog.html#catalog">OPzS</a>
+              </section>
+              <section>
+                <strong>Резервное питание</strong>
+                <a href="rb-b2b-catalog.html#catalog">Промышленные аккумуляторы</a>
+                <a href="#quote">Подбор по техническому заданию</a>
+              </section>
+              <section>
+                <strong>Источники питания</strong>
+                <a href="rb-b2b-catalog.html#catalog">Источники бесперебойного питания</a>
+                <a href="#quote">Комплексное решение</a>
+              </section>
+            </div>
+          </details>
+          <a href="#how">Решения</a>
+          <a href="#geo">Доставка и оплата</a>
+          <a href="#faq">Гарантия и документы</a>
+          <a href="#how">Услуги</a>
+          <details>
+            <summary>О компании</summary>
+            <div class="nav__dropdown">
+              <a href="#geo">О компании и реквизиты</a>
+              <a href="#faq">Вопросы и ответы</a>
+            </div>
+          </details>
+          <a href="#quote">Контакты</a>
         </div>
       </nav>
+      <details class="mobile-menu container">
+        <summary>Меню</summary>
+        <div class="mobile-menu__panel">
+          <details>
+            <summary>Каталог</summary>
+            <div class="mobile-menu__catalog">
+              <a href="rb-b2b-catalog.html#catalog">Аккумуляторы для ИБП</a>
+              <a href="rb-b2b-catalog.html#catalog">AGM · GEL · OPzS</a>
+              <a href="rb-b2b-catalog.html#catalog">Резервное питание</a>
+              <a href="rb-b2b-catalog.html#catalog">Источники бесперебойного питания</a>
+            </div>
+          </details>
+          <a href="#how">Решения</a>
+          <a href="#geo">Доставка и оплата</a>
+          <a href="#faq">Гарантия и документы</a>
+          <a href="#how">Услуги</a>
+          <a href="#geo">О компании</a>
+          <a href="#quote">Контакты</a>
+        </div>
+      </details>
     </header>
 
     <main id="top" data-seo-canonical="self-on-published-route">

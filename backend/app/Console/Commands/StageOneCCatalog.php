@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Domain\Imports\ProductIdentity;
 use App\Domain\Imports\StageProductValidator;
 use App\Models\DuplicateConflict;
 use App\Models\ImportRun;
@@ -70,8 +71,12 @@ class StageOneCCatalog extends Command
                     continue;
                 }
 
-                $payload = array_combine($headers, array_pad($row, count($headers), null));
-                if ($payload === false) {
+                // array_pad only pads short rows; a row with MORE columns than the
+                // header stays longer, and on PHP 8 array_combine() throws instead of
+                // returning false. Guard the column-count mismatch explicitly so a
+                // ragged row is recorded invalid and the import continues.
+                $values = array_pad($row, count($headers), null);
+                if (count($values) !== count($headers)) {
                     StagedImportRecord::create([
                         'import_run_id' => $run->id,
                         'row_number' => $rowNumber,
@@ -84,6 +89,8 @@ class StageOneCCatalog extends Command
 
                     continue;
                 }
+
+                $payload = array_combine($headers, $values);
 
                 $validation = $this->validator->normalizeAndValidate($payload);
                 $externalId = $validation['data']['external_id'] ?? null;
@@ -163,9 +170,11 @@ class StageOneCCatalog extends Command
     {
         $keys = [];
 
-        foreach (['external_id', 'sku', 'mpn'] as $field) {
-            if (filled($normalizedPayload[$field] ?? null)) {
-                $keys[] = $field.':'.mb_strtolower(trim((string) $normalizedPayload[$field]));
+        foreach (ProductIdentity::FIELDS as $field) {
+            $fingerprint = ProductIdentity::normalize($normalizedPayload[$field] ?? null);
+
+            if ($fingerprint !== null) {
+                $keys[] = $field.':'.$fingerprint;
             }
         }
 
@@ -188,11 +197,12 @@ class StageOneCCatalog extends Command
         }
 
         $record = StagedImportRecord::query()->find($stagedRecordIds[0]);
-        $externalId = $record?->normalized_payload['external_id'] ?? null;
+        $externalId = ProductIdentity::normalize($record?->normalized_payload['external_id'] ?? null);
+        $normalizedColumn = $field.'_normalized';
 
         return Product::query()
-            ->whereRaw('lower('.$field.') = ?', [$value])
-            ->when($externalId !== null, fn ($query) => $query->where(fn ($query) => $query->whereNull('external_id')->orWhere('external_id', '!=', $externalId)))
+            ->where($normalizedColumn, $value)
+            ->when($externalId !== null, fn ($query) => $query->where(fn ($query) => $query->whereNull('external_id_normalized')->orWhere('external_id_normalized', '!=', $externalId)))
             ->pluck('id')
             ->map(static fn (mixed $id): int => (int) $id)
             ->all();

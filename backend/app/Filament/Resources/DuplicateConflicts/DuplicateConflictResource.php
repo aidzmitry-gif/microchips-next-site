@@ -28,12 +28,16 @@ class DuplicateConflictResource extends Resource
             ->columns([
                 TextColumn::make('import_run_id')->label('Прогон')->sortable(),
                 TextColumn::make('match_key')->label('Ключ совпадения')->searchable(),
-                TextColumn::make('candidate_ids.staged_record_ids')
+                // Compute the whole cell as a string via state(): a dot-path to the
+                // candidate_ids array made Filament treat the state as a list and call
+                // formatStateUsing() once per scalar item (int), throwing a TypeError
+                // and crashing the list as soon as a conflict had any candidate id.
+                TextColumn::make('staged_record_ids')
                     ->label('Записи CSV')
-                    ->formatStateUsing(fn (?array $state): string => implode(', ', $state ?? [])),
-                TextColumn::make('candidate_ids.product_ids')
+                    ->state(fn (DuplicateConflict $record): string => implode(', ', $record->candidate_ids['staged_record_ids'] ?? [])),
+                TextColumn::make('product_ids')
                     ->label('Товары каталога')
-                    ->formatStateUsing(fn (?array $state): string => implode(', ', $state ?? [])),
+                    ->state(fn (DuplicateConflict $record): string => implode(', ', $record->candidate_ids['product_ids'] ?? [])),
                 TextColumn::make('status')->label('Статус')->badge(),
                 TextColumn::make('created_at')->label('Найден')->dateTime()->sortable(),
             ])

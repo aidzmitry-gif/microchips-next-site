@@ -141,7 +141,7 @@ final class SiteSeoReleaseAuditor
                 ->all(),
             'category' => SiteCategory::query()
                 ->where('site_id', $site->id)
-                ->where('is_published', true)
+                ->published()
                 ->whereIn('id', $idsFor('category'))
                 ->pluck('id')
                 ->all(),

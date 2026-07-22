@@ -26,7 +26,7 @@ jobs:
         uses: shivammathur/setup-php@bf6b4fbd49ca58e4608c9c89fba0b8d90bd2a39f # 2.35.5
         with:
           php-version: '8.5'
-          coverage: none
+          coverage: pcov
           extensions: ctype, curl, dom, fileinfo, intl, mbstring, openssl, pdo_pgsql, pgsql, pdo_sqlite, sqlite3, tokenizer, xml, xmlwriter, zip
 
       - name: Set up Node.js 24.14.1
@@ -49,3 +49,26 @@ jobs:
       - name: Run quality gate
         shell: pwsh
         run: ./scripts/quality-gate.ps1
+
+      # Line coverage is measured only in CI (local PHP has no pcov/xdebug). This
+      # step reports the % and writes clover XML.
+      - name: Backend line coverage (pcov)
+        working-directory: backend
+        run: php vendor/bin/phpunit --coverage-text --coverage-clover=coverage.xml
+
+      # Hard floor: fail the build if backend line coverage regresses below 95%.
+      # Baseline at introduction was 98.30% (1390/1414), so this leaves headroom
+      # for defensive/relation lines that are deliberately not covered while still
+      # catching a real drop. Raise the floor as coverage climbs.
+      - name: Enforce backend coverage floor (>=95% lines)
+        working-directory: backend
+        run: |
+          php -r '$floor=95.0; $x=@simplexml_load_file("coverage.xml"); if(!$x){fwrite(STDERR,"no coverage.xml\n");exit(1);} $m=$x->project->metrics; $s=(int)$m["statements"]; $c=(int)$m["coveredstatements"]; $p=$s? $c/$s*100:0; printf("Backend line coverage: %.2f%% (%d/%d), floor %.1f%%\n",$p,$c,$s,$floor); if($p+1e-9 < $floor){fwrite(STDERR,sprintf("FAIL: coverage %.2f%% is below floor %.1f%%\n",$p,$floor)); exit(1);} echo "OK: coverage floor satisfied\n";'
+
+      # Prints the exact uncovered statement lines per file so real gaps can be
+      # targeted precisely (local PHP has no coverage driver to produce this).
+      - name: List uncovered statement lines
+        if: always()
+        working-directory: backend
+        run: |
+          php -r '$x=@simplexml_load_file("coverage.xml"); if(!$x){echo "no coverage.xml\n";exit;} $cwd=getcwd()."/"; foreach($x->xpath("//file") as $f){$n=str_replace($cwd,"",(string)$f["name"]); $u=[]; foreach($f->line as $l){ if((string)$l["type"]==="stmt" && (int)$l["count"]===0){$u[]=(int)$l["num"];} } if($u){echo $n.": ".implode(",",$u)."\n";} }'

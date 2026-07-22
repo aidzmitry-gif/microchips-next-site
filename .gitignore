@@ -19,6 +19,10 @@ frontend/.next/
 frontend/node_modules/
 docs/audits/generated/
 
+# Generated nomenclature report (binary .xlsx; zip timestamps re-dirty it on
+# every audit run — regenerate via scripts/build-nomenclature-xlsx.py)
+docs/imports/microchips-nomenclature-fixes.xlsx
+
 # Python bytecode cache (audit/report scripts)
 __pycache__/
 *.pyc

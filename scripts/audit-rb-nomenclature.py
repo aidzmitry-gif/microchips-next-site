@@ -347,7 +347,7 @@ try:
     _spec = importlib.util.spec_from_file_location('build_nomenclature_xlsx', _builder)
     _mod = importlib.util.module_from_spec(_spec)
     _spec.loader.exec_module(_mod)  # raises ImportError if openpyxl is absent
-    _mod.build_xlsx(findings, xlsx_path, focus_count=len(focus))
+    _mod.build_xlsx(findings, xlsx_path, focus_count=len(focus), manifest_path=MANIFEST)
     print('xlsx:', xlsx_path)
 except ImportError:
     print('[warn] openpyxl not installed — skipped xlsx workbook; '

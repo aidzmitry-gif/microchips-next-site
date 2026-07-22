@@ -33,9 +33,10 @@ class ProductResource extends Resource
         return $schema->components([
             TextInput::make('name')->label('Наименование')->required()->maxLength(255),
             TextInput::make('slug')->required()->unique(ignoreRecord: true)->maxLength(255),
-            TextInput::make('sku')->label('Артикул')->maxLength(255),
-            TextInput::make('mpn')->label('MPN')->maxLength(255),
-            TextInput::make('manufacturer')->label('Производитель')->maxLength(255),
+            TextInput::make('external_id')->label('1C ID')->required()->maxLength(255)->disabledOn('edit'),
+            TextInput::make('sku')->label('Артикул')->requiredWithout('mpn')->maxLength(255)->disabledOn('edit'),
+            TextInput::make('mpn')->label('MPN')->requiredWithout('sku')->maxLength(255)->disabledOn('edit'),
+            TextInput::make('manufacturer')->label('Производитель')->maxLength(255)->disabledOn('edit'),
             Select::make('status')->options(['draft' => 'Черновик', 'active' => 'Активен', 'archived' => 'Архив'])->required()->default('draft'),
             Textarea::make('short_description')->label('Краткое описание')->columnSpanFull(),
             KeyValue::make('technical_attributes')->label('Технические характеристики')->columnSpanFull(),

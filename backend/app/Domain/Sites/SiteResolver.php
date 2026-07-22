@@ -141,7 +141,7 @@ class SiteResolver
         $category = SiteCategory::query()
             ->with('category')
             ->where('site_id', $site->id)
-            ->where('is_published', true)
+            ->published()
             ->find($url->target_id);
 
         if ($category === null || $category->category === null) {

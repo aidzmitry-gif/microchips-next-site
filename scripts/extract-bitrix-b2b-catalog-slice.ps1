@@ -1,4 +1,4 @@
-[CmdletBinding(SupportsShouldProcess = $true)]
+﻿[CmdletBinding(SupportsShouldProcess = $true)]
 param(
     [string]$SourceRoot = '',
     [string]$OutputDir = (Join-Path (Split-Path $PSScriptRoot -Parent) 'docs\audits\generated'),
@@ -481,7 +481,7 @@ function Test-PropertyKind {
 
     $text = "$($Property.property_code) $($Property.property_name)"
     switch ($Kind) {
-        'capacity' { return $text -match '(?i)\u0435\u043c\u043a\u043e\u0441\u0442|capacity|mah|\u043c\u0430\u0447' }
+        'capacity' { return $text -match '(?i)\u0435\u043c\u043a\u043e\u0441\u0442|\u0430\u043c\u043f\u0435\u0440|capacity|ampernost|mah|\u043c\u0430\u0447' }
         'voltage' { return $text -match '(?i)\u043d\u0430\u043f\u0440\u044f\u0436|voltage' }
         'technology' { return $text -match '(?i)\u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433|\u0445\u0438\u043c\u0438|chemistry|technology' }
         'identity' { return $text -match '(?i)\u0430\u0440\u0442\u0438\u043a\u0443\u043b|article|sku|mpn|\u043a\u043e\u0434.*\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434' }
@@ -503,6 +503,9 @@ function Invoke-SelfTest {
     Assert-Condition -Condition ($signals.capacity_from_name -eq '100Ah') -Message 'capacity signal must be extracted'
     Assert-Condition -Condition ($signals.voltage_from_name -eq '12V') -Message 'voltage signal must be extracted'
     Assert-Condition -Condition ($signals.technology_from_name -eq 'GEL') -Message 'technology signal must be extracted'
+
+    $amperageProperty = [PSCustomObject]@{ property_code = 'AMPERNOST_AH'; property_name = 'Амперность, Ач' }
+    Assert-Condition -Condition (Test-PropertyKind -Property $amperageProperty -Kind 'capacity') -Message 'amperage in Ah must be treated as capacity'
 
     $scanFirstLine = Get-MySqlStatementScanResult -Text "(1,'semicolon; remains inside text')," -InsideString $false -Escaped $false
     Assert-Condition -Condition ($scanFirstLine.terminator_index -eq -1) -Message 'a semicolon inside a quoted value must not terminate INSERT capture'

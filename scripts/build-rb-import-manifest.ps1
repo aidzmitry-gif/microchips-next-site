@@ -168,6 +168,54 @@ foreach ($row in (Import-Csv -LiteralPath $qualityPath)) {
     $quality[$row.legacy_element_id] = $row
 }
 
+# Prices come from the Bitrix backup snapshot (MINIMUM_PRICE == MAXIMUM_PRICE in
+# this catalog, i.e. a single price, in BYN). They are dated to the dump, not
+# live — refresh via a new export before publishing.
+$priceSnapshotDate = '2026-06-23'
+$priceValuesPath = Join-Path $GeneratedDir 'bitrix-b2b-catalog-property-values.csv'
+$priceInfo = @{}
+if (Test-Path -LiteralPath $priceValuesPath -PathType Leaf) {
+    foreach ($pv in (Import-Csv -LiteralPath $priceValuesPath)) {
+        if ($pv.property_code -ne 'MINIMUM_PRICE' -and $pv.property_code -ne 'IN_STOCK') {
+            continue
+        }
+        $value = ([string]$pv.source_value_display).Trim()
+        if ([string]::IsNullOrWhiteSpace($value)) {
+            continue
+        }
+        $eid = $pv.legacy_element_id
+        if (-not $priceInfo.ContainsKey($eid)) {
+            $priceInfo[$eid] = @{}
+        }
+        $priceInfo[$eid][$pv.property_code] = $value
+    }
+}
+
+function Get-PriceFields {
+    param([string]$ElementId)
+
+    $info = $priceInfo[$ElementId]
+    $raw = if ($info) { [string]$info['MINIMUM_PRICE'] } else { '' }
+    $stock = if ($info -and $info.ContainsKey('IN_STOCK')) { [string]$info['IN_STOCK'] } else { '' }
+
+    $priceValue = 0.0
+    $parsed = [double]::TryParse(($raw -replace ',', '.'),
+        [System.Globalization.NumberStyles]::Float,
+        [System.Globalization.CultureInfo]::InvariantCulture, [ref]$priceValue)
+
+    $status = if ([string]::IsNullOrWhiteSpace($raw)) { 'missing' }
+        elseif (-not $parsed -or $priceValue -le 0) { 'zero_or_invalid' }
+        else { 'ok' }
+
+    return [PSCustomObject]@{
+        # Invariant (dot decimal) string so Export-Csv does not localize it to a
+        # comma — downstream 1C/import expect a machine-parseable number.
+        Price   = if ($status -eq 'ok') { $priceValue.ToString([System.Globalization.CultureInfo]::InvariantCulture) } else { '' }
+        InStock = $stock
+        Status  = $status
+    }
+}
+
 $products = Import-Csv -LiteralPath $productsPath
 
 $focusRows = [System.Collections.Generic.List[object]]::new()
@@ -193,6 +241,7 @@ foreach ($product in $products) {
     }
 
     $identity = Get-IdentityCandidate -Name $product.name
+    $priceFields = Get-PriceFields -ElementId $product.legacy_element_id
 
     $focusRows.Add([PSCustomObject][ordered]@{
         legacy_element_id        = $product.legacy_element_id
@@ -212,6 +261,10 @@ foreach ($product in $products) {
         quality_issue_codes      = $issues
         duplicate_name_count     = $duplicateCount
         has_media_reference      = $hasMedia
+        price_byn                = $priceFields.Price
+        in_stock                 = $priceFields.InStock
+        price_status             = $priceFields.Status
+        price_source             = "bitrix_backup_$priceSnapshotDate"
         series_hint_key          = ''
         series_hint_size         = 1
         proposed_shared_category = Get-ProposedCategory -FocusPath $focusPath
@@ -307,6 +360,12 @@ $summary = [PSCustomObject][ordered]@{
     distinct_brand_candidates   = @($focusRows | Where-Object brand_candidate | Select-Object -ExpandProperty brand_candidate -Unique).Count
     identity_collision_groups   = $collisionGroupCount
     identity_collision_rows     = @($focusRows | Where-Object identity_collision).Count
+    price_source                = "bitrix_backup_$priceSnapshotDate"
+    price_ok                    = @($focusRows | Where-Object price_status -eq 'ok').Count
+    price_zero_or_invalid       = @($focusRows | Where-Object price_status -eq 'zero_or_invalid').Count
+    price_missing               = @($focusRows | Where-Object price_status -eq 'missing').Count
+    price_missing_on_active     = @($focusRows | Where-Object { $_.active -eq 'Y' -and $_.price_status -ne 'ok' }).Count
+    in_stock_yes                = @($focusRows | Where-Object in_stock -eq 'Y').Count
     by_proposed_category        = [PSCustomObject]([ordered]@{
         'akb-dlya-ibp'          = @($focusRows | Where-Object proposed_shared_category -eq 'akb-dlya-ibp').Count
         'ibp-ustroystva'        = @($focusRows | Where-Object proposed_shared_category -eq 'ibp-ustroystva').Count
