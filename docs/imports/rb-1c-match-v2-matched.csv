@@ -1,0 +1,597 @@
+﻿Bitrix ID,Название сайта,Бренд,1С-код,1С-Артикул,1С-Наименование,signature,brand_ok,confidence,method,1С-код(было Cursor),сравнение
+742,"Аккумулятор EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",CELLAGM5AH,yes,0.95,sig+brand,КА-00005195,agree
+754,"Аккумулятор CSB GP1272 F2 (AGM, 7Ah)",,КА-00001364,,"Аккумулятор CSB GP 1272 F2 (12V/7,2Ah) Китай",CSBGP1272F2,yes,0.95,sig+brand,КА-00001276,differ
+1191,"Аккумулятор Robiton VRLA4-3 (AGM, 3Ah)",,ФР-00000662,A3,"Аккумулятор ROBITON VRLA 4-3(4V 3Ah), страна изг-ль Китай, из России",ROBITONVRLA43,yes,0.6,sig+brand+generic,ФР-00000662,agree
+1398,"Аккумулятор Delta DTM 12008 (AGM, 0.8Ah)",,КА-00001149,О1.2.52.29.,Аккумуляторная батарея Delta DTM12008 05M4421 /Китай/,DELTADTM12008,yes,0.6,sig+brand+generic,КА-00001149,agree
+1400,"Аккумулятор Delta DT 401 (AGM, 1Ah)",,ФР-00002172,,Аккумуляторная батарея Delta DT 401,DELTADT401,yes,0.95,sig+brand,ФР-00002172,agree
+1401,"Аккумулятор Delta DT 12012 (AGM, 1.2Ah)",,ФР-00000005,DT12012,"Аккумуляторная батарея Delta DT12012 12В 1,2Ач  Страна ввоза: РФ, Страна изготовитель: Китай.",DELTADT12012,yes,0.95,sig+brand,ФР-00000005,agree
+1403,"Аккумулятор Delta DTM 12012 (AGM, 1.2Ah)",,КА-00002072,П2.1.52.29.,"Аккумуляторная батарея DTM 12012 Delta, WWQI8CH /Вьетнам/",DTM12012,yes,0.6,sig+brand+generic,КА-00002072,agree
+1404,"Аккумулятор Delta DTM 6012 (AGM, 1.2Ah)",,КА-00005764,,Аккумуляторная батарея DTM 6012 Delta,DTM6012,yes,0.95,sig+brand,КА-00005764,agree
+1409,"Аккумулятор Casil CA 1213 (AGM, 1.3Ah)",,КА-00003442,,АККУМУЛЯТОР CASIL CA1213 12V 1.3Ah,CASILCA1213,yes,0.95,sig+brand,КА-00003442,agree
+1412,"Аккумулятор MNB MS 1.3-12 F1 (AGM, 1.3Ah)",,ФР-00001351,,"Аккумулятор MHB MS 1.3-12, Китай",MS1312,no,0.85,sig,ФР-00001351,agree
+1415,"Аккумулятор Ventura GP 12-1.3 (AGM, 1.3Ah)",,КА-00002695,Р3.2.52.73.,"Аккумулятор Ventura GP 12-1.3, ВЬЕТНАМ",VENTURAGP121,yes,0.95,sig+brand,КА-00002695,agree
+1416,"Аккумулятор Ventura GP 6-1.3 (AGM, 1.3Ah)",4687,КА-00002376,О2.1.,Аккумулятор Ventura GP 6-4.5 (6V/4.5Ah),VENTURAGP6,no,0.6,sig+generic,,new
+1417,"Аккумулятор Delta DT 6015 (AGM, 1.5Ah)",,ФР-00000029,0001\А3,"Аккумуляторная батарея Delta DT 6015 6В, 1,5Ач Страна ввоза: РФ, Страна изготовитель: Гонконг.",DELTADT6015,yes,0.95,sig+brand,КА-00002041,differ
+1419,"Аккумулятор Delta DT 12100 (AGM, 100Ah)",,ФР-00000106,,Аккумуляторная батарея Delta DT 12100 12В 100Ач,DELTADT12100,yes,0.95,sig+brand,ФР-00000106,agree
+1420,"Аккумулятор Delta DTM 12100 L (AGM, 100Ah)",,КА-00002549,,"Аккумуляторная батарея Delta DTM 12100 L, страна происхождения товара Вьетнам, страна ввоза Россия",DELTADTM12100L,yes,0.95,sig+brand,КА-00003843,differ
+1421,"Аккумулятор Delta FTS 12-100X (AGM, 100Ah)",,КА-00006757,,Аккумуляторная батарея Delta FTS 12-100 X /Китай/,FTS12100X,yes,0.95,sig+brand,КА-00005119,differ
+1422,"Аккумулятор Delta HRL 12-100 (AGM, 100Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+1423,"Аккумулятор Delta HRL 12-470W (AGM, 100Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+1429,"Аккумулятор Fiamm 12FGL100 (AGM, 100Ah)",4634,КА-00007132,,Аккумулятор свинцово-кислотный Fiamm12FGL100 12V100AH /Китай/,FIAMM12FGL100,no,0.95,sig,КА-00007132,agree
+1430,"Аккумулятор Fiamm 6SLA100 (AGM, 100Ah)",,КА-00004114,,Аккумулятор Fiamm 6SLA100 /Китай/,FIAMM6SLA100,yes,0.95,sig+brand,КА-00004114,agree
+1436,"Аккумулятор Ventura FT 12-100 для ИБП (GEL, 100Ah)",,КА-00002967,,"Аккумулятор Ventura FT 12-100, Китай",VENTURAFT12100,yes,0.6,sig+brand+generic,КА-00002967,agree
+1437,"Аккумулятор Ventura GP 12-100 (AGM, 100Ah)",,КА-00001751,,"Аккумулятор Ventura GP 12-12 (12V12Ah),ВЬЕТНАМ",VENTURAGP12,yes,0.6,sig+brand+generic,КА-00000318,differ
+1438,"Аккумулятор Ventura GPL 12-100 (AGM, 100Ah)",,КА-00001368,,"Аккумулятор Ventura GPL 12-100 (12-100Ah), ВЬЕТНАМ",VENTURAGPL12100,yes,0.95,sig+brand,КА-00000023,differ
+1439,"Аккумулятор Ventura VG 12-100 для ИБП (GEL, 100Ah)",,КА-00005514,,Аккумулятор Ventura VG 12-100 /Китай/,VENTURAVG12100,yes,0.95,sig+brand,КА-00005514,agree
+1440,"Аккумулятор Delta FTS 12-105 (AGM, 105Ah)",,КА-00005743,,Аккумуляторная батарея Delta FTS 12-105 X /Китай/,DELTAFTS12105,yes,0.95,sig+brand,КА-00005743,agree
+1442,"Аккумулятор Delta CT 1210 (AGM, 10Ah)",,КА-00004144,,Аккумуляторная батарея Delta CT 1210.1,DELTACT1210,yes,0.95,sig+brand,КА-00004144,agree
+1443,"Аккумулятор Ventura HR 1251W (AGM, 10Ah)",4687,КА-00005708,,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",AGM10AH,no,0.85,sig,,new
+1446,"Аккумулятор Delta CT 1210.1 (AGM, 10Ah)",,КА-00004144,,Аккумуляторная батарея Delta CT 1210.1,DELTACT12101,yes,0.95,sig+brand,КА-00004144,agree
+1453,"Аккумулятор Delta CT 1205.1 (AGM, 5Ah)",4622,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+1454,"Аккумулятор Delta CT 1207.1 (AGM, 7Ah)",,ФР-00000859,,CT 1207 Delta Аккумуляторная батарея,CT1207,yes,0.95,sig+brand,ФР-00000859,agree
+1455,"Аккумулятор Delta CT 1207.2 (AGM, 7Ah)",,ФР-00000859,,CT 1207 Delta Аккумуляторная батарея,CT1207,yes,0.95,sig+brand,ФР-00000859,agree
+1457,"Аккумулятор Ventura GP 6-12 (AGM, 12Ah)",,КА-00003397,,Аккумуляторная батарея Ventura GP6-12/Китай,VENTURAGP612,yes,0.95,sig+brand,КА-00003397,agree
+1459,"Аккумулятор Delta DTM 12120 L (AGM, 120Ah)",,КА-00003648,,"Аккумуляторная батарея DTM 12120 l Delta, DUASI4X /Китай/",DTM12120L,yes,0.6,sig+brand+generic,КА-00000260,differ
+1460,"Аккумулятор Delta HRL 12-560W (AGM, 120Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+1466,"Аккумулятор Ventura GPL 12-120 (AGM, 120Ah)",,КА-00003294,,Аккумуляторная батарея Ventura GPL 12-120,VENTURAGPL12120,yes,0.95,sig+brand,КА-00003294,agree
+1467,"Аккумулятор Ventura GPL 12-120 для ИБП (GEL, 120Ah)",,КА-00003294,,Аккумуляторная батарея Ventura GPL 12-120,VENTURAGPL12120,yes,0.95,sig+brand,КА-00003294,agree
+1468,"Аккумулятор Delta FTS 12-125 (AGM, 125Ah)",,КА-00005119,,Аккумуляторная батарея DELTA FTS 12-180 (12A/180Аh),DELTAFTS12,yes,0.6,sig+brand+generic,КА-00005119,agree
+1469,"Аккумулятор Fiamm 6SLA125 (AGM, 125Ah)",,КА-00003889,,Аккумулятор свинцовый Fiamm 6SLA125/ Китай,FIAMM6SLA125,yes,0.95,sig+brand,КА-00003889,agree
+1471,"Аккумулятор Ventura FT 12-125 для ИБП (GEL, 125Ah)",,КА-00001864,,"Аккумулятор Ventura  FT12-50 (12V50Ah),Китай",VENTURAFT12,yes,0.6,sig+brand+generic,КА-00001864,agree
+1474,"Аккумулятор Delta CT 1212 (AGM, 12Ah)",4622,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+1475,"Аккумулятор Delta DT 1212 (AGM, 12Ah)",,ФР-00000243,DT1212,Аккумуляторная батарея Delta DT1212 12В 12Ач  Страна ввоза: РФ,DELTADT1212,yes,0.95,sig+brand,ФР-00000243,agree
+1476,"Аккумулятор Delta DT 612 (AGM, 12Ah)",,ФР-00000233,DT612,"Аккумуляторная батарея Delta DT 612 6В, 12Ач Страна ввоза: РФ.",DELTADT612,yes,0.95,sig+brand,ФР-00000233,agree
+1477,"Аккумулятор Delta DTM 1212 (AGM, 12Ah)",,КА-00002536,О2.3.52.29.,"Аккумуляторная батарея DTM 1212 Delta, RBNSECZ /Китай/",DTM1212,yes,0.6,sig+brand+generic,КА-00002536,agree
+1479,"Аккумулятор Delta HR 12-12 (AGM, 12Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR1212,yes,0.95,sig+brand,КА-00001615,agree
+1480,"Аккумулятор Delta HR 12-51W (AGM, 12Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+1481,"Аккумулятор Delta HR 6-12 (AGM, 12Ah)",,КА-00001895,,"Аккумуляторная батарея Delta HR 6-12 6В, 12Ач Страна ввоза: РФ.",DELTAHR612,yes,0.95,sig+brand,КА-00001895,agree
+1482,"Аккумулятор Delta HRL 12-12 (AGM, 12Ah)",,КА-00001251,,Аккумуляторная батарея Delta HRL 12-12 X /Вьетнам/,DELTAHRL1212,yes,0.6,sig+brand+generic,КА-00000259,differ
+1488,"Аккумулятор Fiamm FG21202 (AGM, 12Ah)",,ФР-00001439,,Аккумуляторная батарея FIAMM FG21202 12V/12Ah,FIAMMFG21202,yes,0.95,sig+brand,ФР-00001439,agree
+1489,"Аккумулятор MNB MS 12-12 F2 (AGM, 12Ah)",,ФР-00002278,,"Аккумулятор MHB MS 12-12, страна происхождения-Китай",MS1212,no,0.85,sig,ФР-00002278,agree
+1493,"Аккумулятор Ventura GP 12-12 (AGM, 12Ah)",,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",GP1212AGM,yes,0.95,sig+brand,КА-00001751,differ
+1496,"Аккумулятор Delta HRL 12-600W (AGM, 134Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+1498,"Аккумулятор Delta FTS 12-140 (AGM, 140Ah)",,КА-00005119,,Аккумуляторная батарея DELTA FTS 12-180 (12A/180Аh),DELTAFTS12,yes,0.6,sig+brand+generic,КА-00005119,agree
+1499,"Аккумулятор Delta HRL 12-140 (AGM, 140Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12140,yes,0.95,sig+brand,КА-00000423,agree
+1504,"Аккумулятор Delta DTM 12150 L (AGM, 150Ah)",,ФР-00002021,,"Аккумуляторная батарея Delta DTM 12150L 12В 150Ач, изг.Вьетнам, страна ввоза Россия",DELTADTM12150L,yes,0.95,sig+brand,ФР-00002021,agree
+1505,"Аккумулятор Delta FTS 12-150 (AGM, 150Ah)",,КА-00007126,,Аккумуляторная батарея Delta FTS 12-150 X,DELTAFTS12150,yes,0.95,sig+brand,КА-00007126,agree
+1506,"Аккумулятор Delta HRL 12-650W (AGM, 150Ah)",,КА-00004972,,Аккумулятор Ventura HRL 12650W,HRL12650W,yes,0.95,sig+brand,КА-00000259,differ
+1511,"Аккумулятор Fiamm 4SLA150 (AGM, 150Ah)",,КА-00003136,,Аккумуляторная батарея  4SLA150 4V/150Ah,4SLA150,yes,0.95,sig+brand,КА-00003136,agree
+1515,"Аккумулятор Ventura FT 12-150 для ИБП (GEL, 150Ah)",,КА-00005572,,Аккумулятор Ventura FT 12-150 (12V 150Ah)/Китай,VENTURAFT12150,yes,0.95,sig+brand,КА-00005572,agree
+1516,"Аккумулятор Ventura GPL 12-150 (AGM, 150Ah)",,КА-00003228,,Аккумуляторная батарея Ventura gpl 12-150/Китай,VENTURAGPL12150,yes,0.95,sig+brand,КА-00003228,agree
+1520,"Аккумулятор Delta DTM 1215 (AGM, 15Ah)",,КА-00001967,,Аккумулятор Delta DTM 1215,DELTADTM1215,yes,0.95,sig+brand,КА-00001967,agree
+1522,"Аккумулятор Ventura HRL 12650W (AGM, 160Ah)",,КА-00004972,,Аккумулятор Ventura HRL 12650W,VENTURAHRL12650W,yes,0.95,sig+brand,КА-00004972,agree
+1526,"Аккумулятор B.B. Battery BC 17-12 (AGM, 17Ah)",,КА-00001380,О2.3.52.18.,"Аккумулятор BB battery BC 17-12 B1 (12V/17Ah),КИТАЙ",BATTERYBC1712,yes,0.95,sig+brand,КА-00001380,agree
+1527,"Аккумулятор Delta DTM 1217 (AGM, 17Ah)",,ФР-00001089,,Аккумуляторная батарея Delta DTM1217 12В 17Ач Пр-во: Гонконг. Ввоз: РФ.,DELTADTM1217,yes,0.95,sig+brand,КА-00001792,differ
+1529,"Аккумулятор MNB MS 17-12 B1 (AGM, 17Ah)",4656,КА-00001380,О2.3.52.18.,"Аккумулятор BB battery BC 17-12 B1 (12V/17Ah),КИТАЙ",1712B1,no,0.6,sig+generic,,new
+1530,"Аккумулятор Delta FT 12-180 (AGM, 180Ah)",,КА-00001863,,Аккумуляторная батарея Delta FT 12-50 M,DELTAFT12,yes,0.6,sig+brand+generic,КА-00001614,differ
+1531,"Аккумулятор Delta HRL 12-180 (AGM, 180Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+1532,"Аккумулятор Fiamm 12FIT180 (AGM, 180Ah)",,КА-00004091,,Аккумулятор Fiamm 12FIT180 /Китай/,FIAMM12FIT180,yes,0.95,sig+brand,КА-00004091,agree
+1535,"Аккумулятор Ventura FT 12-180 для ИБП (GEL, 180Ah)",,КА-00001864,,"Аккумулятор Ventura  FT12-50 (12V50Ah),Китай",VENTURAFT12,yes,0.6,sig+brand+generic,КА-00001864,agree
+1537,"Аккумулятор Delta CT 1218 (AGM, 18Ah)",4622,КА-00000141,,Аккумуляторная батарея GP 12-18 AGM/CONTACT /Вьетнам/,1218AGM,no,0.85,sig,,new
+1538,"Аккумулятор Delta DT 1218 (AGM, 18Ah)",,КА-00001343,П1.1.52.29.,"Аккумуляторная батарея Delta DT1218 Delta,ACQ21FG /Китай/",DELTADT1218,yes,0.6,sig+brand+generic,ФР-00000042,differ
+1539,"Аккумулятор Delta HR 12-18 (AGM, 18Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000341,differ
+1540,"Аккумулятор Delta HRL 12-18 (AGM, 18Ah)",,КА-00002622,Р3.1.52.29.,"Аккумуляторная батарея Delta HRL 12-18 X, T6IU3C8 /Китай/",DELTAHRL1218,yes,0.6,sig+brand+generic,КА-00002622,agree
+1542,"Аккумулятор Fiamm FG21803 (AGM, 18Ah)",,ФР-00001513,,Аккумуляторная батарея FIAMM FG21803 12V/18Ah,FIAMMFG21803,yes,0.95,sig+brand,ФР-00001513,agree
+1543,"Аккумулятор Minamoto MB12180 (12V, 18Ah)",4655,КА-00001363,О4.1.52.73.,"Аккумуляторная батарея Ventura GPL 12-18 (12V/18Ah), ВЬЕТНАМ",12V18AH,no,0.6,sig+generic,,new
+1545,"Аккумулятор Ventura GP 12-18 (AGM, 18Ah)",,КА-00003579,,"Аккумулятор Ventura GPL 12-18/AGM, ВЬЕТНАМ",1218AGM,yes,0.95,sig+brand,КА-00000318,differ
+1547,"Аккумулятор Casil CA 1222 (AGM, 2.2Ah)",4618,КА-00005066,,"Аккумулятор Ventura GPL 12-22/AGM, ВЬЕТНАМ",1222AGM,no,0.85,sig,,new
+1548,"Аккумулятор Delta DT 12022 (AGM, 2.2Ah)",,ФР-00000050,О1.1.52.29.,"Аккумуляторная батарея Delta DT12022 12В 2,2Ач Пр-во: Гонконг. Ввоз: РФ.",DELTADT12022,yes,0.95,sig+brand,КА-00001151,differ
+1549,"Аккумулятор Delta DTM 12022 (AGM, 2.2Ah)",,ФР-00000748,,"Аккумуляторная батарея Delta DTM12022 12В 2,2Ач Пр-во: Гонконг. Ввоз: РФ.",DELTADTM12022,yes,0.95,sig+brand,КА-00002626,differ
+1551,"Аккумулятор MNB MS 2.3-12 F1 (AGM, 2.3Ah)",,КА-00003312,О1.3.,"Аккумулятор MHB MS 2.3-12, Китай",MS2312,no,0.85,sig,КА-00003312,agree
+1556,"Аккумулятор Delta DT 6028 (AGM, 2.8Ah)",,КА-00001147,,Аккумуляторная батарея Delta DT 6028 Delta 06S5125 /Китай/,DELTADT6028,yes,0.95,sig+brand,КА-00001147,agree
+1557,"Аккумулятор Ventura GP 6-2.8 (AGM, 2.8Ah)",4687,КА-00002376,О2.1.,Аккумулятор Ventura GP 6-4.5 (6V/4.5Ah),VENTURAGP6,no,0.6,sig+generic,,new
+1559,"Аккумулятор Delta DTM 12200 L (AGM, 200Ah)",,КА-00001964,,"Аккумуляторная батарея Delta DTM 12200 L (12V,200A)/ Китай",DELTADTM12200L,yes,0.95,sig+brand,КА-00001964,agree
+1560,"Аккумулятор Delta HRL 12-890W (AGM, 200Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+1563,"Аккумулятор Ventura GPL 12-200 (AGM, 200Ah)",,КА-00003696,,"Аккумуляторная батарея Ventura GPL 12-200, ВЬЕТНАМ",VENTURAGPL12200,yes,0.95,sig+brand,КА-00003696,agree
+1564,"Аккумулятор Ventura VG 12-200 для ИБП (GEL, 200Ah)",,КА-00004855,,аккумулятор Ventura VG 12-200,VENTURAVG12200,yes,0.95,sig+brand,КА-00004855,agree
+1568,"Аккумулятор Ventura HR 1290W (AGM, 21Ah)",,КА-00005320,,"Аккумулятор Ventura HR 1290W (AGM, 21Ah)/ Китай",VENTURAHR1290WAGM,yes,0.95,sig+brand,КА-00005320,agree
+1575,"Аккумулятор Ventura GPL 12-250 (AGM, 250Ah)",,КА-00001362,О4.3.52.73.,"Аккумуляторная батарея Ventura GPL 12-7.2 (12V 7,2Ah) ВЬЕТНАМ",VENTURAGPL12,yes,0.6,sig+brand+generic,КА-00000023,differ
+1577,"Аккумулятор Ventura GP 12-26 (AGM, 26Ah)",,КА-00001751,,"Аккумулятор Ventura GP 12-12 (12V12Ah),ВЬЕТНАМ",VENTURAGP12,yes,0.6,sig+brand+generic,КА-00000318,differ
+1578,"Аккумулятор Ventura GPL 12-26 (AGM, 26Ah)",,КА-00002167,Р3.1.52.73,"Аккумулятор Ventura GPL 12-26 (12V/26Ah), ВЬЕТНАМ",VENTURAGPL1226,yes,0.95,sig+brand,КА-00000321,differ
+1581,"Аккумулятор Ventura HRL 12155W (AGM, 28Ah)",,КА-00005523,,Аккумулятор Ventura HRL12155W/Китай,VENTURAHRL12155W,yes,0.95,sig+brand,КА-00005523,agree
+1590,"Аккумулятор B.B. Battery HR 33-12 (AGM, 33Ah)",,КА-00003582,,Аккумулятор Bb battery HR 33-12/Китай,BATTERYHR3312,yes,0.95,sig+brand,КА-00003582,agree
+1592,"Аккумулятор Ventura GPL 12-33 (AGM, 33Ah)",,КА-00001362,О4.3.52.73.,"Аккумуляторная батарея Ventura GPL 12-7.2 (12V 7,2Ah) ВЬЕТНАМ",VENTURAGPL12,yes,0.6,sig+brand+generic,КА-00000023,differ
+1593,"Аккумулятор B.B. Battery BPS 40-12 (AGM, 40Ah)",,КА-00003244,,"Аккумулятор BPS 40-12 I2 (BB Battery), КИТАЙ",BPS4012,no,0.85,sig,КА-00003244,agree
+1598,"Аккумулятор Panasonic UP-VW1220P1 (AGM, 4Ah)",,КА-00003724,,Аккумулятор свинцовый UP-VW1220P1 12V 4Ah /Китай/,UPVW1220P1,yes,0.95,sig+brand,КА-00005218,differ
+1600,"Аккумулятор Casil CA 1245 (AGM, 4.5Ah)",4618,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",1245AGM45AH,no,0.95,sig,КА-00003890,agree
+1601,"Аккумулятор Casil CA 645 (AGM, 4.5Ah)",4618,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+1602,"Аккумулятор Panasonic LC-R064R5P (AGM, 4.5Ah)",4664,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+1604,"Аккумулятор Robiton VRLA12-4.5 (AGM, 4.5Ah)",4670,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+1605,"Аккумулятор Robiton VRLA6-4.5 (AGM, 4.5Ah)",4670,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+1606,"Аккумулятор Ventura GP 12-4.5 (AGM, 4.5Ah)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",1245AGM,yes,0.95,sig+brand,КА-00000318,differ
+1607,"Аккумулятор Ventura GP 6-4.5 (AGM, 4.5Ah)",,КА-00002376,О2.1.,Аккумулятор Ventura GP 6-4.5 (6V/4.5Ah),VENTURAGP64,yes,0.95,sig+brand,КА-00002376,agree
+1609,"Аккумулятор Ventura GP 12-40 (AGM, 40Ah)",,КА-00001751,,"Аккумулятор Ventura GP 12-12 (12V12Ah),ВЬЕТНАМ",VENTURAGP12,yes,0.6,sig+brand+generic,КА-00000318,differ
+1610,"Аккумулятор Ventura GPL 12-40 (AGM, 40Ah)",,КА-00000316,,Аккумуляторная батарея GPL 12-40 AGM/CONTACT/Вьетнам/,GPL1240AGM,yes,0.95,sig+brand,КА-00002989,differ
+1611,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",VENTURAGPL1245,yes,0.95,sig+brand,КА-00003890,agree
+1614,"Аккумулятор B.B. Battery BP 5-12 (AGM, 5Ah)",,КА-00003856,,Аккумулятор Bb battery BP 5-12,BATTERYBP512,yes,0.95,sig+brand,КА-00003856,agree
+1615,"Аккумулятор Ventura GP 12-5 (AGM, 5Ah)",,КА-00002597,О3.2.52.73.,"Аккумулятор Ventura GP 12-5 (12V/5Ah), ВЬЕТНАМ",VENTURAGP125,yes,0.95,sig+brand,КА-00000318,differ
+1616,"Аккумулятор Ventura HR 1221W (AGM, 5Ah)",,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,КА-00006957,differ
+1617,"Аккумулятор B.B. Battery HR 5.8-12 (AGM, 5.3Ah)",,КА-00004165,,"Аккумуляторная батарея BB Battery HR 5.8-12, страна ввоза Россия",BATTERYHR58,no,0.95,sig,КА-00004165,agree
+1618,"Аккумулятор B.B. Battery HRC 5.5-12 (AGM, 5.5Ah)",,КА-00003846,,"Аккумулятор B.B. Battery HRC 5,5-12",BBATTERYHRC5,yes,0.95,sig+brand,КА-00002822,differ
+1619,"Аккумулятор Ventura FT 12-50 для ИБП (GEL, 50Ah)",,КА-00001864,,"Аккумулятор Ventura  FT12-50 (12V50Ah),Китай",VENTURAFT1250,yes,0.95,sig+brand,КА-00001864,agree
+1620,"Аккумулятор Ventura GPL 12-55 (AGM, 55Ah)",,КА-00003229,,"Аккумуляторная батарея VENTURA GPL 12-55 F6, ВЬЕТНАМ",VENTURAGPL1255,yes,0.95,sig+brand,КА-00000854,differ
+1621,"Аккумулятор Ventura HR 1224W (AGM, 6Ah)",,КА-00003347,,Аккумуляторная батарея HR-1224W F2 Slim 12V/6Ah,HR1224W,no,0.6,sig+generic,КА-00003347,agree
+1622,"Аккумулятор Ventura HRL 12260W (AGM, 60Ah)",,КА-00005338,,Аккумуляторная батарея HRL 12-260W (VENTURA) /Вьетнам/,HRL12260W,yes,0.95,sig+brand,КА-00005338,agree
+1623,"Аккумулятор Ventura GPL 12-65 (AGM, 65Ah)",,КА-00003736,,"Аккумулятор Ventura GPL 12-65/AGM, ВЬЕТНАМ",GPL1265AGM,yes,0.95,sig+brand,КА-00002990,differ
+1625,"Аккумулятор B.B. Battery BC 7.2-12 (AGM, 7.2Ah)",4613,КА-00001753,О2.3.52.18.,"Аккумулятор BB battery BC 7-12 F2 (12V/7Ah), КИТАЙ",BATTERYBC7,no,0.95,sig,,new
+1628,"Аккумулятор Ventura GP 12-7.2 (AGM, 7.2Ah)",,КА-00002048,,"Аккумулятор VENTURA GP 12-7.2 (12V7.2АЧ), ВЬЕТНАМ",VENTURAGP127,yes,0.95,sig+brand,КА-00002048,agree
+1629,"Аккумулятор Casil CA 675 (AGM, 7.5Ah)",,ФР-00000471,,"CASIL CA675 6V 7,5Ah Аккумулятор. Пр-во: Китай",CASILCA675,no,0.95,sig,ФР-00000471,agree
+1632,"Аккумулятор Ventura GPL 12-75 (AGM, 75Ah)",,КА-00003227,,Аккумуляторная батарея Ventura GPL 12-75  /Китай,VENTURAGPL1275,yes,0.95,sig+brand,КА-00003227,agree
+1633,"Аккумулятор B.B. Battery HR 9-6 (AGM, 8Ah)",,КА-00006069,,"Аккумулятор BB Battery HR 9-6 T2, Китай",BATTERYHR96,yes,0.95,sig+brand,КА-00003466,differ
+1635,"Аккумулятор Ventura HR 1234W (AGM, 8Ah)",4687,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+1639,"Аккумулятор B.B. Battery HRC 1234W (AGM, 9Ah)",,КА-00001857,,"Аккумулятор BB Battery HRC 1234W F2, КИТАЙ",BATTERYHRC1234W,yes,0.95,sig+brand,КА-00001308,differ
+1640,"Аккумулятор B.B. Battery HR 9-12 (AGM, 9Ah)",4613,КА-00003466,,Аккумуляторная батарея Bb battery HR9-6,BATTERYHR9,no,0.95,sig,,new
+1642,"Аккумулятор Ventura GP 12-9 (AGM, 9Ah)",,ФР-00001191,СК1209,Аккумуляторная батарея Ventura GP-12-9,VENTURAGP129,yes,0.95,sig+brand,ФР-00001191,agree
+1643,"Аккумулятор Ventura GP 6-9 (AGM, 9Ah)",4687,КА-00002376,О2.1.,Аккумулятор Ventura GP 6-4.5 (6V/4.5Ah),VENTURAGP6,no,0.6,sig+generic,,new
+1645,"Аккумулятор B.B. Battery BC 7-12 (AGM, 7Ah)",,КА-00001753,О2.3.52.18.,"Аккумулятор BB battery BC 7-12 F2 (12V/7Ah), КИТАЙ",BATTERYBC712,yes,0.95,sig+brand,КА-00000371,differ
+1688,Аккумулятор НК- 80 (без электролита) (ЗАИТ),4705,КА-00006874,,Аккумулятор НК-80 (без электролита),АККУМУЛЯТОРНК80БЕЗ,no,0.95,sig,,new
+1692,"Аккумулятор Sonnenschein A502/10 S для ИБП (GEL, 10Ah)",,ФР-00001154,,Аккумуляторная батарея Sonnenschein A502/10 S,SONNENSCHEINA50210,yes,0.95,sig+brand,ФР-00001154,agree
+1696,"Аккумулятор Fiamm SMG 1200 для ИБП (GEL, 1200Ah)",4634,ФР-00001476,,Клеммник DG306-5.0- 02P-12-00A(H) с проводами Страна ввоза: Гонконг,1200AH,no,0.85,sig,,new
+1715,"Аккумулятор Fiamm 2SLA2000 (AGM, 2000Ah)",4634,КА-00005467,,Аккумулятор Cameron Sino Ni-MH CS-RBS950BL 7.2V 2000Ah /Китай/,2000AH,no,0.85,sig,,new
+1717,"Аккумулятор Sonnenschein Dryfit A602/2200 для ИБП (GEL, OPzV, 2200Ah)",4678,КА-00005139,,Аккумулятор Ni-Mh NNTN8129 7.4V 2200Ah/Китай,2200AH,no,0.85,sig,,new
+1719,"Аккумулятор Fiamm LM/S 2200 для ИБП (OPzS, 2200Ah)",4634,КА-00005139,,Аккумулятор Ni-Mh NNTN8129 7.4V 2200Ah/Китай,2200AH,no,0.85,sig,,new
+1725,"Аккумулятор Marathon L2V220 (AGM, 220Ah)",,КА-00004115,,Аккумулятор Marathon L2V220/Китай/,MARATHONL2V220,yes,0.95,sig+brand,КА-00004115,agree
+1726,"Аккумулятор Marathon L 2V220 V0 (AGM, 220Ah)",,КА-00004115,,Аккумулятор Marathon L2V220/Китай/,MARATHONL2V220,yes,0.95,sig+brand,КА-00004115,agree
+1796,"Аккумулятор CSB HR1221W F2 (AGM, 5Ah)",,КА-00002074,,Аккумулятор CSB HR 1221W F2 (12V/5Ah),CSBHR1221WF2,yes,0.95,sig+brand,КА-00002074,agree
+1797,"Аккумулятор Ventura GP 12-2.3 (AGM, 2.3Ah)",,КА-00001752,П2.2.52.73.,"Аккумулятор Ventura GP 12-2,3 (12V/2,3Ah), ВЬЕТНАМ",VENTURAGP122,yes,0.95,sig+brand,КА-00001752,agree
+2261,"Батарея аккумуляторная 10НКГЦ- 0,9 (НИАИ)",4704,КА-00001365,,"Аккумулятор  10НКГЦ - 0,94",10НКГЦ0,no,0.85,sig,,new
+2264,"Батарея аккумуляторная 10НКГЦ- 1,3-2",4704,КА-00001366,,"Аккумулятор   10НКГЦ - 1,2",10НКГЦ1,no,0.6,sig+generic,,new
+2273,Батарея аккумуляторная 10НКГЦ- 6-2,4704,КА-00001365,,"Аккумулятор  10НКГЦ - 0,94",10НКГЦ,no,0.6,sig+generic,,new
+2326,Батарея аккумуляторная 5НК- 80 (без электролита) (ЗАИТ),4705,КА-00006874,,Аккумулятор НК-80 (без электролита),80БЕЗЭЛЕКТРОЛИТА,no,0.95,sig,,new
+2360,Батарея аккумуляторная 90KL-375 P (без электролита) (ЗАИТ),4705,КА-00004895,,Аккумулятор 90 KL 375 P,90KL375P,no,0.85,sig,,new
+2361,Батарея аккумуляторная 90KL-375 P (с электролитом) (ЗАИТ),4705,КА-00004895,,Аккумулятор 90 KL 375 P,90KL375P,no,0.85,sig,,new
+2362,Батарея аккумуляторная 90KL-375 PК (без электролита) (ЗАИТ),4705,КА-00004895,,Аккумулятор 90 KL 375 P,90KL375,no,0.85,sig,,new
+2363,Батарея аккумуляторная 90KL-375 PК (с электролитом) (ЗАИТ),4705,КА-00004895,,Аккумулятор 90 KL 375 P,90KL375,no,0.85,sig,,new
+2715,"Аккумулятор Leoch DJW 12-0.8 (AGM, 0.8Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2716,"Аккумулятор Yuasa NP 0.8-12 (AGM, 0.8Ah)",,ФР-00000381,О1.3.52.38.,"Аккумулятор Genesis NP0.8-12 Blok(12V, 0.8Ah), изг.CN",NP0812,no,0.85,sig,ФР-00000381,agree
+2719,"Аккумулятор Alarm Force FB 1.2-12 (AGM, 1.2Ah)",4609,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2720,"Аккумулятор General Security GS 1.2-12 (AGM, 1.2Ah)",,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,ФР-00001350,differ
+2721,"Аккумулятор General Security GSL 1.2-12 (AGM, 1.2Ah)",4637,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2722,"Аккумулятор Security Force SF 12012 (AGM, 1.2Ah)",,КА-00005713,,Аккумуляторная батарея SF 12012 Security Force /Китай,SF12012,no,0.85,sig,КА-00005713,agree
+2726,"Аккумулятор Yuasa NP 1.2-12 (AGM, 1.2Ah)",4697,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2729,"Аккумулятор Leoch DJW 12-1.3 (AGM, 1.3Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2734,"Аккумулятор CSB TPL121000 (AGM, 100Ah)",,КА-00004693,,Аккумулятор WBR TPL121000 (12V / 100Ah),TPL121000,yes,0.95,sig+brand,КА-00004693,agree
+2740,"Аккумулятор Security Force SF 12100 (AGM, 100Ah)",,КА-00001342,,"Аккумуляторная батарея SF 12100 Security Force, 2020081003 /Китай/",SF12100,no,0.85,sig,КА-00001342,agree
+2741,"Аккумулятор Sonnenschein A412/100 A для ИБП (GEL, 100Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002840,differ
+2742,"Аккумулятор Sonnenschein A412/100 F10 для ИБП (GEL, 100Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2745,"Аккумулятор WBR TPL 121000 (AGM, 100Ah)",,КА-00004693,,Аккумулятор WBR TPL121000 (12V / 100Ah),WBRTPL121000,yes,0.95,sig+brand,КА-00004693,agree
+2752,"Аккумулятор Sprinter XP12V3400 (AGM, 105Ah)",,КА-00002003,,Аккумуляторная батарея SPRINTER XP12V3400 (Португалия),SPRINTERXP12V3400,yes,0.95,sig+brand,КА-00002003,agree
+2756,"Аккумулятор Sonnenschein A512/10 S для ИБП (GEL, 10Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2758,"Аккумулятор Sonnenschein A512/115 A для ИБП (GEL, 115Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2763,"Аккумулятор Sonnenschein A412/120 A для ИБП (GEL, 120Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2766,"Аккумулятор Sonnenschein A412/120FT для ИБП (GEL, 120Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2767,"Аккумулятор Sonnenschein A512/120 A для ИБП (GEL, 120Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2768,"Аккумулятор Восток PRO СК-12120 (AGM, 120Ah)",,ФР-00000162,СК12120,СК 12120 ВОСТОК Аккумуляторная батарея. Страна ввоза: РФ,СК12120,yes,0.95,sig+brand,ФР-00000162,agree
+2776,"Аккумулятор Alarm Force FB 12-12 (AGM, 12Ah)",4609,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2777,"Аккумулятор CSB GP12120 F2 (AGM, 12Ah)",,ФР-00001873,,Аккумуляторная батарея CSB GP 12120 F2 12V/12Ah страна происхождения: Вьетнам,CSBGP12120F2,yes,0.95,sig+brand,ФР-00001873,agree
+2779,"Аккумулятор CSB GPL12120 F2 (AGM, 12Ah)",,КА-00003294,,Аккумуляторная батарея Ventura GPL 12-120,GPL12120,no,0.85,sig,КА-00003294,agree
+2781,"Аккумулятор General Security GSL 12-12 (AGM, 12Ah)",4637,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2783,"Аккумулятор Leoch DJW 12-12 (AGM, 12Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2785,"Аккумулятор Optimus OP 1212 (AGM, 12Ah)",4663,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2786,"Аккумулятор Security Force SF 1212 (AGM, 12Ah)",,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,КА-00002600,differ
+2787,"Аккумулятор Sonnenschein A412/12 SR для ИБП (GEL, 12Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2788,"Аккумулятор WBR GP 12120 F2 (AGM, 12Ah)",4690,ФР-00001873,,Аккумуляторная батарея CSB GP 12120 F2 12V/12Ah страна происхождения: Вьетнам,GP12120F2,no,0.85,sig,,new
+2792,"Аккумулятор Yuasa NP 12-12 (AGM, 12Ah)",4697,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+2807,"Аккумулятор Sonnenschein A512/140 A для ИБП (GEL, 140Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2819,"Аккумулятор Восток PRO СК-12150 (AGM, 150Ah)",,КА-00001624,,Аккумуляторная батарея СК 12150 Восток,СК12150,no,0.85,sig,КА-00001624,agree
+2825,"Аккумулятор Sonnenschein A512/16 G5 для ИБП (GEL, 16Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2826,"Аккумулятор Sonnenschein A412/170FT для ИБП (GEL, 170Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2829,"Аккумулятор CSB GP12170 (AGM, 17Ah)",,КА-00001750,П1.2.52.26.,"Аккумуляторная батарея CSB GP 12170 B1 (12V/17Ah), ВЬЕТНАМ",CSBGP12170,yes,0.95,sig+brand,КА-00000471,differ
+2832,"Аккумулятор WBR GP 12170 (AGM, 17Ah)",,КА-00005830,,GP12170 WBR Свинцово-кислотный аккумулятор,GP12170,yes,0.6,sig+brand+generic,КА-00005830,agree
+2835,"Аккумулятор Sonnenschein A412/180 A для ИБП (GEL, 180Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2837,"Аккумулятор Sonnenschein A412/180 F10 для ИБП (GEL, 180Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2842,"Аккумулятор Sonnenschein A606/200 V0 для ИБП (GEL, 185Ah)",,КА-00002596,,"Аккумуляторная батарея Sonnenschein A606/200 (6V 4 OPzV200), ИСПАНИЯ",SONNENSCHEINA606,yes,0.95,sig+brand,КА-00002596,agree
+2844,"Аккумулятор Sprinter XP12V5300FT (AGM, 186Ah)",4681,КА-00004466,,Аккумуляторная батарея Sprinter XP 12V5300 FT 12V186AH,XP12V5300FT,no,0.95,sig,,new
+2846,"Аккумулятор Marathon XL6V180 (AGM, 187Ah)",,КА-00002209,,Аккумуляторная батарея Marathon XL6V180 клемы F1,MARATHONXL6V180,yes,0.95,sig+brand,КА-00002209,agree
+2847,"Аккумулятор Marathon XL6V180 V0 (AGM, 187Ah)",,КА-00002209,,Аккумуляторная батарея Marathon XL6V180 клемы F1,MARATHONXL6V180,yes,0.95,sig+brand,КА-00002209,agree
+2851,"Аккумулятор Leoch DJW 12-18 (AGM, 18Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2852,"Аккумулятор Optimus OP 1218 (AGM, 18Ah)",4663,КА-00000141,,Аккумуляторная батарея GP 12-18 AGM/CONTACT /Вьетнам/,1218AGM,no,0.85,sig,,new
+2853,"Аккумулятор Security Force SF 1218 (AGM, 18Ah)",,КА-00000141,,Аккумуляторная батарея GP 12-18 AGM/CONTACT /Вьетнам/,1218AGM,no,0.85,sig,КА-00003022,differ
+2854,"Аккумулятор Восток PRO СК-1218 (AGM, 18Ah)",,ФР-00000462,,СК-1218 ВОСТОК Аккумуляторная батарея. Страна ввоза: РФ. Производство: Китай,СК1218,yes,0.95,sig+brand,ФР-00000462,agree
+2857,"Аккумулятор Yuasa NP 2.1-12 (AGM, 2.1Ah)",4697,КА-00005320,,"Аккумулятор Ventura HR 1290W (AGM, 21Ah)/ Китай",AGM21AH,no,0.85,sig,КА-00005320,agree
+2862,"Аккумулятор Leoch DJW 12-2.3 (AGM, 2.3Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW122,yes,0.95,sig+brand,КА-00002491,agree
+2881,"Аккумулятор Sonnenschein A512/200 A для ИБП (GEL, 200Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2891,"Аккумулятор Delta HR 12-80W (AGM, 20Ah)",,ФР-00002111,,"Аккумулятор Delta HR 12-80W, страна ввоза Россия",DELTAHR1280W,yes,0.95,sig+brand,ФР-00002111,agree
+2892,"Аккумулятор Sonnenschein A412/20 G5 для ИБП (GEL, 20Ah)",,КА-00003713,,Аккумуляторная батарея Sonnenschein A412/20 G5,SONNENSCHEINA41220,yes,0.95,sig+brand,КА-00003713,agree
+2900,"Аккумулятор Leoch DJW 12-24 (AGM, 24Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2911,"Аккумулятор Sonnenschein A512/25 G5 для ИБП (GEL, 25Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2912,"Аккумулятор CSB GP12260 (AGM, 26Ah)",,ФР-00001875,,Аккумуляторная батарея CSB GP 12260 F2 12V/26Ah,CSBGP12260,yes,0.95,sig+brand,ФР-00001875,agree
+2914,"Аккумулятор Delta DT 1226 (AGM, 26Ah)",,ФР-00000295,"DTM1226 12В, 26Ач","Delta DT1226 12В, 26Ач Аккумуляторная батарея. Страна ввоза: РФ",DELTADT1226,no,0.95,sig,КА-00002449,differ
+2915,"Аккумулятор Delta DTM 1226 (AGM, 26Ah)",,КА-00003468,,Аккумуляторная батарея DTM 1226 Delta,DTM1226,yes,0.95,sig+brand,КА-00003468,agree
+2916,"Аккумулятор Delta HRL 12-155W (AGM, 26Ah)",,КА-00003302,,Аккумуляторная батарея HRL 12-155 W (12V28Ah),HRL12155W,yes,0.95,sig+brand,КА-00000259,differ
+2920,"Аккумулятор Leoch DJW 12-26 (AGM, 26Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2921,"Аккумулятор MNB MS 26-12 (AGM, 26Ah)",4656,ФР-00002109,,Аккумулятор MHB MS 26-12,MS2612,no,0.85,sig,,new
+2922,"Аккумулятор Optimus OP 1226 (AGM, 26Ah)",4663,КА-00000317,,"Аккумуляторная батарея GPL 12-26 AGM/CONTACT, ВЬЕТНАМ",1226AGM,no,0.85,sig,,new
+2923,"Аккумулятор Security Force SF 1226 (AGM, 26Ah)",,КА-00003366,,Аккумулятор Security Force SF 1226 /Китай,FORCESF1226,yes,0.95,sig+brand,КА-00002402,differ
+2924,"Аккумулятор Sprinter P12V600 (AGM, 26Ah)",,КА-00001647,,Аккумулятор Sprinter P12V600 (12V / 24Ah),SPRINTERP12V600,yes,0.95,sig+brand,КА-00001647,agree
+2926,"Аккумулятор WBR GP 12260 (AGM, 26Ah)",,КА-00005816,,GP12260 WBR Свинцово-кислотный аккумулятор,GP12260,yes,0.6,sig+brand+generic,КА-00005816,agree
+2927,"Аккумулятор Восток PRO СК-1226 (AGM, 26Ah)",4702,КА-00000317,,"Аккумуляторная батарея GPL 12-26 AGM/CONTACT, ВЬЕТНАМ",1226AGM,no,0.85,sig,,new
+2929,"Аккумулятор Sonnenschein A606/300 V0 для ИБП (GEL, 300Ah)",,КА-00002596,,"Аккумуляторная батарея Sonnenschein A606/200 (6V 4 OPzV200), ИСПАНИЯ",SONNENSCHEINA606,yes,0.95,sig+brand,КА-00002596,agree
+2935,"Аккумулятор Delta HRL 12-26 (AGM, 28Ah)",,КА-00001894,,Аккумуляторная батарея Delta HRL 12-26 Х (12V 28Ah),DELTAHRL1226,yes,0.6,sig+brand+generic,КА-00001894,agree
+2936,"Аккумулятор Leoch DJW 12-28 (AGM, 28Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2937,"Аккумулятор Leoch DJW 12-28H (AGM, 28Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2940,"Аккумулятор Delta DTM 12032 (AGM, 3.2Ah)",,КА-00001062,П1.1.52.29.,Аккумуляторная батарея  DTM12032 Delta /Вьетнам/,DTM12032,no,0.85,sig,КА-00001062,agree
+2947,"Аккумулятор Leoch DJW 12-3.2 (AGM, 3.2Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2951,"Аккумулятор Delta DT 12032 (AGM, 3.3Ah)",,ФР-00000147,DT12032,"Аккумуляторная батарея Delta DT12032 12В 3,3Ач  Страна ввоза: РФ, Страна изготовитель: Вьетнам.",DELTADT12032,yes,0.95,sig+brand,ФР-00000147,agree
+2952,"Аккумулятор Delta DT 6033 (AGM, 3.3Ah)",,ФР-00000052,,Аккумуляторная батарея Delta DT 6033 6В 3.3Ач (125мм) Страна ввоза: РФ,DELTADT6033,yes,0.95,sig+brand,КА-00002999,differ
+2955,"Аккумулятор Delta DT 4035 (AGM, 3.5Ah)",,ФР-00000030,П1.3.52.29.,"Аккумуляторная батарея Delta DT 4035 4В 3,5Ач Страна ввоза: РФ, Страна изготовитель: Вьетнам.",DELTADT4035,yes,0.95,sig+brand,ФР-00000030,agree
+2965,"Аккумулятор Sonnenschein A512/30 G6 для ИБП (GEL, 30Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+2966,"Аккумулятор Sonnenschein A412/32 F10 для ИБП (GEL, 32Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2967,"Аккумулятор Sonnenschein A412/32 G6 для ИБП (GEL, 32Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+2971,"Аккумулятор Delta DT 1233 (AGM, 33Ah)",,КА-00002817,,Аккумулятор Delta DT12-33,DELTADT1233,yes,0.95,sig+brand,КА-00002817,agree
+2972,"Аккумулятор Delta DTM 1233 L (AGM, 33Ah)",,КА-00002593,,Аккумуляторная батарея Delta DTM 1233 L,DELTADTM1233L,yes,0.95,sig+brand,КА-00002816,differ
+2973,"Аккумулятор Delta HRL 12-33 (AGM, 33Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+2977,"Аккумулятор Leoch DJW 12-33 (AGM, 33Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+2997,"Аккумулятор Yuasa NP 4-6 (AGM, 4Ah)",4697,КА-00003548,,Аккумулятор Yuasa NP4-12 (12V / 4Ah),YUASANP4,no,0.85,sig,,new
+2998,"Аккумулятор Yuasa NP 4-12 (AGM, 4Ah)",,КА-00003548,,Аккумулятор Yuasa NP4-12 (12V / 4Ah),YUASANP412,yes,0.95,sig+brand,КА-00003548,agree
+2999,"Аккумулятор Alarm Force FB 4.5-12 (AGM, 4.5Ah)",4609,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3000,"Аккумулятор CSB GP1245 F2 (AGM, 4.5Ah)",4619,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3002,"Аккумулятор CSB GP645 F2 (AGM, 4.5Ah)",4619,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+3003,"Аккумулятор Delta DT 12045 (AGM, 4.5Ah)",,ФР-00000145,О3.2.52.29.,"Аккумуляторная батарея Delta DT 12045 12В 4,5Ач  Страна ввоза: РФ, Страна изготовитель: Гонконг.",DELTADT12045,yes,0.95,sig+brand,КА-00002148,differ
+3004,"Аккумулятор Delta DT 4045 (AGM, 4.5Ah)",,ФР-00001468,О1.2.52.29.,"Аккумуляторная батарея Delta DT 4045 (4V4,5Ah) Страна ввоза: РФ, Страна изготовитель: Китай.",DELTADT4045,yes,0.95,sig+brand,КА-00001502,differ
+3005,"Аккумулятор Delta DT 6045 (AGM, 4.5Ah)",,ФР-00000091,0002\А3,"Аккумуляторная батарея Delta DT 6045 6В 4.5Ач Страна ввоза: РФ, Страна изготовитель: Китай.",DELTADT6045,yes,0.95,sig+brand,КА-00002996,differ
+3006,"Аккумулятор Delta DTM 12045 (AGM, 4.5Ah)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00002148,differ
+3007,"Аккумулятор Delta DTM 6045 (AGM, 4.5Ah)",4622,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+3008,"Аккумулятор Delta HR 12-4.5 (AGM, 4.5Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+3009,"Аккумулятор Delta HR 6-4.5 (AGM, 4.5Ah)",4622,КА-00001895,,"Аккумуляторная батарея Delta HR 6-12 6В, 12Ач Страна ввоза: РФ.",DELTAHR6,no,0.85,sig,КА-00003890,differ
+3010,"Аккумулятор Fiamm FG10451 (AGM, 4.5Ah)",,ФР-00001785,,Аккумуляторная батарея FIAMM FG10451 6V/4.5Ah,FIAMMFG10451,yes,0.95,sig+brand,ФР-00001785,agree
+3011,"Аккумулятор Fiamm FG20451 (AGM, 4.5Ah)",4634,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3012,"Аккумулятор General Security GS 4.5-12 (AGM, 4.5Ah)",4637,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3013,"Аккумулятор General Security GS 4.5-6 (AGM, 4.5Ah)",4637,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3014,"Аккумулятор General Security GSL 4.5-12 (AGM, 4.5Ah)",4637,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+3015,"Аккумулятор General Security GSL 4.5-6 (AGM, 4.5Ah)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,ФР-00001735,differ
+3016,"Аккумулятор Leoch DJW 12-4.5 (AGM, 4.5Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+3017,"Аккумулятор Leoch DJW 6-4.5 (AGM, 4.5Ah)",4649,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3018,"Аккумулятор MNB MS 4.5-12 F1 (AGM, 4.5Ah)",4656,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3019,"Аккумулятор MNB MS 4.5-6 F1 (AGM, 4.5Ah)",4656,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3020,"Аккумулятор Optimus OP 12045 (AGM, 4.5Ah)",4663,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+3021,"Аккумулятор Panasonic LC-R124R5PD (AGM, 4.5Ah)",4664,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+3022,"Аккумулятор Security Force SF 12045 (AGM, 4.5Ah)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003688,differ
+3023,"Аккумулятор Security Force SF 6045 (AGM, 4.5Ah)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00000326,differ
+3024,"Аккумулятор WBR GP 1245 (AGM, 4.5Ah)",4690,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",1245AGM45AH,no,0.95,sig,КА-00003890,agree
+3025,"Аккумулятор WBR GP 645 (AGM, 4.5Ah)",4690,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+3027,"Аккумулятор CSB GP12400 (AGM, 40Ah)",,КА-00004141,,"Аккумуляторная батарея CSB GP 12400 12V/40Ah, Вьетнам/Китай",CSBGP12400,yes,0.95,sig+brand,КА-00004141,agree
+3028,"Аккумулятор CSB GPL12400 (AGM, 40Ah)",,КА-00004142,,"Аккумуляторная батарея CSB GPL 12400 12V/40Ah, Вьетнам/Китай",CSBGPL12400,yes,0.95,sig+brand,КА-00004142,agree
+3029,"Аккумулятор Delta DT 1240 (AGM, 40Ah)",,ФР-00000946,DT1240,Аккумуляторная батарея Delta DT1240 12В 40Ач  Страна ввоза: РФ. Страна изг.: Вьетнам,DELTADT1240,yes,0.95,sig+brand,ФР-00000946,agree
+3030,"Аккумулятор Delta DTM 1240 L (AGM, 40Ah)",,КА-00002238,,"Аккумуляторная батарея DTM 1240 L Delta, /Вьетнам/",DTM1240L,yes,0.6,sig+brand+generic,КА-00002238,agree
+3036,"Аккумулятор Optimus OP 1240 (AGM, 40Ah)",4663,КА-00000316,,Аккумуляторная батарея GPL 12-40 AGM/CONTACT/Вьетнам/,1240AGM,no,0.85,sig,,new
+3037,"Аккумулятор Security Force SF 1240 (AGM, 40Ah)",,КА-00000316,,Аккумуляторная батарея GPL 12-40 AGM/CONTACT/Вьетнам/,1240AGM,no,0.85,sig,КА-00002371,differ
+3038,"Аккумулятор Sonnenschein A512/40 A для ИБП (GEL, 40Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3039,"Аккумулятор Sonnenschein A512/40 G6 для ИБП (GEL, 40Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3041,"Аккумулятор WBR GP 12400 (AGM, 40Ah)",,КА-00004141,,"Аккумуляторная батарея CSB GP 12400 12V/40Ah, Вьетнам/Китай",GP12400,no,0.85,sig,КА-00004141,agree
+3043,"Аккумулятор Восток PRO СК-1240 (AGM, 40Ah)",4702,КА-00000316,,Аккумуляторная батарея GPL 12-40 AGM/CONTACT/Вьетнам/,1240AGM,no,0.85,sig,,new
+3045,"Аккумулятор Sprinter P12V875 (AGM, 40Ah)",,КА-00004140,,Аккумуляторная батарея SPRINTER P12V875 (Португалия),SPRINTERP12V875,yes,0.95,sig+brand,КА-00004140,agree
+3047,"Аккумулятор Fiamm 12FGL42 (AGM, 42Ah)",,КА-00003990,,Аккумулятор свинцовый FIAMM 12FGL42 (12V 42ah)/Китай,FIAMM12FGL42,yes,0.95,sig+brand,КА-00003990,agree
+3053,"Аккумулятор Delta HRL 12-211W (AGM, 45Ah)",,КА-00002055,,Аккумуляторная батарея Delta HRL 12-211W (12V / 45Ah),DELTAHRL12211W,yes,0.95,sig+brand,КА-00002055,agree
+3054,"Аккумулятор Delta HRL 12-45 (AGM, 45Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+3055,"Аккумулятор Leoch DJM 1245 (AGM, 45Ah)",4649,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",1245AGM45AH,no,0.95,sig,,new
+3056,"Аккумулятор MNB MM 45-12 (AGM, 45Ah)",4656,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+3059,"Аккумулятор Delta CT 1205 (AGM, 5Ah)",4622,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3060,"Аккумулятор Delta DTM 1205 (AGM, 5Ah)",,КА-00002535,,"Аккумуляторная батарея DTM 1205 Delta, 38U522P /Вьетнам/",DTM1205,yes,0.6,sig+brand+generic,КА-00002535,agree
+3061,"Аккумулятор Delta HR 12-21W (AGM, 5Ah)",,КА-00003375,,Аккумулятор Delta HR 1221 W F2 /Китай,DELTAHR1221W,yes,0.95,sig+brand,КА-00000258,differ
+3062,"Аккумулятор Delta HR 12-5 (AGM, 5Ah)",,КА-00006962,,Аккумуляторная батарея Delta HR 12-5.8 /Китай/,DELTAHR125,yes,0.95,sig+brand,КА-00002103,differ
+3063,"Аккумулятор Fiamm 12FGH23 (AGM, 5Ah)",,КА-00001063,,"Аккумуляторная батарея FIAMM 12FGH 23 12V 5 Ah slim, Вьетнам",FIAMM12FGH23,yes,0.95,sig+brand,КА-00001063,agree
+3065,"Аккумулятор Fiamm 12FGHL22 (AGM, 5Ah)",4634,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3067,"Аккумулятор General Security GS 5-12 F2 (AGM, 5Ah)",4637,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3068,"Аккумулятор General Security GSL 5-12 F2 (AGM, 5Ah)",4637,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3069,"Аккумулятор MNB HR 1221W F2 (AGM, 5Ah)",4656,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3070,"Аккумулятор WBR HR 1221W F2 (AGM, 50Ah)",4690,КА-00002074,,Аккумулятор CSB HR 1221W F2 (12V/5Ah),HR1221WF2,no,0.6,sig+generic,,new
+3071,"Аккумулятор Yuasa NPH 5-12 (AGM, 5Ah)",4697,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3072,"Аккумулятор Восток PRO СК-1205 (AGM, 5Ah)",4702,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+3073,"Аккумулятор WBR HR 1224W (AGM, 6Ah)",,КА-00003347,,Аккумуляторная батарея HR-1224W F2 Slim 12V/6Ah,HR1224W,no,0.6,sig+generic,КА-00003347,agree
+3074,"Аккумулятор Leoch DJW 12-5.4 F1 (AGM, 5.4Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+3077,"Аккумулятор Delta HR 12-5.8 (AGM, 5.8Ah)",,КА-00006962,,Аккумуляторная батарея Delta HR 12-5.8 /Китай/,DELTAHR125,yes,0.95,sig+brand,КА-00002480,differ
+3078,"Аккумулятор Delta FTS 12-50 (AGM, 50Ah)",,КА-00006758,,Аккумуляторная батарея Delta FTS 12-50 X /Китай/,DELTAFTS1250,yes,0.95,sig+brand,КА-00006758,agree
+3081,"Аккумулятор Sonnenschein A412/50 A для ИБП (GEL, 50Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA41250,yes,0.95,sig+brand,КА-00002667,differ
+3082,"Аккумулятор Sonnenschein A412/50 F10 для ИБП (GEL, 50Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA41250,yes,0.95,sig+brand,КА-00002667,differ
+3084,"Аккумулятор Sonnenschein A412/50 G6 для ИБП (GEL, 50Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA41250,yes,0.95,sig+brand,КА-00002667,differ
+3090,"Аккумулятор Delta DTM 1255 L (AGM, 55Ah)",,КА-00002130,,Аккумуляторная батарея Delta DTM 1255 L,DELTADTM1255L,yes,0.95,sig+brand,КА-00002130,agree
+3091,"Аккумулятор Delta HRL 12-260W (AGM, 55Ah)",,КА-00005338,,Аккумуляторная батарея HRL 12-260W (VENTURA) /Вьетнам/,HRL12260W,yes,0.95,sig+brand,КА-00000259,differ
+3092,"Аккумулятор Delta HRL 12-55 (AGM, 55Ah)",,КА-00005563,,Аккумулятор Delta HRL 12-55 X(12V 55A)/ Китай,DELTAHRL1255,yes,0.95,sig+brand,КА-00005563,agree
+3093,"Аккумулятор Fiamm 12FGL55 (AGM, 55Ah)",,КА-00001855,,Fiamm 12FGL55 аккумуляторная батарея,FIAMM12FGL55,yes,0.95,sig+brand,КА-00001855,agree
+3100,"Аккумулятор Sonnenschein A512/55 A для ИБП (GEL, 55Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3104,"Аккумулятор Sprinter XP12V1800 (AGM, 56Ah)",,ФР-00001954,,Аккумуляторная батарея Sprinter XP 12V1800 (Sprinter P 12V1220) c аксесуарами/ Португалия,SPRINTERXP12V1800,yes,0.95,sig+brand,ФР-00001954,agree
+3105,"Аккумулятор Marathon M12V60FT (AGM, 59Ah)",4652,КА-00003893,,Аккумуляторная батарея MARATHON M 12V 60 FT/Германия,M12V60FT,no,0.85,sig,,new
+3106,"Аккумулятор Marathon M12V60FT V0 (AGM, 60Ah)",4652,КА-00003893,,Аккумуляторная батарея MARATHON M 12V 60 FT/Германия,M12V60FT,no,0.85,sig,,new
+3109,"Аккумулятор Delta DT 606 (AGM, 6Ah)",,ФР-00000902,,"Аккумуляторная батарея Delta DT 606 6В 6Ач Страна ввоза: РФ, Страна изготовитель: Китай.",DELTADT606,yes,0.95,sig+brand,КА-00004088,differ
+3110,"Аккумулятор Delta HR 12-24W (AGM, 6Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+3112,"Аккумулятор CSB HR1224W F2F1 (AGM, 6.2Ah)",,КА-00003347,,Аккумуляторная батарея HR-1224W F2 Slim 12V/6Ah,HR1224W,no,0.6,sig+generic,КА-00003347,agree
+3118,"Аккумулятор Fiamm 12FIT60 (AGM, 60Ah)",,КА-00003848,,"Аккумулятор Fiamm 12FIT60 (AGM, 60Ah)",FIAMM12FIT60AGM,yes,0.95,sig+brand,КА-00003848,agree
+3120,"Аккумулятор Leoch DJM 1260 (AGM, 60Ah)",4649,КА-00003848,,"Аккумулятор Fiamm 12FIT60 (AGM, 60Ah)",AGM60AH,no,0.85,sig,,new
+3121,"Аккумулятор Leoch DJM 660 (AGM, 60Ah)",4649,КА-00003848,,"Аккумулятор Fiamm 12FIT60 (AGM, 60Ah)",AGM60AH,no,0.85,sig,,new
+3123,"Аккумулятор Sonnenschein A512/60 A для ИБП (GEL, 60Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3124,"Аккумулятор Sonnenschein A512/60 G6 для ИБП (GEL, 60Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3125,"Аккумулятор Sonnenschein Dryfit Solar Block SB 12/60 A для ИБП (GEL, 60Ah)",4678,КА-00002805,,Зарядное устройство 24V 60A (для LiFePO4 АКБ) / Китай,60AДЛЯ,no,0.85,sig,,new
+3126,"Аккумулятор Sonnenschein Dryfit Solar S 12/60 A для ИБП (GEL, 60Ah)",4678,КА-00002805,,Зарядное устройство 24V 60A (для LiFePO4 АКБ) / Китай,60AДЛЯ,no,0.85,sig,,new
+3130,"Аккумулятор Delta DT 1265 (AGM, 65Ah)",,КА-00001920,,Аккумуляторная батарея Delta DT 12-65  (12V 65Ah),DELTADT1265,yes,0.95,sig+brand,КА-00001920,agree
+3131,"Аккумулятор Delta DTM 1265 L (AGM, 65Ah)",,КА-00002661,,Аккумуляторная батарея Delta  DTM 1265L,DELTADTM1265L,yes,0.95,sig+brand,КА-00002661,agree
+3136,"Аккумулятор Leoch DJM 1265 (AGM, 65Ah)",4649,КА-00003736,,"Аккумулятор Ventura GPL 12-65/AGM, ВЬЕТНАМ",1265AGM,no,0.85,sig,,new
+3140,"Аккумулятор Security Force SF 1265 (AGM, 65Ah)",,КА-00003736,,"Аккумулятор Ventura GPL 12-65/AGM, ВЬЕТНАМ",1265AGM,no,0.85,sig,КА-00002559,differ
+3141,"Аккумулятор Sonnenschein A412/65 F10 для ИБП (GEL, 65Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+3142,"Аккумулятор Sonnenschein A412/65 G6 для ИБП (GEL, 65Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+3143,"Аккумулятор Sonnenschein A512/65 A для ИБП (GEL, 65Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3144,"Аккумулятор Sonnenschein A512/65 G6 для ИБП (GEL, 65Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3148,"Аккумулятор Восток PRO СК-1265 (AGM, 65Ah)",4702,КА-00003736,,"Аккумулятор Ventura GPL 12-65/AGM, ВЬЕТНАМ",1265AGM,no,0.85,sig,,new
+3154,"Аккумулятор Delta CT 1207 (AGM, 7Ah)",,ФР-00000859,,CT 1207 Delta Аккумуляторная батарея,CT1207,yes,0.95,sig+brand,ФР-00000859,agree
+3155,"Аккумулятор Delta DT 1207 (AGM, 7Ah)",,ФР-00000031,DT1207,"Аккумуляторная батарея Delta DT1207 12В, 7Ач Страна ввоза: РФ, Страна изготовитель: Вьетнам.",DELTADT1207,yes,0.95,sig+brand,ФР-00000031,agree
+3156,"Аккумулятор Delta DTM 607 (AGM, 7Ah)",,ФР-00000414,О2.3.52.29.,Аккумулятор Delta DTM 607 6V 7Ah. Ввоз: РФ произ-во: Вьетнам,DELTADTM607,yes,0.95,sig+brand,КА-00001500,differ
+3157,"Аккумулятор Delta HR 12-28W (AGM, 7Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+3160,"Аккумулятор Leoch DJW 12-7 (AGM, 7Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+3174,"Аккумулятор Delta DTM 1207 (AGM, 7.2Ah)",,КА-00001029,,"Аккумуляторная батарея DTM 1207 Delta, 04M2807 /Китай/",DTM1207,yes,0.6,sig+brand+generic,ФР-00000416,differ
+3175,"Аккумулятор Delta HR 12-7.2 (AGM, 7.2Ah)",,КА-00003560,,Аккумуляторная батарея Delta HR 12-7.2 /Китай/,DELTAHR127,yes,0.95,sig+brand,КА-00003560,agree
+3176,"Аккумулятор Delta HR 6-7.2 (AGM, 7.2Ah)",4622,КА-00001895,,"Аккумуляторная батарея Delta HR 6-12 6В, 12Ач Страна ввоза: РФ.",DELTAHR6,no,0.85,sig,,new
+3177,"Аккумулятор Delta HRL 12-7.2 (AGM, 7.2Ah)",,КА-00001027,,Аккумуляторная батарея Delta HRL 12-7.2 X /Китай/,DELTAHRL127,yes,0.6,sig+brand+generic,КА-00001027,agree
+3181,"Аккумулятор Fiamm FG20722 (AGM, 7.2Ah)",,ФР-00001438,,Аккумуляторная батарея FIAMM FG20722 12V/7.2Ah,FIAMMFG20722,yes,0.95,sig+brand,ФР-00001438,agree
+3184,"Аккумулятор Leoch DJW 12-7.2 (AGM, 7.2Ah)",,КА-00002491,П1.2.52.44.,"Аккумулятор LEOCH DJW12-2,9 ( 12V 2,9Ah / 12В 2,9Ач )",LEOCHDJW12,yes,0.95,sig+brand,КА-00002491,agree
+3192,"Аккумулятор Panasonic LC-R127R2PG1 (AGM, 7.2Ah)",,ФР-00001144,,"Аккумуляторная батарея Panasonic LC-R127R2PG1 12В, 7,2Ач",LCR127R2PG1,yes,0.95,sig+brand,ФР-00001144,agree
+3194,"Аккумулятор WBR GP 1272 F2 (AGM, 7.2Ah)",,КА-00005829,,GP1272 WBR Свинцово-кислотный аккумулятор,GP1272,yes,0.6,sig+brand+generic,КА-00005829,agree
+3196,"Аккумулятор WBR GPL 1272 F2 (AGM, 7.2Ah)",4690,КА-00002880,О4.3.52.73.,"Аккумуляторная батарея Ventura GPL 12-7.2 F2 (12V 7,2Ah), ВЬЕТНАМ",GPL1272,no,0.6,sig+generic,,new
+3197,"Аккумулятор Восток СК-1207 (AGM, 7.2Ah)",,ФР-00000537,,СК-1207 Восток аккумуляторная батарея,СК1207,yes,0.95,sig+brand,ФР-00000537,agree
+3205,"Аккумулятор Sprinter XP12V2500 (AGM, 69Ah)",,ФР-00002243,,Аккумуляторная батарея SPRINTER XP12V2500 (Португалия),SPRINTERXP12V2500,yes,0.95,sig+brand,ФР-00002243,agree
+3213,"Аккумулятор Delta DTM 1275 L (AGM, 75Ah)",,КА-00004022,,Аккумуляторная батарея DTM 1275 L Delta / Китай,DTM1275L,yes,0.95,sig+brand,КА-00004022,agree
+3214,"Аккумулятор Delta HRL 12-320W (AGM, 75Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+3215,"Аккумулятор Delta HRL 12-75 (AGM, 75Ah)",,КА-00004758,,"Аккумуляторная батарея Delta HRL 12-75 X, OURTO1R / Вьетнам /",DELTAHRL1275,yes,0.95,sig+brand,КА-00004758,agree
+3230,"Аккумулятор Delta CT 1208 (AGM, 8Ah)",,ФР-00001000,,"CT 1208 Delta Аккумуляторная батарея, изг. ГОНКОНГ, страна ввоза Р",CT1208,yes,0.95,sig+brand,ФР-00001000,agree
+3232,"Аккумулятор Panasonic UP-VW0645P1 (AGM, 8Ah)",4664,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+3233,"Аккумулятор Panasonic UP-VW1245P1 (AGM, 8Ah)",4664,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+3234,"Аккумулятор Yuasa REW 45-12 (AGM, 8Ah)",4697,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+3237,"Аккумулятор Delta FTS 12-80 (AGM, 80Ah)",,КА-00005119,,Аккумуляторная батарея DELTA FTS 12-180 (12A/180Аh),DELTAFTS12,yes,0.6,sig+brand+generic,КА-00005119,agree
+3238,"Аккумулятор Delta HRL 12-370W (AGM, 80Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+3239,"Аккумулятор Delta HRL 12-80 (AGM, 80Ah)",,ФР-00000273,HRL12-80,Аккумуляторныя батарея Delta HRL12-80,DELTAHRL1280,yes,0.95,sig+brand,ФР-00000273,agree
+3247,"Аккумулятор CSB HRL12330W (AGM, 85Ah)",,КА-00005686,,Аккумулятор CSB HRL 12330W FR 12V/83Ah /Китай/,CSBHRL12330W,yes,0.95,sig+brand,КА-00005686,agree
+3248,"Аккумулятор Sonnenschein A512/85 A для ИБП (GEL, 85Ah)",,КА-00003789,,"Аккумуляторная батарея Sonnenschein  A512/200А, ГЕРМАНИЯ",SONNENSCHEINA512,yes,0.95,sig+brand,КА-00003789,agree
+3257,"Аккумулятор CSB HR1234W F2 (AGM, 9Ah)",,ФР-00001872,О3.1.52.26.,Аккумуляторная батарея CSB HR 1234W F2 12V/9Ah,CSBHR1234WF2,yes,0.95,sig+brand,КА-00000304,differ
+3258,"Аккумулятор CSB HRL1234W F2FR (AGM, 9Ah)",,КА-00002670,П1.2.52.26.,"Аккумулятор CSB HRL1234W F2 FR (12V/9Ah),Вьетнам",CSBHRL1234WF2FR,yes,0.95,sig+brand,КА-00002670,agree
+3261,"Аккумулятор Delta DTM 1209 (AGM, 9Ah)",,КА-00002649,,"Аккумуляторная батарея DTM 1209 Delta, 2AUQQZK /Китай/",DTM1209,yes,0.6,sig+brand+generic,ФР-00000182,differ
+3262,"Аккумулятор Delta HR 12-34W (AGM, 9Ah)",,КА-00003226,,Аккумуляторная батарея Delta HR12-34W  F2 12V9Ah/Китай,DELTAHR1234W,yes,0.95,sig+brand,КА-00003226,agree
+3263,"Аккумулятор Delta HR 12-9 (AGM, 9Ah)",,КА-00003026,,Аккумуляторная батарея Delta HR 12-9  /Китай/,DELTAHR129,yes,0.6,sig+brand+generic,КА-00003026,agree
+3264,"Аккумулятор Delta HR 6-9 (AGM, 8.8Ah)",,ФР-00000240,0008\A3,Аккумуляторная батарея Delta HR 6-9,DELTAHR69,yes,0.95,sig+brand,КА-00002119,differ
+3265,"Аккумулятор Delta HRL 12-9 (1234W) (AGM, 9Ah)",,КА-00002075,,Аккумуляторная батарея Delta HRL 12-9 /Китай/,DELTAHRL129,yes,0.6,sig+brand+generic,КА-00005768,differ
+3266,"Аккумулятор Fiamm 12FGH36 (AGM, 9Ah)",,ФР-00002108,,Батарея FIAMM 12FGH36 12V 9Ah,FIAMM12FGH36,yes,0.95,sig+brand,ФР-00002108,agree
+3270,"Аккумулятор MNB HR 1234W F2 (AGM, 9Ah)",4656,КА-00003226,,Аккумуляторная батарея Delta HR12-34W  F2 12V9Ah/Китай,HR1234WF2,no,0.85,sig,,new
+3271,"Аккумулятор WBR HR 1234W F2 (AGM, 9Ah)",4690,КА-00003226,,Аккумуляторная батарея Delta HR12-34W  F2 12V9Ah/Китай,HR1234WF2,no,0.85,sig,,new
+3272,"Аккумулятор WBR HRL 1234W (AGM, 9Ah)",4690,КА-00002670,П1.2.52.26.,"Аккумулятор CSB HRL1234W F2 FR (12V/9Ah),Вьетнам",HRL1234W,no,0.6,sig+generic,,new
+3273,"Аккумулятор Восток PRO СК-1209 (AGM, 9Ah)",,ФР-00000163,СК1209,СК-1209 ВОСТОК Аккумуляторная батарея. Страна ввоза: РФ. Производство: Китай,СК1209,yes,0.95,sig+brand,ФР-00000163,agree
+3275,"Аккумулятор Delta HRL 12-420W (AGM, 90Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+3276,"Аккумулятор Delta HRL 12-90 (AGM, 90Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+3279,"Аккумулятор Marathon XL12V85 (AGM, 85Ah)",,КА-00002765,,Аккумуляторная батарея Marathon XL12V85,MARATHONXL12V85,yes,0.95,sig+brand,КА-00002765,agree
+3280,"Аккумулятор Marathon XL12V85 V0 (AGM, 85Ah)",,КА-00002765,,Аккумуляторная батарея Marathon XL12V85,MARATHONXL12V85,yes,0.95,sig+brand,КА-00002765,agree
+3283,"Аккумулятор Sonnenschein A412/90 A для ИБП (GEL, 90Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+3284,"Аккумулятор Sonnenschein A412/90 F10 для ИБП (GEL, 90Ah)",,КА-00002856,,"Аккумуляторная батарея Sonnenschein  A412/50, ГЕРМАНИЯ",SONNENSCHEINA412,yes,0.6,sig+brand+generic,КА-00002667,differ
+3291,"Аккумулятор Sprinter XP12V3000 (AGM, 92Ah)",,КА-00004176,,Аккумуляторная батарея Sprinter XP 12v3000/Португалия,SPRINTERXP12V3000,yes,0.6,sig+brand+generic,КА-00004176,agree
+3736,"Аккумулятор Восток PRO СК-1212 (AGM, 12Ah)",,ФР-00000415,,СК-1212  ВОСТОК Аккумуляторная батарея. Страна ввоза: РФ. Производство: Китай,СК1212,yes,0.95,sig+brand,ФР-00000415,agree
+4728,Источник бесперебойного питания Hiden Expert UDC9206S-RT,,КА-00005082,,Hiden Expert UDC9206S,EXPERTUDC9206S,no,0.95,sig,КА-00005082,agree
+20088,"Аккумулятор APC RBC7 (AGM, 17Ah)",,КА-00003292,,Аккумулятор свинцовый APC RBC7,APCRBC7,yes,0.95,sig+brand,КА-00003292,agree
+20090,"Аккумулятор APC RBC43 (AGM, 5Ah)",20089,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+20093,"Аккумулятор APC RBC143 (AGM, 5Ah)",20089,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+20100,"Аккумулятор APC RBC17 (AGM, 9Ah)",,КА-00003832,,Комплект аккумуляторов APC RBC17,APCRBC17,yes,0.95,sig+brand,КА-00003832,agree
+20101,"Аккумулятор APC RBC140 (AGM, 5.5Ah)",20089,КА-00003153,,Комплект аккумуляторных батарей APCRBC140 12V 5.5ah /Китай/,APCRBC140,no,0.6,sig+generic,,new
+20102,"Аккумулятор APC RBC124 (AGM, 9Ah)",20089,ФР-00001702,,Сменный аккумуляторный картридж APCRBC124,APCRBC124,no,0.85,sig,,new
+20103,"Аккумулятор APC RBC123 (AGM, 7Ah)",,КА-00005774,,Аккумулятор APC RBC123 24V 7AH /Китай/,APCRBC123,yes,0.95,sig+brand,КА-00005774,agree
+20108,"Аккумулятор Delta DT 4045 (47) (AGM, 4.5Ah)",,ФР-00001468,О1.2.52.29.,"Аккумуляторная батарея Delta DT 4045 (4V4,5Ah) Страна ввоза: РФ, Страна изготовитель: Китай.",DELTADT4045,yes,0.95,sig+brand,КА-00002347,differ
+20109,"Аккумулятор Delta DT 12008 (T13) (AGM, 0.8Ah)",,ФР-00000146,DT12008,"Аккумуляторная батарея Delta DT12008 12В, 0,8Ач Страна ввоза: РФ, Страна изготовитель: Вьетнам.",DELTADT12008,yes,0.95,sig+brand,ФР-00000146,agree
+20110,"Аккумулятор Delta DT 12008 (T9) (AGM, 0.8Ah)",,ФР-00000146,DT12008,"Аккумуляторная батарея Delta DT12008 12В, 0,8Ач Страна ввоза: РФ, Страна изготовитель: Вьетнам.",DELTADT12008,yes,0.95,sig+brand,ФР-00000146,agree
+20111,"Аккумулятор Delta DTM 1233 I (AGM, 33Ah)",,КА-00002593,,Аккумуляторная батарея Delta DTM 1233 L,DELTADTM1233,yes,0.95,sig+brand,КА-00001918,differ
+20112,"Аккумулятор Delta DTM 1240 I (AGM, 40Ah)",,КА-00002238,,"Аккумуляторная батарея DTM 1240 L Delta, /Вьетнам/",DTM1240,yes,0.6,sig+brand+generic,КА-00002238,agree
+20113,"Аккумулятор Delta DTM 1255 I (AGM, 55Ah)",,КА-00002130,,Аккумуляторная батарея Delta DTM 1255 L,DELTADTM1255,yes,0.95,sig+brand,КА-00002130,agree
+20114,"Аккумулятор Delta DTM 1265 I (AGM, 65Ah)",,КА-00003969,,Аккумуляторная батарея Delta DTM 12-65 L(12V 65Ah),DELTADTM1265,yes,0.95,sig+brand,КА-00002704,differ
+20115,"Аккумулятор Delta DTM 1275 I (AGM, 75Ah)",,КА-00004022,,Аккумуляторная батарея DTM 1275 L Delta / Китай,DTM1275,yes,0.95,sig+brand,КА-00004022,agree
+20116,"Аккумулятор Delta DTM 12100 I (AGM, 100Ah)",,КА-00002549,,"Аккумуляторная батарея Delta DTM 12100 L, страна происхождения товара Вьетнам, страна ввоза Россия",DELTADTM12100,yes,0.95,sig+brand,КА-00002549,agree
+20117,"Аккумулятор DTM 12120 I (AGM, 120Ah)",,КА-00000260,,"DTM 12120 L Delta Аккумуляторная батарея, страна происхождения товара Вьетнам, страна ввоза Россия",DTM12120,yes,0.6,sig+brand+generic,КА-00000260,agree
+20118,"Аккумулятор Delta DTM 12150 I (AGM, 150Ah)",,КА-00004518,,Аккумулятор DTM 12150 L Delta (12V / 150Ah) / Вьетнам,DTM12150,yes,0.95,sig+brand,КА-00004518,agree
+20119,"Аккумулятор Delta DTM 12200 I (AGM, 200Ah)",,КА-00001964,,"Аккумуляторная батарея Delta DTM 12200 L (12V,200A)/ Китай",DELTADTM12200,yes,0.95,sig+brand,КА-00001964,agree
+20121,"Аккумулятор Delta HR 6-15 (AGM, 15Ah)",,КА-00001895,,"Аккумуляторная батарея Delta HR 6-12 6В, 12Ач Страна ввоза: РФ.",DELTAHR6,yes,0.95,sig+brand,,new
+20122,"Аккумулятор Delta HR 12-15 (AGM, 15Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+20123,"Аккумулятор Delta 12-26 (AGM, 26Ah)",,КА-00000317,,"Аккумуляторная батарея GPL 12-26 AGM/CONTACT, ВЬЕТНАМ",1226AGM,no,0.85,sig,КА-00002916,differ
+20124,"Аккумулятор Delta HR 12-40 (AGM, 40Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+20125,"Аккумулятор Delta HR 12-65 (AGM, 65Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00002753,differ
+20126,"Аккумулятор Delta HR 12-100 (AGM, 100Ah)",,КА-00001615,,"Аккумулятор Delta HR 12-12 12V 12Ah произ-во: Вьетнам, ввоз: Россия",DELTAHR12,yes,0.6,sig+brand+generic,КА-00000258,differ
+20127,"Аккумулятор Delta CGD 1208 (AGM, 8Ah)",,КА-00003766,,Аккумуляторная батарея CGD 1208 Delta /Вьетнам/,CGD1208,yes,0.95,sig+brand,КА-00003766,agree
+20128,"Аккумулятор Delta CGD 1212 (AGM, 12Ah)",4622,КА-00003669,,"Аккумулятор Ventura GP 12-12/AGM, ВЬЕТНАМ",1212AGM,no,0.85,sig,,new
+20129,"Аккумулятор Delta CGD 1233 (AGM, 33Ah)",,КА-00003445,,Аккумуляторная батарея CGD 1233 Delta,CGD1233,yes,0.95,sig+brand,КА-00003445,agree
+20130,"Аккумулятор Delta CGD 1255 (AGM, 55Ah)",,КА-00003830,,Аккумуляторная батарея CGD 1255 Delta,CGD1255,yes,0.95,sig+brand,КА-00003830,agree
+20131,"Аккумулятор Delta CGD 12100 (AGM, 100Ah)",,КА-00002061,,Аккумулятор карбоновый Delta CGD 12-100,DELTACGD12100,yes,0.95,sig+brand,КА-00002061,agree
+20132,"Аккумулятор Delta CGD 12200 (AGM, 200Ah)",,КА-00003564,,Аккумуляторная батарея Delta CGD 12200 (12V / 200Ah),DELTACGD12200,yes,0.95,sig+brand,КА-00003564,agree
+20133,"Аккумулятор Delta HRL 12-180 X (AGM, 180Ah)",,КА-00005187,,"Аккумуляторная батарея Delta FTS 12-180 X, QHI3MS8 /Вьетнам/",12180X,yes,0.95,sig+brand,КА-00000259,differ
+20134,"Аккумулятор Delta HRL 12-7.2 X (AGM, 7.2Ah)",,КА-00001027,,Аккумуляторная батарея Delta HRL 12-7.2 X /Китай/,DELTAHRL127,yes,0.6,sig+brand+generic,КА-00001027,agree
+20135,"Аккумулятор HRL 12-9 (1234W) X (AGM, 9 Ah)",4622,КА-00002467,,Аккумулятор HRL12-45X,АККУМУЛЯТОРHRL12,no,0.95,sig,,new
+20136,"Аккумулятор Delta HRL 12-12 X (AGM, 12Ah)",,КА-00001251,,Аккумуляторная батарея Delta HRL 12-12 X /Вьетнам/,DELTAHRL1212,yes,0.6,sig+brand+generic,КА-00000259,differ
+20137,"Аккумулятор HRL 12-18 X (AGM, 18Ah)",4622,КА-00002467,,Аккумулятор HRL12-45X,АККУМУЛЯТОРHRL12,no,0.95,sig,,new
+20138,"Аккумулятор Delta HRL 12-26 X (AGM, 26Ah)",,КА-00001894,,Аккумуляторная батарея Delta HRL 12-26 Х (12V 28Ah),DELTAHRL1226,yes,0.6,sig+brand+generic,КА-00001894,agree
+20139,"Аккумулятор Delta HRL 12-33 X (AGM, 33Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+20140,"Аккумулятор Delta HRL 12-45 X (AGM, 45Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+20141,"Аккумулятор Delta HRL 12-55 X (AGM, 55Ah)",,КА-00005563,,Аккумулятор Delta HRL 12-55 X(12V 55A)/ Китай,DELTAHRL1255,yes,0.95,sig+brand,КА-00005563,agree
+20142,"Аккумулятор Delta HRL 12-65 X (AGM, 65Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+20143,"Аккумулятор Delta HRL 12-75 X (AGM, 75Ah)",,КА-00004758,,"Аккумуляторная батарея Delta HRL 12-75 X, OURTO1R / Вьетнам /",DELTAHRL1275,yes,0.95,sig+brand,КА-00004758,agree
+20144,"Аккумулятор Delta HRL 12-80 X (AGM, 80Ah)",,ФР-00000273,HRL12-80,Аккумуляторныя батарея Delta HRL12-80,DELTAHRL1280,yes,0.95,sig+brand,ФР-00000273,agree
+20145,"Аккумулятор Delta HRL 12-90 X (AGM, 90Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12,yes,0.6,sig+brand+generic,КА-00000259,differ
+20146,"Аккумулятор Delta HRL 12-100 X (AGM, 100Ah)",,КА-00006757,,Аккумуляторная батарея Delta FTS 12-100 X /Китай/,12100X,yes,0.95,sig+brand,КА-00000259,differ
+20147,"Аккумулятор Delta HRL 12-140 X (AGM, 140Ah)",,КА-00000423,,Аккумуляторная батарея Delta HRL 12-140 Х /Вьетнам/,DELTAHRL12140,yes,0.95,sig+brand,КА-00000423,agree
+20148,"Аккумулятор Delta FT 12-50 M (AGM, 50Ah)",,КА-00001863,,Аккумуляторная батарея Delta FT 12-50 M,DELTAFT1250,yes,0.95,sig+brand,КА-00001863,agree
+20149,"Аккумулятор Delta FT 12-100 M (AGM, 100Ah)",,КА-00004962,,Аккумуляторная батарея Delta FT 12-100 M /Китай,DELTAFT12100,yes,0.95,sig+brand,КА-00004962,agree
+20150,"Аккумулятор Delta FT 12-105 M (AGM, 105Ah)",,КА-00001863,,Аккумуляторная батарея Delta FT 12-50 M,DELTAFT12,yes,0.6,sig+brand+generic,КА-00002602,differ
+20151,"Аккумулятор Delta FT 12-125 M (AGM, 125Ah)",,КА-00002317,,Аккумулятор Delta FT 12-125 M,DELTAFT12125,yes,0.95,sig+brand,КА-00002317,agree
+20152,"Аккумулятор Delta FT 12-150 M (AGM, 150Ah)",,КА-00001863,,Аккумуляторная батарея Delta FT 12-50 M,DELTAFT12,yes,0.6,sig+brand+generic,КА-00001614,differ
+20153,"Аккумулятор Delta FT 12-180 M (AGM, 180Ah)",,КА-00001863,,Аккумуляторная батарея Delta FT 12-50 M,DELTAFT12,yes,0.6,sig+brand+generic,КА-00001614,differ
+20156,"Аккумулятор Delta XPERT HRL 12-670 W (AGM, 150Ah)",,КА-00004981,,"Аккумуляторня батарея Delta HRL 12-670W, DKW0839 /Вьетнам/",HRL12670W,yes,0.95,sig+brand,КА-00000259,differ
+20159,"Аккумулятор Delta XPERT HRL 12-480 W (AGM, 100Ah)",,КА-00002769,,Аккумуляторная батарея Delta HRL 12-480 W,HRL12480W,yes,0.95,sig+brand,КА-00002769,agree
+20161,"Аккумулятор Delta XPERT HRL 12-350 W (AGM, 75Ah)",,КА-00001618,,Аккумуляторная батарея HRL12-350W Delta-12V 75Ah,HRL12350W,no,0.85,sig,КА-00000259,differ
+20162,"Аккумулятор Delta XPERT HRL 12-170W (AGM, 33Ah)",,КА-00005871,,Аккумуляторная батарея Delta HRL 12-170W /Вьетнам/,HRL12170W,yes,0.95,sig+brand,КА-00005871,agree
+20164,"Аккумулятор Delta XPERT HRL 12-650 W (AGM, 150Ah)",,КА-00004972,,Аккумулятор Ventura HRL 12650W,HRL12650W,no,0.85,sig,КА-00000259,differ
+20170,"Аккумулятор Delta XPERT HRL 12-260W (AGM, 55Ah)",,КА-00005338,,Аккумуляторная батарея HRL 12-260W (VENTURA) /Вьетнам/,HRL12260W,no,0.85,sig,КА-00000259,differ
+20171,"Аккумулятор Delta XPERT HRL 12-211 W (AGM, 45Ah)",,КА-00002073,,"Аккумуляторная батарея Delta HRL 12-211 W , 88QMH51 /Вьетнам/",HRL12211W,yes,0.95,sig+brand,КА-00002073,agree
+20172,"Аккумулятор Delta XPERT HRL 12-155 W (AGM, 28Ah)",,КА-00003302,,Аккумуляторная батарея HRL 12-155 W (12V28Ah),HRL12155W,no,0.85,sig,КА-00000259,differ
+20173,"Аккумулятор Delta XPERT FTS 12-50 X (AGM, 50Ah)",,КА-00006758,,Аккумуляторная батарея Delta FTS 12-50 X /Китай/,FTS1250X,yes,0.95,sig+brand,КА-00006758,agree
+20175,"Аккумулятор Delta XPERT FTS 12-100 X (AGM, 100Ah)",,КА-00006757,,Аккумуляторная батарея Delta FTS 12-100 X /Китай/,FTS12100X,yes,0.95,sig+brand,КА-00006757,agree
+20176,"Аккумулятор Delta XPERT FTS 12-105 X (AGM, 105Ah)",,КА-00005743,,Аккумуляторная батарея Delta FTS 12-105 X /Китай/,FTS12105X,yes,0.95,sig+brand,КА-00005743,agree
+20179,"Аккумулятор Delta XPERT FTS 12-150 X (AGM, 150Ah)",,КА-00007126,,Аккумуляторная батарея Delta FTS 12-150 X,FTS12150X,yes,0.95,sig+brand,КА-00007126,agree
+20180,"Аккумулятор Delta XPERT FTS 12-180 X (AGM, 180Ah)",,КА-00005187,,"Аккумуляторная батарея Delta FTS 12-180 X, QHI3MS8 /Вьетнам/",FTS12180X,yes,0.95,sig+brand,КА-00005119,differ
+20186,"Аккумулятор Delta XPERT STC 500 (AGM, 500Ah)",,КА-00003297,,"Аккумулятор Delta STC 500, 2V 500Ah",STC500,yes,0.95,sig+brand,КА-00003297,agree
+20191,"Аккумулятор Delta XPERT STC 2000 (AGM, 2000Ah)",4622,КА-00005467,,Аккумулятор Cameron Sino Ni-MH CS-RBS950BL 7.2V 2000Ah /Китай/,2000AH,no,0.85,sig,,new
+23791,"Внешний батарейный блок APC SURT192XLBP (AGM, 10Ah)",20089,КА-00005708,,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",AGM10AH,no,0.85,sig,,new
+23793,"Внешний батарейный блок APC SRT192RMBP2 (AGM, 10Ah)",20089,КА-00005708,,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",AGM10AH,no,0.85,sig,,new
+23799,"Аккумулятор APC RBC23 (AGM, 7Ah)",,КА-00005164,,Аккумулятор свинцовый APC RBC23 /Китай/,APCRBC23,yes,0.95,sig+brand,КА-00005164,agree
+23803,"Аккумулятор APC APCRBC152 (AGM, 48V, 36Ah)",,КА-00003238,,Аккумулятор свинцовый APCRBC152 (48В/36 А·ч),APCRBC152,yes,0.95,sig+brand,КА-00003238,agree
+23808,"Внешний батарейный блок APC SRT192RMBP (AGM, 10Ah)",20089,КА-00005708,,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",AGM10AH,no,0.85,sig,,new
+23809,"Внешний батарейный блок APC SURT192RMXLBP (AGM, 11Ah)",,КА-00006114,,Аккумулятор свинцо-кислотный APC SURT192RMXLBP-CH /Китай/,APCSURT192RMXLBP,no,0.95,sig,КА-00006114,agree
+23810,"Внешний батарейный блок APC SMX120RMBP2U (AGM, 10Ah)",20089,КА-00005708,,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",AGM10AH,no,0.85,sig,,new
+23815,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",,КА-00005708,,"Внешний батарейный блок APC SRT192BP2 (AGM, 10Ah)",БЛОКAPCSRT192BP2,yes,0.95,sig+brand,КА-00005708,agree
+23818,"Аккумулятор APCRBC141 для ИБП APC (GEL, 5Ah)",,КА-00003237,,Аккумулятор свинцовый APCRBC141 (12В/5 Ач),APCRBC141,yes,0.6,sig+brand+generic,КА-00003237,agree
+23840,"Внешний батарейный блок APC SMX120BP (AGM, 5Ah)",20089,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+23938,"Аккумулятор Keheng Battery KH-ES-4850R1 (LiFePO4, 50Ah, 51.2V)",23937,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+23939,"Аккумулятор Keheng Battery KH-ES-4850R2 (LiFePO4, 50Ah, 51.2V)",23937,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+23940,"Аккумулятор Keheng Battery KH-ES-48100R1 (LiFePO4, 100Ah, 51.2V)",23937,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+23941,"Аккумулятор Keheng Battery KH-ES-48200R1 (LiFePO4, 200Ah, 51.2V)",23937,КА-00005276,,Аккумулятор LiFePO4 200Ah TBB Power M12-200/H,LIFEPO4200AH,no,0.95,sig,КА-00005276,agree
+23943,"Аккумулятор Deye SE-G5.1PRO (LiFePO4, 100Ah, 51.2V)",23942,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+23944,"Аккумулятор PCEnersys 4850 (LiFePO4, 100Ah, 48V)",23945,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+24445,"Аккумулятор Contact GPL 12-40 (AGM, 40Ah)",,КА-00001392,,"Аккумулятор CONTACT GPL 12-40 (12V/40Ah),ВЬЕТНАМ",CONTACTGPL1240,yes,0.95,sig+brand,КА-00000316,differ
+24446,"Аккумулятор Contact GPL 12-26 (AGM, 26Ah)",,КА-00001852,,"Аккумулятор CONTACT GPL 12-26 (12V/26Ah) ,Вьетнам",CONTACTGPL1226,yes,0.95,sig+brand,КА-00000317,differ
+24447,"Аккумулятор Contact GP 12-18 (AGM, 18Ah)",,КА-00002368,П1.3.52.24.,"Аккумулятор CONTACT GP 12-18 (12V/18Ah), ВЬЕТНАМ",CONTACTGP1218,yes,0.95,sig+brand,КА-00000141,differ
+24448,"Аккумулятор Contact GP 12-12 (AGM, 12Ah)",,КА-00001379,О4.2.52.24.,"Аккумулятор CONTACT GP 12-7 F1 (12V/7Ah),ВЬЕТНАМ",CONTACTGP12,yes,0.6,sig+brand+generic,КА-00000141,differ
+24449,"Аккумулятор Contact GP 12-7 (AGM, 7Ah)",,КА-00001379,О4.2.52.24.,"Аккумулятор CONTACT GP 12-7 F1 (12V/7Ah),ВЬЕТНАМ",CONTACTGP127,yes,0.95,sig+brand,КА-00000302,differ
+24450,"Аккумулятор Contact КТ 12-40 (AGM, 40Ah)",24444,КА-00000316,,Аккумуляторная батарея GPL 12-40 AGM/CONTACT/Вьетнам/,1240AGM,no,0.85,sig,,new
+24451,"Аккумулятор Contact КТ 12-7 (AGM, 7Ah)",24444,КА-00000302,,Аккумулятор GP 12-7 AGM/CONTACT  /Вьетнам/,127AGM,no,0.6,sig+generic,,new
+24518,"Аккумулятор EnerSys Cyclon E Cell (AGM, 8 Ah, 2V)",,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,yes,0.95,sig+brand,КА-00005195,differ
+24519,"Аккумулятор EnerSys Cyclon DT Cell (AGM, 4.5 Ah, 2V)",,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00005195,differ
+24520,"Аккумулятор EnerSys Cyclon 0800-F2W (AGM, 5Ah, 4V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24521,"Аккумулятор EnerSys Cyclon 0800-0009 (AGM, 5Ah, 4V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24522,"Аккумулятор EnerSys Cyclon 0800-0010 (AGM, 5Ah, 4V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24524,"Аккумулятор EnerSys Cyclon 0800-0011 (AGM, 5Ah, 6V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24525,"Аккумулятор EnerSys Cyclon 0800-0071 (AGM, 5Ah, 6V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24528,"Аккумулятор EnerSys Cyclon 0800-0102 (AGM, 5Ah, 6V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24529,"Аккумулятор EnerSys Cyclon 0800-0103 (AGM, 5Ah, 6V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24533,"Аккумулятор EnerSys Cyclon 0850-0102 (AGM, 8Ah, 6V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+24534,"Аккумулятор EnerSys Cyclon 0850-0103 (AGM, 8Ah, 6V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+24535,"Аккумулятор EnerSys Cyclon 0860-0102 (AGM, 4.5Ah, 6V)",4629,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+24536,"Аккумулятор EnerSys Cyclon 0860-0103 (AGM, 4.5Ah, 6V)",4629,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+24537,"Аккумулятор EnerSys Cyclon 0800-0104 (AGM, 5Ah, 8V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24538,"Аккумулятор EnerSys Cyclon 0800-0105 (AGM, 5Ah, 8V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24541,"Аккумулятор EnerSys Cyclon 0800-0008 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24542,"Аккумулятор EnerSys Cyclon 0800-0016 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24543,"Аккумулятор EnerSys Cyclon 0800-0047 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24544,"Аккумулятор EnerSys Cyclon 0800-0072 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24545,"Аккумулятор EnerSys Cyclon 0800-0108 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24546,"Аккумулятор EnerSys Cyclon 0800-0109 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24549,"Аккумулятор EnerSys Cyclon 0800-0114 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24550,"Аккумулятор EnerSys Cyclon 0800-0115 (AGM, 5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24551,"Аккумулятор EnerSys Cyclon 0810-0008 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24552,"Аккумулятор EnerSys Cyclon 0810-0016 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24553,"Аккумулятор EnerSys Cyclon 0810-0067 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24554,"Аккумулятор EnerSys Cyclon 0810-0075 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24555,"Аккумулятор EnerSys Cyclon 0810-0108 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24556,"Аккумулятор EnerSys Cyclon 0800-0109 (AGM, 2.5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24557,"Аккумулятор EnerSys Cyclon 0800-0114 (AGM, 2.5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24558,"Аккумулятор EnerSys Cyclon 0800-0115 (AGM, 2.5Ah, 12V)",,КА-00007113,,Аккумулятор свинцово-кислотный EnerSys Cyclon 0800-0115 12V 5Ah /Китай/,ENERSYSCYCLON0800,yes,0.95,sig+brand,КА-00007113,agree
+24560,"Аккумулятор EnerSys Cyclon 0850-0108 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+24561,"Аккумулятор EnerSys Cyclon 0850-0109 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+24562,"Аккумулятор EnerSys Cyclon 0850-0114 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+24563,"Аккумулятор EnerSys Cyclon 0850-0115 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+24564,"Аккумулятор EnerSys Cyclon 0860-0108 (AGM, 4.5Ah, 12V)",4629,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+24565,"Аккумулятор EnerSys Cyclon 0860-0109 (AGM, 4.5Ah, 12V)",4629,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+24566,"Аккумулятор EnerSys Cyclon 0860-0114 (AGM, 4.5Ah, 12V)",4629,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,КА-00003890,agree
+24567,"Аккумулятор EnerSys Cyclon 0860-0115 (AGM, 4.5Ah, 12V)",4629,КА-00003890,,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah), ВЬЕТНАМ",AGM45AH,no,0.85,sig,,new
+24568,"Аккумулятор EnerSys Cyclon Monobloc 0809-0012 (AGM, 5Ah, 6V)",4629,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+24569,"Аккумулятор EnerSys Cyclon Monobloc 0809-0020 (AGM, 5Ah, 12V)",4629,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+24570,"Аккумулятор EnerSys Cyclon Monobloc 0809-0030 (AGM, 5Ah, 12V)",4629,КА-00005195,,"EnerSys Cyclon X Cell (AGM, 5 Ah, 2V)",AGM5AH,no,0.85,sig,,new
+24571,"Аккумулятор EnerSys Cyclon Monobloc 0819-0010 (AGM, 2.5Ah, 4V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",0010AGM,no,0.85,sig,,new
+24574,"Аккумулятор EnerSys Cyclon Monobloc 0819-0016 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24576,"Аккумулятор EnerSys Cyclon Monobloc 0819-0020 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24577,"Аккумулятор EnerSys Cyclon Monobloc 0819-0030 (AGM, 2.5Ah, 12V)",4629,КА-00003376,,"Аккумулятор Ventura HRL 12-21 5,5Ah 12V",5AH12V,no,0.85,sig,,new
+24580,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",CYCLONMONOBLOC0859,no,0.95,sig,КА-00005894,agree
+24581,"Аккумулятор EnerSys Cyclon Monobloc 0859-0014 (AGM, 8Ah, 8V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",CYCLONMONOBLOC0859,no,0.95,sig,,new
+24582,"Аккумулятор EnerSys Cyclon Monobloc 0859-0016 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",CYCLONMONOBLOC0859,no,0.95,sig,,new
+24583,"Аккумулятор EnerSys Cyclon Monobloc 0859-0019 (AGM, 8Ah, 8V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",CYCLONMONOBLOC0859,no,0.95,sig,,new
+24584,"Аккумулятор EnerSys Cyclon Monobloc 0859-0020 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",CYCLONMONOBLOC0859,no,0.95,sig,,new
+24585,"Аккумулятор EnerSys Cyclon Monobloc 0859-0030 (AGM, 8Ah, 12V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",CYCLONMONOBLOC0859,no,0.95,sig,,new
+24586,"Аккумулятор EnerSys Cyclon Monobloc 4X0859-0012E (AGM, 8Ah, 24V)",4629,КА-00005894,,"Аккумулятор EnerSys Cyclon Monobloc 0859-0010 (AGM, 8Ah, 4V) / США",AGM8AH,no,0.85,sig,,new
+25046,Источник бесперебойного питания APC Smart UPS SRT 3000VA,,КА-00006872,,Источник бесперебойного питания APC Smart-UPS 3000VA (SMT3000IC) / Китай,3000VA,yes,0.95,sig+brand,КА-00006872,agree
+25054,Источник бесперебойного питания APC Smart-UPS C 1000VA,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25056,Источник бесперебойного питания APC Smart-UPS 1000VA,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25057,Источник бесперебойного питания APC Smart-UPS 1000VA USB & Serial RM,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25061,Источник бесперебойного питания APC Smart-UPS 1500VA LCD RM,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25062,Источник бесперебойного питания APC Smart-UPS 1500VA LCD,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25065,Источник бесперебойного питания APC Smart-UPS 1000VA LCD,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25066,Источник бесперебойного питания APC Smart-UPS RT 1000VA,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25067,Источник бесперебойного питания APC Smart-UPS C 1500VA,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25068,Источник бесперебойного питания APC Smart-UPS X 1500VA Rack/Tower LCD,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25070,Источник бесперебойного питания APC Smart-UPS 1U 1500VA LCD,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25071,Источник бесперебойного питания APC Smart-UPS C 3000VA LCD,,КА-00006872,,Источник бесперебойного питания APC Smart-UPS 3000VA (SMT3000IC) / Китай,3000VA,yes,0.95,sig+brand,КА-00006872,agree
+25072,Источник бесперебойного питания APC Smart-UPS C 3000VA RM LCD,,КА-00006872,,Источник бесперебойного питания APC Smart-UPS 3000VA (SMT3000IC) / Китай,3000VA,yes,0.95,sig+brand,КА-00006872,agree
+25099,Источник бесперебойного питания CyberPower Professional RM LCD 3000VA,,КА-00006872,,Источник бесперебойного питания APC Smart-UPS 3000VA (SMT3000IC) / Китай,3000VA,yes,0.95,sig+brand,КА-00006872,agree
+25121,Источник бесперебойного питания IPPON Back Basic 1050,,КА-00003995,,Источник бесперебойного питания IPPON Back Basic 1050¶Euro,IPPONBACKBASIC1050,yes,0.95,sig+brand,КА-00003995,agree
+25122,Источник бесперебойного питания IPPON Back Basic 1050 Euro,,КА-00003995,,Источник бесперебойного питания IPPON Back Basic 1050¶Euro,IPPONBACKBASIC1050,yes,0.95,sig+brand,КА-00003995,agree
+25126,Источник бесперебойного питания IPPON Back Basic 1050 S Euro,,КА-00003995,,Источник бесперебойного питания IPPON Back Basic 1050¶Euro,IPPONBACKBASIC1050,yes,0.95,sig+brand,КА-00003995,agree
+25143,Источник бесперебойного питания IPPON Innova G2 1000,,КА-00005756,,Источник бесперебойного питания IPPON Innova G2 1000,IPPONINNOVAG21000,yes,0.95,sig+brand,КА-00005756,agree
+25144,Источник бесперебойного питания IPPON Innova G2 1000 Euro,,КА-00005756,,Источник бесперебойного питания IPPON Innova G2 1000,IPPONINNOVAG21000,yes,0.95,sig+brand,КА-00005756,agree
+25146,Источник бесперебойного питания IPPON Innova RT 1K 1000VA,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25149,Источник бесперебойного питания IPPON Innova G2 2000L,25108,КА-00005756,,Источник бесперебойного питания IPPON Innova G2 1000,IPPONINNOVAG2,no,0.95,sig,,new
+25152,Источник бесперебойного питания IPPON Innova G2 2000 Euro,25108,КА-00005756,,Источник бесперебойного питания IPPON Innova G2 1000,IPPONINNOVAG2,no,0.95,sig,,new
+25155,Источник бесперебойного питания IPPON Innova G2 3000 Euro,25108,КА-00005756,,Источник бесперебойного питания IPPON Innova G2 1000,IPPONINNOVAG2,no,0.95,sig,,new
+25248,Источник бесперебойного питания Eaton 9SX 5000VA,,КА-00004366,,Источник бесперебойного питания IНЭЛТ серии GAMMA 5KR 5000VA (IN5000-SI),5000VA,yes,0.95,sig+brand,КА-00004366,agree
+25249,Источник бесперебойного питания Eaton 9130 Rackmount 1500VA,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25257,Источник бесперебойного питания Eaton 5SC 1000VA,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25258,Источник бесперебойного питания Eaton 5S 1500VA,,КА-00005636,,ИБП CyberPower UT1500EIG 1500VA/900W LED/USB/RJ11/45 (6 IEC С13) 12V/7.5Ah*2/USB charger A/C,1500VA,no,0.85,sig,КА-00005636,agree
+25259,Источник бесперебойного питания Eaton 5S 1000VA,,КА-00005734,,ИБП Сайбер Электро ЭКСПЕРТ-II-1000Р 1000VA/1000W 2U/LCD/USB/RS-232/EPO/SNMPslot/RJ11/45/(8 IEC С13./,1000VA,no,0.85,sig,КА-00005734,agree
+25310,Источник бесперебойного питания IНЭЛТ SIGMA 5К 5000VA,,КА-00004366,,Источник бесперебойного питания IНЭЛТ серии GAMMA 5KR 5000VA (IN5000-SI),5000VA,yes,0.95,sig+brand,КА-00004366,agree
+25311,Источник бесперебойного питания IНЭЛТ SIGMA KS 3К,25307,КА-00003956,,Источник бесперебойного питания серии SIGMA KS 3К (IN3000-SI-KS),SIGMAKS3К,no,0.85,sig,,new
+25312,Источник бесперебойного питания IНЭЛТ Gamma 3K IN3000RM-GA-1,25307,КА-00003883,,ИБП серии GAMMA 3K (IN3000RM-GA-1),GAMMA3KIN3000RMGA,no,0.95,sig,,new
+25313,Источник бесперебойного питания IНЭЛТ Gamma 3KR IN3000RM-GA-KR-KS,25307,КА-00003883,,ИБП серии GAMMA 3K (IN3000RM-GA-1),IN3000RMGA,no,0.95,sig,,new
+25314,Источник бесперебойного питания IНЭЛТ Gamma 3KR IN3000RM-GA-KR-KS-TW-IEC,25307,КА-00003883,,ИБП серии GAMMA 3K (IN3000RM-GA-1),IN3000RMGA,no,0.95,sig,,new
+25315,Источник бесперебойного питания IНЭЛТ Gamma 3KR IN3000RM-GA-KR-KS-TW-SCH,25307,КА-00003883,,ИБП серии GAMMA 3K (IN3000RM-GA-1),IN3000RMGA,no,0.95,sig,,new
+25316,Источник бесперебойного питания IНЭЛТ GAMMA 3К 3000VA,,КА-00006872,,Источник бесперебойного питания APC Smart-UPS 3000VA (SMT3000IC) / Китай,3000VA,yes,0.95,sig+brand,КА-00006872,agree
+25318,Источник бесперебойного питания IНЭЛТ Gamma 3KL IN3000RM-GA-KL,25307,КА-00003883,,ИБП серии GAMMA 3K (IN3000RM-GA-1),IN3000RMGA,no,0.95,sig,,new
+25319,Источник бесперебойного питания IНЭЛТ BETA 3К IN3000-ВЕ LCD,25307,КА-00003956,,Источник бесперебойного питания серии SIGMA KS 3К (IN3000-SI-KS),3КIN3000,no,0.85,sig,,new
+25785,"Аккумулятор Ventura GPL 12-7.5 (AGM, 7.5Ah)",,КА-00003668,,"Аккумулятор Ventura GPL 12-7.5, ВЬЕТНАМ",VENTURAGPL127,yes,0.6,sig+brand+generic,КА-00003227,differ
+25786,"Аккумулятор Ventura GPL 12-18 (AGM, 18Ah)",,КА-00003579,,"Аккумулятор Ventura GPL 12-18/AGM, ВЬЕТНАМ",GPL1218AGM,yes,0.95,sig+brand,КА-00000855,differ
+25787,"Аккумулятор Ventura GPL 12-7.2 (AGM, 7.2Ah)",,КА-00001362,О4.3.52.73.,"Аккумуляторная батарея Ventura GPL 12-7.2 (12V 7,2Ah) ВЬЕТНАМ",VENTURAGPL127,yes,0.6,sig+brand+generic,КА-00000252,differ
+25788,"Аккумулятор Ventura GPL 12-9 (AGM, 9Ah)",,КА-00001374,,"Аккумуляторная батарея VENTURA GPL 12-9 (12V/9Ah), ВЬЕТНАМ",VENTURAGPL129,yes,0.95,sig+brand,КА-00001374,agree
+25829,"Аккумулятор Leoch FT12-55 (AGM, 55Ah)",4649,КА-00000347,,Аккумуляторная батарея Ritar FT12-55 страна происхождения - Китай,FT1255,no,0.85,sig,,new
+25833,"Аккумулятор Leoch FT12-100A (AGM, 12V, 100Ah)",4649,КА-00003031,,"Аккумулятор Ventura FT 12-100 (12V100Ah),Китай",12V100AH,no,0.6,sig+generic,,new
+25834,"Аккумулятор Leoch FT12-100H (AGM, 12V, 100Ah)",4649,КА-00003031,,"Аккумулятор Ventura FT 12-100 (12V100Ah),Китай",12V100AH,no,0.6,sig+generic,,new
+25835,"Аккумулятор Leoch FT12-125 (AGM, 12V, 125Ah)",4649,КА-00002317,,Аккумулятор Delta FT 12-125 M,FT12125,no,0.85,sig,,new
+25838,"Аккумулятор Leoch FT12-200 (AGM, 200Ah)",4649,КА-00003906,,"Аккумулятор Ventura  FT 12-200 (12V, 200Ah)",FT12200,no,0.6,sig+generic,,new
+25937,"Аккумулятор Atlas Battery (LiFePO4, 480Ah, 48V)",25883,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25938,"Аккумулятор Atlas Battery (LiFePO4, 525Ah, 48V)",25883,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25981,"Аккумулятор Kanavno LFP1224 (LiFePO4, 24Ah, 12.8V)",25974,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25982,"Аккумулятор Kanavno LFP1206 (LiFePO4, 6Ah, 12.8V)",25974,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25983,"Аккумулятор Kanavno LFP1208 (LiFePO4, 8Ah, 12.8V)",25974,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25984,"Аккумулятор Kanavno LFP24100 (LiFePO4, 100Ah, 24V)",25974,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25992,"Аккумулятор LiitoKala LFP12100 (LiFePO4, 100Ah, 12.8V)",20378,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25997,"Аккумулятор LITJET PRO 1207 (LiFePO4, 7Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25998,"Аккумулятор LITJET PRO 1212 (LiFePO4, 12Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+25999,"Аккумулятор LITJET PRO 1218 (LiFePO4, 18Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26000,"Аккумулятор LITJET PRO 1225 (LiFePO4, 25Ah, 12V)",25996,КА-00001605,,"Аккумулятор LiFePO4 25ah 3,2v",LIFEPO425AH,no,0.95,sig,КА-00001605,agree
+26001,"Аккумулятор LITJET PRO 1240 (LiFePO4, 40Ah, 12V)",25996,ФР-00000703,,"Аккум. батарея NP12-40Ah, 12V 40Ah, Китай",40AH12V,no,0.85,sig,,new
+26002,"Аккумулятор LITJET PRO 1275 (LiFePO4, 75Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26003,"Аккумулятор LITJET PRO 2460 (LiFePO4, 60Ah, 24V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26004,"Аккумулятор LITJET PRO 12150 (LiFePO4, 150Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26005,"Аккумулятор LITJET PRO 2480 (LiFePO4, 80Ah, 24V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26006,"Аккумулятор LITJET BLACK 1218 (LiFePO4, 18Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26007,"Аккумулятор LITJET BLACK 1275 (LiFePO4, 75Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26008,"Аккумулятор LITJET BLACK 2480 (LiFePO4, 80Ah, 24V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26009,"Аккумулятор LITJET BLACK 12200 (LiFePO4, 200Ah, 12V)",25996,КА-00005276,,Аккумулятор LiFePO4 200Ah TBB Power M12-200/H,LIFEPO4200AH,no,0.95,sig,КА-00005276,agree
+26010,"Аккумулятор LITJET SMART 12100 (LiFePO4, 100Ah, 12V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26011,"Аккумулятор LITJET SMART 24100 (LiFePO4, 100Ah, 24V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26012,"Аккумулятор LITJET SMART 12200 (LiFePO4, 200Ah, 12V)",25996,КА-00005276,,Аккумулятор LiFePO4 200Ah TBB Power M12-200/H,LIFEPO4200AH,no,0.95,sig,КА-00005276,agree
+26013,"Аккумулятор LITJET SMART 36100 (LiFePO4, 100Ah, 36V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26014,"Аккумулятор LITJET SMART 24150 (LiFePO4, 150Ah, 24V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26015,"Аккумулятор LITJET SMART 24120 (LiFePO4, 120Ah, 24V)",25996,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26017,"Аккумулятор KEPWORTH 12180 (LiFePO4, 180Ah, 12.8V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26018,"Аккумулятор KEPWORTH 12300 (LiFePO4, 300Ah, 12.8V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26019,"Аккумулятор KEPWORTH 12100 (LiFePO4, 100Ah, 12.8V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26020,"Аккумулятор KEPWORTH 12200 (LiFePO4, 200Ah, 12.8V)",26016,КА-00005276,,Аккумулятор LiFePO4 200Ah TBB Power M12-200/H,LIFEPO4200AH,no,0.95,sig,,new
+26021,"Аккумулятор KEPWORTH 1260 (LiFePO4, 60Ah, 12.8V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26022,"Аккумулятор KEPWORTH 12120 (LiFePO4, 120Ah, 12.8V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26023,"Аккумулятор KEPWORTH 2440 (LiFePO4, 40Ah, 24V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26024,"Аккумулятор KEPWORTH 24100 (LiFePO4, 100Ah, 24V)",26016,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,КА-00006687,differ
+26025,"Аккумулятор Delta LFP Plastic 2424 (LiFePO4, 24Ah, 24V)",4622,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26026,"Аккумулятор Delta LFP Plastic 2454 (LiFePO4, 24Ah, 54V)",4622,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26027,"Аккумулятор Delta RTL4810 (LiFePO4, 48V, 10Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26028,"Аккумулятор Delta RTL4820 (LiFePO4, 48V, 20Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26029,"Аккумулятор Delta RTL4840 (LiFePO4, 48V, 40Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26030,"Аккумулятор Delta RTL4850 (LiFePO4, 48V, 50Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26031,"Аккумулятор Delta RTL48100 (LiFePO4, 48V, 100Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26032,"Аккумулятор Delta RTL48150 (LiFePO4, 48V, 150Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26033,"Аккумулятор Delta RTL48200 (LiFePO4, 48V, 200Ah)",4622,КА-00003988,,Аккумулятор LiFEPO4 48V 320ah (подогрев),LIFEPO448V,no,0.6,sig+generic,,new
+26049,"Аккумулятор НЭТЕР LFP4-300-150P13 (LiFePO4, 300Ah, 12V)",25675,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
+26050,"Аккумулятор Liitokala LFP12300 (LiFePO4, 300Ah, 12V)",20378,КА-00000063,,"Аккумулятор Lifepo4 IFR18650 3,7V 1500mah (Китай)",LIFEPO4,no,0.6,sig+generic,,new
