@@ -16,6 +16,16 @@ $offerIblockIds = [System.Collections.Generic.HashSet[string]]::new([System.Stri
 [void]$offerIblockIds.Add('28')
 [void]$offerIblockIds.Add('67')
 
+# The 2026-06-23 snapshot contains twelve reviewed, orphaned footwear offers in
+# iblock 67.  They have no CML2_LINK value and cannot safely be migrated, but
+# they are also demonstrably outside this batteries/UPS slice.  Keep this
+# exception deliberately narrow: any new, changed, linked, or in-scope offer
+# retains the hard reconciliation gate below.
+$reviewedOutOfScopeOfferIds = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
+foreach ($reviewedOfferId in @('26838', '26839', '26840', '26841', '26842', '26843', '26844', '26845', '26846', '26847', '26848', '26849')) {
+    [void]$reviewedOutOfScopeOfferIds.Add($reviewedOfferId)
+}
+
 # This extractor reads positional VALUES tuples. Validate the source schema before
 # using those positions so a Bitrix/MySQL upgrade cannot silently remap a field.
 $expectedTableColumns = @{
@@ -685,7 +695,11 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element' -ExpectedCol
         if ((Get-RowValue -Row $Row -Index 7) -eq 'Y') {
             $offerActiveElementCounts[$iblockId]++
         }
-        $offerElements[$id] = $iblockId
+        $offerElements[$id] = [PSCustomObject][ordered]@{
+            legacy_iblock_id = $iblockId
+            active           = Get-RowValue -Row $Row -Index 7
+            name             = Get-RowValue -Row $Row -Index 11
+        }
         return
     }
 
@@ -789,6 +803,7 @@ Write-Output 'Pass 5/5: reading raw property values for the selected B2B slice.'
 $propertyValues = [System.Collections.Generic.List[object]]::new()
 $offerCml2LinksToCatalog = 0
 $offerCml2LinksMissingCatalogParent = 0
+$offerIdsWithCml2LinkValues = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
 $attributePresence = @{}
 foreach ($elementId in $matchedSectionsByElement.Keys) {
     $attributePresence[$elementId] = [ordered]@{
@@ -804,6 +819,7 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element_property' -Ex
     $propertyId = Get-RowValue -Row $Row -Index 1
     $elementId = Get-RowValue -Row $Row -Index 2
     if ($offerCml2LinkPropertyIds.ContainsKey($propertyId) -and $offerElements.ContainsKey($elementId)) {
+        [void]$offerIdsWithCml2LinkValues.Add($elementId)
         $parentElementId = Get-RowValue -Row $Row -Index 3
         if ($catalogElements.ContainsKey($parentElementId)) {
             $offerCml2LinksToCatalog++
@@ -949,7 +965,23 @@ $firstFocusAdditionalFromOtherTargetRows = @($firstFocusRows | Where-Object { $_
 $firstFocusAdditionalFromOutsideTargetRows = @($firstFocusRows | Where-Object { $_.first_focus_membership -eq 'additional_first_focus_primary_outside_target_sections' })
 $offerElementTotal = ($offerElementCounts.Values | Measure-Object -Sum).Sum
 $offerActiveElementTotal = ($offerActiveElementCounts.Values | Measure-Object -Sum).Sum
-$offerDetectionStatus = if ($offerElementTotal -gt 0) { 'blocked_offer_infoblocks_require_reconciliation' } else { 'no_offer_elements_in_snapshot' }
+$reviewedOutOfScopeOfferCount = @($offerElements.Keys | Where-Object {
+    $offer = $offerElements[$_]
+    $reviewedOutOfScopeOfferIds.Contains($_) -and $offer.legacy_iblock_id -eq '67' -and -not $offerIdsWithCml2LinkValues.Contains($_)
+}).Count
+$unreviewedOfferIds = @($offerElements.Keys | Where-Object {
+    $offer = $offerElements[$_]
+    -not ($reviewedOutOfScopeOfferIds.Contains($_) -and $offer.legacy_iblock_id -eq '67' -and -not $offerIdsWithCml2LinkValues.Contains($_))
+})
+$offerDetectionStatus = if ($unreviewedOfferIds.Count -gt 0) {
+    'blocked_offer_infoblocks_require_reconciliation'
+}
+elseif ($reviewedOutOfScopeOfferCount -gt 0) {
+    'reviewed_orphan_offers_outside_b2b_scope'
+}
+else {
+    'no_offer_elements_in_snapshot'
+}
 
 $sourceSnapshot = [PSCustomObject][ordered]@{
     generated_at_utc             = [DateTime]::UtcNow.ToString('o')
@@ -965,6 +997,8 @@ $sourceSnapshot = [PSCustomObject][ordered]@{
     offer_cml2_link_properties_detected = $offerCml2LinkPropertyIds.Count
     offer_cml2_links_to_catalog   = $offerCml2LinksToCatalog
     offer_cml2_links_missing_catalog_parent = $offerCml2LinksMissingCatalogParent
+    reviewed_out_of_scope_offer_count = $reviewedOutOfScopeOfferCount
+    unreviewed_offer_count       = $unreviewedOfferIds.Count
     offer_detection_status        = $offerDetectionStatus
     target_keyword_sections      = $directTargetSectionIds.Count
     target_sections_with_children = $targetSectionIds.Count
@@ -984,10 +1018,10 @@ $sourceSnapshot = [PSCustomObject][ordered]@{
 }
 
 Write-Output "First-focus candidates: $($sourceSnapshot.first_focus_products_any_section_membership) total by any section membership; $($sourceSnapshot.first_focus_products_primary_section_membership) primary; $($sourceSnapshot.first_focus_products_additional_membership_primary_in_other_target_section) additional from another target section; $($sourceSnapshot.first_focus_products_additional_membership_primary_outside_target_sections) additional from outside the target slice."
-Write-Output "Offer infoblocks 28/67: $offerElementTotal elements ($offerActiveElementTotal active), $($offerCml2LinkPropertyIds.Count) CML2_LINK properties, $offerCml2LinksToCatalog links to catalog parents."
+Write-Output "Offer infoblocks 28/67: $offerElementTotal elements ($offerActiveElementTotal active), $($offerCml2LinkPropertyIds.Count) CML2_LINK properties, $offerCml2LinksToCatalog links to catalog parents; $reviewedOutOfScopeOfferCount reviewed out-of-scope, $($unreviewedOfferIds.Count) unreviewed."
 
-if ($offerElementTotal -gt 0) {
-    throw "Offer infoblocks 28/67 contain $offerElementTotal elements ($offerActiveElementTotal active; CML2_LINK properties: $($offerCml2LinkPropertyIds.Count); links to catalog: $offerCml2LinksToCatalog). Reconcile offers before treating infoblocks 26/65 as complete. No output was written."
+if ($unreviewedOfferIds.Count -gt 0) {
+    throw "Offer infoblocks 28/67 contain $($unreviewedOfferIds.Count) unreviewed elements ($offerActiveElementTotal active total; CML2_LINK properties: $($offerCml2LinkPropertyIds.Count); links to catalog: $offerCml2LinksToCatalog). Reconcile offers before treating infoblocks 26/65 as complete. No output was written."
 }
 
 if (-not $PSCmdlet.ShouldProcess($OutputDir, 'write generated B2B catalog audit CSV and JSON artifacts')) {

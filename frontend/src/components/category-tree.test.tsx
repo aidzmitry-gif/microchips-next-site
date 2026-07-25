@@ -1,36 +1,47 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { buildCategoryForest, CategoryTree } from "./category-tree";
+import { CategoryTree } from "./category-tree";
 
-describe("buildCategoryForest", () => {
-  it("builds category, subcategory and series levels from parent ids", () => {
-    const forest = buildCategoryForest([
-      { id: "1", parentId: "0", name: "Category", path: "/catalog/category" },
-      { id: "2", parentId: "1", name: "Subcategory", path: "/catalog/category/subcategory" },
-      { id: "3", parentId: "2", name: "Series", path: "/catalog/category/subcategory/series" },
-    ]);
-
-    expect(forest).toHaveLength(1);
-    expect(forest[0].children[0].children[0].name).toBe("Series");
-  });
-});
+const categories = [
+  {
+    slug: "batteries",
+    name: "Аккумуляторы",
+    path: "/catalog/akkumulyatory",
+    children: [{
+      slug: "ups",
+      name: "Для резервного питания",
+      path: "/catalog/akkumulyatory/dlya_ibp",
+      children: [{
+        slug: "gel",
+        name: "GEL",
+        path: "/catalog/akkumulyatory/dlya_ibp/gelevye",
+        children: [],
+      }],
+    }],
+  },
+];
 
 describe("CategoryTree", () => {
-  it("uses real legacy names and canonical paths", () => {
-    render(<CategoryTree currentPath="/catalog/akkumulyatory/dlya_ibp/gelevye" />);
+  it("uses the site-scoped API tree and canonical paths", () => {
+    render(<CategoryTree categories={categories} currentPath="/catalog/akkumulyatory/dlya_ibp/gelevye" />);
 
     const gel = screen.getByRole("link", { name: "GEL" });
     expect(gel.getAttribute("href")).toBe("/catalog/akkumulyatory/dlya_ibp/gelevye");
     expect(gel.getAttribute("aria-current")).toBe("page");
-    expect(screen.getByRole("link", { name: "Для резервного питания" })).toBeTruthy();
-    expect(screen.queryByRole("link", { name: "Для медицинской техники" })).toBeNull();
-    expect(screen.queryByRole("link", { name: "Для сканеров штрих-кодов и терминалов" })).toBeNull();
+    expect(screen.getByRole("link", { name: /Для резервного питания/ })).toBeTruthy();
   });
 
   it("renders the same hierarchy as a mobile accordion", () => {
-    const { container } = render(<CategoryTree mobile />);
+    const { container } = render(<CategoryTree categories={categories} mobile />);
 
     expect(container.querySelector(".category-tree--mobile")).toBeTruthy();
     expect(container.querySelectorAll("details").length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("does not render a category without a published URL as a link", () => {
+    render(<CategoryTree categories={[{ slug: "draft", name: "Черновик", path: null, children: [] }]} />);
+
+    expect(screen.getByText("Черновик")).toBeTruthy();
+    expect(screen.queryByRole("link", { name: "Черновик" })).toBeNull();
   });
 });

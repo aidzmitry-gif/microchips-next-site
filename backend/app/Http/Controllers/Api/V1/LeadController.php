@@ -8,6 +8,7 @@ use App\Models\Lead;
 use App\Models\Site;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class LeadController extends Controller
 {
@@ -41,12 +42,26 @@ class LeadController extends Controller
             ->where('is_active', true)
             ->firstOrFail();
 
+        $pageHost = $this->normalizedHost($validated['page_url']);
+        if ($pageHost === null || ! hash_equals($site->domain, $pageHost)) {
+            throw ValidationException::withMessages([
+                'page_url' => ['The page URL must belong to the selected site.'],
+            ]);
+        }
+
+        $locale = $validated['locale'] ?? $site->default_locale;
+        if ($locale !== $site->default_locale && ! $site->locales()->where('locale', $locale)->where('is_enabled', true)->exists()) {
+            throw ValidationException::withMessages([
+                'locale' => ['The locale is not enabled for the selected site.'],
+            ]);
+        }
+
         unset($validated['site_key']);
 
         $lead = Lead::create([
             ...$validated,
             'site_id' => $site->id,
-            'locale' => $validated['locale'] ?? $site->default_locale,
+            'locale' => $locale,
             'type' => $type,
             'status' => 'new',
         ]);
@@ -54,5 +69,15 @@ class LeadController extends Controller
         SyncLeadToBitrix24::dispatch($lead);
 
         return response()->json(['id' => $lead->id, 'status' => 'accepted'], 201);
+    }
+
+    private function normalizedHost(string $url): ?string
+    {
+        $host = parse_url($url, PHP_URL_HOST);
+        if (! is_string($host) || $host === '') {
+            return null;
+        }
+
+        return preg_replace('/^www\./', '', strtolower($host));
     }
 }

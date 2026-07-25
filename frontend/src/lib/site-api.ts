@@ -11,10 +11,12 @@ export type SiteProfile = {
 };
 
 type SeoPayload = {
+  locale: string;
   title: string;
   description: string | null;
   canonicalPath: string;
   isIndexable: boolean;
+  schema?: unknown | null;
   hreflang: Record<string, string>;
 };
 
@@ -73,6 +75,13 @@ export type CatalogPayload = {
   available: boolean;
 };
 
+export type CatalogCategory = {
+  slug: string;
+  name: string;
+  path: string | null;
+  children: CatalogCategory[];
+};
+
 export type RedirectPayload = {
   kind: "redirect";
   site: SiteProfile;
@@ -91,6 +100,13 @@ export type ResolvedPayload =
   | UnavailablePayload;
 
 const apiBaseUrl = (process.env.LARAVEL_API_URL ?? "http://localhost:8000").replace(/\/$/, "");
+
+export class SiteApiUnavailableError extends Error {
+  constructor(operation: string, status?: number) {
+    super(status ? `Site API ${operation} failed with HTTP ${status}.` : `Site API ${operation} is unavailable.`);
+    this.name = "SiteApiUnavailableError";
+  }
+}
 
 export async function getCurrentHost(): Promise<string> {
   const requestHeaders = await headers();
@@ -123,7 +139,7 @@ export async function resolveSitePath(host: string, path: string): Promise<Resol
 
 export async function fetchCatalogProducts(
   siteKey: string,
-  options: { page?: number; perPage?: number; query?: string } = {},
+  options: { page?: number; perPage?: number; query?: string; category?: string } = {},
 ): Promise<CatalogPayload> {
   const params = new URLSearchParams({
     page: String(options.page ?? 1),
@@ -132,6 +148,9 @@ export async function fetchCatalogProducts(
 
   if (options.query) {
     params.set("q", options.query);
+  }
+  if (options.category) {
+    params.set("category", options.category);
   }
 
   try {
@@ -152,18 +171,39 @@ export async function fetchCatalogProducts(
   }
 }
 
+export async function fetchCatalogCategories(siteKey: string, locale?: string): Promise<CatalogCategory[]> {
+  const params = new URLSearchParams();
+  if (locale) params.set("locale", locale);
+
+  try {
+    const response = await fetch(
+      `${apiBaseUrl}/api/v1/sites/${encodeURIComponent(siteKey)}/catalog/categories?${params.toString()}`,
+      { next: { revalidate: 300, tags: [`site:${siteKey}`, `catalog:${siteKey}`] } },
+    );
+
+    if (!response.ok) return [];
+
+    const payload = (await response.json()) as { data: CatalogCategory[] };
+    return payload.data;
+  } catch {
+    return [];
+  }
+}
+
 export async function fetchSitemap(host: string): Promise<Array<{ path: string; lastModified: string }>> {
   try {
     const response = await fetch(`${apiBaseUrl}/api/v1/sites/${encodeURIComponent(host)}/seo/sitemap`, {
       next: { revalidate: 300, tags: [`site:${host}`] },
     });
 
-    if (!response.ok) return [];
+    if (!response.ok) throw new SiteApiUnavailableError("sitemap", response.status);
 
     const body = (await response.json()) as { urls: Array<{ path: string; lastModified: string }> };
     return body.urls;
-  } catch {
-    return [];
+  } catch (error) {
+    if (error instanceof SiteApiUnavailableError) throw error;
+
+    throw new SiteApiUnavailableError("sitemap");
   }
 }
 

@@ -1,10 +1,33 @@
 import { CategoryTree } from "@/components/category-tree";
-import type { SiteProfile } from "@/lib/site-api";
+import type { CatalogCategory, SiteProfile } from "@/lib/site-api";
 import Link from "next/link";
 
-export function SiteHeader({ site, currentPath }: { site: SiteProfile; currentPath: string }) {
+export function SiteHeader({
+  site,
+  currentPath,
+  categories = [],
+  currentLocale,
+  localeAlternates = {},
+}: {
+  site: SiteProfile;
+  currentPath: string;
+  categories?: CatalogCategory[];
+  currentLocale?: string;
+  localeAlternates?: Record<string, string>;
+}) {
+  const localeLinks = Object.entries(localeAlternates).filter(([locale, href]) => locale !== currentLocale && isSafeAbsoluteUrl(href));
   return (
     <header className="site-header">
+      {localeLinks.length > 0 && (
+        <details className="site-header__locale-switcher">
+          <summary>{currentLocale ?? site.defaultLocale}</summary>
+          <div>
+            {localeLinks.map(([locale, href]) => (
+              <a key={locale} href={href} lang={locale.split("-")[0]}>{locale}</a>
+            ))}
+          </div>
+        </details>
+      )}
       <div className="site-header__bar">
         <p>Промышленные аккумуляторы и системы резервного питания</p>
         <p>{marketLabel(site.countryCode)} · {site.currencyCode}</p>
@@ -20,7 +43,7 @@ export function SiteHeader({ site, currentPath }: { site: SiteProfile; currentPa
         <details className="desktop-nav__catalog">
           <summary>Каталог</summary>
           <div className="desktop-nav__mega">
-            <CategoryTree currentPath={currentPath} />
+            <CategoryTree categories={categories} currentPath={currentPath} />
           </div>
         </details>
         <Link href="/solutions">Решения</Link>
@@ -42,7 +65,7 @@ export function SiteHeader({ site, currentPath }: { site: SiteProfile; currentPa
         <div className="mobile-nav__panel">
           <details>
             <summary>Каталог</summary>
-            <CategoryTree currentPath={currentPath} mobile />
+            <CategoryTree categories={categories} currentPath={currentPath} mobile />
           </details>
           <Link href="/solutions">Решения</Link>
           <Link href="/delivery">Доставка и оплата</Link>
@@ -66,4 +89,13 @@ export function SiteHeader({ site, currentPath }: { site: SiteProfile; currentPa
 function marketLabel(countryCode: string) {
   const labels: Record<string, string> = { BY: "Беларусь", RU: "Россия", UZ: "Узбекистан" };
   return labels[countryCode] ?? countryCode;
+}
+function isSafeAbsoluteUrl(href: string): boolean {
+  try {
+    const url = new URL(href);
+
+    return url.protocol === "https:";
+  } catch {
+    return false;
+  }
 }

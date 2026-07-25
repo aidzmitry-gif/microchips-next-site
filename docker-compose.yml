@@ -50,6 +50,12 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "php", "-r", "$$socket = @fsockopen('127.0.0.1', 9000); exit($$socket === false ? 1 : 0);"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
 
   worker:
     build:
@@ -72,7 +78,7 @@ services:
       NEXT_REVALIDATE_SECRET: ${NEXT_REVALIDATE_SECRET}
     depends_on:
       backend:
-        condition: service_started
+        condition: service_healthy
 
   nginx:
     build:
@@ -80,7 +86,13 @@ services:
       dockerfile: infra/nginx/Dockerfile
     depends_on:
       backend:
-        condition: service_started
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/up"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
     ports:
       - "8080:80"
 
@@ -94,9 +106,15 @@ services:
       DEFAULT_SITE_HOST: ${DEFAULT_SITE_HOST}
     depends_on:
       nginx:
-        condition: service_started
+        condition: service_healthy
     ports:
       - "3000:3000"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:3000/robots.txt"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
 
 volumes:
   postgres-data:

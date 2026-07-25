@@ -35,6 +35,7 @@ class MultiSiteApiTest extends TestCase
             ->assertJsonPath('kind', 'page')
             ->assertJsonPath('site.key', 'microchips-by')
             ->assertJsonPath('page.h1', 'Доставка')
+            ->assertJsonPath('seo.locale', 'ru-BY')
             ->assertJsonPath('seo.canonicalPath', '/delivery');
     }
 
@@ -116,6 +117,39 @@ class MultiSiteApiTest extends TestCase
                 'page_url',
                 'cart',
             ]);
+    }
+
+    public function test_quote_lead_cannot_be_attributed_to_a_different_site_by_page_url(): void
+    {
+        $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $this->site('microchips-ru', 'microchips.ru', 'RU', 'RUB', 'ru-RU');
+
+        $this->postJson('/api/v1/leads/quote', [
+            'site_key' => 'microchips-by',
+            'company' => 'Test company',
+            'contact_name' => 'Test contact',
+            'email' => 'contact@example.test',
+            'page_url' => 'https://microchips.ru/catalog/battery',
+        ])
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors(['page_url']);
+    }
+
+    public function test_quote_lead_rejects_a_disabled_non_default_locale(): void
+    {
+        $site = $this->site('microchips-uz', 'microchips.uz', 'UZ', 'UZS', 'ru-UZ');
+        $site->locales()->create(['locale' => 'uz-UZ', 'language' => 'uz', 'is_default' => false, 'is_enabled' => false]);
+
+        $this->postJson('/api/v1/leads/quote', [
+            'site_key' => 'microchips-uz',
+            'locale' => 'uz-UZ',
+            'company' => 'Test company',
+            'contact_name' => 'Test contact',
+            'email' => 'contact@example.test',
+            'page_url' => 'https://microchips.uz/catalog/battery',
+        ])
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors(['locale']);
     }
 
     private function site(string $key, string $domain, string $country, string $currency, string $locale): Site

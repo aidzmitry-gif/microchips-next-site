@@ -22,6 +22,23 @@ class SiteUrl extends Model
 
     protected static function booted(): void
     {
-        static::saved(fn (self $url) => SiteContentChanged::dispatch($url->site, [$url->path]));
+        static::saved(function (self $url): void {
+            self::revalidate($url, [$url->path, $url->getOriginal('path')]);
+        });
+
+        static::deleted(function (self $url): void {
+            self::revalidate($url, [$url->path]);
+        });
+    }
+
+    /** @param array<int, mixed> $paths */
+    private static function revalidate(self $url, array $paths): void
+    {
+        $paths = array_values(array_unique(array_filter([
+            ...$paths,
+            '/sitemap.xml',
+        ], static fn (mixed $path): bool => is_string($path) && str_starts_with($path, '/'))));
+
+        SiteContentChanged::dispatch($url->site, $paths);
     }
 }

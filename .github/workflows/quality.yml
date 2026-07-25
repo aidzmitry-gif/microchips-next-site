@@ -50,6 +50,17 @@ jobs:
         shell: pwsh
         run: ./scripts/quality-gate.ps1
 
+      - name: Validate production deployment contour and preflight
+        env:
+          POSTGRES_PASSWORD: ci-only-password-not-for-production
+          LARAVEL_APP_KEY: base64:ci-only-key-not-for-production
+          NEXT_REVALIDATE_SECRET: ci-only-revalidate-secret-with-32-characters
+          DEFAULT_SITE_HOST: microchips.by
+          PUBLIC_APP_URL: https://microchips.by
+        run: |
+          docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml config --quiet
+          sh scripts/release-preflight.sh
+
       # Line coverage is measured only in CI (local PHP has no pcov/xdebug). This
       # step reports the % and writes clover XML.
       - name: Backend line coverage (pcov)
@@ -72,3 +83,39 @@ jobs:
         working-directory: backend
         run: |
           php -r '$x=@simplexml_load_file("coverage.xml"); if(!$x){echo "no coverage.xml\n";exit;} $cwd=getcwd()."/"; foreach($x->xpath("//file") as $f){$n=str_replace($cwd,"",(string)$f["name"]); $u=[]; foreach($f->line as $l){ if((string)$l["type"]==="stmt" && (int)$l["count"]===0){$u[]=(int)$l["num"];} } if($u){echo $n.": ".implode(",",$u)."\n";} }'
+
+  docker-smoke:
+    name: Docker build, migrate and HTTP smoke
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+
+      - name: Generate an ephemeral Laravel key
+        run: echo "LARAVEL_APP_KEY=base64:$(openssl rand -base64 32 | tr -d '\n')" >> "$GITHUB_ENV"
+
+      - name: Build and start the complete stack
+        run: docker compose --env-file .env.example up --build --wait -d
+
+      - name: Apply PostgreSQL migrations
+        run: docker compose --env-file .env.example exec -T backend php artisan migrate --force
+
+      - name: Verify PostgreSQL backup and isolated restore
+        run: docker compose --env-file .env.example exec -T postgres sh -s < scripts/verify-postgres-backup.sh
+
+      - name: Verify backend and frontend over HTTP
+        run: |
+          curl --fail --silent --show-error http://127.0.0.1:8080/admin/login > /dev/null
+          curl --fail --silent --show-error http://127.0.0.1:3000/robots.txt > /dev/null
+
+      - name: Show container diagnostics on failure
+        if: failure()
+        run: |
+          docker compose --env-file .env.example ps
+          docker compose --env-file .env.example logs --no-color --tail=200
+
+      - name: Stop the stack
+        if: always()
+        run: docker compose --env-file .env.example down --volumes

@@ -43,6 +43,7 @@ final class SiteSeoReleaseAuditor
 
             $this->validateCanonical($issues, $site, $url, $seo);
             $this->validateIndexability($issues, $url, $seo, $context);
+            $this->validateOfferSchema($issues, $site, $url, $seo);
         }
 
         $this->validateRedirects($issues, $context);
@@ -255,6 +256,62 @@ final class SiteSeoReleaseAuditor
 
     /**
      * @param  list<array{severity: string, code: string, message: string, path: ?string, context: array<string, mixed>}>  $issues
+     */
+    private function validateOfferSchema(array &$issues, Site $site, SiteUrl $url, ?SiteSeo $seo): void
+    {
+        if ($seo === null || ! $this->containsOfferSchema($seo->schema)) {
+            return;
+        }
+
+        if ($url->target_type !== 'product' || $url->target_id === null) {
+            $this->issue(
+                $issues,
+                'SEO_OFFER_SCHEMA_NON_PRODUCT',
+                'Offer schema is allowed only on a published commercial product URL.',
+                $url->path,
+            );
+
+            return;
+        }
+
+        $product = SiteProduct::query()
+            ->where('site_id', $site->id)
+            ->published()
+            ->find($url->target_id);
+
+        if ($product === null || $product->price === null || $product->availability !== 'in_stock') {
+            $this->issue(
+                $issues,
+                'SEO_OFFER_SCHEMA_UNCONFIRMED_COMMERCIAL_DATA',
+                'Offer schema requires a published in-stock product with confirmed local price.',
+                $url->path,
+                ['targetId' => $url->target_id],
+            );
+        }
+    }
+
+    private function containsOfferSchema(mixed $schema): bool
+    {
+        if (! is_array($schema)) {
+            return false;
+        }
+
+        $type = $schema['@type'] ?? $schema['type'] ?? null;
+        if (in_array('Offer', is_array($type) ? $type : [$type], true)) {
+            return true;
+        }
+
+        foreach ($schema as $value) {
+            if ($this->containsOfferSchema($value)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * @param  list<array{severity: string, code: string, message: string, path: ?string, context: array<string, mixed>}>  $issues
      * @param  array<string, mixed>  $context
      */
     private function validateRedirects(array &$issues, array $context): void
@@ -413,6 +470,26 @@ final class SiteSeoReleaseAuditor
                 );
             }
 
+            if (! $this->hreflangUrlHasPublishedSelfCanonicalTarget($source)) {
+                $this->issue(
+                    $issues,
+                    'SEO_HREFLANG_SOURCE_TARGET_NOT_PUBLISHED_OR_CANONICAL',
+                    'Hreflang source must resolve to a published self-canonical resource.',
+                    $source->path,
+                    ['alternateId' => $alternate->id],
+                );
+            }
+
+            if (! $this->hreflangUrlHasPublishedSelfCanonicalTarget($target)) {
+                $this->issue(
+                    $issues,
+                    'SEO_HREFLANG_ALTERNATE_TARGET_NOT_PUBLISHED_OR_CANONICAL',
+                    'Hreflang alternate must resolve to a published self-canonical resource.',
+                    $source->path,
+                    ['alternateId' => $alternate->id, 'alternatePath' => $target->path],
+                );
+            }
+
             if (! $this->siteHasEnabledLocale($source->site, $sourceLocale)) {
                 $this->issue(
                     $issues,
@@ -455,6 +532,26 @@ final class SiteSeoReleaseAuditor
         }
 
         return $alternates->count();
+    }
+
+    private function hreflangUrlHasPublishedSelfCanonicalTarget(SiteUrl $url): bool
+    {
+        $seo = SiteSeo::query()
+            ->where('site_id', $url->site_id)
+            ->where('locale', $this->localeFor($url, $url->site))
+            ->where('resource_type', $url->target_type)
+            ->where('resource_id', $url->target_id)
+            ->first();
+        if (($seo?->is_indexable ?? true) === false || ! $this->isSelfCanonical($url, $seo)) {
+            return false;
+        }
+
+        return match ($url->target_type) {
+            'page' => SitePage::query()->where('site_id', $url->site_id)->published()->whereKey($url->target_id)->exists(),
+            'product' => SiteProduct::query()->where('site_id', $url->site_id)->published()->whereKey($url->target_id)->exists(),
+            'category' => SiteCategory::query()->where('site_id', $url->site_id)->published()->whereKey($url->target_id)->exists(),
+            default => false,
+        };
     }
 
     /**

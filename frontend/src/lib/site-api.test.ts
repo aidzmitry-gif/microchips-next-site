@@ -148,22 +148,20 @@ describe("site-api", () => {
       expect(result).toEqual(urls);
     });
 
-    it("returns an empty array when the response is not ok", async () => {
+    it("throws when the response is not ok so the sitemap route cannot emit a soft-success", async () => {
       global.fetch = vi.fn().mockResolvedValue({ ok: false });
 
       const { fetchSitemap } = await import("./site-api");
-      const result = await fetchSitemap("example.com");
 
-      expect(result).toEqual([]);
+      await expect(fetchSitemap("example.com")).rejects.toThrow("Site API sitemap is unavailable.");
     });
 
-    it("returns an empty array when fetch throws", async () => {
+    it("throws when fetch fails", async () => {
       global.fetch = vi.fn().mockRejectedValue(new Error("network down"));
 
       const { fetchSitemap } = await import("./site-api");
-      const result = await fetchSitemap("example.com");
 
-      expect(result).toEqual([]);
+      await expect(fetchSitemap("example.com")).rejects.toThrow("Site API sitemap is unavailable.");
     });
   });
 

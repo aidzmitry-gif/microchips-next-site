@@ -1,16 +1,31 @@
-import { rbLegacyCategoryRows, type LegacyCategoryRow } from "@/data/rb-legacy-categories";
+import type { CatalogCategory } from "@/lib/site-api";
 
-type CategoryNode = LegacyCategoryRow & { children: CategoryNode[] };
+export type CategoryNode = CatalogCategory;
 
-export function CategoryTree({ currentPath, mobile = false }: { currentPath?: string; mobile?: boolean }) {
-  const roots = buildCategoryForest(rbLegacyCategoryRows);
+export function CategoryTree({
+  categories = [],
+  currentPath,
+  mobile = false,
+}: {
+  categories?: CategoryNode[];
+  currentPath?: string;
+  mobile?: boolean;
+}) {
+  if (categories.length === 0) {
+    return (
+      <nav className={mobile ? "category-tree category-tree--mobile" : "category-tree"} aria-label="Разделы каталога">
+        <p className="category-tree__title">Разделы каталога</p>
+        <p className="category-tree__empty">Разделы проходят проверку.</p>
+      </nav>
+    );
+  }
 
   return (
     <nav className={mobile ? "category-tree category-tree--mobile" : "category-tree"} aria-label="Разделы каталога">
       <p className="category-tree__title">Разделы каталога</p>
       <ul>
-        {roots.map((node) => (
-          <CategoryBranch key={node.id} node={node} currentPath={currentPath} depth={0} mobile={mobile} />
+        {categories.map((node) => (
+          <CategoryBranch key={node.slug} node={node} currentPath={currentPath} depth={0} mobile={mobile} />
         ))}
       </ul>
     </nav>
@@ -29,7 +44,7 @@ function CategoryBranch({
   mobile: boolean;
 }) {
   const isCurrent = normalizePath(currentPath) === normalizePath(node.path);
-  const isActiveBranch = currentPath ? normalizePath(currentPath).startsWith(`${normalizePath(node.path)}/`) : false;
+  const isActiveBranch = Boolean(node.path && currentPath && normalizePath(currentPath).startsWith(`${normalizePath(node.path)}/`));
   const hasChildren = node.children.length > 0;
 
   return (
@@ -37,13 +52,21 @@ function CategoryBranch({
       {hasChildren ? (
         <details open={isCurrent || isActiveBranch || (!mobile && depth === 0)}>
           <summary>
-            <a href={node.path} aria-current={isCurrent ? "page" : undefined}>{node.name}</a>
+            <span>{node.name}</span>
             <span aria-hidden="true">{node.children.length}</span>
           </summary>
           <ul>
+            <li>
+              {node.path ? (
+                <a href={node.path} aria-current={isCurrent ? "page" : undefined}>
+                  Все в разделе
+                  <span className="sr-only"> {node.name}</span>
+                </a>
+              ) : <span>Все в разделе</span>}
+            </li>
             {node.children.map((child) => (
               <CategoryBranch
-                key={child.id}
+                key={child.slug}
                 node={child}
                 currentPath={currentPath}
                 depth={depth + 1}
@@ -53,26 +76,13 @@ function CategoryBranch({
           </ul>
         </details>
       ) : (
-        <a href={node.path} aria-current={isCurrent ? "page" : undefined}>{node.name}</a>
+        node.path ? <a href={node.path} aria-current={isCurrent ? "page" : undefined}>{node.name}</a> : <span>{node.name}</span>
       )}
     </li>
   );
 }
 
-export function buildCategoryForest(rows: LegacyCategoryRow[]): CategoryNode[] {
-  const nodes = new Map(rows.map((row) => [row.id, { ...row, children: [] as CategoryNode[] }]));
-  const roots: CategoryNode[] = [];
-
-  nodes.forEach((node) => {
-    const parent = nodes.get(node.parentId);
-    if (parent) parent.children.push(node);
-    else roots.push(node);
-  });
-
-  return roots;
-}
-
-function normalizePath(path?: string) {
+function normalizePath(path?: string | null) {
   if (!path) return "";
   return path === "/" ? path : path.replace(/\/+$/, "");
 }

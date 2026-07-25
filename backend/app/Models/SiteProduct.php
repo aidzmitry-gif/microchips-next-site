@@ -6,6 +6,7 @@ use App\Events\SiteContentChanged;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class SiteProduct extends Model
 {
@@ -33,6 +34,14 @@ class SiteProduct extends Model
         return $this->belongsTo(Product::class);
     }
 
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(SiteCategory::class, 'site_category_product')
+            ->using(SiteCategoryProduct::class)
+            ->withPivot('site_id')
+            ->withTimestamps();
+    }
+
     protected static function booted(): void
     {
         static::saved(function (self $siteProduct): void {
@@ -42,6 +51,16 @@ class SiteProduct extends Model
                 ->where('target_id', $siteProduct->id)
                 ->pluck('path')
                 ->all();
+
+            $categoryIds = $siteProduct->categories()
+                ->published()
+                ->pluck('site_categories.id')
+                ->map(static fn (mixed $id): int => (int) $id)
+                ->all();
+            $paths = array_values(array_unique([
+                ...$paths,
+                ...SiteCategory::revalidationPaths($siteProduct->site_id, $categoryIds),
+            ]));
 
             SiteContentChanged::dispatch($siteProduct->site, $paths === [] ? ['/'] : $paths);
         });

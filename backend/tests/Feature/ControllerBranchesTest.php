@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Models\Product;
 use App\Models\Site;
 use App\Models\SiteProduct;
+use App\Models\SiteRedirect;
 use App\Models\SiteUrl;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -23,6 +24,33 @@ class ControllerBranchesTest extends TestCase
             ->assertOk()
             ->assertJsonCount(1, 'data')
             ->assertJsonPath('data.0.name', 'Alpha Battery');
+    }
+
+    public function test_redirect_lookup_returns_only_an_active_site_scoped_redirect(): void
+    {
+        $site = Site::create([
+            'key' => 'microchips-by',
+            'domain' => 'microchips.by',
+            'country_code' => 'BY',
+            'currency_code' => 'BYN',
+            'default_locale' => 'ru-BY',
+            'name' => 'Microchips BY',
+            'is_active' => true,
+        ]);
+        SiteRedirect::create([
+            'site_id' => $site->id,
+            'source_path' => '/catalog/old-battery',
+            'target_path' => '/catalog/new-battery',
+            'status_code' => 301,
+            'is_active' => true,
+        ]);
+
+        $this->getJson('/api/v1/sites/microchips.by/redirect?path=/catalog/old-battery')
+            ->assertOk()
+            ->assertExactJson(['kind' => 'redirect', 'to' => '/catalog/new-battery', 'status' => 301, 'locale' => 'ru-BY']);
+        $this->getJson('/api/v1/sites/microchips.by/redirect?path=/catalog/missing')
+            ->assertOk()
+            ->assertExactJson(['kind' => 'not_found', 'locale' => 'ru-BY']);
     }
 
     public function test_catalog_search_query_with_no_matches_returns_empty_data(): void

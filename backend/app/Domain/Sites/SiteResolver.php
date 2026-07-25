@@ -131,7 +131,15 @@ class SiteResolver
                 'price' => $siteProduct->price,
                 'currency' => $site->currency_code,
             ],
-            'seo' => $this->seoPayload($site, $url->locale ?? $site->default_locale, 'product', $siteProduct->id, $url, $siteProduct->product->name),
+            'seo' => $this->seoPayload(
+                $site,
+                $url->locale ?? $site->default_locale,
+                'product',
+                $siteProduct->id,
+                $url,
+                $siteProduct->product->name,
+                $siteProduct->price !== null && $siteProduct->availability === 'in_stock',
+            ),
         ];
     }
 
@@ -179,8 +187,15 @@ class SiteResolver
     }
 
     /** @return array<string, mixed> */
-    private function seoPayload(Site $site, string $locale, string $type, int $id, SiteUrl $url, string $fallbackTitle): array
-    {
+    private function seoPayload(
+        Site $site,
+        string $locale,
+        string $type,
+        int $id,
+        SiteUrl $url,
+        string $fallbackTitle,
+        bool $allowOfferSchema = false,
+    ): array {
         $seo = SiteSeo::query()
             ->where('site_id', $site->id)
             ->where('locale', $locale)
@@ -189,22 +204,57 @@ class SiteResolver
             ->first();
 
         return [
+            'locale' => $locale,
             'title' => $seo?->title ?? $fallbackTitle,
             'description' => $seo?->description,
             'canonicalPath' => $seo?->canonical_path ?? $url->path,
-            'isIndexable' => $seo?->is_indexable ?? true,
-            'schema' => $seo?->schema,
-            'hreflang' => $this->hreflangPayload($url, $locale, $site),
+            'isIndexable' => $url->is_indexable && ($seo?->is_indexable ?? true),
+            'schema' => $this->safeSchema($seo?->schema, $allowOfferSchema),
+            'hreflang' => $this->isIndexableHreflangUrl($url, $locale) && ($seo?->is_indexable ?? true)
+                ? $this->hreflangPayload($url, $locale, $site)
+                : [],
         ];
+    }
+
+    private function safeSchema(mixed $schema, bool $allowOfferSchema): mixed
+    {
+        if (! is_array($schema) || $allowOfferSchema) {
+            return $schema;
+        }
+
+        if (array_is_list($schema)) {
+            return array_values(array_filter(array_map(
+                fn (mixed $node) => $this->safeSchema($node, false),
+                $schema,
+            ), static fn (mixed $node): bool => $node !== null));
+        }
+
+        $type = $schema['@type'] ?? $schema['type'] ?? null;
+        $types = is_array($type) ? $type : [$type];
+        if (in_array('Offer', $types, true)) {
+            return null;
+        }
+
+        unset($schema['offers']);
+        foreach ($schema as $key => $value) {
+            if (is_array($value)) {
+                $schema[$key] = $this->safeSchema($value, false);
+            }
+        }
+
+        return $schema;
     }
 
     /** @return array<string, string> */
     private function hreflangPayload(SiteUrl $url, string $locale, Site $site): array
     {
         $alternates = SiteUrlAlternate::query()
-            ->with('alternateUrl.site')
+            ->with('alternateUrl.site.locales')
             ->where('source_url_id', $url->id)
             ->get()
+            ->filter(fn (SiteUrlAlternate $alternate): bool => $alternate->alternateUrl !== null
+                && $alternate->locale === $alternate->alternateUrl->locale
+                && $this->isIndexableHreflangUrl($alternate->alternateUrl, $alternate->locale))
             ->mapWithKeys(fn (SiteUrlAlternate $alternate) => [
                 $alternate->locale => "https://{$alternate->alternateUrl->site->domain}{$alternate->alternateUrl->path}",
             ])
@@ -213,5 +263,32 @@ class SiteResolver
         $alternates[$url->locale ?? $locale] = "https://{$site->domain}{$url->path}";
 
         return $alternates;
+    }
+
+    private function isIndexableHreflangUrl(SiteUrl $url, string $locale): bool
+    {
+        $site = $url->relationLoaded('site') ? $url->site : $url->site()->with('locales')->first();
+        $urlLocale = $url->locale ?? $locale;
+        if ($site === null || ! $site->is_active || ! $url->is_indexable
+            || ! $site->locales->contains(fn ($siteLocale): bool => $siteLocale->locale === $urlLocale && $siteLocale->is_enabled)) {
+            return false;
+        }
+
+        $seo = SiteSeo::query()
+            ->where('site_id', $site->id)
+            ->where('locale', $urlLocale)
+            ->where('resource_type', $url->target_type)
+            ->where('resource_id', $url->target_id)
+            ->first();
+        if ($seo !== null && (! $seo->is_indexable || $seo->canonical_path !== null && $seo->canonical_path !== $url->path)) {
+            return false;
+        }
+
+        return match ($url->target_type) {
+            'page' => SitePage::query()->where('site_id', $site->id)->published()->whereKey($url->target_id)->exists(),
+            'product' => SiteProduct::query()->where('site_id', $site->id)->published()->whereKey($url->target_id)->exists(),
+            'category' => SiteCategory::query()->where('site_id', $site->id)->published()->whereKey($url->target_id)->exists(),
+            default => false,
+        };
     }
 }

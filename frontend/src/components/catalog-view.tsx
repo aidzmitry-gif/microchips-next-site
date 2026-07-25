@@ -1,14 +1,17 @@
-import type { CatalogPayload, CatalogProduct, CategoryPayload } from "@/lib/site-api";
+import type { CatalogCategory, CatalogPayload, CatalogProduct, CategoryPayload } from "@/lib/site-api";
 import { CategoryTree } from "@/components/category-tree";
+import { availabilityLabel, priceLabel } from "@/lib/catalog-presenters";
+import { QuoteForm } from "@/components/quote-form";
 import Link from "next/link";
 
 type CatalogViewProps = {
   category: CategoryPayload;
   catalog: CatalogPayload;
+  categories?: CatalogCategory[];
   query?: string;
 };
 
-export function CatalogView({ category, catalog, query = "" }: CatalogViewProps) {
+export function CatalogView({ category, catalog, categories = [], query = "" }: CatalogViewProps) {
   const { site } = category;
 
   return (
@@ -37,7 +40,7 @@ export function CatalogView({ category, catalog, query = "" }: CatalogViewProps)
 
       <section className="catalog-layout">
         <aside className="catalog-layout__tree">
-          <CategoryTree currentPath={category.path} />
+          <CategoryTree categories={categories} currentPath={category.path} />
         </aside>
         <div className="catalog-section" aria-labelledby="catalog-results-title">
           <div className="catalog-toolbar">
@@ -94,9 +97,7 @@ export function CatalogView({ category, catalog, query = "" }: CatalogViewProps)
             номенклатуру и подготовит предложение без подмены неподтверждённых характеристик.
           </p>
         </div>
-        <Link className="catalog-button catalog-button--light" href="/contacts">
-          Запросить коммерческое предложение
-        </Link>
+        <QuoteForm site={site} subject={`Раздел каталога: ${category.category.name}`} />
       </section>
     </>
   );
@@ -143,7 +144,7 @@ export function ProductCard({ product }: { product: CatalogProduct }) {
       <div className="catalog-card__commercial">
         <p className="catalog-card__availability">{availabilityLabel(product.availability)}</p>
         <p className="catalog-card__price">
-          {product.price ? `${product.price} ${product.currency}` : "Цена по запросу"}
+          {priceLabel(product.price, product.currency)}
         </p>
         <a className="catalog-button" href={productPath ?? "#quote-request"}>
           {productPath ? "Открыть карточку" : "Запросить позицию"}
@@ -231,17 +232,6 @@ function resultsTitle(total: number, query: string) {
   if (query) return `Результаты поиска: ${total}`;
   if (total === 0) return "Каталог готовится к публикации";
   return `Товаров в каталоге: ${total}`;
-}
-
-function availabilityLabel(availability: string) {
-  const labels: Record<string, string> = {
-    in_stock: "В наличии",
-    out_of_stock: "Нет в наличии",
-    on_request: "Поставка по запросу",
-    preorder: "Под заказ",
-  };
-
-  return labels[availability] ?? "Наличие требует подтверждения";
 }
 
 function marketName(countryCode: string) {

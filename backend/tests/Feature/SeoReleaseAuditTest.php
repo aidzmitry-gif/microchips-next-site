@@ -3,8 +3,10 @@
 namespace Tests\Feature;
 
 use App\Domain\Seo\SiteSeoReleaseAuditor;
+use App\Models\Product;
 use App\Models\Site;
 use App\Models\SitePage;
+use App\Models\SiteProduct;
 use App\Models\SiteRedirect;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
@@ -136,6 +138,42 @@ class SeoReleaseAuditTest extends TestCase
         $this->assertContains('SEO_REDIRECT_NOT_PERMANENT', $codes);
         $this->artisan('seo:audit', ['site' => 'microchips-by', '--json' => true])
             ->assertExitCode(1);
+    }
+
+    public function test_offer_schema_without_confirmed_local_commercial_data_blocks_release(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $product = Product::create(['slug' => 'unconfirmed-battery', 'name' => 'Unconfirmed battery', 'status' => 'active']);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'unconfirmed-battery',
+            'is_published' => true,
+            'availability' => 'on_request',
+            'price' => null,
+        ]);
+        $url = SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/unconfirmed-battery',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+            'is_indexable' => true,
+        ]);
+        SiteSeo::create([
+            'site_id' => $site->id,
+            'locale' => 'ru-BY',
+            'resource_type' => 'product',
+            'resource_id' => $siteProduct->id,
+            'canonical_path' => $url->path,
+            'is_indexable' => true,
+            'schema' => ['@type' => 'Product', 'offers' => ['@type' => 'Offer', 'price' => '10']],
+        ]);
+
+        $report = app(SiteSeoReleaseAuditor::class)->audit($site);
+
+        $this->assertFalse($report['passed']);
+        $this->assertContains('SEO_OFFER_SCHEMA_UNCONFIRMED_COMMERCIAL_DATA', $this->issueCodes($report));
     }
 
     private function site(string $key, string $domain, string $country, string $locale, bool $localeEnabled = true): Site

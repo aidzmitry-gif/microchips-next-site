@@ -5,6 +5,7 @@
 .env
 .env.*
 !.env.example
+!deploy/.env.production.example
 
 # Editor and operating-system files
 .idea/

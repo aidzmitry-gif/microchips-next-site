@@ -33,4 +33,24 @@ describe("SiteHeader", () => {
     expect(container.querySelector("details.mobile-nav")).toBeTruthy();
     expect(container.querySelector(".mobile-nav .category-tree--mobile")).toBeTruthy();
   });
+
+  it("shows only verified https hreflang alternatives as the locale switcher", () => {
+    render(
+      <SiteHeader
+        site={site}
+        currentPath="/catalog"
+        currentLocale="ru-BY"
+        localeAlternates={{
+          "ru-RU": "https://microchips.ru/catalog",
+          "uz-UZ": "https://microchips.uz/uz/catalog",
+          unsafe: "//example.test/catalog",
+        }}
+      />,
+    );
+
+    expect(screen.getByText("ru-BY")).toBeTruthy();
+    expect(screen.getByRole("link", { name: "ru-RU" }).getAttribute("href")).toBe("https://microchips.ru/catalog");
+    expect(screen.getByRole("link", { name: "uz-UZ" }).getAttribute("lang")).toBe("uz");
+    expect(screen.queryByRole("link", { name: "unsafe" })).toBeNull();
+  });
 });

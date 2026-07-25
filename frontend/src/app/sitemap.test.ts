@@ -52,4 +52,13 @@ describe("sitemap route", () => {
 
     expect(result).toEqual([]);
   });
+
+  it("fails the route instead of serving an empty 200 sitemap when the API is unavailable", async () => {
+    getCurrentHostMock.mockResolvedValue("microchips.by");
+    fetchSitemapMock.mockRejectedValue(new Error("Site API sitemap is unavailable."));
+
+    const sitemap = (await import("./sitemap")).default;
+
+    await expect(sitemap()).rejects.toThrow("Site API sitemap is unavailable.");
+  });
 });

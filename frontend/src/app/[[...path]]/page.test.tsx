@@ -3,6 +3,7 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 const resolveSitePathMock = vi.fn();
 const getCurrentHostMock = vi.fn();
 const fetchCatalogProductsMock = vi.fn();
+const fetchCatalogCategoriesMock = vi.fn();
 const redirectMock = vi.fn();
 const notFoundMock = vi.fn();
 
@@ -10,6 +11,12 @@ vi.mock("@/lib/site-api", () => ({
   resolveSitePath: (...args: unknown[]) => resolveSitePathMock(...args),
   getCurrentHost: (...args: unknown[]) => getCurrentHostMock(...args),
   fetchCatalogProducts: (...args: unknown[]) => fetchCatalogProductsMock(...args),
+  fetchCatalogCategories: (...args: unknown[]) => fetchCatalogCategoriesMock(...args),
+  SiteApiUnavailableError: class SiteApiUnavailableError extends Error {
+    constructor(operation: string) {
+      super(`Site API ${operation} is unavailable.`);
+    }
+  },
 }));
 
 vi.mock("next/navigation", () => ({
@@ -38,9 +45,11 @@ beforeEach(() => {
   resolveSitePathMock.mockReset();
   getCurrentHostMock.mockReset();
   fetchCatalogProductsMock.mockReset();
+  fetchCatalogCategoriesMock.mockReset();
   redirectMock.mockReset();
   notFoundMock.mockReset();
   getCurrentHostMock.mockResolvedValue("microchips.by");
+  fetchCatalogCategoriesMock.mockResolvedValue([]);
 });
 
 describe("generateMetadata", () => {
@@ -124,12 +133,35 @@ describe("generateMetadata", () => {
     expect(metadata.robots).toEqual({ index: true, follow: true });
   });
 
+  it("marks every query variant as noindex while preserving follow", async () => {
+    resolveSitePathMock.mockResolvedValue({
+      kind: "category",
+      site,
+      path: "/category/ups",
+      category: { name: "UPS", slug: "ups" },
+      seo: {
+        title: "UPS category",
+        description: null,
+        canonicalPath: "/category/ups",
+        isIndexable: true,
+        hreflang: { ru: "/category/ups" },
+      },
+    });
+
+    const metadata = await generateMetadata({
+      ...makeParams(["category", "ups"]),
+      searchParams: Promise.resolve({ q: "fiamm", utm_source: "google" }),
+    });
+
+    expect(metadata.robots).toEqual({ index: false, follow: true });
+  });
+
   it("falls back to a bare title for not_found (no seo field)", async () => {
     resolveSitePathMock.mockResolvedValue({ kind: "not_found", site });
 
     const metadata = await generateMetadata(makeParams(["missing"]));
 
-    expect(metadata).toEqual({ title: "Microchips" });
+    expect(metadata).toEqual({ title: "Microchips", robots: { index: false, follow: false } });
   });
 
   it("falls back to a bare title for unavailable (no seo field)", async () => {
@@ -137,7 +169,7 @@ describe("generateMetadata", () => {
 
     const metadata = await generateMetadata(makeParams(undefined));
 
-    expect(metadata).toEqual({ title: "Microchips" });
+    expect(metadata).toEqual({ title: "Microchips", robots: { index: false, follow: false } });
     expect(resolveSitePathMock).toHaveBeenCalledWith("microchips.by", "/");
   });
 
@@ -150,7 +182,7 @@ describe("generateMetadata", () => {
 
     const metadata = await generateMetadata(makeParams(["old-path"]));
 
-    expect(metadata).toEqual({ title: "Microchips" });
+    expect(metadata).toEqual({ title: "Microchips", robots: { index: false, follow: false } });
   });
 
   it("resolves root path when no segments are given", async () => {
@@ -201,16 +233,13 @@ describe("SitePage redirect/not_found branches", () => {
     expect(redirectMock).not.toHaveBeenCalled();
   });
 
-  it("renders the Unavailable branch without redirect/notFound for an unavailable kind", async () => {
+  it("throws a server error instead of serving a 200 soft-error for an unavailable kind", async () => {
     resolveSitePathMock.mockResolvedValue({ kind: "unavailable" });
 
-    const result = await SitePage(makeParams(undefined));
+    await expect(SitePage(makeParams(undefined))).rejects.toThrow("Site API page resolver is unavailable.");
 
     expect(redirectMock).not.toHaveBeenCalled();
     expect(notFoundMock).not.toHaveBeenCalled();
-    // The component returns a React element tree for the Unavailable view.
-    expect(result).toBeTruthy();
-    expect(typeof result).toBe("object");
   });
 });
 
@@ -245,6 +274,7 @@ describe("SitePage category catalogue", () => {
       page: 3,
       perPage: 12,
       query: "Fiamm",
+      category: "ups",
     });
   });
 
@@ -277,6 +307,7 @@ describe("SitePage category catalogue", () => {
       page: 1,
       perPage: 12,
       query: "",
+      category: "ups",
     });
   });
 });
