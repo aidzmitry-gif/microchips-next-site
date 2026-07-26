@@ -13,6 +13,10 @@ class SiteCategoryTaxonomyImporter
 {
     /** @var array<string, string> */
     private const HEADERS = [
+        'externalid' => 'external_id',
+        'parentexternalid' => 'parent_external_id',
+        'name' => 'name',
+        'path' => 'path',
         'bitrixidраздела' => 'external_id',
         'родительid' => 'parent_external_id',
         'название' => 'name',
@@ -78,7 +82,8 @@ class SiteCategoryTaxonomyImporter
                     ->where('source', $source)
                     ->where('external_id', $row['external_id'])
                     ->first();
-                $parent = $resolved[$row['parent_external_id']] ?? null;
+                $parentId = $row['parent_external_id'];
+                $parent = $parentId === null ? null : ($resolved[$parentId] ?? null);
                 $parentId = $parent?->category_id;
 
                 if ($existing === null) {
@@ -178,7 +183,7 @@ class SiteCategoryTaxonomyImporter
             }
         }
 
-        $parentIds = array_values(array_unique(array_column($rows, 'parent_external_id')));
+        $parentIds = array_values(array_unique(array_filter(array_column($rows, 'parent_external_id'))));
         $existingParents = SiteCategory::query()
             ->where('site_id', $site->id)
             ->where('source', $source)
@@ -191,6 +196,9 @@ class SiteCategoryTaxonomyImporter
 
         foreach ($rows as $row) {
             $parentId = $row['parent_external_id'];
+            if ($parentId === null) {
+                continue;
+            }
             if (isset($byId[$parentId]) || isset($existingParents[$parentId])) {
                 continue;
             }
@@ -244,7 +252,8 @@ class SiteCategoryTaxonomyImporter
         while ($remaining !== []) {
             $progress = false;
             foreach ($remaining as $id => $row) {
-                if (isset($remaining[$row['parent_external_id']])) {
+                $parentId = $row['parent_external_id'];
+                if ($parentId !== null && isset($remaining[$parentId])) {
                     continue;
                 }
                 $ordered[] = $row;
@@ -317,7 +326,6 @@ class SiteCategoryTaxonomyImporter
                 $path = $this->normalizePath($payload['path'] ?? null);
                 $invalid = array_keys(array_filter([
                     'external_id' => $externalId === null,
-                    'parent_external_id' => $parentId === null,
                     'name' => $name === null,
                     'path' => $path === null,
                 ]));

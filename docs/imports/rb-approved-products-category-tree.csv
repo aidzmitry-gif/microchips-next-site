@@ -1,0 +1,4 @@
+external_id,parent_external_id,name,path
+372,,Аккумуляторы,akkumulyatory
+409,372,Для ИБП,akkumulyatory/dlya_ibp
+410,409,AGM,akkumulyatory/dlya_ibp/agm

@@ -13,6 +13,58 @@ class ImportSiteCategoryTaxonomyTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function test_canonical_csv_headers_are_accepted_for_category_imports(): void
+    {
+        $site = $this->site('microchips-by');
+        $file = $this->csv(<<<'CSV'
+external_id,parent_external_id,name,path
+root,,Root,catalog
+CSV);
+
+        $this->artisan('catalog:import-site-categories', [
+            'site' => $site->key,
+            'file' => $file,
+        ])->assertSuccessful();
+
+        $this->assertSame('dry_run_complete', ImportRun::query()->sole()->status);
+    }
+
+    public function test_missing_parent_header_is_rejected_even_though_root_values_may_be_blank(): void
+    {
+        $site = $this->site('microchips-by');
+        $file = $this->csv(<<<'CSV'
+external_id,name,path
+root,Root,catalog
+CSV);
+
+        $this->artisan('catalog:import-site-categories', [
+            'site' => $site->key,
+            'file' => $file,
+        ])->assertFailed();
+
+        $this->assertDatabaseCount('site_categories', 0);
+        $this->assertSame('failed', ImportRun::query()->sole()->status);
+    }
+
+    public function test_root_category_remains_a_root_after_apply_and_reapply(): void
+    {
+        $site = $this->site('microchips-by');
+        $file = $this->csv(<<<'CSV'
+external_id,parent_external_id,name,path
+root,,Root,catalog
+child,root,Child,catalog/child
+CSV);
+        $arguments = ['site' => $site->key, 'file' => $file, '--apply' => true];
+
+        $this->artisan('catalog:import-site-categories', $arguments)->assertSuccessful();
+        $this->artisan('catalog:import-site-categories', $arguments)->assertSuccessful();
+
+        $root = SiteCategory::query()->where('site_id', $site->id)->where('external_id', 'root')->sole();
+        $child = SiteCategory::query()->where('site_id', $site->id)->where('external_id', 'child')->sole();
+        $this->assertNull($root->category->parent_id);
+        $this->assertSame($root->category_id, $child->category->parent_id);
+    }
+
     public function test_dry_run_resolves_children_before_parents_without_writing_categories(): void
     {
         $site = $this->site('microchips-by');
