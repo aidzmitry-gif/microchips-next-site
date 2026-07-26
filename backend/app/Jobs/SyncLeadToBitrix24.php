@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Models\Lead;
+use App\Models\SiteIntegration;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -31,6 +32,12 @@ class SyncLeadToBitrix24 implements ShouldQueue
         $webhookUrl = data_get($integration?->settings, 'webhook_url');
 
         if (blank($webhookUrl)) {
+            return;
+        }
+
+        if (! SiteIntegration::isValidBitrix24WebhookUrl($webhookUrl)) {
+            $lead->update(['external_error' => 'Bitrix24 integration has an invalid webhook URL.']);
+
             return;
         }
 

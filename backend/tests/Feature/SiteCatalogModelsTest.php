@@ -9,6 +9,7 @@ use App\Models\SiteCategory;
 use App\Models\SiteIntegration;
 use App\Models\SiteProduct;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
 class SiteCatalogModelsTest extends TestCase
@@ -115,7 +116,7 @@ class SiteCatalogModelsTest extends TestCase
         $integration = SiteIntegration::create([
             'site_id' => $site->id,
             'driver' => 'bitrix24',
-            'settings' => ['webhook_url' => 'https://example.bitrix24.by/rest/1/token/'],
+            'settings' => ['webhook_url' => 'https://example.bitrix24.by/rest/1/token/crm.lead.add.json'],
             'is_enabled' => true,
         ]);
 
@@ -127,8 +128,21 @@ class SiteCatalogModelsTest extends TestCase
         $this->assertTrue($integration->site->is($site));
         $this->assertInstanceOf(Site::class, $integration->site);
         $this->assertIsArray($integration->settings);
-        $this->assertSame('https://example.bitrix24.by/rest/1/token/', $integration->settings['webhook_url']);
+        $this->assertSame('https://example.bitrix24.by/rest/1/token/crm.lead.add.json', $integration->settings['webhook_url']);
         $this->assertTrue($integration->is_enabled);
+    }
+
+    public function test_an_enabled_bitrix24_integration_rejects_non_bitrix_or_unsafe_webhook_urls(): void
+    {
+        $site = $this->site();
+
+        $this->expectException(ValidationException::class);
+        SiteIntegration::create([
+            'site_id' => $site->id,
+            'driver' => 'bitrix24',
+            'settings' => ['webhook_url' => 'http://127.0.0.1/rest/1/token/crm.lead.add.json'],
+            'is_enabled' => true,
+        ]);
     }
 
     private function site(): Site

@@ -8,6 +8,7 @@ use App\Models\Site;
 use App\Models\SiteIntegration;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Client\RequestException;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
@@ -62,6 +63,26 @@ class SyncLeadToBitrix24Test extends TestCase
         $lead->refresh();
         $this->assertNotNull($lead->external_error);
         $this->assertNull($lead->external_id);
+    }
+
+    public function test_it_never_posts_to_a_legacy_or_tampered_non_bitrix_webhook_url(): void
+    {
+        $site = $this->site();
+        $lead = $this->lead($site);
+        DB::table('site_integrations')->insert([
+            'site_id' => $site->id,
+            'driver' => 'bitrix24',
+            'settings' => json_encode(['webhook_url' => 'https://127.0.0.1/rest/1/token/crm.lead.add.json']),
+            'is_enabled' => true,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        Http::fake();
+        (new SyncLeadToBitrix24($lead))->handle();
+
+        Http::assertNothingSent();
+        $this->assertSame('Bitrix24 integration has an invalid webhook URL.', $lead->fresh()->external_error);
     }
 
     private function site(): Site
