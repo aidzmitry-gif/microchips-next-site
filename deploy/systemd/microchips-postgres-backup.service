@@ -1,0 +1,18 @@
+[Unit]
+Description=Create an encrypted-permissions PostgreSQL backup for Microchips
+Wants=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/microchips-next-site
+EnvironmentFile=/etc/microchips/microchips.env
+Environment=POSTGRES_BACKUP_DIR=/var/backups/microchips/postgres
+ExecStart=/opt/microchips-next-site/scripts/create-postgres-backup.sh
+User=microchips
+Group=microchips
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+ReadWritePaths=/var/backups/microchips/postgres /var/run/docker.sock

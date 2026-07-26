@@ -88,6 +88,9 @@ class SiteResolver
         if ($page === null) {
             return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
         }
+        if ($page->locale !== ($url->locale ?? $site->default_locale)) {
+            return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
+        }
 
         return [
             'kind' => 'page',
@@ -286,15 +289,18 @@ class SiteResolver
             ->where('resource_type', $type)
             ->where('resource_id', $id)
             ->first();
+        $localeEnabled = $site->locales->contains(
+            fn ($siteLocale): bool => $siteLocale->locale === $locale && $siteLocale->is_enabled,
+        );
 
         return [
             'locale' => $locale,
             'title' => $seo?->title ?? $fallbackTitle,
             'description' => $seo?->description,
             'canonicalPath' => $seo?->canonical_path ?? $url->path,
-            'isIndexable' => $url->is_indexable && ($seo?->is_indexable ?? true),
+            'isIndexable' => $localeEnabled && $url->is_indexable && ($seo?->is_indexable ?? true),
             'schema' => $this->safeSchema($seo?->schema, $allowOfferSchema),
-            'hreflang' => $this->isIndexableHreflangUrl($url, $locale) && ($seo?->is_indexable ?? true)
+            'hreflang' => $localeEnabled && $this->isIndexableHreflangUrl($url, $locale) && ($seo?->is_indexable ?? true)
                 ? $this->hreflangPayload($url, $locale, $site)
                 : [],
         ];

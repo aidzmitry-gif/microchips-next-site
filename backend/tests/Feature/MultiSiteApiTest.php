@@ -95,6 +95,26 @@ class MultiSiteApiTest extends TestCase
         ]);
     }
 
+    public function test_disabled_locale_url_resolves_without_becoming_indexable_or_emitting_hreflang(): void
+    {
+        $site = $this->site('microchips-uz', 'microchips.uz', 'UZ', 'UZS', 'ru-UZ');
+        $site->locales()->create(['locale' => 'ru-UZ', 'language' => 'ru', 'is_default' => true, 'is_enabled' => true]);
+        $site->locales()->create(['locale' => 'uz-UZ', 'language' => 'uz', 'is_default' => false, 'is_enabled' => false]);
+        $page = SitePage::create([
+            'site_id' => $site->id, 'locale' => 'uz-UZ', 'slug' => 'uz-about', 'title' => 'About', 'h1' => 'About', 'is_published' => true,
+        ]);
+        $url = SiteUrl::create([
+            'site_id' => $site->id, 'path' => '/uz/about', 'locale' => 'uz-UZ', 'target_type' => 'page', 'target_id' => $page->id, 'is_indexable' => true,
+        ]);
+
+        $this->getJson('/api/v1/sites/microchips.uz/resolve?path=/uz/about')
+            ->assertOk()
+            ->assertJsonPath('kind', 'page')
+            ->assertJsonPath('seo.isIndexable', false)
+            ->assertJsonPath('seo.hreflang', []);
+        $this->assertSame($url->id, SiteUrl::query()->where('path', '/uz/about')->value('id'));
+    }
+
     public function test_quote_lead_rejects_the_legacy_prototype_shape(): void
     {
         $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');

@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Microchips PostgreSQL backup
+
+[Timer]
+OnCalendar=*-*-* 02:30:00 UTC
+Persistent=true
+RandomizedDelaySec=15m
+Unit=microchips-postgres-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -31,5 +31,36 @@ repository.
 5. Verify host-based storefront responses, sitemap, redirects, a real lead in
    Bitrix24, and the SEO release audit before exposing a country domain.
 
+## Database backup and restore evidence
+
+The CI restore check proves that PostgreSQL tools work; it is not a production
+backup. On the server, choose a host-local directory outside Docker volumes,
+for example `/var/backups/microchips/postgres`, owned by the service account
+with mode `0700`. Set `POSTGRES_BACKUP_DIR` only in the systemd unit, never in
+git or the web application environment.
+
+Install [microchips-postgres-backup.service](../deploy/systemd/microchips-postgres-backup.service)
+and [microchips-postgres-backup.timer](../deploy/systemd/microchips-postgres-backup.timer), then enable the timer:
+
+```sh
+sudo systemctl daemon-reload
+sudo systemctl enable --now microchips-postgres-backup.timer
+sudo systemctl list-timers microchips-postgres-backup.timer
+```
+
+Each run creates an atomic custom-format dump and SHA-256 manifest. Verify a
+stored file—not a newly created temporary dump—before launch and at regular
+intervals:
+
+```sh
+POSTGRES_BACKUP_FILE=/var/backups/microchips/postgres/microchips-microchips-YYYYMMDDTHHMMSSZ.dump \
+  ./scripts/verify-postgres-backup-file.sh
+```
+
+Retention, encryption-key management, and a tested off-host replica are
+mandatory operational decisions. The repository intentionally does not claim
+that a local disk backup survives host loss; record the chosen retention and
+off-host destination in server operations evidence before launch.
+
 This is a deployment contour, not authorization to publish a country: regional
 legal/commercial data and the launch gates still apply.

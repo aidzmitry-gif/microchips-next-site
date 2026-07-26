@@ -299,6 +299,19 @@ final class SiteSeoReleaseAuditor
             );
         }
 
+        if ($url->target_type === 'page' && $url->target_id !== null) {
+            $pageLocale = SitePage::query()->where('site_id', $context['site']->id)->whereKey($url->target_id)->value('locale');
+            if ($pageLocale !== null && $pageLocale !== $locale) {
+                $this->issue(
+                    $issues,
+                    'SEO_PAGE_URL_LOCALE_MISMATCH',
+                    'A localized page URL must resolve to a page with the same locale.',
+                    $url->path,
+                    ['urlLocale' => $locale, 'pageLocale' => $pageLocale, 'targetId' => $url->target_id],
+                );
+            }
+        }
+
         if ($context['redirectsBySource']->has($url->path)) {
             $this->issue(
                 $issues,

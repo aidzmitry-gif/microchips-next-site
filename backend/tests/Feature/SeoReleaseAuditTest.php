@@ -254,6 +254,7 @@ class SeoReleaseAuditTest extends TestCase
         $this->publishedPage($site, '/catalog/akkumulyatory');
         $uzUrl = $this->publishedPage($site, '/uz/catalog/akkumulyatorlar');
         $uzUrl->update(['locale' => 'uz-UZ']);
+        SitePage::query()->whereKey($uzUrl->target_id)->update(['locale' => 'uz-UZ']);
         SiteSeo::query()->where('resource_id', $uzUrl->target_id)->update(['locale' => 'uz-UZ']);
         $this->verifiedProfile($site);
 
@@ -265,6 +266,22 @@ class SeoReleaseAuditTest extends TestCase
         $this->verifiedProfile($site, 'uz-UZ');
 
         $this->assertTrue(app(SiteSeoReleaseAuditor::class)->audit($site)['passed']);
+    }
+
+    public function test_an_indexable_page_url_cannot_claim_a_locale_different_from_its_page_content(): void
+    {
+        $site = $this->site('microchips-uz', 'microchips.uz', 'UZ', 'ru-UZ');
+        $site->locales()->create(['locale' => 'uz-UZ', 'language' => 'uz', 'is_default' => false, 'is_enabled' => true]);
+        $url = $this->publishedPage($site, '/uz/about');
+        $url->update(['locale' => 'uz-UZ']);
+        SiteSeo::query()->where('resource_id', $url->target_id)->update(['locale' => 'uz-UZ']);
+
+        $report = app(SiteSeoReleaseAuditor::class)->audit($site);
+
+        $this->assertContains('SEO_PAGE_URL_LOCALE_MISMATCH', $this->issueCodes($report));
+        $this->getJson('/api/v1/sites/microchips.uz/resolve?path=/uz/about')
+            ->assertOk()
+            ->assertJsonPath('kind', 'not_found');
     }
 
     private function site(string $key, string $domain, string $country, string $locale, bool $localeEnabled = true): Site
