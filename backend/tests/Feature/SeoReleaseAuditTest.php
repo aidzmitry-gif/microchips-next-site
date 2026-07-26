@@ -247,6 +247,26 @@ class SeoReleaseAuditTest extends TestCase
         $this->assertTrue($report['passed']);
     }
 
+    public function test_every_indexable_locale_requires_its_own_verified_commercial_profile(): void
+    {
+        $site = $this->site('microchips-uz', 'microchips.uz', 'UZ', 'ru-UZ');
+        $site->locales()->create(['locale' => 'uz-UZ', 'language' => 'uz', 'is_default' => false, 'is_enabled' => true]);
+        $this->publishedPage($site, '/catalog/akkumulyatory');
+        $uzUrl = $this->publishedPage($site, '/uz/catalog/akkumulyatorlar');
+        $uzUrl->update(['locale' => 'uz-UZ']);
+        SiteSeo::query()->where('resource_id', $uzUrl->target_id)->update(['locale' => 'uz-UZ']);
+        $this->verifiedProfile($site);
+
+        $missingUzProfile = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $uzIssue = collect($missingUzProfile['issues'])->firstWhere('code', 'SEO_SITE_LEGAL_PROFILE_INCOMPLETE');
+        $this->assertFalse($missingUzProfile['passed']);
+        $this->assertSame('uz-UZ', $uzIssue['context']['locale']);
+
+        $this->verifiedProfile($site, 'uz-UZ');
+
+        $this->assertTrue(app(SiteSeoReleaseAuditor::class)->audit($site)['passed']);
+    }
+
     private function site(string $key, string $domain, string $country, string $locale, bool $localeEnabled = true): Site
     {
         $site = Site::create([
@@ -300,15 +320,16 @@ class SeoReleaseAuditTest extends TestCase
         return $url;
     }
 
-    private function verifiedProfile(Site $site): void
+    private function verifiedProfile(Site $site, ?string $locale = null): void
     {
+        $locale ??= $site->default_locale;
         $verifier = User::factory()->create(['is_admin' => true]);
         foreach (['legal_entity' => 'Microchips LLC', 'address' => 'Minsk', 'phone' => '+375 29 123 45 67', 'email' => 'sales@example.by'] as $type => $value) {
-            $contact = SiteContact::create(['site_id' => $site->id, 'locale' => $site->default_locale, 'type' => $type, 'label' => $type, 'value' => $value]);
+            $contact = SiteContact::create(['site_id' => $site->id, 'locale' => $locale, 'type' => $type, 'label' => $type, 'value' => $value]);
             $contact->publish($verifier, 'Verified against source document');
         }
         foreach (['legal_name' => 'Microchips LLC', 'legal_address' => 'Minsk', 'delivery_terms' => 'Delivery terms', 'payment_terms' => 'Payment terms'] as $key => $value) {
-            $fact = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => $site->default_locale, 'key' => $key, 'value' => $value]);
+            $fact = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => $locale, 'key' => $key, 'value' => $value]);
             $fact->publish($verifier, 'Verified against source document');
         }
     }

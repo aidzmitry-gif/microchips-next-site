@@ -360,39 +360,40 @@ final class SiteSeoReleaseAuditor
             return;
         }
 
-        $locale = $site->default_locale;
-        $contacts = SiteContact::query()
-            ->published()
-            ->where('site_id', $site->id)
-            ->where('locale', $locale)
-            ->whereNotNull('verified_at')
-            ->whereNotNull('verified_by')
-            ->whereNotNull('verification_note')
-            ->get()
-            ->groupBy('type');
-        $facts = SiteCommercialFact::query()
-            ->published()
-            ->where('site_id', $site->id)
-            ->where('locale', $locale)
-            ->whereNotNull('verified_at')
-            ->whereNotNull('verified_by')
-            ->whereNotNull('verification_note')
-            ->get()
-            ->keyBy('key');
+        foreach ($indexableUrls->groupBy(fn (SiteUrl $url) => $this->localeFor($url, $site)) as $locale => $localeUrls) {
+            $contacts = SiteContact::query()
+                ->published()
+                ->where('site_id', $site->id)
+                ->where('locale', $locale)
+                ->whereNotNull('verified_at')
+                ->whereNotNull('verified_by')
+                ->whereNotNull('verification_note')
+                ->get()
+                ->groupBy('type');
+            $facts = SiteCommercialFact::query()
+                ->published()
+                ->where('site_id', $site->id)
+                ->where('locale', $locale)
+                ->whereNotNull('verified_at')
+                ->whereNotNull('verified_by')
+                ->whereNotNull('verification_note')
+                ->get()
+                ->keyBy('key');
 
-        $missingLegal = collect(['legal_name', 'legal_address'])->filter(fn (string $key) => ! $facts->has($key))->values()->all();
-        if ($missingLegal !== [] || ! $contacts->has('legal_entity') || ! $contacts->has('address')) {
-            $this->issue($issues, 'SEO_SITE_LEGAL_PROFILE_INCOMPLETE', 'Indexable pages require verified local legal entity and address facts.', null, ['locale' => $locale, 'missingFacts' => $missingLegal]);
-        }
-        $missingContacts = collect(['phone', 'email'])->filter(fn (string $type) => ! $contacts->has($type))->values()->all();
-        if ($missingContacts !== []) {
-            $this->issue($issues, 'SEO_SITE_CONTACT_PROFILE_INCOMPLETE', 'Indexable pages require verified local phone and email contacts.', null, ['locale' => $locale, 'missingTypes' => $missingContacts]);
-        }
-        $requiresTerms = $indexableUrls->contains(fn (SiteUrl $url) => in_array($url->path, ['/delivery', '/payment'], true)
-            || in_array($url->target_type, ['product', 'category'], true));
-        $missingTerms = collect(['delivery_terms', 'payment_terms'])->filter(fn (string $key) => ! $facts->has($key))->values()->all();
-        if ($requiresTerms && $missingTerms !== []) {
-            $this->issue($issues, 'SEO_SITE_COMMERCIAL_TERMS_INCOMPLETE', 'Indexable commercial pages require verified local delivery and payment terms.', null, ['locale' => $locale, 'missingFacts' => $missingTerms]);
+            $missingLegal = collect(['legal_name', 'legal_address'])->filter(fn (string $key) => ! $facts->has($key))->values()->all();
+            if ($missingLegal !== [] || ! $contacts->has('legal_entity') || ! $contacts->has('address')) {
+                $this->issue($issues, 'SEO_SITE_LEGAL_PROFILE_INCOMPLETE', 'Indexable pages require verified local legal entity and address facts.', null, ['locale' => $locale, 'missingFacts' => $missingLegal]);
+            }
+            $missingContacts = collect(['phone', 'email'])->filter(fn (string $type) => ! $contacts->has($type))->values()->all();
+            if ($missingContacts !== []) {
+                $this->issue($issues, 'SEO_SITE_CONTACT_PROFILE_INCOMPLETE', 'Indexable pages require verified local phone and email contacts.', null, ['locale' => $locale, 'missingTypes' => $missingContacts]);
+            }
+            $requiresTerms = $localeUrls->contains(fn (SiteUrl $url) => in_array($url->path, ['/delivery', '/payment'], true)
+                || in_array($url->target_type, ['product', 'category'], true));
+            $missingTerms = collect(['delivery_terms', 'payment_terms'])->filter(fn (string $key) => ! $facts->has($key))->values()->all();
+            if ($requiresTerms && $missingTerms !== []) {
+                $this->issue($issues, 'SEO_SITE_COMMERCIAL_TERMS_INCOMPLETE', 'Indexable commercial pages require verified local delivery and payment terms.', null, ['locale' => $locale, 'missingFacts' => $missingTerms]);
+            }
         }
     }
 
