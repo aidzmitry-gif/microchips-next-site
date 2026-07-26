@@ -13,5 +13,5 @@ Route::get('/sites/{site}/catalog/products', [CatalogController::class, 'index']
 Route::get('/sites/{site}/catalog/categories', [CatalogController::class, 'categories']);
 Route::get('/sites/{host}/seo/sitemap', SitemapController::class);
 
-Route::post('/leads/quote', [LeadController::class, 'quote'])->middleware('throttle:leads');
-Route::post('/leads/battery-pack-design', [LeadController::class, 'batteryPackDesign'])->middleware('throttle:leads');
+Route::post('/leads/quote', [LeadController::class, 'quote'])->middleware(['lead.proxy', 'throttle:leads']);
+Route::post('/leads/battery-pack-design', [LeadController::class, 'batteryPackDesign'])->middleware(['lead.proxy', 'throttle:leads']);

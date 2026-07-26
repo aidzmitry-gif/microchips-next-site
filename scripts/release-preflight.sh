@@ -18,6 +18,7 @@ require_value() {
 require_value POSTGRES_PASSWORD
 require_value LARAVEL_APP_KEY
 require_value NEXT_REVALIDATE_SECRET
+require_value LEAD_PROXY_SECRET
 require_value DEFAULT_SITE_HOST
 require_value PUBLIC_APP_URL
 
@@ -38,5 +39,6 @@ esac
 [ "$PUBLIC_APP_HOST" = "$DEFAULT_SITE_HOST" ] || fail "PUBLIC_APP_URL host must exactly match DEFAULT_SITE_HOST"
 
 [ "${#NEXT_REVALIDATE_SECRET}" -ge 32 ] || fail "NEXT_REVALIDATE_SECRET must be at least 32 characters"
+[ "${#LEAD_PROXY_SECRET}" -ge 32 ] || fail "LEAD_PROXY_SECRET must be at least 32 characters"
 
 printf '%s\n' 'release preflight passed: secrets are present and public URL host matches the deployable site host.'

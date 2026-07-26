@@ -1,12 +1,16 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { POST } from "./route";
 
+const ORIGINAL_LEAD_PROXY_SECRET = process.env.LEAD_PROXY_SECRET;
+
 afterEach(() => {
   vi.unstubAllGlobals();
+  process.env.LEAD_PROXY_SECRET = ORIGINAL_LEAD_PROXY_SECRET;
 });
 
 describe("quote lead proxy", () => {
   it("forwards the current backend contract and response status", async () => {
+    process.env.LEAD_PROXY_SECRET = "testing-lead-proxy-secret-32-characters";
     const fetchMock = vi.fn().mockResolvedValue(
       new Response(JSON.stringify({ id: 7, status: "accepted" }), {
         status: 201,
@@ -30,10 +34,12 @@ describe("quote lead proxy", () => {
     // The browser-controlled header must not affect Laravel's rate-limit identity.
     expect(new Headers(options.headers).get("X-Forwarded-For")).toBeNull();
     expect(new Headers(options.headers).get("X-Lead-Rate-Key")).toMatch(/^[a-f0-9-]{36}$/i);
+    expect(new Headers(options.headers).get("X-Lead-Proxy-Secret")).toBe("testing-lead-proxy-secret-32-characters");
     expect(response.headers.get("set-cookie")).toMatch(/^lead_rate_key=/);
   });
 
   it("reuses the server-issued lead rate key", async () => {
+    process.env.LEAD_PROXY_SECRET = "testing-lead-proxy-secret-32-characters";
     const fetchMock = vi.fn().mockResolvedValue(new Response("{}", { status: 201 }));
     vi.stubGlobal("fetch", fetchMock);
     const rateKey = "a1111111-1111-4111-8111-111111111111";
@@ -54,11 +60,27 @@ describe("quote lead proxy", () => {
     expect(invalid.status).toBe(400);
 
     vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("offline")));
+    process.env.LEAD_PROXY_SECRET = "testing-lead-proxy-secret-32-characters";
     const unavailable = await POST(new Request("http://localhost/api/leads/quote", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: "{}",
     }));
     expect(unavailable.status).toBe(503);
+  });
+
+  it("fails closed when the server-only proxy secret is missing", async () => {
+    delete process.env.LEAD_PROXY_SECRET;
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+
+    const response = await POST(new Request("http://localhost/api/leads/quote", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: "{}",
+    }));
+
+    expect(response.status).toBe(503);
+    expect(fetchMock).not.toHaveBeenCalled();
   });
 });

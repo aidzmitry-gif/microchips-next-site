@@ -55,6 +55,7 @@ jobs:
           POSTGRES_PASSWORD: ci-only-password-not-for-production
           LARAVEL_APP_KEY: base64:ci-only-key-not-for-production
           NEXT_REVALIDATE_SECRET: ci-only-revalidate-secret-with-32-characters
+          LEAD_PROXY_SECRET: ci-only-lead-proxy-secret-with-32-characters
           DEFAULT_SITE_HOST: microchips.by
           PUBLIC_APP_URL: https://microchips.by
         run: |

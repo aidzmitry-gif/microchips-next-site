@@ -10,6 +10,10 @@ export async function POST(request: Request) {
   }
 
   try {
+    const leadProxySecret = process.env.LEAD_PROXY_SECRET;
+    if (!leadProxySecret || leadProxySecret.length < 32) {
+      return Response.json({ message: "Lead service is not configured." }, { status: 503 });
+    }
     const { key: rateKey, isNew } = leadRateKey(request.headers.get("cookie"));
     const response = await fetch(`${apiBaseUrl}/api/v1/leads/quote`, {
       method: "POST",
@@ -17,6 +21,7 @@ export async function POST(request: Request) {
         Accept: "application/json",
         "Content-Type": "application/json",
         "X-Lead-Rate-Key": rateKey,
+        "X-Lead-Proxy-Secret": leadProxySecret,
       },
       body: JSON.stringify(body),
       cache: "no-store",

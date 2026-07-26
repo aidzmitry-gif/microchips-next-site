@@ -45,6 +45,7 @@ services:
       REDIS_HOST: redis
       NEXT_REVALIDATE_URL: http://frontend:3000/api/revalidate
       NEXT_REVALIDATE_SECRET: ${NEXT_REVALIDATE_SECRET}
+      LEAD_PROXY_SECRET: ${LEAD_PROXY_SECRET}
     depends_on:
       postgres:
         condition: service_healthy
@@ -104,6 +105,7 @@ services:
       LARAVEL_API_URL: http://nginx
       NEXT_REVALIDATE_SECRET: ${NEXT_REVALIDATE_SECRET}
       DEFAULT_SITE_HOST: ${DEFAULT_SITE_HOST}
+      LEAD_PROXY_SECRET: ${LEAD_PROXY_SECRET}
     depends_on:
       nginx:
         condition: service_healthy

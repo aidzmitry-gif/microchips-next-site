@@ -35,5 +35,6 @@
         <env name="PULSE_ENABLED" value="false"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
         <env name="NIGHTWATCH_ENABLED" value="false"/>
+        <env name="LEAD_PROXY_SECRET" value="testing-lead-proxy-secret-32-characters"/>
     </php>
 </phpunit>

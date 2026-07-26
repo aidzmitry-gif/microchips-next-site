@@ -40,4 +40,6 @@ return [
         'revalidate_secret' => env('NEXT_REVALIDATE_SECRET'),
     ],
 
+    'lead_proxy_secret' => env('LEAD_PROXY_SECRET'),
+
 ];
