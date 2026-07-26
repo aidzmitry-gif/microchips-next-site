@@ -37,6 +37,11 @@ class Site extends Model
         return $this->hasMany(SiteContact::class);
     }
 
+    public function commercialFacts(): HasMany
+    {
+        return $this->hasMany(SiteCommercialFact::class);
+    }
+
     public function urls(): HasMany
     {
         return $this->hasMany(SiteUrl::class);

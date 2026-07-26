@@ -4,6 +4,8 @@ namespace App\Domain\Seo;
 
 use App\Models\Site;
 use App\Models\SiteCategory;
+use App\Models\SiteCommercialFact;
+use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
 use App\Models\SiteRedirect;
@@ -60,6 +62,8 @@ final class SiteSeoReleaseAuditor
                 ],
             );
         }
+
+        $this->validateRegionalCommercialProfile($issues, $site, $context);
 
         $this->validateRedirects($issues, $context);
         $alternateCount = $this->validateHreflang($issues, $context);
@@ -338,6 +342,57 @@ final class SiteSeoReleaseAuditor
                 $url->path,
                 ['targetId' => $url->target_id],
             );
+        }
+    }
+
+    /**
+     * Indexable commercial pages must not be released until factual local
+     * business data is independently verified. Site columns are deliberately
+     * not accepted as evidence because they have no approval provenance.
+     *
+     * @param  list<array{severity: string, code: string, message: string, path: ?string, context: array<string, mixed>}>  $issues
+     * @param  array<string, mixed>  $context
+     */
+    private function validateRegionalCommercialProfile(array &$issues, Site $site, array $context): void
+    {
+        $indexableUrls = $this->sitemapUrlsFromContext($context);
+        if ($indexableUrls->isEmpty()) {
+            return;
+        }
+
+        $locale = $site->default_locale;
+        $contacts = SiteContact::query()
+            ->published()
+            ->where('site_id', $site->id)
+            ->where('locale', $locale)
+            ->whereNotNull('verified_at')
+            ->whereNotNull('verified_by')
+            ->whereNotNull('verification_note')
+            ->get()
+            ->groupBy('type');
+        $facts = SiteCommercialFact::query()
+            ->published()
+            ->where('site_id', $site->id)
+            ->where('locale', $locale)
+            ->whereNotNull('verified_at')
+            ->whereNotNull('verified_by')
+            ->whereNotNull('verification_note')
+            ->get()
+            ->keyBy('key');
+
+        $missingLegal = collect(['legal_name', 'legal_address'])->filter(fn (string $key) => ! $facts->has($key))->values()->all();
+        if ($missingLegal !== [] || ! $contacts->has('legal_entity') || ! $contacts->has('address')) {
+            $this->issue($issues, 'SEO_SITE_LEGAL_PROFILE_INCOMPLETE', 'Indexable pages require verified local legal entity and address facts.', null, ['locale' => $locale, 'missingFacts' => $missingLegal]);
+        }
+        $missingContacts = collect(['phone', 'email'])->filter(fn (string $type) => ! $contacts->has($type))->values()->all();
+        if ($missingContacts !== []) {
+            $this->issue($issues, 'SEO_SITE_CONTACT_PROFILE_INCOMPLETE', 'Indexable pages require verified local phone and email contacts.', null, ['locale' => $locale, 'missingTypes' => $missingContacts]);
+        }
+        $requiresTerms = $indexableUrls->contains(fn (SiteUrl $url) => in_array($url->path, ['/delivery', '/payment'], true)
+            || in_array($url->target_type, ['product', 'category'], true));
+        $missingTerms = collect(['delivery_terms', 'payment_terms'])->filter(fn (string $key) => ! $facts->has($key))->values()->all();
+        if ($requiresTerms && $missingTerms !== []) {
+            $this->issue($issues, 'SEO_SITE_COMMERCIAL_TERMS_INCOMPLETE', 'Indexable commercial pages require verified local delivery and payment terms.', null, ['locale' => $locale, 'missingFacts' => $missingTerms]);
         }
     }
 

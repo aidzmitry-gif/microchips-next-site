@@ -5,12 +5,15 @@ namespace Tests\Feature;
 use App\Domain\Seo\SiteSeoReleaseAuditor;
 use App\Models\Product;
 use App\Models\Site;
+use App\Models\SiteCommercialFact;
+use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
 use App\Models\SiteRedirect;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
 use App\Models\SiteUrlAlternate;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -22,6 +25,7 @@ class SeoReleaseAuditTest extends TestCase
     {
         $belarus = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
         $russia = $this->site('microchips-ru', 'microchips.ru', 'RU', 'ru-RU');
+        $this->verifiedProfile($belarus);
         $byUrl = $this->publishedPage($belarus, '/industrial-batteries');
         $ruUrl = $this->publishedPage($russia, '/promyshlennye-akkumulyatory');
 
@@ -219,6 +223,30 @@ class SeoReleaseAuditTest extends TestCase
         $this->assertContains('SEO_OFFER_SCHEMA_UNCONFIRMED_COMMERCIAL_DATA', $this->issueCodes($report));
     }
 
+    public function test_indexable_pages_require_verified_local_legal_contact_and_commercial_facts(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $this->publishedPage($site, '/delivery');
+
+        $initial = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $this->assertContains('SEO_SITE_LEGAL_PROFILE_INCOMPLETE', $this->issueCodes($initial));
+        $this->assertContains('SEO_SITE_CONTACT_PROFILE_INCOMPLETE', $this->issueCodes($initial));
+        $this->assertContains('SEO_SITE_COMMERCIAL_TERMS_INCOMPLETE', $this->issueCodes($initial));
+
+        $verifier = User::factory()->create(['is_admin' => true]);
+        foreach (['legal_entity' => 'Microchips LLC', 'address' => 'Minsk', 'phone' => '+375 29 123 45 67', 'email' => 'sales@example.by'] as $type => $value) {
+            $contact = SiteContact::create(['site_id' => $site->id, 'locale' => 'ru-BY', 'type' => $type, 'label' => $type, 'value' => $value]);
+            $contact->publish($verifier, 'Verified against source document');
+        }
+        foreach (['legal_name' => 'Microchips LLC', 'legal_address' => 'Minsk', 'delivery_terms' => 'Delivery terms', 'payment_terms' => 'Payment terms'] as $key => $value) {
+            $fact = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => 'ru-BY', 'key' => $key, 'value' => $value]);
+            $fact->publish($verifier, 'Verified against source document');
+        }
+
+        $report = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $this->assertTrue($report['passed']);
+    }
+
     private function site(string $key, string $domain, string $country, string $locale, bool $localeEnabled = true): Site
     {
         $site = Site::create([
@@ -270,6 +298,19 @@ class SeoReleaseAuditTest extends TestCase
         ]);
 
         return $url;
+    }
+
+    private function verifiedProfile(Site $site): void
+    {
+        $verifier = User::factory()->create(['is_admin' => true]);
+        foreach (['legal_entity' => 'Microchips LLC', 'address' => 'Minsk', 'phone' => '+375 29 123 45 67', 'email' => 'sales@example.by'] as $type => $value) {
+            $contact = SiteContact::create(['site_id' => $site->id, 'locale' => $site->default_locale, 'type' => $type, 'label' => $type, 'value' => $value]);
+            $contact->publish($verifier, 'Verified against source document');
+        }
+        foreach (['legal_name' => 'Microchips LLC', 'legal_address' => 'Minsk', 'delivery_terms' => 'Delivery terms', 'payment_terms' => 'Payment terms'] as $key => $value) {
+            $fact = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => $site->default_locale, 'key' => $key, 'value' => $value]);
+            $fact->publish($verifier, 'Verified against source document');
+        }
     }
 
     /** @param array{issues: list<array{code: string}>} $report

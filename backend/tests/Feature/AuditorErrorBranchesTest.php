@@ -8,12 +8,15 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Site;
 use App\Models\SiteCategory;
+use App\Models\SiteCommercialFact;
+use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
 use App\Models\SiteRedirect;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
 use App\Models\SiteUrlAlternate;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -106,6 +109,7 @@ class AuditorErrorBranchesTest extends TestCase
     public function test_unpublished_page_product_and_category_targets_block_release(): void
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $this->verifiedProfile($site);
 
         $unpublishedPage = $this->page($site, 'draft-page', false);
         $this->siteUrl($site, '/unpub-page', 'page', $unpublishedPage->id, $site->default_locale);
@@ -363,6 +367,19 @@ class AuditorErrorBranchesTest extends TestCase
     private function issueCodes(array $report): array
     {
         return array_map(fn (array $issue) => $issue['code'], $report['issues']);
+    }
+
+    private function verifiedProfile(Site $site): void
+    {
+        $verifier = User::factory()->create(['is_admin' => true]);
+        foreach (['legal_entity' => 'Microchips LLC', 'address' => 'Minsk', 'phone' => '+375 29 123 45 67', 'email' => 'sales@example.by'] as $type => $value) {
+            $contact = SiteContact::create(['site_id' => $site->id, 'locale' => $site->default_locale, 'type' => $type, 'label' => $type, 'value' => $value]);
+            $contact->publish($verifier, 'Verified against source document');
+        }
+        foreach (['legal_name' => 'Microchips LLC', 'legal_address' => 'Minsk', 'delivery_terms' => 'Delivery terms', 'payment_terms' => 'Payment terms'] as $key => $value) {
+            $fact = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => $site->default_locale, 'key' => $key, 'value' => $value]);
+            $fact->publish($verifier, 'Verified against source document');
+        }
     }
 
     /** @param array{issues: list<array{code: string}>} $report
