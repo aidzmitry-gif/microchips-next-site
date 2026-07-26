@@ -111,6 +111,13 @@ jobs:
       - name: Verify PostgreSQL backup and isolated restore
         run: docker compose --env-file .env.example exec -T postgres sh -s < scripts/verify-postgres-backup.sh
 
+      - name: Verify a persisted PostgreSQL backup file
+        run: |
+          backup_dir="$(mktemp -d)"
+          trap 'rm -rf "$backup_dir"' EXIT
+          POSTGRES_DB=microchips POSTGRES_USER=microchips COMPOSE_ENV_FILE=.env.example POSTGRES_BACKUP_DIR="$backup_dir" ./scripts/create-postgres-backup.sh
+          POSTGRES_DB=microchips POSTGRES_USER=microchips COMPOSE_ENV_FILE=.env.example POSTGRES_BACKUP_FILE="$(find "$backup_dir" -name '*.dump' -print -quit)" ./scripts/verify-postgres-backup-file.sh
+
       - name: Verify backend and frontend over HTTP
         run: |
           curl --fail --silent --show-error http://127.0.0.1:8080/admin/login > /dev/null

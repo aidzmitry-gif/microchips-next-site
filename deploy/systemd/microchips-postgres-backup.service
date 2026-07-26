@@ -8,6 +8,7 @@ Type=oneshot
 WorkingDirectory=/opt/microchips-next-site
 EnvironmentFile=/etc/microchips/microchips.env
 Environment=POSTGRES_BACKUP_DIR=/var/backups/microchips/postgres
+Environment=COMPOSE_ENV_FILE=/etc/microchips/microchips.env
 ExecStart=/opt/microchips-next-site/scripts/create-postgres-backup.sh
 User=microchips
 Group=microchips

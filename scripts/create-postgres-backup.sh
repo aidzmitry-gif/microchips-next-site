@@ -2,6 +2,14 @@
 set -eu
 umask 077
 
+compose() {
+  if [ -n "${COMPOSE_ENV_FILE:-}" ]; then
+    docker compose --env-file "$COMPOSE_ENV_FILE" "$@"
+  else
+    docker compose "$@"
+  fi
+}
+
 : "${POSTGRES_DB:?POSTGRES_DB is required}"
 : "${POSTGRES_USER:?POSTGRES_USER is required}"
 : "${POSTGRES_BACKUP_DIR:?POSTGRES_BACKUP_DIR must be an absolute host directory}"
@@ -34,13 +42,13 @@ cleanup() {
 }
 trap cleanup EXIT HUP INT TERM
 
-docker compose exec -T postgres pg_dump \
+compose exec -T postgres pg_dump \
   -U "$POSTGRES_USER" \
   -d "$POSTGRES_DB" \
   --format=custom > "$temporary"
 
 [ -s "$temporary" ] || { echo "PostgreSQL dump is empty." >&2; exit 1; }
-cat "$temporary" | docker compose exec -T postgres sh -ceu '
+cat "$temporary" | compose exec -T postgres sh -ceu '
   archive="$(mktemp)"
   cat > "$archive"
   if pg_restore --list "$archive" >/dev/null; then
