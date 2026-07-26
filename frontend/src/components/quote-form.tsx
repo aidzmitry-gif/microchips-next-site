@@ -41,7 +41,10 @@ export function QuoteForm({ site, subject, cart = [] }: QuoteFormProps) {
       email: email || null,
       phone: phone || null,
       message: message ? `${subject}\n${message}` : subject,
-      page_url: window.location.href,
+      // The backend validates this host against the selected site profile.
+      // Keep local development and preview hosts from making otherwise valid
+      // lead submissions fail, while storing the canonical public page URL.
+      page_url: canonicalPageUrl(site.domain),
       utm: currentUtm(),
       ...(cart.length > 0 ? { cart } : {}),
     };
@@ -98,6 +101,10 @@ export function QuoteForm({ site, subject, cart = [] }: QuoteFormProps) {
       )}
     </form>
   );
+}
+
+function canonicalPageUrl(domain: string): string {
+  return new URL(`${window.location.pathname}${window.location.search}`, `https://${domain}`).toString();
 }
 
 function currentUtm(): Record<string, string> {

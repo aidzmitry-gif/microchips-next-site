@@ -20,7 +20,14 @@ export async function proxy(request: NextRequest) {
       `${apiBaseUrl}/api/v1/sites/${encodeURIComponent(host)}/redirect?path=${encodeURIComponent(request.nextUrl.pathname)}`,
       { cache: "no-store", signal: AbortSignal.timeout(redirectLookupTimeoutMs) },
     );
-    if (!lookup.ok) return NextResponse.next();
+    if (!lookup.ok) {
+      // A legacy redirect may be a permanent 301. Passing this request on
+      // would let the page resolver emit Next's temporary redirect instead,
+      // silently changing the migration contract during an API outage.
+      if (lookup.status >= 500) return redirectServiceUnavailable();
+
+      return NextResponse.next();
+    }
 
     const redirect = (await lookup.json()) as RedirectLookup;
     if (redirect.kind === "redirect" && isSafeLocalTarget(redirect.to)) {
@@ -29,8 +36,18 @@ export async function proxy(request: NextRequest) {
 
     return withSiteLocale(request, redirect.locale);
   } catch {
-    return NextResponse.next();
+    return redirectServiceUnavailable();
   }
+}
+
+function redirectServiceUnavailable(): NextResponse {
+  return new NextResponse("Redirect lookup temporarily unavailable.", {
+    status: 503,
+    headers: {
+      "Cache-Control": "no-store",
+      "Retry-After": "30",
+    },
+  });
 }
 
 function isSafeLocalTarget(target: string): boolean {

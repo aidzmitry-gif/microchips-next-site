@@ -26,10 +26,17 @@ case "$PUBLIC_APP_URL" in
   *) fail "PUBLIC_APP_URL must use https" ;;
 esac
 
-case "$DEFAULT_SITE_HOST" in
-  *.test|localhost|*/*|*:*|"") fail "DEFAULT_SITE_HOST must be a public hostname without a port" ;;
+PUBLIC_APP_HOST=${PUBLIC_APP_URL#https://}
+case "$PUBLIC_APP_HOST" in
+  ""|*/*|*\?*|*\#*|*:*|*.test|localhost|*' '*) fail "PUBLIC_APP_URL must be an HTTPS origin with a public hostname and no port" ;;
 esac
+
+case "$DEFAULT_SITE_HOST" in
+  *.test|localhost|*/*|*:*|*' '*|"") fail "DEFAULT_SITE_HOST must be a public hostname without a port" ;;
+esac
+
+[ "$PUBLIC_APP_HOST" = "$DEFAULT_SITE_HOST" ] || fail "PUBLIC_APP_URL host must exactly match DEFAULT_SITE_HOST"
 
 [ "${#NEXT_REVALIDATE_SECRET}" -ge 32 ] || fail "NEXT_REVALIDATE_SECRET must be at least 32 characters"
 
-printf '%s\n' 'release preflight passed: secrets are present, public URL is HTTPS, and host is deployable.'
+printf '%s\n' 'release preflight passed: secrets are present and public URL host matches the deployable site host.'

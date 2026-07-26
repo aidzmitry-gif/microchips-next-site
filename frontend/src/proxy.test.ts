@@ -30,15 +30,26 @@ describe("dynamic redirect proxy", () => {
     expect(response.headers.get("x-middleware-request-x-site-language")).toBe("uz");
   });
 
-  it("fails open when the redirect lookup is unavailable or times out", async () => {
+  it("fails closed when the redirect lookup is unavailable or times out so a legacy 301 cannot degrade to a temporary redirect", async () => {
     vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new DOMException("Timed out", "AbortError")));
 
     const response = await proxy(new NextRequest("https://microchips.by/catalog/old", { headers: { host: "microchips.by" } }));
 
-    expect(response.headers.get("x-middleware-next")).toBe("1");
+    expect(response.status).toBe(503);
+    expect(response.headers.get("cache-control")).toBe("no-store");
+    expect(response.headers.get("retry-after")).toBe("30");
     expect(fetch).toHaveBeenCalledWith(
       expect.any(String),
       expect.objectContaining({ cache: "no-store", signal: expect.any(AbortSignal) }),
     );
+  });
+
+  it("fails closed for a backend 5xx response", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(new Response("down", { status: 503 })));
+
+    const response = await proxy(new NextRequest("https://microchips.by/catalog/old", { headers: { host: "microchips.by" } }));
+
+    expect(response.status).toBe(503);
+    expect(response.headers.get("x-middleware-next")).toBeNull();
   });
 });

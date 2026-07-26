@@ -60,6 +60,11 @@ jobs:
         run: |
           docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml config --quiet
           sh scripts/release-preflight.sh
+          if PUBLIC_APP_URL=https://wrong.invalid sh scripts/release-preflight.sh; then
+            echo "Expected mismatched public host to fail preflight" >&2
+            exit 1
+          fi
+          pwsh -File ./scripts/verify-public-release.ps1 -RunSelfTest
 
       # Line coverage is measured only in CI (local PHP has no pcov/xdebug). This
       # step reports the % and writes clover XML.

@@ -57,7 +57,7 @@ describe("QuoteForm", () => {
       phone: null,
       message: "Товар: FIAMM\nНужно 10 штук",
     });
-    expect(body.page_url).toMatch(/^http:/);
+    expect(body.page_url).toBe("https://microchips.by/");
     expect(await screen.findByRole("status")).toBeTruthy();
   });
 });
