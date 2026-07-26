@@ -46,6 +46,21 @@ final class SiteSeoReleaseAuditor
             $this->validateOfferSchema($issues, $site, $url, $seo);
         }
 
+        foreach ($context['duplicateIndexableResources'] as $duplicate) {
+            $this->issue(
+                $issues,
+                'SEO_INDEXABLE_RESOURCE_DUPLICATE_PATH',
+                'One resource and locale cannot have more than one indexable URL; use a redirect for an alias.',
+                $duplicate['paths'][0],
+                [
+                    'targetType' => $duplicate['target_type'],
+                    'targetId' => $duplicate['target_id'],
+                    'locale' => $duplicate['locale'],
+                    'paths' => $duplicate['paths'],
+                ],
+            );
+        }
+
         $this->validateRedirects($issues, $context);
         $alternateCount = $this->validateHreflang($issues, $context);
         $sitemapUrls = $this->sitemapUrlsFromContext($context);
@@ -83,7 +98,8 @@ final class SiteSeoReleaseAuditor
      *     redirects: Collection<int, SiteRedirect>,
      *     redirectsBySource: Collection<string, SiteRedirect>,
      *     seoByResource: Collection<string, SiteSeo>,
-     *     publishedTargetIds: array<string, array<int, bool>>
+     *     publishedTargetIds: array<string, array<int, bool>>,
+     *     duplicateIndexableResources: array<string, array{target_type: string, target_id: ?int, locale: string, paths: list<string>}>
      * }
      */
     private function context(Site $site): array
@@ -111,7 +127,31 @@ final class SiteSeoReleaseAuditor
                 ->get()
                 ->keyBy(fn (SiteSeo $seo) => $this->seoKey($seo->resource_type, $seo->resource_id, $seo->locale)),
             'publishedTargetIds' => $this->publishedTargetIds($site, $urls),
+            'duplicateIndexableResources' => $this->duplicateIndexableResources($site, $urls),
         ];
+    }
+
+    /** @param Collection<int, SiteUrl> $urls
+     * @return array<string, array{target_type: string, target_id: ?int, locale: string, paths: list<string>}>
+     */
+    private function duplicateIndexableResources(Site $site, Collection $urls): array
+    {
+        return $urls
+            ->filter(fn (SiteUrl $url): bool => $url->is_indexable)
+            ->groupBy(fn (SiteUrl $url): string => $this->resourceLocaleKey($url, $site))
+            ->filter(fn (Collection $group): bool => $group->count() > 1)
+            ->mapWithKeys(function (Collection $group, string $key) use ($site): array {
+                /** @var SiteUrl $first */
+                $first = $group->first();
+
+                return [$key => [
+                    'target_type' => $first->target_type,
+                    'target_id' => $first->target_id,
+                    'locale' => $this->localeFor($first, $site),
+                    'paths' => $group->pluck('path')->sort()->values()->all(),
+                ]];
+            })
+            ->all();
     }
 
     /** @param Collection<int, SiteUrl> $urls
@@ -573,6 +613,7 @@ final class SiteSeoReleaseAuditor
     {
         return $context['urls']
             ->filter(fn (SiteUrl $url) => $url->is_indexable)
+            ->filter(fn (SiteUrl $url) => ! array_key_exists($this->resourceLocaleKey($url, $context['site']), $context['duplicateIndexableResources']))
             ->filter(fn (SiteUrl $url) => $this->siteHasEnabledLocale($context['site'], $this->localeFor($url, $context['site'])))
             ->filter(fn (SiteUrl $url) => $this->isSitemapSafePath($url->path))
             ->filter(fn (SiteUrl $url) => ! $context['redirectsBySource']->has($url->path))
@@ -643,6 +684,11 @@ final class SiteSeoReleaseAuditor
     private function localeFor(SiteUrl $url, Site $site): string
     {
         return $url->locale ?: $site->default_locale;
+    }
+
+    private function resourceLocaleKey(SiteUrl $url, Site $site): string
+    {
+        return implode('|', [$url->target_type, $url->target_id ?? 'none', $this->localeFor($url, $site)]);
     }
 
     private function siteHasEnabledLocale(Site $site, string $locale): bool

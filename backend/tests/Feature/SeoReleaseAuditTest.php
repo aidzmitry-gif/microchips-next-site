@@ -136,6 +136,32 @@ class SeoReleaseAuditTest extends TestCase
             ->assertJsonCount(0, 'urls');
     }
 
+    public function test_duplicate_indexable_paths_for_the_same_resource_and_effective_locale_are_blocked_and_omitted(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $first = $this->publishedPage($site, '/industrial-batteries');
+        SiteSeo::query()->where('resource_id', $first->target_id)->delete();
+        $first->update(['locale' => null]);
+        SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/industrial-batteries-alias',
+            'locale' => 'ru-BY',
+            'target_type' => 'page',
+            'target_id' => $first->target_id,
+            'is_indexable' => true,
+        ]);
+
+        $report = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $issue = collect($report['issues'])->firstWhere('code', 'SEO_INDEXABLE_RESOURCE_DUPLICATE_PATH');
+
+        $this->assertFalse($report['passed']);
+        $this->assertNotNull($issue);
+        $this->assertSame(['/industrial-batteries', '/industrial-batteries-alias'], $issue['context']['paths']);
+        $this->getJson('/api/v1/sites/microchips.by/seo/sitemap')
+            ->assertOk()
+            ->assertJsonCount(0, 'urls');
+    }
+
     public function test_redirect_chains_homepage_fallbacks_and_external_targets_block_release(): void
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
