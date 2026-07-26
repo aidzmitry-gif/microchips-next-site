@@ -40,7 +40,16 @@ docker compose exec -T postgres pg_dump \
   --format=custom > "$temporary"
 
 [ -s "$temporary" ] || { echo "PostgreSQL dump is empty." >&2; exit 1; }
-cat "$temporary" | docker compose exec -T postgres pg_restore --list - >/dev/null
+cat "$temporary" | docker compose exec -T postgres sh -ceu '
+  archive="$(mktemp)"
+  cat > "$archive"
+  if pg_restore --list "$archive" >/dev/null; then
+    rm -f "$archive"
+  else
+    rm -f "$archive"
+    exit 1
+  fi
+'
 
 mv "$temporary" "$destination"
 manifest_temporary="$(mktemp "$POSTGRES_BACKUP_DIR/.${base}.sha256.XXXXXX")"
