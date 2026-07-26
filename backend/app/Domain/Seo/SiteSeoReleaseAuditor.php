@@ -216,6 +216,17 @@ final class SiteSeoReleaseAuditor
      */
     private function validateIndexability(array &$issues, SiteUrl $url, ?SiteSeo $seo, array $context): void
     {
+        $locale = $this->localeFor($url, $context['site']);
+        if (! $this->siteHasEnabledLocale($context['site'], $locale)) {
+            $this->issue(
+                $issues,
+                'SEO_INDEXABLE_URL_LOCALE_DISABLED',
+                'An indexable URL must use an enabled locale on its own site.',
+                $url->path,
+                ['locale' => $locale],
+            );
+        }
+
         if (! $this->isSitemapSafePath($url->path)) {
             $this->issue(
                 $issues,
@@ -562,6 +573,7 @@ final class SiteSeoReleaseAuditor
     {
         return $context['urls']
             ->filter(fn (SiteUrl $url) => $url->is_indexable)
+            ->filter(fn (SiteUrl $url) => $this->siteHasEnabledLocale($context['site'], $this->localeFor($url, $context['site'])))
             ->filter(fn (SiteUrl $url) => $this->isSitemapSafePath($url->path))
             ->filter(fn (SiteUrl $url) => ! $context['redirectsBySource']->has($url->path))
             ->filter(fn (SiteUrl $url) => $this->targetIsPublished($url, $context))

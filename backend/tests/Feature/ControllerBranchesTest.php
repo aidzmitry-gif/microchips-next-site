@@ -165,7 +165,7 @@ class ControllerBranchesTest extends TestCase
 
     private function site(): Site
     {
-        return Site::create([
+        $site = Site::create([
             'key' => 'microchips-by',
             'domain' => 'microchips.by',
             'country_code' => 'BY',
@@ -174,5 +174,13 @@ class ControllerBranchesTest extends TestCase
             'name' => 'Microchips Belarus',
             'is_active' => true,
         ]);
+        $site->locales()->create([
+            'locale' => 'ru-BY',
+            'language' => 'ru',
+            'is_default' => true,
+            'is_enabled' => true,
+        ]);
+
+        return $site;
     }
 }

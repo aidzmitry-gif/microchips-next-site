@@ -16,6 +16,18 @@ export function SiteHeader({
   localeAlternates?: Record<string, string>;
 }) {
   const localeLinks = Object.entries(localeAlternates).filter(([locale, href]) => locale !== currentLocale && isSafeAbsoluteUrl(href));
+  const availablePages = new Set(site.availablePagePaths ?? []);
+  const navigation = [
+    { path: "/solutions", label: "Решения" },
+    { path: "/delivery", label: "Доставка и оплата" },
+    { path: "/warranty-and-documents", label: "Гарантия и документы" },
+    { path: "/services", label: "Услуги" },
+  ].filter(({ path }) => availablePages.has(path));
+  const companyPages = [
+    { path: "/about", label: "О компании" },
+    { path: "/contacts", label: "Контакты и реквизиты" },
+  ].filter(({ path }) => availablePages.has(path));
+  const hasContacts = availablePages.has("/contacts");
   return (
     <header className="site-header">
       {localeLinks.length > 0 && (
@@ -46,18 +58,14 @@ export function SiteHeader({
             <CategoryTree categories={categories} currentPath={currentPath} />
           </div>
         </details>
-        <Link href="/solutions">Решения</Link>
-        <Link href="/delivery">Доставка и оплата</Link>
-        <Link href="/warranty-and-documents">Гарантия и документы</Link>
-        <Link href="/services">Услуги</Link>
-        <details className="desktop-nav__company">
-          <summary>О компании</summary>
-          <div>
-            <Link href="/about">О компании</Link>
-            <Link href="/contacts">Контакты и реквизиты</Link>
-          </div>
-        </details>
-        <Link href="/contacts">Контакты</Link>
+        {navigation.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}
+        {companyPages.length > 0 && (
+          <details className="desktop-nav__company">
+            <summary>О компании</summary>
+            <div>{companyPages.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}</div>
+          </details>
+        )}
+        {hasContacts && <Link href="/contacts">Контакты</Link>}
       </nav>
 
       <details className="mobile-nav">
@@ -67,18 +75,14 @@ export function SiteHeader({
             <summary>Каталог</summary>
             <CategoryTree categories={categories} currentPath={currentPath} mobile />
           </details>
-          <Link href="/solutions">Решения</Link>
-          <Link href="/delivery">Доставка и оплата</Link>
-          <Link href="/warranty-and-documents">Гарантия и документы</Link>
-          <Link href="/services">Услуги</Link>
-          <details>
-            <summary>О компании</summary>
-            <div className="mobile-nav__nested">
-              <Link href="/about">О компании</Link>
-              <Link href="/contacts">Контакты и реквизиты</Link>
-            </div>
-          </details>
-          <Link href="/contacts">Контакты</Link>
+          {navigation.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}
+          {companyPages.length > 0 && (
+            <details>
+              <summary>О компании</summary>
+              <div className="mobile-nav__nested">{companyPages.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}</div>
+            </details>
+          )}
+          {hasContacts && <Link href="/contacts">Контакты</Link>}
           <a className="catalog-button" href="#quote-request">Запросить КП</a>
         </div>
       </details>

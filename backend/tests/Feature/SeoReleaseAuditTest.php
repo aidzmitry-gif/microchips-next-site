@@ -119,6 +119,23 @@ class SeoReleaseAuditTest extends TestCase
         $this->assertNotSame($safe->id, $filter->id);
     }
 
+    public function test_indexable_url_with_a_disabled_site_locale_is_blocked_and_omitted_from_sitemap(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $site->locales()->create(['locale' => 'ru-RU', 'language' => 'ru', 'is_default' => false, 'is_enabled' => false]);
+        $url = $this->publishedPage($site, '/industrial-batteries');
+        $url->update(['locale' => 'ru-RU']);
+        SiteSeo::query()->where('resource_id', $url->target_id)->update(['locale' => 'ru-RU']);
+
+        $report = app(SiteSeoReleaseAuditor::class)->audit($site);
+
+        $this->assertFalse($report['passed']);
+        $this->assertContains('SEO_INDEXABLE_URL_LOCALE_DISABLED', $this->issueCodes($report));
+        $this->getJson('/api/v1/sites/microchips.by/seo/sitemap')
+            ->assertOk()
+            ->assertJsonCount(0, 'urls');
+    }
+
     public function test_redirect_chains_homepage_fallbacks_and_external_targets_block_release(): void
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');

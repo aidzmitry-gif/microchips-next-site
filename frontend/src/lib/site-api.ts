@@ -7,6 +7,7 @@ export type SiteProfile = {
   currencyCode: string;
   defaultLocale: string;
   name: string;
+  availablePagePaths?: string[];
   locales: Array<{ locale: string; language: string; isDefault: boolean }>;
 };
 

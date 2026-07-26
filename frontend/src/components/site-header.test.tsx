@@ -9,6 +9,7 @@ const site = {
   currencyCode: "BYN",
   defaultLocale: "ru-BY",
   name: "Аккумуляторные решения",
+  availablePagePaths: ["/solutions", "/delivery", "/warranty-and-documents", "/services", "/about", "/contacts"],
   locales: [],
 };
 
@@ -32,6 +33,14 @@ describe("SiteHeader", () => {
     expect(screen.getByText("Меню")).toBeTruthy();
     expect(container.querySelector("details.mobile-nav")).toBeTruthy();
     expect(container.querySelector(".mobile-nav .category-tree--mobile")).toBeTruthy();
+  });
+
+  it("does not render links to planned or unpublished pages", () => {
+    render(<SiteHeader site={{ ...site, availablePagePaths: ["/contacts"] }} currentPath="/" />);
+
+    expect(screen.queryByRole("link", { name: "Решения" })).toBeNull();
+    expect(screen.queryByRole("link", { name: "Доставка и оплата" })).toBeNull();
+    expect(screen.getAllByRole("link", { name: "Контакты" }).length).toBeGreaterThanOrEqual(2);
   });
 
   it("shows only verified https hreflang alternatives as the locale switcher", () => {

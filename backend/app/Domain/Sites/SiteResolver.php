@@ -247,6 +247,21 @@ class SiteResolver
             'currencyCode' => $site->currency_code,
             'defaultLocale' => $site->default_locale,
             'name' => $site->name,
+            // Navigation must be derived from the same published page/URL
+            // boundary as resolution. A hard-coded frontend menu can otherwise
+            // link visitors (and crawlers) to planned pages which are still
+            // drafts, yielding a silent collection of 404s at launch.
+            'availablePagePaths' => SiteUrl::query()
+                ->where('site_id', $site->id)
+                ->where('target_type', 'page')
+                ->whereIn('target_id', SitePage::query()
+                    ->where('site_id', $site->id)
+                    ->published()
+                    ->select('id'))
+                ->orderBy('path')
+                ->pluck('path')
+                ->values()
+                ->all(),
             'locales' => $site->locales->map(fn ($locale) => [
                 'locale' => $locale->locale,
                 'language' => $locale->language,

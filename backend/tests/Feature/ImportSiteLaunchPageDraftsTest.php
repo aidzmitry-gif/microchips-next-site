@@ -42,6 +42,19 @@ class ImportSiteLaunchPageDraftsTest extends TestCase
         $this->assertSame(1, ImportRun::query()->latest('id')->firstOrFail()->summary['unchanged']);
     }
 
+    public function test_navigation_payload_lists_only_routes_with_published_pages(): void
+    {
+        $site = $this->site();
+        $this->artisan('site:import-launch-page-drafts', ['site' => $site->key, 'file' => $this->manifestFile(), '--apply' => true])->assertSuccessful();
+        $page = SitePage::query()->sole();
+        $page->update(['is_published' => true]);
+
+        $payload = (new SiteResolver)->resolvePath($site, '/contacts');
+
+        $this->assertSame('page', $payload['kind']);
+        $this->assertSame(['/contacts'], $payload['site']['availablePagePaths']);
+    }
+
     public function test_refuses_to_demote_an_existing_published_page_or_route(): void
     {
         $site = $this->site();
