@@ -12,6 +12,14 @@ class SiteCategoryProduct extends Pivot
 
     protected $fillable = ['site_id', 'site_category_id', 'site_product_id'];
 
+    // The table has its own auto-increment `id` (see the migration); this is
+    // not a composite-key pivot. Without this override, Pivot's default
+    // `$incrementing = false` leaves `id` null on the in-memory model right
+    // after create(), even though the row itself has a real one -- callers
+    // that need to log which link was created (see SiteProductCategoryAssigner)
+    // would otherwise log null.
+    public $incrementing = true;
+
     protected static function booted(): void
     {
         static::creating(function (self $pivot): void {

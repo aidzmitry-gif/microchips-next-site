@@ -421,6 +421,85 @@ function Invoke-MySqlDumpTable {
     }
 }
 
+function Resolve-ElementLinkValue {
+    param(
+        [psobject]$Property,
+        [AllowNull()][string]$Value,
+        [hashtable]$ElementIndexById
+    )
+
+    # Bitrix property type 'E' stores a foreign element ID (e.g. from a brand
+    # reference infoblock) as the raw VALUE. This is a general resolver for
+    # any such reference property, not a lookup table of specific brand IDs:
+    # it only ever echoes back a name that was actually read from
+    # b_iblock_element, and only after confirming the referenced element
+    # belongs to the infoblock the property's own LINK_IBLOCK_ID points at
+    # (b_iblock_property column 17). Without that check, an element ID that
+    # happens to collide with an unrelated infoblock (an article, a staff
+    # record, another product) would be echoed back as if it were the
+    # intended reference. Statuses:
+    #   not_applicable      - property is not a type-E reference at all
+    #   empty               - the stored value is blank; there is nothing to link
+    #   not_found           - no element with this ID exists anywhere in the dump
+    #   scope_unverifiable  - the property itself has no recorded LINK_IBLOCK_ID
+    #                         (blank/NULL/missing column, or a non-positive/
+    #                         non-numeric value such as '0' - no infoblock has
+    #                         ID 0, so it is not a declared scope either), so
+    #                         there is no declared scope to check the linked
+    #                         element against; this is a gap in the property's
+    #                         own metadata, not proof of a broken reference, so
+    #                         it must be counted separately from
+    #                         iblock_mismatch and must never resolve
+    #   iblock_mismatch     - the property DOES declare a LINK_IBLOCK_ID, and
+    #                         the linked element exists, but the element's own
+    #                         IBLOCK_ID does not match that declared scope -
+    #                         i.e. a reference that actually points at the
+    #                         wrong infoblock (broken/stale link)
+    #   name_missing        - the element exists in the correct scope but its
+    #                         NAME column is NULL/blank, so there is no name to
+    #                         report; must never be reported as 'resolved'
+    #   resolved            - the element exists, is in the correct scope, and
+    #                         has a usable name
+    if ($Property.property_type -ne 'E') {
+        return [PSCustomObject]@{ resolved_name = $null; status = 'not_applicable' }
+    }
+
+    if ([string]::IsNullOrWhiteSpace($Value)) {
+        return [PSCustomObject]@{ resolved_name = $null; status = 'empty' }
+    }
+
+    if (-not $ElementIndexById.ContainsKey($Value)) {
+        return [PSCustomObject]@{ resolved_name = $null; status = 'not_found' }
+    }
+
+    $linkedElement = $ElementIndexById[$Value]
+    $linkIblockIdMember = $Property.PSObject.Properties['link_iblock_id']
+    $linkIblockIdRaw = if ($linkIblockIdMember) { $linkIblockIdMember.Value } else { $null }
+    # [int]::TryParse already rejects $null/empty/whitespace-only input (no
+    # separate IsNullOrWhiteSpace guard needed) and, under the default
+    # NumberStyles.Integer it uses, already tolerates surrounding whitespace
+    # (see the ' 27' padded-scope self-test below) -- so no .Trim() either.
+    $declaredLinkIblockId = 0
+    $hasDeclaredLinkIblockId = [int]::TryParse([string]$linkIblockIdRaw, [ref]$declaredLinkIblockId) -and
+        ($declaredLinkIblockId -gt 0)
+    if (-not $hasDeclaredLinkIblockId) {
+        return [PSCustomObject]@{ resolved_name = $null; status = 'scope_unverifiable' }
+    }
+
+    $linkedElementIblockId = 0
+    $linkedElementInDeclaredScope = [int]::TryParse([string]$linkedElement.iblock_id, [ref]$linkedElementIblockId) -and
+        ($linkedElementIblockId -eq $declaredLinkIblockId)
+    if (-not $linkedElementInDeclaredScope) {
+        return [PSCustomObject]@{ resolved_name = $null; status = 'iblock_mismatch' }
+    }
+
+    if ([string]::IsNullOrWhiteSpace($linkedElement.name)) {
+        return [PSCustomObject]@{ resolved_name = $null; status = 'name_missing' }
+    }
+
+    return [PSCustomObject]@{ resolved_name = $linkedElement.name; status = 'resolved' }
+}
+
 function Get-SectionPath {
     param(
         [string]$SectionId,
@@ -516,6 +595,47 @@ function Invoke-SelfTest {
 
     $amperageProperty = [PSCustomObject]@{ property_code = 'AMPERNOST_AH'; property_name = 'Амперность, Ач' }
     Assert-Condition -Condition (Test-PropertyKind -Property $amperageProperty -Kind 'capacity') -Message 'amperage in Ah must be treated as capacity'
+
+    $elementIndexById = @{
+        '4656' = [PSCustomObject]@{ name = 'MNB'; iblock_id = '27' }
+        '6000' = [PSCustomObject]@{ name = 'Some Blog Article Title'; iblock_id = '99' }
+        '5000' = [PSCustomObject]@{ name = $null; iblock_id = '27' }
+    }
+    $elementLinkProperty = [PSCustomObject]@{ property_type = 'E'; link_iblock_id = '27' }
+    $resolvedLink = Resolve-ElementLinkValue -Property $elementLinkProperty -Value '4656' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($resolvedLink.status -eq 'resolved' -and $resolvedLink.resolved_name -eq 'MNB') -Message 'element-link property values must resolve to the referenced element name when the element is inside the property''s LINK_IBLOCK_ID scope'
+
+    $missingLink = Resolve-ElementLinkValue -Property $elementLinkProperty -Value '99999' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($missingLink.status -eq 'not_found' -and $null -eq $missingLink.resolved_name) -Message 'element-link resolution must report not_found rather than guessing when the referenced element is missing'
+
+    $emptyLink = Resolve-ElementLinkValue -Property $elementLinkProperty -Value '' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($emptyLink.status -eq 'empty' -and $null -eq $emptyLink.resolved_name) -Message 'a blank type-E value must report empty, distinct from not_found, so summary counters are not distorted'
+
+    $mismatchedLink = Resolve-ElementLinkValue -Property $elementLinkProperty -Value '6000' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($mismatchedLink.status -eq 'iblock_mismatch' -and $null -eq $mismatchedLink.resolved_name) -Message 'an element that exists but belongs to a different infoblock than the property''s LINK_IBLOCK_ID must never be echoed back as resolved'
+
+    $unscopedProperty = [PSCustomObject]@{ property_type = 'E'; link_iblock_id = $null }
+    $unscopedLink = Resolve-ElementLinkValue -Property $unscopedProperty -Value '4656' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($unscopedLink.status -eq 'scope_unverifiable' -and $null -eq $unscopedLink.resolved_name) -Message 'a type-E property with no recorded LINK_IBLOCK_ID cannot have its scope verified and must be reported as scope_unverifiable, distinct from iblock_mismatch, and must not resolve'
+
+    $zeroScopedProperty = [PSCustomObject]@{ property_type = 'E'; link_iblock_id = '0' }
+    $zeroScopedLink = Resolve-ElementLinkValue -Property $zeroScopedProperty -Value '4656' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($zeroScopedLink.status -eq 'scope_unverifiable' -and $null -eq $zeroScopedLink.resolved_name) -Message 'a LINK_IBLOCK_ID of 0 is not a declared scope (no infoblock has ID 0) and must report scope_unverifiable, not iblock_mismatch'
+
+    $paddedScopeProperty = [PSCustomObject]@{ property_type = 'E'; link_iblock_id = ' 27' }
+    $paddedScopeLink = Resolve-ElementLinkValue -Property $paddedScopeProperty -Value '4656' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($paddedScopeLink.status -eq 'resolved' -and $paddedScopeLink.resolved_name -eq 'MNB') -Message 'LINK_IBLOCK_ID and iblock_id must be compared numerically so incidental whitespace such as a leading space does not produce a false iblock_mismatch'
+
+    $unscopedPropertyNoField = [PSCustomObject]@{ property_type = 'E' }
+    $unscopedLinkNoField = Resolve-ElementLinkValue -Property $unscopedPropertyNoField -Value '4656' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($unscopedLinkNoField.status -eq 'scope_unverifiable' -and $null -eq $unscopedLinkNoField.resolved_name) -Message 'a type-E property missing the link_iblock_id field entirely must also report scope_unverifiable, not iblock_mismatch'
+
+    $nameMissingLink = Resolve-ElementLinkValue -Property $elementLinkProperty -Value '5000' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($nameMissingLink.status -eq 'name_missing' -and $null -eq $nameMissingLink.resolved_name) -Message 'an in-scope element with a NULL name must report name_missing, never resolved with a null name'
+
+    $nonLinkProperty = [PSCustomObject]@{ property_type = 'S' }
+    $notApplicableLink = Resolve-ElementLinkValue -Property $nonLinkProperty -Value 'whatever' -ElementIndexById $elementIndexById
+    Assert-Condition -Condition ($notApplicableLink.status -eq 'not_applicable') -Message 'non element-link property types must be marked not_applicable, not resolved'
 
     $scanFirstLine = Get-MySqlStatementScanResult -Text "(1,'semicolon; remains inside text')," -InsideString $false -Escaped $false
     Assert-Condition -Condition ($scanFirstLine.terminator_index -eq -1) -Message 'a semicolon inside a quoted value must not terminate INSERT capture'
@@ -673,6 +793,14 @@ if ($firstFocusSectionIds.Count -eq 0) {
 Write-Output 'Pass 2/5: reading catalog elements and retaining source identities.'
 $catalogElements = @{}
 $offerElements = @{}
+# Every element in the dump, regardless of iblock, so that reference/lookup
+# infoblocks (e.g. a brand directory) can be resolved by ID later. This is a
+# read-only, general-purpose ID->{name, iblock_id} index, not specific to any
+# one property. The iblock_id is kept alongside the name so a type-E resolver
+# can confirm the referenced element actually belongs to the infoblock the
+# reference property points at (LINK_IBLOCK_ID), not just that some element
+# with that ID exists somewhere in the dump.
+$elementIndexById = @{}
 $offerElementCounts = @{
     '28' = 0
     '67' = 0
@@ -686,6 +814,12 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element' -ExpectedCol
 
     $iblockId = Get-RowValue -Row $Row -Index 5
     $id = Get-RowValue -Row $Row -Index 0
+    if (-not [string]::IsNullOrWhiteSpace($id)) {
+        $elementIndexById[$id] = [PSCustomObject]@{
+            name       = Get-RowValue -Row $Row -Index 11
+            iblock_id  = $iblockId
+        }
+    }
     if ($offerIblockIds.Contains($iblockId)) {
         if ([string]::IsNullOrWhiteSpace($id)) {
             return
@@ -779,6 +913,7 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_property' -ExpectedCo
         property_code      = $propertyCode
         property_type      = Get-RowValue -Row $Row -Index 8
         multiple           = Get-RowValue -Row $Row -Index 12
+        link_iblock_id     = Get-RowValue -Row $Row -Index 17
         filterable         = Get-RowValue -Row $Row -Index 20
         mapping_status     = 'needs_review'
     }
@@ -838,6 +973,7 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element_property' -Ex
     $value = Get-RowValue -Row $Row -Index 3
     $enumId = Get-RowValue -Row $Row -Index 5
     $displayValue = if (-not [string]::IsNullOrWhiteSpace($enumId) -and $enumLabels.ContainsKey($enumId)) { $enumLabels[$enumId] } else { $value }
+    $linkResolution = Resolve-ElementLinkValue -Property $property -Value $value -ElementIndexById $elementIndexById
     $hasValue = -not [string]::IsNullOrWhiteSpace($displayValue)
     if ($hasValue) {
         foreach ($kind in @('capacity', 'voltage', 'technology', 'identity')) {
@@ -857,6 +993,8 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element_property' -Ex
         source_value_enum   = $enumId
         source_value_num    = Get-RowValue -Row $Row -Index 6
         source_value_display = $displayValue
+        source_value_resolved_name   = $linkResolution.resolved_name
+        source_value_resolved_status = $linkResolution.status
         mapping_status      = 'needs_review'
     })
 }
@@ -959,6 +1097,14 @@ $qualityRows = foreach ($element in $selectedElements) {
     }
 }
 
+$elementLinkPropertyValues = @($propertyValues | Where-Object { $_.source_value_resolved_status -ne 'not_applicable' })
+$elementLinkResolvedCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'resolved' }).Count
+$elementLinkEmptyCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'empty' }).Count
+$elementLinkNotFoundCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'not_found' }).Count
+$elementLinkIblockMismatchCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'iblock_mismatch' }).Count
+$elementLinkScopeUnverifiableCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'scope_unverifiable' }).Count
+$elementLinkNameMissingCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'name_missing' }).Count
+
 $firstFocusRows = @($selectedElements | Where-Object { $_.is_first_focus_candidate -eq 'true' })
 $firstFocusPrimaryRows = @($firstFocusRows | Where-Object { $_.first_focus_membership -like 'primary_*' })
 $firstFocusAdditionalFromOtherTargetRows = @($firstFocusRows | Where-Object { $_.first_focus_membership -eq 'additional_first_focus_primary_in_other_target_section' })
@@ -1012,6 +1158,13 @@ $sourceSnapshot = [PSCustomObject][ordered]@{
     first_focus_products_additional_membership_primary_in_other_target_section = $firstFocusAdditionalFromOtherTargetRows.Count
     first_focus_products_additional_membership_primary_outside_target_sections = $firstFocusAdditionalFromOutsideTargetRows.Count
     raw_property_values          = $propertyValues.Count
+    element_link_property_values = $elementLinkPropertyValues.Count
+    element_link_resolved        = $elementLinkResolvedCount
+    element_link_empty           = $elementLinkEmptyCount
+    element_link_not_found       = $elementLinkNotFoundCount
+    element_link_iblock_mismatch = $elementLinkIblockMismatchCount
+    element_link_scope_unverifiable = $elementLinkScopeUnverifiableCount
+    element_link_name_missing    = $elementLinkNameMissingCount
     without_media_reference      = @($qualityRows | Where-Object { $_.issue_codes -match 'missing_media_reference' }).Count
     without_identity_property    = @($qualityRows | Where-Object { $_.issue_codes -match 'missing_sku_mpn_article_property' }).Count
     review_status                = 'all_rows_need_review'
@@ -1019,6 +1172,7 @@ $sourceSnapshot = [PSCustomObject][ordered]@{
 
 Write-Output "First-focus candidates: $($sourceSnapshot.first_focus_products_any_section_membership) total by any section membership; $($sourceSnapshot.first_focus_products_primary_section_membership) primary; $($sourceSnapshot.first_focus_products_additional_membership_primary_in_other_target_section) additional from another target section; $($sourceSnapshot.first_focus_products_additional_membership_primary_outside_target_sections) additional from outside the target slice."
 Write-Output "Offer infoblocks 28/67: $offerElementTotal elements ($offerActiveElementTotal active), $($offerCml2LinkPropertyIds.Count) CML2_LINK properties, $offerCml2LinksToCatalog links to catalog parents; $reviewedOutOfScopeOfferCount reviewed out-of-scope, $($unreviewedOfferIds.Count) unreviewed."
+Write-Output "Element-link (type E) property values: $($elementLinkPropertyValues.Count) total, $elementLinkResolvedCount resolved to a source element name, $elementLinkEmptyCount empty, $elementLinkNotFoundCount not found, $elementLinkIblockMismatchCount iblock mismatches, $elementLinkScopeUnverifiableCount scope unverifiable, $elementLinkNameMissingCount with a missing name."
 
 if ($unreviewedOfferIds.Count -gt 0) {
     throw "Offer infoblocks 28/67 contain $($unreviewedOfferIds.Count) unreviewed elements ($offerActiveElementTotal active total; CML2_LINK properties: $($offerCml2LinkPropertyIds.Count); links to catalog: $offerCml2LinksToCatalog). Reconcile offers before treating infoblocks 26/65 as complete. No output was written."

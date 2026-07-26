@@ -187,6 +187,91 @@ CSV, 'mpn-external-id-mismatch.csv');
         ]);
     }
 
+    public function test_publishing_an_unrelated_batch_does_not_wipe_a_previously_derived_chemistry_fact(): void
+    {
+        // D3 audit-trail desync (round 2): SiteProductCategoryAssigner derives
+        // 'chemistry' + 'chemistry_provenance' from Bitrix category placement
+        // on its own schedule, independent of the 1C staging pipeline. A
+        // later republish of the SAME product from a staging batch that
+        // knows nothing about chemistry must not silently erase it.
+        $site = $this->site();
+        $product = Product::create([
+            'external_id' => '1c-alpha',
+            'sku' => 'ALPHA-OLD',
+            'slug' => 'alpha-battery',
+            'name' => 'Alpha Battery (old name)',
+            'status' => 'active',
+            'technical_attributes' => [
+                'chemistry' => 'AGM',
+                'chemistry_provenance' => [
+                    'source' => 'site_product_category_assignment_csv',
+                    'confidence' => 'derived_from_category',
+                    'category_source' => 'bitrix_sections',
+                ],
+            ],
+        ]);
+        SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'alpha-battery',
+            'is_published' => false,
+            'availability' => 'on_request',
+        ]);
+
+        $record = $this->stagedRecordFor('1c-alpha', 'Alpha Battery (updated)', 'ALPHA-OLD');
+
+        $publisher = app(StagedProductPublisher::class);
+        $publisher->review($record, null);
+        $publisher->publishToSite($record, $site, null);
+
+        $attributes = $product->fresh()->technical_attributes;
+        $this->assertSame('AGM', $attributes['chemistry']);
+        $this->assertSame('site_product_category_assignment_csv', $attributes['chemistry_provenance']['source']);
+    }
+
+    public function test_publishing_a_batch_that_supplies_its_own_chemistry_overrides_a_previously_derived_one(): void
+    {
+        $site = $this->site();
+        $product = Product::create([
+            'external_id' => '1c-alpha',
+            'sku' => 'ALPHA-OLD',
+            'slug' => 'alpha-battery',
+            'name' => 'Alpha Battery (old name)',
+            'status' => 'active',
+            'technical_attributes' => [
+                'chemistry' => 'AGM',
+                'chemistry_provenance' => ['source' => 'site_product_category_assignment_csv', 'confidence' => 'derived_from_category'],
+            ],
+        ]);
+        SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'alpha-battery',
+            'is_published' => false,
+            'availability' => 'on_request',
+        ]);
+
+        $run = ImportRun::create(['source' => '1c_csv', 'status' => 'ready_for_review']);
+        $record = StagedImportRecord::create([
+            'import_run_id' => $run->id,
+            'row_number' => 2,
+            'entity_type' => 'product',
+            'external_id' => '1c-alpha',
+            'payload' => ['external_id' => '1c-alpha', 'name' => 'Alpha Battery (updated)', 'sku' => 'ALPHA-OLD', 'chemistry' => 'GEL'],
+            'normalized_payload' => ['external_id' => '1c-alpha', 'name' => 'Alpha Battery (updated)', 'sku' => 'ALPHA-OLD', 'slug' => 'alpha-battery', 'chemistry' => 'GEL'],
+            'validation_errors' => [],
+            'status' => 'ready_for_review',
+        ]);
+
+        $publisher = app(StagedProductPublisher::class);
+        $publisher->review($record, null);
+        $publisher->publishToSite($record, $site, null);
+
+        $attributes = $product->fresh()->technical_attributes;
+        $this->assertSame('GEL', $attributes['chemistry']);
+        $this->assertArrayNotHasKey('chemistry_provenance', $attributes);
+    }
+
     private function stagedRecordFor(string $externalId, string $name, string $sku): StagedImportRecord
     {
         $run = ImportRun::create(['source' => '1c_csv', 'status' => 'ready_for_review']);

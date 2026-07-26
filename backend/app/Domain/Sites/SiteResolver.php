@@ -126,7 +126,7 @@ class SiteResolver
                 'mpn' => $siteProduct->product->mpn,
                 'manufacturer' => $siteProduct->product->manufacturer,
                 'description' => $siteProduct->product->short_description,
-                'attributes' => $siteProduct->product->technical_attributes,
+                'attributes' => $this->publicAttributes($siteProduct->product->technical_attributes),
                 'availability' => $siteProduct->availability,
                 'price' => $siteProduct->price,
                 'currency' => $site->currency_code,
@@ -141,6 +141,75 @@ class SiteResolver
                 $siteProduct->price !== null && $siteProduct->availability === 'in_stock',
             ),
         ];
+    }
+
+    /**
+     * The frontend's declared contract for `product.attributes` is
+     * `Record<string, string> | null` (frontend/src/lib/site-api.ts). Product::
+     * $technical_attributes is an internal JSON blob that may also carry
+     * sibling `*_provenance` audit keys (see SiteProductCategoryAssigner) --
+     * nested objects recording WHERE a value like 'chemistry' came from, not
+     * a display fact. Those must never leave this boundary: they are
+     * internal audit metadata, not a storefront attribute, and shipping them
+     * as-is both breaks the declared string-only contract and leaks internal
+     * source labels to any API caller.
+     *
+     * Only `*_provenance` keys are dropped. Every other key is kept and
+     * stringified -- a non-scalar value (a nested spec object, say) must
+     * never silently vanish just because it isn't already a string: round-2
+     * regression had `is_scalar($value)` filtering the VALUE, which quietly
+     * dropped whole attributes with no trace in the payload, and turned a
+     * `false` value into an indistinguishable empty string.
+     *
+     * A `null` value is dropped the same way a `*_provenance` key is: the key
+     * is absent from the returned map entirely, not stringified to `''`.
+     * Collapsing "no value" and "confirmed empty string" into the same `''`
+     * is exactly the defect this docblock warns against for `false` above --
+     * a reader of the payload could not tell "this attribute was never set"
+     * from "this attribute is confirmed blank". Omitting the key keeps that
+     * distinction visible (`array_key_exists` on the result answers it), and
+     * matches how the frontend already treats a missing/blank attribute the
+     * same way when rendering (frontend/src/components/product-view.tsx).
+     *
+     * @return array<string, string>|null
+     */
+    private function publicAttributes(?array $attributes): ?array
+    {
+        if ($attributes === null) {
+            return null;
+        }
+
+        $public = [];
+        foreach ($attributes as $key => $value) {
+            if (is_string($key) && str_ends_with($key, '_provenance')) {
+                continue;
+            }
+
+            if ($value === null) {
+                continue;
+            }
+
+            $public[$key] = $this->stringifyAttributeValue($value);
+        }
+
+        return $public;
+    }
+
+    /**
+     * Only ever called with a non-null $value (publicAttributes() drops null
+     * before calling in). The default branch's json_encode() uses
+     * JSON_THROW_ON_ERROR deliberately: a value this method cannot encode
+     * must surface as a loud failure, not as a silently misleading `''` that
+     * a storefront reader would read as "confirmed blank".
+     */
+    private function stringifyAttributeValue(mixed $value): string
+    {
+        return match (true) {
+            is_string($value) => $value,
+            is_bool($value) => $value ? 'true' : 'false',
+            is_scalar($value) => (string) $value,
+            default => json_encode($value, JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR),
+        };
     }
 
     /** @return array<string, mixed> */

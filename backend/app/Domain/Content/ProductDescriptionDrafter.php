@@ -26,6 +26,22 @@ class ProductDescriptionDrafter
     private const IDENTITY_FIELDS = ['name', 'sku', 'mpn'];
 
     /**
+     * Identity/attribution fields are never routed through the HTML
+     * normalizer: they are opaque catalogue identifiers, not markup, and a
+     * DOM round trip must not be allowed to turn e.g. a real SKU
+     * "RBC<124>" into "RBC&lt;124&gt;" — an entity-escaped string is no
+     * longer the same identifier.
+     */
+    private const UNNORMALIZED_FIELDS = ['name', 'sku', 'mpn', 'manufacturer'];
+
+    /** Metadata keys `normalizeFields()` may append; never treated as a verified descriptive fact. */
+    private const META_FIELDS = ['_rejected_fields', '_sanitization'];
+
+    public function __construct(
+        private readonly DescriptionHtmlNormalizer $normalizer = new DescriptionHtmlNormalizer,
+    ) {}
+
+    /**
      * Creates editorial material only. It never writes to products or site_products.
      *
      * @param  array<string, mixed>  $verifiedFields  Fields explicitly verified against the supplied sources.
@@ -79,15 +95,105 @@ class ProductDescriptionDrafter
     private function normalizeFields(array $fields): array
     {
         $unknown = array_diff(array_keys($fields), self::ALLOWED_FIELDS);
+        $allowed = Arr::only($fields, self::ALLOWED_FIELDS);
 
+        [$normalized, $auditTrail] = $this->normalizeAllowedFields($allowed);
+
+        if ($auditTrail !== null) {
+            $normalized['_sanitization'] = $auditTrail;
+        }
+
+        // An unsupported top-level field makes the whole submission
+        // rejected (see rejectionReason()), but the fields that ARE
+        // supported still go through the same normalization pipeline as a
+        // valid submission — a rejected draft's verified_fields must not
+        // be a second, unnormalized code path.
         if ($unknown !== []) {
+            $normalized['_rejected_fields'] = array_values($unknown);
+        }
+
+        return $normalized;
+    }
+
+    /**
+     * Splits the allowed fields into identity fields (passed through
+     * untouched — see UNNORMALIZED_FIELDS) and descriptive fields (recursed
+     * into and run through DescriptionHtmlNormalizer), then builds the audit
+     * trail from a real before/after comparison rather than from summed
+     * counters (see DescriptionNormalizationResult::isChanged()).
+     *
+     * @param  array<string, mixed>  $allowed
+     * @return array{0: array<string, mixed>, 1: ?array<string, int|bool>}
+     */
+    private function normalizeAllowedFields(array $allowed): array
+    {
+        $identity = Arr::only($allowed, self::UNNORMALIZED_FIELDS);
+        $descriptive = Arr::except($allowed, self::UNNORMALIZED_FIELDS);
+
+        [$normalizedDescriptive, $linksDereferenced, $needsManualReview, $changed, $tagsRepaired]
+            = $this->normalizeValue($descriptive);
+
+        $merged = [...$identity, ...$normalizedDescriptive];
+
+        if ($changed === 0) {
+            return [$merged, null];
+        }
+
+        return [$merged, [
+            'links_dereferenced' => $linksDereferenced,
+            'needs_manual_review' => $needsManualReview,
+            'tags_repaired' => $tagsRepaired,
+        ]];
+    }
+
+    /**
+     * Recursively runs every string leaf through DescriptionHtmlNormalizer
+     * so a raw legacy Bitrix `<a>` link (e.g. copied into an "applications"
+     * or "technical_attributes" fact) never reaches storage still pointing
+     * at the dead legacy catalog route, an unbalanced `<p>` is repaired only
+     * when provably safe, and no leaf is ever silently rewritten in a way
+     * that could have lost text.
+     *
+     * @return array{0: mixed, 1: int, 2: int, 3: int, 4: int} normalized value,
+     *                                                         links dereferenced, how many leaves need manual review, how many
+     *                                                         leaves actually changed value (the real audit gate), and how many
+     *                                                         leaves had an unbalanced tag structure auto-repaired.
+     */
+    private function normalizeValue(mixed $value): array
+    {
+        if (is_string($value)) {
+            $result = $this->normalizer->normalize($value);
+
             return [
-                ...Arr::only($fields, self::ALLOWED_FIELDS),
-                '_rejected_fields' => array_values($unknown),
+                $result->html,
+                $result->linksDereferenced,
+                $result->needsManualReview ? 1 : 0,
+                $result->isChanged() ? 1 : 0,
+                $result->tagsRepaired ? 1 : 0,
             ];
         }
 
-        return Arr::only($fields, self::ALLOWED_FIELDS);
+        if (is_array($value)) {
+            $normalizedArray = [];
+            $linksDereferenced = 0;
+            $needsManualReview = 0;
+            $changed = 0;
+            $tagsRepaired = 0;
+
+            foreach ($value as $key => $item) {
+                [$normalizedItem, $itemLinks, $itemNeedsReview, $itemChanged, $itemTagsRepaired]
+                    = $this->normalizeValue($item);
+                $normalizedArray[$key] = $normalizedItem;
+                $linksDereferenced += $itemLinks;
+                $needsManualReview += $itemNeedsReview;
+                $changed += $itemChanged;
+                $tagsRepaired += $itemTagsRepaired;
+            }
+
+            return [$normalizedArray, $linksDereferenced, $needsManualReview, $changed, $tagsRepaired];
+        }
+
+        return [$value, 0, 0, 0, 0];
     }
 
     /** @param array<int, string> $sourceUrls */
@@ -121,7 +227,7 @@ class ProductDescriptionDrafter
             return 'At least one valid absolute source URL is required before drafting a description.';
         }
 
-        $descriptiveFields = Arr::except($fields, self::IDENTITY_FIELDS);
+        $descriptiveFields = Arr::except($fields, [...self::IDENTITY_FIELDS, ...self::META_FIELDS]);
         $hasFact = collect($descriptiveFields)->contains(function (mixed $value): bool {
             if (is_array($value)) {
                 return collect($value)->contains(static fn (mixed $item): bool => filled($item));
@@ -153,8 +259,21 @@ class ProductDescriptionDrafter
         $attributes = $fields['technical_attributes'] ?? [];
 
         if (is_array($attributes) && $attributes !== []) {
+            // A `<key>_provenance` sibling (see SiteProductCategoryAssigner)
+            // marks <key> as DERIVED, not independently confirmed -- if such
+            // a value ever reaches this editorial tool bundled inside a
+            // Product's raw technical_attributes, it must not be printed
+            // under the "Подтверждённые характеристики" (confirmed
+            // characteristics) heading alongside facts the operator actually
+            // verified. The provenance object itself is already excluded by
+            // is_scalar(); this also excludes the fact it annotates.
+            $derivedKeys = collect(array_keys($attributes))
+                ->filter(static fn (mixed $key): bool => is_string($key) && str_ends_with($key, '_provenance'))
+                ->map(static fn (string $key): string => substr($key, 0, -strlen('_provenance')))
+                ->all();
+
             $facts = collect($attributes)
-                ->filter(static fn (mixed $value): bool => is_scalar($value) && filled(trim((string) $value)))
+                ->filter(static fn (mixed $value, mixed $key): bool => is_scalar($value) && filled(trim((string) $value)) && ! in_array($key, $derivedKeys, true))
                 ->map(static fn (mixed $value, mixed $key): string => trim((string) $key).': '.trim((string) $value))
                 ->values()
                 ->all();

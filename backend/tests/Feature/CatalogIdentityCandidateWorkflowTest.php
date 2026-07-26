@@ -177,6 +177,90 @@ class CatalogIdentityCandidateWorkflowTest extends TestCase
         unlink($output);
     }
 
+    public function test_export_warns_when_approved_candidates_exist_in_other_batches(): void
+    {
+        $reviewer = User::factory()->create(['is_admin' => true]);
+        $initial = $this->candidate('101', 'one-c-1', 'rb-initial-50');
+        $backlogA = $this->candidate('201', 'one-c-2', 'rb-backlog');
+        $backlogB = $this->candidate('202', 'one-c-3', 'rb-backlog');
+        $service = app(IdentityCandidateReviewer::class);
+        $service->approve($initial, $reviewer, ['confirmed_sku' => 'SKU-101']);
+        $service->approve($backlogA, $reviewer, ['confirmed_sku' => 'SKU-201']);
+        $service->approve($backlogB, $reviewer, ['confirmed_sku' => 'SKU-202']);
+
+        $output = storage_path('framework/testing/approved-identities-'.uniqid().'.csv');
+
+        $exitCode = Artisan::call('catalog:export-approved-identities', [
+            'output' => $output,
+            '--batch' => 'rb-initial-50',
+        ]);
+        $consoleOutput = Artisan::output();
+
+        $this->assertSame(0, $exitCode);
+        $this->assertStringContainsString('2 approved candidate(s) in other batch(es) were NOT exported', $consoleOutput);
+        $this->assertStringContainsString('rb-backlog (2)', $consoleOutput);
+        $this->assertStringContainsString('--batch=all', $consoleOutput);
+
+        $contents = file_get_contents($output);
+        $this->assertIsString($contents);
+        $this->assertStringContainsString('external_id;name;sku;mpn;manufacturer;review_batch', $contents);
+        $this->assertStringContainsString('one-c-1;', $contents);
+        $this->assertStringNotContainsString('one-c-2;', $contents);
+        $this->assertStringNotContainsString('one-c-3;', $contents);
+        unlink($output);
+    }
+
+    public function test_export_batch_all_exports_every_approved_candidate(): void
+    {
+        $reviewer = User::factory()->create(['is_admin' => true]);
+        $initial = $this->candidate('101', 'one-c-1', 'rb-initial-50');
+        $backlogA = $this->candidate('201', 'one-c-2', 'rb-backlog');
+        $backlogB = $this->candidate('202', 'one-c-3', 'rb-backlog');
+        $pending = $this->candidate('301', 'one-c-4', 'rb-backlog');
+        $service = app(IdentityCandidateReviewer::class);
+        $service->approve($initial, $reviewer, ['confirmed_sku' => 'SKU-101']);
+        $service->approve($backlogA, $reviewer, ['confirmed_sku' => 'SKU-201']);
+        $service->approve($backlogB, $reviewer, ['confirmed_sku' => 'SKU-202']);
+        // $pending stays 'pending' and must not be exported even with --batch=all.
+
+        $output = storage_path('framework/testing/approved-identities-'.uniqid().'.csv');
+
+        $exitCode = Artisan::call('catalog:export-approved-identities', [
+            'output' => $output,
+            '--batch' => 'all',
+        ]);
+        $consoleOutput = Artisan::output();
+
+        $this->assertSame(0, $exitCode);
+        $this->assertStringNotContainsString('were NOT exported', $consoleOutput);
+        $this->assertStringContainsString('Exported 3 approved candidates from all batches', $consoleOutput);
+
+        $contents = file_get_contents($output);
+        $this->assertIsString($contents);
+        $this->assertStringContainsString('one-c-1;', $contents);
+        $this->assertStringContainsString('one-c-2;', $contents);
+        $this->assertStringContainsString('one-c-3;', $contents);
+        $this->assertStringNotContainsString('one-c-4;', $contents);
+        unlink($output);
+
+        $this->assertSame($pending->fresh()->review_status, 'pending');
+    }
+
+    public function test_export_with_no_approved_candidates_anywhere_keeps_existing_behavior(): void
+    {
+        $this->candidate('101', 'one-c-1', 'rb-initial-50');
+        $this->candidate('201', 'one-c-2', 'rb-backlog');
+        $output = storage_path('framework/testing/approved-identities-'.uniqid().'.csv');
+
+        $exitCode = Artisan::call('catalog:export-approved-identities', ['output' => $output]);
+        $consoleOutput = Artisan::output();
+
+        $this->assertSame(0, $exitCode);
+        $this->assertStringContainsString('No approved candidates found; no file was written.', $consoleOutput);
+        $this->assertStringNotContainsString('were NOT exported', $consoleOutput);
+        $this->assertFileDoesNotExist($output);
+    }
+
     private function inventoryItem(string $externalId, string $name): OneCNomenclatureItem
     {
         $run = ImportRun::create(['source' => '1c_csv', 'status' => 'inventory_ready', 'summary' => []]);
@@ -193,7 +277,7 @@ class CatalogIdentityCandidateWorkflowTest extends TestCase
         ]);
     }
 
-    private function candidate(string $legacyId, string $externalId): CatalogIdentityCandidate
+    private function candidate(string $legacyId, string $externalId, string $batch = 'rb-initial-50'): CatalogIdentityCandidate
     {
         $item = $this->inventoryItem($externalId, "Товар 1С {$externalId}");
         $run = ImportRun::create(['source' => 'bitrix_1c_identity_candidates', 'status' => 'review_queue_ready', 'summary' => []]);
@@ -205,7 +289,7 @@ class CatalogIdentityCandidateWorkflowTest extends TestCase
             'legacy_id' => $legacyId,
             'legacy_name' => "Товар Bitrix {$legacyId}",
             'review_priority' => (int) $legacyId,
-            'review_batch' => 'rb-initial-50',
+            'review_batch' => $batch,
             'confidence' => '0.9500',
             'match_method' => 'sig+brand',
             'review_status' => 'pending',

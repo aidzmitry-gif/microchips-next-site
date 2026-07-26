@@ -71,6 +71,33 @@ class StagedProductPublisher
             $productBefore = $product?->only(['external_id', 'sku', 'mpn', 'manufacturer', 'name', 'slug', 'technical_attributes', 'status']);
 
             $product ??= new Product;
+
+            // Preserve a 'chemistry' fact (and its 'chemistry_provenance'
+            // audit marker) that SiteProductCategoryAssigner previously set
+            // from its CSV column, when THIS staging batch has no
+            // 'chemistry' fact of its own. $data['technical_attributes'] is
+            // built from scratch from the staged payload (see
+            // StageProductValidator::technicalAttributes()) and knows
+            // nothing about that later, independent write -- without this,
+            // publishing an unrelated batch for the same product would
+            // silently wipe that value and desync it from the per-product
+            // audit trail already recorded on the ImportRun that set it (D3).
+            // A batch that DOES supply its own 'chemistry' still wins
+            // outright: that is a fresh, confirmed source overriding an
+            // operator-supplied CSV value, exactly as
+            // SiteProductCategoryAssigner's own cross-check intends.
+            $incomingAttributes = $data['technical_attributes'] ?? [];
+            if ($product->exists && ! array_key_exists('chemistry', $incomingAttributes)) {
+                $existingAttributes = $product->technical_attributes ?? [];
+                if (array_key_exists('chemistry', $existingAttributes)) {
+                    $incomingAttributes['chemistry'] = $existingAttributes['chemistry'];
+                    if (array_key_exists('chemistry_provenance', $existingAttributes)) {
+                        $incomingAttributes['chemistry_provenance'] = $existingAttributes['chemistry_provenance'];
+                    }
+                    $data['technical_attributes'] = $incomingAttributes;
+                }
+            }
+
             $product->fill([...$data, 'status' => 'active']);
             $product->save();
 

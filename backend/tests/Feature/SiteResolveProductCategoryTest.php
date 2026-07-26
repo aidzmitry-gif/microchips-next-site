@@ -65,6 +65,138 @@ class SiteResolveProductCategoryTest extends TestCase
             ->assertJsonPath('seo.canonicalPath', '/catalog/alpha-battery');
     }
 
+    public function test_internal_provenance_metadata_never_reaches_the_public_product_payload(): void
+    {
+        // Round-2 regression: a nested `chemistry_provenance` object (see
+        // SiteProductCategoryAssigner) used to be dumped verbatim into
+        // `product.attributes`, breaking the frontend's declared
+        // `Record<string, string> | null` contract and leaking internal
+        // audit metadata to any API caller.
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $product = Product::create([
+            'slug' => 'beta-battery',
+            'name' => 'Beta Battery',
+            'status' => 'active',
+            'technical_attributes' => [
+                'voltage' => '12V',
+                'chemistry' => 'AGM',
+                'chemistry_provenance' => [
+                    'source' => 'operator_supplied_csv_column',
+                ],
+            ],
+        ]);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'beta-battery',
+            'is_published' => true,
+            'availability' => 'on_request',
+        ]);
+        SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/beta-battery',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+        ]);
+
+        $response = $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/beta-battery')
+            ->assertOk()
+            ->assertJsonPath('product.attributes.voltage', '12V')
+            ->assertJsonPath('product.attributes.chemistry', 'AGM')
+            ->assertJsonMissingPath('product.attributes.chemistry_provenance');
+
+        foreach ($response->json('product.attributes') as $value) {
+            $this->assertIsString($value);
+        }
+    }
+
+    public function test_a_nested_technical_attribute_and_a_false_value_are_not_silently_dropped(): void
+    {
+        // Round-2 regression: publicAttributes() filtered on is_scalar($value),
+        // which quietly dropped ANY non-scalar attribute (not just
+        // *_provenance keys) with no trace in the payload, and turned a
+        // boolean `false` value into an indistinguishable empty string.
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $product = Product::create([
+            'slug' => 'gamma-battery',
+            'name' => 'Gamma Battery',
+            'status' => 'active',
+            'technical_attributes' => [
+                'voltage' => '12V',
+                'chemistry' => 'AGM',
+                'chemistry_provenance' => ['source' => 'operator_supplied_csv_column'],
+                'nested_spec' => ['a' => 'b'],
+                'is_maintenance_free' => false,
+            ],
+        ]);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'gamma-battery',
+            'is_published' => true,
+            'availability' => 'on_request',
+        ]);
+        SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/gamma-battery',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+        ]);
+
+        $response = $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/gamma-battery')
+            ->assertOk()
+            ->assertJsonPath('product.attributes.voltage', '12V')
+            ->assertJsonMissingPath('product.attributes.chemistry_provenance');
+
+        $attributes = $response->json('product.attributes');
+        $this->assertArrayHasKey('nested_spec', $attributes);
+        $this->assertIsString($attributes['nested_spec']);
+        $this->assertSame(['a' => 'b'], json_decode($attributes['nested_spec'], true));
+        $this->assertSame('false', $attributes['is_maintenance_free']);
+    }
+
+    public function test_a_null_technical_attribute_is_omitted_not_stringified_to_an_empty_string(): void
+    {
+        // A null value means "this attribute was never set". Turning it into
+        // '' would make it indistinguishable from a genuinely confirmed
+        // blank value -- the exact defect this class's own docblock warns
+        // about for `false`. The key must be absent from the payload.
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $product = Product::create([
+            'slug' => 'delta-battery',
+            'name' => 'Delta Battery',
+            'status' => 'active',
+            'technical_attributes' => [
+                'voltage' => '12V',
+                'chemistry' => null,
+            ],
+        ]);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'delta-battery',
+            'is_published' => true,
+            'availability' => 'on_request',
+        ]);
+        SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/delta-battery',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+        ]);
+
+        $response = $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/delta-battery')
+            ->assertOk()
+            ->assertJsonPath('product.attributes.voltage', '12V')
+            ->assertJsonMissingPath('product.attributes.chemistry');
+
+        $attributes = $response->json('product.attributes');
+        $this->assertArrayNotHasKey('chemistry', $attributes);
+    }
+
     public function test_it_resolves_a_site_scoped_category_by_hostname_and_path(): void
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
