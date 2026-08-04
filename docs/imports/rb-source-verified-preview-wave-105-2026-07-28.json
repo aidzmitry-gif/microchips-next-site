@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Two exact-model noindex battery previews without unverified price, stock or local warranty claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003200",
+      "manufacturer": "APC",
+      "mpn": "RBC31",
+      "source_url": "https://www.se.com/us/en/product/RBC31/apc-replacement-battery-cartridge-vrla-battery-9ah-48vdc-2year-warranty/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc31",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001290",
+      "manufacturer": "Ventura",
+      "mpn": "GPL 12-40",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-gpl/gpl-12-40/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12-40",
+      "replace_categories": true
+    }
+  ]
+}

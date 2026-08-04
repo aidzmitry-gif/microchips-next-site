@@ -1,0 +1,157 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:leoch:LPL2-100",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-100",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-100"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-200",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-200",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-200"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-300",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-300",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-300"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-400",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-400",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-400"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-500",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-500",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-500"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-600",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-600",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-600"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-800",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-800",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-800"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-1000",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-1000",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-1000"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-200M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-200M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-200m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-300M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-300M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-300m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-400M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-400M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-400m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-500M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-500M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-500m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-600M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-600M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-600m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-800M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-800M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-800m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-1000M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-1000M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-1000m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-1500M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-1500M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-1500m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-1600M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-1600M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-1600m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-2000M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-2000M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-2000m"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPL2-3000M",
+      "manufacturer": "LEOCH",
+      "mpn": "LPL2-3000M",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpl2-3000m"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "prior_exclusions_sha256": "a9a5aa9f109fddb0d320301f7007d829021ede9a60b508482d36c45fa2ef76ac",
+  "product_registry_sha256": "ef69afbc797b20a7fa891ffc9ebd4b95423a752b3565d40b627a22dff840f9da",
+  "sources": [
+    {
+      "external_id": "bitrix:1448",
+      "expected_model": "CT 1212.2",
+      "source_url": "https://pim.energon.ru/storage/10970/TI_DELTA_CT_CT_1212_2_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1448-bc10c8b40c63d89a.pdf",
+      "snapshot_sha256": "bc10c8b40c63d89a3ef2be821f17edcf89bb11dc1b698c51ddc5159ae8922274",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1212_2/",
+      "linked_from_product_snapshot_sha256": "e3c380ad1d2737cf6a93ad01d6538935dac5503925384464d154b132aff421a9"
+    },
+    {
+      "external_id": "bitrix:1450",
+      "expected_model": "CT 1216.1",
+      "source_url": "https://pim.energon.ru/storage/11030/TI_DELTA_CT_CT_1216_1_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1450-382ba4348ef9c590.pdf",
+      "snapshot_sha256": "382ba4348ef9c5905f9188e6d92b083a7dc8561a29d243ba4c390b2a67fd8f27",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1216_1/",
+      "linked_from_product_snapshot_sha256": "70d045ef4fbf55c4d571f8927045d4368deaee3f8d62b2470ac3053c4868b4fe"
+    },
+    {
+      "external_id": "bitrix:1452",
+      "expected_model": "CT 1220.1",
+      "source_url": "https://pim.energon.ru/storage/11075/TI_DELTA_CT_CT_1220_1_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1452-d3f76250c53d91cc.pdf",
+      "snapshot_sha256": "d3f76250c53d91cc8967f4b5a155de2c8b29605e0b247d796eba5b29e83943a1",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1220_1/",
+      "linked_from_product_snapshot_sha256": "82dad64cbccdf88979645e1df360d82b80e04589ded581c1494d2f11f21c8a76"
+    },
+    {
+      "external_id": "bitrix:1523",
+      "expected_model": "CT 1216",
+      "source_url": "https://pim.energon.ru/storage/11015/TI_DELTA_CT_CT_1216_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1523-a1e390023009242b.pdf",
+      "snapshot_sha256": "a1e390023009242bcafcca1690826a85d417438f422b69c8d643292eb083b83e",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1216/",
+      "linked_from_product_snapshot_sha256": "33ac49b9095b209126e4af4fc5d27b334751c114691694fc05d405d3dda064c1"
+    },
+    {
+      "external_id": "bitrix:1537",
+      "expected_model": "CT 1218",
+      "source_url": "https://pim.energon.ru/storage/11045/TI_DELTA_CT_CT_1218_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1537-2063190abfd6c684.pdf",
+      "snapshot_sha256": "2063190abfd6c6845c93efe6849fc05a67909df5b856bf378ca497cf8526f8ca",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1218/",
+      "linked_from_product_snapshot_sha256": "f792c60ee132419128e8839f5379bcbb02b6e378b1e920c0ae81c6217ed56052"
+    },
+    {
+      "external_id": "bitrix:2890",
+      "expected_model": "CT 1220",
+      "source_url": "https://pim.energon.ru/storage/11060/TI_DELTA_CT_CT_1220_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-2890-d31c17570084ef5f.pdf",
+      "snapshot_sha256": "d31c17570084ef5fac64df416e1213da487dc44f0fe0ac4a5d0f09973becb897",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1220/",
+      "linked_from_product_snapshot_sha256": "45d472b9f1b3894a9d4abf23c3934a4ed47fd9c5224fca4cb01e97e0e16eeb33"
+    },
+    {
+      "external_id": "bitrix:2963",
+      "expected_model": "CT 1230",
+      "source_url": "https://pim.energon.ru/storage/11105/TI_DELTA_CT_CT_1230_RU.pdf",
+      "source_kind": "official_manufacturer_technical_datasheet",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-2963-01b5bc3155bd9d5f.pdf",
+      "snapshot_sha256": "01b5bc3155bd9d5ff93d4ba4c2c34801221bd7b72941fb057466ce0bfa053903",
+      "linked_from_product_url": "https://delta-batt.com/products/ct_1230/",
+      "linked_from_product_snapshot_sha256": "858f1461d3880ede0a644bdea884dd45848430eedf6b2d93ad7cc047e3e682df"
+    }
+  ],
+  "holds": []
+}

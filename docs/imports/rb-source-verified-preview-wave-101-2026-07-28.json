@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "Three exact-model APC replacement-cartridge noindex previews without unverified price, stock or local warranty claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003292",
+      "manufacturer": "APC",
+      "mpn": "RBC7",
+      "source_url": "https://www.apc.com/shop/tradeups/us/en/categories/power/uninterruptible-power-supply-ups-/ups-replacement-batteries/replacement-battery-cartridges/N-7ffcnm?No=80&Nrpp=40",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc7",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005164",
+      "manufacturer": "APC",
+      "mpn": "RBC23",
+      "source_url": "https://www.apc.com/ca/en/download/document/SDS_ALL_APCRBC_LEAD_ACID_EU_EN/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc23",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003237",
+      "manufacturer": "APC",
+      "mpn": "APCRBC141",
+      "source_url": "https://www.apc.com/ca/fr/faqs/FA349747/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-apcrbc141",
+      "replace_categories": true
+    }
+  ]
+}

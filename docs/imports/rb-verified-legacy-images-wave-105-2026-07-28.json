@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "purpose": "One company-owned legacy asset with an exact MPN and electrical rating readable on the physical product label. The verified ФР-prefixed 1C product is used; the unrelated КА-prefixed label-stock record is explicitly excluded.",
+  "images": [
+    {
+      "external_id": "ФР-00001290",
+      "mpn": "GPL 12-40",
+      "asset_file": "fr-00001290-ventura-gpl-12-40.jpg",
+      "sha256": "4dded1f12cf9e99233926e26a7b3027d5a2a3a2287efec2574e9ed299c21bc1f",
+      "archive_member": "_shared/upload/iblock/b79/yjseaj8f6y6mgiemxno12vj4dteahswt.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads Ventura GPL 12-40 and 12V 40Ah; the exact normalized MPN matches the canonical ФР-prefixed 1C product and a Microchips watermark is present. The unrelated КА-00001290 label-stock record is not used."
+    }
+  ]
+}

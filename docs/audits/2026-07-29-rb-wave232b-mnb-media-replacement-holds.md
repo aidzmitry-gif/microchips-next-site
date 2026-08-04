@@ -1,0 +1,5 @@
+# Wave232-B: MNB exact replacement-media search
+
+The existing company-owned assets for `bitrix:2909` and `bitrix:3056` were already visually rejected and are now quarantined (`needs_review`, unpublished). Current DB product_media has no separate exact candidate. The Bitrix media index does contain same-name duplicate-element references: element `28752` / file `96694` for MNG 250-12 and element `29629` / file `98450` for MM 45-12. Neither referenced file is materialized in either available company-owned backup asset directory, so no image can be visually verified or safely promoted.
+
+The pinned MNB official catalogue confirms both expected models, but exposes only a catalogue PDF and no standalone product-image URL or image reuse licence. It therefore supplies identity evidence, not media rights. Wave232-B emits HOLD evidence rather than an exact-media manifest. Recovering either original Bitrix file is the next step; it must be hash-pinned and visually checked for the full expected MPN before any new manifest. No DB, media, publication, or identity change was made.

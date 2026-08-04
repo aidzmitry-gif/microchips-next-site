@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "purpose": "Promote only company-owned legacy assets with complete exact MPN visible at original resolution.",
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:1147",
+      "media_id": 307,
+      "content_sha256": "4a9a8f222f8bf32abf4bfddf50f28a5e2559187879fc1d0c1846e6a67c88d46a",
+      "storage_path": "legacy-staging/rb/bitrix-1147-79868.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-P0612P",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-P0612P.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1149",
+      "media_id": 309,
+      "content_sha256": "86a379c5a642bd860a5fcf349bea7098a121becaa9336b1ab52b3ce889a8d813",
+      "storage_path": "legacy-staging/rb/bitrix-1149-79864.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R0612P",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R0612P.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1150",
+      "media_id": 310,
+      "content_sha256": "fa7bf556790332d8fc305ec9885f33d73206d223dbdc4f75d1ea854fa8e7abf1",
+      "storage_path": "legacy-staging/rb/bitrix-1150-79862.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R0612P1",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R0612P1.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1585",
+      "media_id": 670,
+      "content_sha256": "fc90c84a41f06a7c1a5fccf933fadf1b530e915089ec19526e2126fc13c49469",
+      "storage_path": "legacy-staging/rb/bitrix-1585-79820.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R063R4P",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R063R4P.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3189",
+      "media_id": 1671,
+      "content_sha256": "76e77de9e58855c2ca28551c27ba92b1c6f6e5253ca14c5178f9394cb2adc2de",
+      "storage_path": "legacy-staging/rb/bitrix-3189-79786.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R067R2P",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R067R2P.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1161",
+      "media_id": 320,
+      "content_sha256": "3577d2c6f7b55d904c0962752424c80885e09d0e72c5669af3d3ce2ca18862cf",
+      "storage_path": "legacy-staging/rb/bitrix-1161-79842.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R122R2PG",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R122R2PG.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1586",
+      "media_id": 671,
+      "content_sha256": "43966269d4fd64bb2101e4a62c1ee2e4abe9bf100b96f7e32295d7db048cf450",
+      "storage_path": "legacy-staging/rb/bitrix-1586-79818.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R123R4PG",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R123R4PG.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3191",
+      "media_id": 1673,
+      "content_sha256": "a17206aa073b3d6dc15d24eed8b8580763d0ec4051ba7972e27cb22be5160e05",
+      "storage_path": "legacy-staging/rb/bitrix-3191-79782.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-R127R2PG",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-R127R2PG.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1151",
+      "media_id": 311,
+      "content_sha256": "96e5939a31a33af7367ef5b11b24dcc7fb0311fe238875ab8e51c74c377bc59c",
+      "storage_path": "legacy-staging/rb/bitrix-1151-79860.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-RA1212PG",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-RA1212PG.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1569",
+      "media_id": 655,
+      "content_sha256": "16524f4d5eee4d9f00e8fba6defd47c030afea197ba9c61ac68264ddc32ae049",
+      "storage_path": "legacy-staging/rb/bitrix-1569-79832.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LC-XC1222P",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic LC-XC1222P.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3232",
+      "media_id": 1707,
+      "content_sha256": "da854647c92179b35d1791c7d65820927600b3dadb55d9130ab03fe7e4c88f9f",
+      "storage_path": "legacy-staging/rb/bitrix-3232-79772.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "UP-VW0645P1",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution machine-vision review: Visible battery label reads Panasonic UP-VW0645P1.",
+      "reviewed_at": "2026-07-29"
+    }
+  ]
+}

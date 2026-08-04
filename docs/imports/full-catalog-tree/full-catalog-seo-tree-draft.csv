@@ -1,0 +1,23 @@
+﻿external_id,parent_external_id,name,path
+seo:industrial-batteries,,Аккумуляторы для бизнеса,catalog/industrial-batteries
+seo:replacement-batteries,,Аккумуляторы для устройств,catalog/replacement-batteries
+seo:batteries-ups,seo:industrial-batteries,Аккумуляторы для ИБП,catalog/industrial-batteries/batteries-ups
+seo:batteries-industrial,seo:industrial-batteries,Промышленные аккумуляторы,catalog/industrial-batteries/batteries-industrial
+seo:batteries-traction,seo:industrial-batteries,Тяговые аккумуляторы,catalog/industrial-batteries/batteries-traction
+seo:replacement-laptops,seo:replacement-batteries,Аккумуляторы для ноутбуков,catalog/replacement-batteries/replacement-laptops
+seo:replacement-mobile,seo:replacement-batteries,Аккумуляторы для телефонов и планшетов,catalog/replacement-batteries/replacement-mobile
+seo:replacement-photo,seo:replacement-batteries,"Аккумуляторы для фото-, видео- и аудиотехники",catalog/replacement-batteries/replacement-photo
+seo:replacement-tools,seo:replacement-batteries,Аккумуляторы для электроинструмента,catalog/replacement-batteries/replacement-tools
+seo:replacement-home,seo:replacement-batteries,Аккумуляторы для бытовой техники,catalog/replacement-batteries/replacement-home
+seo:replacement-transport,seo:replacement-batteries,Аккумуляторы для электротранспорта,catalog/replacement-batteries/replacement-transport
+seo:replacement-medical,seo:replacement-batteries,Аккумуляторы для медицинской техники,catalog/replacement-batteries/replacement-medical
+seo:primary-cells,,Батарейки,catalog/primary-cells
+seo:rechargeable-cells,,Аккумуляторные элементы,catalog/rechargeable-cells
+seo:power-systems,,Системы и источники питания,catalog/power-systems
+seo:ups-systems,seo:power-systems,Источники бесперебойного питания (ИБП),catalog/power-systems/ups-systems
+seo:power-supplies,seo:power-systems,Блоки и источники питания,catalog/power-systems/power-supplies
+seo:power-converters,seo:power-systems,Преобразователи напряжения и инверторы,catalog/power-systems/power-converters
+seo:chargers,,Зарядные устройства,catalog/chargers
+seo:electronic-components,,Электронные компоненты,catalog/electronic-components
+seo:warehouse-equipment,,Складское оборудование,catalog/warehouse-equipment
+seo:flashlights,,Фонари,catalog/flashlights

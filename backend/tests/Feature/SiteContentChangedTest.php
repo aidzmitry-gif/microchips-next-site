@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Site;
 use App\Models\SiteCategory;
+use App\Models\SiteCommercialFact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
 use App\Models\SiteRedirect;
@@ -22,6 +23,24 @@ use Tests\TestCase;
 class SiteContentChangedTest extends TestCase
 {
     use RefreshDatabase;
+
+    public function test_saving_a_commercial_fact_revalidates_warranty_and_legacy_warranty_routes(): void
+    {
+        Event::fake([SiteContentChanged::class]);
+        $site = $this->site();
+
+        SiteCommercialFact::create([
+            'site_id' => $site->id,
+            'locale' => 'ru-BY',
+            'key' => 'warranty_terms',
+            'value' => 'Проверяемые условия гарантии.',
+        ]);
+
+        Event::assertDispatched(SiteContentChanged::class, function (SiteContentChanged $event) use ($site): bool {
+            return $event->site->is($site)
+                && $event->paths === ['/', '/contacts', '/delivery', '/payment', '/warranty', '/warranty-and-documents', '/sitemap.xml'];
+        });
+    }
 
     public function test_saving_a_site_page_dispatches_site_content_changed_falling_back_to_root_path(): void
     {
@@ -87,7 +106,7 @@ class SiteContentChangedTest extends TestCase
         ]);
 
         Event::assertDispatched(SiteContentChanged::class, function (SiteContentChanged $event) use ($site) {
-            return $event->site->is($site) && $event->paths === ['/'];
+            return $event->site->is($site) && $event->paths === ['/catalog'];
         });
 
         SiteUrl::create([
@@ -101,7 +120,7 @@ class SiteContentChangedTest extends TestCase
         $siteProduct->update(['availability' => 'on_request']);
 
         Event::assertDispatched(SiteContentChanged::class, function (SiteContentChanged $event) use ($site) {
-            return $event->site->is($site) && $event->paths === ['/catalog/alpha-battery'];
+            return $event->site->is($site) && $event->paths === ['/catalog/alpha-battery', '/catalog'];
         });
     }
 
@@ -161,7 +180,7 @@ class SiteContentChangedTest extends TestCase
             $paths = $event->paths;
             sort($paths);
 
-            return $event->site->is($site) && $paths === ['/catalog/batteries', '/catalog/ups'];
+            return $event->site->is($site) && $paths === ['/catalog', '/catalog/batteries', '/catalog/ups'];
         });
 
         Event::fake([SiteContentChanged::class]);
@@ -172,6 +191,7 @@ class SiteContentChangedTest extends TestCase
             sort($paths);
 
             return $event->site->is($site) && $paths === [
+                '/catalog',
                 '/catalog/batteries',
                 '/catalog/beta-battery',
                 '/catalog/ups',

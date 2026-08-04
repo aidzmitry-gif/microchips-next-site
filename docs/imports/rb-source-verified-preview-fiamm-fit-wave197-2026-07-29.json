@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 197 noindex preview plan for existing Bitrix-materialized FIAMM FIT drafts. Requires an applied dealer-backed description; creates no price, stock, delivery or Offer claim.",
+  "locale": "ru-BY",
+  "products": [
+    {"external_id":"bitrix:3031","manufacturer":"FIAMM","identity_scope":"model_core","model_core":"12FIT40","source_url":"https://www.fiamm.ru/data/Catalogue/2022/FIT_web.pdf","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"fiamm-12fit40","replace_categories":true},
+    {"external_id":"bitrix:3277","manufacturer":"FIAMM","identity_scope":"model_core","model_core":"12FIT90","source_url":"https://www.fiamm.ru/services/faq/zaryadit-accumulyator.html","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"fiamm-12fit90","replace_categories":true},
+    {"external_id":"bitrix:1425","manufacturer":"FIAMM","identity_scope":"model_core","model_core":"12FIT100/19","source_url":"https://www.fiamm.ru/services/faq/zaryadit-accumulyator.html","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"fiamm-12fit100-19","replace_categories":true},
+    {"external_id":"bitrix:1426","manufacturer":"FIAMM","identity_scope":"model_core","model_core":"12FIT100/23","source_url":"https://www.fiamm.ru/data/Catalogue/2022/FIT_web.pdf","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"fiamm-12fit100-23","replace_categories":true},
+    {"external_id":"bitrix:1494","manufacturer":"FIAMM","identity_scope":"model_core","model_core":"12FIT130","source_url":"https://www.fiamm.ru/services/faq/zaryadit-accumulyator.html","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"fiamm-12fit130","replace_categories":true},
+    {"external_id":"bitrix:1508","manufacturer":"FIAMM","identity_scope":"model_core","model_core":"12FIT150","source_url":"https://www.fiamm.ru/data/Catalogue/2022/FIT_web.pdf","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"fiamm-12fit150","replace_categories":true}
+  ]
+}

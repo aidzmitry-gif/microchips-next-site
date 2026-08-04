@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:XHRL12170W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12170W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12170W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12250W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12250W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12250W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12360W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12360W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12360W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12360WG",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12360WG",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12360WG для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12410W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12410W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12410W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12410WG",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12410WG",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12410WG для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12475W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12475W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12475W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12500W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12500W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12500W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12620W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12620W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12620W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12650W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12650W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12650W для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощное резервное питание и ИБП",
+        "Диапазон мощности серии": "от 360 до 650 Вт/элемент при 15-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12600WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12600WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12600WFTFR для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы",
+        "Назначение": "высокомощное резервное питание ЦОД и ИБП",
+        "Диапазон мощности серии": "от 1100 до 1400 Вт/элемент при 5-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12720WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12720WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12720WFTFR для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы",
+        "Назначение": "высокомощное резервное питание ЦОД и ИБП",
+        "Диапазон мощности серии": "от 1100 до 1400 Вт/элемент при 5-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12800WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12800WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12800WFTFR для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы",
+        "Назначение": "высокомощное резервное питание ЦОД и ИБП",
+        "Диапазон мощности серии": "от 1100 до 1400 Вт/элемент при 5-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12900WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12900WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Аккумулятор CSB XHRL12900WFTFR для резервного питания",
+      "technical_attributes": {
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы",
+        "Назначение": "высокомощное резервное питание ЦОД и ИБП",
+        "Диапазон мощности серии": "от 1100 до 1400 Вт/элемент при 5-минутном разряде до 1,67 В/элемент",
+        "Расчётный срок службы": "до 10 лет в буферном режиме",
+        "Регион применения": "EMEA"
+      }
+    }
+  ]
+}

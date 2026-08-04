@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific Delta DTM12150L editorial draft from a manufacturer-branded technical source. No commercial facts or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00002021",
+      "manufacturer": "Delta",
+      "mpn": "DTM12150L",
+      "display_name": "Аккумуляторная батарея Delta DTM 12150 L",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://delta-battery.ru/catalog/dtm-l/delta-dtm-12150-l/",
+      "source_kind": "manufacturer-branded model-specific product page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "150 Ah",
+        "Технология": "VRLA AGM",
+        "Габариты": "482 × 170 × 240 мм",
+        "Масса": "47 кг"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "purpose": "Remaining exact Robiton model-core batch from official product pages. Existing package and SKU wording is preserved; no price, stock, warranty or image rights are inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002775",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "B6-500",
+      "technology": "сетевой адаптер",
+      "source_url": "https://www.robiton.ru/product/17733/",
+      "technical_attributes": {"Штекер": "5,5 × 2,5 / 12 мм", "Полярность": "плюс в центре"}
+    },
+    {
+      "external_id": "КА-00002798",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "B6-500",
+      "technology": "сетевой адаптер",
+      "source_url": "https://www.robiton.ru/product/17733/",
+      "technical_attributes": {"Штекер": "5,5 × 2,5 / 12 мм", "Полярность": "плюс в центре"}
+    },
+    {
+      "external_id": "КА-00002676",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "B9-500",
+      "technology": "нестабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/17518/",
+      "technical_attributes": {"Выходное напряжение": "9 В", "Максимальный выходной ток": "500 мА", "Штекер": "5,5 × 2,1 / 12 мм", "Полярность": "минус в центре"}
+    },
+    {
+      "external_id": "КА-00006084",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "IR12-1000S",
+      "technology": "импульсный стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/14935/",
+      "technical_attributes": {"Выходное напряжение": "12 В", "Максимальный выходной ток": "1000 мА", "Штекер": "5,5 × 2,5 / 12 мм", "Полярность": "плюс в центре"}
+    },
+    {
+      "external_id": "КА-00005508",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "IR12-1500S",
+      "technology": "импульсный стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/14936/",
+      "technical_attributes": {"Выходное напряжение": "12 В", "Максимальный выходной ток": "1500 мА", "Штекер": "5,5 × 2,5 / 12 мм", "Полярность": "плюс в центре"}
+    },
+    {
+      "external_id": "КА-00005111",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "SN500S",
+      "technology": "стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/04400",
+      "technical_attributes": {"Максимальный выходной ток": "500 мА", "Выходное напряжение": "1,5 / 3 / 4,5 / 6 / 7,5 / 9 / 12 В", "Количество сменных насадок": "8", "Защита": "от короткого замыкания, перегрева и перегрузки"}
+    },
+    {
+      "external_id": "ФР-00002236",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "MasterCharger 2B Plus",
+      "technology": "универсальное зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/17771",
+      "technical_attributes": {"Количество каналов": "2 независимых", "Поддерживаемая химия": "Li-ion 3,7 В / LiFePO4 3,2 В / Ni-MH и Ni-Cd 1,2 В", "Ток заряда": "500 / 1000 мА", "Питание устройства": "Micro-USB, 5 В / 2 А", "Режим заряда": "CC/CV", "Дополнительная функция": "Powerbank"}
+    },
+    {
+      "external_id": "ФР-00000727",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "NB70W",
+      "technology": "универсальный импульсный блок питания для ноутбуков",
+      "source_url": "https://www.robiton.ru/product/11898/",
+      "technical_attributes": {"Выходное напряжение": "12 / 15 / 16 / 18 / 19 / 20 / 24 В", "Максимальный ток": "до 3,5 А; при 24 В — до 2,9 А", "Выход USB": "5 В / 1 А", "Количество штекеров": "9", "Полярность": "плюс в центре"}
+    },
+    {
+      "external_id": "КА-00002289",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "USB1000",
+      "technology": "сетевой блок питания с USB",
+      "source_url": "https://www.robiton.ru/product/08116/",
+      "technical_attributes": {"Максимальный выходной ток": "1000 мА", "Назначение": "питание и заряд мобильных устройств через USB"}
+    },
+    {
+      "external_id": "КА-00002590",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "USB1000",
+      "technology": "сетевой блок питания с USB",
+      "source_url": "https://www.robiton.ru/product/08116/",
+      "technical_attributes": {"Максимальный выходной ток": "1000 мА", "Назначение": "питание и заряд мобильных устройств через USB"}
+    },
+    {
+      "external_id": "ФР-00001356",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "Smart S100",
+      "technology": "автоматическое зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/04409/",
+      "technical_attributes": {"Количество аккумуляторов": "2–4", "Поддерживаемая химия": "Ni-MH / Ni-Cd, 1,2 В", "Типоразмеры": "AA/HR6 и AAA/HR03"}
+    },
+    {
+      "external_id": "ФР-00002004",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "Smart S500",
+      "technology": "автоматическое зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/10592/",
+      "technical_attributes": {"Поддерживаемая химия": "Ni-MH / Ni-Cd", "Типоразмеры": "AA / AAA / 9 В «Крона»", "Контроль заряда": "−ΔV и поддерживающий заряд", "Каналы": "4 парных AA/AAA и 2 независимых для 9 В"}
+    }
+  ]
+}

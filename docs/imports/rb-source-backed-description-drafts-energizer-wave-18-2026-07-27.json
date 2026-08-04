@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific Energizer rechargeable-cell editorial draft based on the manufacturer technical data sheet. No commercial facts, image-rights claim or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00000369",
+      "manufacturer": "Energizer",
+      "mpn": "NH12-900",
+      "display_name": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 Energizer NH12-900 AAA 900 mAh",
+      "technology": "\u041d\u0438\u043a\u0435\u043b\u044c-\u043c\u0435\u0442\u0430\u043b\u043b\u0433\u0438\u0434\u0440\u0438\u0434\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 (NiMH)",
+      "source_url": "https://data.energizer.com/pdfs/nh12-900.pdf",
+      "source_kind": "Energizer NH12-900 model-specific technical data sheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "\u0422\u0438\u043f": "\u041f\u0435\u0440\u0435\u0437\u0430\u0440\u044f\u0436\u0430\u0435\u043c\u044b\u0439 NiMH \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+        "\u0422\u0438\u043f\u043e\u0440\u0430\u0437\u043c\u0435\u0440": "AAA / IEC HR03",
+        "\u041d\u043e\u043c\u0438\u043d\u0430\u043b\u044c\u043d\u043e\u0435 \u043d\u0430\u043f\u0440\u044f\u0436\u0435\u043d\u0438\u0435": "1,2 \u0412",
+        "\u041d\u043e\u043c\u0438\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0451\u043c\u043a\u043e\u0441\u0442\u044c": "900 \u043c\u0410\u00b7\u0447 \u043f\u0440\u0438 21 \u00b0C",
+        "\u0413\u0430\u0431\u0430\u0440\u0438\u0442\u044b": "\u0434\u0438\u0430\u043c\u0435\u0442\u0440 10,5 \u043c\u043c; \u0434\u043b\u0438\u043d\u0430 44,5 \u043c\u043c",
+        "\u0422\u0438\u043f\u0438\u0447\u043d\u0430\u044f \u043c\u0430\u0441\u0441\u0430": "13 \u0433"
+      }
+    }
+  ]
+}

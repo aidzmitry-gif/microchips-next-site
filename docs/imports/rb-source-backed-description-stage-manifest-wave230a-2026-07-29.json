@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "locale": "ru-BY",
+  "purpose": "Wave230-A frozen Sonnenschein source-backed drafts; bounded model-core only.",
+  "products": [
+    {
+      "external_id": "bitrix:2823",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A406/165 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A406/165 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2742",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/100 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/100 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2837",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/180 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/180 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2966",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/32 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/32 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3082",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/50 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/50 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3141",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/65 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/65 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3284",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/90 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/90 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2758",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/115 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/115 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2767",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/120 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/120 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2911",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/25 G5",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/25 G5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3039",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/40 G6",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/40 G6"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3143",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/65 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/65 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1791",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/1010",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/1010"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1717",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/2200",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/2200"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1723",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/225",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/225"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1737",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/280",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/280"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2800",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A612/150",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A612/150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2898",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A704/245",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "technical_attributes": {
+        "Модель": "A704/245"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2775",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A706/126",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "technical_attributes": {
+        "Модель": "A706/126"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2894",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A706/21",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "technical_attributes": {
+        "Модель": "A706/21"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2795",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/130 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/130 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2897",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/230 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/230 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2932",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/27 G5",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/27 G5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2969",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/32 G6",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/32 G6"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3044",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/41 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/41 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3126",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/60 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/60 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3249",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/85 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/85 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3285",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/90 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/90 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2743",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/100",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2794",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/130 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/130 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2843",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/185 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/185 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3125",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/60 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/60 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3223",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/75 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/75 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

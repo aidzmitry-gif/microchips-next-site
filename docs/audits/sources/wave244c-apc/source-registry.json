@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-07-30",
+  "sources": [
+    {
+      "label": "RBC7_RBC23_RBC31",
+      "requested_url": "https://iportal.se.com/Contents/docs/UPS-GWOG-8WTJM8_R0_EN.PDF",
+      "final_url": "https://iportal.se.com/Contents/docs/UPS-GWOG-8WTJM8_R0_EN.PDF",
+      "snapshot_path": "docs/audits/sources/wave244c-apc/rbc7-rbc23-rbc31-eoli.pdf",
+      "snapshot_sha256": "ab4f909f941ab637637a5d71dcbdf553d4f798a4026a2ad56f78d2009053a84d",
+      "bytes": 856536
+    },
+    {
+      "label": "APCRBC141",
+      "requested_url": "https://iportal.se.com/Contents/docs/UPS-JGNY-9NNEDA_R1_EN.PDF",
+      "final_url": "https://iportal.se.com/Contents/docs/UPS-JGNY-9NNEDA_R1_EN.PDF",
+      "snapshot_path": "docs/audits/sources/wave244c-apc/apcrbc141-installation-guide.pdf",
+      "snapshot_sha256": "7ce1185794110e463fd5aeed9c41cb9284b97e13579452828a9dd925f5f300ad",
+      "bytes": 400234
+    }
+  ]
+}

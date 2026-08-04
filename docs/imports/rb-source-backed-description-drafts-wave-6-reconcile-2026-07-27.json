@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "purpose": "Reconcile the already matching DT12012 source-backed draft status only. No publication, price, stock, image or Offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00000005",
+      "manufacturer": "Delta",
+      "mpn": "DT12012",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://delta-russia.ru/akkumuljatory/dt/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "1,2 Ah",
+        "Технология": "VRLA AGM",
+        "Применение": "слаботочные системы и резервное питание"
+      }
+    }
+  ]
+}

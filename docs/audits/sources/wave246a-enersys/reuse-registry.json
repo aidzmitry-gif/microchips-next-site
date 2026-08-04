@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "sources": [
+    {
+      "series": "Cyclon",
+      "rows": 15,
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "pin_path": "docs/audits/sources/wave209a/enersys-cyclon-selection-guide.pdf",
+      "pin_sha256": "3c6ecbb7f5379fccd8c2f5e31b999ac6f4d62117377b56b5f1e9df578e8fec5f",
+      "reuse_status": "REUSED_NO_REDOWNLOAD",
+      "visual_check": "Cyclon pages 11, 15, 17 and 18 rendered and checked"
+    },
+    {
+      "series": "DataSafe HX",
+      "rows": 17,
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "pin_path": "docs/imports/rb-manufacturer-series-enersys-wave179-source.json",
+      "pin_sha256": "d56ef36f707083a4fbeefe4e8ff303dcaabe2bffa32b8160d960325b27ddd488",
+      "reuse_status": "REUSED_NO_REDOWNLOAD",
+      "visual_check": "prior exact-table manifest/report reused; no source bytes redownloaded"
+    },
+    {
+      "series": "PowerSafe V-FT",
+      "rows": 9,
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "pin_path": "docs/imports/rb-manufacturer-series-enersys-wave179-source.json",
+      "pin_sha256": "d56ef36f707083a4fbeefe4e8ff303dcaabe2bffa32b8160d960325b27ddd488",
+      "reuse_status": "REUSED_NO_REDOWNLOAD",
+      "visual_check": "prior exact-table manifest/report reused; no source bytes redownloaded"
+    },
+    {
+      "series": "PowerSafe SBS",
+      "rows": 32,
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "pin_path": "docs/imports/rb-manufacturer-series-enersys-wave183-source.json",
+      "pin_sha256": "4088c26277ed2945b59707cae8ff044f5f2eb96ccd42a585e9439cc8d4b4d73e",
+      "reuse_status": "REUSED_NO_REDOWNLOAD",
+      "visual_check": "prior exact-table manifest/report reused; no source bytes redownloaded"
+    },
+    {
+      "series": "PowerSafe RH",
+      "rows": 19,
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "pin_path": "docs/imports/rb-manufacturer-series-enersys-rh-wave193-source.json",
+      "pin_sha256": "2b86ddfaa47c9c3368081c699943def698552ceeaf98bc4b6f2cbaac7af0c19e",
+      "reuse_status": "REUSED_NO_REDOWNLOAD",
+      "visual_check": "prior exact-table manifest/report reused; no source bytes redownloaded"
+    },
+    {
+      "series": "all",
+      "rows": 92,
+      "source_url": "https://www.enersys.com/en/webpolicies/website-terms-of-use/",
+      "pin_path": "docs/audits/sources/wave246a-enersys/enersys-website-terms-20a2e07b12742f09.html",
+      "pin_sha256": "20a2e07b12742f09758440aceeb11de72fdb0523dbdc377572a98bf1c168fc66",
+      "reuse_status": "NEW_RIGHTS_SOURCE",
+      "rights_finding": "commercial redistribution/public display of website images is not licensed; prior written permission is required"
+    }
+  ]
+}

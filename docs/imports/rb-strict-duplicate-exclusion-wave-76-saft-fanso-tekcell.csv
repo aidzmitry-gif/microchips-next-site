@@ -1,0 +1,13 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00005121,exact_model_terminal_packaging_duplicate,КА-00002490,"SAFT LS14500 bare AA single-cell variant; country wording is not a product variant; survivor has clearer AA identity"
+КА-00006243,exact_model_terminal_packaging_duplicate,КА-00006242,"SAFT LS17500 OMRON CS1W-BAT01; differs only by conflicting country wording"
+ФР-00002347,exact_model_terminal_packaging_duplicate,КА-00002592,"SAFT LS33600 bare D-cell 3.6V variant; survivor carries size and voltage"
+КА-00005048,exact_model_terminal_packaging_duplicate,КА-00001141,"FANSO CR14250H/3PF; Cyrillic H and casing differences only"
+КА-00006881,exact_model_terminal_packaging_duplicate,КА-00004677,"FANSO ER14250H/2PT exact terminal variant"
+КА-00006003,exact_model_terminal_packaging_duplicate,КА-00006607,"FANSO ER18505H-LD/EHR-02 exact connector variant; survivor additionally preserves manufacturer code 002857"
+КА-00006605,exact_model_terminal_packaging_duplicate,КА-00006604,"FANSO ER18505H-LD/XHP-02 exact connector variant"
+КА-00004969,exact_model_terminal_packaging_duplicate,КА-00005045,"TEKCELL SB-A01-AX exact variant; survivor has clean model spelling"
+КА-00004988,exact_model_terminal_packaging_duplicate,КА-00005045,"TEKCELL SB-A01-AX; AO1 is a transcription typo"
+КА-00005072,exact_model_terminal_packaging_duplicate,КА-00003478,"TEKCELL SB-C02-TC; CO2 is a transcription typo, Bitrix variant matrix confirms C02"
+КА-00005147,exact_model_terminal_packaging_duplicate,КА-00005128,"TEKCELL CR123A-TC exact variant; Cyrillic A/TC and country wording only"
+КА-00006289,exact_model_terminal_packaging_duplicate,КА-00003529,"TEKCELL SB-AA02-TC 2PF exact variant"

@@ -1,0 +1,17 @@
+{
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:26048",
+      "media_id": 1566,
+      "content_sha256": "02262855e7028579f920495192eba0ec4bdfc791a3248be5ff4b2434ef2f31a5",
+      "storage_path": "legacy-staging/rb/bitrix-26048-90293.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "12V70",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Manual visual review: the complete printed label reads 12V70; official EnerSys evidence corroborates identity only.",
+      "reviewed_at": "2026-07-29"
+    }
+  ]
+}

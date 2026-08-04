@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "purpose": "Fourteen source-verified non-electronic RB noindex preview pages without unverified price or stock claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00006759",
+      "manufacturer": "CyberPower",
+      "mpn": "OLS1000ERT2UA",
+      "source_url": "https://www.cyberpower.com/global/en/product/sku/ols1000ert2ua",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-ols1000ert2ua",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005733",
+      "manufacturer": "CyberPower",
+      "mpn": "PR750ELCD",
+      "source_url": "https://web2.cyberpower.com/global/en/product/sku/pr750elcd",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-pr750elcd",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005524",
+      "manufacturer": "CyberPower",
+      "mpn": "UT1100EG",
+      "source_url": "https://www.cyberpower.com/VN/EN/product/sku/ut1100eg",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-ut1100eg",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00006872",
+      "manufacturer": "APC by Schneider Electric",
+      "mpn": "SMT3000IC",
+      "source_url": "https://www.se.com/uk/en/product/SMT3000IC/apc-smartups-line-interactive-3kva-tower-230v-8x-iec-c13%2B2x-iec-c19-outlets-smartconnect-port%2Bsmartslot-avr-lcd/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "apc-smart-ups-smt3000ic",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001846",
+      "manufacturer": "Eaton",
+      "mpn": "9E1000I",
+      "source_url": "https://www.eaton.com/in/en-us/skuPage.9E1000I.html",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "eaton-9e1000i",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002489",
+      "manufacturer": "MEAN WELL",
+      "mpn": "IRM-15-12",
+      "source_url": "https://www.meanwell.com/Upload/PDF/IRM-15/IRM-15-spec.pdf",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-irm-15-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002488",
+      "manufacturer": "MEAN WELL",
+      "mpn": "IRM-30-24",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page49.html",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-irm-30-24",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001286",
+      "manufacturer": "MEAN WELL",
+      "mpn": "LRS-350-24",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page5.html",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-lrs-350-24",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001523",
+      "manufacturer": "Phoenix Contact",
+      "mpn": "2938646",
+      "source_url": "https://www.phoenixcontact.com/en-ca/products/power-supply-quint-ps-3x400-500ac24dc40-2938646",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "phoenix-contact-quint-2938646",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002068",
+      "manufacturer": "MEAN WELL",
+      "mpn": "UHP-500-24",
+      "source_url": "https://www.meanwell.com/Upload/PDF/UHP-500%28R%29/UHP-500-spec.pdf",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-uhp-500-24",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00007148",
+      "manufacturer": "MEAN WELL",
+      "mpn": "DDR-120D-24",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page97.html",
+      "category_slug": "catalog/power-systems/power-converters",
+      "product_slug": "mean-well-ddr-120d-24",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003555",
+      "manufacturer": "MEAN WELL",
+      "mpn": "HDR-30-12",
+      "source_url": "https://www.meanwell.com/Upload/PDF/HDR-30/HDR-30-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-hdr-30-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004651",
+      "manufacturer": "MEAN WELL",
+      "mpn": "RSD-300F-12",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page101.html",
+      "category_slug": "catalog/power-systems/power-converters",
+      "product_slug": "mean-well-rsd-300f-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004650",
+      "manufacturer": "MEAN WELL",
+      "mpn": "SD-350C-24",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page99.html",
+      "category_slug": "catalog/power-systems/power-converters",
+      "product_slug": "mean-well-sd-350c-24",
+      "replace_categories": true
+    }
+  ]
+}

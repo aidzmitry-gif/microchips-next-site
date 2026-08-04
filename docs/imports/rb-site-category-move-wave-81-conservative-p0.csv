@@ -1,0 +1,11 @@
+product_external_id,from_category_external_id,to_category_external_id
+КА-00001066,seo:rechargeable-cells,seo:batteries-ups
+КА-00001344,seo:primary-cells,seo:batteries-ups
+КА-00001497,seo:primary-cells,seo:rechargeable-cells
+КА-00001861,seo:data-storage,seo:primary-cells
+КА-00002353,seo:computer-systems,seo:rechargeable-cells
+КА-00003848,seo:rechargeable-cells,seo:batteries-ups
+КА-00004782,seo:rechargeable-cells,seo:batteries-traction
+КА-00004783,seo:rechargeable-cells,seo:batteries-traction
+КА-00004973,seo:primary-cells,seo:printing-equipment
+ФР-00000453,seo:primary-cells,seo:lighting-fixtures

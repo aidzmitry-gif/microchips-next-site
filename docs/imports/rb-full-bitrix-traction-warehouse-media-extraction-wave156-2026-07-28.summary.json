@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "seo:batteries-traction",
+    "seo:warehouse-equipment"
+  ],
+  "category_record_counts": {
+    "seo:batteries-traction": 164,
+    "seo:warehouse-equipment": 39
+  },
+  "scoped_staging_records": 203,
+  "transfer_statuses": {
+    "existing_one_c_exact_link": 2,
+    "hold_duplicate_candidate": 6,
+    "legacy_only_draft_candidate": 195
+  },
+  "safe_legacy_drafts": 195,
+  "records_with_media_reference": 195,
+  "unique_selected_file_references": 195,
+  "safe_drafts_without_media_reference": 0,
+  "safe_drafts_missing_media_index": 0,
+  "canonical_one_c_media_imports": 0,
+  "indexable_pages_changed": 0
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "purpose": "Noindex preview for source-backed products with company-owned visually verified exact/model-core media.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001614",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-150-m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-150-m",
+      "replace_categories": true,
+      "model_core": "FT 12-150 M"
+    },
+    {
+      "external_id": "КА-00002602",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-105-m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-105-m",
+      "replace_categories": true,
+      "model_core": "FT 12-105 M"
+    },
+    {
+      "external_id": "КА-00005185",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12-55",
+      "replace_categories": true,
+      "model_core": "GPL 12-55"
+    },
+    {
+      "external_id": "ФР-00000210",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1205/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1205",
+      "replace_categories": true,
+      "model_core": "DTM 1205"
+    },
+    {
+      "external_id": "ФР-00000211",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-12008/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12008",
+      "replace_categories": true,
+      "model_core": "DTM 12008"
+    },
+    {
+      "external_id": "ФР-00000416",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1207/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1207",
+      "replace_categories": true,
+      "model_core": "DTM 1207"
+    },
+    {
+      "external_id": "ФР-00001005",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-6045/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-6045",
+      "replace_categories": true,
+      "model_core": "DT 6045"
+    },
+    {
+      "external_id": "ФР-00001307",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1207/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-1207",
+      "replace_categories": true,
+      "model_core": "DT 1207"
+    },
+    {
+      "external_id": "ФР-00001438",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FG_web.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20722",
+      "replace_categories": true,
+      "model_core": "FG20722"
+    },
+    {
+      "external_id": "ФР-00001785",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FG_web.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg10451",
+      "replace_categories": true,
+      "model_core": "FG10451"
+    }
+  ]
+}

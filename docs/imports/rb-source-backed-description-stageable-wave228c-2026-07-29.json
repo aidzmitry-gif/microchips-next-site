@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave228-C strict official-source model-core description refresh candidates only; use with --refresh-existing --refresh-applied after review.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1593",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "model_core": "BPS40-12",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/BPS.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B. Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1519",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "model_core": "HR15-12",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B. Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1565",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "model_core": "HR22-12",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B. Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1587",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "model_core": "HR4-12",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B. Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1576",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "model_core": "CA12260",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/72.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1473",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "model_core": "CA6120",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/68.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1410",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "model_core": "CA613",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/53.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1555",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "model_core": "CA628",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/1409840518925725696.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1583",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "model_core": "CA633",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/21.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24554",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0810-0075",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24531",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0810-0103",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

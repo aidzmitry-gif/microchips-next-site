@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-30",
+  "source_url": "https://www.enersys.com/en/webpolicies/website-terms-of-use/",
+  "publisher": "EnerSys",
+  "source_kind": "official_terms_of_use",
+  "local_path": "docs/audits/sources/wave246a-enersys/enersys-website-terms-20a2e07b12742f09.html",
+  "sha256": "20a2e07b12742f09758440aceeb11de72fdb0523dbdc377572a98bf1c168fc66",
+  "bytes": 282456,
+  "content_type": "text/html; charset=utf-8",
+  "rights_finding": "commercial redistribution/public display of website images is not licensed; prior written permission is required"
+}

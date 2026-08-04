@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "purpose": "Four exact model-core descriptions from manufacturer-primary sources for the Wave 120 backfill queue. Terminal, connector, lead and pack claims are deliberately excluded; no price, stock, local warranty, image or publication state is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002554",
+      "manufacturer": "TEKCELL / Vitzrocell",
+      "identity_scope": "model_core",
+      "model_core": "SB-AA02",
+      "display_name": "Первичный литий-тионилхлоридный элемент TEKCELL SB-AA02, 3,6 В",
+      "technology": "первичный литий-тионилхлоридный элемент (Li-SOCl₂), бобинная конструкция",
+      "source_url": "https://www.vitzrocell.com/en/sub/sub02_01.php?cat_no=&idx=11&mode=view&offset=0",
+      "source_kind": "manufacturer-primary Vitzrocell page for exact SB-AA02 model core",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,6 В",
+        "Номинальная ёмкость": "1,2 А·ч при 1 мА, 20 °C, до 2,0 В",
+        "Максимальный рекомендуемый непрерывный ток": "20 мА",
+        "Максимальный импульсный ток": "50 мА",
+        "Рабочая температура": "от −55 до +85 °C",
+        "Масса одного элемента": "9 г",
+        "Ограничение источника": "Источник допускает исполнения TC, ST, 2P, 3P, 3PW и AX, но не подтверждает конкретную комплектацию этой карточки."
+      }
+    },
+    {
+      "external_id": "КА-00002456",
+      "manufacturer": "TEKCELL / Vitzrocell",
+      "identity_scope": "model_core",
+      "model_core": "SB-AA11",
+      "display_name": "Первичный литий-тионилхлоридный элемент TEKCELL SB-AA11, 3,6 В",
+      "technology": "первичный литий-тионилхлоридный элемент (Li-SOCl₂), бобинная конструкция",
+      "source_url": "https://www.vitzrocell.com/en/sub/sub02_01.php?cat_no=&idx=9&mode=view&offset=0",
+      "source_kind": "manufacturer-primary Vitzrocell page for exact SB-AA11 model core",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,6 В",
+        "Номинальная ёмкость": "2,5 А·ч при 2 мА, 20 °C, до 2,0 В",
+        "Максимальный рекомендуемый непрерывный ток": "60 мА",
+        "Максимальный импульсный ток": "100 мА",
+        "Рабочая температура": "от −55 до +85 °C",
+        "Масса одного элемента": "16 г",
+        "Ограничение источника": "Источник допускает исполнения TC, ST, 2P, 3P, 3PW и AX, но не подтверждает конкретную комплектацию этой карточки."
+      }
+    },
+    {
+      "external_id": "ФР-00000408",
+      "manufacturer": "Saft",
+      "identity_scope": "model_core",
+      "model_core": "LS 14500",
+      "display_name": "Первичный литий-тионилхлоридный элемент Saft LS 14500, 3,6 В",
+      "technology": "первичный литий-тионилхлоридный элемент (Li-SOCl₂), бобинная конструкция",
+      "source_url": "https://saft4u.saft.com/en/download_file/738dfd7b-3131-4e31-8924-401cd9a36bbc/English",
+      "source_kind": "official Saft LS 14500 model-core datasheet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,6 В",
+        "Типичная ёмкость": "2,6 А·ч при 2 мА, +20 °C, до 2,0 В",
+        "Типоразмер": "AA",
+        "Максимальный непрерывный ток": "50 мА",
+        "Рабочая температура": "от −60 до +85 °C",
+        "Ограничение источника": "Характеристики относятся к базовому элементу LS 14500; выводы, разъёмы и комплектность не заявляются."
+      }
+    },
+    {
+      "external_id": "ФР-00000297",
+      "manufacturer": "Saft",
+      "identity_scope": "model_core",
+      "model_core": "LS 26500",
+      "display_name": "Первичный литий-тионилхлоридный элемент Saft LS 26500, 3,6 В",
+      "technology": "первичный литий-тионилхлоридный элемент (Li-SOCl₂), бобинная конструкция",
+      "source_url": "https://saft4u.saft.com/en/download_file/e9a98622-3564-4570-bca2-d6ce1504589a/English",
+      "source_kind": "official Saft LS 26500 model-core datasheet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,6 В",
+        "Типичная ёмкость": "7,7 А·ч при 10 мА, +20 °C, до 2,0 В",
+        "Типоразмер": "C",
+        "Максимальный непрерывный ток": "150 мА",
+        "Рабочая температура": "от −60 до +85 °C",
+        "Ограничение источника": "Характеристики относятся к базовому элементу LS 26500; выводы, разъёмы и комплектность не заявляются."
+      }
+    }
+  ]
+}

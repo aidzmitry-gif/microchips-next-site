@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:2597",
+      "current_name": "Аккумулятор Kenwood KNB-29N для радиостанций (NiMH, 1500mAh, 7.2V)",
+      "manufacturer": "Kenwood",
+      "mpn": "KNB-29N",
+      "source_url": "https://comms.kenwood.com/en/common/pdf/products/accessories.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "JVCKENWOOD Corporation",
+      "checked_at": "2026-07-29",
+      "product_type": "radio battery pack",
+      "source_snapshot_path": "../audits/sources/wave207-motorola-kenwood/kenwood-portable-radio-accessories.pdf",
+      "source_snapshot_sha256": "03049c4f0834b6d03241556dd4ef2534526d23e43fb8f93720ac4edb579ad2bb"
+    },
+    {
+      "external_id": "bitrix:2602",
+      "current_name": "Аккумулятор Kenwood KNB-41NC IS для радиостанций (NiMH, 2500mAh, 7.2V)",
+      "manufacturer": "Kenwood",
+      "mpn": "KNB-41NC",
+      "source_url": "https://comms.kenwood.com/en/common/pdf/products/accessories.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "JVCKENWOOD Corporation",
+      "checked_at": "2026-07-29",
+      "product_type": "radio battery pack",
+      "source_snapshot_path": "../audits/sources/wave207-motorola-kenwood/kenwood-portable-radio-accessories.pdf",
+      "source_snapshot_sha256": "03049c4f0834b6d03241556dd4ef2534526d23e43fb8f93720ac4edb579ad2bb"
+    },
+    {
+      "external_id": "bitrix:2608",
+      "current_name": "Аккумулятор Kenwood KNB-53N для радиостанций (NiMH, 1400mAh, 7.2V)",
+      "manufacturer": "Kenwood",
+      "mpn": "KNB-53N",
+      "source_url": "https://comms.kenwood.com/en/common/pdf/products/accessories.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "JVCKENWOOD Corporation",
+      "checked_at": "2026-07-29",
+      "product_type": "radio battery pack",
+      "source_snapshot_path": "../audits/sources/wave207-motorola-kenwood/kenwood-portable-radio-accessories.pdf",
+      "source_snapshot_sha256": "03049c4f0834b6d03241556dd4ef2534526d23e43fb8f93720ac4edb579ad2bb"
+    },
+    {
+      "external_id": "bitrix:2611",
+      "current_name": "Аккумулятор Kenwood KNB-56N для радиостанций (NiMH, 1400mAh, 7.2V)",
+      "manufacturer": "Kenwood",
+      "mpn": "KNB-56N",
+      "source_url": "https://comms.kenwood.com/en/common/pdf/products/accessories.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "JVCKENWOOD Corporation",
+      "checked_at": "2026-07-29",
+      "product_type": "radio battery pack",
+      "source_snapshot_path": "../audits/sources/wave207-motorola-kenwood/kenwood-portable-radio-accessories.pdf",
+      "source_snapshot_sha256": "03049c4f0834b6d03241556dd4ef2534526d23e43fb8f93720ac4edb579ad2bb"
+    }
+  ]
+}

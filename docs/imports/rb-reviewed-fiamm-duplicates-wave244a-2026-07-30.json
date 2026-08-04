@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Collapse only two exact FIAMM legacy duplicates after new no-repeat primary evidence and live safety checks.",
+  "duplicates": [
+    {
+      "survivor_external_id": "ФР-00002108",
+      "duplicate_external_id": "bitrix:3266",
+      "survivor_name": "Батарея FIAMM 12FGH36 12V 9Ah",
+      "duplicate_name": "Аккумулятор Fiamm 12FGH36 (AGM, 9Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fgh36",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3266",
+      "model_core": "12FGH36",
+      "voltage": "12V",
+      "capacity": "9Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "FIAMM",
+      "survivor_mpn": "12FGH36",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FGH-FGHL_web.pdf",
+      "source_evidence_path": "docs/audits/sources/wave244a-fiamm/registry.json",
+      "source_evidence_sha256": "f2a8bac16498eb6b7ec157d7bbd60024e55c04708b0d30419553f0c0710c9b73",
+      "source_snapshot_path": "docs/audits/sources/wave244a-fiamm/fiamm-12fgh36-c09923e51dfc9413.pdf",
+      "source_snapshot_sha256": "c09923e51dfc9413794aef9bbacc3b66b4a01e73b32cb93d3dad5f5bb2789811",
+      "decision_reason": "New no-repeat FIAMM primary evidence proves the exact model and electrical facts; the live canonical owner has the same normalized FIAMM MPN and safely preserves URL, category, content, media and exact current price evidence."
+    },
+    {
+      "survivor_external_id": "КА-00003136",
+      "duplicate_external_id": "bitrix:1511",
+      "survivor_name": "Аккумуляторная батарея FIAMM 4SLA150",
+      "duplicate_name": "Аккумулятор Fiamm 4SLA150 (AGM, 150Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/fiamm-4sla150",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1511",
+      "model_core": "4SLA150",
+      "voltage": "4V",
+      "capacity": "150Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "FIAMM",
+      "survivor_mpn": "4SLA150",
+      "source_url": "https://www.fiamm.ru/services/faq/voprosy-po-podboru/",
+      "source_evidence_path": "docs/audits/sources/wave244a-fiamm/registry.json",
+      "source_evidence_sha256": "f2a8bac16498eb6b7ec157d7bbd60024e55c04708b0d30419553f0c0710c9b73",
+      "source_snapshot_path": "docs/audits/sources/wave244a-fiamm/fiamm-4sla150-2089ca2044c9396e.html",
+      "source_snapshot_sha256": "2089ca2044c9396ecd711963996abcbab6a822b53679e38ada6e3f10ed0265e8",
+      "decision_reason": "New no-repeat FIAMM primary evidence proves the exact model and electrical facts; the live canonical owner has the same normalized FIAMM MPN and safely preserves URL, category, content, media and exact current price evidence."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded noindex RB storefront preview of three FIAMM products with verified descriptions and company-owned images. This manifest never authorizes prices, stock, Offer schema or indexability.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003136",
+      "manufacturer": "FIAMM",
+      "mpn": "4SLA150",
+      "source_url": "https://www.cogenient.com/mfc-refdocs/Fiamm/SLA/4SLA150.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-4sla150",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004091",
+      "manufacturer": "FIAMM",
+      "mpn": "12FIT180",
+      "source_url": "https://fiamm.ru/equipment/FIT-series/12FIT180/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fit180",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001513",
+      "manufacturer": "FIAMM",
+      "mpn": "FG21803",
+      "source_url": "https://www.fiamm.co/catalog/FG21803.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg21803",
+      "replace_categories": true
+    }
+  ]
+}

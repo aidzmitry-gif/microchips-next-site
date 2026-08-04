@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "purpose": "Three model-specific FIAMM editorial drafts from traceable technical datasheets. This manifest does not authorize pricing, stock, images, Offer markup or indexability.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004114",
+      "manufacturer": "FIAMM",
+      "mpn": "6SLA100",
+      "display_name": "Аккумуляторная батарея FIAMM 6SLA100",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.h-energy.ru/wa-data/public/site/manuals/akb/fiamm/fiamm_6sla100-datasheetENG.pdf",
+      "source_kind": "FIAMM-branded 6SLA100 technical datasheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 V",
+        "Номинальная ёмкость": "100 Ah",
+        "Технология": "VRLA AGM",
+        "Применение": "телекоммуникационные и стационарные системы резервного питания"
+      }
+    },
+    {
+      "external_id": "КА-00003889",
+      "manufacturer": "FIAMM",
+      "mpn": "6SLA125",
+      "display_name": "Аккумуляторная батарея FIAMM 6SLA125",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.cogenient.com/mfc-refdocs/Fiamm/SLA/6SLA125.pdf",
+      "source_kind": "FIAMM-branded 6SLA125 technical datasheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 V",
+        "Номинальная ёмкость": "125 Ah (C8)",
+        "Технология": "VRLA AGM",
+        "Габариты": "268 × 172 × 230 мм",
+        "Масса": "26,0 кг"
+      }
+    },
+    {
+      "external_id": "ФР-00001439",
+      "manufacturer": "FIAMM",
+      "mpn": "FG21202",
+      "display_name": "Аккумуляторная батарея FIAMM FG21202",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://cdn.hdibattery.com/archivos/media/fg21202.pdf",
+      "source_kind": "FIAMM FG21202 technical datasheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "12 Ah (C20)",
+        "Технология": "VRLA AGM",
+        "Габариты": "151 × 98 × 94 мм",
+        "Масса": "3,75 кг",
+        "Клемма": "Faston 6,3 мм"
+      }
+    }
+  ]
+}

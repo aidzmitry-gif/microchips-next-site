@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "checked_at": "2026-07-29",
+  "command": "catalog:apply-verified-oem-identities microchips-by <manifest>",
+  "mode": "dry_run",
+  "records": 18,
+  "manifest_sha256": "c04a49c94a716d5ea3d90ac55165811c4d7bdb39576ee3d89e07fb3d0baf45d7",
+  "identities_filled": 0,
+  "unchanged": 0,
+  "commercial_fields_changed": 0,
+  "publication_fields_changed": 0,
+  "exit_code": 0,
+  "database_mutations": 0
+}

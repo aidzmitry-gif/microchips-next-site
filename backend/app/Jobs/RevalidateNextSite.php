@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Models\Site;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -29,10 +30,15 @@ class RevalidateNextSite implements ShouldQueue
             return;
         }
 
+        $site = Site::query()->find($this->siteId);
         $response = Http::timeout(10)
             ->acceptJson()
             ->withToken($secret)
-            ->post($url, ['paths' => array_values(array_unique($this->paths))]);
+            ->post($url, [
+                'paths' => array_values(array_unique($this->paths)),
+                'site_key' => $site?->key,
+                'site_domain' => $site?->domain,
+            ]);
 
         if ($response->failed()) {
             Log::warning('Next.js revalidation request failed.', [

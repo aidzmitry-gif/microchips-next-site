@@ -1,0 +1,786 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 199 exact first-party APC enrichment. No RB price, stock, Offer, image publication or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:20090",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC43",
+      "display_name": "Сменный аккумуляторный картридж APC RBC43",
+      "technology": "VRLA",
+      "source_url": "https://www.se.com/us/en/product/RBC43/apc-replacement-battery-cartridge-for-smartups-line-interactive-48v-10ah-leadacid-battery-2year-repair-or-replace-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "VRLA",
+        "Номинальное напряжение": "48 В",
+        "Номинальная ёмкость": "10 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20091",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC4",
+      "display_name": "Сменный аккумуляторный картридж APC RBC4",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC4/apc-replacement-battery-cartridge-4-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20092",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC2",
+      "display_name": "Сменный аккумуляторный картридж APC RBC2",
+      "technology": "VRLA",
+      "source_url": "https://www.se.com/us/en/product/RBC2/apc-replacement-battery-cartridge-valve-regulated-leadacid-battery-7ah-12vdc-2year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "VRLA",
+        "Номинальное напряжение": "12 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20095",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC6",
+      "display_name": "Сменный аккумуляторный картридж APC RBC6",
+      "technology": "VRLA",
+      "source_url": "https://www.se.com/us/en/product/RBC6/apc-replacement-battery-cartridge-vrla-battery-11ah-12vdc-2year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "VRLA",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "11 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20096",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC55",
+      "display_name": "Сменный аккумуляторный картридж APC RBC55",
+      "technology": "VRLA",
+      "source_url": "https://www.se.com/us/en/product/RBC55/apc-replacement-battery-cartridge-for-smartups-line-interactive-12v-17ah-leadacid-battery-2year-repair-or-replace-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "VRLA",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "17 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20097",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC48",
+      "display_name": "Сменный аккумуляторный картридж APC RBC48",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC48/apc-replacement-battery-cartridge-for-smartups-line-interactive-24v-7ah-leadacid-battery-2year-repair-or-replace-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20098",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC34",
+      "display_name": "Сменный аккумуляторный картридж APC RBC34",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC34/apc-replacement-battery-cartridge-34-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20099",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC22",
+      "display_name": "Сменный аккумуляторный картридж APC RBC22",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC22/apc-replacement-battery-cartridge-22-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В",
+        "Номинальная ёмкость": "7.0 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23783",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT96RMBP",
+      "display_name": "Внешний батарейный блок APC SRT96RMBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT96RMBP/apc-smartups-srt-96v-3kva-rm-battery-pack/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "96 В",
+        "Номинальная ёмкость": "19 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23787",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SMX48RMBP2U",
+      "display_name": "Внешний батарейный блок APC SMX48RMBP2U",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SMX48RMBP2U/apc-smartups-xseries-external-battery-pack-rack-tower-48v-864vah-rackmount-2u/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В",
+        "Энергия батарейного блока": "864 ВА·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23789",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SUA48RMXLBP3U",
+      "display_name": "Внешний батарейный блок APC SUA48RMXLBP3U",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SUA48RMXLBP3U/apc-smartups-xl-battery-pack-48v-rackmount-3u/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23790",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT72BP",
+      "display_name": "Внешний батарейный блок APC SRT72BP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT72BP/apc-smartups-online-srt-battery-pack-for-2-2kva-extended-runtime-model-72v/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "72 В",
+        "Номинальная ёмкость": "10 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23791",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SURT192XLBP",
+      "display_name": "Внешний батарейный блок APC SURT192XLBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SURT192XLBP/apc-smartups-rt-192v-battery-pack/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "192 В",
+        "Номинальная ёмкость": "18 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23792",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT72RMBP",
+      "display_name": "Внешний батарейный блок APC SRT72RMBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT72RMBP/apc-smartups-online-srt-rackmount-battery-pack-for-2-2kva-extended-runtime-model-72v/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "72 В",
+        "Номинальная ёмкость": "20 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23793",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT192RMBP2",
+      "display_name": "Внешний батарейный блок APC SRT192RMBP2",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT192RMBP2/apc-smartups-srt-192v-8-and-10kva-rm-battery-pack/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "192 В",
+        "Номинальная ёмкость": "10 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23794",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SYBT5",
+      "display_name": "Аккумуляторный модуль APC SYBT5",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SYBT5/apc-symmetra-lx-battery-module/",
+      "technical_attributes": {
+        "Тип изделия": "Аккумуляторный модуль",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "120 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23795",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC59",
+      "display_name": "Сменный аккумуляторный картридж APC RBC59",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC59/apc-replacement-battery-cartridge-59-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23796",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC33",
+      "display_name": "Сменный аккумуляторный картридж APC RBC33",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC33/apc-replacement-battery-cartridge-33-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В",
+        "Номинальная ёмкость": "9.0 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23797",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC32",
+      "display_name": "Сменный аккумуляторный картридж APC RBC32",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC32/apc-replacement-battery-cartridge-32/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В",
+        "Номинальная ёмкость": "7.0 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23798",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC27",
+      "display_name": "Сменный аккумуляторный картридж APC RBC27",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC27/apc-replacement-battery-cartridge-27-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23800",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC12",
+      "display_name": "Сменный аккумуляторный картридж APC RBC12",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC12/apc-replacement-battery-cartridge-12-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23801",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "BR24BPG",
+      "display_name": "Внешний батарейный блок APC BR24BPG",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/BR24BPG/apc-backups-pro-external-battery-pack/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23802",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT96BP",
+      "display_name": "Внешний батарейный блок APC SRT96BP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT96BP/apc-smartups-online-srt-battery-pack-for-3kva-extended-runtime-model-96v/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "96 В",
+        "Номинальная ёмкость": "20 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23805",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT48BP",
+      "display_name": "Внешний батарейный блок APC SRT48BP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT48BP/apc-smartups-srt-48v-1kva-1-5kva-battery-pack/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В",
+        "Номинальная ёмкость": "11 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23808",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT192RMBP",
+      "display_name": "Внешний батарейный блок APC SRT192RMBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT192RMBP/apc-smartups-online-srt-external-battery-pack-3u-rack-192vdc/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "192 В",
+        "Номинальная ёмкость": "10 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23810",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SMX120RMBP2U",
+      "display_name": "Внешний батарейный блок APC SMX120RMBP2U",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SMX120RMBP2U/apc-smartups-x-external-battery-pack-rack-tower-2u-120vdc-w-rail-kit/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "120 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23812",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SRT48RMBP",
+      "display_name": "Внешний батарейный блок APC SRT48RMBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SRT48RMBP/apc-smartups-srt-48v-1kva-1-5kva-rm-battery-pack/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В",
+        "Номинальная ёмкость": "11 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23824",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC8",
+      "display_name": "Сменный аккумуляторный картридж APC RBC8",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC8/apc-replacement-battery-cartridge-8-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23833",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SUM48RMXLBP2U",
+      "display_name": "Внешний батарейный блок APC SUM48RMXLBP2U",
+      "technology": "VRLA",
+      "source_url": "https://www.se.com/us/en/product/SUM48RMXLBP2U/apc-smartups-xl-extended-run-battery-pack-48v-vrla-rackmount-2u/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "VRLA",
+        "Номинальное напряжение": "48 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23834",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SU24R2XLBP",
+      "display_name": "Внешний батарейный блок APC SU24R2XLBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SU24R2XLBP/apc-smartups-xl-battery-pack-24v-864vah-rackmount-2u/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В",
+        "Энергия батарейного блока": "864 ВА·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23835",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SUA48XLBP",
+      "display_name": "Внешний батарейный блок APC SUA48XLBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SUA48XLBP/apc-smartups-xl-battery-pack-tower-rack-convertible-48v-rackmount-with-kit-5u/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23836",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SUA24XLBP",
+      "display_name": "Внешний батарейный блок APC SUA24XLBP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SUA24XLBP/apc-smartups-xl-battery-pack-24v/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23838",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "UXABP48",
+      "display_name": "Внешний батарейный блок APC UXABP48",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/UXABP48/apc-smartups-battery-pack-48v-3360vah/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "48 В",
+        "Энергия батарейного блока": "3360 ВА·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23839",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SURT192RMXLBP2",
+      "display_name": "Внешний батарейный блок APC SURT192RMXLBP2",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SURT192RMXLBP2/apc-smartups-rt192v-rm-battery-pack-2-rows/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "192 В",
+        "Номинальная ёмкость": "19 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23840",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "SMX120BP",
+      "display_name": "Внешний батарейный блок APC SMX120BP",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/SMX120BP/apc-smartups-xseries-external-battery-pack-rack-tower-120v-1200vah-rackmount-4u/",
+      "technical_attributes": {
+        "Тип изделия": "Внешний батарейный блок",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "120 В",
+        "Энергия батарейного блока": "1200 ВА·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23841",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC5",
+      "display_name": "Сменный аккумуляторный картридж APC RBC5",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC5/apc-replacement-battery-cartridge-5-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "24 В",
+        "Номинальная ёмкость": "7.0 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23842",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC25",
+      "display_name": "Сменный аккумуляторный картридж APC RBC25",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC25/apc-replacement-battery-cartridge-25-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:23843",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC18",
+      "display_name": "Сменный аккумуляторный картридж APC RBC18",
+      "technology": "Свинцово-кислотная",
+      "source_url": "https://www.se.com/us/en/product/RBC18/apc-replacement-battery-cartridge-18-with-2-year-warranty/",
+      "technical_attributes": {
+        "Тип изделия": "Сменный аккумуляторный картридж",
+        "Технология": "Свинцово-кислотная",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "9 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "APC by Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

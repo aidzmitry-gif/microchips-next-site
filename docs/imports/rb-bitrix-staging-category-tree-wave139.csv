@@ -1,0 +1,220 @@
+﻿external_id,parent_external_id,name,path
+409,,Для ИБП,catalog/akkumulyatory/dlya_ibp
+1125,,Для ИБП,catalog/akkumulyatory/dlya_ibp9002
+427,,Промышленные аккумуляторы,catalog/akkumulyatory/promyshlennye
+1123,,Промышленные аккумуляторы,catalog/akkumulyatory/promyshlennye7593
+425,,Источники бесперебойного питания,catalog/istochniki-pitaniya/ibp
+1135,,Источники бесперебойного питания,catalog/istochniki-pitaniya/ibp483
+410,409,AGM,catalog/akkumulyatory/dlya_ibp/agm
+411,409,GEL,catalog/akkumulyatory/dlya_ibp/gelevye
+415,409,OPzS,catalog/akkumulyatory/dlya_ibp/opzs
+906,427,Для касс,catalog/akkumulyatory/promyshlennye/dlya-kass
+482,427,Для медицинской техники,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki
+488,427,Для пультов управления,catalog/akkumulyatory/promyshlennye/dlya-pultov-upravleniya
+835,427,Для сигнализаций,catalog/akkumulyatory/promyshlennye/dlya-signalizatsiy
+484,427,Для сканеров штрих-кодов и терминалов,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov
+908,427,Для телекоммуникаций,catalog/akkumulyatory/promyshlennye/dlya-telekommunikatsiy
+401,427,Для раций (радиостранций),catalog/akkumulyatory/promyshlennye/dlya_ratsiy
+414,427,Для резервного питания,catalog/akkumulyatory/promyshlennye/dlya_rezervnogo_pitaniya
+416,427,Железо-никелевые,catalog/akkumulyatory/promyshlennye/zhelezo-nikelevye
+624,482,3Gen,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/3gen
+625,482,Abbott,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/abbott
+823,482,Acare,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/acare
+626,482,Aeonmed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/aeonmed
+627,482,Agilent,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/agilent
+628,482,Ahram Biosystems,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/ahram-biosystems
+629,482,Air Shields-Vickers,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/air-shields-vickers
+630,482,Alaris,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/alaris
+631,482,ADC,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/american-diagnostic-corporation
+632,482,Amico,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/amico
+633,482,AMPall,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/ampall
+634,482,Angel,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/angel
+824,482,Annol,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/annol
+831,482,Anritsu,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/anritsu
+635,482,AOLI,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/aoli
+636,482,Arcomed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/arcomed
+637,482,Asena,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/asena
+649,482,Aspect Medical Systems,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/aspect-medical-systems
+638,482,Atmos,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/atmos
+639,482,ATYS,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/atys
+640,482,B. Braun,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/b-braun
+641,482,BCI,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/bci
+642,482,Bellavista,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/bellavista
+643,482,Biocare,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/biocare
+644,482,Biohit,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/biohit
+645,482,Biolat,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/biolat
+646,482,Biolight,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/biolight
+647,482,Biomed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/biomed
+648,482,Bionet,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/bionet
+650,482,BrandTech,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/brandtech
+651,482,Bullard,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/bullard
+652,482,Burdick,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/burdick
+653,482,Cardinal Health,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cardinal-medical
+654,482,Cardioline,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cardioline
+655,482,CardioNova,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cardionova
+656,482,Care Vision,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/care-vision
+657,482,Carejoy,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/carejoy
+658,482,Carestream,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/carestream
+660,482,Carewell,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/carewell
+661,482,CAS Medical Systems,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cas-medical-systems
+662,482,Cefar,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cefar
+663,482,ChoiceMMed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/choicemmed
+664,482,Circadiance,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/circadiance
+665,482,CME,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cme
+667,482,Comen,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/comen
+668,482,Compex,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/compex
+669,482,Contec,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/contec
+825,482,Cortex,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cortex
+670,482,Cosmed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cosmed
+671,482,Covidien,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/covidien
+672,482,Creative,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/creative
+673,482,CU Medical,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/cu-medical
+674,482,Datascope,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/datascope
+675,482,Datex,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/datex
+677,482,Dentsply,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/dentsply
+678,482,Diversified,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/diversified
+679,482,Dixion,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/dixion
+680,482,Dongjiang,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/dongjiang
+682,482,Drager,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/drager
+683,482,EDAN,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/edan
+684,482,Eppendorf,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/eppendorf
+685,482,Eschenbach,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/eschenbach
+686,482,Finnpipette,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/finnpipette
+687,482,Flight Medical,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/flight-medical
+688,482,Fluke,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/fluke
+689,482,Fresenius,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/fresenius
+690,482,Fukuda,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/fukuda
+691,482,GE,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/ge
+692,482,General Meditech,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/general-meditech
+693,482,Grason,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/grason
+694,482,Hamilton,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/hamilton
+695,482,Heine,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/heine
+696,482,Hellige,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/hellige
+697,482,HillRom,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/hillrom
+698,482,Hitachi,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/hitachi
+699,482,Honda,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/honda
+700,482,Horron,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/horron
+701,482,HP,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/hp
+702,482,Huaxi,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/huaxi
+703,482,Hughes,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/hughes
+704,482,Huntleigh,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/huntleigh
+705,482,iHealth,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/ihealth
+706,482,Innomed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/innomed
+707,482,Invivo,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/invivo
+708,482,Iris,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/iris
+709,482,JMS,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/jms
+710,482,Jumper,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/jumper
+711,482,Karl Storz,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/karl-storz
+712,482,Kenz Cardico,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/kenz-cardico
+713,482,LikoGuard,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/likoguard
+714,482,Maquet,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/maquet
+715,482,Marco,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/marco
+827,482,Marquette,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/marquette
+716,482,Masimo,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/masimo
+829,482,MCM,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/mcm
+717,482,Medcaptain,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/medcaptain
+718,482,Medela,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/medela
+719,482,Mediaid,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/mediaid
+720,482,Medical Econet,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/medical-econet
+721,482,Medsonic,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/medsonic
+826,482,Medtronic,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/medtronic
+722,482,Mekics,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/mekics
+723,482,Metrax,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/metrax
+724,482,Microtac,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/microtac
+725,482,Million,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/million
+726,482,Mindray,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/mindray
+727,482,Natus,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/natus
+728,482,Nellcor Puritan Bennett,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/nellcor-puritan-bennett
+729,482,Neusoft,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/neusoft
+730,482,Newport,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/newport
+731,482,Nihon Kohden,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/nihon-kohden
+732,482,Nikkiso,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/nikkiso
+733,482,Nonin,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/nonin
+734,482,Nova,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/nova
+735,482,Ohmeda,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/ohmeda
+736,482,Omron,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/omron
+737,482,Optomed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/optomed
+738,482,OSEN,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/osen
+739,482,Otometrics,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/otometrics
+740,482,Palco Laboratories,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/palco-laboratories
+741,482,Philips,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/philips
+742,482,Physio-Control,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/physio-control
+743,482,Physiomed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/physiomed
+744,482,Pixium,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/pixium
+745,482,Puritan,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/puritan
+746,482,Q Core,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/q-core
+747,482,Rainin,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/rainin
+748,482,Reichert,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/reichert
+749,482,ResMed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/resmed
+750,482,Respironics,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/respironics
+751,482,Righton,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/righton
+772,482,SaverOne,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/saverone
+773,482,Schiller,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/schiller
+753,482,Shenke,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/shenke
+754,482,Siemens,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/siemens
+755,482,Smiths,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/smiths
+756,482,Soehnle,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/soehnle
+757,482,Solaris,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/solaris
+758,482,SonoSite,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/sonosite
+759,482,SpectraScan,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/spectrascan
+760,482,Spring,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/spring
+761,482,Terumo,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/terumo
+762,482,Theradome,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/theradome
+763,482,Thermo Scientific,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/thermo-scientific
+681,482,Toitu,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/toitu
+764,482,Trismed,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/trismed
+765,482,Verathon,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/verathon
+766,482,Vocera,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/vocera
+767,482,Weinmann,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/weinmann
+768,482,Welch-Allyn,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/welch-allyn
+769,482,Zimmer,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/zimmer
+770,482,ZOLL,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/zoll
+771,482,Zondan,catalog/akkumulyatory/promyshlennye/dlya-meditsinskoy-tekhniki/zondan
+774,484,Ascom,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/ascom
+775,484,Bearcat,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/bearcat
+776,484,Bitel,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/bitel
+777,484,Bluebird,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/bluebird
+778,484,Casio,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/casio
+779,484,Castles,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/castles
+780,484,Cino,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/cino
+781,484,CipherLab,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/cipherlab
+782,484,Datalogic,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/datalogic
+783,484,Dejavoo,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/dejavoo
+784,484,Denso,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/denso
+785,484,Falcon,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/falcon
+786,484,FirstData,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/firstdata
+787,484,Getac,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/getac
+788,484,Handheld,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/handheld
+789,484,Honeywell,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/honeywell
+790,484,Hypercom,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/hypercom
+791,484,ICOM,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/icom
+792,484,Ingenico,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/ingenico
+793,484,Intermec,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/intermec
+794,484,Keyence,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/keyence
+795,484,Koamtac,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/koamtac
+796,484,Leica,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/leica
+797,484,LXE,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/lxe
+798,484,M3 Mobile,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/m3-mobile
+799,484,Metrologic,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/metrologic
+800,484,Motorola,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/motorola
+801,484,NCR,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/ncr
+802,484,Newland,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/newland
+803,484,Newpos,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/newpos
+804,484,Opticon,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/opticon
+805,484,Panasonic,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/panasonic
+806,484,Pax,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/pax
+807,484,Point Mobile,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/point-mobile
+808,484,Proton,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/proton
+809,484,Proxibus,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/proxibus
+810,484,Psion,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/psion
+811,484,Radiotec,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/radiotec
+812,484,Sagem,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/sagem
+813,484,Senter,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/senter
+815,484,Sunmi,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/sunmi
+816,484,Symbol,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/symbol
+817,484,Teklogix,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/tellogix
+818,484,Unitech,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/unitech
+819,484,Urovo,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/urovo
+820,484,VeriFone,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/verifone
+821,484,Vocollect,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/vocollect
+822,484,Zebra,catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/zebra

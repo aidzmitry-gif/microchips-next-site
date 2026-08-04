@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "prior_exclusions_sha256": "a9a5aa9f109fddb0d320301f7007d829021ede9a60b508482d36c45fa2ef76ac",
+  "sources": [
+    {
+      "external_id": "bitrix:1448",
+      "expected_model": "CT 1212.2",
+      "source_url": "https://delta-batt.com/products/ct_1212_2/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1448-e3c380ad1d2737cf.html",
+      "snapshot_sha256": "e3c380ad1d2737cf6a93ad01d6538935dac5503925384464d154b132aff421a9",
+      "heading": "DELTA CT 1212.2"
+    },
+    {
+      "external_id": "bitrix:1450",
+      "expected_model": "CT 1216.1",
+      "source_url": "https://delta-batt.com/products/ct_1216_1/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1450-70d045ef4fbf55c4.html",
+      "snapshot_sha256": "70d045ef4fbf55c4d571f8927045d4368deaee3f8d62b2470ac3053c4868b4fe",
+      "heading": "DELTA CT 1216.1"
+    },
+    {
+      "external_id": "bitrix:1452",
+      "expected_model": "CT 1220.1",
+      "source_url": "https://delta-batt.com/products/ct_1220_1/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1452-82dad64cbccdf889.html",
+      "snapshot_sha256": "82dad64cbccdf88979645e1df360d82b80e04589ded581c1494d2f11f21c8a76",
+      "heading": "DELTA CT 1220.1"
+    },
+    {
+      "external_id": "bitrix:1523",
+      "expected_model": "CT 1216",
+      "source_url": "https://delta-batt.com/products/ct_1216/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1523-33ac49b9095b2091.html",
+      "snapshot_sha256": "33ac49b9095b209126e4af4fc5d27b334751c114691694fc05d405d3dda064c1",
+      "heading": "DELTA CT 1216"
+    },
+    {
+      "external_id": "bitrix:1537",
+      "expected_model": "CT 1218",
+      "source_url": "https://delta-batt.com/products/ct_1218/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-1537-f792c60ee1324191.html",
+      "snapshot_sha256": "f792c60ee132419128e8839f5379bcbb02b6e378b1e920c0ae81c6217ed56052",
+      "heading": "DELTA CT 1218"
+    },
+    {
+      "external_id": "bitrix:2890",
+      "expected_model": "CT 1220",
+      "source_url": "https://delta-batt.com/products/ct_1220/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-2890-45d472b9f1b3894a.html",
+      "snapshot_sha256": "45d472b9f1b3894a9d4abf23c3934a4ed47fd9c5224fca4cb01e97e0e16eeb33",
+      "heading": "DELTA CT 1220"
+    },
+    {
+      "external_id": "bitrix:2963",
+      "expected_model": "CT 1230",
+      "source_url": "https://delta-batt.com/products/ct_1230/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave243a-delta/bitrix-2963-858f1461d3880ede.html",
+      "snapshot_sha256": "858f1461d3880ede0a644bdea884dd45848430eedf6b2d93ad7cc047e3e682df",
+      "heading": "DELTA CT 1230"
+    }
+  ],
+  "failed_candidates": [
+    {
+      "external_id": "bitrix:1398",
+      "expected_model": "DTM 12008",
+      "url": "https://delta-batt.com/products/dtm_12008/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20109",
+      "expected_model": "DT 12008 (T13)",
+      "url": "https://delta-batt.com/products/dt_12008_t13/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20110",
+      "expected_model": "DT 12008 (T9)",
+      "url": "https://delta-batt.com/products/dt_12008_t9/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20111",
+      "expected_model": "DTM 1233 I",
+      "url": "https://delta-batt.com/products/dtm_1233_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20112",
+      "expected_model": "DTM 1240 I",
+      "url": "https://delta-batt.com/products/dtm_1240_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20113",
+      "expected_model": "DTM 1255 I",
+      "url": "https://delta-batt.com/products/dtm_1255_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20114",
+      "expected_model": "DTM 1265 I",
+      "url": "https://delta-batt.com/products/dtm_1265_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20115",
+      "expected_model": "DTM 1275 I",
+      "url": "https://delta-batt.com/products/dtm_1275_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20116",
+      "expected_model": "DTM 12100 I",
+      "url": "https://delta-batt.com/products/dtm_12100_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20118",
+      "expected_model": "DTM 12150 I",
+      "url": "https://delta-batt.com/products/dtm_12150_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20119",
+      "expected_model": "DTM 12200 I",
+      "url": "https://delta-batt.com/products/dtm_12200_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20120",
+      "expected_model": "DTM 12250 I",
+      "url": "https://delta-batt.com/products/dtm_12250_i/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20130",
+      "expected_model": "CGD 1255",
+      "url": "https://delta-batt.com/products/cgd_1255/",
+      "reason": "PRIOR_SOURCE_URL"
+    },
+    {
+      "external_id": "bitrix:20131",
+      "expected_model": "CGD 12100",
+      "url": "https://delta-batt.com/products/cgd_12100/",
+      "reason": "PRIOR_SOURCE_URL"
+    },
+    {
+      "external_id": "bitrix:20132",
+      "expected_model": "CGD 12200",
+      "url": "https://delta-batt.com/products/cgd_12200/",
+      "reason": "PRIOR_SOURCE_URL"
+    },
+    {
+      "external_id": "bitrix:20163",
+      "expected_model": "HRL 12-890 W",
+      "url": "https://delta-batt.com/products/hrl_12_890_w_xpert/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20164",
+      "expected_model": "HRL 12-650 W",
+      "url": "https://delta-batt.com/products/hrl_12_650_w_xpert/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20165",
+      "expected_model": "HRL 12-600 W",
+      "url": "https://delta-batt.com/products/hrl_12_600_w_xpert/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20166",
+      "expected_model": "HRL 12-560 W",
+      "url": "https://delta-batt.com/products/hrl_12_560_w_xpert/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20167",
+      "expected_model": "HRL 12-420 W",
+      "url": "https://delta-batt.com/products/hrl_12_420_w_xpert/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:20169",
+      "expected_model": "HRL 12-320 W",
+      "url": "https://delta-batt.com/products/hrl_12_320_w_xpert/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    },
+    {
+      "external_id": "bitrix:2896",
+      "expected_model": "DTM 12230 L",
+      "url": "https://delta-batt.com/products/dtm_12230_l/",
+      "reason": "DOWNLOAD_FAILED:HTTPError"
+    }
+  ]
+}

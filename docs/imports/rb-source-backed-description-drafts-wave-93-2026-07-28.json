@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "purpose": "Four exact-model DELTA descriptions verified against official or manufacturer-branded DELTA catalogue pages. No publication, image, stock or local warranty claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003468",
+      "manufacturer": "Delta",
+      "mpn": "DTM1226",
+      "display_name": "Аккумуляторная батарея Delta DTM 1226, 12 В 26 А·ч",
+      "technology": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1226/",
+      "source_kind": "manufacturer-branded Delta DTM1226 product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "26 А·ч (C20)",
+        "Технология": "VRLA AGM",
+        "Габариты": "166 × 175 × 125 мм",
+        "Масса": "9,2 кг",
+        "Клемма": "под болт M5",
+        "Расчётный срок службы": "до 6 лет"
+      }
+    },
+    {
+      "external_id": "КА-00002817",
+      "manufacturer": "Delta",
+      "mpn": "DT1233",
+      "display_name": "Аккумуляторная батарея Delta DT 1233, 12 В 33 А·ч",
+      "technology": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1233/",
+      "source_kind": "manufacturer-branded Delta DT1233 product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "33 А·ч (C20)",
+        "Технология": "VRLA AGM",
+        "Габариты": "197 × 131 × 180 мм с клеммами",
+        "Масса": "10,3 кг",
+        "Клемма": "болт и гайка Ø 8 мм",
+        "Расчётный срок службы": "3–5 лет"
+      }
+    },
+    {
+      "external_id": "КА-00003766",
+      "manufacturer": "Delta",
+      "mpn": "CGD1208",
+      "display_name": "Аккумуляторная батарея Delta CGD 1208, 12 В 8 А·ч",
+      "technology": "стационарная свинцово-кислотная аккумуляторная батарея AGM серии DELTA CGD",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "source_kind": "official DELTA CGD product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "8 А·ч",
+        "Технология": "AGM",
+        "Габариты": "151 × 65 × 94 мм",
+        "Масса": "2,75 кг",
+        "Расчётный срок службы": "до 15 лет"
+      }
+    },
+    {
+      "external_id": "КА-00003445",
+      "manufacturer": "Delta",
+      "mpn": "CGD1233",
+      "display_name": "Аккумуляторная батарея Delta CGD 1233, 12 В 33 А·ч",
+      "technology": "стационарная свинцово-кислотная аккумуляторная батарея AGM серии DELTA CGD",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "source_kind": "official DELTA CGD product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "33 А·ч",
+        "Технология": "AGM",
+        "Габариты": "197 × 130 × 159 мм",
+        "Масса": "11,2 кг",
+        "Расчётный срок службы": "до 15 лет"
+      }
+    }
+  ]
+}

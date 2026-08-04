@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "locale": "ru-BY",
+  "category_external_id": "seo:batteries-ups",
+  "category_slug": "catalog/industrial-batteries/batteries-ups",
+  "series": [
+    {
+      "manufacturer": "EnerSys",
+      "series": "DataSafe HX",
+      "models": ["12HX25", "12HX80", "12HX105", "12HX100S", "12HX135", "12HX150", "12HX205", "12HX300", "12HX330", "12HX400", "12HX505", "12HX385+", "12HX450+", "12HX530+", "12HX600+", "12HX650F-FR+", "12HX700F-FR+"],
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "technology": "VRLA AGM",
+      "name_template": "Аккумулятор {manufacturer} DataSafe {model} для ИБП и ИТ-инфраструктуры",
+      "facts": {
+        "Серия": "DataSafe HX",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощный разряд в системах ИБП и ИТ-инфраструктуре",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "10 лет при 25 °C"
+      }
+    },
+    {
+      "manufacturer": "EnerSys",
+      "series": "PowerSafe V-FT",
+      "models": ["12V30F", "12V38F", "12V92F-FT", "12V100F", "12V100FC", "12V101F", "12V155FS", "12V170FS", "12V190F"],
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "technology": "VRLA TPPL",
+      "name_template": "Аккумулятор {manufacturer} PowerSafe {model} с фронтальными выводами для телекоммуникаций и ИБП",
+      "facts": {
+        "Серия": "PowerSafe V-FT",
+        "Технология": "VRLA TPPL (тонкие пластины из чистого свинца)",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для монтажа и обслуживания в стойке",
+        "Назначение": "телекоммуникации, промышленные ИБП и центры обработки данных"
+      }
+    }
+  ]
+}

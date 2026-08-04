@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "purpose": "Remote official image candidates only. No download, licence assertion, local storage or storefront publication is authorized by this manifest.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004377",
+      "source_page_url": "https://energy.panasonic.com/ap/business/products/lithium/coin-br-standard/models/BR2330",
+      "source_asset_url": "https://energy.panasonic.com/dam/master/images/products/product-image/lithium/510x255_BR2330.png",
+      "source_kind": "official Panasonic Energy BR2330 product page",
+      "verification_note": "The manufacturer page is specifically for BR2330 and exposes this asset as its product image. Visual check: unlabelled BR-series coin cell; the image cannot independently distinguish BR2330 from other BR coin variants. Reuse rights and a local-file hash remain unverified; do not publish."
+    }
+  ]
+}

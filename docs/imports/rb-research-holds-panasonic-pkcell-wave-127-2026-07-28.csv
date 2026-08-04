@@ -1,0 +1,10 @@
+cluster_id,manufacturer_candidate,member_external_ids,representative_name,decision,evidence_url,evidence_summary,retry_condition
+panasonic:2NCR18650BD,Panasonic,КА-00004688,Panasonic 2NCR18650BD 7.4V assembly,hold,,Two-cell pack construction is not established by an exact official manufacturer source,Obtain official pack part number and wiring datasheet.
+panasonic:4NCR18650BD,Panasonic,КА-00005290,Panasonic 4NCR18650BD 14.4V assembly,hold,,Four-cell pack construction is not established by an exact official manufacturer source,Obtain official pack part number and wiring datasheet.
+panasonic:BK3HCDE4BE,Panasonic,ФР-00000825,Panasonic eneloop pro BK-3HCDE/4BE,hold,,Exact BK-3HCDE commercial variant was not confirmed by an official primary source in this pass,Obtain Panasonic official product page or datasheet for BK-3HCDE.
+panasonic:NCR18650BD,Panasonic,КА-00000981|КА-00001835|КА-00004297|КА-00006231,Panasonic NCR18650BD multi-cell assembly,hold,,Records describe multi-cell assemblies; base-cell evidence cannot prove pack wiring or construction,Obtain official assembly part numbers and datasheets.
+panasonic:NCR18650BDS3200MAH10A,Panasonic,КА-00001549,Panasonic NCR18650BD-S 3200mAh 10A,hold,,Exact NCR18650BD-S suffix was not confirmed by an official current product page,Obtain manufacturer datasheet for NCR18650BD-S.
+pkcell:6NIMH,PKCELL,КА-00003907,PKCELL 6Ni-MH AA 7.2V assembly,hold,,Six-cell AA assembly requires verified wiring and exact pack identity,Obtain PKCELL pack datasheet.
+pkcell:AA6V,PKCELL,КА-00003053,PKCELL 5Ni-MH AA 6V assembly,hold,,Five-cell AA assembly requires verified wiring and exact pack identity,Obtain PKCELL pack datasheet.
+pkcell:AAА1,PKCELL,КА-00004262,PKCELL Ni-Zn AA 1.6V 900mWh,hold,,Imported model text is encoding-damaged and lacks an exact PKCELL part number,Normalize source identity and obtain official product page.
+pkcell:АККУМУЛЯТОР9V,PKCELL,КА-00003805,PKCELL 9V Li-ion 650mAh,hold,,Imported model text is encoding-damaged and no exact official product page was identified,Normalize source identity and obtain official product page.

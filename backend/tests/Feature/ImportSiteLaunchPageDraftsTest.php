@@ -53,6 +53,7 @@ class ImportSiteLaunchPageDraftsTest extends TestCase
 
         $this->assertSame('page', $payload['kind']);
         $this->assertSame(['/contacts'], $payload['site']['availablePagePaths']);
+        $this->assertSame(['contacts' => '/contacts'], $payload['site']['availablePages']);
     }
 
     public function test_refuses_to_demote_an_existing_published_page_or_route(): void

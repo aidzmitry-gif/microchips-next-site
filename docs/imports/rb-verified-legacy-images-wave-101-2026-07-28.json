@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "purpose": "Three company-owned, Microchips-watermarked APC assets admitted by the unique catalogue identity plus visual consistency evidence level. Each 1C item maps one-to-one to the same explicit APC MPN in Bitrix; capacity-only and one-to-many matches remain prohibited.",
+  "images": [
+    {
+      "external_id": "КА-00003292",
+      "mpn": "RBC7",
+      "asset_file": "ka-00003292-apc-rbc7.webp",
+      "sha256": "44900e77bedb6a25cf95874143f6b07270e6679ccd5ef592c44de622aefdc4f5",
+      "archive_member": "_shared/upload/iblock/62c/gabk7i3rimheo8lbqq0o7bxw1zxrhc1y.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "unique_catalog_identity_plus_visual_consistency",
+      "catalog_identity_reference": "bitrix-backup://2026-06-23/element/20088",
+      "visual_verification_note": "PASS tier B: the image shows one APC-branded 12 V replacement cartridge with the expected high-current connector and a Microchips watermark. The form factor is consistent with APC RBC7, no contradictory model is visible, and the unique 1C-to-Bitrix manufacturer-plus-MPN mapping supplies the exact identity."
+    },
+    {
+      "external_id": "КА-00005164",
+      "mpn": "RBC23",
+      "asset_file": "ka-00005164-apc-rbc23.png",
+      "sha256": "ad525ac5cf05b6dd90fcf6011c897ca68653e641b77e713f85f50e126e7c9af3",
+      "archive_member": "_shared/upload/iblock/599/e1orf8iyg5tom6fuyeum69spo1st78az.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "unique_catalog_identity_plus_visual_consistency",
+      "catalog_identity_reference": "bitrix-backup://2026-06-23/element/23799",
+      "visual_verification_note": "PASS tier B: the image shows an APC-branded four-battery tray cartridge with its connector and a Microchips watermark. The form factor is consistent with APC RBC23, no contradictory model is visible, and the unique 1C-to-Bitrix manufacturer-plus-MPN mapping supplies the exact identity."
+    },
+    {
+      "external_id": "КА-00003237",
+      "mpn": "APCRBC141",
+      "asset_file": "ka-00003237-apc-apcrbc141.webp",
+      "sha256": "561ec2b260a2763cfd20b95ff39133c6693dc89076e346e98f83cc7730a7d146",
+      "archive_member": "_shared/upload/iblock/693/sqt36q9yp02ompbj6zn4a7s78ntwk1za.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "unique_catalog_identity_plus_visual_consistency",
+      "catalog_identity_reference": "bitrix-backup://2026-06-23/element/23818",
+      "visual_verification_note": "PASS tier B: the image shows a three-section APC replacement-cartridge assembly with the green connector documented for the 72 V SRT2200 family and a Microchips watermark. No contradictory model is visible, and the unique 1C-to-Bitrix manufacturer-plus-MPN mapping supplies the exact identity."
+    }
+  ]
+}

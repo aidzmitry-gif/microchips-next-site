@@ -37,6 +37,8 @@ services:
     restart: unless-stopped
     environment:
       APP_URL: ${PUBLIC_APP_URL}
+      SESSION_SECURE_COOKIE: "true"
+      SESSION_SAME_SITE: lax
     depends_on:
       postgres:
         condition: service_healthy
@@ -47,6 +49,10 @@ services:
 
   worker:
     restart: unless-stopped
+    environment:
+      APP_URL: ${PUBLIC_APP_URL}
+      SESSION_SECURE_COOKIE: "true"
+      SESSION_SAME_SITE: lax
     depends_on:
       backend:
         condition: service_healthy

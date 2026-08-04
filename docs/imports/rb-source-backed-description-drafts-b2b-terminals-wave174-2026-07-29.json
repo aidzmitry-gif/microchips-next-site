@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "purpose": "B2B terminal and mobile-printer battery enrichment from official Zebra, Honeywell, Datalogic, Handheld and Ingenico documentation. Unsupported legacy capacity and compatibility claims are removed. No price, stock, warranty or image-rights claim is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:12162",
+      "identity_scope": "exact",
+      "manufacturer": "Zebra",
+      "mpn": "BTRY-MC55EAB02",
+      "technology": "Li-ion аккумулятор",
+      "display_name": "Аккумулятор Zebra BTRY-MC55EAB02 для MC65 и MC67",
+      "source_url": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/mc67-android-v444-ug-en.pdf",
+      "technical_attributes": {
+        "Номинальная ёмкость": "3600 мА·ч",
+        "Подтверждённая совместимость": "Zebra MC65 и MC67"
+      }
+    },
+    {
+      "external_id": "bitrix:12315",
+      "identity_scope": "exact",
+      "manufacturer": "Zebra",
+      "mpn": "82-97300-02",
+      "technology": "аккумулятор для сканера штрихкодов",
+      "display_name": "Аккумулятор Zebra 82-97300-02 для серии CS4070",
+      "source_url": "https://www.zebra.com/content/dam/zebra_dam/en/guide/corporate/bts-guide-batteries-where-used-hyperlinks-en-us.pdf",
+      "technical_attributes": {
+        "Подтверждённая совместимость": "Zebra CS4070"
+      }
+    },
+    {
+      "external_id": "bitrix:12409",
+      "identity_scope": "exact",
+      "manufacturer": "Zebra",
+      "mpn": "P1002512",
+      "technology": "аккумулятор для мобильного принтера",
+      "display_name": "Аккумулятор Zebra P1002512 для мобильного принтера EM220",
+      "source_url": "https://www.zebra.com/ap/en/about-zebra/company-information/compliance/declarations-of-conformity.html",
+      "technical_attributes": {
+        "Подтверждённая совместимость": "Zebra EM220"
+      }
+    },
+    {
+      "external_id": "bitrix:12418",
+      "identity_scope": "exact",
+      "manufacturer": "Zebra",
+      "mpn": "BT-000314-01",
+      "technology": "аккумулятор для терминала сбора данных",
+      "display_name": "Аккумулятор Zebra BT-000314-01 для TC56 и TC57",
+      "source_url": "https://www.zebra.com/content/dam/zebra_dam/en/guide/corporate/bts-guide-batteries-where-used-hyperlinks-en-us.pdf",
+      "technical_attributes": {
+        "Подтверждённая совместимость": "Zebra TC56 и TC57"
+      }
+    },
+    {
+      "external_id": "bitrix:12327",
+      "identity_scope": "exact",
+      "manufacturer": "Zebra",
+      "mpn": "BT-000318-01",
+      "technology": "аккумулятор для терминала сбора данных",
+      "display_name": "Аккумулятор Zebra BT-000318-01 для TC70X и TC75X",
+      "source_url": "https://www.zebra.com/content/dam/zebra_dam/en/guide/corporate/bts-guide-batteries-where-used-hyperlinks-en-us.pdf",
+      "technical_attributes": {
+        "Подтверждённая совместимость": "Zebra TC70X и TC75X"
+      }
+    },
+    {
+      "external_id": "bitrix:12116",
+      "identity_scope": "model_core",
+      "manufacturer": "Honeywell",
+      "model_core": "BAT-EDA50K-1",
+      "technology": "Li-ion аккумулятор",
+      "display_name": "Аккумулятор Honeywell BAT-EDA50K-1 для EDA50K и EDA51K",
+      "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-gb/localized/accessories-guides/sps-ppr-eda51k-accessory-guide-en-a4.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,8 В",
+        "Номинальная ёмкость": "4000 мА·ч",
+        "Подтверждённая совместимость": "Honeywell ScanPal EDA50K и EDA51K"
+      }
+    },
+    {
+      "external_id": "bitrix:12270",
+      "identity_scope": "model_core",
+      "manufacturer": "Honeywell",
+      "model_core": "BAT-EDA50K-1",
+      "technology": "Li-ion аккумулятор",
+      "display_name": "Аккумулятор Honeywell BAT-EDA50K-1 для EDA50K и EDA51K",
+      "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-gb/localized/accessories-guides/sps-ppr-eda51k-accessory-guide-en-a4.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,8 В",
+        "Номинальная ёмкость": "4000 мА·ч",
+        "Подтверждённая совместимость": "Honeywell ScanPal EDA50K и EDA51K"
+      }
+    },
+    {
+      "external_id": "bitrix:12218",
+      "identity_scope": "exact",
+      "manufacturer": "Datalogic",
+      "mpn": "94ACC1368",
+      "technology": "Li-ion аккумулятор",
+      "display_name": "Аккумулятор Datalogic 94ACC1368 для DL-Memor и CVR2",
+      "source_url": "https://www.datalogic.com/upload/marketlit/manuals/newmemor/dl_memor_multibattery_charger_822000921.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,7 В",
+        "Типичная ёмкость": "1100 мА·ч",
+        "Обозначение батареи": "BP08-000600",
+        "Подтверждённая совместимость": "Datalogic DL-Memor и CVR2"
+      }
+    },
+    {
+      "external_id": "bitrix:12258",
+      "identity_scope": "exact",
+      "manufacturer": "Honeywell",
+      "mpn": "CT50-BTSC",
+      "technology": "аккумулятор для терминала сбора данных",
+      "display_name": "Аккумулятор Honeywell CT50-BTSC для CT40 и CT40 XP",
+      "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/handheld-computers/ct40/documents/sps-ppr-ct40-a-en-ug.pdf?download=false",
+      "technical_attributes": {
+        "Подтверждённая совместимость": "Honeywell CT40 и CT40 XP в конфигурациях, перечисленных производителем"
+      }
+    },
+    {
+      "external_id": "bitrix:12247",
+      "identity_scope": "exact",
+      "manufacturer": "Handheld",
+      "mpn": "NX8-1004",
+      "technology": "Li-ion аккумулятор",
+      "display_name": "Аккумулятор Handheld NX8-1004 для Nautiz X8",
+      "source_url": "https://www.handheldgroup.com/globalassets/downloads/product-information/brochures-and-manuals/nautiz/nautiz-x8-manual.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "3,7 В",
+        "Номинальная ёмкость": "5200 мА·ч",
+        "Номинальная энергия": "19,2 Вт·ч",
+        "Подтверждённая совместимость": "Handheld Nautiz X8",
+        "Особенности": "интеллектуальный индикатор заряда, тёплая замена"
+      }
+    },
+    {
+      "external_id": "bitrix:12124",
+      "identity_scope": "exact",
+      "manufacturer": "Ingenico",
+      "mpn": "F12432566",
+      "technology": "Li-ion аккумулятор в жёстком корпусе",
+      "display_name": "Аккумулятор Ingenico F12432566 для Move 3500 и Move 5000",
+      "source_url": "https://cdn.ingenico.com/binaries/content/assets/germany-smart-terminals/--3.x-pi-produktinfo/pi20-03-akkus-fur-iwl-und-move-serien.pdf",
+      "technical_attributes": {
+        "Номинальная ёмкость": "2900 мА·ч",
+        "Исполнение": "жёсткий корпус",
+        "Подтверждённая совместимость": "Ingenico Move 3500 и Move 5000"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "One exact 1C-to-Bitrix replacement-battery identity with readable model and electrical data on the company-owned legacy product label. The product is compatible equipment, not an OEM Zebra battery. No price, stock, warranty or indexability claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00006847",
+      "manufacturer": "Cameron Sino",
+      "mpn": "CS-ZDS360BL",
+      "display_name": "Совместимый аккумулятор Cameron Sino CS-ZDS360BL для сканеров Zebra DS3600, DS3678 и LI3678",
+      "technology": "Li-ion аккумулятор для сканеров штрихкодов",
+      "source_url": "https://www.cameronsino.ru/",
+      "source_kind": "regional Cameron Sino-branded catalogue listing; specifications cross-checked against the company-owned product label",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип аккумулятора": "Li-ion",
+        "Напряжение": "3,7 В",
+        "Емкость": "2200 мА·ч",
+        "Энергия": "8,14 Вт·ч",
+        "Совместимые сканеры": "Zebra DS3600, DS3678, LI3600, LI3678, LS3600, LS3678",
+        "Заменяемые номера": "BTRY-36IAB0E-00; 82-166537-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+SERVICE MANUAL
+This product uses Lead Free solder.This product complies with the RoHS directive for the European market.
+CONTENTS
+© 2010-12 PRINTED IN JA PAN
+B51-8947-00 (N) 457
+KSC-35S
+RAPID CHARGER
+Charger assy
+(W08-1249-05)
+PARTS LIST .............................................................................. 2
+SPECIFICATIONS ..................................................................... 2
+PC BOARD ................................................................................ 3
+SCHEMATIC DIAGRAM ........................................................... 4
+FLOW CHART ........................................................................... 5
+BATTERY PACK
+ KNB-45L (Li-ion Battery Pack) ........................ BACK COVER
+ KNB-63L (Li-ion Battery Pack) ........................ BACK COVER
+This product (KSC-35S) is different from the KSC-35.
+Do not use the KSC-35 AC adapter.
+KSC-35S
+2
+Document Copyrights
+Copyright 2010 by Kenwood Corporation. All rights re-
+served.
+No part of this manual may be reproduced, translated, 
+distributed, or transmitted in any form or by any means, 
+electronic, mechanical, photocopying, recording, or other-
+wise, for any purpose without the prior written permission 
+of Kenwood.
+Disclaimer
+While every precaution has been taken in the preparation 
+of this manual, Kenwood assumes no responsibility for er-
+rors or omissions. Neither is any liability assumed for dam-
+ages resulting from the use of the information contained 
+herein. Kenwood reserves the right to make changes to any 
+products herein at any time for improvement purposes.
+AC Voltage .....................................................................................................100~240V
+Dimensions (W x H x D) ....................... 3.40 x 1.70 x 3.94 in (86.3 x 43.2 x 100.0 mm)
+Weight (charger only) .....................................................................Approx. 3.4 oz (95g)
+Approximate Charging Times
+ KNB-45L (Li-ion : 7.4V, 2000mAh) ...........................................................180 minutes
+ KNB-63L (Li-ion : 7.4V, 1130mAh) ...........................................................180 minutes
+SPECIFICATIONS
+✽ : New Parts
+Ref. No. Address New 
+parts Parts No. Description Destination
+KSC-35S
+✽ W08-1246-05 AC ADAPTER E
+✽ W08-1247-05 AC ADAPTER K
+✽ W08-1249-05 CHARGER ASSY
+✽ W08-1252-05 AC ADAPTER X
+PARTS LIST
+3
+ABCDEFGH I J
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Q2
+R26
+R4
+R8
+R9
+C15
+R48
+R11 R12
+R36
+R30
+C25
+C11
+R10
+C10
+L2
+L3
+R29
+C22
+R23
+C12
+C13
+R31 R47
+R46
+R33
+R32
+R34
+C14R17
+C9
+JP4
+C18
+C23
+R18
+L4
+R3
+R1
+ZD1
+C4
+C8
+R45
+R37
+R24
+R25
+R44
+R14
+Q5
+ZD2
+ZD3
+C2JP1
+R20
+15 PIN1
+JP2
+R49
+R2
+C7
+R22
+C1
+R5
+R6
+R38
+R21
+R27
+C16
+C17
+L7
+L8
+R19
+R13
+C5
+R15
+C24
+C26
+R39 L6 L5
+R35
+JP3
+R28
+R41
+R40
+Q4
+Q6
+JP5
+C19
+R16
+JP6
+Q3
+Q8
+Q7
+IC3
+R7
+D2
+IC1
+1
+89
+16
+1
+1011
+20
+IC2
+D
+G
+S
+D
+G
+S
+C21
+C20
+J1
+L1
+J2
+LED1
+RG
+J4
+R42
+R43
++
++ B–1
+T1
+B+1
+D1
+J3
+C3
++
+D3
+VR1
+C6
++
+DC JACK
+Q1
+S
+S
+S D
+D
+D
+DG
+B
+C
+E
+CHARGER UNIT  Component side view
+CHARGER UNIT  Foil side view
+Component side
+Foil side
+Layer 1
+Layer 2
+Component side
+Foil side
+Layer 1
+Layer 2
+ Ref. No. Address
+ Q1 6E
+ D1 5B
+ D3 6C
+ LED1 5H
+ Ref. No. Address
+ IC1 10F
+ IC2 12E
+ IC3 13C
+ Q2 9B
+ Q3 13B
+ Q4 11F
+ Q5 10D
+ Q6 10E
+ Q7 13F
+ Q8 12F
+ D2 10D
+ ZD1 10B
+ ZD2 11C
+ ZD3 12D
+PC BOARD   KSC-35S
+4
+KSC-35S SCHEMATIC DIAGRAM
+7
+6
+5
+4
+3
+2
+1
+A B C D E
+C21
+C23
++5V
+R45
+C18
++5V
+C19
+R42
+R38
+R14
+R1 R22
+R44
+R47
+R46
+C20
+R21 R27
+1
+2
+3
+4
+5
+PIN1
++5V
+K2
+K1
+A LED1
+R20
+11
+B+1
+T1
+ZD1
+B-1
++ R13
+C16
+C3
+C7DC JACK
+Input 12V DC
+IC3
+R37
+R24 R25
+Q3
++ +
+C17
+R11
+R35
+C6
+C10
+D3
+L1
++
+Q2
+R7
+Q5
+D2
+Q7
+R36
+R8
+R12
+R10
+R17
+R40
+C13
+C11
+R31
+R29
+R30
+R32
+Comp 3
++ 1
+E2 10
+E19
+C18
++ 16
+– 2
+Rt6
+Ct5
+C211
+D.T4
+– 15
+VCC12
+O.C13
+Vref 14
+GND7
+IC1 +5V
+Q8
+R18
+R41
+R33
+R34
+R9
+VR1
+Q4
+R28
+R16
++Vref
+C8
+C5
+C15
+C14
+C9
+C4
+C2
+C1 Vref
+R19
+R6
+C12
+4
+18
+11
+5
+1
+15
+13
+12
+2
+7
+10
+16
+3
+20
+14
+17
+6
+19
+9
+8 IC2
+TP1
+TP2
+L2
+L3
+L4
+L5
+L6
+Vref
+C25
+R23C22
+R48
+C26
+R39
+L8
+L7
+R15
+R26
+R5
+R3
+Q6
+Q1
+R4
+R2
+C24
+D1
+R43
+JP6
+JP3
+J2
+J1
+JP1
++5V
+J3
+J4
+JP2
+JP4
+JP5
+ZD2 ZD3
+R49
+11
+11
+KSC-35S
+5
+FLOW CHART
+Rapid charge
+Constant charge current
+850mA
+Constant charge voltage
+8.65V
+210min. timer start
+LED: Red
+When rapid charge start
+passage 10min.
+Below 7.5V
+Below 7.6V
+Above 8.85V or Below 5.5V
+Above 8.55V
+Error battery
+timer stop
+LED: Red Flash
+Go to START
+when T contact is off.
+Temperature error
+battery
+LED: Green
+and Red Flash
+when T contact is off.
+Error battery
+LED: Red Flash
+Go to START
+when T contact is off.
+Above 6.1V
+90min. timer stop
+Low voltage battery
+charge: 150mA
+90min. timer start
+LED: Red
+Voltage
+check
+Voltage
+and open/short
+check
+open/short
+check
+Does T
+contact?
+Below 6.1V
+Give all B+ terminal power
+60mA, 5 second
+A1
+A1
+A2
+START
+Passage
+90min.
+Above 8.55V or Below 1.8V
+Yes
+Yes
+No
+No
+Passage 30min.
+Charge current is
+100mA±20mA
+or passage
+210min.
+Detected full charge
+Finish charge
+210min. timer stop
+LED: Green
+Stand-by temperature
+timer 30min. start
+LED: Red
+Timer stop
+0°CT40°C
+T0°C
+or
+T40°C
+A2
+Stand-by temperature
+timer hold
+LED: Red
+Timer
+recount
+0°CT45°C
+T0°C
+or
+T57°C
+ About voltage write down,
+ VB = (B1 + voltage) – Vf  (Vf ≈ 0.25Vdc)
+ Therefore battery voltage must consider 
+Vf of protected reverse connection diode.
+ Battery voltage should be kept inspecting 
+when charge condition and on tempera-
+ture stand-by condition.
+KSC-35S
+2967-3, Ishikawa-machi, Hachioji-shi, Tokyo, 192-8525 Japan
+P .O. BOX 22745, 2201 East Dominguez Street, Long Beach,
+6070 Kestrel Road, Mississauga, Ontario, Canada L5T 1S8
+Rembrücker Str. 15, 63150 Heusenstamm, Germany
+Leuvensesteenweg 248 J, 1800 Vilvoorde, Belgium
+KENWOOD House, Dwight Road, Watford, Herts.,
+Amsterdamseweg 37, 1422 AC Uithoorn, The Netherlands
+Via G. Sirtori, 7/9 20129 Milano, Italy
+Bolivia, 239-08020 Barcelona, Spain
+Talavera Business Park Building A, 4 Talavera Road, 
+North Ryde NSW 2113 Australia
+Suite 2504, 25/F, Tower 2, Nina Tower, No. 8 Yeung Uk Road,
+1 Ang Mo Kio Street 63, Singapore 569110
+CA 90801-5745, U.S.A.
+Tsuen Wan, New Territories, Hong Kong
+WD18 9EB United Kingdom
+L’Etoile Paris Nord 2, 50 Allée des Impressionnistes, 
+Bp 58416 Villepinte, 95944 Roissy Ch De Gaulle Cedex
+BATTERY PACK
+KNB-63L (Li-ion Battery Pack)
+■ External View
+■ Speciﬁ cations
+Voltage .............................................................................7.4V
+Battery capacity ...................................................... 1130mAh
+KNB-45L (Li-ion Battery Pack)
+■ External View
+■ Speciﬁ cations
+Voltage .............................................................................7.4V
+Battery capacity ...................................................... 2000mAh

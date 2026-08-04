@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave228-B exact-MPN manufacturer-primary description refresh stage only.",
+  "locale": "ru-BY",
+  "application_contract": {
+    "stage_only": true,
+    "refresh_existing": true,
+    "refresh_applied": true,
+    "database_apply": false
+  },
+  "products": [
+    {
+      "external_id": "bitrix:1548",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DT 12022",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-12022/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "2.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1458",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DT 12120",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-12120/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "120 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1503",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DT 12150",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-12150/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "150 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3212",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DT 1275",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-1275/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "75 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1417",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DT 6015",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-6015/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "1.5 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1550",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DT 6023",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-6023/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "2.3 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1477",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "DTM 1212",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_1212/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1479",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "HR 12-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/hr/hr-12-12/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1437",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "GP 12-100",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость C20": "100 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1609",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "GP 12-40",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость C20": "42 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1643",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "GP 6-9",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость C20": "8,7 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1624",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "HR 1228W",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Мощность (15 мин до 1,6 В/эл)": "192 Вт/блок"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1635",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "HR 1234W",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Мощность (15 мин до 1,6 В/эл)": "222 Вт/блок"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

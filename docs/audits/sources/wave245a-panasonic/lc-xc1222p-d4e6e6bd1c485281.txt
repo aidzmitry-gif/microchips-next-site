@@ -1,0 +1,496 @@
+DIMENSIONS (MM)
+(Wattage/battery)
+(Ampere/battery)
+All mentioned values are average values
+DURATION OF DISCHARGE VS. DISCHARGE CURRENT
+AMPERE TABLE (25°C)
+WATT TABLE (25°C)
+Contents indicated (including the recycle marking, etc.) are subject to 
+change without notice. Battery case resin: standard (UL94 HB)
+FOR MAIN POWER SUPPLIES. 
+CYCLE LONG-LIFE TYPE
+Specifications
+LC-XC1222P/AP
+Nominal voltage (V)
+12
+Nominal capacity
+20 hours rate (Ah)
+22.0
+Dimensions
+Length (mm)
+76
+Width (mm)
+181
+Total height (mm)
+167
+Approx. mass (kg)
+6.55
+Terminal type
+M5 bolt/nut & threaded post
+Capacity
+(25°C)
+20 hours rate (Ah)
+22.0
+10 hours rate (Ah)
+20.0
+3 hours rate (Ah)
+17.0
+1 hour rate (Ah)
+14.0
+Impedance (mΩ)
+Fully charged battery (25°C)
+12
+Temperature  
+dependency of  
+capacity (%) –  
+20 hours rate
+40°C
+102
+25°C
+100
+0°C
+85
+-15°C
+65
+Remaining capacity 
+(25°C)
+After 3 months (%)
+91
+After 6 months (%)
+82
+After 12 months (%)
+64
+Discharge current (A)
+Duration of discharge
+0.1
+0.3
+1
+3
+10
+30
+100
+1
+3
+5
+10
+30
+60
+3
+5
+10
+20
+30
+0°C
+40°C
+25°C
+-15°C
+(min.)
+(h)
+(L)
+(A)
+167±2
+11.8
+1.7
+22
+11
+12.5
+M5
+M5
+11.8
+181±2
+76±2
+112.7
+(179.5)
+(74.5)
+LC-XC1222P/AP
+Terminal type (option)
+Cut-off 
+5min.
+10min.
+15min.
+20min.
+30min.
+45min.
+1h
+1.5h
+2h
+3h
+4h
+5h
+6h
+10h
+20h
+9.6V
+803
+618
+472
+396
+295
+213
+172
+117
+93.2
+69.4
+53.3
+44.0
+35.4
+24.0
+13.0
+9.9V
+787
+605
+469
+389
+292
+211
+170
+115
+92.5
+69.0
+53.0
+43.7
+35.2
+23.9
+13.0
+10.2V
+767
+590
+459
+383
+289
+209
+167
+112
+90.1
+68.3
+52.6
+43.3
+35.0
+23.6
+12.9
+10.5V
+710
+546
+427
+363
+282
+206
+163
+110
+87.0
+67.3
+52.3
+43.0
+34.5
+23.5
+12.9
+10.8V
+633
+487
+399
+354
+272
+203
+160
+107
+82.8
+65.9
+51.6
+41.9
+34.0
+23.3
+12.8
+Cut-off 
+5min.
+10min.
+15min.
+20min.
+30min.
+45min.
+1h
+1.5h
+2h
+3h
+4h
+5h
+6h
+10h
+20h
+9.6V
+77.2
+59.4
+43.0
+36.7
+25.4
+18.8
+14.9
+9.79
+7.55
+5.85
+4.48
+3.69
+2.96
+2.04
+1.11
+9.9V
+75.7
+58.2
+42.7
+36.1
+25.1
+18.7
+14.5
+9.59
+7.49
+5.82
+4.45
+3.66
+2.95
+2.04
+1.11
+10.2V
+73.7
+56.7
+41.8
+35.5
+24.8
+18.5
+14.2
+9.40
+7.30
+5.76
+4.42
+3.63
+2.93
+2.02
+1.10
+10.5V
+68.4
+52.6
+38.9
+33.7
+24.3
+18.2
+13.9
+9.20
+7.05
+5.58
+4.39
+3.60
+2.89
+2.01
+1.10
+10.8V
+61.0
+46.9
+36.3
+32.8
+23.4
+17.9
+13.6
+8.95
+6.71
+5.56
+4.33
+3.51
+2.84
+1.99
+1.09
+134
+INDIVIDUAL DATA SHEETS
+DISCHARGE CHARACTERISTICS
+DISCHARGE CAPACITY BY TEMPERATURE  
+AND BY DISCHARGE CURRENT
+CHARGING METHOD (25°C)
+CUT-OFF VOLTAGE
+RESIDUAL CAPACITY TEST RESULT
+CONSTANT-VOLTAGE CONSTANT-CURRENT  
+CHARGE CHARACTERISTICS FOR CYCLE USE
+CYCLE LIFE VS. DEPTH OF DISCHARGE (ACC. IEC 61056)
+Duration of discharge
+Terminal voltage (V)
+0.0
+5.0
+10.0
+15.0
+20.0
+1.1A
+5.5A
+22A
+66A
+40
+0
+1
+2
+3
+5
+7
+10
+20
+40
+60
+2
+4
+6
+8
+10
+20
+(min.)
+(h)
+Battery temperature (°C)
+Capacity (%)
+0.05CA
+0.10CA
+0.50CA
+1.00CA
+2.00CA
+3.00CA
+0.25CA
+0
+20
+40
+60
+80
+100
+120
+-15
+0
+15
+30
+45
+Charge time (h)
+Battery voltage (V)
+Charge quantity (%)
+Charge current (CA)
+0
+20
+40
+60
+80
+100
+120
+140
+160
+0
+2
+4
+6
+8
+10
+12
+0.0
+2.0
+4.0
+6.0
+8.0
+10.0
+12.0
+14.0
+16.0
+0.8
+0.6
+0.4
+0.2
+0
+　
+Battery voltage
+Charge quantity (to discharge quantity)
+　　　
+　　　
+　
+　
+　
+1
+2
+3
+Discharge
+ 100% (0.05CA*20H)
+ 50% (0.05CA*10H)
+Charge
+Charge voltage: 14.7V (2.45V/cell)
+Charge current: 0.40CA
+Temperature: 25°C (77°F)
+—
+—
+  —
+—
+Charge current
+0
+20
+40
+60
+80
+100
+120
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+Capacity retention ratio (%)
+Storage period (mth.)
+40°C
+(104°F)
+25°C
+(77°F)
+30°C
+(86°F)
+5°C
+(41°F)
+0
+20
+40
+60
+80
+100
+120
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+Capacity (%)
+Number of cycles (times)
+Ambient temperature
+25°C (77°F)
+Discharge
+depth 100%
+Discharge
+depth 50%
+Discharge
+depth 30%
+1,600
+Discharge current
+1.10A -
+5.50A
+5.50A -
+11.0A
+11.0A -
+22.0A
+22.0A -
+44.0A
+44.0A -
+66.0A
+Cut-off voltage 
+10.5V
+10.2V
+9.9V
+9.3V
+8.7V
+Cycle use
+Control voltage: 14.5V - 14.9V 
+Initial current: 8.80A or smaller
+LC-XC1222P/AP
+135
+The data in this document are for descriptive purposes only and are not intended to make or imply any guarantee or warranty. Regarding handling and safety 
+please consult our VRLA technical handbook chapter ‘Precautions for handling VRLA batteries’.
+INDIVIDUAL DATA SHEETS

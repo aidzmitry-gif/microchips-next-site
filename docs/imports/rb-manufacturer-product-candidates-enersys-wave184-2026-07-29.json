@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:VGM 11",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 11",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 11 Ni-Cd",
+      "slug": "enersys-vgm-11",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "11 А·ч",
+        "Габариты": "46 × 85 × 167 мм",
+        "Типичная масса": "1 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 18",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 18",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 18 Ni-Cd",
+      "slug": "enersys-vgm-18",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "18 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 24",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 24",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 24 Ni-Cd",
+      "slug": "enersys-vgm-24",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "24 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 30",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 30",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 30 Ni-Cd",
+      "slug": "enersys-vgm-30",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "30 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 40",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 40",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 40 Ni-Cd",
+      "slug": "enersys-vgm-40",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "40 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 48",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 48",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 48 Ni-Cd",
+      "slug": "enersys-vgm-48",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "48 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 55",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 55",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 55 Ni-Cd",
+      "slug": "enersys-vgm-55",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "55 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,9 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 65",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 65",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 65 Ni-Cd",
+      "slug": "enersys-vgm-65",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "65 А·ч",
+        "Габариты": "53 × 134 × 364 мм",
+        "Типичная масса": "4,9 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 75",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 75",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 75 Ni-Cd",
+      "slug": "enersys-vgm-75",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "75 А·ч",
+        "Габариты": "53 × 134 × 364 мм",
+        "Типичная масса": "5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 90",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 90",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 90 Ni-Cd",
+      "slug": "enersys-vgm-90",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "90 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 110",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 110",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 110 Ni-Cd",
+      "slug": "enersys-vgm-110",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "110 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "6,3 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 125",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 125",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 125 Ni-Cd",
+      "slug": "enersys-vgm-125",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "125 А·ч",
+        "Габариты": "70 × 164 × 364 мм",
+        "Типичная масса": "7,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 140",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 140",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 140 Ni-Cd",
+      "slug": "enersys-vgm-140",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "140 А·ч",
+        "Габариты": "70 × 164 × 364 мм",
+        "Типичная масса": "7,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 160",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 160",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 160 Ni-Cd",
+      "slug": "enersys-vgm-160",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "160 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,4 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 185",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 185",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 185 Ni-Cd",
+      "slug": "enersys-vgm-185",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "185 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 205",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 205",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 205 Ni-Cd",
+      "slug": "enersys-vgm-205",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "205 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "11,1 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 225",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 225",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 225 Ni-Cd",
+      "slug": "enersys-vgm-225",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "225 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "11,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 250",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 250",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 250 Ni-Cd",
+      "slug": "enersys-vgm-250",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "250 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "12,2 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 270",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 270",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 270 Ni-Cd",
+      "slug": "enersys-vgm-270",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "270 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "15,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 300",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 300",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 300 Ni-Cd",
+      "slug": "enersys-vgm-300",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "300 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "16,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 320",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 320",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 320 Ni-Cd",
+      "slug": "enersys-vgm-320",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "320 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "17 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 340",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 340",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 340 Ni-Cd",
+      "slug": "enersys-vgm-340",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "340 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "17,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 355",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 355",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 355 Ni-Cd",
+      "slug": "enersys-vgm-355",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "355 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "18 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 380",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 380",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 380 Ni-Cd",
+      "slug": "enersys-vgm-380",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "380 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "18,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 400",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 400",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGM 400 Ni-Cd",
+      "slug": "enersys-vgm-400",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGM",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 30 до 120 минут",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,15 В на элемент при 20 °C",
+        "Номинальная ёмкость": "400 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "18,9 кг"
+      }
+    }
+  ]
+}

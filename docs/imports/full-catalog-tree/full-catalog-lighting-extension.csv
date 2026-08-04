@@ -1,0 +1,4 @@
+external_id,parent_external_id,name,path
+seo:lighting,,Освещение,catalog/lighting
+seo:lighting-lamps,seo:lighting,Лампы,catalog/lighting/lamps
+seo:lighting-fixtures,seo:lighting,Светильники,catalog/lighting/fixtures

@@ -1,0 +1,111 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001895",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "HR 6-12",
+      "display_name": "Аккумулятор Delta HR 6-12, 6 В, 12 А·ч",
+      "technology": "VRLA-AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/hr/delta-hr-6-12/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "12 А·ч",
+        "Тип клеммы": "Faston 4,8 мм",
+        "Технология": "VRLA-AGM"
+      }
+    },
+    {
+      "external_id": "КА-00002317",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "FT 12-125 M",
+      "display_name": "Аккумулятор Delta FT 12-125 M, 12 В, 125 А·ч",
+      "technology": "VRLA-AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-125-m/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "125 А·ч",
+        "Тип клеммы": "под болт M8",
+        "Габариты": "436 × 108 × 317 мм",
+        "Масса": "36 кг",
+        "Технология": "VRLA-AGM"
+      }
+    },
+    {
+      "external_id": "КА-00002376",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "GP 6-4.5",
+      "display_name": "Аккумулятор Ventura GP 6-4.5, 6 В, 4,5 А·ч",
+      "technology": "VRLA-AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "4,5 А·ч",
+        "Технология": "VRLA-AGM"
+      }
+    },
+    {
+      "external_id": "КА-00002670",
+      "identity_scope": "exact",
+      "manufacturer": "CSB",
+      "mpn": "HRL1234W F2FR",
+      "display_name": "Аккумулятор CSB HRL1234W F2FR, 12 В, 9 А·ч",
+      "technology": "VRLA-AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-HRL1234W-%E2%80%93-053124.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "9 А·ч",
+        "Тип клеммы": "F2 Faston Tab 250",
+        "Исполнение корпуса": "огнестойкий ABS (FR)",
+        "Технология": "VRLA-AGM"
+      }
+    },
+    {
+      "external_id": "КА-00003548",
+      "identity_scope": "exact",
+      "manufacturer": "Yuasa",
+      "mpn": "NP4-12",
+      "display_name": "Аккумулятор Yuasa NP4-12, 12 В, 4 А·ч",
+      "technology": "VRLA",
+      "source_url": "https://www.yuasa.com/uk/np4-12",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "4 А·ч",
+        "Тип клеммы": "Faston 4,75 мм",
+        "Технология": "VRLA"
+      }
+    },
+    {
+      "external_id": "КА-00005338",
+      "identity_scope": "exact",
+      "manufacturer": "Ventura",
+      "mpn": "HRL 12260W",
+      "display_name": "Аккумулятор Ventura HRL 12260W, 12 В, 60 А·ч",
+      "technology": "VRLA-AGM",
+      "source_url": "https://ventura-battery.ru/upload/documents/hrl/HRL_12260W.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "60 А·ч (C20)",
+        "Ёмкость при C10": "62 А·ч",
+        "Технология": "VRLA-AGM"
+      }
+    },
+    {
+      "external_id": "КА-00006757",
+      "identity_scope": "exact",
+      "manufacturer": "Delta",
+      "mpn": "FTS 12-100 X",
+      "display_name": "Аккумулятор Delta FTS 12-100 X, 12 В, 100 А·ч",
+      "technology": "VRLA-AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_100_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "100 А·ч",
+        "Технология": "VRLA-AGM"
+      }
+    }
+  ]
+}

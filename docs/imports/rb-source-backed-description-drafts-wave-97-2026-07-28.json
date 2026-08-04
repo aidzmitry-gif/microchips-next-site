@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "purpose": "Twelve unique non-electronic ROBITON chargers from 1C enriched from exact official product pages. No price, stock, image-rights or publication claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001996",
+      "manufacturer": "ROBITON",
+      "mpn": "Li-1",
+      "display_name": "Зарядное устройство ROBITON Li-1 для Li-ion аккумуляторов",
+      "technology": "одноканальное зарядное устройство для Li-ion",
+      "source_url": "https://www.robiton.ru/product/15095/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип аккумуляторов": "Li-ion 3,7 В",
+        "Количество каналов": "1",
+        "Поддерживаемые форматы": "10440–26650, включая 18650 и 21700"
+      }
+    },
+    {
+      "external_id": "ФР-00001353",
+      "manufacturer": "ROBITON",
+      "mpn": "Li-2",
+      "display_name": "Зарядное устройство ROBITON Li-2 для 1–2 Li-ion аккумуляторов",
+      "technology": "двухканальное автоматическое зарядное устройство Li-ion CC/CV",
+      "source_url": "https://www.robiton.ru/product/15096/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип аккумуляторов": "Li-ion 3,7 В",
+        "Количество каналов": "2 независимых",
+        "Алгоритм заряда": "CC/CV",
+        "Ток заряда": "500 или 1000 мА",
+        "Питание": "Micro-USB, 5 В"
+      }
+    },
+    {
+      "external_id": "КА-00004375",
+      "manufacturer": "ROBITON",
+      "mpn": "Li-4 Plus",
+      "display_name": "Зарядное устройство ROBITON Li-4 Plus на 4 канала",
+      "technology": "четырёхканальное зарядное устройство для Li-ion, Ni-MH и Ni-Cd",
+      "source_url": "https://www.robiton.ru/product/17520/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Li-ion, Ni-MH, Ni-Cd",
+        "Количество каналов": "4 независимых",
+        "Алгоритм Li-ion": "CC/CV",
+        "Алгоритм Ni-MH/Ni-Cd": "−ΔV и поддерживающий заряд"
+      }
+    },
+    {
+      "external_id": "КА-00001214",
+      "manufacturer": "ROBITON",
+      "mpn": "MasterCharger 1B USB",
+      "display_name": "Зарядное устройство ROBITON MasterCharger 1B USB",
+      "technology": "универсальное одноканальное зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/17022/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Li-ion 3,7 В, LiFePO4 3,2 В, Ni-MH, Ni-Cd",
+        "Количество каналов": "1",
+        "Поддерживаемые форматы": "AA, AAA, C и распространённые Li-ion форм-факторы"
+      }
+    },
+    {
+      "external_id": "КА-00002690",
+      "manufacturer": "ROBITON",
+      "mpn": "MasterCharger 4T5 Pro",
+      "display_name": "Зарядное устройство ROBITON MasterCharger 4T5 Pro",
+      "technology": "многофункциональное четырёхканальное зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/17667/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-MH, Ni-Cd, Li-ion, LiFePO4",
+        "Количество каналов": "4",
+        "Режимы": "заряд, разряд, тест, восстановление",
+        "Индикация": "LCD",
+        "Дополнительный выход": "USB"
+      }
+    },
+    {
+      "external_id": "ФР-00001430",
+      "manufacturer": "ROBITON",
+      "mpn": "MasterCharger Pro",
+      "display_name": "Зарядное устройство ROBITON MasterCharger Pro",
+      "technology": "автоматическое четырёхканальное зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/13613/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-MH, Ni-Cd, Li-ion",
+        "Количество каналов": "4",
+        "Функции": "тестирование и выбор тока",
+        "Защита": "от перегрева",
+        "Индикация": "LCD",
+        "Питание": "от сети или 12 В"
+      }
+    },
+    {
+      "external_id": "КА-00002973",
+      "manufacturer": "ROBITON",
+      "mpn": "MultiCharger LCD2",
+      "display_name": "Зарядное устройство ROBITON MultiCharger LCD2",
+      "technology": "многоформатное автоматическое зарядное устройство Ni-MH/Ni-Cd",
+      "source_url": "https://www.robiton.ru/product/18258/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-MH, Ni-Cd",
+        "Поддерживаемые форматы": "1–6 AA/AAA, 1–4 C/D, 1–2 Крона 9 В",
+        "Количество каналов": "8 независимых",
+        "Алгоритм": "−ΔV",
+        "Функция": "тестирование",
+        "Индикация": "LCD"
+      }
+    },
+    {
+      "external_id": "КА-00004428",
+      "manufacturer": "ROBITON",
+      "mpn": "MultiCharger2",
+      "display_name": "Зарядное устройство ROBITON MultiCharger2",
+      "technology": "многоформатное автоматическое зарядное устройство Ni-MH/Ni-Cd",
+      "source_url": "https://www.robiton.ru/product/18521/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-MH, Ni-Cd",
+        "Поддерживаемые форматы": "AA, AAA, C, D и Крона 9 В",
+        "Количество каналов": "8 независимых",
+        "Алгоритм": "−ΔV",
+        "Функция": "тестирование"
+      }
+    },
+    {
+      "external_id": "КА-00001213",
+      "manufacturer": "ROBITON",
+      "mpn": "Smart 2",
+      "display_name": "Зарядное устройство ROBITON Smart 2 на 2 канала",
+      "technology": "двухканальное автоматическое зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/11476/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Li-ion, Ni-MH, Ni-Cd",
+        "Количество каналов": "2",
+        "Алгоритм Li-ion": "CC/CV",
+        "Алгоритм Ni-MH/Ni-Cd": "поддерживающий заряд",
+        "Питание": "Micro-USB, 5 В"
+      }
+    },
+    {
+      "external_id": "КА-00001387",
+      "manufacturer": "ROBITON",
+      "mpn": "Smart4 C3",
+      "display_name": "Зарядное устройство ROBITON Smart4 C3 на 4 канала",
+      "technology": "четырёхканальное автоматическое зарядное устройство AA/AAA",
+      "source_url": "https://www.robiton.ru/product/17262/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-Zn, Ni-MH, Ni-Cd",
+        "Поддерживаемые форматы": "AA, AAA",
+        "Количество каналов": "4",
+        "Ток заряда": "250 мА",
+        "Питание": "Micro-USB, 5 В",
+        "Режим": "Trickle Charge"
+      }
+    },
+    {
+      "external_id": "КА-00004556",
+      "manufacturer": "ROBITON",
+      "mpn": "SmartCharger/IV",
+      "display_name": "Зарядное устройство ROBITON SmartCharger/IV",
+      "technology": "автоматическое зарядное устройство для цилиндрических и призматических аккумуляторов",
+      "source_url": "https://www.robiton.ru/product/10635/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-MH, Ni-Cd, Li-ion/Li-Po 3,7 В",
+        "Количество каналов": "1–2",
+        "Поддерживаемые форматы": "AA, AAA и совместимые призматические аккумуляторы"
+      }
+    },
+    {
+      "external_id": "ФР-00000866",
+      "manufacturer": "ROBITON",
+      "mpn": "SmartDisplay 1000",
+      "display_name": "Зарядное устройство ROBITON SmartDisplay 1000",
+      "technology": "автоматическое зарядное устройство Ni-MH/Ni-Cd",
+      "source_url": "https://www.robiton.ru/product/11072/",
+      "source_kind": "official ROBITON product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Типы аккумуляторов": "Ni-MH, Ni-Cd",
+        "Поддерживаемые форматы": "1–4 AA/AAA"
+      }
+    }
+  ]
+}

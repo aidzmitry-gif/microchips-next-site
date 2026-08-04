@@ -1,0 +1,18 @@
+{
+  "category": "seo:primary-cells",
+  "scoped_staging_records": 1630,
+  "transfer_statuses": {
+    "existing_one_c_exact_link": 1,
+    "hold_duplicate_candidate": 4,
+    "hold_linked_identity_candidate": 22,
+    "hold_one_c_collision": 32,
+    "legacy_only_draft_candidate": 1571
+  },
+  "safe_legacy_drafts": 1571,
+  "records_with_media_reference": 1571,
+  "unique_selected_file_references": 1571,
+  "safe_drafts_without_media_reference": 0,
+  "safe_drafts_missing_media_index": 0,
+  "canonical_one_c_media_imports": 0,
+  "indexable_pages_changed": 0
+}

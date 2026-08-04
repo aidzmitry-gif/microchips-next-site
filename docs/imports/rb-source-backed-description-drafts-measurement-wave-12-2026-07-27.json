@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific measurement-instrument editorial drafts from model manuals and technically detailed product cards. No commercial facts, image-rights claim or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002910",
+      "manufacturer": "UNI-T",
+      "mpn": "UT51",
+      "display_name": "Мультиметр UNI-T UT51",
+      "technology": "Цифровой мультиметр",
+      "source_url": "https://uni-t.hu/userfiles/webshop/products/attachments/UT51-55%282%29.pdf",
+      "source_kind": "Model-specific UNI-T UT51–UT55 operating manual",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Цифровой мультиметр",
+        "Измерение напряжения": "Постоянное и переменное",
+        "Измерение тока": "Постоянное и переменное",
+        "Дополнительные измерения": "Сопротивление, ёмкость, частота и температура",
+        "Тестовые функции": "Диоды и прозвонка цепи",
+        "Защита": "Защита от перегрузки по диапазонам согласно руководству"
+      }
+    },
+    {
+      "external_id": "КА-00005067",
+      "manufacturer": "SUNSHINE",
+      "mpn": "SS-302A",
+      "display_name": "USB-тестер SUNSHINE SS-302A",
+      "technology": "Цифровой USB-тестер",
+      "source_url": "https://gsmserver.es/usb-tester-sunshine-ss-302a/",
+      "source_kind": "Model-specific technical product card",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "USB-тестер",
+        "Диапазон напряжения": "2,8–30 В",
+        "Максимальный ток": "5 А",
+        "Поддержка быстрой зарядки": "QC4",
+        "Интерфейс": "USB Type-A male и USB Type-A female",
+        "Контролируемые параметры": "Напряжение, ток, время зарядки и потреблённая ёмкость"
+      }
+    }
+  ]
+}

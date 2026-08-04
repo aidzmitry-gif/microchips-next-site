@@ -1,0 +1,807 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave223-A source-backed description candidates only; no staging, publication, price, stock, identity, URL or media changes.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:HR1218W",
+      "current_name": "Аккумулятор CSB HR1218W для ИБП",
+      "manufacturer": "CSB",
+      "model": "HR1218W",
+      "description_ru": "Аккумулятор CSB HR1218W. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:HR1232W",
+      "current_name": "Аккумулятор CSB HR1232W для ИБП",
+      "manufacturer": "CSB",
+      "model": "HR1232W",
+      "description_ru": "Аккумулятор CSB HR1232W. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12150WG",
+      "current_name": "Аккумулятор CSB HRL12150WG для высокомощных ИБП",
+      "manufacturer": "CSB",
+      "model": "HRL12150WG",
+      "description_ru": "Аккумулятор CSB HRL12150WG. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12330WG",
+      "current_name": "Аккумулятор CSB HRL12330WG для высокомощных ИБП",
+      "manufacturer": "CSB",
+      "model": "HRL12330WG",
+      "description_ru": "Аккумулятор CSB HRL12330WG. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:HRL1250W",
+      "current_name": "Аккумулятор CSB HRL1250W для высокомощных ИБП",
+      "manufacturer": "CSB",
+      "model": "HRL1250W",
+      "description_ru": "Аккумулятор CSB HRL1250W. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12540W",
+      "current_name": "Аккумулятор CSB HRL12540W для высокомощных ИБП",
+      "manufacturer": "CSB",
+      "model": "HRL12540W",
+      "description_ru": "Аккумулятор CSB HRL12540W. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:RUM6290",
+      "current_name": "Аккумулятор CSB RUM6290 для высокомощных ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "RUM6290",
+      "description_ru": "Аккумулятор CSB RUM6290. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:UPS123607",
+      "current_name": "Аккумулятор CSB UPS123607 для высокомощных ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "UPS123607",
+      "description_ru": "Аккумулятор CSB UPS123607. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12460",
+      "current_name": "Аккумулятор CSB UPS12460 для высокомощных ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "UPS12460",
+      "description_ru": "Аккумулятор CSB UPS12460. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12580",
+      "current_name": "Аккумулятор CSB UPS12580 для высокомощных ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "UPS12580",
+      "description_ru": "Аккумулятор CSB UPS12580. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2000",
+      "current_name": "Аккумулятор CSB XPL2000 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL2000",
+      "description_ru": "Аккумулятор CSB XPL2000. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2200",
+      "current_name": "Аккумулятор CSB XPL2200 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL2200",
+      "description_ru": "Аккумулятор CSB XPL2200. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2700",
+      "current_name": "Аккумулятор CSB XPL2700 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL2700",
+      "description_ru": "Аккумулятор CSB XPL2700. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL3500",
+      "current_name": "Аккумулятор CSB XPL3500 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL3500",
+      "description_ru": "Аккумулятор CSB XPL3500. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4200",
+      "current_name": "Аккумулятор CSB XPL4200 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL4200",
+      "description_ru": "Аккумулятор CSB XPL4200. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4700",
+      "current_name": "Аккумулятор CSB XPL4700 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL4700",
+      "description_ru": "Аккумулятор CSB XPL4700. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL5700",
+      "current_name": "Аккумулятор CSB XPL5700 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL5700",
+      "description_ru": "Аккумулятор CSB XPL5700. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL6700",
+      "current_name": "Аккумулятор CSB XPL6700 для ИБП и центров обработки данных",
+      "manufacturer": "CSB",
+      "model": "XPL6700",
+      "description_ru": "Аккумулятор CSB XPL6700. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7000FT",
+      "current_name": "Аккумулятор CSB XPL7000FT с фронтальными выводами для ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "XPL7000FT",
+      "description_ru": "Аккумулятор CSB XPL7000FT. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7700FT",
+      "current_name": "Аккумулятор CSB XPL7700FT с фронтальными выводами для ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "XPL7700FT",
+      "description_ru": "Аккумулятор CSB XPL7700FT. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL8000FT",
+      "current_name": "Аккумулятор CSB XPL8000FT с фронтальными выводами для ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "XPL8000FT",
+      "description_ru": "Аккумулятор CSB XPL8000FT. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:csb:XPL9000FT",
+      "current_name": "Аккумулятор CSB XPL9000FT с фронтальными выводами для ИБП и ЦОД",
+      "manufacturer": "CSB",
+      "model": "XPL9000FT",
+      "description_ru": "Аккумулятор CSB XPL9000FT. Согласно закреплённому источниковому описанию производителя, технология — VRLA AGM.",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-csb-wave178-2026-07-29.json",
+      "local_evidence_sha256": "fc4f7dceb3d82c38d2c4fc4f6ee86c57baa3a522da8ee3cb77f40d89f17987b1",
+      "verified_facts": {
+        "technology": "VRLA AGM"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 100",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 100 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 100",
+      "description_ru": "Аккумулятор EnerSys RL 100. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 11",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 11 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 11",
+      "description_ru": "Аккумулятор EnerSys RL 11. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 120",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 120 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 120",
+      "description_ru": "Аккумулятор EnerSys RL 120. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 140",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 140 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 140",
+      "description_ru": "Аккумулятор EnerSys RL 140. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 150",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 150 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 150",
+      "description_ru": "Аккумулятор EnerSys RL 150. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 160",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 160 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 160",
+      "description_ru": "Аккумулятор EnerSys RL 160. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 18",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 18 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 18",
+      "description_ru": "Аккумулятор EnerSys RL 18. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 185",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 185 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 185",
+      "description_ru": "Аккумулятор EnerSys RL 185. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 200",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 200 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 200",
+      "description_ru": "Аккумулятор EnerSys RL 200. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 230",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 230 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 230",
+      "description_ru": "Аккумулятор EnerSys RL 230. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 24",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 24 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 24",
+      "description_ru": "Аккумулятор EnerSys RL 24. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 270",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 270 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 270",
+      "description_ru": "Аккумулятор EnerSys RL 270. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 30",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 30 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 30",
+      "description_ru": "Аккумулятор EnerSys RL 30. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 300",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 300 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 300",
+      "description_ru": "Аккумулятор EnerSys RL 300. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 340",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 340 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 340",
+      "description_ru": "Аккумулятор EnerSys RL 340. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 370",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 370 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 370",
+      "description_ru": "Аккумулятор EnerSys RL 370. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 400",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 400 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 400",
+      "description_ru": "Аккумулятор EnerSys RL 400. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 435",
+      "current_name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 435 Ni-Cd",
+      "manufacturer": "EnerSys",
+      "model": "RL 435",
+      "description_ru": "Аккумулятор EnerSys RL 435. Согласно закреплённому источниковому описанию производителя, технология — Ni-Cd.",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "local_evidence_path": "docs/imports/rb-source-backed-description-drafts-enersys-wave187-2026-07-29.json",
+      "local_evidence_sha256": "5b43b23381547cd5cb814f807c4d469dfd10036c54db7a2824b442b825366880",
+      "verified_facts": {
+        "technology": "Ni-Cd"
+      },
+      "identity_scope": "existing_queue_mpn_only",
+      "content_scope": "exact_model_and_technology_only",
+      "checked_at": "2026-07-29",
+      "safe_to_stage": false
+    }
+  ]
+}

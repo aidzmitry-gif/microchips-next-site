@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded noindex RB storefront preview. Every record has an already applied manufacturer-backed description. This manifest never authorizes prices, stock claims, Offer schema or indexability.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004377",
+      "manufacturer": "Panasonic",
+      "mpn": "BR2330",
+      "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000C230.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "panasonic-br2330"
+    },
+    {
+      "external_id": "КА-00003325",
+      "manufacturer": "OMRON",
+      "mpn": "CJ1W-BAT01",
+      "source_url": "https://www.ia.omron.com/products/family/2712/specification.html",
+      "category_slug": "catalog/electronic-components",
+      "product_slug": "omron-cj1w-bat01"
+    },
+    {
+      "external_id": "ФР-00002108",
+      "manufacturer": "FIAMM",
+      "mpn": "12FGH36",
+      "source_url": "https://www.fiamm.ru/equipment/FGH-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fgh36"
+    },
+    {
+      "external_id": "КА-00000110",
+      "manufacturer": "Maxell",
+      "mpn": "CR2032",
+      "source_url": "https://biz.maxell.com/en/primary_batteries/data_sheet/CR2032_Data_sheet_e.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "maxell-cr2032-1hf"
+    },
+    {
+      "external_id": "КА-00001063",
+      "manufacturer": "FIAMM",
+      "mpn": "12FGH23",
+      "source_url": "https://www.fiamm.ru/equipment/FGH-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fgh23",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00002172",
+      "manufacturer": "Delta",
+      "mpn": "DT401",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt401",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005764",
+      "manufacturer": "Delta",
+      "mpn": "DTM6012",
+      "source_url": "https://delta-batt.com/series/dtm/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm6012",
+      "replace_categories": true
+    }
+  ]
+}

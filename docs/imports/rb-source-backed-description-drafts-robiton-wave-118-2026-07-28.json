@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "purpose": "Batch of exact Robiton model-core descriptions from official product pages. No price, stock, local warranty or image reuse is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003840",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "EN1500S/II",
+      "display_name": "Стабилизированный блок питания Robiton EN1500S/II, 1500 мА",
+      "technology": "импульсный стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/14528/",
+      "technical_attributes": {
+        "Максимальный выходной ток": "1500 мА",
+        "Выходное напряжение": "3 / 4,5 / 5 / 6 / 7,5 / 9 / 12 В",
+        "Количество сменных насадок": "7"
+      }
+    },
+    {
+      "external_id": "КА-00004406",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "IR12-2000S",
+      "display_name": "Стабилизированный блок питания Robiton IR12-2000S, 12 В, 2000 мА",
+      "technology": "стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/14937/",
+      "technical_attributes": {
+        "Выходное напряжение": "12 В",
+        "Максимальный выходной ток": "2000 мА",
+        "Штекер": "5,5 × 2,5 / 12 мм",
+        "Полярность": "плюс в центре"
+      }
+    },
+    {
+      "external_id": "КА-00004035",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "DN500",
+      "display_name": "Блок питания Robiton DN500, 500 мА",
+      "technology": "нестабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/04397/",
+      "technical_attributes": {
+        "Максимальный выходной ток": "500 мА",
+        "Выходное напряжение": "3 / 4,5 / 6 / 7,5 / 9 / 12 В",
+        "Количество сменных насадок": "8"
+      }
+    },
+    {
+      "external_id": "КА-00006936",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "TN1000S",
+      "display_name": "Стабилизированный блок питания Robiton TN1000S, 1000 мА",
+      "technology": "импульсный стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/14527/",
+      "technical_attributes": {
+        "Максимальный выходной ток": "1000 мА",
+        "Выходное напряжение": "3 / 4,5 / 5 / 6 / 7,5 / 9 / 12 В",
+        "Количество сменных насадок": "7"
+      }
+    },
+    {
+      "external_id": "КА-00003983",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "TN2000S",
+      "display_name": "Стабилизированный блок питания Robiton TN2000S, 2000 мА",
+      "technology": "импульсный стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/16034/",
+      "technical_attributes": {
+        "Максимальный выходной ток": "2000 мА",
+        "Выходное напряжение": "3–12 В",
+        "Количество сменных насадок": "7",
+        "Защита": "от короткого замыкания и перегрузки"
+      }
+    },
+    {
+      "external_id": "КА-00004242",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "IR9-500S",
+      "display_name": "Стабилизированный блок питания Robiton IR9-500S, 9 В, 500 мА",
+      "technology": "стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/14931/",
+      "technical_attributes": {
+        "Выходное напряжение": "9 В",
+        "Максимальный выходной ток": "500 мА",
+        "Штекер": "5,5 × 2,1 / 12 мм",
+        "Полярность": "минус в центре"
+      }
+    },
+    {
+      "external_id": "КА-00006664",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "IR12-24W",
+      "display_name": "Блок питания для Wi-Fi-роутеров Robiton IR12-24W, 12 В, 2000 мА",
+      "technology": "стабилизированный блок питания",
+      "source_url": "https://www.robiton.ru/product/15697/",
+      "technical_attributes": {
+        "Выходное напряжение": "12 В",
+        "Максимальный выходной ток": "2000 мА",
+        "Штекер": "4,0 × 1,7 / 12 мм",
+        "Полярность": "плюс в центре"
+      }
+    },
+    {
+      "external_id": "КА-00004716",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "AK02",
+      "display_name": "Зарядное устройство Robiton Ecocharger AK02",
+      "technology": "зарядное устройство для цилиндрических элементов",
+      "source_url": "https://www.robiton.ru/product/14056/",
+      "technical_attributes": {
+        "Количество каналов": "1–4",
+        "Поддерживаемые аккумуляторы": "Ni-MH / Ni-Cd AA и AAA, 1,2 В",
+        "Дополнительная функция производителя": "восстановление алкалиновых AA и AAA, 1,5 В"
+      }
+    },
+    {
+      "external_id": "КА-00003012",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LAC612-500",
+      "display_name": "Зарядное устройство Robiton LAC612-500 для аккумуляторов 6/12 В",
+      "technology": "зарядное устройство для герметизированных свинцово-кислотных аккумуляторов",
+      "source_url": "https://www.robiton.ru/product/14885/",
+      "technical_attributes": {
+        "Поддерживаемое напряжение аккумулятора": "6 или 12 В",
+        "Рекомендуемая ёмкость аккумулятора": "3–6 А·ч",
+        "Ток заряда": "500 мА",
+        "Поддерживаемые технологии": "VRLA / SLA / AGM / GEL"
+      }
+    },
+    {
+      "external_id": "КА-00001254",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "MasterCharger 850",
+      "display_name": "Зарядное устройство Robiton MasterCharger 850",
+      "technology": "универсальное зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/11937/",
+      "technical_attributes": {
+        "Количество каналов": "1–4",
+        "Поддерживаемая химия": "Li-ion 3,7 В / LiFePO4 3,2 В / Ni-MH и Ni-Cd 1,2 В",
+        "Поддерживаемые типоразмеры": "14500–18650, AA и AAA"
+      }
+    },
+    {
+      "external_id": "КА-00003011",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "9V90 FAST",
+      "display_name": "Зарядное устройство Robiton 9V90 FAST для аккумуляторов «Крона»",
+      "technology": "зарядное устройство для аккумуляторов форм-фактора 9 В",
+      "source_url": "https://www.robiton.ru/product/18105/",
+      "technical_attributes": {
+        "Количество аккумуляторов": "1–2",
+        "Поддерживаемая химия": "Li-ion 8,4 В / Ni-MH 9 В",
+        "Питание устройства": "Micro-USB, 5 В / 1 А"
+      }
+    },
+    {
+      "external_id": "ФР-00001866",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "ProCharger1000",
+      "display_name": "Зарядное устройство Robiton ProCharger1000 с LCD",
+      "technology": "интеллектуальное зарядное устройство",
+      "source_url": "https://www.robiton.ru/product/11673/",
+      "technical_attributes": {
+        "Количество каналов": "4 независимых",
+        "Поддерживаемые аккумуляторы": "Ni-MH / Ni-Cd AA и AAA",
+        "Ток заряда": "200–1000 мА",
+        "Функции": "заряд, тест, разряд и восстановление",
+        "Индикация": "LCD"
+      }
+    }
+  ]
+}

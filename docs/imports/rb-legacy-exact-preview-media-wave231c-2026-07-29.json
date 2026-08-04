@@ -1,0 +1,29 @@
+{
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:2831",
+      "media_id": 607,
+      "content_sha256": "97f2f74e7bf600ef4fbeb9d9716d5133957ea283cd656b8a7294069fb90882d9",
+      "storage_path": "legacy-staging/rb/bitrix-2831-80378.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "S 12/17 G5",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Wave231-A visual inspection of the company-owned original shows the exact visible label S12/17 G5; it matches the corrected product MPN.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3117",
+      "media_id": 834,
+      "content_sha256": "d55a893ff54034b9a2cebc3827e57ea4c862b5dccd5ac3a7edfe1b6bf8bf713c",
+      "storage_path": "legacy-staging/rb/bitrix-3117-80322.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "S 12/6.6 S",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Wave231-A visual inspection of the company-owned original shows the exact visible label S12/6.6 S; it matches the corrected product MPN.",
+      "reviewed_at": "2026-07-29"
+    }
+  ]
+}

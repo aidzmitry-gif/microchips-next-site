@@ -1,0 +1,181 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:XPL2000",
+      "manufacturer": "CSB",
+      "mpn": "XPL2000",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl2000"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2200",
+      "manufacturer": "CSB",
+      "mpn": "XPL2200",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl2200"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2700",
+      "manufacturer": "CSB",
+      "mpn": "XPL2700",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl2700"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL3500",
+      "manufacturer": "CSB",
+      "mpn": "XPL3500",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl3500"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4200",
+      "manufacturer": "CSB",
+      "mpn": "XPL4200",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl4200"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4700",
+      "manufacturer": "CSB",
+      "mpn": "XPL4700",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl4700"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL5700",
+      "manufacturer": "CSB",
+      "mpn": "XPL5700",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl5700"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL6700",
+      "manufacturer": "CSB",
+      "mpn": "XPL6700",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl6700"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7000FT",
+      "manufacturer": "CSB",
+      "mpn": "XPL7000FT",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl7000ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7700FT",
+      "manufacturer": "CSB",
+      "mpn": "XPL7700FT",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl7700ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL8000FT",
+      "manufacturer": "CSB",
+      "mpn": "XPL8000FT",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl8000ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL9000FT",
+      "manufacturer": "CSB",
+      "mpn": "XPL9000FT",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xpl9000ft"
+    },
+    {
+      "external_id": "manufacturer:csb:HR1218W",
+      "manufacturer": "CSB",
+      "mpn": "HR1218W",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hr1218w"
+    },
+    {
+      "external_id": "manufacturer:csb:HR1232W",
+      "manufacturer": "CSB",
+      "mpn": "HR1232W",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hr1232w"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL1250W",
+      "manufacturer": "CSB",
+      "mpn": "HRL1250W",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl1250w"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12150WG",
+      "manufacturer": "CSB",
+      "mpn": "HRL12150WG",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl12150wg"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12330WG",
+      "manufacturer": "CSB",
+      "mpn": "HRL12330WG",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl12330wg"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12540W",
+      "manufacturer": "CSB",
+      "mpn": "HRL12540W",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl12540w"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS123607",
+      "manufacturer": "CSB",
+      "mpn": "UPS123607",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-ups123607"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12460",
+      "manufacturer": "CSB",
+      "mpn": "UPS12460",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-ups12460"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12580",
+      "manufacturer": "CSB",
+      "mpn": "UPS12580",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-ups12580"
+    },
+    {
+      "external_id": "manufacturer:csb:RUM6290",
+      "manufacturer": "CSB",
+      "mpn": "RUM6290",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-rum6290"
+    }
+  ]
+}

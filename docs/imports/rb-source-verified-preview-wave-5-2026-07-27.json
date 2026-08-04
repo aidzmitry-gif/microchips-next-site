@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "One bounded noindex RB storefront preview with source-backed content and verified company-owned image.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00002021",
+      "manufacturer": "Delta",
+      "mpn": "DTM12150L",
+      "source_url": "https://delta-battery.ru/catalog/dtm-l/delta-dtm-12150-l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm12150l",
+      "replace_categories": true
+    }
+  ]
+}

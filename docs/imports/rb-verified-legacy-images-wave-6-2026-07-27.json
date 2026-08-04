@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "Company-owned legacy Bitrix image with exact visible model verification for Delta DTM12150L.",
+  "images": [
+    {
+      "external_id": "ФР-00002021",
+      "mpn": "DTM12150L",
+      "asset_file": "lok563cp0obv2teo2706vcoejaz5yui1.png",
+      "sha256": "47cd1787d89e3f6e8ed42208226db07957c916bd7154f9461f665a60640021c1",
+      "archive_member": "_shared/upload/iblock/59a/lok563cp0obv2teo2706vcoejaz5yui1.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible label reads DELTA Battery DTM 12150 L, 12V 150Ah; it exactly matches the verified MPN and manufacturer."
+    }
+  ]
+}

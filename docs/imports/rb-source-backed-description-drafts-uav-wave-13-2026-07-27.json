@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific DJI UAV battery editorial draft from DJI technical specifications. No commercial facts, image-rights claim or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005348",
+      "manufacturer": "DJI",
+      "mpn": "BWX260-5000-15.4",
+      "display_name": "Интеллектуальная полётная батарея DJI Mavic 3",
+      "technology": "Интеллектуальная полётная батарея Li-ion 4S",
+      "source_url": "https://www.dji.com/mavic-3/downloads",
+      "source_kind": "Official DJI Mavic 3 technical specifications",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Совместимость": "DJI Mavic 3 series",
+        "Модель": "BWX260-5000-15.4",
+        "Ёмкость": "5000 мА·ч",
+        "Номинальное напряжение": "15,4 В",
+        "Предельное напряжение зарядки": "17,6 В",
+        "Тип": "Li-ion 4S",
+        "Энергия": "77 Вт·ч",
+        "Масса": "335,5 г",
+        "Температура зарядки": "5–40 °C"
+      }
+    }
+  ]
+}

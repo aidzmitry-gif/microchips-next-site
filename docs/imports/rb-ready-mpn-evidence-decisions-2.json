@@ -1,0 +1,54 @@
+{
+  "decisions": [
+    {
+      "candidate_id": 11,
+      "external_id_1c": "КА-00005514",
+      "confirmed_mpn": "VG12-100",
+      "manufacturer": "Ventura",
+      "category": "GEL",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-vg/vg-12-100/",
+      "source_kind": "official Ventura product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 12,
+      "external_id_1c": "КА-00003397",
+      "confirmed_mpn": "GP6-12",
+      "manufacturer": "Ventura",
+      "category": "AGM",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "source_kind": "official Ventura documentation index",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 29,
+      "external_id_1c": "КА-00004855",
+      "confirmed_mpn": "VG12-200",
+      "manufacturer": "Ventura",
+      "category": "GEL",
+      "source_url": "https://ventura-battery.ru/upload/documents/vg/VG_12-200.pdf",
+      "source_kind": "official Ventura product datasheet",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 38,
+      "external_id_1c": "КА-00002048",
+      "confirmed_mpn": "GP12-7.2",
+      "manufacturer": "Ventura",
+      "category": "AGM",
+      "source_url": "https://ventura-battery.ru/upload/documents/gp/GP_12-7.2.pdf",
+      "source_kind": "official Ventura product datasheet",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 39,
+      "external_id_1c": "КА-00003227",
+      "confirmed_mpn": "GPL12-75",
+      "manufacturer": "Ventura",
+      "category": "AGM",
+      "source_url": "https://ventura-battery.ru/upload/documents/gpl/GPL_12-75.pdf",
+      "source_kind": "official Ventura product datasheet",
+      "checked_at": "2026-07-26"
+    }
+  ]
+}

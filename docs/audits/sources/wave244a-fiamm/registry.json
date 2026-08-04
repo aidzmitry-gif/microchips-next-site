@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-30",
+  "prior_exclusions_sha256": "b757ca562cef23b0941fd33ff23b41527dbb3cd065e916c5475ccea2474b56ec",
+  "sources": [
+    {
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FGH-FGHL_web.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "FIAMM Industrial RUS / FIAMM Energy Technology",
+      "manufacturer_primary": true,
+      "snapshot_path": "docs/audits/sources/wave244a-fiamm/fiamm-12fgh36-c09923e51dfc9413.pdf",
+      "snapshot_sha256": "c09923e51dfc9413794aef9bbacc3b66b4a01e73b32cb93d3dad5f5bb2789811",
+      "expected_exact_models": [
+        "12FGH36"
+      ]
+    },
+    {
+      "source_url": "https://www.fiamm.ru/services/faq/voprosy-po-podboru/",
+      "source_kind": "official_manufacturer_service_document",
+      "source_publisher": "FIAMM Industrial RUS / FIAMM Energy Technology",
+      "manufacturer_primary": true,
+      "snapshot_path": "docs/audits/sources/wave244a-fiamm/fiamm-4sla150-2089ca2044c9396e.html",
+      "snapshot_sha256": "2089ca2044c9396ecd711963996abcbab6a822b53679e38ada6e3f10ed0265e8",
+      "expected_exact_models": [
+        "4SLA150"
+      ]
+    }
+  ]
+}

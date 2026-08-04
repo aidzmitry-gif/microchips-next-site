@@ -1,0 +1,43 @@
+{
+    "schema": "rb_homepage_rollback_v1",
+    "site_key": "microchips-by",
+    "domain": "microchips.by",
+    "locale": "ru-BY",
+    "path": "/",
+    "release_manifest_sha256": "9f335aaf1acf0171b04baf1b1bd0a641a84cc962af893ccfc8df0497d08ffa4a",
+    "released_state_sha256": "796e2efb8620661c950f3dc49b8c8d6c16a5d680d25438d96225767f05bda481",
+    "restore_state_sha256": "52113529e44697599ff180ae9e9ade806ff6590d244ee084a0e616b4e3cea4fc",
+    "restore": {
+        "url": {
+            "id": 1,
+            "site_id": 4,
+            "path": "/",
+            "locale": "ru-BY",
+            "target_type": "page",
+            "target_id": 1,
+            "is_indexable": false
+        },
+        "page": {
+            "id": 1,
+            "site_id": 4,
+            "locale": "ru-BY",
+            "slug": "home",
+            "title": "Microchips Беларусь",
+            "h1": "Промышленные аккумуляторы и технические решения",
+            "content": "Демо-контент для разработки. Перед запуском замените его подтверждёнными региональными условиями, контактами, документами и экспертными материалами.",
+            "is_published": true
+        },
+        "seo": {
+            "id": 1,
+            "site_id": 4,
+            "locale": "ru-BY",
+            "resource_type": "page",
+            "resource_id": 1,
+            "canonical_path": "/",
+            "title": "Microchips Беларусь",
+            "description": null,
+            "is_indexable": false,
+            "schema": null
+        }
+    }
+}

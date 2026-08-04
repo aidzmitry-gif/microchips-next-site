@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact-MPN editorial drafts for two JB Capacitors variants. No publication, price, availability, warranty or image rights are asserted.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003204",
+      "manufacturer": "JB Capacitors",
+      "mpn": "JRB1E222M05001300250000B",
+      "display_name": "Алюминиевый электролитический конденсатор JB Capacitors JRB 2200 мкФ, 25 В",
+      "technology": "Радиальный полярный алюминиевый электролитический конденсатор серии JRB",
+      "source_url": "https://www.jbcapacitors.com/wp-content/uploads/2024/10/PartNumber.pdf",
+      "source_kind": "JB Capacitors part-number reference; exact-MPN dimensions cross-checked against distributor technical listing",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Радиальный алюминиевый электролитический конденсатор",
+        "Серия": "JRB",
+        "Ёмкость": "2200 мкФ",
+        "Номинальное напряжение": "25 В",
+        "Допуск": "±20%",
+        "Рабочая температура": "до 105 °C",
+        "Ресурс серии": "2000 ч при 105 °C",
+        "Габариты": "13 × 25 мм",
+        "Шаг выводов": "5 мм"
+      }
+    },
+    {
+      "external_id": "КА-00003205",
+      "manufacturer": "JB Capacitors",
+      "mpn": "JRB1C152M05001000200000B",
+      "display_name": "Алюминиевый электролитический конденсатор JB Capacitors JRB 1500 мкФ, 16 В",
+      "technology": "Радиальный полярный алюминиевый электролитический конденсатор серии JRB",
+      "source_url": "https://www.jbcapacitors.com/wp-content/uploads/2024/10/PartNumber.pdf",
+      "source_kind": "JB Capacitors part-number reference; exact-MPN dimensions cross-checked against distributor technical listing",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Радиальный алюминиевый электролитический конденсатор",
+        "Серия": "JRB",
+        "Ёмкость": "1500 мкФ",
+        "Номинальное напряжение": "16 В",
+        "Допуск": "±20%",
+        "Рабочая температура": "до 105 °C",
+        "Ресурс серии": "2000 ч при 105 °C",
+        "Габариты": "10 × 20 мм",
+        "Шаг выводов": "5 мм"
+      }
+    }
+  ]
+}

@@ -18,7 +18,7 @@
         </include>
     </source>
     <php>
-        <env name="APP_ENV" value="testing"/>
+        <env name="APP_ENV" value="testing" force="true"/>
         <!-- Fixed key so tests are self-contained (Filament/Livewire view rendering
              needs an encryption key). Testing-only value, never used in production. -->
         <env name="APP_KEY" value="base64:ubgQuIxjlkQkP7kh6XHITQjX09Ti35ovNqprTyAFYao="/>
@@ -26,9 +26,13 @@
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="BROADCAST_CONNECTION" value="null"/>
         <env name="CACHE_STORE" value="array"/>
-        <env name="DB_CONNECTION" value="sqlite"/>
-        <env name="DB_DATABASE" value=":memory:"/>
-        <env name="DB_URL" value=""/>
+        <!-- Force the isolated in-memory database even when PHPUnit is invoked
+             from a Compose service that already exports production-like
+             PostgreSQL variables. Without force="true", RefreshDatabase can
+             migrate:fresh the live local catalogue. -->
+        <env name="DB_CONNECTION" value="sqlite" force="true"/>
+        <env name="DB_DATABASE" value=":memory:" force="true"/>
+        <env name="DB_URL" value="" force="true"/>
         <env name="MAIL_MAILER" value="array"/>
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>

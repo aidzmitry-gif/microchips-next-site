@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "purpose": "Four source-verified RB noindex preview pages. Images are handled by a separate exact-model media gate.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002816",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 1233 L",
+      "source_url": "https://delta-batt.com/series/dtm_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1233-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003848",
+      "manufacturer": "FIAMM",
+      "mpn": "12FIT60",
+      "source_url": "https://www.fiamm.ru/equipment/FIT-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fit60",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005708",
+      "manufacturer": "APC",
+      "mpn": "SRT192BP2",
+      "source_url": "https://www.se.com/us/en/product/SRT192BP2/apc-smartups-online-srt-battery-pack-for-8-10kva-extended-runtime-model-192v/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-srt192bp2",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005756",
+      "manufacturer": "IPPON",
+      "mpn": "Innova G2 1000",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1kVA-427357/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-innova-g2-1000",
+      "replace_categories": true
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "purpose": "Fourteen unique non-electronic 1C products enriched from direct manufacturer sources. No price, stock, media rights or publication claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00006759",
+      "manufacturer": "CyberPower",
+      "mpn": "OLS1000ERT2UA",
+      "display_name": "ИБП CyberPower OLS1000ERT2UA, 1000 ВА / 900 Вт",
+      "technology": "онлайн-ИБП с двойным преобразованием и чистой синусоидой",
+      "source_url": "https://www.cyberpower.com/global/en/product/sku/ols1000ert2ua",
+      "source_kind": "official CyberPower product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Полная мощность": "1000 ВА",
+        "Активная мощность": "900 Вт",
+        "Топология": "online, двойное преобразование",
+        "Форма выходного сигнала": "чистая синусоида",
+        "Исполнение": "rack/tower",
+        "Выходы": "8 × IEC C13",
+        "Номинальное напряжение": "230 В",
+        "Время переключения": "0 мс"
+      }
+    },
+    {
+      "external_id": "КА-00005733",
+      "manufacturer": "CyberPower",
+      "mpn": "PR750ELCD",
+      "display_name": "ИБП CyberPower PR750ELCD, 750 ВА / 675 Вт",
+      "technology": "линейно-интерактивный ИБП с AVR и чистой синусоидой",
+      "source_url": "https://web2.cyberpower.com/global/en/product/sku/pr750elcd",
+      "source_kind": "official CyberPower product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Полная мощность": "750 ВА",
+        "Активная мощность": "675 Вт",
+        "Топология": "линейно-интерактивная",
+        "Форма выходного сигнала": "чистая синусоида",
+        "Стабилизация": "AVR",
+        "Выходы": "6 × IEC C13",
+        "Интерфейсы": "USB, RS-232",
+        "Отображение состояния": "LCD",
+        "Замена батареи": "горячая замена"
+      }
+    },
+    {
+      "external_id": "КА-00005524",
+      "manufacturer": "CyberPower",
+      "mpn": "UT1100EG",
+      "display_name": "ИБП CyberPower UT1100EG, 1100 ВА / 630 Вт",
+      "technology": "линейно-интерактивный ИБП с AVR",
+      "source_url": "https://www.cyberpower.com/VN/EN/product/sku/ut1100eg",
+      "source_kind": "official CyberPower product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Полная мощность": "1100 ВА",
+        "Активная мощность": "630 Вт",
+        "Топология": "линейно-интерактивная",
+        "Стабилизация": "AVR",
+        "Выходы": "4 универсальные розетки",
+        "Номинальное напряжение": "230 В ±10 %",
+        "Назначение": "ПК, POS-системы и сетевое оборудование"
+      }
+    },
+    {
+      "external_id": "КА-00006872",
+      "manufacturer": "APC by Schneider Electric",
+      "mpn": "SMT3000IC",
+      "display_name": "ИБП APC Smart-UPS SMT3000IC, 3000 ВА / 2700 Вт",
+      "technology": "линейно-интерактивный ИБП с чистой синусоидой",
+      "source_url": "https://www.se.com/uk/en/product/SMT3000IC/apc-smartups-line-interactive-3kva-tower-230v-8x-iec-c13%2B2x-iec-c19-outlets-smartconnect-port%2Bsmartslot-avr-lcd/",
+      "source_kind": "official Schneider Electric product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Полная мощность": "3000 ВА",
+        "Активная мощность": "2700 Вт",
+        "Топология": "линейно-интерактивная",
+        "Форма выходного сигнала": "чистая синусоида",
+        "Исполнение": "tower",
+        "Номинальное напряжение": "230 В",
+        "Выходы": "8 × IEC C13 и 2 × IEC C19",
+        "Интерфейсы": "SmartConnect, SmartSlot",
+        "Отображение состояния": "LCD"
+      }
+    },
+    {
+      "external_id": "КА-00001846",
+      "manufacturer": "Eaton",
+      "mpn": "9E1000I",
+      "display_name": "ИБП Eaton 9E1000I, 1000 ВА / 800 Вт",
+      "technology": "онлайн-ИБП с двойным преобразованием",
+      "source_url": "https://www.eaton.com/in/en-us/skuPage.9E1000I.html",
+      "source_kind": "official Eaton product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Полная мощность": "1000 ВА",
+        "Активная мощность": "800 Вт",
+        "Топология": "online, двойное преобразование",
+        "Исполнение": "tower",
+        "Вход": "IEC C14",
+        "Выходы": "4 × IEC C13",
+        "Номинальное напряжение": "230 В",
+        "Габариты": "144 × 228 × 356 мм"
+      }
+    },
+    {
+      "external_id": "КА-00002489",
+      "manufacturer": "MEAN WELL",
+      "mpn": "IRM-15-12",
+      "display_name": "AC/DC модуль питания MEAN WELL IRM-15-12, 12 В / 1,25 А / 15 Вт",
+      "technology": "импульсный AC/DC модуль питания для монтажа на печатную плату",
+      "source_url": "https://www.meanwell.com/Upload/PDF/IRM-15/IRM-15-spec.pdf",
+      "source_kind": "official MEAN WELL IRM-15 specification",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "12 В",
+        "Номинальный выходной ток": "1,25 А",
+        "Номинальная мощность": "15 Вт",
+        "Диапазон входного напряжения": "85–305 В AC или 120–430 В DC",
+        "КПД": "до 82 %",
+        "Монтаж": "на печатную плату",
+        "Защита": "от перегрузки"
+      }
+    },
+    {
+      "external_id": "КА-00002488",
+      "manufacturer": "MEAN WELL",
+      "mpn": "IRM-30-24",
+      "display_name": "AC/DC модуль питания MEAN WELL IRM-30-24, 24 В / 1,3 А / 30 Вт",
+      "technology": "импульсный AC/DC модуль питания для монтажа на печатную плату",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page49.html",
+      "source_kind": "official MEAN WELL product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "24 В",
+        "Номинальный выходной ток": "1,3 А",
+        "Номинальная мощность": "30 Вт",
+        "Допуск": "±2,5 %",
+        "Пульсации и шум": "до 240 мВ пик-пик",
+        "КПД": "до 88,5 %"
+      }
+    },
+    {
+      "external_id": "КА-00001286",
+      "manufacturer": "MEAN WELL",
+      "mpn": "LRS-350-24",
+      "display_name": "Блок питания MEAN WELL LRS-350-24, 24 В / 14,6 А / 350 Вт",
+      "technology": "импульсный AC/DC блок питания закрытого исполнения",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page5.html",
+      "source_kind": "official MEAN WELL product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "24 В",
+        "Номинальный выходной ток": "14,6 А",
+        "Номинальная мощность": "350 Вт",
+        "Регулировка выходного напряжения": "21,6–28,8 В",
+        "Пульсации и шум": "до 150 мВ пик-пик",
+        "КПД": "88 %",
+        "Габариты": "215 × 115 × 30 мм"
+      }
+    },
+    {
+      "external_id": "ФР-00001523",
+      "manufacturer": "Phoenix Contact",
+      "mpn": "2938646",
+      "display_name": "Трёхфазный источник питания Phoenix Contact QUINT-PS-3X400-500AC/24DC/40, 24 В / 40 А",
+      "technology": "трёхфазный AC/DC источник питания для DIN-рейки",
+      "source_url": "https://www.phoenixcontact.com/en-ca/products/power-supply-quint-ps-3x400-500ac24dc40-2938646",
+      "source_kind": "official Phoenix Contact product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Артикул производителя": "2938646",
+        "Выходное напряжение": "24 В DC",
+        "Номинальный выходной ток": "40 А",
+        "Диапазон входного напряжения": "3 × 320–575 В AC или 450–800 В DC",
+        "Монтаж": "DIN-рейк",
+        "Степень защиты": "IP20",
+        "Рабочая температура": "от −25 до +70 °C",
+        "Статус изделия": "снято с производства; замена для новых систем — 2904623"
+      }
+    },
+    {
+      "external_id": "КА-00002068",
+      "manufacturer": "MEAN WELL",
+      "mpn": "UHP-500-24",
+      "display_name": "AC/DC блок питания MEAN WELL UHP-500-24, 24 В / 20,9 А / 501,6 Вт",
+      "technology": "низкопрофильный AC/DC блок питания с коррекцией коэффициента мощности",
+      "source_url": "https://www.meanwell.com/Upload/PDF/UHP-500%28R%29/UHP-500-spec.pdf",
+      "source_kind": "official MEAN WELL UHP-500 specification",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "24 В",
+        "Номинальный выходной ток": "20,9 А",
+        "Номинальная мощность": "501,6 Вт",
+        "Регулировка выходного напряжения": "22,8–25,2 В",
+        "Пульсации и шум": "до 240 мВ пик-пик",
+        "КПД": "94,5 %",
+        "Коррекция коэффициента мощности": "PFC"
+      }
+    },
+    {
+      "external_id": "КА-00007148",
+      "manufacturer": "MEAN WELL",
+      "mpn": "DDR-120D-24",
+      "display_name": "DC/DC преобразователь MEAN WELL DDR-120D-24, 24 В / 5 А / 120 Вт",
+      "technology": "DC/DC преобразователь для DIN-рейки",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page97.html",
+      "source_kind": "official MEAN WELL product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "24 В",
+        "Номинальный выходной ток": "5 А",
+        "Номинальная мощность": "120 Вт",
+        "Диапазон входного напряжения": "67,2–154 В DC",
+        "Пульсации и шум": "до 50 мВ пик-пик",
+        "КПД": "91 %",
+        "Монтаж": "DIN-рейк"
+      }
+    },
+    {
+      "external_id": "КА-00003555",
+      "manufacturer": "MEAN WELL",
+      "mpn": "HDR-30-12",
+      "display_name": "Блок питания MEAN WELL HDR-30-12 для DIN-рейки, 12 В / 2 А / 24 Вт",
+      "technology": "узкий импульсный AC/DC блок питания для DIN-рейки",
+      "source_url": "https://www.meanwell.com/Upload/PDF/HDR-30/HDR-30-SPEC.PDF",
+      "source_kind": "official MEAN WELL HDR-30 specification",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "12 В",
+        "Номинальный выходной ток": "2 А",
+        "Номинальная мощность": "24 Вт",
+        "Диапазон входного напряжения": "85–264 В AC или 120–370 В DC",
+        "Регулировка выходного напряжения": "10,8–13,8 В",
+        "КПД": "88 %",
+        "Монтаж": "DIN-рейк"
+      }
+    },
+    {
+      "external_id": "КА-00004651",
+      "manufacturer": "MEAN WELL",
+      "mpn": "RSD-300F-12",
+      "display_name": "DC/DC преобразователь MEAN WELL RSD-300F-12, 12 В / 25 А / 300 Вт",
+      "technology": "промышленный DC/DC преобразователь",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page101.html",
+      "source_kind": "official MEAN WELL product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "12 В",
+        "Номинальный выходной ток": "25 А",
+        "Номинальная мощность": "300 Вт",
+        "Диапазон входного напряжения": "43,2–100,8 В DC или 50,4–93,6 В DC в зависимости от версии",
+        "Пульсации и шум": "до 120 мВ пик-пик",
+        "КПД": "91 %"
+      }
+    },
+    {
+      "external_id": "КА-00004650",
+      "manufacturer": "MEAN WELL",
+      "mpn": "SD-350C-24",
+      "display_name": "DC/DC преобразователь MEAN WELL SD-350C-24, 24 В / 14,6 А / 350,4 Вт",
+      "technology": "промышленный DC/DC преобразователь",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page99.html",
+      "source_kind": "official MEAN WELL product catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Выходное напряжение": "24 В",
+        "Номинальный выходной ток": "14,6 А",
+        "Номинальная мощность": "350,4 Вт",
+        "Диапазон входного напряжения": "36–72 В DC",
+        "Пульсации и шум": "до 150 мВ пик-пик",
+        "КПД": "81 %"
+      }
+    }
+  ]
+}

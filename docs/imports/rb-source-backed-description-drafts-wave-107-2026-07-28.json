@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "purpose": "Four exact industrial-battery descriptions backed by manufacturer evidence and, for the Cyclon X Cell rating, a company-owned physical-label asset. No price, stock, local warranty or indexability claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004769",
+      "manufacturer": "Ventura",
+      "mpn": "GT 06 270",
+      "display_name": "Тяговый аккумулятор Ventura GT 06 270, 6 В",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM серии Ventura GT для тягового применения",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "source_kind": "official Ventura industrial-battery catalogue with the exact GT 06 270 row",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Ёмкость C5": "282 А·ч до 1,70 В/элемент",
+        "Ёмкость C20": "334 А·ч до 1,70 В/элемент",
+        "Технология": "VRLA AGM",
+        "Назначение": "тяговое применение",
+        "Габариты": "295 × 178 × 360 мм",
+        "Масса": "47 кг",
+        "Тип вывода": "AM"
+      }
+    },
+    {
+      "external_id": "КА-00005166",
+      "manufacturer": "B.B. Battery",
+      "mpn": "UPS 12220W",
+      "display_name": "Аккумулятор B.B. Battery UPS 12220W, 12 В, 1320 Вт/блок",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM серии UPS для высокомощного короткого разряда",
+      "source_url": "https://www.bb-battery.ru/products/ups/",
+      "source_kind": "official regional B.B. Battery UPS series page with the exact UPS 12220W row",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Мощность при 15-минутном разряде": "1320 Вт/блок до 1,6 В/элемент",
+        "Технология": "VRLA AGM",
+        "Габариты корпуса": "228 × 139 × 200 мм",
+        "Полная высота": "207 мм",
+        "Масса": "17,8 кг",
+        "Тип вывода": "I2, опция B5",
+        "Рекомендованный режим": "резервирование до 60 минут"
+      }
+    },
+    {
+      "external_id": "ФР-00002343",
+      "manufacturer": "CSB",
+      "mpn": "UPS123606",
+      "display_name": "Высокотоковый аккумулятор CSB UPS123606, 12 В, 360 Вт",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM для высокотоковых ИБП",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-UPS123606-%E2%80%93-053124.pdf",
+      "source_kind": "official CSB UPS123606 datasheet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная мощность": "360 Вт при 5 мин до 9,60 В на блок при 25 °C",
+        "Технология": "VRLA AGM",
+        "Максимальный зарядный ток": "3 А",
+        "Максимальный разрядный ток": "130 А с выводом F2",
+        "Внутреннее сопротивление": "около 20,7 мОм",
+        "Габариты": "150,9 × 51,0 × 98,6 мм",
+        "Масса": "около 1,97 кг",
+        "Тип вывода": "F2; F1 доступен как вариант"
+      }
+    },
+    {
+      "external_id": "КА-00005195",
+      "manufacturer": "EnerSys",
+      "mpn": "X Cell",
+      "display_name": "Аккумулятор EnerSys Cyclon X Cell, 2 В, 5 А·ч",
+      "technology": "герметичный свинцово-кислотный аккумулятор Cyclon с тонкими пластинами из чистого свинца и AGM-сепараторами",
+      "source_url": "https://www.enersys.com/en-gb/products/batteries/cyclon/cyclon/",
+      "source_kind": "official EnerSys Cyclon series page plus company-owned exact physical-label evidence",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение на этикетке": "2 В",
+        "Ёмкость на этикетке": "5,0 А·ч",
+        "Серия": "EnerSys Cyclon",
+        "Исполнение": "X Cell",
+        "Технология": "тонкие пластины из чистого свинца, AGM",
+        "Конструкция": "герметичная перезаряжаемая батарея в металлическом цилиндрическом корпусе"
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "site": "microchips-by",
+  "checked_at": "2026-07-29",
+  "policy": {
+    "device_compatibility_does_not_identify_aftermarket_pack": true,
+    "exact_identity_requires_first_party_snapshot_and_exact_oem_part": true
+  },
+  "evidence": [
+    {
+      "product_external_id": "bitrix:2570",
+      "classification": "exact_safe",
+      "source_id": "icom_bp_210n",
+      "source_assertion": "Icom identifies BP-210N as its Ni-MH battery pack with 7.2 V, 1480 mAh minimum and 1650 mAh typical capacity.",
+      "verified_facts": "oem_part=BP-210N|chemistry=Ni-MH|voltage=7.2V|capacity_min=1480mAh|capacity_typical=1650mAh",
+      "unsupported_legacy_claims": "legacy_1500mAh_is_not_an_exact_official_rating",
+      "conflict_reason": "",
+      "replacement_manufacturer": "Icom",
+      "replacement_mpn": "BP-210N"
+    },
+    {
+      "product_external_id": "bitrix:2576",
+      "classification": "conflict",
+      "source_id": "icom_bp_234",
+      "source_assertion": "Icom identifies BP-234 as a non-rechargeable lithium battery pack rated 9.0 V and 3300 mAh.",
+      "verified_facts": "oem_part=BP-234|chemistry=non-rechargeable_lithium|voltage=9.0V|capacity=3300mAh",
+      "unsupported_legacy_claims": "Li-ion|7.2V",
+      "conflict_reason": "Legacy title says rechargeable Li-ion and 7.2 V; the official page says non-rechargeable lithium and 9.0 V.",
+      "replacement_manufacturer": "",
+      "replacement_mpn": ""
+    },
+    {
+      "product_external_id": "bitrix:2580",
+      "classification": "conflict",
+      "source_id": "icom_bp_252",
+      "source_assertion": "Icom identifies BP-252 as a 7.2 V Li-ion battery pack with 1000 mAh minimum and 1050 mAh typical capacity.",
+      "verified_facts": "oem_part=BP-252|chemistry=Li-ion|voltage=7.2V|capacity_min=1000mAh|capacity_typical=1050mAh",
+      "unsupported_legacy_claims": "980mAh",
+      "conflict_reason": "Legacy 980 mAh capacity conflicts with the official minimum and typical ratings.",
+      "replacement_manufacturer": "",
+      "replacement_mpn": ""
+    },
+    {
+      "product_external_id": "bitrix:2581",
+      "classification": "conflict",
+      "source_id": "icom_bp_256",
+      "source_assertion": "Icom identifies BP-256 as a 7.4 V Li-ion battery pack with 1620 mAh minimum and 1700 mAh typical capacity.",
+      "verified_facts": "oem_part=BP-256|chemistry=Li-ion|voltage=7.4V|capacity_min=1620mAh|capacity_typical=1700mAh",
+      "unsupported_legacy_claims": "7.2V",
+      "conflict_reason": "Legacy 7.2 V conflicts with the official 7.4 V rating.",
+      "replacement_manufacturer": "",
+      "replacement_mpn": ""
+    },
+    {
+      "product_external_id": "bitrix:2582",
+      "classification": "exact_safe",
+      "source_id": "icom_bp_264",
+      "source_assertion": "Icom identifies BP-264 as its 7.2 V 1400 mAh Ni-MH battery pack.",
+      "verified_facts": "oem_part=BP-264|chemistry=Ni-MH|voltage=7.2V|capacity=1400mAh",
+      "unsupported_legacy_claims": "radio_compatibility_not_imported",
+      "conflict_reason": "",
+      "replacement_manufacturer": "Icom",
+      "replacement_mpn": "BP-264"
+    },
+    {
+      "product_external_id": "bitrix:26300",
+      "classification": "compatibility_only",
+      "source_id": "baofeng_uv5r_1800",
+      "source_assertion": "Baofeng's product page describes an original 1800 mAh battery compatible with UV-5R, but the legacy title provides no stable battery MPN.",
+      "verified_facts": "device_compatibility=UV-5R|capacity=1800mAh|brand_page=Baofeng",
+      "unsupported_legacy_claims": "offered_pack_stable_identity",
+      "conflict_reason": "Compatibility and capacity do not establish a bounded battery MPN for the offered pack.",
+      "replacement_manufacturer": "",
+      "replacement_mpn": ""
+    }
+  ]
+}

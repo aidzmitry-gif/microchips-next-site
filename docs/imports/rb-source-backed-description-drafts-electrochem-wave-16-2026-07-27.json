@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific Electrochem primary-cell editorial draft from the manufacturer product-series specification. No commercial facts, image-rights claim or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001248",
+      "manufacturer": "Electrochem",
+      "mpn": "PMX150-AA-3B1065",
+      "display_name": "Литиевый элемент Electrochem PMX150-AA-3B1065",
+      "technology": "Первичный литиевый элемент Lithium / Sulfuryl Chloride",
+      "source_url": "https://www.electrochem.com.cn/products/primary/highrate/pmx/3B1065.pdf",
+      "source_kind": "Electrochem PMX150 3B1065 model-specific technical data sheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Первичный литиевый элемент, не перезаряжаемый",
+        "Типоразмер": "AA",
+        "Химическая система": "Lithium / Sulfuryl Chloride",
+        "Напряжение холостого хода при 25 °C": "3,9 В",
+        "Номинальная ёмкость": "1,6 А·ч",
+        "Номинальный ток разряда": "20 мА",
+        "Максимальный непрерывный ток": "150 мА",
+        "Диаметр": "13,7 мм",
+        "Длина": "53,2 мм",
+        "Рабочая температура": "−20…+150 °C"
+      }
+    }
+  ]
+}

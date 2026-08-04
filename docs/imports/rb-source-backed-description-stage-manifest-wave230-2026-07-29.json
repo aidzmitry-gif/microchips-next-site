@@ -1,0 +1,1469 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave230 source-backed descriptions for all verified-media cards in the frozen denominator.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1164",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "technology": "VRLA AGM",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/custom-upload/Energy%20%26%20Building/Batteries/Secondary%20Batteries/Valve%20Regulated%20Lead-Acid%20Batteries/Panasonic%20VRLA%20Batteries%20VRLA%20Handbook.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "LC-P1220P"
+    },
+    {
+      "external_id": "bitrix:1397",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/1409843489126408192.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA1208"
+    },
+    {
+      "external_id": "bitrix:1413",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07630/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA12-1.3"
+    },
+    {
+      "external_id": "bitrix:1414",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07624/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA6-1.3"
+    },
+    {
+      "external_id": "bitrix:1415",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 12-1.3"
+    },
+    {
+      "external_id": "bitrix:1416",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 6-1.3"
+    },
+    {
+      "external_id": "bitrix:1433",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 100-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1434",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 100-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1438",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GPL 12-100"
+    },
+    {
+      "external_id": "bitrix:1472",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/89.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA12120"
+    },
+    {
+      "external_id": "bitrix:1491",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07635/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA12-12"
+    },
+    {
+      "external_id": "bitrix:1492",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07628/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA6-12"
+    },
+    {
+      "external_id": "bitrix:1514",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 150-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1518",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MR 155-12FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1527",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dtm/dtm-1217/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "DTM 1217"
+    },
+    {
+      "external_id": "bitrix:1536",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/70.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA12180"
+    },
+    {
+      "external_id": "bitrix:1544",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07636/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA12-18"
+    },
+    {
+      "external_id": "bitrix:1545",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 12-18"
+    },
+    {
+      "external_id": "bitrix:1547",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/41.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA1222"
+    },
+    {
+      "external_id": "bitrix:1549",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dtm/dtm-12022/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "DTM 12022"
+    },
+    {
+      "external_id": "bitrix:1558",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-12200/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "DT 12200"
+    },
+    {
+      "external_id": "bitrix:1562",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 200-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1575",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GPL 12-250"
+    },
+    {
+      "external_id": "bitrix:1582",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/61.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA1233"
+    },
+    {
+      "external_id": "bitrix:1592",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GPL 12-33"
+    },
+    {
+      "external_id": "bitrix:1606",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 12-4.5"
+    },
+    {
+      "external_id": "bitrix:1612",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HRL.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HRL 50-12"
+    },
+    {
+      "external_id": "bitrix:1625",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/BC.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "BC 7.2-12"
+    },
+    {
+      "external_id": "bitrix:1631",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HRL.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HRL 75-12"
+    },
+    {
+      "external_id": "bitrix:1640",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HR 9-12"
+    },
+    {
+      "external_id": "bitrix:1717",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/2200",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/2200"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1723",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/225",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/225"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1737",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/280",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/280"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1791",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/1010",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A602/1010"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2742",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/100 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/100 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2743",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/100",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2758",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/115 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/115 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2767",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/120 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/120 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2775",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A706/126",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "technical_attributes": {
+        "Модель": "A706/126"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2794",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/130 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/130 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2795",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/130 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/130 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2800",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A612/150",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A612/150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2823",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A406/165 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A406/165 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2837",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/180 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/180 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2843",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/185 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/185 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2894",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A706/21",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "technical_attributes": {
+        "Модель": "A706/21"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2897",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/230 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/230 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2898",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A704/245",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "technical_attributes": {
+        "Модель": "A704/245"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2911",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/25 G5",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/25 G5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2932",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/27 G5",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/27 G5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2966",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/32 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/32 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2969",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/32 G6",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/32 G6"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2980",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 33-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2981",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 33-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3035",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 40-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3039",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/40 G6",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/40 G6"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3044",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/41 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/41 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3082",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/50 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/50 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3097",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 55-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3098",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 55-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3125",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/60 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/60 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3126",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/60 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/60 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3137",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 65-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3138",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 65-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3141",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/65 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/65 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3143",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A512/65 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A512/65 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3220",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 75-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3223",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "SB 12/75 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "SB 12/75 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3249",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/85 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/85 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3284",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A412/90 F10",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "technical_attributes": {
+        "Модель": "A412/90 F10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3285",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/90 A",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Модель": "S 12/90 A"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20141",
+      "identity_scope": "model_core",
+      "manufacturer": "DELTA",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_55_x/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HRL 12-55 X"
+    },
+    {
+      "external_id": "bitrix:20150",
+      "identity_scope": "model_core",
+      "manufacturer": "DELTA",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ft_12_105_m/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "FT 12-105 M"
+    },
+    {
+      "external_id": "bitrix:20152",
+      "identity_scope": "model_core",
+      "manufacturer": "DELTA",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ft_12_150_m/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "FT 12-150 M"
+    },
+    {
+      "external_id": "bitrix:24517",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "Cyclon BC Cell",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24518",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "Cyclon E Cell",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24530",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0810-0102",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24559",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0820-0020",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24562",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0850-0114",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24568",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0809-0012",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24571",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0010",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24572",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0012",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24574",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0016",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24576",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0020",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24584",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0859-0020",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24585",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0859-0030",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

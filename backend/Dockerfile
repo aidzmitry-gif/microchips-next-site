@@ -20,9 +20,9 @@ FROM php:8.5.8-fpm-alpine AS app
 # нужны только на время компиляции расширений — ставим во временный .build-deps.
 # opcache НЕ ставим через ext-install: в этом php-образе он уже статически
 # вкомпилирован (см. `php -m` → Zend OPcache), а install падает «can't stat modules/*».
-RUN apk add --no-cache libpq icu-libs \
-    && apk add --no-cache --virtual .build-deps libpq-dev icu-dev \
-    && docker-php-ext-install pdo_pgsql pcntl intl \
+RUN apk add --no-cache libpq icu-libs oniguruma \
+    && apk add --no-cache --virtual .build-deps libpq-dev icu-dev oniguruma-dev \
+    && docker-php-ext-install pdo_pgsql pcntl intl mbstring \
     && apk del .build-deps
 
 # phpredis: очередь и кэш работают через Redis (QUEUE_CONNECTION/CACHE_STORE=redis),

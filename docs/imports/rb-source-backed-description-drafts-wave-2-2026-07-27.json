@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "One bounded primary-manufacturer editorial draft. No publication, price, stock, image or offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00000110",
+      "manufacturer": "Maxell",
+      "mpn": "CR2032",
+      "technology": "литиевая марганцево-диоксидная дисковая батарея",
+      "source_url": "https://biz.maxell.com/en/primary_batteries/data_sheet/CR2032_Data_sheet_e.pdf",
+      "source_kind": "official Maxell CR2032 data sheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "3 V",
+        "Номинальная ёмкость": "220 mAh",
+        "Номинальный ток разряда": "0,2 mA",
+        "Габариты": "диаметр 20,0 мм; высота 3,2 мм",
+        "Рабочая температура": "от −20 до +85 °C",
+        "Масса": "3,0 г"
+      }
+    }
+  ]
+}

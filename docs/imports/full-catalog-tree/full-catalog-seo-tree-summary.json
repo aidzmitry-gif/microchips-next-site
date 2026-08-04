@@ -1,0 +1,27 @@
+{
+  "active_products": 17189,
+  "target_leaf_categories": 17,
+  "target_roots": 9,
+  "assigned_products": 17189,
+  "draft_categories": 19,
+  "distribution": {
+    "primary-cells": 1630,
+    "batteries-industrial": 918,
+    "rechargeable-cells": 1125,
+    "replacement-transport": 129,
+    "batteries-ups": 1097,
+    "electronic-components": 295,
+    "replacement-tools": 322,
+    "replacement-photo": 880,
+    "flashlights": 9,
+    "replacement-home": 325,
+    "chargers": 284,
+    "power-systems": 687,
+    "replacement-mobile": 5506,
+    "replacement-laptops": 3348,
+    "replacement-medical": 431,
+    "batteries-traction": 164,
+    "warehouse-equipment": 39
+  },
+  "invariant": "Every active legacy product maps to exactly one target leaf; URL filters are not automatically indexable."
+}

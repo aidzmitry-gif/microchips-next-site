@@ -1,0 +1,11 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00000226,exact_model_duplicate,КА-00004716,"Exact ROBITON Ecocharger AK02 model; survivor preserves the fuller BL1 product identity"
+КА-00003241,exact_model_duplicate,КА-00004716,"Exact ROBITON Ecocharger AK02 model; survivor preserves the fuller BL1 product identity"
+КА-00005509,exact_model_duplicate,КА-00006112,"Exact RADIAN V-mount 2СН dual-slot charger model; country text is the only material record difference"
+КА-00001493,exact_model_duplicate,КА-00002587,"Exact ROBITON LAC612-1000 model and package; survivor preserves the fuller BL1 product identity"
+КА-00004034,exact_model_duplicate,КА-00005357,"Exact СОНАР УЗ 207.03 charger model without a materially different specification"
+КА-00002131,exact_model_duplicate,КА-00005357,"Exact СОНАР УЗ 207.03 charger model without a materially different specification"
+ФР-00000304,exact_model_duplicate,ФР-00000726,"Exact Camelion BC-0906SM Titan model; survivor preserves the fuller technical record"
+ФР-00000935,exact_normalized_model_duplicate,ФР-00001382,"Exact Camelion BC-1010B model; Cyrillic В in the excluded record is a transcription variant of Latin B"
+КА-00003568,exact_model_duplicate,КА-00000082,"Exact ROBITON Smart4 9V base model; spelling and country text only"
+КА-00005893,exact_bundle_duplicate,КА-00005895,"Exact ROBITON Smart4 9V bundle with mains adapter; spelling only"

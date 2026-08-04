@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "purpose": "Safe Robiton battery model-core enrichment from official Robiton pages. Package, stock, price, warranty, image and publication status are not inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004351",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "AG13",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17511/",
+      "technical_attributes": {"Типоразмер": "AG13 / LR44", "Номинальное напряжение": "1,5 В", "Номинальная ёмкость": "158 мА·ч", "Ртуть": "не содержит"}
+    },
+    {
+      "external_id": "КА-00005109",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "AG13",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17511/",
+      "technical_attributes": {"Типоразмер": "AG13 / LR44", "Номинальное напряжение": "1,5 В", "Номинальная ёмкость": "158 мА·ч", "Ртуть": "не содержит"}
+    },
+    {
+      "external_id": "КА-00005110",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "AG13",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17511/",
+      "technical_attributes": {"Типоразмер": "AG13 / LR44", "Номинальное напряжение": "1,5 В", "Номинальная ёмкость": "158 мА·ч", "Ртуть": "не содержит"}
+    },
+    {
+      "external_id": "КА-00003350",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "6LR61",
+      "technology": "щелочная батарея",
+      "source_url": "https://www.robiton.ru/product/12288",
+      "technical_attributes": {"Типоразмер": "6LR61", "Номинальное напряжение": "9 В"}
+    },
+    {
+      "external_id": "ФР-00000827",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "WINNER R-FR03-SR2",
+      "technology": "литий-железо-дисульфидный элемент",
+      "source_url": "https://www.robiton.ru/product/13687",
+      "technical_attributes": {"Типоразмер": "FR03 / AAA", "Номинальное напряжение": "1,5 В", "Номинальная ёмкость": "1100 мА·ч"}
+    },
+    {
+      "external_id": "КА-00001763",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR03",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/12293/",
+      "technical_attributes": {"Типоразмер": "LR03 / AAA", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "КА-00001882",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR03",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/12293/",
+      "technical_attributes": {"Типоразмер": "LR03 / AAA", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "КА-00001883",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR03",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/12293/",
+      "technical_attributes": {"Типоразмер": "LR03 / AAA", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "КА-00004258",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR14",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/12287/",
+      "technical_attributes": {"Типоразмер": "LR14 / C", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "КА-00000130",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR20",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17490/",
+      "technical_attributes": {"Типоразмер": "LR20 / D", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "КА-00003385",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR20",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17490/",
+      "technical_attributes": {"Типоразмер": "LR20 / D", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "ФР-00002110",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR20",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17490/",
+      "technical_attributes": {"Типоразмер": "LR20 / D", "Номинальное напряжение": "1,5 В"}
+    },
+    {
+      "external_id": "КА-00003013",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "LR44",
+      "technology": "щелочной марганцевый элемент",
+      "source_url": "https://www.robiton.ru/product/17511/",
+      "technical_attributes": {"Типоразмер": "LR44 / AG13", "Номинальное напряжение": "1,5 В", "Номинальная ёмкость": "158 мА·ч", "Ртуть": "не содержит"}
+    },
+    {
+      "external_id": "КА-00006010",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "4LR44",
+      "technology": "щелочная батарея",
+      "source_url": "https://www.robiton.ru/news/robiton-standard-4-lr-44-moschniy-kompaktniy-istochnik-6-v/",
+      "technical_attributes": {"Типоразмер": "4LR44", "Номинальное напряжение": "6 В", "Номинальная ёмкость": "140 мА·ч", "Габариты": "13,0 × 25,2 мм", "Ртуть": "не содержит"}
+    },
+    {
+      "external_id": "ФР-00001586",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "4LR44",
+      "technology": "щелочная батарея",
+      "source_url": "https://www.robiton.ru/news/robiton-standard-4-lr-44-moschniy-kompaktniy-istochnik-6-v/",
+      "technical_attributes": {"Типоразмер": "4LR44", "Номинальное напряжение": "6 В", "Номинальная ёмкость": "140 мА·ч", "Габариты": "13,0 × 25,2 мм", "Ртуть": "не содержит"}
+    },
+    {
+      "external_id": "КА-00004411",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "6LR61",
+      "technology": "щелочная батарея",
+      "source_url": "https://www.robiton.ru/product/12288",
+      "technical_attributes": {"Типоразмер": "6LR61", "Номинальное напряжение": "9 В"}
+    },
+    {
+      "external_id": "ФР-00000280",
+      "identity_scope": "model_core",
+      "manufacturer": "Robiton",
+      "model_core": "6LR61",
+      "technology": "щелочная батарея",
+      "source_url": "https://www.robiton.ru/product/12288",
+      "technical_attributes": {"Типоразмер": "6LR61", "Номинальное напряжение": "9 В"}
+    }
+  ]
+}

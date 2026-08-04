@@ -1,0 +1,1071 @@
+{
+  "schema_version": 1,
+  "purpose": "Source-backed description drafts for reviewed Wave242 Delta model-core evidence",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1442",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1210",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1210",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1445",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1211",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1211",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "11"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1446",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1210.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1210.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "10"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1447",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1212.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1212.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "12"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1449",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1214.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1214.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "14"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1453",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1205.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1205.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1454",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1207.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1207.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "7"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1455",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1207.2",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1207.2",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "7"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1456",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1209.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1209.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "9"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1474",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1212",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1212",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "12"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1480",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "HR 12-51W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hr_w/",
+      "technical_attributes": {
+        "Модель": "HR 12-51W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "12"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1502",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1214",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1214",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "14"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1553",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 12025",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 12025",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "2.5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1554",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 12026",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 12026",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "2.5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20108",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "DT 4045 (47)",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "technical_attributes": {
+        "Модель": "DT 4045 (47)",
+        "Напряжение, В": "4",
+        "Емкость, Ач": "4.5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20148",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "FT 12-50 M",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ft_m/",
+      "technical_attributes": {
+        "Модель": "FT 12-50 M",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "50"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20149",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "FT 12-100 M",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ft_m/",
+      "technical_attributes": {
+        "Модель": "FT 12-100 M",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20154",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-980 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-980 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "220"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20155",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-830 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-830 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "192"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20156",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-670 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-670 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20157",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-630 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-630 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "140"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20158",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-570 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-570 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "120"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20159",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-480 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-480 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20160",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-460 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-460 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "90"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20161",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-350 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-350 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "75"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20168",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-370 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-370 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "80"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20171",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-211 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-211 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "45"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20172",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT HRL 12-155 W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "XPERT HRL 12-155 W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "28"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20173",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-50 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-50 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "50"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20174",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-80 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-80 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "80"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20175",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-100 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-100 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20176",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-105 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-105 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "105"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20177",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-125 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-125 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "125"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20178",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-140 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-140 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "140"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20179",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-150 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-150 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20180",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT FTS 12-180 X",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "technical_attributes": {
+        "Модель": "XPERT FTS 12-180 X",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "180"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20181",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 100",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 100",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20182",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 150",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 150",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20183",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 200",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 200",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "200"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20184",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 300",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 300",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "300"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20185",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 400",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 400",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "400"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20186",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 500",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 500",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "500"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20187",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 600",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 600",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "600"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20188",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 800",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 800",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "800"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20190",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 1500",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 1500",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "1500"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20191",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 2000",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 2000",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "2000"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20192",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "XPERT STC 3000",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "technical_attributes": {
+        "Модель": "XPERT STC 3000",
+        "Напряжение, В": "2",
+        "Емкость, Ач": "3000"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2891",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "HR 12-80W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hr_w/",
+      "technical_attributes": {
+        "Модель": "HR 12-80W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "20"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2995",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1204",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1204",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "4"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3053",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "HRL 12-211W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "HRL 12-211W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "45"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3059",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1205",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1205",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3061",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "HR 12-21W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hr_w/",
+      "technical_attributes": {
+        "Модель": "HR 12-21W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "5"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3154",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1207",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1207",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "7"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3230",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1208",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1208",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "8"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3238",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "HRL 12-370W",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "technical_attributes": {
+        "Модель": "HRL 12-370W",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "80"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3260",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1209",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "technical_attributes": {
+        "Модель": "CT 1209",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "9"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

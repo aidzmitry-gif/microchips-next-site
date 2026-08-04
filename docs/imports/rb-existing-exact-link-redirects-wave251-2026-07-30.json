@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "expected_redirects": 4,
+  "redirects": [
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/3118","target_path":"/catalog/industrial-batteries/batteries-ups/fiamm-12fit60","target_external_id":"КА-00003848","evidence":"full Bitrix staging exact-name link bitrix:3118 to existing 1C product"},
+    {"source_path":"/catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/zebra/12406","target_path":"/catalog/replacement-batteries/cameron-sino-cs-zds360bl","target_external_id":"КА-00006847","evidence":"full Bitrix staging exact-name link bitrix:12406 to existing 1C product"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/23815","target_path":"/catalog/industrial-batteries/batteries-ups/apc-srt192bp2","target_external_id":"КА-00005708","evidence":"full Bitrix staging exact-name link bitrix:23815 to existing 1C product"},
+    {"source_path":"/catalog/istochniki-pitaniya/ibp/25143","target_path":"/catalog/power-systems/ups-systems/ippon-innova-g2-1000","target_external_id":"КА-00005756","evidence":"full Bitrix staging exact-name link bitrix:25143 to existing 1C product"}
+  ]
+}

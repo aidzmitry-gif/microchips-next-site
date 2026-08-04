@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "batch": "wave204_legacy_industrial_traction_cells",
+  "created_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "danfoss-rct-rechargeable-batteries-2025",
+      "source_tier": "manufacturer_datasheet_primary",
+      "source_publisher": "Danfoss A/S",
+      "source_url": "https://assets.danfoss.com/documents/latest/465384/BC515657459048en-000101.pdf",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/danfoss-rct-rechargeable-batteries.pdf",
+      "snapshot_sha256": "0e55380c36e310caa4a0f237da0117cff22b56a3d9de23776793947f624a5cff",
+      "bytes": 3222466,
+      "verified_sha256": "0e55380c36e310caa4a0f237da0117cff22b56a3d9de23776793947f624a5cff"
+    },
+    {
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_tier": "manufacturer_datasheet_primary",
+      "source_publisher": "Курский аккумуляторный завод",
+      "source_url": "https://gk-kaz.ru/xelite/wp-content/uploads/2020/12/Tehnicheskie-harakteristiki-TNZH-TNK.pdf",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/kaz-traction-tnzh-tnk.pdf",
+      "snapshot_sha256": "ebb295f3f11fafc5db1ef3e28faf0f990a6599658f8a7a3187bde5385b0b6a82",
+      "bytes": 289998,
+      "verified_sha256": "ebb295f3f11fafc5db1ef3e28faf0f990a6599658f8a7a3187bde5385b0b6a82"
+    },
+    {
+      "source_id": "energiya-company-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "ПАО «Энергия»",
+      "source_url": "https://jsc-energiya.com/expo/4.pdf",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/energiya-company-products.pdf",
+      "snapshot_sha256": "b2366adb6cc768aabfc2e2ecc5744037588c0ef4db80d7c4c06434466a042443",
+      "bytes": 3536803,
+      "verified_sha256": "b2366adb6cc768aabfc2e2ecc5744037588c0ef4db80d7c4c06434466a042443"
+    },
+    {
+      "source_id": "niai-nicd-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "АО «НИАИ «Источник»",
+      "source_url": "https://www.niai.ru/products/ni-ca-accumulators-and-batteries",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/niai-nicd-products.html",
+      "snapshot_sha256": "eec52b948d24258314f960d3432a3370a1de74132361109991c0fedbb9917e5c",
+      "bytes": 15478,
+      "verified_sha256": "eec52b948d24258314f960d3432a3370a1de74132361109991c0fedbb9917e5c"
+    },
+    {
+      "source_id": "niai-nimh-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "АО «НИАИ «Источник»",
+      "source_url": "https://www.niai.ru/products/ni-metal-hydride-accumulators-and-batteries",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/niai-nimh-products.html",
+      "snapshot_sha256": "b6d5f31697690d2f34e710d7329e323662d75c6cf3390a76a1348e2b7f6b6ca1",
+      "bytes": 14325,
+      "verified_sha256": "b6d5f31697690d2f34e710d7329e323662d75c6cf3390a76a1348e2b7f6b6ca1"
+    },
+    {
+      "source_id": "niai-liion-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "АО «НИАИ «Источник»",
+      "source_url": "https://www.niai.ru/products/lithium-ion-accumulators-and-batteries",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/niai-liion-products.html",
+      "snapshot_sha256": "1242198192a986d50fff1d412a1d351d409e77a687249de88ab41df42e74920d",
+      "bytes": 16261,
+      "verified_sha256": "1242198192a986d50fff1d412a1d351d409e77a687249de88ab41df42e74920d"
+    }
+  ],
+  "exact_token_evidence": [
+    {
+      "product_external_id": "bitrix:2239",
+      "source_id": "danfoss-rct-rechargeable-batteries-2025",
+      "required_exact_tokens": [
+        "BT06K ATEX",
+        "NiMH",
+        "600mAh",
+        "4,8 Vdc"
+      ],
+      "required_token_counts": {
+        "4,8 Vdc": 3,
+        "600mAh": 2,
+        "BT06K ATEX": 2,
+        "NiMH": 14
+      }
+    }
+  ]
+}

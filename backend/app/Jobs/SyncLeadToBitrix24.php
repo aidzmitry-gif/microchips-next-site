@@ -10,6 +10,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Http;
+use RuntimeException;
 use Throwable;
 
 class SyncLeadToBitrix24 implements ShouldQueue
@@ -32,6 +33,8 @@ class SyncLeadToBitrix24 implements ShouldQueue
         $webhookUrl = data_get($integration?->settings, 'webhook_url');
 
         if (blank($webhookUrl)) {
+            $lead->update(['external_error' => 'Bitrix24 integration is not enabled for this site.']);
+
             return;
         }
 
@@ -59,7 +62,15 @@ class SyncLeadToBitrix24 implements ShouldQueue
             ]);
 
             $response->throw();
-            $lead->update(['external_id' => (string) ($response->json('result') ?? ''), 'external_error' => null]);
+
+            $externalId = $response->json('result');
+            if (! is_int($externalId) && ! is_string($externalId) || ! preg_match('/^[1-9][0-9]*$/', (string) $externalId)) {
+                $apiError = $response->json('error_description') ?? $response->json('error') ?? 'missing lead ID';
+
+                throw new RuntimeException("Bitrix24 did not return a valid lead ID: {$apiError}");
+            }
+
+            $lead->update(['external_id' => (string) $externalId, 'external_error' => null]);
         } catch (Throwable $exception) {
             $lead->update(['external_error' => $exception->getMessage()]);
             throw $exception;

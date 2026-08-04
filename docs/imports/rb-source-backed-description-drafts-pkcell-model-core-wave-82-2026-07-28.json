@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "purpose": "Official PKCELL model-core facts for source-safe current RB queue rows. Exact capacity, RTU, pack, retail package, terminal and connector facts are excluded.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005434",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "model_core": "R03",
+      "identity_evidence": {
+        "model_core_token": "R03",
+        "required_brand_token": "PKCELL",
+        "required_chemistry_token": "Ni-MH"
+      },
+      "display_name": "Аккумулятор 3Ni-MH PKCELL AAA/R03 1000mAh 3,6V /Китай/",
+      "technology": "Никель-металлогидридный аккумулятор (Ni-MH)",
+      "source_url": "https://www.pkcell.com/product/aaa-ni-mh-battery/",
+      "source_kind": "Official PKCELL AAA Ni-MH model-core product page",
+      "checked_at": "2026-07-28",
+      "unverified_execution_signals": [
+        "electrical_pack:3_cells"
+      ],
+      "technical_attributes": {
+        "Химическая система": "Никель-металлогидридный аккумулятор (Ni-MH)",
+        "Типоразмер одного элемента": "AAA / R03",
+        "Номинальное напряжение одного элемента": "1,2 В",
+        "Диапазон ёмкости на официальной странице": "80–1100 мА·ч",
+        "Температура заряда": "от 0 до +45 °C",
+        "Температура разряда": "от −20 до +55 °C",
+        "Ограничение источника": "Официальная страница подтверждает семейство AAA Ni-MH, а не конкретное исполнение 1000 мА·ч. Число элементов, напряжение сборки, RTU, розничная упаковка, выводы, провода и разъёмы требуют отдельного подтверждения."
+      }
+    },
+    {
+      "external_id": "КА-00005579",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "model_core": "R03",
+      "identity_evidence": {
+        "model_core_token": "R03",
+        "required_brand_token": "PKCELL",
+        "required_chemistry_token": "Ni-MH"
+      },
+      "display_name": "Аккумулятор Ni-MH 3PKCELL AAA/R03 3.6V 1000mAh (п4) /Китай/",
+      "technology": "Никель-металлогидридный аккумулятор (Ni-MH)",
+      "source_url": "https://www.pkcell.com/product/aaa-ni-mh-battery/",
+      "source_kind": "Official PKCELL AAA Ni-MH model-core product page",
+      "checked_at": "2026-07-28",
+      "unverified_execution_signals": [
+        "electrical_pack:3_cells",
+        "retail_pack:4_pieces"
+      ],
+      "technical_attributes": {
+        "Химическая система": "Никель-металлогидридный аккумулятор (Ni-MH)",
+        "Типоразмер одного элемента": "AAA / R03",
+        "Номинальное напряжение одного элемента": "1,2 В",
+        "Диапазон ёмкости на официальной странице": "80–1100 мА·ч",
+        "Температура заряда": "от 0 до +45 °C",
+        "Температура разряда": "от −20 до +55 °C",
+        "Ограничение источника": "Официальная страница подтверждает семейство AAA Ni-MH, а не конкретное исполнение 1000 мА·ч. Число элементов, напряжение сборки, RTU, розничная упаковка, выводы, провода и разъёмы требуют отдельного подтверждения."
+      }
+    },
+    {
+      "external_id": "КА-00002237",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "model_core": "R03",
+      "identity_evidence": {
+        "model_core_token": "R03",
+        "required_brand_token": "PKCELL",
+        "required_chemistry_token": "Ni-MH"
+      },
+      "display_name": "Аккумулятор Ni-MH 6ХPKCELL AAA/R03 1000mAh 7,2V  /Китай/",
+      "technology": "Никель-металлогидридный аккумулятор (Ni-MH)",
+      "source_url": "https://www.pkcell.com/product/aaa-ni-mh-battery/",
+      "source_kind": "Official PKCELL AAA Ni-MH model-core product page",
+      "checked_at": "2026-07-28",
+      "unverified_execution_signals": [
+        "electrical_pack:6_cells"
+      ],
+      "technical_attributes": {
+        "Химическая система": "Никель-металлогидридный аккумулятор (Ni-MH)",
+        "Типоразмер одного элемента": "AAA / R03",
+        "Номинальное напряжение одного элемента": "1,2 В",
+        "Диапазон ёмкости на официальной странице": "80–1100 мА·ч",
+        "Температура заряда": "от 0 до +45 °C",
+        "Температура разряда": "от −20 до +55 °C",
+        "Ограничение источника": "Официальная страница подтверждает семейство AAA Ni-MH, а не конкретное исполнение 1000 мА·ч. Число элементов, напряжение сборки, RTU, розничная упаковка, выводы, провода и разъёмы требуют отдельного подтверждения."
+      }
+    },
+    {
+      "external_id": "КА-00001458",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "model_core": "R03",
+      "identity_evidence": {
+        "model_core_token": "R03",
+        "required_brand_token": "PKCELL",
+        "required_chemistry_token": "Ni-MH"
+      },
+      "display_name": "Аккумулятор Ni-MH PKCELL RTU R03 1000mAh [546074] (4BL), Китай",
+      "technology": "Никель-металлогидридный аккумулятор (Ni-MH)",
+      "source_url": "https://www.pkcell.com/product/aaa-ni-mh-battery/",
+      "source_kind": "Official PKCELL AAA Ni-MH model-core product page",
+      "checked_at": "2026-07-28",
+      "unverified_execution_signals": [
+        "retail_pack:4_pieces",
+        "RTU"
+      ],
+      "technical_attributes": {
+        "Химическая система": "Никель-металлогидридный аккумулятор (Ni-MH)",
+        "Типоразмер одного элемента": "AAA / R03",
+        "Номинальное напряжение одного элемента": "1,2 В",
+        "Диапазон ёмкости на официальной странице": "80–1100 мА·ч",
+        "Температура заряда": "от 0 до +45 °C",
+        "Температура разряда": "от −20 до +55 °C",
+        "Ограничение источника": "Официальная страница подтверждает семейство AAA Ni-MH, а не конкретное исполнение 1000 мА·ч. Число элементов, напряжение сборки, RTU, розничная упаковка, выводы, провода и разъёмы требуют отдельного подтверждения."
+      }
+    }
+  ],
+  "blocked_rows": [
+    {
+      "external_id": "КА-00003835",
+      "name": "Аккумулятор 10*Ni-MH PKCELL AA/R06 2800mAh 12V/Китай/",
+      "parsed_model_core": "R06",
+      "primary_lithium_token": null,
+      "reason": "official_AA_page_caps_range_at_2700mAh_but_queue_claims_2800mAh",
+      "unverified_execution_signals": [
+        "electrical_pack:10_cells"
+      ]
+    },
+    {
+      "external_id": "КА-00003577",
+      "name": "Аккумулятор 6*Ni-MH PKCELL AA/R06 2800mAh 7,2 V (п4) /Китай/",
+      "parsed_model_core": "R06",
+      "primary_lithium_token": null,
+      "reason": "official_AA_page_caps_range_at_2700mAh_but_queue_claims_2800mAh",
+      "unverified_execution_signals": [
+        "electrical_pack:6_cells",
+        "retail_pack:4_pieces"
+      ]
+    },
+    {
+      "external_id": "КА-00003837",
+      "name": "Аккумулятор Ni-MH 3PKCELL AA/R06 2800mAh /Китай/",
+      "parsed_model_core": "R06",
+      "primary_lithium_token": null,
+      "reason": "official_AA_page_caps_range_at_2700mAh_but_queue_claims_2800mAh",
+      "unverified_execution_signals": [
+        "electrical_pack:3_cells"
+      ]
+    },
+    {
+      "external_id": "КА-00001009",
+      "name": "Аккумулятор Ni-MH PKCELL AA/R06 2800 mAh (п4) /Китай/",
+      "parsed_model_core": "R06",
+      "primary_lithium_token": null,
+      "reason": "official_AA_page_caps_range_at_2700mAh_but_queue_claims_2800mAh",
+      "unverified_execution_signals": [
+        "retail_pack:4_pieces"
+      ]
+    },
+    {
+      "external_id": "ФР-00002003",
+      "name": "Аккумулятор Ni-MH PKCELL R06 2800mAh bl.4",
+      "parsed_model_core": "R06",
+      "primary_lithium_token": null,
+      "reason": "official_AA_page_caps_range_at_2700mAh_but_queue_claims_2800mAh",
+      "unverified_execution_signals": [
+        "retail_pack:4_pieces"
+      ]
+    }
+  ]
+}

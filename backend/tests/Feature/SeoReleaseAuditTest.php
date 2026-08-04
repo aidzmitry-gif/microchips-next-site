@@ -9,6 +9,7 @@ use App\Models\SiteCommercialFact;
 use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
+use App\Models\SiteProductPriceEvidence;
 use App\Models\SiteRedirect;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
@@ -187,6 +188,59 @@ class SeoReleaseAuditTest extends TestCase
             ->assertExitCode(1);
     }
 
+    public function test_only_explicit_preview_redirects_may_target_a_published_noindex_preview(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $product = Product::create(['slug' => 'preview-battery', 'name' => 'Preview battery', 'status' => 'active']);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'preview-battery',
+            'is_published' => true,
+            'availability' => 'on_request',
+        ]);
+        SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/preview-battery',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+            'is_indexable' => false,
+        ]);
+        SiteSeo::create([
+            'site_id' => $site->id,
+            'locale' => 'ru-BY',
+            'resource_type' => 'product',
+            'resource_id' => $siteProduct->id,
+            'canonical_path' => '/catalog/preview-battery',
+            'is_indexable' => false,
+        ]);
+        SiteRedirect::create([
+            'site_id' => $site->id,
+            'source_path' => '/catalog/old-preview-battery',
+            'target_path' => '/catalog/preview-battery',
+            'status_code' => 301,
+            'purpose' => SiteRedirect::PURPOSE_PREVIEW,
+            'is_active' => true,
+        ]);
+        SiteRedirect::create([
+            'site_id' => $site->id,
+            'source_path' => '/catalog/old-seo-battery',
+            'target_path' => '/catalog/preview-battery',
+            'status_code' => 301,
+            'purpose' => SiteRedirect::PURPOSE_SEO,
+            'is_active' => true,
+        ]);
+
+        $targetIssues = collect(app(SiteSeoReleaseAuditor::class)->audit($site)['issues'])
+            ->where('code', 'SEO_REDIRECT_TARGET_NOT_RESOLVABLE')
+            ->pluck('path')
+            ->all();
+
+        $this->assertContains('/catalog/old-seo-battery', $targetIssues);
+        $this->assertNotContains('/catalog/old-preview-battery', $targetIssues);
+    }
+
     public function test_offer_schema_without_confirmed_local_commercial_data_blocks_release(): void
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
@@ -223,6 +277,59 @@ class SeoReleaseAuditTest extends TestCase
         $this->assertContains('SEO_OFFER_SCHEMA_UNCONFIRMED_COMMERCIAL_DATA', $this->issueCodes($report));
     }
 
+    public function test_offer_schema_must_match_current_price_evidence_and_visible_commercial_data(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $product = Product::create(['external_id' => 'ITEM-OFFER-AUDIT', 'slug' => 'offer-audit', 'name' => 'Offer audit', 'status' => 'active']);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'offer-audit',
+            'is_published' => true,
+            'availability' => 'in_stock',
+            'price' => '20.00',
+        ]);
+        $url = SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/offer-audit',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+            'is_indexable' => true,
+        ]);
+        $seo = SiteSeo::create([
+            'site_id' => $site->id,
+            'locale' => 'ru-BY',
+            'resource_type' => 'product',
+            'resource_id' => $siteProduct->id,
+            'canonical_path' => $url->path,
+            'is_indexable' => true,
+            'schema' => ['@type' => 'Product', 'offers' => ['@type' => 'Offer', 'price' => '20.00', 'priceCurrency' => 'BYN', 'availability' => 'https://schema.org/InStock']],
+        ]);
+
+        $withoutEvidence = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $this->assertContains('SEO_OFFER_SCHEMA_PRICE_EVIDENCE_MISSING', $this->issueCodes($withoutEvidence));
+
+        SiteProductPriceEvidence::create([
+            'site_id' => $site->id,
+            'site_product_id' => $siteProduct->id,
+            'source' => SiteProductPriceEvidence::SOURCE_ONE_C_X2,
+            'source_price' => '10.0000',
+            'multiplier' => '2.0000',
+            'calculated_price' => '20.00',
+            'currency' => 'BYN',
+            'price_type' => 'retail',
+            'source_reference' => '1c-inventory://test/ITEM-OFFER-AUDIT',
+            'observed_at' => now()->subMinute(),
+            'evidence_key' => hash('sha256', 'audited-offer'),
+            'is_current' => true,
+        ]);
+        $seo->update(['schema' => ['@type' => 'Product', 'offers' => ['@type' => 'Offer', 'price' => '21.00', 'priceCurrency' => 'BYN', 'availability' => 'https://schema.org/InStock']]]);
+
+        $mismatched = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $this->assertContains('SEO_OFFER_SCHEMA_COMMERCIAL_DATA_MISMATCH', $this->issueCodes($mismatched));
+    }
+
     public function test_indexable_pages_require_verified_local_legal_contact_and_commercial_facts(): void
     {
         $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
@@ -245,6 +352,27 @@ class SeoReleaseAuditTest extends TestCase
 
         $report = app(SiteSeoReleaseAuditor::class)->audit($site);
         $this->assertTrue($report['passed']);
+    }
+
+    public function test_an_indexable_warranty_page_requires_verified_warranty_terms(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $this->publishedPage($site, '/warranty');
+        $this->verifiedProfile($site);
+
+        $missingTerms = app(SiteSeoReleaseAuditor::class)->audit($site);
+        $this->assertFalse($missingTerms['passed']);
+        $this->assertContains('SEO_SITE_WARRANTY_TERMS_INCOMPLETE', $this->issueCodes($missingTerms));
+
+        $fact = SiteCommercialFact::create([
+            'site_id' => $site->id,
+            'locale' => 'ru-BY',
+            'key' => 'warranty_terms',
+            'value' => 'Warranty and returns terms',
+        ]);
+        $fact->publish(User::factory()->create(['is_admin' => true]), 'Verified against source document');
+
+        $this->assertTrue(app(SiteSeoReleaseAuditor::class)->audit($site)['passed']);
     }
 
     public function test_every_indexable_locale_requires_its_own_verified_commercial_profile(): void

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "purpose": "Eight source-verified RB noindex preview pages without unverified price or stock claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001620",
+      "manufacturer": "CSB",
+      "mpn": "GPL1272",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-GPL1272-01312026.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gpl1272",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001619",
+      "manufacturer": "CSB",
+      "mpn": "HRL1225W",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl1225w",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002596",
+      "manufacturer": "Sonnenschein",
+      "mpn": "NGA6060200HS0FC",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2023-04/230404_Sonnenschein_A600_technicaldata.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "sonnenschein-a606-200",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004170",
+      "manufacturer": "MEAN WELL",
+      "mpn": "EDR-150-24",
+      "source_url": "https://www.meanwell.com/Upload/PDF/EDR-150/EDR-150-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-edr-150-24",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002579",
+      "manufacturer": "MEAN WELL",
+      "mpn": "LRS-50-5",
+      "source_url": "https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-lrs-50-5",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005877",
+      "manufacturer": "MEAN WELL",
+      "mpn": "NDR-480-24",
+      "source_url": "https://www.meanwell.com/Upload/PDF/NDR-480/NDR-480-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-ndr-480-24",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005712",
+      "manufacturer": "MEAN WELL",
+      "mpn": "SE-450-12",
+      "source_url": "https://www.meanwell.com/Upload/PDF/SE-450/SE-450-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-se-450-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003556",
+      "manufacturer": "MEAN WELL",
+      "mpn": "HDR-60-12",
+      "source_url": "https://www.meanwell.com/Upload/PDF/HDR-60/HDR-60-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-hdr-60-12",
+      "replace_categories": true
+    }
+  ]
+}

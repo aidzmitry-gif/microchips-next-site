@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:24373",
+      "current_name": "Тяговый аккумулятор YUASA DCB145-6 (AGM, 215Ah, 6V)",
+      "manufacturer": "Yuasa",
+      "mpn": "DCB145-6",
+      "source_url": "https://www.yuasa.com/media/akeneo_connector/asset_files/L/I/LIT059_GS_Vehicle_Battery_Range_Oct_25_WEB_6b06.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "GS Yuasa Battery Sales UK Limited",
+      "checked_at": "2026-07-29",
+      "product_type": "traction deep-cycle battery",
+      "source_snapshot_path": "../audits/sources/wave215b-traction/yuasa-vehicle-battery-range-oct-2025.pdf",
+      "source_snapshot_sha256": "1a3876f922484a6defb7018e1e2a39c4bfb3f6202602685dd8e74085411f5096"
+    },
+    {
+      "external_id": "bitrix:24374",
+      "current_name": "Тяговый аккумулятор YUASA DCB105-6 (AGM, 185Ah, 6V)",
+      "manufacturer": "Yuasa",
+      "mpn": "DCB105-6",
+      "source_url": "https://www.yuasa.com/media/akeneo_connector/asset_files/L/I/LIT059_GS_Vehicle_Battery_Range_Oct_25_WEB_6b06.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "GS Yuasa Battery Sales UK Limited",
+      "checked_at": "2026-07-29",
+      "product_type": "traction deep-cycle battery",
+      "source_snapshot_path": "../audits/sources/wave215b-traction/yuasa-vehicle-battery-range-oct-2025.pdf",
+      "source_snapshot_sha256": "1a3876f922484a6defb7018e1e2a39c4bfb3f6202602685dd8e74085411f5096"
+    }
+  ]
+}

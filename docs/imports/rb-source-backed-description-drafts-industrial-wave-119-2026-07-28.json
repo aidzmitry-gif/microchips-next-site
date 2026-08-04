@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact industrial battery descriptions from Ventura and CSB primary sources. Conflicting or unavailable BAE, Leoch, Kijo and B.B. Battery rows remain on hold.",
+  "locale": "ru-BY",
+  "products": [
+    {"external_id":"КА-00004976","identity_scope":"model_core","manufacturer":"Ventura","model_core":"FT 12-200","display_name":"Аккумулятор Ventura FT 12-200, 12 В, 200 А·ч","technology":"герметизированный свинцово-кислотный AGM-аккумулятор с фронтальными выводами","source_url":"https://ventura-battery.ru/catalog/ventura-ft/ft-12-200/","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"200 А·ч (C20)","Габариты":"560 × 125 × 317 мм","Масса":"58 кг","Тип вывода":"F8","Расчётный срок службы":"не менее 15 лет"}},
+    {"external_id":"КА-00002879","identity_scope":"model_core","manufacturer":"Ventura","model_core":"GPL 12","display_name":"Аккумулятор Ventura GPL 12-75","technology":"герметизированный свинцово-кислотный AGM-аккумулятор","source_url":"https://ventura-battery.ru/upload/documents/gpl/GPL_12-75.pdf","technical_attributes":{"Модель":"GPL 12-75","Номинальное напряжение":"12 В","Номинальная ёмкость":"79 А·ч (C20)","Габариты":"260 × 168 × 218 мм","Масса":"23,2 кг","Тип вывода":"F6","Расчётный срок службы":"не менее 12 лет"}},
+    {"external_id":"КА-00001066","identity_scope":"model_core","manufacturer":"CSB","model_core":"GP 12170B1","display_name":"Аккумулятор CSB GP 12170 B1, 12 В, 17 А·ч","technology":"герметизированный свинцово-кислотный VRLA-AGM аккумулятор","source_url":"https://csb-battery.com/es/wp-content/uploads/2024/07/CSB-Datasheet-GP12170-%E2%80%93-053124.pdf","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"17 А·ч при 20-часовом разряде","Габариты":"181 × 76,2 × 167 мм","Масса":"5,5 кг","Тип вывода":"B1, резьба M5","Расчётный срок службы":"до 5 лет"}}
+  ]
+}

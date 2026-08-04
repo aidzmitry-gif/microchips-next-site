@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "policy": "SHA-pinned official sources only",
+  "sources": [
+    {
+      "source_id": "robiton_smartdisplay_1000",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/11072/",
+      "source_kind": "official_manufacturer_product_page",
+      "snapshot_path": "docs/audits/sources/wave217b-devices/robiton-smartdisplay-1000.html",
+      "snapshot_sha256": "10008167f6e8fc4f475dbf8e1e4a377dddaf4b1a0dde25608d03303e91213536"
+    },
+    {
+      "source_id": "ventura_2023_catalogue",
+      "publisher": "Ventura",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-panasonic-ventura-mnb/ventura-catalogue-2023.pdf",
+      "snapshot_sha256": "68d09cc1255c5b8fbec04c669701ca21616ae501484d043dbc6fb512ae3ea839",
+      "snapshot_bytes": 18324998,
+      "extracted_text_path": "docs/audits/sources/wave206-panasonic-ventura-mnb/ventura-catalogue-2023.txt",
+      "extracted_text_sha256": "005fb1d171d5aee334eaffaac058e92aa96898dc543836e0c9e5b0da0709eae7",
+      "required_exact_tokens": [
+        "GP 12-100",
+        "GPL 12-200",
+        "HRL 12500W"
+      ],
+      "token_counts": {
+        "GP 12-100": 2,
+        "GPL 12-200": 2,
+        "HRL 12500W": 2
+      }
+    }
+  ]
+}

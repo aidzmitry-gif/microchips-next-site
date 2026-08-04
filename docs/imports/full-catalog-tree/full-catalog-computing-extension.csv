@@ -1,0 +1,7 @@
+external_id,parent_external_id,name,path
+seo:computer-equipment,,Компьютерная и сетевая техника,catalog/computer-equipment
+seo:computer-systems,seo:computer-equipment,Компьютеры и системные блоки,catalog/computer-equipment/computer-systems
+seo:data-storage,seo:computer-equipment,Накопители и карты памяти,catalog/computer-equipment/data-storage
+seo:network-equipment,seo:computer-equipment,Сетевое оборудование,catalog/computer-equipment/network-equipment
+seo:computer-peripherals,seo:computer-equipment,Периферия и аксессуары,catalog/computer-equipment/computer-peripherals
+seo:printing-equipment,seo:computer-equipment,Принтеры и МФУ,catalog/computer-equipment/printing-equipment

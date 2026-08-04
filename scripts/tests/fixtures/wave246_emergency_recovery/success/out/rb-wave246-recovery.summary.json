@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "target_path": "target.csv",
+  "target_sha256": "c4874368142c69d70580fba85987beedcbcea7c95dd165d7a3d54b18640bfdbb",
+  "target_rows": 3,
+  "manufacturer": {
+    "target": 1,
+    "selected": 1,
+    "unresolved": []
+  },
+  "descriptions": {
+    "target": 3,
+    "selected": 3,
+    "unresolved": [],
+    "conflict_count": 0,
+    "legacy_partial_provenance_omission_count": 1,
+    "technology_normalization_count": 1
+  },
+  "preview_publication": {
+    "target": 2,
+    "selected": 2,
+    "unresolved": [],
+    "conflict_count": 0,
+    "recovery_resolution_count": 0,
+    "recovery_resolutions": [],
+    "verified_price_authorizations": 0,
+    "applied_description_source_realignments": [
+      "manufacturer:acme:M1",
+      "КА-1"
+    ],
+    "applied_description_model_core_realignments": []
+  },
+  "input_pins": [
+    {
+      "path": "docs/imports/rb-manufacturer-product-candidates-wave1.json",
+      "sha256": "a5229884d073cce508a7f2922b3bba08fb07e04234ba283d8f1495229f8b6814"
+    },
+    {
+      "path": "docs/imports/rb-source-backed-description-drafts-wave1.json",
+      "sha256": "d60f329b4669d059b34939e88540857aac7545cfdf4c1d74b4a7f2288e85857c"
+    },
+    {
+      "path": "docs/imports/rb-source-verified-preview-wave-1.json",
+      "sha256": "1c0ef9105f7e0121018de7c62056b1a41d9f69a6f5e6a2a8440f81e30e09d7ed"
+    },
+    {
+      "path": "target.csv",
+      "sha256": "c4874368142c69d70580fba85987beedcbcea7c95dd165d7a3d54b18640bfdbb"
+    }
+  ],
+  "output_hashes": {
+    "rb-wave246-recovery-manufacturer-product-candidates.json": "c3e41a7ab2d190a1b74c8d353d764826e0335003217f54fb40d346f6b2a7df60",
+    "rb-wave246-recovery-source-backed-descriptions.json": "fb072f8ff4553e4104c139dfec574a8f71c4af86460a2ac703a0d5e459aa4943",
+    "rb-wave246-recovery-preview-publication.json": "1873121259911bdc9007b3631cc31ad0c93e7a4a642ebe8a45267dcd92c83ab0"
+  }
+}

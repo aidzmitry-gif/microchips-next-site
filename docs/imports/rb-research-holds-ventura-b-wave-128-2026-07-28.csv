@@ -1,0 +1,6 @@
+﻿"cluster_id","product_external_id","manufacturer","decision","reason_code","evidence","retry_condition"
+"ventura:GPL1272AGM","КА-00007094","Ventura","hold","exact_model_unlisted","Official Ventura GPL series index does not list GPL 12-7.2.","Official Ventura GPL 12-7.2 data sheet or supersession notice."
+"ventura:GPL1275","КА-00003668","Ventura","hold","exact_model_unlisted","Official Ventura GPL series index does not list GPL 12-7.5.","Official Ventura GPL 12-7.5 data sheet or supersession notice."
+"ventura:GT06","КА-00004387","Ventura","hold","terminal_variant_unverified","Official Ventura index lists GT 06 200 but not raw GT 06 200F8 terminal execution.","Official Ventura GT 06 200F8 drawing/data sheet."
+"ventura:HRL1221","КА-00003376","Ventura","hold","exact_model_unlisted","Official Ventura HRL index does not list HRL 12-21.","Official Ventura HRL 12-21 data sheet or supersession notice."
+"ventura:HRL5","КА-00003040","Ventura","hold","model_parse_ambiguous","Raw HRL 5,5-12 notation is not an official Ventura model identifier.","Official Ventura model number/data sheet matching the label."

@@ -215,6 +215,24 @@ class ValidatorResolverExtraCoverageTest extends TestCase
         $this->assertNull($url->locale);
     }
 
+    public function test_hreflang_omits_an_alternate_that_cannot_resolve_in_its_declared_locale(): void
+    {
+        $belarus = $this->site('microchips-by', 'microchips.by', 'BY', 'ru-BY');
+        $russia = $this->site('microchips-ru', 'microchips.ru', 'RU', 'ru-RU');
+        $russia->locales()->create(['locale' => 'uz-UZ', 'language' => 'uz', 'is_default' => false, 'is_enabled' => true]);
+        $sourcePage = SitePage::create(['site_id' => $belarus->id, 'locale' => 'ru-BY', 'slug' => 'source', 'title' => 'Source', 'h1' => 'Source', 'is_published' => true]);
+        $sourceUrl = SiteUrl::create(['site_id' => $belarus->id, 'path' => '/source', 'locale' => 'ru-BY', 'target_type' => 'page', 'target_id' => $sourcePage->id, 'is_indexable' => true]);
+        $wrongLocalePage = SitePage::create(['site_id' => $russia->id, 'locale' => 'ru-RU', 'slug' => 'wrong-locale', 'title' => 'Wrong locale', 'h1' => 'Wrong locale', 'is_published' => true]);
+        $wrongLocaleUrl = SiteUrl::create(['site_id' => $russia->id, 'path' => '/uz/wrong-locale', 'locale' => 'uz-UZ', 'target_type' => 'page', 'target_id' => $wrongLocalePage->id, 'is_indexable' => true]);
+        SiteUrlAlternate::create(['source_url_id' => $sourceUrl->id, 'alternate_url_id' => $wrongLocaleUrl->id, 'locale' => 'uz-UZ']);
+
+        $result = (new SiteResolver)->resolvePath($belarus, '/source');
+
+        $this->assertSame('page', $result['kind']);
+        $this->assertSame(['ru-BY' => 'https://microchips.by/source'], $result['seo']['hreflang']);
+        $this->assertSame('not_found', (new SiteResolver)->resolvePath($russia, '/uz/wrong-locale')['kind']);
+    }
+
     // -----------------------------------------------------------------
     // Fixture helpers
     // -----------------------------------------------------------------

@@ -1,0 +1,5 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00005213,exact_model_duplicate,КА-00002781,"Exact Delta GEL 12-55 model; KRP6VMI is lot/noise and survivor preserves voltage, capacity and dimensions"
+КА-00005466,exact_model_duplicate,КА-00002781,"Exact Delta GEL 12-55 model; 0HDN6RF is lot/noise and survivor preserves voltage, capacity and dimensions"
+КА-00005746,exact_model_duplicate,КА-00002781,"Exact Delta GEL 12-55 model; ZL5117Q is lot/noise and survivor preserves voltage, capacity and dimensions"
+КА-00007135,exact_model_duplicate,КА-00002781,"Exact Delta GEL 12-55 model; ZY101FA is lot/noise and survivor preserves voltage, capacity and dimensions"

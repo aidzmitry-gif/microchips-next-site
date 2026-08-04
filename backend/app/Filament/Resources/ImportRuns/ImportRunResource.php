@@ -30,6 +30,7 @@ class ImportRunResource extends Resource
                 TextColumn::make('status')->label('Статус')->badge(),
                 TextColumn::make('total_records')->label('Записей')->numeric()->sortable(),
                 TextColumn::make('summary.ready_for_review')->label('Готово')->numeric(),
+                TextColumn::make('summary.excluded')->label('Исключено')->numeric(),
                 TextColumn::make('summary.invalid')->label('Ошибок')->numeric(),
                 TextColumn::make('summary.duplicate_conflicts')->label('Конфликтов')->numeric(),
                 TextColumn::make('finished_at')->label('Завершён')->dateTime()->sortable(),

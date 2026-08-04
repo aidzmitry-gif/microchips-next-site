@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "purpose": "Twelve exact-model ROBITON charger noindex previews without unverified price, stock or media claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001996",
+      "manufacturer": "ROBITON",
+      "mpn": "Li-1",
+      "source_url": "https://www.robiton.ru/product/15095/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-li-1",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001353",
+      "manufacturer": "ROBITON",
+      "mpn": "Li-2",
+      "source_url": "https://www.robiton.ru/product/15096/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-li-2",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004375",
+      "manufacturer": "ROBITON",
+      "mpn": "Li-4 Plus",
+      "source_url": "https://www.robiton.ru/product/17520/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-li-4-plus",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001214",
+      "manufacturer": "ROBITON",
+      "mpn": "MasterCharger 1B USB",
+      "source_url": "https://www.robiton.ru/product/17022/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-1b-usb",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002690",
+      "manufacturer": "ROBITON",
+      "mpn": "MasterCharger 4T5 Pro",
+      "source_url": "https://www.robiton.ru/product/17667/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-4t5-pro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001430",
+      "manufacturer": "ROBITON",
+      "mpn": "MasterCharger Pro",
+      "source_url": "https://www.robiton.ru/product/13613/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-pro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002973",
+      "manufacturer": "ROBITON",
+      "mpn": "MultiCharger LCD2",
+      "source_url": "https://www.robiton.ru/product/18258/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-multicharger-lcd2",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004428",
+      "manufacturer": "ROBITON",
+      "mpn": "MultiCharger2",
+      "source_url": "https://www.robiton.ru/product/18521/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-multicharger2",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001213",
+      "manufacturer": "ROBITON",
+      "mpn": "Smart 2",
+      "source_url": "https://www.robiton.ru/product/11476/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smart-2",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001387",
+      "manufacturer": "ROBITON",
+      "mpn": "Smart4 C3",
+      "source_url": "https://www.robiton.ru/product/17262/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smart4-c3",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004556",
+      "manufacturer": "ROBITON",
+      "mpn": "SmartCharger/IV",
+      "source_url": "https://www.robiton.ru/product/10635/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smartcharger-iv",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00000866",
+      "manufacturer": "ROBITON",
+      "mpn": "SmartDisplay 1000",
+      "source_url": "https://www.robiton.ru/product/11072/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smartdisplay-1000",
+      "replace_categories": true
+    }
+  ]
+}

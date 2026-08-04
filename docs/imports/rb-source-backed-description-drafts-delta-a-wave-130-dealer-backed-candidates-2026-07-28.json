@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "purpose": "Provenance-only admission list for the 51 conditionally confirmed Delta records in the Wave 130-A source manifest. Technical model-core facts remain exactly in the referenced source manifest; this file does not copy, transform or expand them.",
+  "source_manifest": "docs/imports/rb-source-backed-description-drafts-delta-a-wave-130-2026-07-28.json",
+  "admission_policy": {
+    "source_kind": "official_dealer_product_page",
+    "source_tier": "dealer_backed",
+    "source_publisher": "ООО «Спектр РС»",
+    "manufacturer_primary": false,
+    "evidence_scope": "model_core",
+    "checked_at": "2026-07-28",
+    "permitted_fields": ["model_core", "technology", "Nominal voltage", "Nominal capacity"],
+    "prohibited_fields": ["price", "stock", "image", "warranty", "country", "terminal", "SKU", "publication_status"]
+  },
+  "candidate_external_ids": [
+    "КА-00001148", "КА-00002650", "КА-00003537", "КА-00002872", "КА-00001878", "КА-00000617", "КА-00005715",
+    "ФР-00000748", "КА-00005560", "КА-00002626", "КА-00002942", "КА-00003648", "КА-00004678", "ФР-00001089",
+    "КА-00001792", "КА-00002700", "КА-00005617", "КА-00002701", "КА-00002736", "КА-00002238", "КА-00005618",
+    "КА-00004022", "КА-00001500", "КА-00001501", "КА-00001863", "КА-00002702", "КА-00001877", "КА-00002737",
+    "КА-00002602", "КА-00001614", "КА-00007126", "КА-00005187", "КА-00006758", "КА-00003398", "КА-00004928",
+    "КА-00004970", "КА-00001759", "КА-00005908", "КА-00006006", "КА-00005542", "КА-00001028", "КА-00003934",
+    "КА-00005245", "КА-00005244", "КА-00005772", "КА-00005246", "КА-00004408", "КА-00002175", "ФР-00000714",
+    "КА-00004042", "КА-00004776"
+  ],
+  "excluded_pending_cache_recheck": [
+    "КА-00002549", "КА-00002979", "КА-00002935", "КА-00006757", "КА-00006828"
+  ]
+}

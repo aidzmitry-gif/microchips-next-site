@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "One deduplicated exact-model Delta GEL 12-55 noindex preview. No image or price is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002781",
+      "manufacturer": "Delta",
+      "mpn": "GEL 12-55",
+      "source_url": "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-55/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-gel-12-55",
+      "replace_categories": true,
+      "allow_verified_price": false
+    }
+  ]
+}

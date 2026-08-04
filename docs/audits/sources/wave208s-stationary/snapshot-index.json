@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "external_id": "bitrix:1397",
+      "manufacturer": "Casil",
+      "model": "CA1208",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/1409843489126408192.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca1208-2026-07-29.html",
+      "snapshot_sha256": "9bb1a4c6428b5ca0fa6f0f670183291bbb09dc509021c51db8bc11e6cf01856b",
+      "snapshot_bytes": 129481,
+      "required_tokens": [
+        "CA1208",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA1208": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1410",
+      "manufacturer": "Casil",
+      "model": "CA613",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/53.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca613-2026-07-29.html",
+      "snapshot_sha256": "6cf893257a0fe56c0be0c5e7b2cdbca0956b839a915d7a6ad99bb3e2a7955f05",
+      "snapshot_bytes": 133538,
+      "required_tokens": [
+        "CA613",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA613": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1472",
+      "manufacturer": "Casil",
+      "model": "CA12120",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/89.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca12120-2026-07-29.html",
+      "snapshot_sha256": "c4b7646f09eb0ba2972a4a1907af0753764462e915c8c655d0477028d08b62d4",
+      "snapshot_bytes": 131816,
+      "required_tokens": [
+        "CA12120",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA12120": 1,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1473",
+      "manufacturer": "Casil",
+      "model": "CA6120",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/68.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca6120-2026-07-29.html",
+      "snapshot_sha256": "62d60b9600b0bf2bd12af14757b45ea1a8d1c0ccb1e532fdb212a53fa868f234",
+      "snapshot_bytes": 133552,
+      "required_tokens": [
+        "CA6120",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA6120": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1536",
+      "manufacturer": "Casil",
+      "model": "CA12180",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/70.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca12180-2026-07-29.html",
+      "snapshot_sha256": "efcaf9a3061224ef1a29ddc7c87f087cefa262b639c917be2897a95f77905e40",
+      "snapshot_bytes": 133614,
+      "required_tokens": [
+        "CA12180",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA12180": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1547",
+      "manufacturer": "Casil",
+      "model": "CA1222",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/41.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca1222-2026-07-29.html",
+      "snapshot_sha256": "4c543ff8b8ccd1e7c5f77e83fc57e972942d1cdc44173d1af075050e9bbe8dfe",
+      "snapshot_bytes": 133553,
+      "required_tokens": [
+        "CA1222",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA1222": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1555",
+      "manufacturer": "Casil",
+      "model": "CA628",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/1409840518925725696.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca628-2026-07-29.html",
+      "snapshot_sha256": "10a544b65322ca4361bf54400d641cb79f95e753c78bc3cdd22b91f2542ab655",
+      "snapshot_bytes": 133260,
+      "required_tokens": [
+        "CA628",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA628": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1576",
+      "manufacturer": "Casil",
+      "model": "CA12260",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/72.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca12260-2026-07-29.html",
+      "snapshot_sha256": "612b667a25eccd75b97587193352a88d63e5da8ae3b778acb6f0fd4c0b082b48",
+      "snapshot_bytes": 133596,
+      "required_tokens": [
+        "CA12260",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA12260": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1582",
+      "manufacturer": "Casil",
+      "model": "CA1233",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/61.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca1233-2026-07-29.html",
+      "snapshot_sha256": "7a0e05149b102a1c733fe8b561e499e33677e5b76b5ca9ab2b8aa042e7447ee3",
+      "snapshot_bytes": 133551,
+      "required_tokens": [
+        "CA1233",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA1233": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1583",
+      "manufacturer": "Casil",
+      "model": "CA633",
+      "publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "source_url": "https://en.casilbattery.com/product_detail/21.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/casil-ca633-2026-07-29.html",
+      "snapshot_sha256": "3a7291824dd660b1de07e9227903a151558cfe641529a4933bd31aab96ba3020",
+      "snapshot_bytes": 133254,
+      "required_tokens": [
+        "CA633",
+        "Chee Yuen"
+      ],
+      "token_counts": {
+        "CA633": 2,
+        "Chee Yuen": 2
+      }
+    },
+    {
+      "external_id": "bitrix:1399",
+      "manufacturer": "ROBITON",
+      "model": "VRLA12-0.8",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/07629/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/robiton-vrla12-0.8-2026-07-29.html",
+      "snapshot_sha256": "8b0488fdfa4afe66a19b8318d5902d2939d9ea5bb513d8d38a16e373a9be1ed7",
+      "snapshot_bytes": 85930,
+      "required_tokens": [
+        "VRLA12-0.8",
+        "12 В",
+        "0,8 Ач",
+        "ROBITON"
+      ],
+      "token_counts": {
+        "VRLA12-0.8": 4,
+        "12 В": 1,
+        "0,8 Ач": 1,
+        "ROBITON": 11
+      }
+    },
+    {
+      "external_id": "bitrix:1413",
+      "manufacturer": "ROBITON",
+      "model": "VRLA12-1.3",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/07630/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/robiton-vrla12-1.3-2026-07-29.html",
+      "snapshot_sha256": "7bffe85a0c7670d18863205c439d8cba3c202fff6b1f7f26a75e4e2193a677ea",
+      "snapshot_bytes": 86213,
+      "required_tokens": [
+        "VRLA12-1.3",
+        "12 В",
+        "1,3 Ач",
+        "ROBITON"
+      ],
+      "token_counts": {
+        "VRLA12-1.3": 4,
+        "12 В": 1,
+        "1,3 Ач": 1,
+        "ROBITON": 11
+      }
+    },
+    {
+      "external_id": "bitrix:1414",
+      "manufacturer": "ROBITON",
+      "model": "VRLA6-1.3",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/07624/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/robiton-vrla6-1.3-2026-07-29.html",
+      "snapshot_sha256": "43d56c3b76c800f67abb817c5a99da3182ee1b2aaead5d60e161ba27d91888ae",
+      "snapshot_bytes": 86081,
+      "required_tokens": [
+        "VRLA6-1.3",
+        "6 В",
+        "1,3 Ач",
+        "ROBITON"
+      ],
+      "token_counts": {
+        "VRLA6-1.3": 4,
+        "6 В": 1,
+        "1,3 Ач": 1,
+        "ROBITON": 11
+      }
+    },
+    {
+      "external_id": "bitrix:1491",
+      "manufacturer": "ROBITON",
+      "model": "VRLA12-12",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/07635/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/robiton-vrla12-12-2026-07-29.html",
+      "snapshot_sha256": "4d5b3234afe592f53acbd9e5693514f136ebe09e8c2069896e0e9c0d548424c0",
+      "snapshot_bytes": 86112,
+      "required_tokens": [
+        "VRLA12-12",
+        "12 В",
+        "12 Ач",
+        "ROBITON"
+      ],
+      "token_counts": {
+        "VRLA12-12": 4,
+        "12 В": 1,
+        "12 Ач": 1,
+        "ROBITON": 11
+      }
+    },
+    {
+      "external_id": "bitrix:1492",
+      "manufacturer": "ROBITON",
+      "model": "VRLA6-12",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/07628/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/robiton-vrla6-12-2026-07-29.html",
+      "snapshot_sha256": "2ef929bb2fbb89c69239f44e5ac9f125b7cdd5c93bb4617f94ed1833ead47170",
+      "snapshot_bytes": 86020,
+      "required_tokens": [
+        "VRLA6-12",
+        "6 В",
+        "12 Ач",
+        "ROBITON"
+      ],
+      "token_counts": {
+        "VRLA6-12": 4,
+        "6 В": 1,
+        "12 Ач": 1,
+        "ROBITON": 11
+      }
+    },
+    {
+      "external_id": "bitrix:1544",
+      "manufacturer": "ROBITON",
+      "model": "VRLA12-18",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/07636/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave208s-stationary/robiton-vrla12-18-2026-07-29.html",
+      "snapshot_sha256": "4e22d41bc88be1a0889851408683726bb499d743e6970330846896b5fde44c74",
+      "snapshot_bytes": 86036,
+      "required_tokens": [
+        "VRLA12-18",
+        "12 В",
+        "18 Ач",
+        "ROBITON"
+      ],
+      "token_counts": {
+        "VRLA12-18": 4,
+        "12 В": 1,
+        "18 Ач": 1,
+        "ROBITON": 11
+      }
+    }
+  ]
+}

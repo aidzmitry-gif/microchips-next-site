@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "purpose": "Four exact-model noindex industrial-battery previews without unverified price, stock or local warranty claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004769",
+      "manufacturer": "Ventura",
+      "mpn": "GT 06 270",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "ventura-gt-06-270",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005166",
+      "manufacturer": "B.B. Battery",
+      "mpn": "UPS 12220W",
+      "source_url": "https://www.bb-battery.ru/products/ups/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "bb-battery-ups-12220w",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00002343",
+      "manufacturer": "CSB",
+      "mpn": "UPS123606",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-UPS123606-%E2%80%93-053124.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-ups123606",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005195",
+      "manufacturer": "EnerSys",
+      "mpn": "X Cell",
+      "source_url": "https://www.enersys.com/en-gb/products/batteries/cyclon/cyclon/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-cyclon-x-cell",
+      "replace_categories": true
+    }
+  ]
+}

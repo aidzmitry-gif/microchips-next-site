@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Temporary reviewed family relation used to retire one exact duplicate Honeywell BAT-EDA50K-1 Bitrix card without losing its legacy URL.",
+  "families": [
+    {
+      "family_key": "honeywell-bat-eda50k-1",
+      "name": "Honeywell BAT-EDA50K-1",
+      "canonical_external_id": "bitrix:12116",
+      "manufacturer": "Honeywell",
+      "model_core": "BAT-EDA50K-1",
+      "selector_label": "Источник карточки",
+      "canonical_label": "основная карточка",
+      "canonical_attributes": {},
+      "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-gb/localized/accessories-guides/sps-ppr-eda51k-accessory-guide-en-a4.pdf",
+      "shared_attributes": {
+        "Номинальное напряжение": "3,8 В",
+        "Номинальная ёмкость": "4000 мА·ч",
+        "Подтверждённая совместимость": "Honeywell ScanPal EDA50K и EDA51K"
+      },
+      "variants": [
+        {
+          "external_id": "bitrix:12270",
+          "variant_key": "duplicate-bitrix-12270",
+          "label": "дубликат исходной карточки",
+          "source_url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-gb/localized/accessories-guides/sps-ppr-eda51k-accessory-guide-en-a4.pdf",
+          "attributes": {},
+          "retire_paths": [
+            "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12270"
+          ]
+        }
+      ]
+    }
+  ]
+}

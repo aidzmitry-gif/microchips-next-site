@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:RL 11",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 11",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 11 Ni-Cd",
+      "slug": "enersys-rl-11",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "11 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,2 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 18",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 18",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 18 Ni-Cd",
+      "slug": "enersys-rl-18",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "18 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,3 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 24",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 24",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 24 Ni-Cd",
+      "slug": "enersys-rl-24",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "24 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,4 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 30",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 30",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 30 Ni-Cd",
+      "slug": "enersys-rl-30",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "30 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 45",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 45",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 45 Ni-Cd",
+      "slug": "enersys-rl-45",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "45 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 65",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 65",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 65 Ni-Cd",
+      "slug": "enersys-rl-65",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "65 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 80",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 80",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 80 Ni-Cd",
+      "slug": "enersys-rl-80",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "80 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "5,1 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 100",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 100",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 100 Ni-Cd",
+      "slug": "enersys-rl-100",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "100 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "5,3 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 120",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 120",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 120 Ni-Cd",
+      "slug": "enersys-rl-120",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "120 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "5,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 140",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 140",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 140 Ni-Cd",
+      "slug": "enersys-rl-140",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "140 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "5,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 150",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 150",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 150 Ni-Cd",
+      "slug": "enersys-rl-150",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "150 А·ч",
+        "Габариты": "70 × 164 × 364 мм",
+        "Типичная масса": "6,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 160",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 160",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 160 Ni-Cd",
+      "slug": "enersys-rl-160",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "160 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "9,3 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 185",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 185",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 185 Ni-Cd",
+      "slug": "enersys-rl-185",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "185 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "9,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 200",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 200",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 200 Ni-Cd",
+      "slug": "enersys-rl-200",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "200 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,1 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 230",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 230",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 230 Ni-Cd",
+      "slug": "enersys-rl-230",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "230 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 270",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 270",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 270 Ni-Cd",
+      "slug": "enersys-rl-270",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "270 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,9 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 300",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 300",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 300 Ni-Cd",
+      "slug": "enersys-rl-300",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "300 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "11,3 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 340",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 340",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 340 Ni-Cd",
+      "slug": "enersys-rl-340",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "340 А·ч",
+        "Габариты": "158 × 164 × 364 мм",
+        "Типичная масса": "16,4 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 370",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 370",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 370 Ni-Cd",
+      "slug": "enersys-rl-370",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "370 А·ч",
+        "Габариты": "158 × 164 × 364 мм",
+        "Типичная масса": "16,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 400",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 400",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 400 Ni-Cd",
+      "slug": "enersys-rl-400",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "400 А·ч",
+        "Габариты": "158 × 164 × 364 мм",
+        "Типичная масса": "17,2 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 435",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 435",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 435 Ni-Cd",
+      "slug": "enersys-rl-435",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "435 А·ч",
+        "Габариты": "158 × 164 × 364 мм",
+        "Типичная масса": "17,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 470",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 470",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 470 Ni-Cd",
+      "slug": "enersys-rl-470",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "470 А·ч",
+        "Габариты": "158 × 164 × 364 мм",
+        "Типичная масса": "18 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 520",
+      "manufacturer": "EnerSys",
+      "mpn": "RL 520",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe RL 520 Ni-Cd",
+      "slug": "enersys-rl-520",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe RL",
+        "Технология": "Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы и увеличенный запас электролита",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Обслуживание": "увеличенный запас электролита снижает частоту долива воды",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "520 А·ч",
+        "Габариты": "176 × 246 × 382 мм",
+        "Типичная масса": "26 кг"
+      }
+    }
+  ]
+}

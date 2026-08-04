@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "policy": "SHA-pinned official manufacturer-primary sources only",
+  "sources": [
+    {
+      "source_id": "enersys-cyclon-selection-guide.pdf",
+      "publisher": "EnerSys",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/enersys-cyclon-selection-guide.pdf",
+      "snapshot_sha256": "3c6ecbb7f5379fccd8c2f5e31b999ac6f4d62117377b56b5f1e9df578e8fec5f"
+    },
+    {
+      "source_id": "exide-sonnenschein-a400.pdf",
+      "publisher": "Exide Technologies",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A400_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/exide-sonnenschein-a400.pdf",
+      "snapshot_sha256": "40380098ad38efc1bd384f2e0eaf2a4bc8ccf0d4d738c52837e62723dd183ca1"
+    },
+    {
+      "source_id": "exide-sonnenschein-a500.pdf",
+      "publisher": "Exide Technologies",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/exide-sonnenschein-a500.pdf",
+      "snapshot_sha256": "7390f3a446d4392f73e0fc1aa3e352427d245c20dc2387ad9fbc9189b2c32d4d"
+    },
+    {
+      "source_id": "exide-sonnenschein-a600-solar.pdf",
+      "publisher": "Exide Technologies",
+      "source_url": "https://www.exidegroup.com/at/sites/default/files/2023-04/230404_Sonnenschein_Solar_A600_technicaldata.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/exide-sonnenschein-a600-solar.pdf",
+      "snapshot_sha256": "75954856154e15289c53f4caf00422e95cc4308816628e7e2ac09fd2a9a7b801"
+    },
+    {
+      "source_id": "exide-sonnenschein-a600.pdf",
+      "publisher": "Exide Technologies",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/exide-sonnenschein-a600.pdf",
+      "snapshot_sha256": "af13827654bb2033752096052eae0212ba9a6d006717cae5d5bb840d8b0431c3"
+    },
+    {
+      "source_id": "exide-sonnenschein-a700.pdf",
+      "publisher": "Exide Technologies",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A700_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/exide-sonnenschein-a700.pdf",
+      "snapshot_sha256": "81ccc1905b0f257c0383ea6a9e24460873e41e74b152eaa6245a67e28b14cffa"
+    },
+    {
+      "source_id": "exide-sonnenschein-solar-block.pdf",
+      "publisher": "Exide Technologies",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave209a/exide-sonnenschein-solar-block.pdf",
+      "snapshot_sha256": "f065a4727d47d515d3bc9d8df09bbe4b8567ac53c7101806819287590ce80730"
+    },
+    {
+      "source_id": "mnb_official_catalogue",
+      "publisher": "MNB Battery",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-panasonic-ventura-mnb/mnb-official-catalogue.pdf",
+      "snapshot_sha256": "85dac18f2953eeb29e306434b0af658a49f96afcc04d182ea2a2b8ef7b207859"
+    },
+    {
+      "source_id": "panasonic_vrla_professional_catalogue",
+      "publisher": "Panasonic Industry Europe GmbH",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/custom-upload/Energy%20%26%20Building/Batteries/Secondary%20Batteries/Valve%20Regulated%20Lead-Acid%20Batteries/Panasonic%20VRLA%20Batteries%20VRLA%20Handbook.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-panasonic-ventura-mnb/panasonic-vrla-for-professionals.pdf",
+      "snapshot_sha256": "93785723bfcab8f21a7df198673be9886bc220aabd15486a2afca4d01d1f3a42"
+    }
+  ]
+}

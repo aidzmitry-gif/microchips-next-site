@@ -1,0 +1,110 @@
+{
+    "schema_version":  1,
+    "purpose":  "Wave 128B primary Ventura model-core facts only. No terminal, capacity-rating condition, price, image, origin or publication inference.",
+    "locale":  "ru-BY",
+    "products":  [
+                     {
+                         "external_id":  "КА-00003755",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GPL 12-40",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "GPL AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003890",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GPL 12-45",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "GPL AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003736",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GPL 12-65",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "GPL AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003966",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GT 06 235",
+                         "technology":  "traction lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Series":  "GT",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005320",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "HR 1290W",
+                         "technology":  "high-rate VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "HR AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004972",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "HRL 12650W",
+                         "technology":  "long-life VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "HRL AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004762",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "VTG 06 210 XT",
+                         "technology":  "traction lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Series":  "VTG XT",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     }
+                 ]
+}

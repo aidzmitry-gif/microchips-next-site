@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 130-B has no eligible Delta records after the first 20 queue entries: all 17 remaining Delta entries already have source-backed descriptions. No source facts are repeated.",
+  "locale": "ru-BY",
+  "products": []
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from Schneider Electric technical documentation. It carries no price, stock, image-rights, local warranty or publication claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005622",
+      "manufacturer": "APC",
+      "mpn": "SURT192RMXLBP",
+      "display_name": "Внешний батарейный модуль APC Smart-UPS RT SURT192RMXLBP",
+      "technology": "Внешний батарейный модуль для ИБП",
+      "source_url": "https://www.se.com/uk/en/product/SURT192RMXLBP/?parent-subcategory-id=88976",
+      "source_kind": "Schneider Electric product page and external battery pack technical documentation",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Назначение": "Внешний батарейный модуль для APC Smart-UPS RT",
+        "Номинальное напряжение батареи": "192 В",
+        "Тип батареи": "Свинцово-кислотная",
+        "Монтаж": "Стоечный",
+        "Высота в стойке": "3U"
+      }
+    }
+  ]
+}

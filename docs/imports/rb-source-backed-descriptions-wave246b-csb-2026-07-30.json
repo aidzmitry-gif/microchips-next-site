@@ -1,0 +1,1679 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave246B CSB exact PASS source-backed descriptions",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:2732",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP121000",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP121000",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2777",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP12120 F2",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP12120 F2",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2888",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP12200",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP12200",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2983",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP12340",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP12340",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3129",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP12650",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP12650",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2778",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP6120 F2",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP6120 F2",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3002",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP645 F2",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GP645 F2",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2733",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL121000",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL121000",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2913",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12260",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12260",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3086",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12520",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12520",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3211",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12750",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12750",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3254",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12880",
+      "technology": "AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12880",
+        "Серия": "GP",
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HR1218W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HR1218W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HR1218W",
+        "Серия": "HR",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HR1232W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HR1232W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HR1232W",
+        "Серия": "HR",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12150WG",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL12150WG",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HRL12150WG",
+        "Серия": "HRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12330WG",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL12330WG",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HRL12330WG",
+        "Серия": "HRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL1250W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL1250W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HRL1250W",
+        "Серия": "HRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12540W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL12540W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HRL12540W",
+        "Серия": "HRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:RUM6290",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "RUM6290",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "RUM6290",
+        "Серия": "UPS",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS123607",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS123607",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "UPS123607",
+        "Серия": "UPS",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12460",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS12460",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "UPS12460",
+        "Серия": "UPS",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12580",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS12580",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "UPS12580",
+        "Серия": "UPS",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12170W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12170W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12170W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12250W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12250W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12250W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12360W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12360W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12360W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12360WG",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12360WG",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12360WG",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12410W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12410W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12410W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12410WG",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12410WG",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12410WG",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12475W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12475W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12475W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12500W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12500W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12500W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12600WFTFR",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12600WFTFR",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12600WFTFR",
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12620W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12620W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12620W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12650W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12650W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12650W",
+        "Серия": "XHRL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12720WFTFR",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12720WFTFR",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12720WFTFR",
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12800WFTFR",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12800WFTFR",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12800WFTFR",
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12900WFTFR",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHRL12900WFTFR",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHRL12900WFTFR",
+        "Серия": "XHRL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2000",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL2000",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL2000",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL2200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL2200",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL2700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL2700",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL3500",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL3500",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL3500",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL4200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL4200",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL4700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL4700",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL5700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL5700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL5700",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL6700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL6700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL6700",
+        "Серия": "XPL",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL7000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL7000FT",
+        "Серия": "XPL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7700FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL7700FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL7700FT",
+        "Серия": "XPL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL8000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL8000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL8000FT",
+        "Серия": "XPL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL9000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL9000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XPL9000FT",
+        "Серия": "XPL-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV121000",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV121000",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV121000",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV121100",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV121100",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV121100",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12120",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV12120",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV12120",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV12200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV12200",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12550",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV12550",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV12550",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV1272",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV1272",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV1272",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12800",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV12800",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV12800",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV1285",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XTV1285",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XTV1285",
+        "Серия": "XTV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00001620",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL1272",
+      "technology": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL1272",
+        "Серия": "GP",
+        "Технология": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00001619",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL1225W",
+      "technology": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM высокой мощности",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "HRL1225W",
+        "Серия": "HRL",
+        "Технология": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM высокой мощности"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT7000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHT7000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHT7000FT",
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT7700FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHT7700FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHT7700FT",
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT8000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHT8000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHT8000FT",
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT9000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XHT9000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "XHT9000FT",
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "ФР-00002343",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS123606",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM для высокотоковых ИБП",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "UPS123606",
+        "Серия": "UPS",
+        "Технология": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM для высокотоковых ИБП"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:RE1200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "RE1200",
+      "technology": "VRLA AGM lead-carbon",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "RE1200",
+        "Серия": "RE",
+        "Технология": "VRLA AGM lead-carbon"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:RE1700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "RE1700",
+      "technology": "VRLA AGM lead-carbon",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "RE1700",
+        "Серия": "RE",
+        "Технология": "VRLA AGM lead-carbon"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:48RE1200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "48RE1200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "48RE1200",
+        "Серия": "RE 48V",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:GPL12650",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12650",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12650",
+        "Серия": "GP",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:GPL12800",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12800",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12800",
+        "Серия": "GP",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:GPL12800G",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GPL12800G",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "GPL12800G",
+        "Серия": "GP",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-1000",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-1000",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-1000",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-150",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-150",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-150",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-200",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-260",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-260",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-260",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-300",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-300",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-300",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-400",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-400",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-400",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-500",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-500",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-500",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-650",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-650",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-650",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-800",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSJ-800",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSJ-800",
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-1000",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-1000",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-1000",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-200",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-300",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-300",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-300",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-400",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-400",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-400",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-500",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-500",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-500",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-650",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-650",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-650",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-800",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MSV-800",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MSV-800",
+        "Серия": "MSV",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MU-1000",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MU-1000",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MU-1000",
+        "Серия": "MU",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MU1000S",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MU1000S",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MU1000S",
+        "Серия": "MU",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:MU1500S",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "MU1500S",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technical_attributes": {
+        "Модель": "MU1500S",
+        "Серия": "MU",
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB Energy Technology Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

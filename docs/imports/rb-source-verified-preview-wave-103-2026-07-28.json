@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "purpose": "Six exact-model noindex battery previews without unverified price, stock or local warranty claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003094",
+      "manufacturer": "B.B. Battery",
+      "mpn": "BPS28-12",
+      "source_url": "https://www.bb-bat.com/en/product/BPS2812.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "bb-battery-bps28-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001851",
+      "manufacturer": "B.B. Battery",
+      "mpn": "FTB100-12",
+      "source_url": "https://www.bb-bat.com/en/product/FTB10012.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "bb-battery-ftb100-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001923",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HRL5.5-12",
+      "source_url": "https://www.bb-bat.com/en/product/HRL5512.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "bb-battery-hrl5-5-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00002258",
+      "manufacturer": "CSB Energy Technology",
+      "mpn": "UPS122406",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-UPS122406-01312026.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-ups122406",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002966",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HRC5.5-12",
+      "source_url": "https://www.akku-vertrieb.ru/upload/iblock/c13/64omvw4i0fbfps4khi6fkzbn5fibypv0/BB_booklet_A4_june2025_lite_AV.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "bb-battery-hrc5-5-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001994",
+      "manufacturer": "Delta",
+      "mpn": "HR 12-24 W",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/hr-w/hr-12-24-w/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-24w",
+      "replace_categories": true
+    }
+  ]
+}

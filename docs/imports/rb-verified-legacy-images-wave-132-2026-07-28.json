@@ -1,0 +1,138 @@
+{
+  "schema_version": 3,
+  "purpose": "Company-owned Bitrix images with visible exact identity and material rating.",
+  "images": [
+    {
+      "external_id": "КА-00001615",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00001615-detail.png",
+      "sha256": "e1e0fb0ef03f80cfb92e66c3c30a464d0a4e58a3e1631e43d905e2a4f68ec610",
+      "archive_member": "_shared/upload/iblock/893/fso0nlw4bndrwiylsm3h0yk1ks6qbq50.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Delta HR 12-12, 12V 12Ah and AGM VRLA Battery are visibly readable; manufacturer, exact model and rating/type agree with the reviewed identity.",
+      "model_core": "HR 12-12"
+    },
+    {
+      "external_id": "КА-00003244",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00003244-detail.webp",
+      "sha256": "4da0e3771096420bad0fff3ec0c8d0007ab6b44ca5e082b14e458058d44e873e",
+      "archive_member": "_shared/upload/iblock/80d/uflpgknz0oqn5pqxw1aasjviuf7rnff2.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "B.B. Battery BPS40-12, 12V 40Ah and VRLA Rechargeable Battery are visibly readable; exact model and material rating/type are consistent with the reviewed identity.",
+      "model_core": "BPS40-12"
+    },
+    {
+      "external_id": "КА-00003736",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00003736-detail.png",
+      "sha256": "32ed027e440788f4ea12610d5c0b054bca1f19b629b5ad23eceb4cf9909baa7f",
+      "archive_member": "_shared/upload/iblock/a6d/qgoz7ibkk5oje2mlju1o6c3rlr4e3itg.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Ventura GPL 12-65, 12V and 65Ah are visibly readable and agree with the reviewed model-core identity and rating.",
+      "model_core": "GPL 12-65"
+    },
+    {
+      "external_id": "КА-00004022",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00004022-detail.png",
+      "sha256": "d5ff270931ab69c722e5461bdcadd70faa8b8d634c0dece2b734c18e1ad435a2",
+      "archive_member": "_shared/upload/iblock/fc0/on1oh8nv9jlsmfd82chw2ozjpdn0bm63.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "DELTA DTM 1275 L and 12V 75Ah are visibly readable; match legacy DTM 1275 L AGM 75Ah.",
+      "model_core": "DTM 1275 L"
+    },
+    {
+      "external_id": "КА-00004141",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00004141-detail.png",
+      "sha256": "52f68b2986c8896fdc91458a2687b598272c466a509fff49a08597bd27c46115",
+      "archive_member": "_shared/upload/iblock/ca5/th44g1rq2c1mljtpigtvt47dgnq22flm.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "CSB GP 12400 and 12V 40Ah are visibly readable; match GP12400 and legacy AGM 40Ah.",
+      "model_core": "GP12400"
+    },
+    {
+      "external_id": "КА-00004165",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00004165-detail.jpg",
+      "sha256": "3a8ad958927b76d97c0ef3bd19714c2a8c15963c5beb21fc71c663bfc6a4549b",
+      "archive_member": "_shared/upload/iblock/5c4/0x7cmqg1l9cyyustigzplmyb84y9wcti.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "B.B. Battery HR5.8-12, VRLA Rechargeable Battery and 12V/23WPC/15min high-rate rating are visibly readable; no conflicting material rating or type is shown.",
+      "model_core": "HR 5.8-12"
+    },
+    {
+      "external_id": "КА-00005187",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00005187-detail.png",
+      "sha256": "7d4081c2b6ef08058b6a25e6c9279f6d7587bacf2b31211bcbb5c27bcdcb3d13",
+      "archive_member": "_shared/upload/iblock/a5b/ied3vftnd3l6w67ry5jg8xf0a9spiagm.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "DELTA XPERT FTS 12-180 X and 12V 180Ah are visibly readable on the label; match legacy AGM 180Ah.",
+      "model_core": "FTS 12-180 X"
+    },
+    {
+      "external_id": "КА-00006758",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00006758-detail.png",
+      "sha256": "58dde28ca0444324d0318f946013146c9f6ae1366e75772c226004bdf1391fdd",
+      "archive_member": "_shared/upload/iblock/94d/vb0t8xwwxi1xuqzi5s1ucq62nc1gxsrf.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "DELTA XPERT FTS 12-50 X and 12V 50Ah are visibly readable on the label; match legacy AGM 50Ah.",
+      "model_core": "FTS 12-50 X"
+    },
+    {
+      "external_id": "КА-00007126",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00007126-detail.png",
+      "sha256": "b128e8c923e05500ccb38f099c18325a6a4e4b394aaf8ec011ef46d508dbb610",
+      "archive_member": "_shared/upload/iblock/606/dpwmha147wmuuhlfps676mdqoqck0824.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "DELTA XPERT FTS 12-150 X and 12V 150Ah are visibly readable on the label; match legacy AGM 150Ah.",
+      "model_core": "FTS 12-150 X"
+    },
+    {
+      "external_id": "ФР-00000295",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00000295-detail.png",
+      "sha256": "e7a8b46e537dbc43be148230b5bbcae0529e3f70439d1b1e1d49bdb7d71c4785",
+      "archive_member": "_shared/upload/iblock/d44/02xmskjr5ma3tosa6irpv73i5i7m6opz.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Delta DT 1226, 12V 26Ah and AGM VRLA Battery are visibly readable; manufacturer, exact model and rating/type agree with the reviewed identity.",
+      "model_core": "DT 1226"
+    },
+    {
+      "external_id": "ФР-00001873",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00001873-detail.png",
+      "sha256": "6603470aa71d66bef86c826aab04d7dc382c8eb264b2359561effa23f60912b0",
+      "archive_member": "_shared/upload/iblock/332/f6cfw7b4r3hrcfjgzc8o31jws1er117i.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "CSB GP 12120 F2, 12V and 12Ah are visibly readable and agree with the reviewed model-core identity and rating.",
+      "model_core": "GP12120"
+    }
+  ]
+}

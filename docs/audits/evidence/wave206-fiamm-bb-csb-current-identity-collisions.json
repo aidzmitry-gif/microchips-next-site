@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "site": "microchips-by",
+  "checked_at": "2026-07-29",
+  "scope": "Read-only Product query for normalized MPNs proposed by Wave206 exact manufacturer-primary evidence.",
+  "collisions": [
+    {
+      "candidate_external_id": "bitrix:1590",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HR33-12",
+      "existing_product_id": 48,
+      "existing_external_id": "КА-00003582",
+      "existing_name": "Аккумулятор Bb battery HR 33-12/Китай",
+      "decision": "strict_duplicate_hold"
+    }
+  ]
+}

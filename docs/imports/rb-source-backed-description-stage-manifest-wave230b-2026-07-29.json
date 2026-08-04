@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave230-B frozen MNB (13) and EnerSys (12) manufacturer-primary description refresh stage only; exact scope is forbidden unless nameEndsWith MPN.",
+  "locale": "ru-BY",
+  "application_contract": {
+    "stage_only": true,
+    "refresh_existing": true,
+    "refresh_applied": true,
+    "database_apply": false
+  },
+  "products": [
+    {
+      "external_id": "bitrix:24568",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0809-0012",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24530",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0810-0102",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24571",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0010",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24572",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0012",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24574",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0016",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24576",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0819-0020",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24559",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0820-0020",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24562",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0850-0114",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24584",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0859-0020",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24585",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0859-0030",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24517",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "Cyclon BC Cell",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24518",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "Cyclon E Cell",
+      "technology": "AGM",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1433",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 100-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2980",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 33-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3097",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 55-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3137",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 65-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1434",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 100-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1514",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 150-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1562",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 200-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2981",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 33-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3035",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 40-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3098",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 55-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3138",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 65-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3220",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MNG 75-12",
+      "technology": "VRLA GEL",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA GEL"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1518",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MR 155-12FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

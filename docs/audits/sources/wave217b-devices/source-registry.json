@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "policy": "SHA-pinned official manufacturer pages or catalogues only",
+  "sources": [
+    {
+      "source_id": "enersys_cyclon_selection_guide",
+      "publisher": "EnerSys",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "snapshot_path": "docs/audits/sources/wave209a/enersys-cyclon-selection-guide.pdf",
+      "snapshot_sha256": "3c6ecbb7f5379fccd8c2f5e31b999ac6f4d62117377b56b5f1e9df578e8fec5f"
+    },
+    {
+      "source_id": "robiton_smartdisplay_1000",
+      "publisher": "ROBITON",
+      "source_url": "https://www.robiton.ru/product/11072/",
+      "source_kind": "official_manufacturer_product_page",
+      "snapshot_path": "docs/audits/sources/wave217b-devices/robiton-smartdisplay-1000.html",
+      "snapshot_sha256": "10008167f6e8fc4f475dbf8e1e4a377dddaf4b1a0dde25608d03303e91213536"
+    }
+  ]
+}

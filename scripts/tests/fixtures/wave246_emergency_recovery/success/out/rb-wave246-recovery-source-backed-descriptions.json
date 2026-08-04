@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "locale": "ru-BY",
+  "input_pins": [
+    {
+      "path": "docs/imports/rb-manufacturer-product-candidates-wave1.json",
+      "sha256": "a5229884d073cce508a7f2922b3bba08fb07e04234ba283d8f1495229f8b6814"
+    },
+    {
+      "path": "docs/imports/rb-source-backed-description-drafts-wave1.json",
+      "sha256": "d60f329b4669d059b34939e88540857aac7545cfdf4c1d74b4a7f2288e85857c"
+    },
+    {
+      "path": "docs/imports/rb-source-verified-preview-wave-1.json",
+      "sha256": "1c0ef9105f7e0121018de7c62056b1a41d9f69a6f5e6a2a8440f81e30e09d7ed"
+    },
+    {
+      "path": "target.csv",
+      "sha256": "c4874368142c69d70580fba85987beedcbcea7c95dd165d7a3d54b18640bfdbb"
+    }
+  ],
+  "purpose": "Emergency recovery of source-backed descriptions; no apply",
+  "recovery_status": "ready",
+  "selection_conflicts": [],
+  "legacy_partial_provenance_omissions": [
+    "manufacturer:acme:M1"
+  ],
+  "technology_normalizations": [
+    "КА-1"
+  ],
+  "unresolved": [],
+  "products": [
+    {
+      "external_id": "manufacturer:acme:M1",
+      "manufacturer": "Acme",
+      "mpn": "M1",
+      "source_url": "https://acme.test/m1",
+      "technology": "AGM",
+      "technical_attributes": {
+        "V": "12"
+      }
+    },
+    {
+      "external_id": "КА-1",
+      "manufacturer": "Acme",
+      "mpn": "M2",
+      "source_url": "https://acme.test/m2",
+      "technology": "VRLA AGM",
+      "technical_attributes": {
+        "V": "12",
+        "Технология": "VRLA AGM"
+      }
+    },
+    {
+      "external_id": "bitrix:1",
+      "manufacturer": "Acme",
+      "mpn": "M3",
+      "source_url": "https://acme.test/m3",
+      "technology": "AGM",
+      "technical_attributes": {
+        "V": "12"
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "icom_bp_210n",
+      "publisher": "Icom Inc.",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-210N/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/icom-bp-210n-2026-07-29.html",
+      "snapshot_sha256": "659807c90b5d513dc0bc7787cda0306e2a48231facda3127bca2ce3215bb1a8e",
+      "snapshot_bytes": 27767,
+      "required_tokens": [
+        "BP-210N",
+        "BATTERY PACK"
+      ],
+      "token_counts": {
+        "BP-210N": 3,
+        "BATTERY PACK": 3
+      }
+    },
+    {
+      "source_id": "icom_bp_234",
+      "publisher": "Icom Inc.",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-234/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/icom-bp-234-2026-07-29.html",
+      "snapshot_sha256": "2b042861df0da0bdd1b2858aaf0ab524283df6e6cde96ddddc47cfa2cfe31901",
+      "snapshot_bytes": 29285,
+      "required_tokens": [
+        "BP-234",
+        "BATTERY PACK"
+      ],
+      "token_counts": {
+        "BP-234": 4,
+        "BATTERY PACK": 3
+      }
+    },
+    {
+      "source_id": "icom_bp_252",
+      "publisher": "Icom Inc.",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-252/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/icom-bp-252-2026-07-29.html",
+      "snapshot_sha256": "2a1cd48ee9e35c05109ab451d7baba2ecd633eba3993294b06439300af65b093",
+      "snapshot_bytes": 28820,
+      "required_tokens": [
+        "BP-252",
+        "BATTERY PACK"
+      ],
+      "token_counts": {
+        "BP-252": 3,
+        "BATTERY PACK": 3
+      }
+    },
+    {
+      "source_id": "icom_bp_256",
+      "publisher": "Icom Inc.",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-256/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/icom-bp-256-2026-07-29.html",
+      "snapshot_sha256": "0a015d2a66f7f2134f2f2fa9155e7dd909320930be451acf552860d787eaa6ab",
+      "snapshot_bytes": 27828,
+      "required_tokens": [
+        "BP-256",
+        "BATTERY PACK"
+      ],
+      "token_counts": {
+        "BP-256": 3,
+        "BATTERY PACK": 3
+      }
+    },
+    {
+      "source_id": "icom_bp_264",
+      "publisher": "Icom Inc.",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-264/",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/icom-bp-264-2026-07-29.html",
+      "snapshot_sha256": "c1dfa892b3595c7a4fdeea983e8af73a678a09417c60dd09b7197b08382b4d0c",
+      "snapshot_bytes": 31035,
+      "required_tokens": [
+        "BP-264",
+        "BATTERY PACK"
+      ],
+      "token_counts": {
+        "BP-264": 3,
+        "BATTERY PACK": 3
+      }
+    },
+    {
+      "source_id": "baofeng_uv5r_1800",
+      "publisher": "Baofeng",
+      "source_url": "https://www.baofengradio.com/products/battery-1800mah-for-uv-5r",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/baofeng-uv5r-1800-2026-07-29.html",
+      "snapshot_sha256": "ae03dded52053a2d3250ebd5ed73a960c17b221b4ab7b493da1ccac9878665cc",
+      "snapshot_bytes": 673212,
+      "required_tokens": [
+        "UV-5R",
+        "1800"
+      ],
+      "token_counts": {
+        "UV-5R": 22,
+        "1800": 7
+      }
+    },
+    {
+      "source_id": "baofeng_uv5r_3800",
+      "publisher": "Baofeng",
+      "source_url": "https://www.baofengradio.com/products/battery-3800mah-for-uv-5r",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave207-device-small/baofeng-uv5r-3800-2026-07-29.html",
+      "snapshot_sha256": "53ba8ce5081733b82e75b8f1647624f12c76ca8ccf198947928a6662c50d2cae",
+      "snapshot_bytes": 705332,
+      "required_tokens": [
+        "UV-5R",
+        "3800"
+      ],
+      "token_counts": {
+        "UV-5R": 27,
+        "3800": 6
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "source_id": "icom_bp_202",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-202/",
+      "http_status": 404
+    },
+    {
+      "source_id": "icom_bp_209n",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-209N/",
+      "http_status": 404
+    },
+    {
+      "source_id": "icom_bp_227fm",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-227FM/",
+      "http_status": 404
+    },
+    {
+      "source_id": "icom_bp_232n",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-232N/",
+      "http_status": 404
+    },
+    {
+      "source_id": "icom_bp_235",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-235/",
+      "http_status": 404
+    },
+    {
+      "source_id": "icom_bp_236",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-236/",
+      "http_status": 404
+    },
+    {
+      "source_id": "icom_bp_245n",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-245N/",
+      "http_status": 404
+    },
+    {
+      "source_id": "baofeng_uv82_2000",
+      "source_url": "https://www.baofengradio.com/products/battery-for-uv-82l",
+      "http_status": 429
+    },
+    {
+      "source_id": "baofeng_dm1701",
+      "source_url": "https://www.baofengradio.com/collections/analog/products/dm-1701",
+      "http_status": 429
+    },
+    {
+      "source_id": "baofeng_bf888s_1500",
+      "source_url": "https://www.baofengradio.com/products/battery-for-bf-888s",
+      "http_status": 429
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "status": "blocked_unresolved",
+  "target_path": "target.csv",
+  "target_sha256": "d048cb9616903ebde31f370871c56707395a170507e718b38edf6c7e7309d684",
+  "target_rows": 3,
+  "manufacturer": {
+    "target": 1,
+    "selected": 1,
+    "unresolved": []
+  },
+  "descriptions": {
+    "target": 3,
+    "selected": 3,
+    "unresolved": [],
+    "conflict_count": 0,
+    "legacy_partial_provenance_omission_count": 1,
+    "technology_normalization_count": 1
+  },
+  "preview_publication": {
+    "target": 2,
+    "selected": 1,
+    "unresolved": [
+      {
+        "external_id": "КА-1",
+        "manufacturer": "Acme",
+        "mpn": "M2",
+        "category_external_id": "seo:primary-cells",
+        "available_sources": [
+          "rb-source-verified-preview-wave-1.json"
+        ]
+      }
+    ],
+    "conflict_count": 0,
+    "recovery_resolution_count": 0,
+    "recovery_resolutions": [],
+    "verified_price_authorizations": 0,
+    "applied_description_source_realignments": [
+      "manufacturer:acme:M1"
+    ],
+    "applied_description_model_core_realignments": []
+  },
+  "input_pins": [
+    {
+      "path": "docs/imports/rb-manufacturer-product-candidates-wave1.json",
+      "sha256": "a5229884d073cce508a7f2922b3bba08fb07e04234ba283d8f1495229f8b6814"
+    },
+    {
+      "path": "docs/imports/rb-source-backed-description-drafts-wave1.json",
+      "sha256": "d60f329b4669d059b34939e88540857aac7545cfdf4c1d74b4a7f2288e85857c"
+    },
+    {
+      "path": "docs/imports/rb-source-verified-preview-wave-1.json",
+      "sha256": "1c0ef9105f7e0121018de7c62056b1a41d9f69a6f5e6a2a8440f81e30e09d7ed"
+    },
+    {
+      "path": "target.csv",
+      "sha256": "d048cb9616903ebde31f370871c56707395a170507e718b38edf6c7e7309d684"
+    }
+  ],
+  "output_hashes": {
+    "rb-wave246-recovery-manufacturer-product-candidates.json": "fea4d5deac225cdc27e853ffc67f6cb74950b43242b6203a80068d6223ec3b32",
+    "rb-wave246-recovery-source-backed-descriptions.json": "a6d781a355f6b0b38c6f11a9f82e8c5bb45696ca508a89fb30610d62981737ab",
+    "rb-wave246-recovery-preview-publication.json": "75bcfaa32c615bd962de38d2a0b3ab94f452faba49d0c0add2d85f12567af6d0"
+  }
+}

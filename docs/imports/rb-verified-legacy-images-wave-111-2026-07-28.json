@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "purpose": "Four company-owned legacy Microchips images with the exact DELTA model and rating visible on the physical label. Every archive member and hash was checked against the complete 2026-06-23 upload backup.",
+  "images": [
+    {
+      "external_id": "КА-00002817",
+      "mpn": "DT1233",
+      "asset_file": "tb6u26xy2c73k99pfb0qsqu442x74mq6.png",
+      "sha256": "d3cd003298659407c549440b74aa70b7a35f83140d46ce9bc808ece2eaa2258c",
+      "archive_member": "_shared/upload/iblock/341/tb6u26xy2c73k99pfb0qsqu442x74mq6.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads DELTA DT 1233 and 12V 33Ah; the exact normalized MPN and rating match the canonical product and a Microchips watermark is present."
+    },
+    {
+      "external_id": "КА-00003468",
+      "mpn": "DTM1226",
+      "asset_file": "am28oqi4gpoe3qbdooopc9u3h3c4tcl9.png",
+      "sha256": "0c023a5e2dc2782de42b5344a8b4e1b88632f60e043feacfb209fa2aeab10db8",
+      "archive_member": "_shared/upload/iblock/ea8/am28oqi4gpoe3qbdooopc9u3h3c4tcl9.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads DELTA DTM 1226 and 12V 26Ah; the exact normalized MPN and rating match the canonical product and a Microchips watermark is present."
+    },
+    {
+      "external_id": "КА-00003766",
+      "mpn": "CGD1208",
+      "asset_file": "v1nj56tq3z354aybfskdlhv017luola4.png",
+      "sha256": "f63ef6ff2730302903e966a8b8831ec4a2659df9bdf037488941a2bcf01954c5",
+      "archive_member": "_shared/upload/iblock/798/v1nj56tq3z354aybfskdlhv017luola4.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads DELTA CGD 1208 and 12V 8Ah; the exact normalized MPN and rating match the canonical product and a Microchips watermark is present."
+    },
+    {
+      "external_id": "КА-00003445",
+      "mpn": "CGD1233",
+      "asset_file": "0d9o7ktbq2vxy7dc9kqhget8mg2gwnfs.png",
+      "sha256": "e5b38bbbfb52bcb615ca054174a73cb491a3b4a1806bcefa8b6a4af6a3823742",
+      "archive_member": "_shared/upload/iblock/127/0d9o7ktbq2vxy7dc9kqhget8mg2gwnfs.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads DELTA CGD 1233 and 12V 33Ah; the exact normalized MPN and rating match the canonical product and a Microchips watermark is present."
+    }
+  ]
+}

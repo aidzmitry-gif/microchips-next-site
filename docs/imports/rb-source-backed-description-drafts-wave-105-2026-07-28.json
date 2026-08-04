@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "purpose": "Two exact-model replacement and standby battery descriptions backed by official manufacturer pages. No price, stock, local warranty, image-rights or indexability claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003200",
+      "manufacturer": "APC",
+      "mpn": "RBC31",
+      "display_name": "Сменный аккумуляторный картридж APC RBC31 для Smart-UPS On-Line, 48 В, 9 А·ч",
+      "technology": "готовый сменный аккумуляторный картридж с герметизированными свинцово-кислотными батареями VRLA",
+      "source_url": "https://www.se.com/us/en/product/RBC31/apc-replacement-battery-cartridge-vrla-battery-9ah-48vdc-2year-warranty/",
+      "source_kind": "official Schneider Electric RBC31 product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип изделия": "сменный аккумуляторный картридж",
+        "Химическая система": "VRLA, свинцово-кислотная",
+        "Напряжение картриджа": "48 В",
+        "Ёмкость": "9 А·ч",
+        "Исполнение": "готовая аккумуляторная сборка",
+        "Совместимая линейка": "APC Smart-UPS On-Line SURT"
+      }
+    },
+    {
+      "external_id": "ФР-00001290",
+      "manufacturer": "Ventura",
+      "mpn": "GPL 12-40",
+      "display_name": "Аккумулятор Ventura GPL 12-40, 12 В",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM серии Ventura GPL",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-gpl/gpl-12-40/",
+      "source_kind": "official Ventura GPL 12-40 product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Ёмкость C20": "47 А·ч до 1,75 В/элемент",
+        "Технология": "VRLA AGM",
+        "Габариты": "197 × 166 × 176 мм",
+        "Масса": "13,5 кг",
+        "Тип вывода": "F6",
+        "Серия": "Ventura GPL"
+      }
+    }
+  ]
+}

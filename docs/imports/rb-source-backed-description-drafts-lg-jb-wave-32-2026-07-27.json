@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial drafts from manufacturer technical documents. The package does not authorise publication, local price, availability, warranty, or image use.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001861",
+      "manufacturer": "Hitachi-LG Data Storage",
+      "mpn": "GH24NSD5",
+      "display_name": "Внутренний DVD-привод Hitachi-LG Data Storage GH24NSD5",
+      "technology": "Внутренний оптический DVD-привод с интерфейсом SATA",
+      "source_url": "https://www.farnell.com/datasheets/2918857.pdf",
+      "source_kind": "Hitachi-LG Data Storage GH24NSD5 specification",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Внутренний оптический DVD-привод",
+        "Интерфейс": "SATA",
+        "Поддерживаемые форматы DVD": "DVD-ROM / DVD-R / DVD-RW / DVD-RAM / DVD+R / DVD+RW",
+        "Разъём питания": "SATA, 15 контактов",
+        "Сигнальный разъём": "SATA, 7 контактов",
+        "Питание": "5 В и 12 В",
+        "Лазерная безопасность": "Класс 1 по EN 60825-1 / IEC 60825-1"
+      }
+    },
+    {
+      "external_id": "КА-00003185",
+      "manufacturer": "JB Capacitors",
+      "mpn": "JRB1E102M05001000210000B",
+      "display_name": "Алюминиевый электролитический конденсатор JB Capacitors JRB 1000 мкФ, 25 В",
+      "technology": "Радиальный полярный алюминиевый электролитический конденсатор серии JRB",
+      "source_url": "https://www.jbcapacitors.com/wp-content/uploads/pdf/JRB-105-Radial-Aluminum-Electrolytic-Capacitors.pdf",
+      "source_kind": "JB Capacitors JRB series manufacturer datasheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Радиальный алюминиевый электролитический конденсатор",
+        "Серия": "JRB",
+        "Ёмкость": "1000 мкФ",
+        "Номинальное напряжение": "25 В",
+        "Допуск": "±20%",
+        "Рабочая температура": "до 105 °C",
+        "Ресурс серии": "2000 ч при 105 °C",
+        "Габариты": "10 × 21 мм",
+        "Шаг выводов": "5 мм"
+      }
+    }
+  ]
+}

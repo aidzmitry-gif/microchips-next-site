@@ -44,7 +44,7 @@ CSV);
         ]);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('sku:alpha01', $conflict->match_key);
+        $this->assertSame('identifier:alpha01', $conflict->match_key);
         $this->assertCount(2, $conflict->candidate_ids['staged_record_ids']);
         $this->assertSame([], $conflict->candidate_ids['product_ids']);
     }

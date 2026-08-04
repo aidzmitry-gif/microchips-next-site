@@ -1,0 +1,12 @@
+{
+  "input_files": [
+    "docs\\imports\\rb-research-holds-wave-123.csv",
+    "docs\\imports\\rb-research-holds-bb-wave-124-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-apc-bae-panasonic-wave-124-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-robiton-saft-wave-124-2026-07-28.csv"
+  ],
+  "source_rows": 192,
+  "unique_hold_clusters": 189,
+  "collapsed_duplicate_rows": 3,
+  "invariant": "hold-only ledger; no catalogue, publication or database mutation"
+}

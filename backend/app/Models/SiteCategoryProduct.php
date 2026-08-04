@@ -46,6 +46,10 @@ class SiteCategoryProduct extends Pivot
         }
 
         $paths = SiteCategory::revalidationPaths($category->site_id, [$category->id]);
+        if ($category->is_published) {
+            $paths[] = '/catalog';
+            $paths = array_values(array_unique($paths));
+        }
 
         SiteContentChanged::dispatch($category->site, $paths === [] ? ['/'] : $paths);
     }

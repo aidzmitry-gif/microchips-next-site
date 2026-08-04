@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "One exact-model Delta Electronics noindex preview. No image or price is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004707",
+      "manufacturer": "Delta Electronics",
+      "mpn": "UPS302R2RT2B035",
+      "source_url": "https://www.deltapowersolutions.com/media/download/Manual-UPS-RT-1-3kVA-new-en-us.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "delta-ups302r2rt2b035",
+      "replace_categories": true,
+      "allow_verified_price": false
+    }
+  ]
+}

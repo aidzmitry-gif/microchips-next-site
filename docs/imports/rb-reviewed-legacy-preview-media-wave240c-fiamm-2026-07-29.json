@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "purpose": "Promote only company-owned FIAMM legacy assets whose complete visible model matches SHA-pinned authorized manufacturer brochures.",
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:1427",
+      "media_id": 191,
+      "content_sha256": "8561ca27e157ed4cbbfd94fc3aaa1a96bfa678971f666aeae122b8cbcb282ce1",
+      "storage_path": "legacy-staging/rb/bitrix-1427-79360.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "12FLB400 P",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution visual review confirms the complete visible FIAMM model 12FLB400 P; the SHA-pinned authorized FLB manufacturer brochure lists 12FLB400P.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3241",
+      "media_id": 934,
+      "content_sha256": "19ffef6c3be7c6870356b6572e2a33a42b20613889f235eefed0fa3854b886dc",
+      "storage_path": "legacy-staging/rb/bitrix-3241-79244.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "12SLA80L",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution visual review confirms the complete visible FIAMM model 12SLA80L; the SHA-pinned authorized SLA manufacturer brochure lists 12SLA80L.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3267",
+      "media_id": 956,
+      "content_sha256": "ab4f3c9c13cd456bb8aaaf5443784c040a2b55dc9d61e33c3fbf7d5962e0e452",
+      "storage_path": "legacy-staging/rb/bitrix-3267-79240.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "12FGHL34",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution visual review confirms the complete visible FIAMM model 12FGHL34; the SHA-pinned authorized FGHL manufacturer brochure lists 12FGHL34.",
+      "reviewed_at": "2026-07-29"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "decisions": [
+    {
+      "candidate_id": 52,
+      "external_id_1c": "КА-00003468",
+      "confirmed_mpn": "DTM1226",
+      "manufacturer": "Delta",
+      "category": "VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1226/",
+      "source_kind": "manufacturer-branded Delta DTM1226 product page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "candidate_id": 58,
+      "external_id_1c": "КА-00002817",
+      "confirmed_mpn": "DT1233",
+      "manufacturer": "Delta",
+      "category": "VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1233/",
+      "source_kind": "manufacturer-branded Delta DT1233 product page",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "candidate_id": 93,
+      "external_id_1c": "КА-00003766",
+      "confirmed_mpn": "CGD1208",
+      "manufacturer": "Delta",
+      "category": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "source_kind": "official DELTA CGD product catalogue",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "candidate_id": 94,
+      "external_id_1c": "КА-00003445",
+      "confirmed_mpn": "CGD1233",
+      "manufacturer": "Delta",
+      "category": "VRLA AGM",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "source_kind": "official DELTA CGD product catalogue",
+      "checked_at": "2026-07-28"
+    }
+  ]
+}

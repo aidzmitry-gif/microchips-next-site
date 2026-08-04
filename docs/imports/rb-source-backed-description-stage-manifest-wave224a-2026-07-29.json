@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave224-A source-backed description drafts only; materialization awaits product-page policy extension.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:HR1218W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HR1218W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HR1232W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HR1232W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12150WG",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL12150WG",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12330WG",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL12330WG",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL1250W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL1250W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:HRL12540W",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "HRL12540W",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:RUM6290",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "RUM6290",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS123607",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS123607",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12460",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS12460",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:UPS12580",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "UPS12580",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2000",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL2000",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL2200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL2700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL2700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL3500",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL3500",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4200",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL4200",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL4700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL4700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL5700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL5700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL6700",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL6700",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL7000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL7700FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL7700FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL8000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL8000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:csb:XPL9000FT",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "XPL9000FT",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "CSB",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 100",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 100",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 11",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 11",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 120",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 120",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 140",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 140",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 150",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 150",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 160",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 160",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 18",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 18",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 185",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 185",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 200",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 200",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 230",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 230",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 24",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 24",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 270",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 270",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 30",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 30",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 300",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 300",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 340",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 340",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 370",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 370",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 400",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 400",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "manufacturer:enersys:RL 435",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "RL 435",
+      "technology": "Ni-Cd",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/US-RL-RS-003_0114.pdf",
+      "technical_attributes": {
+        "Технология": "Ni-Cd"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Wave244C dry-run-only fail-closed APC duplicate collapse",
+  "duplicates": [
+    {
+      "survivor_external_id": "КА-00005164",
+      "duplicate_external_id": "bitrix:23799",
+      "survivor_name": "Сменный аккумуляторный картридж APC RBC23 для ИБП",
+      "duplicate_name": "Аккумулятор APC RBC23 (AGM, 7Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/apc-rbc23",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-23799",
+      "model_core": "RBC23",
+      "voltage": "12V",
+      "capacity": "7Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "APC",
+      "survivor_mpn": "RBC23",
+      "source_url": "https://iportal.se.com/Contents/docs/UPS-GWOG-8WTJM8_R0_EN.PDF",
+      "source_evidence_path": "docs/audits/evidence/wave244c-apc/rbc23-identity.json",
+      "source_evidence_sha256": "7046dfcbc285a57b2bcd2a2af2bca1071343ba2ce83383d0ef775a40bcd55e93",
+      "source_snapshot_path": "docs/audits/sources/wave244c-apc/rbc7-rbc23-rbc31-eoli.pdf",
+      "source_snapshot_sha256": "ab4f909f941ab637637a5d71dcbdf553d4f798a4026a2ad56f78d2009053a84d"
+    },
+    {
+      "survivor_external_id": "КА-00003292",
+      "duplicate_external_id": "bitrix:20088",
+      "survivor_name": "Сменный аккумуляторный картридж APC RBC7 для ИБП, 12 В, 17 А·ч",
+      "duplicate_name": "Аккумулятор APC RBC7 (AGM, 17Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/apc-rbc7",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20088",
+      "model_core": "RBC7",
+      "voltage": "12V",
+      "capacity": "17Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "APC",
+      "survivor_mpn": "RBC7",
+      "source_url": "https://iportal.se.com/Contents/docs/UPS-GWOG-8WTJM8_R0_EN.PDF",
+      "source_evidence_path": "docs/audits/evidence/wave244c-apc/rbc7-identity.json",
+      "source_evidence_sha256": "e100bba95440d4b12f2374a7cbe18673762f0cb4f9345fb73f355602a817fa15",
+      "source_snapshot_path": "docs/audits/sources/wave244c-apc/rbc7-rbc23-rbc31-eoli.pdf",
+      "source_snapshot_sha256": "ab4f909f941ab637637a5d71dcbdf553d4f798a4026a2ad56f78d2009053a84d"
+    }
+  ]
+}

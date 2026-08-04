@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-30",
+  "manufacturer": "APC by Schneider Electric",
+  "model_core": "APCRBC141",
+  "identity_assertion": "Official Schneider Electric documentation names this exact model in the APC Replacement Battery Cartridges range.",
+  "source_url": "https://iportal.se.com/Contents/docs/UPS-JGNY-9NNEDA_R1_EN.PDF",
+  "source_snapshot_path": "docs/audits/sources/wave244c-apc/apcrbc141-installation-guide.pdf",
+  "source_snapshot_sha256": "7ce1185794110e463fd5aeed9c41cb9284b97e13579452828a9dd925f5f300ad",
+  "no_repeat_prior_product_pages": true
+}

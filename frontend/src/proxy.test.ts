@@ -2,7 +2,10 @@ import { NextRequest } from "next/server";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { proxy } from "./proxy";
 
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => {
+  vi.unstubAllGlobals();
+  vi.unstubAllEnvs();
+});
 
 describe("dynamic redirect proxy", () => {
   it("preserves a legacy 301 from Laravel", async () => {
@@ -12,6 +15,20 @@ describe("dynamic redirect proxy", () => {
 
     expect(response.status).toBe(301);
     expect(response.headers.get("location")).toBe("https://microchips.by/catalog/new");
+  });
+
+  it("uses the configured site profile for localhost before looking up redirects", async () => {
+    vi.stubEnv("DEFAULT_SITE_HOST", "microchips-by.test");
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue(Response.json({ kind: "redirect", to: "/catalog/new", status: 301, locale: "ru-BY" })));
+
+    const response = await proxy(new NextRequest("http://localhost:3000/catalog/old", { headers: { host: "localhost:3000" } }));
+
+    expect(fetch).toHaveBeenCalledWith(
+      "http://localhost:8000/api/v1/sites/microchips-by.test/redirect?path=%2Fcatalog%2Fold",
+      expect.objectContaining({ cache: "no-store" }),
+    );
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("http://localhost:3000/catalog/new");
   });
 
   it("does not turn an unsafe destination into an external redirect", async () => {

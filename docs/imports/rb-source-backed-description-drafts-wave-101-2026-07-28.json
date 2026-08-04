@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "purpose": "Three exact APC replacement-cartridge identities from 1C and Bitrix, enriched only with facts supported by APC sources. Legacy 1C/Bitrix chemistry or pack-voltage claims that conflict with APC evidence are not copied. No price, stock, local warranty or indexability claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003292",
+      "manufacturer": "APC",
+      "mpn": "RBC7",
+      "display_name": "Сменный аккумуляторный картридж APC RBC7 для ИБП, 12 В, 17 А·ч",
+      "technology": "герметичный свинцово-кислотный (VRLA) аккумуляторный картридж",
+      "source_url": "https://www.apc.com/shop/tradeups/us/en/categories/power/uninterruptible-power-supply-ups-/ups-replacement-batteries/replacement-battery-cartridges/N-7ffcnm?No=80&Nrpp=40",
+      "source_kind": "official APC replacement-battery catalogue",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип изделия": "сменный аккумуляторный картридж для ИБП",
+        "Химическая система": "VRLA",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "17 А·ч"
+      }
+    },
+    {
+      "external_id": "КА-00005164",
+      "manufacturer": "APC",
+      "mpn": "RBC23",
+      "display_name": "Сменный аккумуляторный картридж APC RBC23 для ИБП",
+      "technology": "сменный герметичный свинцово-кислотный аккумуляторный картридж",
+      "source_url": "https://www.apc.com/ca/en/download/document/SDS_ALL_APCRBC_LEAD_ACID_EU_EN/",
+      "source_kind": "official APC lead-acid replacement-cartridge safety data sheet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип изделия": "сменный аккумуляторный картридж для ИБП",
+        "Химическая система": "герметичные свинцово-кислотные аккумуляторы",
+        "Модель картриджа": "RBC23"
+      }
+    },
+    {
+      "external_id": "КА-00003237",
+      "manufacturer": "APC",
+      "mpn": "APCRBC141",
+      "display_name": "Сменный аккумуляторный картридж APC APCRBC141 для Smart-UPS SRT 2200, 72 В",
+      "technology": "герметичный свинцово-кислотный аккумуляторный картридж",
+      "source_url": "https://www.apc.com/ca/fr/faqs/FA349747/",
+      "source_kind": "official APC Smart-UPS SRT compatibility table",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Тип изделия": "сменный аккумуляторный картридж для ИБП",
+        "Химическая система": "герметичные свинцово-кислотные аккумуляторы",
+        "Номинальное напряжение картриджа": "72 В",
+        "Совместимые ИБП": "APC Smart-UPS SRT2200XL, SRT2200RMXL",
+        "Совместимые внешние батарейные блоки": "SRT72BP, SRT72RMBP"
+      }
+    }
+  ]
+}

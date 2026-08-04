@@ -1,0 +1,7 @@
+cluster_id,product_external_id,manufacturer,decision,reason_code,evidence,retry_condition
+ventura:FT1250,КА-00001864,Ventura,hold,exact_model_absent_from_current_primary_catalogue,"Official Ventura FT documentation lists FT 12-35, 12-55, 12-100, 12-105, 12-125, 12-150, 12-170, 12-180 and 12-200, but not FT12-50.","Official Ventura archive datasheet or product page naming FT12-50."
+ventura:GP12V,КА-00003670,Ventura,hold,model_code_ambiguous,"The local code GP12V 1.3Ah does not exactly match the manufacturer notation GP 12-1.3; normalizing it would be an inference.","Official Ventura source or label mapping GP12V to GP 12-1.3."
+ventura:GP67,КА-00002922,Ventura,hold,capacity_variant_conflict,"The local name says GP 6-7.5, while current official GP documentation lists GP 6-7, not this exact 7.5Ah variant.","Official Ventura archive datasheet for GP 6-7.5."
+ventura:GP675,КА-00003697,Ventura,hold,capacity_variant_conflict,"The local name says GP 6-7.5, while current official GP documentation lists GP 6-7, not this exact 7.5Ah variant.","Official Ventura archive datasheet for GP 6-7.5."
+ventura:GPL1218AGM,КА-00003579,Ventura,hold,exact_model_absent_from_current_primary_catalogue,"Official current GPL documentation does not list GPL 12-18.","Official Ventura archive datasheet or product page naming GPL 12-18."
+ventura:GPL1222AGM,КА-00005066,Ventura,hold,exact_model_absent_from_current_primary_catalogue,"Official current GPL documentation does not list GPL 12-22.","Official Ventura archive datasheet or product page naming GPL 12-22."

@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave243B exact FIAMM/Panasonic manufacturer-primary descriptions",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:3201",
+      "identity_scope": "exact",
+      "manufacturer": "Fiamm",
+      "mpn": "FG27004",
+      "display_name": "Аккумулятор Fiamm FG27004",
+      "technology": "VRLA AGM",
+      "source_url": "https://www.fiamm.co/catalog/FG27004.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "FG",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость (20 ч)": "70 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "FIAMM Energy Technology S.p.A.",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1431",
+      "identity_scope": "exact",
+      "manufacturer": "Fiamm",
+      "mpn": "FG2A007",
+      "display_name": "Аккумулятор Fiamm FG2A007",
+      "technology": "VRLA AGM",
+      "source_url": "https://www.fiamm.co/catalog/FG2A007.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "FG",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость (20 ч)": "100 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "FIAMM Energy Technology S.p.A.",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1147",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-P0612P",
+      "display_name": "Аккумулятор Panasonic LC-P0612P",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3546",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-P",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1149",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R0612P",
+      "display_name": "Аккумулятор Panasonic LC-R0612P",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3544",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1150",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R0612P1",
+      "display_name": "Аккумулятор Panasonic LC-R0612P1",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3544",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1585",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R063R4P",
+      "display_name": "Аккумулятор Panasonic LC-R063R4P",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3541",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "3,4 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3189",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R067R2P",
+      "display_name": "Аккумулятор Panasonic LC-R067R2P",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3533",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "7,2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3190",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R067R2P1",
+      "display_name": "Аккумулятор Panasonic LC-R067R2P1",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3533",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "7,2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1161",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R122R2PG",
+      "display_name": "Аккумулятор Panasonic LC-R122R2PG",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3529",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1586",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R123R4PG",
+      "display_name": "Аккумулятор Panasonic LC-R123R4PG",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3529",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3191",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-R127R2PG",
+      "display_name": "Аккумулятор Panasonic LC-R127R2PG",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3529",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-R"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1151",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-RA1212PG",
+      "display_name": "Аккумулятор Panasonic LC-RA1212PG",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3529",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-RA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1138",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-RA1212PG1",
+      "display_name": "Аккумулятор Panasonic LC-RA1212PG1",
+      "technology": "VRLA AGM",
+      "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3529",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Серия": "LC-RA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Corporation",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

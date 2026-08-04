@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "purpose": "Noindex preview for source-backed products with company-owned visually verified exact/model-core media.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001615",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/hr/delta-hr-12-12/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-12",
+      "replace_categories": true,
+      "model_core": "HR 12-12"
+    },
+    {
+      "external_id": "КА-00003244",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/product/BPS4012.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-bps40-12",
+      "replace_categories": true,
+      "model_core": "BPS40-12"
+    },
+    {
+      "external_id": "КА-00003736",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12-65",
+      "replace_categories": true,
+      "model_core": "GPL 12-65"
+    },
+    {
+      "external_id": "КА-00004022",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1275-l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1275-l",
+      "replace_categories": true,
+      "model_core": "DTM 1275 L"
+    },
+    {
+      "external_id": "КА-00004141",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gp-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gp12400",
+      "replace_categories": true,
+      "model_core": "GP12400"
+    },
+    {
+      "external_id": "КА-00004165",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-hr-5-8-12",
+      "replace_categories": true,
+      "model_core": "HR 5.8-12"
+    },
+    {
+      "external_id": "КА-00005187",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_180_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-180-x",
+      "replace_categories": true,
+      "model_core": "FTS 12-180 X"
+    },
+    {
+      "external_id": "КА-00006758",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_50_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-50-x",
+      "replace_categories": true,
+      "model_core": "FTS 12-50 X"
+    },
+    {
+      "external_id": "КА-00007126",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_150_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-150-x",
+      "replace_categories": true,
+      "model_core": "FTS 12-150 X"
+    },
+    {
+      "external_id": "ФР-00000295",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1226/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-1226",
+      "replace_categories": true,
+      "model_core": "DT 1226"
+    },
+    {
+      "external_id": "ФР-00001873",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gp-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gp12120",
+      "replace_categories": true,
+      "model_core": "GP12120"
+    }
+  ]
+}

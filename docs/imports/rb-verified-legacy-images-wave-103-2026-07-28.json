@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "purpose": "Two company-owned legacy assets whose exact MPN is readable on the physical product label. The Delta asset is attached to the verified ФР-prefixed 1C product; the unrelated КА-prefixed office-marker record is explicitly not used.",
+  "images": [
+    {
+      "external_id": "КА-00002966",
+      "mpn": "HRC5.5-12",
+      "asset_file": "ka-00002966-bb-battery-hrc5-5-12.webp",
+      "sha256": "79492e87157fe2a3ff0602f973c46614322f04b4c1ce1cfbc4fbe98d5247f03f",
+      "archive_member": "_shared/upload/iblock/98e/5vma9b77taa70iwewxqxybsa90jagwgr.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads B.B. BATTERY HRC5.5-12 and VRLA Rechargeable Battery; the exact normalized MPN matches the canonical 1C product and a Microchips watermark is present."
+    },
+    {
+      "external_id": "ФР-00001994",
+      "mpn": "HR 12-24 W",
+      "asset_file": "fr-00001994-delta-hr-12-24w.png",
+      "sha256": "34bf50587da07b1d76e474f9169c81e7acfb676f495a5bbf618aad803ec03ffe",
+      "archive_member": "_shared/upload/iblock/421/5t5cfs5gh2mibzj3h7ijcx6toc8ijolt.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "PASS: the front label visibly reads DELTA HR 12-24W, 12V 6Ah, 24W/1.8V/cell/15min and AGM VRLA Battery; the exact normalized MPN matches the canonical ФР-prefixed 1C product and a Microchips watermark is present. The unrelated КА-00001994 office-marker record is not used."
+    }
+  ]
+}

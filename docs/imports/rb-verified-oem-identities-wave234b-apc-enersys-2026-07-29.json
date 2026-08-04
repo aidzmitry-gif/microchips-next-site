@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "review_batch": "wave234b_apc_enersys",
+  "checked_at": "2026-07-29",
+  "products": [],
+  "note": "No PASS rows: exact first-party identity proof and collision clearance are both required."
+}

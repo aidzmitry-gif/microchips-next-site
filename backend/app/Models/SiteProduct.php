@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class SiteProduct extends Model
 {
@@ -42,6 +44,16 @@ class SiteProduct extends Model
             ->withTimestamps();
     }
 
+    public function priceEvidences(): HasMany
+    {
+        return $this->hasMany(SiteProductPriceEvidence::class);
+    }
+
+    public function currentPriceEvidence(): HasOne
+    {
+        return $this->hasOne(SiteProductPriceEvidence::class)->where('is_current', true);
+    }
+
     protected static function booted(): void
     {
         static::saved(function (self $siteProduct): void {
@@ -61,6 +73,16 @@ class SiteProduct extends Model
                 ...$paths,
                 ...SiteCategory::revalidationPaths($siteProduct->site_id, $categoryIds),
             ]));
+
+            // `/catalog` is a live aggregate (tree, total and first page),
+            // not merely a redirect. A newly visible product can change it
+            // even when no URL existed at model-creation time, so refreshing
+            // only the product/category paths leaves the root stale until its
+            // ISR TTL expires.
+            if ($siteProduct->is_published || $siteProduct->wasChanged('is_published')) {
+                $paths[] = '/catalog';
+                $paths = array_values(array_unique($paths));
+            }
 
             SiteContentChanged::dispatch($siteProduct->site, $paths === [] ? ['/'] : $paths);
         });

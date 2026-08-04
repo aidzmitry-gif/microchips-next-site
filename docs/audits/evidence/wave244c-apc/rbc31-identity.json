@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-30",
+  "manufacturer": "APC by Schneider Electric",
+  "model_core": "RBC31",
+  "identity_assertion": "Official Schneider Electric documentation names this exact model in the APC Replacement Battery Cartridges range.",
+  "source_url": "https://iportal.se.com/Contents/docs/UPS-GWOG-8WTJM8_R0_EN.PDF",
+  "source_snapshot_path": "docs/audits/sources/wave244c-apc/rbc7-rbc23-rbc31-eoli.pdf",
+  "source_snapshot_sha256": "ab4f909f941ab637637a5d71dcbdf553d4f798a4026a2ad56f78d2009053a84d",
+  "no_repeat_prior_product_pages": true
+}

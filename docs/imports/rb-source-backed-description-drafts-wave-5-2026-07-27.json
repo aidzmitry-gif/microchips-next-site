@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "purpose": "One bounded primary-manufacturer editorial draft refresh. No publication, price, stock, image or offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005764",
+      "manufacturer": "Delta",
+      "mpn": "DTM6012",
+      "technology": "герметичная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://delta-batt.com/series/dtm/",
+      "source_kind": "official DELTA DTM series catalogue",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 V",
+        "Номинальная ёмкость": "1,2 Ah",
+        "Габариты": "97 × 24 × 52 мм",
+        "Масса": "0,31 кг",
+        "Применение": "буферный и циклический режимы, резервное питание"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact-model, visually verified company-owned Bitrix detail images for RB preview wave 92. Three visually ambiguous device images were deliberately excluded.",
+  "images": [
+    {
+      "external_id": "КА-00002816",
+      "mpn": "DTM 1233 L",
+      "asset_file": "ka-00002816-dtm-1233-l.png",
+      "sha256": "866bcc03e3bcbc28759f2fd387f0a3f5ffc01f22688e49a17ec02e78aa9301dc",
+      "archive_member": "_shared/upload/iblock/2f1/rengkjwhur5tfhsmkazfjuubji4o2hsv.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "PASS: the front label visibly reads DELTA DTM 1233 L, 12V 33Ah; the exact MPN matches the canonical product."
+    },
+    {
+      "external_id": "КА-00003848",
+      "mpn": "12FIT60",
+      "asset_file": "ka-00003848-12fit60.png",
+      "sha256": "1c8ad4cda4e7f90abb7f0856650451719f5bcfd94671120c3a6acf94af2657c8",
+      "archive_member": "_shared/upload/iblock/1d0/w0gv3vyywl8n6ghd55qd2ktgvumbu5tu.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "PASS: the front label visibly reads FIAMM 12FIT60 and 12V 60Ah C10; the exact MPN matches the canonical product."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "applied_drafts": 558,
+  "hard_exclusion_ids": 1127,
+  "preview_products": 211,
+  "already_published_in_snapshot": 114,
+  "rejected": 347,
+  "rejection_reasons": {
+    "ambiguous_or_out_of_scope_taxonomy": 11,
+    "current_name_missing_brand_or_identity": 6,
+    "duplicate_current_brand_model_identity": 310,
+    "missing_stable_identity_or_manufacturer": 20
+  },
+  "indexable_urls": 0,
+  "offers_created": 0
+}

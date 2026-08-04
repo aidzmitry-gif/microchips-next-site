@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:1596",
+      "current_name": "Аккумулятор Panasonic LC-XC1238P (AGM, 38Ah)",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-XC1238P",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C62.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Industry Europe",
+      "checked_at": "2026-07-29",
+      "product_type": "VRLA AGM battery",
+      "source_snapshot_path": "../audits/sources/wave245b-panasonic-new-rows/vrla-handbook-media-portal-675e1c2d2f372d34.pdf",
+      "source_snapshot_sha256": "675e1c2d2f372d34e016b5b7a03888a2d7c15d03dd40184f86e293d8f87cb233"
+    }
+  ]
+}

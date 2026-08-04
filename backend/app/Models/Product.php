@@ -33,4 +33,19 @@ class Product extends Model
     {
         return $this->hasMany(SiteProduct::class);
     }
+
+    public function media(): HasMany
+    {
+        return $this->hasMany(ProductMedia::class);
+    }
+
+    public function canonicalFamilies(): HasMany
+    {
+        return $this->hasMany(ProductFamily::class, 'canonical_product_id');
+    }
+
+    public function familyVariants(): HasMany
+    {
+        return $this->hasMany(ProductVariant::class);
+    }
 }

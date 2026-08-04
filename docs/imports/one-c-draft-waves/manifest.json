@@ -1,0 +1,126 @@
+{
+  "source": "D:\\6 Проекты\\microchips.by\\nomenclature_20260719.csv",
+  "source_sha256": "03a2aa7469d818697608d9e79e077fe64e49b13ae5b6432b9631c663df4e9bf1",
+  "identity_rule": "1C external_id only; never auto-merge with legacy Bitrix or infer SKU/MPN",
+  "publication_rule": "staging drafts only; every SiteProduct stays unpublished",
+  "source_product_rows": 9123,
+  "accepted_products": 9084,
+  "rejected_products": 39,
+  "wave_size": 500,
+  "waves": [
+    {
+      "file": "wave-001.csv",
+      "count": 500,
+      "first_external_id": "00-00000001",
+      "last_external_id": "КА-00000536"
+    },
+    {
+      "file": "wave-002.csv",
+      "count": 500,
+      "first_external_id": "КА-00000537",
+      "last_external_id": "КА-00001041"
+    },
+    {
+      "file": "wave-003.csv",
+      "count": 500,
+      "first_external_id": "КА-00001042",
+      "last_external_id": "КА-00001550"
+    },
+    {
+      "file": "wave-004.csv",
+      "count": 500,
+      "first_external_id": "КА-00001551",
+      "last_external_id": "КА-00002060"
+    },
+    {
+      "file": "wave-005.csv",
+      "count": 500,
+      "first_external_id": "КА-00002061",
+      "last_external_id": "КА-00002570"
+    },
+    {
+      "file": "wave-006.csv",
+      "count": 500,
+      "first_external_id": "КА-00002571",
+      "last_external_id": "КА-00003071"
+    },
+    {
+      "file": "wave-007.csv",
+      "count": 500,
+      "first_external_id": "КА-00003072",
+      "last_external_id": "КА-00003597"
+    },
+    {
+      "file": "wave-008.csv",
+      "count": 500,
+      "first_external_id": "КА-00003598",
+      "last_external_id": "КА-00004102"
+    },
+    {
+      "file": "wave-009.csv",
+      "count": 500,
+      "first_external_id": "КА-00004103",
+      "last_external_id": "КА-00004605"
+    },
+    {
+      "file": "wave-010.csv",
+      "count": 500,
+      "first_external_id": "КА-00004606",
+      "last_external_id": "КА-00005120"
+    },
+    {
+      "file": "wave-011.csv",
+      "count": 500,
+      "first_external_id": "КА-00005121",
+      "last_external_id": "КА-00005623"
+    },
+    {
+      "file": "wave-012.csv",
+      "count": 500,
+      "first_external_id": "КА-00005624",
+      "last_external_id": "КА-00006125"
+    },
+    {
+      "file": "wave-013.csv",
+      "count": 500,
+      "first_external_id": "КА-00006126",
+      "last_external_id": "КА-00006627"
+    },
+    {
+      "file": "wave-014.csv",
+      "count": 500,
+      "first_external_id": "КА-00006628",
+      "last_external_id": "КА-00007129"
+    },
+    {
+      "file": "wave-015.csv",
+      "count": 500,
+      "first_external_id": "КА-00007130",
+      "last_external_id": "ФР-00000548"
+    },
+    {
+      "file": "wave-016.csv",
+      "count": 500,
+      "first_external_id": "ФР-00000549",
+      "last_external_id": "ФР-00001147"
+    },
+    {
+      "file": "wave-017.csv",
+      "count": 500,
+      "first_external_id": "ФР-00001149",
+      "last_external_id": "ФР-00001691"
+    },
+    {
+      "file": "wave-018.csv",
+      "count": 500,
+      "first_external_id": "ФР-00001692",
+      "last_external_id": "ФР-00002233"
+    },
+    {
+      "file": "wave-019.csv",
+      "count": 84,
+      "first_external_id": "ФР-00002234",
+      "last_external_id": "ФР-00002360"
+    }
+  ]
+}

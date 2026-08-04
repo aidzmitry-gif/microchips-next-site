@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:GPL12650",
+      "manufacturer": "CSB",
+      "mpn": "GPL12650",
+      "source_url": "https://csb-battery.com/product/gpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB GPL12650 серии GPL для резервного питания",
+      "technical_attributes": {
+        "Серия": "GPL",
+        "Технология": "VRLA AGM",
+        "Обслуживание": "долив воды не требуется",
+        "Назначение": "резервное питание систем безопасности, аварийного освещения и медицинского оборудования"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:GPL12800",
+      "manufacturer": "CSB",
+      "mpn": "GPL12800",
+      "source_url": "https://csb-battery.com/product/gpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB GPL12800 серии GPL для резервного питания",
+      "technical_attributes": {
+        "Серия": "GPL",
+        "Технология": "VRLA AGM",
+        "Обслуживание": "долив воды не требуется",
+        "Назначение": "резервное питание систем безопасности, аварийного освещения и медицинского оборудования"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:GPL12800G",
+      "manufacturer": "CSB",
+      "mpn": "GPL12800G",
+      "source_url": "https://csb-battery.com/product/gpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB GPL12800G серии GPL для резервного питания",
+      "technical_attributes": {
+        "Серия": "GPL",
+        "Технология": "VRLA AGM",
+        "Обслуживание": "долив воды не требуется",
+        "Назначение": "резервное питание систем безопасности, аварийного освещения и медицинского оборудования"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL12400T",
+      "manufacturer": "CSB",
+      "mpn": "TPL12400T",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL12400T с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL12600T",
+      "manufacturer": "CSB",
+      "mpn": "TPL12600T",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL12600T с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL121000FR",
+      "manufacturer": "CSB",
+      "mpn": "TPL121000FR",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL121000FR с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL121000TFR",
+      "manufacturer": "CSB",
+      "mpn": "TPL121000TFR",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL121000TFR с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL121250AFR",
+      "manufacturer": "CSB",
+      "mpn": "TPL121250AFR",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL121250AFR с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL121600FR",
+      "manufacturer": "CSB",
+      "mpn": "TPL121600FR",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL121600FR с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL121800FR",
+      "manufacturer": "CSB",
+      "mpn": "TPL121800FR",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL121800FR с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:TPL122000FR",
+      "manufacturer": "CSB",
+      "mpn": "TPL122000FR",
+      "source_url": "https://csb-battery.com/product/tpl-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Телекоммуникационный аккумулятор CSB TPL122000FR с фронтальными выводами",
+      "technical_attributes": {
+        "Серия": "TPL",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы для стоек 19 и 23 дюйма",
+        "Назначение": "длительное аварийное питание телекоммуникационного и широкополосного оборудования",
+        "Диапазон ёмкости серии": "от 40 до 200 А·ч"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-200",
+      "manufacturer": "CSB",
+      "mpn": "MSV-200",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-200 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-300",
+      "manufacturer": "CSB",
+      "mpn": "MSV-300",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-300 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-400",
+      "manufacturer": "CSB",
+      "mpn": "MSV-400",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-400 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-500",
+      "manufacturer": "CSB",
+      "mpn": "MSV-500",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-500 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-650",
+      "manufacturer": "CSB",
+      "mpn": "MSV-650",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-650 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-800",
+      "manufacturer": "CSB",
+      "mpn": "MSV-800",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-800 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MSV-1000",
+      "manufacturer": "CSB",
+      "mpn": "MSV-1000",
+      "source_url": "https://csb-battery.com/product/msv-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MSV-1000 для длительного резервного питания",
+      "technical_attributes": {
+        "Серия": "MSV",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное аварийное питание крупномасштабных систем",
+        "Диапазон ёмкости серии": "от 200 до 1000 А·ч",
+        "Расчётный срок службы серии": "до 15 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MU900S",
+      "manufacturer": "CSB",
+      "mpn": "MU900S",
+      "source_url": "https://csb-battery.com/product/mu-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MU900S большой ёмкости для резервного питания",
+      "technical_attributes": {
+        "Серия": "MU",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное резервное питание систем большой ёмкости",
+        "Диапазон ёмкости серии": "от 1000 до 1500 А·ч",
+        "Расчётный срок службы серии": "до 20 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MU-1000",
+      "manufacturer": "CSB",
+      "mpn": "MU-1000",
+      "source_url": "https://csb-battery.com/product/mu-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MU-1000 большой ёмкости для резервного питания",
+      "technical_attributes": {
+        "Серия": "MU",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное резервное питание систем большой ёмкости",
+        "Диапазон ёмкости серии": "от 1000 до 1500 А·ч",
+        "Расчётный срок службы серии": "до 20 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MU1000S",
+      "manufacturer": "CSB",
+      "mpn": "MU1000S",
+      "source_url": "https://csb-battery.com/product/mu-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MU1000S большой ёмкости для резервного питания",
+      "technical_attributes": {
+        "Серия": "MU",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное резервное питание систем большой ёмкости",
+        "Диапазон ёмкости серии": "от 1000 до 1500 А·ч",
+        "Расчётный срок службы серии": "до 20 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:MU1500S",
+      "manufacturer": "CSB",
+      "mpn": "MU1500S",
+      "source_url": "https://csb-battery.com/product/mu-series/",
+      "technology": "VRLA AGM",
+      "display_name": "Промышленный аккумулятор CSB MU1500S большой ёмкости для резервного питания",
+      "technical_attributes": {
+        "Серия": "MU",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "длительное резервное питание систем большой ёмкости",
+        "Диапазон ёмкости серии": "от 1000 до 1500 А·ч",
+        "Расчётный срок службы серии": "до 20 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:RE1200",
+      "manufacturer": "CSB",
+      "mpn": "RE1200",
+      "source_url": "https://csb-battery.com/product/re-series/",
+      "technology": "VRLA AGM lead-carbon",
+      "display_name": "Аккумулятор CSB RE1200 для возобновляемой энергетики и циклического хранения",
+      "technical_attributes": {
+        "Серия": "RE",
+        "Технология": "VRLA AGM со свинцово-углеродной технологией",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "возобновляемая энергетика, циклическая работа и длительное хранение энергии",
+        "Диапазон ёмкости серии": "от 1200 до 1700 А·ч",
+        "Циклический ресурс серии": "2800 циклов при глубине разряда 50%",
+        "Расчётный срок службы серии": "до 20 лет в буферном режиме"
+      }
+    },
+    {
+      "external_id": "manufacturer:csb:RE1700",
+      "manufacturer": "CSB",
+      "mpn": "RE1700",
+      "source_url": "https://csb-battery.com/product/re-series/",
+      "technology": "VRLA AGM lead-carbon",
+      "display_name": "Аккумулятор CSB RE1700 для возобновляемой энергетики и циклического хранения",
+      "technical_attributes": {
+        "Серия": "RE",
+        "Технология": "VRLA AGM со свинцово-углеродной технологией",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "возобновляемая энергетика, циклическая работа и длительное хранение энергии",
+        "Диапазон ёмкости серии": "от 1200 до 1700 А·ч",
+        "Циклический ресурс серии": "2800 циклов при глубине разряда 50%",
+        "Расчётный срок службы серии": "до 20 лет в буферном режиме"
+      }
+    }
+  ]
+}

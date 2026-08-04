@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave243A new Delta product-page description drafts",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1450",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1216.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ct_1216_1/",
+      "technical_attributes": {
+        "Модель": "CT 1216.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "16"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1452",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1220.1",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ct_1220_1/",
+      "technical_attributes": {
+        "Модель": "CT 1220.1",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "20"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1523",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1216",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ct_1216/",
+      "technical_attributes": {
+        "Модель": "CT 1216",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "16"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1537",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1218",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ct_1218/",
+      "technical_attributes": {
+        "Модель": "CT 1218",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "18"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2890",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1220",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ct_1220/",
+      "technical_attributes": {
+        "Модель": "CT 1220",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "20"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2963",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "model_core": "CT 1230",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ct_1230/",
+      "technical_attributes": {
+        "Модель": "CT 1230",
+        "Напряжение, В": "12",
+        "Емкость, Ач": "30"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

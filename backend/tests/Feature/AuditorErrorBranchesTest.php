@@ -124,6 +124,24 @@ class AuditorErrorBranchesTest extends TestCase
         $unpublishedCategory = $this->category($site, 'draft-category', false);
         $this->siteUrl($site, '/unpub-category', 'category', $unpublishedCategory->id, $site->default_locale);
 
+        foreach ([
+            ['/unpub-page', 'page', $unpublishedPage->id],
+            ['/pub-product', 'product', $publishedProduct->id],
+            ['/unpub-product', 'product', $unpublishedProduct->id],
+            ['/pub-category', 'category', $publishedCategory->id],
+            ['/unpub-category', 'category', $unpublishedCategory->id],
+        ] as [$path, $resourceType, $resourceId]) {
+            SiteSeo::create([
+                'site_id' => $site->id,
+                'locale' => $site->default_locale,
+                'resource_type' => $resourceType,
+                'resource_id' => $resourceId,
+                'canonical_path' => $path,
+                'is_indexable' => true,
+            ]);
+        }
+        $publishedCategory->products()->attach($publishedProduct->id, ['site_id' => $site->id]);
+
         $report = app(SiteSeoReleaseAuditor::class)->audit($site);
 
         $this->assertFalse($report['passed']);

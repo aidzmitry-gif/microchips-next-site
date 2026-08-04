@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "locale": "ru-BY",
+  "category_external_id": "seo:batteries-industrial",
+  "category_slug": "catalog/industrial-batteries/batteries-industrial",
+  "series": [
+    {
+      "manufacturer": "CSB",
+      "series": "EVX",
+      "models": ["EVX1272", "EVX12120", "EVX12170", "EVX12200", "EVX12260", "EVX12300", "EVX12340", "EVX12400", "EVX12520", "EVX12650", "EVX12750"],
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Тяговый аккумулятор {manufacturer} {model} для циклических применений",
+      "category_external_id": "seo:batteries-traction",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "facts": {
+        "Серия": "EVX",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Назначение": "электромобильность и циклические режимы",
+        "Диапазон ёмкости серии": "от 7,2 до 75 А·ч",
+        "Циклический ресурс серии": "более 400 циклов при глубине разряда 100%",
+        "Расчётный срок службы": "до 10 лет в буферном режиме"
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "EVH",
+      "models": ["EVH12140", "EVH12150", "EVH12240", "EVH12390"],
+      "source_url": "https://csb-battery.com/product/evh-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Тяговый аккумулятор {manufacturer} {model} для циклических применений",
+      "category_external_id": "seo:batteries-traction",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "facts": {
+        "Серия": "EVH",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Назначение": "электромобильность и циклические режимы",
+        "Диапазон ёмкости серии": "от 15 до 39 А·ч",
+        "Циклический ресурс серии": "более 400 циклов при глубине разряда 100%",
+        "Расчётный срок службы": "до 10 лет в буферном режиме"
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "MSJ",
+      "models": ["MSJ-150", "MSJ-200", "MSJ-260", "MSJ-300", "MSJ-400", "MSJ-500", "MSJ-650", "MSJ-800", "MSJ-1000"],
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Промышленный аккумулятор {manufacturer} {model} для стационарного резервного питания",
+      "facts": {
+        "Серия": "MSJ",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "стационарное резервное питание и телекоммуникации",
+        "Диапазон ёмкости серии": "от 150 до 1000 А·ч",
+        "Расчётный срок службы": "до 20 лет в буферном режиме"
+      }
+    }
+  ]
+}

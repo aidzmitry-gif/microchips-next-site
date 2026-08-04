@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:12398",
+      "current_name": "Аккумулятор для VeriFone VX680 (BPK268-001-01-A) 1800mah",
+      "manufacturer": "Verifone",
+      "mpn": "BPK268-001-01-A",
+      "source_url": "https://go.verifone.com/sv/se/webshop",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "Verifone Sweden AB",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/verifone-wave203/verifone-se-webshop-2026-07-29.html",
+      "source_snapshot_sha256": "de1a95294ce8c1c7bb89218f00de39b124a9b1db2f65d665dd3c0f1b196d0961"
+    },
+    {
+      "external_id": "bitrix:12204",
+      "current_name": "Аккумулятор для Cino F680BT, F780BT (BT2100) 2600mah",
+      "manufacturer": "Cino",
+      "mpn": "BT2100",
+      "source_url": "https://www.cino.com.tw/cn/products/cordless_cn/F680bt/f680bt_ac.html",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "Cino Group",
+      "checked_at": "2026-07-29",
+      "product_type": "Li-ion battery pack",
+      "source_snapshot_path": "../audits/sources/wave203-remaining/cino-f680bt-accessories-2026-07-29.html",
+      "source_snapshot_sha256": "a94c49b26ad693e2a933a44be41de579aba2045113592f8d1e7ee829c6f3325b"
+    },
+    {
+      "external_id": "bitrix:12304",
+      "current_name": "Аккумулятор для Koamtac KDC-100, KDC-200 (KDC-BAT100) 190mah",
+      "manufacturer": "KOAMTAC",
+      "mpn": "KDC-BAT100",
+      "source_url": "https://koamtac.com/wp-content/uploads/KDC_Accessories.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "KOAMTAC, Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "Soft-pack battery",
+      "source_snapshot_path": "../audits/sources/wave203-remaining/koamtac-kdc-accessories-2026-07-29.pdf",
+      "source_snapshot_sha256": "06edd33f7f1e30baf849e6c78a42cf7bf8e0e9a5aa698541df824d0491bb83b1"
+    },
+    {
+      "external_id": "bitrix:12329",
+      "current_name": "Аккумулятор для NCR Orderman 5 (5555-0105-8801) 4200mAh",
+      "manufacturer": "NCR Orderman",
+      "mpn": "5555-0105-8801",
+      "source_url": "https://www.orderman.com/wp-content/uploads/Orderman5.pdf",
+      "source_kind": "official_manufacturer_service_document",
+      "source_publisher": "Orderman GmbH (part of NCR Corporation)",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave203-remaining/orderman5-regulatory-guide-2026-07-29.pdf",
+      "source_snapshot_sha256": "6aa86d554c0171e1c624f88e9c034192c0e9839d40879703010d0686d497c95c"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-07-30",
+  "sources": [
+    {
+      "model": "UP-VW0645P1",
+      "requested_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C64.pdf",
+      "final_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C64.pdf",
+      "snapshot_path": "docs/audits/sources/wave245c-panasonic/up-vw0645p1-individual-data-sheet.pdf",
+      "snapshot_sha256": "1d18af25aa2d1afa4aba9dcbc57a19b1c16c55a57a756ac8fee8999e4126e959",
+      "bytes": 255136,
+      "image_candidate_path": "docs/audits/sources/wave245c-panasonic/up-vw0645p1-official-product-candidate.png",
+      "image_candidate_sha256": "d3bf331eba36ee6bdcc6571066f088b3d51eabe7d28135d3225b6acc0db978ca",
+      "image_candidate_width": 236,
+      "image_candidate_height": 180,
+      "image_rights_status": "manufacturer_hosted_exact_product_image_no_republication_license_found_hold"
+    },
+    {
+      "model": "UP-VW1220P1",
+      "requested_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C65.pdf",
+      "final_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C65.pdf",
+      "snapshot_path": "docs/audits/sources/wave245c-panasonic/up-vw1220p1-individual-data-sheet.pdf",
+      "snapshot_sha256": "33d3d0d8893576c3800e0fb740b9e0711ed99b03fa8d6b6728b917fbe94fda95",
+      "bytes": 270053,
+      "image_candidate_path": "docs/audits/sources/wave245c-panasonic/up-vw1220p1-official-product-candidate.png",
+      "image_candidate_sha256": "cc5f776c81fd56528f53d2a69cfafdcbdb3d6d81be30a2e2a0ef909048a68691",
+      "image_candidate_width": 236,
+      "image_candidate_height": 190,
+      "image_rights_status": "manufacturer_hosted_exact_product_image_no_republication_license_found_hold"
+    }
+  ],
+  "rights_source": {
+    "requested_url": "https://industry.panasonic.eu/terms-service",
+    "final_url": "https://industry.panasonic.eu/terms-service",
+    "snapshot_path": "docs/audits/sources/wave245c-panasonic/panasonic-industry-terms-service.html",
+    "snapshot_sha256": "df36322a5167f57e044941b2a709c4d1d16f2af056c526ac5f159afd2d74c25c",
+    "bytes": 968683
+  }
+}

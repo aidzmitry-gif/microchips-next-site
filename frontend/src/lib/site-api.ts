@@ -8,6 +8,18 @@ export type SiteProfile = {
   defaultLocale: string;
   name: string;
   availablePagePaths?: string[];
+  availablePages?: Record<string, string>;
+  commercialProfile?: {
+    legalName: string;
+    legalAddress: string;
+    phones: string[];
+    email: string;
+    workingHours: string | null;
+    pickupAddress: string | null;
+    deliveryTerms: string;
+    paymentTerms: string;
+    warrantyTerms: string;
+  } | null;
   locales: Array<{ locale: string; language: string; isDefault: boolean }>;
 };
 
@@ -34,6 +46,7 @@ export type ProductPayload = {
   site: SiteProfile;
   path: string;
   product: {
+    external_id?: string | null;
     name: string;
     sku: string | null;
     mpn: string | null;
@@ -42,7 +55,10 @@ export type ProductPayload = {
     attributes: Record<string, string> | null;
     availability: string;
     price: string | null;
+    price_observed_at?: string | null;
     currency: string;
+    image_path?: string | null;
+    variant_group?: ProductVariantGroup | null;
   };
   seo: SeoPayload;
 };
@@ -61,9 +77,13 @@ export type CatalogProduct = {
   name: string;
   sku: string | null;
   mpn: string | null;
+  manufacturer?: string | null;
+  summary_attributes?: Partial<Record<CatalogFilterKey, string>>;
   availability: string;
   price: string | null;
+  price_observed_at?: string | null;
   currency: string;
+  image_path?: string | null;
 };
 
 export type CatalogPayload = {
@@ -72,9 +92,61 @@ export type CatalogPayload = {
     current_page: number;
     last_page: number;
     total: number;
+    sort?: CatalogSort | "default";
+    price_sort_enabled?: boolean;
+    facets?: CatalogFacets;
+    applied_filters?: Record<CatalogFilterKey, string | null>;
   };
   available: boolean;
 };
+
+export type ProductVariantOption = {
+  external_id: string;
+  variant_key: string;
+  label: string;
+  sku: string | null;
+  attributes: Record<string, string>;
+  availability: string;
+  price: string | null;
+  price_observed_at?: string | null;
+  currency: string;
+  image_path?: string | null;
+};
+
+export type ProductVariantGroup = {
+  family_key: string;
+  label: string;
+  canonical_label: string;
+  canonical_attributes: Record<string, string>;
+  options: ProductVariantOption[];
+};
+
+export type QuoteCartLine = {
+  external_id: string | null;
+  variant_key: string | null;
+  name: string;
+  sku: string | null;
+  quantity: number;
+  attributes: Record<string, string>;
+};
+
+export type CatalogSort = "name_asc" | "name_desc" | "price_asc" | "price_desc";
+export type CatalogFilterKey =
+  | "manufacturer"
+  | "technology"
+  | "nominal_voltage"
+  | "capacity"
+  | "power"
+  | "input_voltage"
+  | "output_voltage"
+  | "input_current"
+  | "output_current"
+  | "phase"
+  | "topology"
+  | "device_type";
+export type CatalogFilters = Partial<Record<CatalogFilterKey, string>>;
+export type CatalogFacetOption = { value: string; label: string; count: number };
+export type CatalogFacets = Partial<Record<CatalogFilterKey, CatalogFacetOption[]>>;
 
 export type CatalogCategory = {
   slug: string;
@@ -112,9 +184,15 @@ export class SiteApiUnavailableError extends Error {
 export async function getCurrentHost(): Promise<string> {
   const requestHeaders = await headers();
   const forwardedHost = requestHeaders.get("x-forwarded-host")?.split(",")[0];
-  const host = forwardedHost ?? requestHeaders.get("host") ?? process.env.DEFAULT_SITE_HOST ?? "microchips-by.test";
+  const fallbackHost = process.env.DEFAULT_SITE_HOST ?? "microchips-by.test";
+  const host = forwardedHost ?? requestHeaders.get("host") ?? fallbackHost;
+  const normalizedHost = host.toLowerCase().replace(/^www\./, "").replace(/:\d+$/, "");
 
-  return host.toLowerCase().replace(/^www\./, "").replace(/:\d+$/, "");
+  // Local ports cannot express a market hostname. Route only local preview
+  // hosts through the explicitly configured profile; public domains stay strict.
+  return ["localhost", "127.0.0.1", "::1"].includes(normalizedHost)
+    ? fallbackHost.toLowerCase().replace(/^www\./, "").replace(/:\d+$/, "")
+    : normalizedHost;
 }
 
 export async function resolveSitePath(host: string, path: string): Promise<ResolvedPayload> {
@@ -140,7 +218,7 @@ export async function resolveSitePath(host: string, path: string): Promise<Resol
 
 export async function fetchCatalogProducts(
   siteKey: string,
-  options: { page?: number; perPage?: number; query?: string; category?: string } = {},
+  options: { page?: number; perPage?: number; query?: string; category?: string; locale?: string; sort?: CatalogSort; filters?: CatalogFilters } = {},
 ): Promise<CatalogPayload> {
   const params = new URLSearchParams({
     page: String(options.page ?? 1),
@@ -152,6 +230,15 @@ export async function fetchCatalogProducts(
   }
   if (options.category) {
     params.set("category", options.category);
+  }
+  if (options.locale) {
+    params.set("locale", options.locale);
+  }
+  if (options.sort) {
+    params.set("sort", options.sort);
+  }
+  for (const [filter, value] of Object.entries(options.filters ?? {})) {
+    if (value) params.set(filter, value);
   }
 
   try {

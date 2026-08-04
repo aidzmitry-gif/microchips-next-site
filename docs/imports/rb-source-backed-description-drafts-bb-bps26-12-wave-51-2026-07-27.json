@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from the B.B. Battery BPS series product page. It carries no price, stock, image-rights, local warranty or publication claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001952",
+      "manufacturer": "B.B. Battery",
+      "mpn": "BPS 26-12",
+      "display_name": "Аккумулятор B.B. Battery BPS 26-12",
+      "technology": "VRLA AGM",
+      "source_url": "https://www.bb-battery.ru/products/bps/",
+      "source_kind": "B.B. Battery BPS series product page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость (C20)": "26 А·ч",
+        "Габариты": "175 × 166 × 125 мм",
+        "Масса": "9,4 кг",
+        "Монтаж": "Вертикальный или горизонтальный"
+      }
+    }
+  ]
+}

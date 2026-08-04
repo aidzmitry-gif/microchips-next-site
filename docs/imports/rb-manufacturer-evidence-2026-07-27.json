@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "purpose": "Primary-manufacturer evidence for editorial drafts only. This manifest never authorizes publication, pricing, stock or image use.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004377",
+      "manufacturer": "Panasonic",
+      "mpn": "BR2330",
+      "technology": "литиевый элемент BR-серии",
+      "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000C230.pdf",
+      "source_kind": "official Panasonic specification PDF",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "3 V",
+        "Номинальная ёмкость": "255 mAh",
+        "Габариты": "диаметр до 23,0 мм; высота до 3,0 мм",
+        "Рабочая температура": "от −30 до +85 °C",
+        "Подтверждённое применение": "резервное питание памяти в малопотребляющих устройствах"
+      }
+    },
+    {
+      "external_id": "КА-00003325",
+      "manufacturer": "OMRON",
+      "mpn": "CJ1W-BAT01",
+      "technology": "резервная батарея для ПЛК",
+      "source_url": "https://www.ia.omron.com/products/family/2712/specification.html",
+      "source_kind": "official OMRON specification page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Назначение": "сохранение данных часов в совместимых CPU Unit при отключении питания",
+        "Срок службы": "5 лет при 25 °C",
+        "Масса": "около 10 г",
+        "Совместимость": "указана производителем для CPU Unit серии CJ2M; совместимость с конкретным ПЛК подтверждается его документацией"
+      }
+    },
+    {
+      "external_id": "ФР-00002108",
+      "manufacturer": "FIAMM",
+      "mpn": "12FGH36",
+      "technology": "герметичный свинцово-кислотный аккумулятор",
+      "source_url": "https://www.fiamm.ru/equipment/FGH-series/",
+      "source_kind": "FIAMM brand FGH-series catalogue page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "9 Ah",
+        "Габариты": "151 × 65 × 100 мм",
+        "Масса": "2,7 кг",
+        "Клемма": "F2 Faston 6,3 мм"
+      }
+    }
+  ]
+}

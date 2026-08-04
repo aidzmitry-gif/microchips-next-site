@@ -10,6 +10,8 @@ class ProductDescriptionDraft extends Model
     protected $fillable = [
         'product_id', 'staged_import_record_id', 'locale', 'title', 'content',
         'verified_fields', 'source_urls', 'status', 'rejection_reason',
+        'source_kind', 'source_tier', 'source_publisher', 'manufacturer_primary',
+        'identity_scope', 'source_checked_at',
         'submitted_by', 'submitted_at',
     ];
 
@@ -18,6 +20,8 @@ class ProductDescriptionDraft extends Model
         return [
             'verified_fields' => 'array',
             'source_urls' => 'array',
+            'manufacturer_primary' => 'boolean',
+            'source_checked_at' => 'date',
             'submitted_at' => 'datetime',
         ];
     }

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:2570",
+      "current_name": "Аккумулятор Icom BP-210N для радиостанций (NiMH, 1500mAh, 7.2V)",
+      "manufacturer": "Icom",
+      "mpn": "BP-210N",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-210N/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "Icom Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "OEM two-way radio battery pack",
+      "source_snapshot_path": "../audits/sources/wave207-device-small/icom-bp-210n-2026-07-29.html",
+      "source_snapshot_sha256": "659807c90b5d513dc0bc7787cda0306e2a48231facda3127bca2ce3215bb1a8e"
+    },
+    {
+      "external_id": "bitrix:2582",
+      "current_name": "Аккумулятор Icom BP-264 для радиостанций (NiMH, 1400mAh, 7.2V)",
+      "manufacturer": "Icom",
+      "mpn": "BP-264",
+      "source_url": "https://www.icomjapan.com/lineup/options/BP-264/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "Icom Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "OEM two-way radio battery pack",
+      "source_snapshot_path": "../audits/sources/wave207-device-small/icom-bp-264-2026-07-29.html",
+      "source_snapshot_sha256": "c1dfa892b3595c7a4fdeea983e8af73a678a09417c60dd09b7197b08382b4d0c"
+    }
+  ]
+}

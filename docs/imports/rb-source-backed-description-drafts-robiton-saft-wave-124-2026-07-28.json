@@ -1,0 +1,37 @@
+{
+    "schema_version":  1,
+    "purpose":  "Wave 124 manufacturer-primary facts only. Model core facts exclude pack, terminal, connector, cell count, price, image and publication state.",
+    "locale":  "ru-BY",
+    "products":  [
+                     {
+                         "external_id":  "КА-00002669",
+                         "manufacturer":  "Robiton",
+                         "identity_scope":  "model_core",
+                         "model_core":  "900MHAAA",
+                         "technology":  "secondary nickel-metal hydride cell (Ni-MH)",
+                         "source_url":  "https://www.robiton.ru/catalog/akkumuljatory/",
+                         "source_kind":  "Official ROBITON rechargeable battery catalogue",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Size":  "AAA",
+                                                      "Nominal capacity":  "900 mAh",
+                                                      "Source limitation":  "BL2 package count is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00002310",
+                         "manufacturer":  "Robiton",
+                         "identity_scope":  "model_core",
+                         "model_core":  "900MHAAA",
+                         "technology":  "secondary nickel-metal hydride cell (Ni-MH)",
+                         "source_url":  "https://www.robiton.ru/catalog/akkumuljatory/",
+                         "source_kind":  "Official ROBITON rechargeable battery catalogue",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Size":  "AAA",
+                                                      "Nominal capacity":  "900 mAh",
+                                                      "Source limitation":  "BL2 package count is not copied to other variants."
+                                                  }
+                     }
+                 ]
+}

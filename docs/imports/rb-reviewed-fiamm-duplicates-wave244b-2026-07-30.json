@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Wave244B fail-closed collapse of two exact FIAMM noindex duplicates into priced 1C survivors.",
+  "duplicates": [
+    {
+      "survivor_external_id": "ФР-00001439",
+      "duplicate_external_id": "bitrix:1488",
+      "survivor_name": "Аккумуляторная батарея FIAMM FG21202",
+      "duplicate_name": "Аккумулятор Fiamm FG21202 (AGM, 12Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg21202",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1488",
+      "model_core": "FG21202",
+      "voltage": "12V",
+      "capacity": "12Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "FIAMM",
+      "survivor_mpn": "FG21202",
+      "source_url": "https://www.fiamm.com/fileadmin/user_upload/products/reserve/FG/FG_FOLDER_EN.pdf",
+      "source_evidence_path": "docs/audits/generated/rb-wave244b-fiamm-duplicate-collapse-evidence.csv",
+      "source_evidence_sha256": "f35d50079d6c695b6f76e0c80c672bdfc642c6347e673ef171608ce49b0bb5c9",
+      "source_snapshot_path": "docs/audits/sources/wave244b-fiamm-duplicates/fiamm-fg-folder-en.pdf",
+      "source_snapshot_sha256": "544817b47e43ac6edad1d9b5e17235284de6fa65cf13f650cf37508e6fc3a9bc",
+      "decision_reason": "New FIAMM manufacturer catalogue Rev. 04.2026 proves the exact FG model and electrical row; live canonical owner has the same normalized FIAMM MPN and safely preserves categories and commercial evidence."
+    },
+    {
+      "survivor_external_id": "ФР-00001513",
+      "duplicate_external_id": "bitrix:1542",
+      "survivor_name": "Аккумуляторная батарея FIAMM FG21803",
+      "duplicate_name": "Аккумулятор Fiamm FG21803 (AGM, 18Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg21803",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1542",
+      "model_core": "FG21803",
+      "voltage": "12V",
+      "capacity": "18Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "FIAMM",
+      "survivor_mpn": "FG21803",
+      "source_url": "https://www.fiamm.com/fileadmin/user_upload/products/reserve/FG/FG_FOLDER_EN.pdf",
+      "source_evidence_path": "docs/audits/generated/rb-wave244b-fiamm-duplicate-collapse-evidence.csv",
+      "source_evidence_sha256": "f35d50079d6c695b6f76e0c80c672bdfc642c6347e673ef171608ce49b0bb5c9",
+      "source_snapshot_path": "docs/audits/sources/wave244b-fiamm-duplicates/fiamm-fg-folder-en.pdf",
+      "source_snapshot_sha256": "544817b47e43ac6edad1d9b5e17235284de6fa65cf13f650cf37508e6fc3a9bc",
+      "decision_reason": "New FIAMM manufacturer catalogue Rev. 04.2026 proves the exact FG model and electrical row; live canonical owner has the same normalized FIAMM MPN and safely preserves categories and commercial evidence."
+    }
+  ]
+}

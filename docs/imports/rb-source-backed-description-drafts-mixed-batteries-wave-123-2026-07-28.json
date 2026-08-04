@@ -1,0 +1,172 @@
+{
+    "schema_version":  1,
+    "purpose":  "Wave 123 manufacturer-primary facts. Model core only; suffix, terminal, connector, pack, price, image and publication state are excluded.",
+    "locale":  "ru-BY",
+    "products":  [
+                     {
+                         "external_id":  "КА-00000471",
+                         "manufacturer":  "CSB",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GP12170",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+                         "source_kind":  "Official CSB 2026 catalogue",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah",
+                                                      "Source limitation":  "B3 terminal execution is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001065",
+                         "manufacturer":  "CSB",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GP12170",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+                         "source_kind":  "Official CSB 2026 catalogue",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah",
+                                                      "Source limitation":  "B3 terminal execution is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001276",
+                         "manufacturer":  "CSB",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GP1272",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+                         "source_kind":  "Official CSB 2026 catalogue",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "7.2 Ah",
+                                                      "Source limitation":  "F2 terminal execution is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00001807",
+                         "manufacturer":  "CSB",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GP1272",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+                         "source_kind":  "Official CSB 2026 catalogue",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "7.2 Ah",
+                                                      "Source limitation":  "F2 terminal execution is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001171",
+                         "manufacturer":  "CSB",
+                         "identity_scope":  "model_core",
+                         "model_core":  "HR1221W",
+                         "technology":  "high-rate VRLA AGM lead-acid battery",
+                         "source_url":  "https://csb-battery.com/product/hr-series/",
+                         "source_kind":  "Official CSB HR Series page",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Series":  "HR high rate",
+                                                      "Construction":  "maintenance-free VRLA AGM",
+                                                      "Source limitation":  "F2 terminal execution is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002291",
+                         "manufacturer":  "CSB",
+                         "identity_scope":  "model_core",
+                         "model_core":  "HR1227W",
+                         "technology":  "high-rate VRLA AGM lead-acid battery",
+                         "source_url":  "https://csb-battery.com/product/hr-series/",
+                         "source_kind":  "Official CSB HR Series page",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Series":  "HR high rate",
+                                                      "Construction":  "maintenance-free VRLA AGM",
+                                                      "Source limitation":  "F2 terminal execution is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00006707",
+                         "manufacturer":  "FANSO",
+                         "identity_scope":  "model_core",
+                         "model_core":  "ER18505H",
+                         "technology":  "primary Li-SOCl2 bobbin cell",
+                         "source_url":  "https://www.fansobattery.com/?list_43%2F504.html=",
+                         "source_kind":  "Official FANSO ER18505H page",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage per cell":  "3.6 V",
+                                                      "Nominal capacity per cell":  "4000 mAh",
+                                                      "Dimensions per cell":  "18.7 x 50.5 mm",
+                                                      "Source limitation":  "Connector is not confirmed by this model-core source."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003804",
+                         "manufacturer":  "PKCELL",
+                         "identity_scope":  "model_core",
+                         "model_core":  "FR03",
+                         "technology":  "primary Li-FeS2 cell",
+                         "source_url":  "https://www.pkcell.com/a-complete-range-of-primary-lithium-battery-solutions-providing-stable-and-long-lasting-power-support-for-industrial-instruments-and-the-internet-of-things/",
+                         "source_kind":  "Official PKCELL product technology article",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "1.5 V",
+                                                      "Size":  "AAA / FR03",
+                                                      "Source limitation":  "2S package is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003803",
+                         "manufacturer":  "PKCELL",
+                         "identity_scope":  "model_core",
+                         "model_core":  "FR6",
+                         "technology":  "primary Li-FeS2 cell",
+                         "source_url":  "https://www.pkcell.com/a-complete-range-of-primary-lithium-battery-solutions-providing-stable-and-long-lasting-power-support-for-industrial-instruments-and-the-internet-of-things/",
+                         "source_kind":  "Official PKCELL product technology article",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "1.5 V",
+                                                      "Size":  "AA / FR6",
+                                                      "Source limitation":  "2S package is not copied to other variants."
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00001906",
+                         "manufacturer":  "Saft",
+                         "identity_scope":  "model_core",
+                         "model_core":  "MP144350",
+                         "technology":  "secondary lithium-ion prismatic cell",
+                         "source_url":  "https://saft4u.saft.com/en/download_file/f318091b-b2a1-44b9-97c1-321cd08f2e47/English",
+                         "source_kind":  "Official Saft UN38.3 test summary",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Construction":  "prismatic component cell without protection circuit",
+                                                      "Nominal energy":  "9.75 Wh",
+                                                      "Source limitation":  "1S1P/STD execution is not asserted by this model-core source."
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00000773",
+                         "manufacturer":  "Saft",
+                         "identity_scope":  "model_core",
+                         "model_core":  "MP176065",
+                         "technology":  "secondary lithium-ion prismatic cell",
+                         "source_url":  "https://saft4u.saft.com/fr/download_file/d40c9ea7-0066-4bac-a67b-cbac98316009/English",
+                         "source_kind":  "Official Saft UN38.3 test summary",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Construction":  "prismatic component cell without electronic monitoring circuit",
+                                                      "Source limitation":  "1S1P/STD execution is not asserted by this model-core source."
+                                                  }
+                     }
+                 ]
+}

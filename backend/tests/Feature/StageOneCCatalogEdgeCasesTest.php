@@ -6,6 +6,7 @@ use App\Domain\Imports\StageProductValidator;
 use App\Models\DuplicateConflict;
 use App\Models\ImportRun;
 use App\Models\Product;
+use App\Models\StagedImportRecord;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use RuntimeException;
 use Tests\TestCase;
@@ -96,7 +97,7 @@ CSV, 'sku-collision.csv');
         $this->assertSame(1, $run->summary['duplicate_conflicts']);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('sku:gamma01', $conflict->match_key);
+        $this->assertSame('identifier:gamma01', $conflict->match_key);
         $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
 
         $this->assertDatabaseHas('staged_import_records', [
@@ -104,6 +105,53 @@ CSV, 'sku-collision.csv');
             'external_id' => '1c-gamma',
             'status' => 'duplicate',
         ]);
+    }
+
+    public function test_a_stable_1c_external_id_can_be_staged_when_an_article_is_not_provided(): void
+    {
+        $file = $this->csvFile(<<<'CSV'
+external_id;name;slug
+1c-no-article;Battery without supplier article;draft-1c-no-article
+CSV, 'external-id-only.csv');
+
+        $this->artisan('catalog:stage-1c', ['file' => $file, '--delimiter' => ';'])->assertSuccessful();
+
+        $record = StagedImportRecord::query()->sole();
+        $this->assertSame('ready_for_review', $record->status);
+        $this->assertSame('1c-no-article', $record->normalized_payload['external_id']);
+        $this->assertArrayNotHasKey('sku', $record->normalized_payload);
+        $this->assertArrayNotHasKey('mpn', $record->normalized_payload);
+    }
+
+    public function test_an_exclusion_manifest_keeps_a_duplicate_out_of_review_and_conflict_detection(): void
+    {
+        $file = $this->csvFile(<<<'CSV'
+external_id;name;sku
+1c-keep;Keep Battery;KEEP-01
+1c-exclude;Excluded Battery;KEEP-01
+CSV, 'excluded-row.csv');
+        $exclude = $this->csvFile(<<<'CSV'
+product_external_id,reason
+  1C-EXCLUDE  ,strict_duplicate_candidate
+CSV, 'exclude-manifest.csv');
+
+        $this->artisan('catalog:stage-1c', [
+            'file' => $file,
+            '--delimiter' => ';',
+            '--exclude' => [$exclude],
+        ])->assertSuccessful();
+
+        $run = ImportRun::query()->sole();
+        $this->assertSame('ready_for_review', $run->status);
+        $this->assertSame(1, $run->summary['ready_for_review']);
+        $this->assertSame(1, $run->summary['excluded']);
+        $this->assertSame(0, $run->summary['duplicate_conflicts']);
+        $this->assertDatabaseHas('staged_import_records', [
+            'import_run_id' => $run->id,
+            'external_id' => '1c-exclude',
+            'status' => 'excluded',
+        ]);
+        $this->assertDatabaseCount('duplicate_conflicts', 0);
     }
 
     public function test_an_exception_while_staging_rows_marks_the_import_run_as_failed(): void

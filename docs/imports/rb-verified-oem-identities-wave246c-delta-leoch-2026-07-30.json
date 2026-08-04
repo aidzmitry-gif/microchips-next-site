@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "target_kind": "active_1c",
+  "review_batch": "wave246c_delta_leoch",
+  "checked_at": "2026-07-30",
+  "products": [],
+  "note": "PASS-only action manifest is empty: all 92 identities are already complete; no-repeat policy forbids restaging them."
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave245A new Panasonic exact-datasheet description drafts",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1569",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "LC-XC1222P",
+      "technology": "VRLA",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C70.PDF",
+      "technical_attributes": {
+        "Модель": "LC-XC1222P",
+        "Номинальное напряжение, В": "12",
+        "Номинальная ёмкость (20 ч), А·ч": "22.0",
+        "Габариты Д×Ш×В, мм": "76×181×167",
+        "Масса, кг": "6.55",
+        "Тип клемм": "M5 bolt/nut & threaded post"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1580",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "LC-XC1228P",
+      "technology": "VRLA",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C61.pdf",
+      "technical_attributes": {
+        "Модель": "LC-XC1228P",
+        "Номинальное напряжение, В": "12",
+        "Номинальная ёмкость (20 ч), А·ч": "28.0",
+        "Габариты Д×Ш×В, мм": "125×165×179.5",
+        "Масса, кг": "10.5",
+        "Тип клемм": "M5 bolt/nut & threaded post"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

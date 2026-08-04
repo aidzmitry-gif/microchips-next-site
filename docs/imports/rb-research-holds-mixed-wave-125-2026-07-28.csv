@@ -1,0 +1,7 @@
+﻿"cluster_id","product_external_id","manufacturer","decision","reason_code","evidence","retry_condition"
+"ventura:GPL129","КА-00006956","Ventura","hold","exact_model_unlisted","Official Ventura support index does not list GPL 12-9; no exact data sheet was located.","Official Ventura GPL 12-9 datasheet or supersession notice."
+"energizer:REACHERGE2500MAH","ФР-00000622","Energizer","hold","exact_commercial_variant_unverified","Official Energizer sources found do not identify the raw Recharge 2500 mAh AA commercial variant.","Exact Energizer AA 2500 mAh primary data sheet or product code."
+"leoch:DJ500","КА-00003313","Leoch","hold","primary_source_required","No exact official Leoch source for DJ500 was located.","Official Leoch DJ500 2V 500Ah data sheet."
+"leoch:DJW122","КА-00002491","Leoch","hold","primary_source_required","No exact official Leoch source for DJW12-2.9 was located.","Official Leoch DJW12-2.9 data sheet."
+"leoch:DJW1224S","КА-00004121","Leoch","hold","primary_source_required","No exact official Leoch source for DJW12-24S was located.","Official Leoch DJW12-24S data sheet."
+"fiamm:12FIT60","КА-00004249","Fiamm","hold","primary_source_required","No exact current FIAMM manufacturer-primary source for 12FIT60 was located.","Official FIAMM 12FIT60 data sheet."

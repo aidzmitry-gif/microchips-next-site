@@ -1,0 +1,5 @@
+external_id,parent_external_id,name,path
+seo:batteries-accessories,seo:industrial-batteries,Аксессуары для аккумуляторов,catalog/industrial-batteries/accessories
+seo:battery-enclosures,seo:batteries-accessories,Корпуса для аккумуляторов,catalog/industrial-batteries/accessories/battery-enclosures
+seo:electrical-installation,,Электроустановочные изделия,catalog/electrical-installation
+seo:power-accessories,seo:electrical-installation,"Розетки, удлинители и сетевые фильтры",catalog/electrical-installation/power-accessories

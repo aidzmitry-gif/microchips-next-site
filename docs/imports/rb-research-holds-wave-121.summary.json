@@ -1,0 +1,12 @@
+{
+  "input_files": [
+    "docs\\imports\\rb-research-holds-wave-120.csv",
+    "docs\\imports\\rb-source-backed-description-holds-panasonic-energizer-wave-121-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-tekcell-saft-wave-121-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-pkcell-fanso-robiton-wave-121-2026-07-28.csv"
+  ],
+  "source_rows": 106,
+  "unique_hold_clusters": 103,
+  "collapsed_duplicate_rows": 3,
+  "invariant": "hold-only ledger; no catalogue, publication or database mutation"
+}

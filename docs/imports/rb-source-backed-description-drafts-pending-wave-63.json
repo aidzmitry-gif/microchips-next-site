@@ -1,0 +1,149 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001967",
+      "manufacturer": "Delta",
+      "mpn": "DTM1215",
+      "technology": "AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1215/",
+      "source_kind": "manufacturer-branded product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00002003",
+      "manufacturer": "Exide",
+      "mpn": "XP12V3400",
+      "technology": "AGM",
+      "source_url": "https://www.exidegroup.com/hk/sites/default/files/2024-11/operating-instructions-vrla-batteries_11.2024_0.pdf",
+      "source_kind": "manufacturer operating instructions",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00002048",
+      "manufacturer": "Ventura",
+      "mpn": "GP12-7.2",
+      "technology": "AGM",
+      "source_url": "https://ventura-battery.ru/upload/documents/gp/GP_12-7.2.pdf",
+      "source_kind": "official Ventura product datasheet",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003227",
+      "manufacturer": "Ventura",
+      "mpn": "GPL12-75",
+      "technology": "AGM",
+      "source_url": "https://ventura-battery.ru/upload/documents/gpl/GPL_12-75.pdf",
+      "source_kind": "official Ventura product datasheet",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003228",
+      "manufacturer": "Ventura",
+      "mpn": "GPL12-150",
+      "technology": "AGM",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-gpl/gpl-12-150/",
+      "source_kind": "manufacturer product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003397",
+      "manufacturer": "Ventura",
+      "mpn": "GP6-12",
+      "technology": "AGM",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "source_kind": "official Ventura documentation index",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003442",
+      "manufacturer": "Casil",
+      "mpn": "CA1213",
+      "technology": "AGM",
+      "source_url": "https://www.electro51.ru/assets/files/catalogs/CASIL-Battery-Product-Catalogue.pdf",
+      "source_kind": "manufacturer catalogue",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003582",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HR33-12",
+      "technology": "AGM",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "source_kind": "official B.B. Battery series page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003696",
+      "manufacturer": "Ventura",
+      "mpn": "GPL12-200",
+      "technology": "AGM",
+      "source_url": "https://ventura-battery.ru/upload/documents/gpl/GPL_12-200.pdf",
+      "source_kind": "manufacturer datasheet",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00003856",
+      "manufacturer": "B.B. Battery",
+      "mpn": "BP5-12",
+      "technology": "AGM",
+      "source_url": "https://www.bb-batte.com/?lang=en",
+      "source_kind": "official B.B. Battery product catalogue",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00004855",
+      "manufacturer": "Ventura",
+      "mpn": "VG12-200",
+      "technology": "GEL",
+      "source_url": "https://ventura-battery.ru/upload/documents/vg/VG_12-200.pdf",
+      "source_kind": "official Ventura product datasheet",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00005514",
+      "manufacturer": "Ventura",
+      "mpn": "VG12-100",
+      "technology": "GEL",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-vg/vg-12-100/",
+      "source_kind": "official Ventura product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00005523",
+      "manufacturer": "Ventura",
+      "mpn": "HRL12155W",
+      "technology": "AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "source_kind": "manufacturer catalogue",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "КА-00005572",
+      "manufacturer": "Ventura",
+      "mpn": "FT12-150",
+      "technology": "GEL",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-ft/ft-12-150/",
+      "source_kind": "manufacturer product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "ФР-00000462",
+      "manufacturer": "Восток PRO",
+      "mpn": "СК-1218",
+      "technology": "AGM",
+      "source_url": "https://www.elec.ru/files/2023/06/19/Katalog-Vostok-PRO.pdf",
+      "source_kind": "manufacturer catalogue",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "external_id": "ФР-00001154",
+      "manufacturer": "Sonnenschein",
+      "mpn": "A502/10S",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/eu/en/document/performance-durability-data-0",
+      "source_kind": "manufacturer product document",
+      "checked_at": "2026-07-26"
+    }
+  ]
+}

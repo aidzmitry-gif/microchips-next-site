@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "cgd",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/cgd-74a3c97758164733.html",
+      "snapshot_sha256": "74a3c977581647336fc84f607f4d4a5ef47e66f6cf2d9b4eb016702d30aaee8c",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "ct",
+      "source_url": "https://delta-batt.com/series/ct/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/ct-11b2a93748ff3337.html",
+      "snapshot_sha256": "11b2a93748ff333790fa30528181ca062f9dda1300abadee3769ff53cab23b23",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "dt",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/dt-8a836b25d451ddf3.html",
+      "snapshot_sha256": "8a836b25d451ddf38b179b9639fe334f7eacb40db0e65e275a025ff15b656142",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "dtm",
+      "source_url": "https://delta-batt.com/series/dtm/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/dtm-a6be74185190c1e1.html",
+      "snapshot_sha256": "a6be74185190c1e19c537da7b51fffbaef1b87f28830d294215def669b8ac62c",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "ft_m",
+      "source_url": "https://delta-batt.com/series/ft_m/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/ft_m-7e2a9580bb0a839f.html",
+      "snapshot_sha256": "7e2a9580bb0a839f147682dde9061ec40b511ed4e56dfe9133d2b1602a29d559",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "fts_x",
+      "source_url": "https://delta-batt.com/series/fts_x/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/fts_x-6dc9c8dd3f959c40.html",
+      "snapshot_sha256": "6dc9c8dd3f959c40dc7c40492fc3817c86a150f06e5c9eae0989216dde40a61e",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "hr_w",
+      "source_url": "https://delta-batt.com/series/hr_w/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/hr_w-ac8576e0115caa75.html",
+      "snapshot_sha256": "ac8576e0115caa7568157dd4f49e56281f3412e018ed38198076bc6259781b5e",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "hrl_w",
+      "source_url": "https://delta-batt.com/series/hrl_w/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/hrl_w-b449a5ad7bec3c07.html",
+      "snapshot_sha256": "b449a5ad7bec3c07152dc95d3e5ccfb5f9efdf2bf495e78746a7b36a6784b1a2",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "hrl_x",
+      "source_url": "https://delta-batt.com/series/hrl_x/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/hrl_x-dfede651d26af91a.html",
+      "snapshot_sha256": "dfede651d26af91a1217af7ea4883893b7d031adce1060bab1bbbb3bab7c55a9",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "source_id": "stc",
+      "source_url": "https://delta-batt.com/series/stc/",
+      "source_kind": "official_manufacturer_series_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave242-delta/stc-5f92c27295a5d072.html",
+      "snapshot_sha256": "5f92c27295a5d07294c19ff0cfbb8c375647c2b92411927b40b8f30e4a30b78d",
+      "content_type": "text/html;charset=utf-8"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+cluster_id,manufacturer_candidate,member_external_ids,representative_name,decision,evidence_url,evidence_summary,retry_condition
+bae:SPZV120,BAE,КА-00005355,BAE 14V 2 SPzV 120,hold,https://www.bae-berlin.de/en/unternehmen,"No official BAE primary source establishes the exact SPzV 120 / 14V2 identity.",Obtain an exact BAE manufacturer datasheet.
+fiamm:12FGHL55,FIAMM,КА-00007131,Fiamm 12FGHL55,hold,https://www.fiamm.com/automotive-batteries/,"No exact FIAMM primary product page or datasheet was confirmed.",Obtain an exact FIAMM manufacturer datasheet.
+fiamm:СВИНЦОВЫЙ12FGL42,FIAMM,КА-00003990,FIAMM 12FGL42,hold,https://www.fiamm.com/automotive-batteries/,"No exact FIAMM primary product page or datasheet was confirmed.",Obtain an exact FIAMM manufacturer datasheet.
+kijo:DZF23AH,KIJO,КА-00005455,Kijo DZF 23Ah GEL,hold,https://www.kijo-battery.com/,"No exact KIJO primary product page or datasheet was confirmed for the terminal variant.",Obtain a KIJO manufacturer datasheet including the terminal variant.
+panasonic:СВИНЦОВЫЙUPVW1220P1,Panasonic,КА-00005218,Panasonic UP-VW1220P1,hold,https://energy.panasonic.com/industrial/en/lead-battery.html,"No exact Panasonic primary source was confirmed for this legacy commercial model.",Obtain an official Panasonic datasheet.
+sonnenschein:A412100A,Sonnenschein,КА-00002840,Sonnenschein A412/100A,hold,https://www.exidegroup.com/ch/de/produkte/sonnenschein-gel-light-traction-gf-v,"Official Exide page does not establish exact A412/100A identity.",Obtain an Exide-hosted exact model datasheet.

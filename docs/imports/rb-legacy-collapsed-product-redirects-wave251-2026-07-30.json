@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "expected_redirects": 16,
+  "redirects": [
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/1400","target_path":"/catalog/industrial-batteries/batteries-ups/delta-dt401","target_external_id":"ФР-00002172","evidence":"reviewed duplicate collapse wave243; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/1401","target_path":"/catalog/industrial-batteries/batteries-ups/delta-dt12012","target_external_id":"ФР-00000005","evidence":"reviewed duplicate collapse wave243; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/1488","target_path":"/catalog/industrial-batteries/batteries-ups/fiamm-fg21202","target_external_id":"ФР-00001439","evidence":"reviewed duplicate collapse wave244b; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/1511","target_path":"/catalog/industrial-batteries/batteries-ups/fiamm-4sla150","target_external_id":"КА-00003136","evidence":"reviewed duplicate collapse wave244a; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/1542","target_path":"/catalog/industrial-batteries/batteries-ups/fiamm-fg21803","target_external_id":"ФР-00001513","evidence":"reviewed duplicate collapse wave244b; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/1556","target_path":"/catalog/industrial-batteries/batteries-ups/delta-dt6028","target_external_id":"КА-00001147","evidence":"reviewed duplicate collapse wave243; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/2915","target_path":"/catalog/industrial-batteries/batteries-ups/delta-dtm1226","target_external_id":"КА-00003468","evidence":"reviewed duplicate collapse wave243; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/3266","target_path":"/catalog/industrial-batteries/batteries-ups/fiamm-12fgh36","target_external_id":"ФР-00002108","evidence":"reviewed duplicate collapse wave244a; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/20088","target_path":"/catalog/industrial-batteries/batteries-ups/apc-rbc7","target_external_id":"КА-00003292","evidence":"reviewed duplicate collapse wave244c; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/20151","target_path":"/catalog/industrial-batteries/batteries-ups/delta-ft-12-125-m","target_external_id":"КА-00002317","evidence":"reviewed duplicate collapse wave243; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/dlya_ibp/agm/23799","target_path":"/catalog/industrial-batteries/batteries-ups/apc-rbc23","target_external_id":"КА-00005164","evidence":"reviewed duplicate collapse wave244c; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/symbol/24006","target_path":"/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12130","target_external_id":"bitrix:12130","evidence":"reviewed Symbol alias collapse wave202; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/symbol/24007","target_path":"/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12146","target_external_id":"bitrix:12146","evidence":"reviewed Symbol alias collapse wave202; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/symbol/24008","target_path":"/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12139","target_external_id":"bitrix:12139","evidence":"reviewed Symbol alias collapse wave202; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/symbol/24009","target_path":"/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12142","target_external_id":"bitrix:12142","evidence":"reviewed Symbol alias collapse wave202; original Bitrix URL restored"},
+    {"source_path":"/catalog/akkumulyatory/promyshlennye/dlya-skanerov-shtrikh-kodov-i-terminalov/symbol/24052","target_path":"/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12149","target_external_id":"bitrix:12149","evidence":"reviewed Cameron Sino alias collapse wave201; original Bitrix URL restored"}
+  ]
+}

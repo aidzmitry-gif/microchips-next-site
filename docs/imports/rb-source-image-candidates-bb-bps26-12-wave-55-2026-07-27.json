@@ -1,0 +1,12 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001952",
+      "source_page_url": "https://www.bb-battery.ru/products/bps/",
+      "source_asset_url": "https://www.bb-battery.ru/wp-content/uploads/2024/02/BPS_26-12.png",
+      "source_kind": "B.B. Battery BPS series product page",
+      "verification_note": "The manufacturer page lists BPS 26-12 beside this source asset. Exact visual-model match and catalogue reuse rights remain pending; the candidate must not be downloaded or published."
+    }
+  ]
+}

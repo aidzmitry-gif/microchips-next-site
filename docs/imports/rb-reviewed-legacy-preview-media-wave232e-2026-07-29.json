@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "purpose": "Promote only Wave232-E company-owned EnerSys/Cyclon assets with a complete visually exact MPN and independent official-catalogue identity proof.",
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:24582",
+      "media_id": 1186,
+      "content_sha256": "f4af4915474c5a0d4e98cdc6cece6fb80a2469a269dda5051a236f325f9bd25c",
+      "storage_path": "legacy-staging/rb/bitrix-24582-83033.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "0859-0016",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Manual visual review: complete visible label 0859-0016 agrees with SHA-pinned official EnerSys Cyclon catalogue.",
+      "reviewed_at": "2026-07-29"
+    }
+  ]
+}

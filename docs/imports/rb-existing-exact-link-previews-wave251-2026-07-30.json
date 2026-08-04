@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "source_run_id": 2,
+  "source_manifest_sha256": "0d364128146d25fc8895525d50b9162011bf1b9c0d81b33f6efaef794a535a02",
+  "source_records": 17207,
+  "links": [
+    {
+      "bitrix_external_id": "bitrix:4021",
+      "one_c_external_id": "КА-00004438",
+      "source_checksum": "fc4c1a3ab5b27b9b939b7626603543374098d9ea46caac4dfff32b20d93e61d9",
+      "target_category_external_id": "seo:primary-cells",
+      "product_slug": "panasonic-br2-3ae2spn",
+      "target_path": "/catalog/primary-cells/panasonic-br2-3ae2spn",
+      "legacy_source_path": "/catalog/batareyki/litievye/4021"
+    },
+    {
+      "bitrix_external_id": "bitrix:9395",
+      "one_c_external_id": "КА-00003123",
+      "source_checksum": "994a48f238218432a77fa4105ea4bbb85db75ffc9b4c28e3f8e6601171ebead0",
+      "target_category_external_id": "seo:replacement-photo",
+      "product_slug": "nikon-en-el5",
+      "target_path": "/catalog/replacement-batteries/replacement-photo/nikon-en-el5",
+      "legacy_source_path": "/catalog/akkumulyatory/dlya-foto-video-audio-tekhniki/dlya-kamer/9395"
+    },
+    {
+      "bitrix_external_id": "bitrix:26091",
+      "one_c_external_id": "КА-00004783",
+      "source_checksum": "68f39a41135c1321ee3dca7f3c23d3bb9441d258fa4913a19aaa95a1f0ad1f51",
+      "target_category_external_id": "seo:batteries-traction",
+      "product_slug": "tor-4815",
+      "target_path": "/catalog/industrial-batteries/batteries-traction/tor-4815",
+      "legacy_source_path": "/catalog/akkumulyatory/tyagovye/dlya-elektrotelezhek/26091"
+    },
+    {
+      "bitrix_external_id": "bitrix:26094",
+      "one_c_external_id": "КА-00004782",
+      "source_checksum": "4b5f883c1587b7dea570fc90ee421b16caab1adedfc60a803ed0e0fe46671b01",
+      "target_category_external_id": "seo:batteries-traction",
+      "product_slug": "tor-4810",
+      "target_path": "/catalog/industrial-batteries/batteries-traction/tor-4810",
+      "legacy_source_path": "/catalog/akkumulyatory/tyagovye/dlya-elektrotelezhek/26094"
+    }
+  ]
+}

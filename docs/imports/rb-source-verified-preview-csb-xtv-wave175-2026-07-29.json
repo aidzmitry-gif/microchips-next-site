@@ -1,0 +1,13 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {"external_id":"manufacturer:csb:XTV1272","manufacturer":"CSB","mpn":"XTV1272","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv1272"},
+    {"external_id":"manufacturer:csb:XTV1285","manufacturer":"CSB","mpn":"XTV1285","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv1285"},
+    {"external_id":"manufacturer:csb:XTV12120","manufacturer":"CSB","mpn":"XTV12120","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv12120"},
+    {"external_id":"manufacturer:csb:XTV12200","manufacturer":"CSB","mpn":"XTV12200","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv12200"},
+    {"external_id":"manufacturer:csb:XTV12550","manufacturer":"CSB","mpn":"XTV12550","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv12550"},
+    {"external_id":"manufacturer:csb:XTV12800","manufacturer":"CSB","mpn":"XTV12800","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv12800"},
+    {"external_id":"manufacturer:csb:XTV121000","manufacturer":"CSB","mpn":"XTV121000","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv121000"},
+    {"external_id":"manufacturer:csb:XTV121100","manufacturer":"CSB","mpn":"XTV121100","source_url":"https://csb-battery.com/product/xtv-series/","category_slug":"catalog/industrial-batteries/batteries-ups","product_slug":"csb-xtv121100"}
+  ]
+}

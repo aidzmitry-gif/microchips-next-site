@@ -1,0 +1,237 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:RH 10",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 10",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-10"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 20",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 20",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-20"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 30",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 30",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-30"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 40",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 40",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-40"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 50",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 50",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-50"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 65",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 65",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-65"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 80",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 80",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-80"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 100",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 100",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-100"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 125",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 125",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-125"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 150",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 150",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-150"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 185",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 185",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-185"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 200",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 200",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-200"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 235",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 235",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-235"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 250",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 250",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-250"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 280",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 280",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-280"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 300",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 300",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-300"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 320",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 320",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-320"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 360",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 360",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-360"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 390",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 390",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-390"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 420",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 420",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-420"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 450",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 450",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-450"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 480",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 480",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-480"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 520",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 520",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-520"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 560",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 560",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-560"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 600",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 600",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-600"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 640",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 640",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-640"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 700",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 700",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-700"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 750",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 750",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-750"
+    },
+    {
+      "external_id": "manufacturer:enersys:RH 800",
+      "manufacturer": "EnerSys",
+      "mpn": "RH 800",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/powersafe/nicd/amer/us-rh-rs-003_0114.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-rh-800"
+    }
+  ]
+}

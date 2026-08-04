@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from ROBITON's official product page. No local price, stock, warranty, image-rights claim or publication authorization is included.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003558",
+      "manufacturer": "ROBITON",
+      "mpn": "EN3000S/5-24",
+      "display_name": "Универсальный блок питания ROBITON EN3000S/5-24",
+      "technology": "Импульсный стабилизированный универсальный блок питания",
+      "source_url": "https://www.robiton.ru/product/09659/",
+      "source_kind": "ROBITON EN3000S/5-24 official product page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Импульсный стабилизированный универсальный блок питания",
+        "Максимальный выходной ток": "3000 мА",
+        "Выходное напряжение": "5 / 6 / 7 / 8 / 9 / 10 / 11 / 12 / 13 / 14 / 15 / 16 / 17 / 18 / 19 / 20 / 21 / 22 / 23 / 24 В",
+        "Насадки": "8 сменных штекеров",
+        "Защита от перегрузки": "Есть",
+        "Защита от короткого замыкания": "Есть"
+      }
+    }
+  ]
+}

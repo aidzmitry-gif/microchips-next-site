@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact ROBITON LiFe18650 enrichment from the official manufacturer product page. No packaging, terminal, price, stock, warranty, application or image-rights claim is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:11753",
+      "identity_scope": "exact",
+      "manufacturer": "ROBITON",
+      "mpn": "LiFe18650",
+      "technology": "LiFePO4 аккумулятор",
+      "display_name": "Аккумулятор ROBITON LiFe18650 (LiFePO4, 1100 мА·ч, 3,2 В)",
+      "source_url": "https://www.robiton.ru/product/13119/",
+      "technical_attributes": {
+        "Типоразмер": "18650",
+        "Номинальное напряжение": "3,2 В",
+        "Номинальная ёмкость": "1100 мА·ч",
+        "Защита": "без платы защиты",
+        "Размеры": "18 × 65 мм",
+        "Максимальный ток разряда": "16,5 А",
+        "Максимальный ток заряда": "5,5 А",
+        "Температура разряда": "от −20 до +60 °C"
+      }
+    }
+  ]
+}

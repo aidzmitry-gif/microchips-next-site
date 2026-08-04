@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:2394",
+      "current_name": "Аккумулятор Alinco EBP-50N для радиостанций (NiMH, 700mAh, 9.6V)",
+      "manufacturer": "Alinco",
+      "mpn": "EBP-50N",
+      "source_url": "https://www.alinco.com/Products/accessoryHT_2006.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "Alinco, Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-radio/alinco-handheld-accessories-2006-snapshot.pdf",
+      "source_snapshot_sha256": "c71bd1d6c7330f1fe87cac2c827aea826425bc9302186e0ada41dc92be1842a6"
+    },
+    {
+      "external_id": "bitrix:2395",
+      "current_name": "Аккумулятор Alinco EBP-51N для радиостанций (NiMH, 1500mAh, 9.6V)",
+      "manufacturer": "Alinco",
+      "mpn": "EBP-51N",
+      "source_url": "https://www.alinco.com/Products/accessoryHT_2006.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "Alinco, Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-radio/alinco-handheld-accessories-2006-snapshot.pdf",
+      "source_snapshot_sha256": "c71bd1d6c7330f1fe87cac2c827aea826425bc9302186e0ada41dc92be1842a6"
+    },
+    {
+      "external_id": "bitrix:2396",
+      "current_name": "Аккумулятор Alinco EBP-64 для радиостанций (Li-ion, 1600mAh, 7.4V)",
+      "manufacturer": "Alinco",
+      "mpn": "EBP-64",
+      "source_url": "https://www.alinco.com/Products/accessoryHT_2006.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "Alinco, Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-radio/alinco-handheld-accessories-2006-snapshot.pdf",
+      "source_snapshot_sha256": "c71bd1d6c7330f1fe87cac2c827aea826425bc9302186e0ada41dc92be1842a6"
+    },
+    {
+      "external_id": "bitrix:2397",
+      "current_name": "Аккумулятор Alinco EBP-65 для радиостанций (NiMH, 700mAh, 7.2V)",
+      "manufacturer": "Alinco",
+      "mpn": "EBP-65",
+      "source_url": "https://www.alinco.com/Products/accessoryHT_2006.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "source_publisher": "Alinco, Inc.",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-radio/alinco-handheld-accessories-2006-snapshot.pdf",
+      "source_snapshot_sha256": "c71bd1d6c7330f1fe87cac2c827aea826425bc9302186e0ada41dc92be1842a6"
+    },
+    {
+      "external_id": "bitrix:20045",
+      "current_name": "Аккумулятор Autec MBM06MH (NiMH, 750mAh)",
+      "manufacturer": "AUTEC",
+      "mpn": "MBM06MH",
+      "source_url": "https://store.autecsafety.com/get-product-attachment/?file=920&language=106",
+      "source_kind": "official_manufacturer_service_document",
+      "source_publisher": "AUTEC Srl",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-remote-control/autec-mbm06mh-manual-2026-07-29.pdf",
+      "source_snapshot_sha256": "2691b42baca6c5ac1e99bb007f59301a89b7d114b49968074d7256f89735dc2d"
+    },
+    {
+      "external_id": "bitrix:20071",
+      "current_name": "Аккумулятор Autec MH0707L (NiMH, 1300mAh)",
+      "manufacturer": "AUTEC",
+      "mpn": "MH0707L",
+      "source_url": "https://store.autecsafety.com/get-product-attachment/?file=902&language=106",
+      "source_kind": "official_manufacturer_service_document",
+      "source_publisher": "AUTEC Srl",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-remote-control/autec-nc-mh0707l-manual-2026-07-29.pdf",
+      "source_snapshot_sha256": "c17cfe81e8e5814edfdbf0130f8fa76a8052ba21901a9c2d920f9c506bd7288a"
+    },
+    {
+      "external_id": "bitrix:20073",
+      "current_name": "Аккумулятор Autec LBM02MH (NiMH, 1600mAh)",
+      "manufacturer": "AUTEC",
+      "mpn": "LBM02MH",
+      "source_url": "https://store.autecsafety.com/en/batteries/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "AUTEC Srl",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-remote-control/autec-official-battery-store-2026-07-29.html",
+      "source_snapshot_sha256": "6c6d705ed564d42f5c9644608fe23c64f2383d9d947643ea0ae4db08198512b7"
+    },
+    {
+      "external_id": "bitrix:20075",
+      "current_name": "Аккумулятор Autec AIRBM3V7L (Li-Pol, 1300mAh)",
+      "manufacturer": "AUTEC",
+      "mpn": "AIRBM3V7L",
+      "source_url": "https://store.autecsafety.com/en/li-ion-battery/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "AUTEC Srl",
+      "checked_at": "2026-07-29",
+      "product_type": "Battery pack",
+      "source_snapshot_path": "../audits/sources/wave204-remote-control/autec-official-lithium-store-2026-07-29.html",
+      "source_snapshot_sha256": "00817b0e94d457ea0cb70aeffe8b94ab5b3a22513c23af19b58d15b90266edff"
+    }
+  ]
+}

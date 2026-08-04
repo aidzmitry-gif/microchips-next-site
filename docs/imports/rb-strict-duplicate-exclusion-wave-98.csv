@@ -1,0 +1,8 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00004586,exact_manufacturer_code_duplicate,КА-00003672,"Exact NAKI manufacturing code 321162.221, model 24x4PzS460 and dimensions 968x527x645; survivor additionally preserves electrolyte and connector details"
+КА-00005623,exact_manufacturer_code_duplicate,КА-00003672,"Exact NAKI manufacturing code 321162.221, model 24x4PzS460 and dimensions 968x527x645; survivor additionally preserves electrolyte and connector details"
+КА-00003914,exact_model_specification_duplicate,КА-00006941,"Exact QJ5003C III model and identical 0-50 V 3 A x2 plus 5 V 3 A configuration; survivor also preserves 150 W"
+КА-00006819,exact_normalized_model_duplicate,КА-00005310,"Exact Longwei LW-K3010D model; hyphen and description completeness only"
+КА-00005564,exact_normalized_model_duplicate,КА-00005657,"Exact NICE-Power R-SPS3010 model; wording abbreviation and country text only"
+КА-00005107,exact_model_duplicate,КА-00005111,"Exact ROBITON SN500S model; survivor preserves 500 mA and BL1 packaging"
+КА-00003339,exact_replacement_cartridge_duplicate,КА-00003351,"Exact APC APCRBC11 replacement cartridge, 12 V and 17 Ah; survivor correctly preserves kit identity"

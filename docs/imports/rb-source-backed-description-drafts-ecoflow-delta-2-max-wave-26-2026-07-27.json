@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from EcoFlow's official DELTA 2 Max product page. No local price, stock, warranty, image-rights claim or publication authorization is included.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004833",
+      "manufacturer": "EcoFlow",
+      "mpn": "DELTA 2 Max",
+      "display_name": "Портативная электростанция EcoFlow DELTA 2 Max",
+      "technology": "Портативная электростанция с литий-железо-фосфатной батареей (LFP / LiFePO4)",
+      "source_url": "https://eu.ecoflow.com/products/delta-2-max",
+      "source_kind": "EcoFlow DELTA 2 Max official product specification",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальная ёмкость": "2048 Вт·ч",
+        "Химия батареи": "LFP / LiFePO4",
+        "Выход AC": "2400 Вт суммарно; пиковая мощность 4800 Вт",
+        "X-Boost": "до 3100 Вт",
+        "Солнечный вход": "11–60 В, 15 А; до 500 Вт на порт, до 1000 Вт суммарно",
+        "Автомобильный выход": "12,6 В, 10 А, до 126 Вт",
+        "USB-C": "2 порта, до 100 Вт на порт",
+        "Ресурс": "3000 циклов до 80% и более ёмкости",
+        "Габариты": "497 × 242 × 305 мм",
+        "Масса": "23 кг"
+      }
+    }
+  ]
+}

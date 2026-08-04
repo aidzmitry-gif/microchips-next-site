@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "purpose": "Three model-specific FIAMM editorial drafts from traceable technical sources. This manifest never authorizes pricing, stock, images, Offer markup or indexability.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003136",
+      "manufacturer": "FIAMM",
+      "mpn": "4SLA150",
+      "display_name": "Аккумуляторная батарея FIAMM 4SLA150",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.cogenient.com/mfc-refdocs/Fiamm/SLA/4SLA150.pdf",
+      "source_kind": "FIAMM-branded 4SLA150 technical datasheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "4 V",
+        "Номинальная ёмкость": "150 Ah (C8)",
+        "Технология": "VRLA AGM",
+        "Масса": "20,2 кг",
+        "Клемма": "M8"
+      }
+    },
+    {
+      "external_id": "КА-00004091",
+      "manufacturer": "FIAMM",
+      "mpn": "12FIT180",
+      "display_name": "Аккумуляторная батарея FIAMM 12FIT180",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея AGM с фронтальными выводами",
+      "source_url": "https://fiamm.ru/equipment/FIT-series/12FIT180/",
+      "source_kind": "official FIAMM 12FIT180 product page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "180 Ah (C10)",
+        "Технология": "AGM",
+        "Габариты": "126 × 531 × 321 мм",
+        "Масса": "57,5 кг",
+        "Клемма": "внутренняя резьба M8"
+      }
+    },
+    {
+      "external_id": "ФР-00001513",
+      "manufacturer": "FIAMM",
+      "mpn": "FG21803",
+      "display_name": "Аккумуляторная батарея FIAMM FG21803",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.fiamm.co/catalog/FG21803.pdf",
+      "source_kind": "FIAMM FG21803 technical datasheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "18 Ah (C20)",
+        "Технология": "VRLA AGM",
+        "Габариты": "181 × 76 × 167 мм",
+        "Масса": "5,90 кг",
+        "Клемма": "болт и гайка M5"
+      }
+    }
+  ]
+}

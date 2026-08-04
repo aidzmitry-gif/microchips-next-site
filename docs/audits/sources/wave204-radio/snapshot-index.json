@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "alinco_handheld_accessories_2006",
+      "publisher": "Alinco, Inc.",
+      "source_url": "https://www.alinco.com/Products/accessoryHT_2006.pdf",
+      "source_kind": "official_manufacturer_pdf",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-radio/alinco-handheld-accessories-2006-snapshot.pdf",
+      "snapshot_sha256": "c71bd1d6c7330f1fe87cac2c827aea826425bc9302186e0ada41dc92be1842a6",
+      "snapshot_bytes": 621087,
+      "required_exact_tokens": [
+        "EBP-50N",
+        "EBP-51N",
+        "EBP-64",
+        "EBP-65",
+        "9.6V 700mAh",
+        "9.6V 1500mAh",
+        "7.4V 1600mAh",
+        "7.2V 700mAh"
+      ],
+      "token_counts": {
+        "EBP-50N": 1,
+        "EBP-51N": 1,
+        "EBP-64": 1,
+        "EBP-65": 1,
+        "9.6V 700mAh": 1,
+        "9.6V 1500mAh": 1,
+        "7.4V 1600mAh": 1,
+        "7.2V 700mAh": 1
+      }
+    }
+  ]
+}

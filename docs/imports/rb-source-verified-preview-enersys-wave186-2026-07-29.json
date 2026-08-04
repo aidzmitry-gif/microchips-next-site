@@ -1,0 +1,205 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:VGL 12",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 12",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-12"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 20",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 20",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-20"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 25",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 25",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-25"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 35",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 35",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-35"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 45",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 45",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-45"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 50",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 50",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-50"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 60",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 60",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-60"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 70",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 70",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-70"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 80",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 80",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-80"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 100",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 100",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-100"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 120",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 120",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-120"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 135",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 135",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-135"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 155",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 155",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-155"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 175",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 175",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-175"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 205",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 205",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-205"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 225",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 225",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-225"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 245",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 245",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-245"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 255",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 255",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-255"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 275",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 275",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-275"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 300",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 300",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-300"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 330",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 330",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-330"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 350",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 350",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-350"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 375",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 375",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-375"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 390",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 390",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-390"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 420",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 420",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgl-420"
+    }
+  ]
+}

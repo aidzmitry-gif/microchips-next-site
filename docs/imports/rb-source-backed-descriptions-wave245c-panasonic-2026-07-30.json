@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave245C exact Panasonic manufacturer-primary descriptions",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:3232",
+      "identity_scope": "exact",
+      "manufacturer": "Panasonic",
+      "mpn": "UP-VW0645P1",
+      "display_name": "Аккумулятор Panasonic UP-VW0645P1",
+      "technology": "VRLA AGM",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C64.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29",
+      "technical_attributes": {
+        "Серия": "UP-VW",
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость (20 ч)": "7,8 А·ч",
+        "Номинальная мощность (10 мин)": "135 Вт",
+        "Габариты": "34 × 151 × 100 мм",
+        "Масса": "1,30 кг",
+        "Выводы": "Faston 250"
+      }
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+﻿{
+    "schema_version":  1,
+    "purpose":  "Delta Wave 130-A: source-backed model-core enrichment. Only the exact model, technology, nominal voltage and nominal capacity evidenced by the official Delta catalogue page are proposed. No price, stock, image, warranty, pack, terminal, country, serial or publication status is inferred.",
+    "locale":  "ru-BY",
+    "products":  [
+                     {
+                         "external_id":  "КА-00001148",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002650",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003537",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002872",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001878",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00000617",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005715",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DT 612",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dt/delta-dt-612/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "12 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00000748",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12022",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-12022/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "2.2 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005560",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12022",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-12022/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "2.2 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002626",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12022",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-12022/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "2.2 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002942",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12022",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-12022/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "2.2 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002549",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12100 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-12100-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "100 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002979",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12100 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-12100-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "100 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002935",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12100 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-12100-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "100 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003648",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12120 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-12120-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "120 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004678",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 12120 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-12120-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "120 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00001089",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1217",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1217/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001792",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1217",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1217/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002700",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1217",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1217/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005617",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1217",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1217/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002701",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1217",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1217/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "17 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002736",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1240 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1240-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "40 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002238",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1240 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1240-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "40 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005618",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1240 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1240-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "40 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004022",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 1275 L",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1275-l/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "75 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001500",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 607",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-607/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "7 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001501",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "DTM 607",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/dtm/delta-dtm-607/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "6 V",
+                                                      "Nominal capacity":  "7 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001863",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FT 12-50 M",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/ft-m/delta_ft_12_50_m/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "50 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002702",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FT 12-50 M",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/ft-m/delta_ft_12_50_m/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "50 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001877",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FT 12-50 M",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/ft-m/delta_ft_12_50_m/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "50 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002737",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FT 12-50 M",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/ft-m/delta_ft_12_50_m/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "50 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002602",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FT 12-105 M",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-105-m/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "105 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001614",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FT 12-150 M",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-150-m/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "150 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00006757",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FTS 12-100 X",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_100_x/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "100 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00006828",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FTS 12-100 X",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_100_x/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "100 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00007126",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FTS 12-150 X",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_150_x/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "150 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005187",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FTS 12-180 X",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_180_x/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "180 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00006758",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "FTS 12-50 X",
+                         "technology":  "sealed VRLA lead-acid battery with AGM technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_50_x/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "50 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003398",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-15",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-15/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "15 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004928",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-15",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-15/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "15 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004970",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-15",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-15/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "15 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001759",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-15",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-15/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "15 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005908",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-15",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-15/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "15 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00006006",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-15",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-15/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "15 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005542",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-20",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-20/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "20 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00001028",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-20",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-20/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "20 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00003934",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-20",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-20/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "20 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005245",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-26",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-26/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "26 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005244",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-26",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-26/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "26 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005772",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-26",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-26/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "26 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005246",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-26",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-26/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "26 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004408",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-26",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-26/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "26 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00002175",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-26",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-26/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "26 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00000714",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-45",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-45/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "45 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004042",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-65",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-65/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "65 Ah"
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00004776",
+                         "identity_scope":  "model_core",
+                         "manufacturer":  "Delta",
+                         "model_core":  "GEL 12-65",
+                         "technology":  "sealed lead-acid battery with AGM+GEL technology",
+                         "source_url":  "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-65/",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Nominal capacity":  "65 Ah"
+                                                  }
+                     }
+                 ]
+}

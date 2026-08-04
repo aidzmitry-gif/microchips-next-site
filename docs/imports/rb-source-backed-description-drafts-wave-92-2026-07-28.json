@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "purpose": "Three exact-model RB catalogue descriptions verified against official manufacturer sources. No price, availability, publication or image claim is authorized by this manifest.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003848",
+      "manufacturer": "FIAMM",
+      "mpn": "12FIT60",
+      "display_name": "Аккумуляторная батарея FIAMM 12FIT60, 12 В 60 А·ч",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея VRLA AGM с фронтальными выводами",
+      "source_url": "https://www.fiamm.ru/equipment/FIT-series/",
+      "source_kind": "official FIAMM FIT series product table",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "60 А·ч (C10)",
+        "Технология": "VRLA AGM",
+        "Исполнение выводов": "фронтальное",
+        "Габариты": "105 × 280 × 260 мм",
+        "Масса": "18,5 кг",
+        "Клемма": "внутренняя резьба M6",
+        "Расчётный срок службы": "более 15 лет при 20 °C"
+      }
+    },
+    {
+      "external_id": "КА-00005708",
+      "manufacturer": "APC",
+      "mpn": "SRT192BP2",
+      "display_name": "Внешний батарейный блок APC SRT192BP2, 192 В",
+      "technology": "внешняя свинцово-кислотная батарейная система для ИБП APC Smart-UPS On-Line SRT",
+      "source_url": "https://www.se.com/us/en/product/SRT192BP2/apc-smartups-online-srt-battery-pack-for-8-10kva-extended-runtime-model-192v/",
+      "source_kind": "official Schneider Electric product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение батарейного блока": "192 В",
+        "Совместимая серия ИБП": "APC Smart-UPS On-Line SRT 8–10 кВА",
+        "Назначение": "увеличение времени автономной работы ИБП",
+        "Масштабирование": "подключение до 10 батарейных блоков",
+        "Тип батарей": "герметичные свинцово-кислотные"
+      }
+    },
+    {
+      "external_id": "КА-00005756",
+      "manufacturer": "IPPON",
+      "mpn": "Innova G2 1000",
+      "display_name": "Источник бесперебойного питания IPPON Innova G2 1000, 1000 ВА / 900 Вт",
+      "technology": "однофазный ИБП online с двойным преобразованием",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1kVA-427357/",
+      "source_kind": "official IPPON product page, product ID 427357",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Полная мощность": "1000 ВА",
+        "Активная мощность": "900 Вт",
+        "Топология": "online, двойное преобразование",
+        "Выходное напряжение": "220 / 230 / 240 В",
+        "Форма выходного сигнала": "синусоида",
+        "Выходные разъёмы": "4 × IEC C13 с батарейной поддержкой",
+        "Аккумуляторы": "2 × 12 В, 9 А·ч",
+        "Интерфейсы": "EPO, RS-232, USB",
+        "Габариты": "144 × 228 × 356 мм",
+        "Масса": "9,2 кг"
+      }
+    }
+  ]
+}

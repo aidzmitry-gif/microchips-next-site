@@ -1,0 +1,576 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Restore exact historical noindex preview redirects without changing product, category, content, price, availability, publication or SEO state.",
+  "expected_redirects": 91,
+  "generated_at": "2026-07-30",
+  "sources": [
+    {
+      "kind": "isolated_database_replay",
+      "checkpoint": ".tmp/db-checkpoints/microchips-recovery-checkpoint-wave246.dump",
+      "waves": [
+        194,
+        196,
+        197,
+        198
+      ],
+      "redirects": 85
+    },
+    {
+      "kind": "reviewed_historical_slug_corrections",
+      "waves": [
+        174,
+        175
+      ],
+      "redirects": 6
+    }
+  ],
+  "redirects": [
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx385",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx385-plus",
+      "target_external_id": "manufacturer:enersys:12HX385+",
+      "evidence": "historical_slug_correction_wave174_175"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx450",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx450-plus",
+      "target_external_id": "manufacturer:enersys:12HX450+",
+      "evidence": "historical_slug_correction_wave174_175"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx530",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx530-plus",
+      "target_external_id": "manufacturer:enersys:12HX530+",
+      "evidence": "historical_slug_correction_wave174_175"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx600",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx600-plus",
+      "target_external_id": "manufacturer:enersys:12HX600+",
+      "evidence": "historical_slug_correction_wave174_175"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx650f-fr",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx650f-fr-plus",
+      "target_external_id": "manufacturer:enersys:12HX650F-FR+",
+      "evidence": "historical_slug_correction_wave174_175"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx700f-fr",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/enersys-12hx700f-fr-plus",
+      "target_external_id": "manufacturer:enersys:12HX700F-FR+",
+      "evidence": "historical_slug_correction_wave174_175"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1402",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dt-6012",
+      "target_external_id": "bitrix:1402",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1403",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12012",
+      "target_external_id": "bitrix:1403",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1405",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg10121",
+      "target_external_id": "bitrix:1405",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1406",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg20121",
+      "target_external_id": "bitrix:1406",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1407",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg20121a",
+      "target_external_id": "bitrix:1407",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1420",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12100-l",
+      "target_external_id": "bitrix:1420",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1425",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fit100-19",
+      "target_external_id": "bitrix:1425",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1426",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fit100-23",
+      "target_external_id": "bitrix:1426",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1459",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12120-l",
+      "target_external_id": "bitrix:1459",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1478",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-612",
+      "target_external_id": "bitrix:1478",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1485",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg11201",
+      "target_external_id": "bitrix:1485",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1486",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg11202",
+      "target_external_id": "bitrix:1486",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1487",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg21201",
+      "target_external_id": "bitrix:1487",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1494",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fit130",
+      "target_external_id": "bitrix:1494",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1508",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fit150",
+      "target_external_id": "bitrix:1508",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1538",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dt-1218",
+      "target_external_id": "bitrix:1538",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1539",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-18",
+      "target_external_id": "bitrix:1539",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1546",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg20201",
+      "target_external_id": "bitrix:1546",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1559",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12200-l",
+      "target_external_id": "bitrix:1559",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20121",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-6-15",
+      "target_external_id": "bitrix:20121",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20122",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-15",
+      "target_external_id": "bitrix:20122",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20124",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-40",
+      "target_external_id": "bitrix:20124",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20125",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-65",
+      "target_external_id": "bitrix:20125",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20126",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-100",
+      "target_external_id": "bitrix:20126",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20128",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-cgd-1212",
+      "target_external_id": "bitrix:20128",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20133",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-180-x",
+      "target_external_id": "bitrix:20133",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20134",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-7-2-x",
+      "target_external_id": "bitrix:20134",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20136",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-12-x",
+      "target_external_id": "bitrix:20136",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20138",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-26-x",
+      "target_external_id": "bitrix:20138",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20139",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-33-x",
+      "target_external_id": "bitrix:20139",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20140",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-45-x",
+      "target_external_id": "bitrix:20140",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20142",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-65-x",
+      "target_external_id": "bitrix:20142",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20143",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-75-x",
+      "target_external_id": "bitrix:20143",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20144",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-80-x",
+      "target_external_id": "bitrix:20144",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20145",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-90-x",
+      "target_external_id": "bitrix:20145",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20146",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-100-x",
+      "target_external_id": "bitrix:20146",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20147",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hrl-12-140-x",
+      "target_external_id": "bitrix:20147",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20153",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-ft-12-180-m",
+      "target_external_id": "bitrix:20153",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2866",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg20271",
+      "target_external_id": "bitrix:2866",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2907",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12250-l",
+      "target_external_id": "bitrix:2907",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2931",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg22703",
+      "target_external_id": "bitrix:2931",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2939",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg10301",
+      "target_external_id": "bitrix:2939",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2940",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12032",
+      "target_external_id": "bitrix:2940",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2941",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-6032",
+      "target_external_id": "bitrix:2941",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2954",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg20341",
+      "target_external_id": "bitrix:2954",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2960",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg10381",
+      "target_external_id": "bitrix:2960",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3006",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-12045",
+      "target_external_id": "bitrix:3006",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3007",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-6045",
+      "target_external_id": "bitrix:3007",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3008",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-4-5",
+      "target_external_id": "bitrix:3008",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3030",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-1240-l",
+      "target_external_id": "bitrix:3030",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3031",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fit40",
+      "target_external_id": "bitrix:3031",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3048",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg24204",
+      "target_external_id": "bitrix:3048",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3062",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-5",
+      "target_external_id": "bitrix:3062",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3077",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-5-8",
+      "target_external_id": "bitrix:3077",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3090",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-1255-l",
+      "target_external_id": "bitrix:3090",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3176",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-6-7-2",
+      "target_external_id": "bitrix:3176",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3179",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg10721",
+      "target_external_id": "bitrix:3179",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3180",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg20721",
+      "target_external_id": "bitrix:3180",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3263",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-hr-12-9",
+      "target_external_id": "bitrix:3263",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3274",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm-1290-l",
+      "target_external_id": "bitrix:3274",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-3277",
+      "target_path": "/catalog/industrial-batteries/batteries-ups/fiamm-12fit90",
+      "target_external_id": "bitrix:3277",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25109",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-basic-650",
+      "target_external_id": "bitrix:25109",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25111",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-basic-650-s-euro",
+      "target_external_id": "bitrix:25111",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25112",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-office-400",
+      "target_external_id": "bitrix:25112",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25113",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-basic-850",
+      "target_external_id": "bitrix:25113",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25114",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-office-600",
+      "target_external_id": "bitrix:25114",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25116",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-basic-850-s-euro",
+      "target_external_id": "bitrix:25116",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25119",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-power-pro-ii-500",
+      "target_external_id": "bitrix:25119",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25120",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-verso-800",
+      "target_external_id": "bitrix:25120",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25124",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-power-pro-ii-600",
+      "target_external_id": "bitrix:25124",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25125",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-power-pro-ii-700",
+      "target_external_id": "bitrix:25125",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25127",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-comfo-pro-ii-650",
+      "target_external_id": "bitrix:25127",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25128",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-comfo-pro-ii-850",
+      "target_external_id": "bitrix:25128",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25129",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-power-pro-ii-800",
+      "target_external_id": "bitrix:25129",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25130",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-office-1000",
+      "target_external_id": "bitrix:25130",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25132",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-comfo-pro-ii-1050",
+      "target_external_id": "bitrix:25132",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25133",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-smart-power-pro-ii-1200",
+      "target_external_id": "bitrix:25133",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25135",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-basic-1500",
+      "target_external_id": "bitrix:25135",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25137",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-back-basic-2200",
+      "target_external_id": "bitrix:25137",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25138",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-smart-power-pro-ii-1200-euro",
+      "target_external_id": "bitrix:25138",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25139",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-smart-power-pro-ii-1600",
+      "target_external_id": "bitrix:25139",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25140",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-smart-power-pro-ii-1600-euro",
+      "target_external_id": "bitrix:25140",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25141",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-smart-power-pro-ii-2200-euro",
+      "target_external_id": "bitrix:25141",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25142",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-smart-power-pro-ii-2200",
+      "target_external_id": "bitrix:25142",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    },
+    {
+      "source_path": "/catalog/power-systems/legacy-bitrix-25149",
+      "target_path": "/catalog/power-systems/ups-systems/ippon-innova-g2-2000l",
+      "target_external_id": "bitrix:25149",
+      "evidence": "isolated_historical_replay_wave194_196_197_198"
+    }
+  ]
+}

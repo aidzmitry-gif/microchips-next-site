@@ -1,0 +1,261 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:SBS 8",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 8",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-8"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 15",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 15",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-15"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 30",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 30",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-30"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS HB30",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS HB30",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-hb30"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 40",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 40",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-40"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 60",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 60",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-60"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 110",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 110",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-110"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 130",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 130",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-130"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 300",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 300",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-300"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 390",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 390",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-390"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS J13",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS J13",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-j13"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS J16",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS J16",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-j16"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS J30",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS J30",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-j30"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS J40",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS J40",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-j40"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS J70",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS J70",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-j70"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS B8",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS B8",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-b8"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS B10",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS B10",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-b10"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS B14",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS B14",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-b14"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS C11",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS C11",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-c11"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 100",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 100",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-100"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 145",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 145",
+      "source_url": "https://www.enersys.com/4aaf7f/globalassets/documents/product-documentation/powersafe/sbs/amer/Powersafe_SBS_Top_Terminal_Range_Summary_amer_en_rs_ps_sbs_tt_1022.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-145"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS B8F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS B8F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-b8f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS B10F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS B10F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-b10f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS B14F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS B14F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-b14f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS C11F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS C11F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-c11f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 100F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 100F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-100f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 112F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 112F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-112f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 145F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 145F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-145f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 165F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 165F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-165f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 170F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 170F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-170f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 190F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 190F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-190f"
+    },
+    {
+      "external_id": "manufacturer:enersys:SBS 210F",
+      "manufacturer": "EnerSys",
+      "mpn": "SBS 210F",
+      "source_url": "https://www.enersys.com/4a7a4d/globalassets/documents/product-documentation/powersafe/sbs/amer/en-rs-amer-ps-sbs-ft-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-sbs-210f"
+    }
+  ]
+}

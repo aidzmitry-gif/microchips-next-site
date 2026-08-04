@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "purpose": "Promote only two company-owned Wave248D images with a visually readable exact Yuasa MPN.",
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:24373",
+      "media_id": 13917,
+      "content_sha256": "973bb0f9ecae422f7f98328f7e5fc92eab3cd80e0b468fe89deb67118d0c0767",
+      "storage_path": "legacy-staging/rb/bitrix-24373-82486.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "DCB145-6",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Manual machine-vision review confirmed the exact DCB145-6 marking on the battery label; the company-owned image is watermarked Microchips.",
+      "reviewed_at": "2026-07-30"
+    },
+    {
+      "external_id": "bitrix:24374",
+      "media_id": 13918,
+      "content_sha256": "0a79101c765c02ed957a822feee0c43ca9359efbc2a0321a19f71cddcf040f42",
+      "storage_path": "legacy-staging/rb/bitrix-24374-82488.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "DCB105-6",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Manual machine-vision review confirmed the exact DCB105-6 marking on the battery label; the company-owned image is watermarked Microchips.",
+      "reviewed_at": "2026-07-30"
+    }
+  ]
+}

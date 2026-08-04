@@ -2,10 +2,13 @@
 
 namespace App\Domain\Sites;
 
+use App\Models\ProductFamily;
 use App\Models\Site;
 use App\Models\SiteCategory;
+use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
+use App\Models\SiteProductPriceEvidence;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
 use App\Models\SiteUrlAlternate;
@@ -32,7 +35,7 @@ class SiteResolver
             ->where('is_active', true)
             ->first();
 
-        if ($redirect !== null) {
+        if ($redirect !== null && $this->isSafeLocalPath($redirect->target_path)) {
             return [
                 'kind' => 'redirect',
                 'site' => $this->sitePayload($site),
@@ -78,6 +81,35 @@ class SiteResolver
         return $path === '/' ? $path : rtrim($path, '/');
     }
 
+    public function isSafeLocalPath(string $path): bool
+    {
+        if ($path === '' || ! str_starts_with($path, '/') || str_starts_with($path, '//') || str_contains($path, '\\')) {
+            return false;
+        }
+
+        // Next and browsers can decode an encoded separator after this API
+        // response leaves Laravel. Treat an encoded protocol-relative URL or
+        // backslash path exactly like its literal form.
+        $decoded = rawurldecode($path);
+        if (! str_starts_with($decoded, '/') || str_starts_with($decoded, '//') || str_contains($decoded, '\\')
+            || preg_match('/[\x00-\x1F\x7F]/', $decoded) === 1) {
+            return false;
+        }
+
+        $parts = parse_url($path);
+        if ($parts === false) {
+            return false;
+        }
+
+        foreach (['scheme', 'host', 'port', 'user', 'pass', 'query', 'fragment'] as $forbidden) {
+            if (array_key_exists($forbidden, $parts)) {
+                return false;
+            }
+        }
+
+        return $this->normalizePath($path) === $path;
+    }
+
     /** @return array<string, mixed> */
     private function pagePayload(Site $site, SiteUrl $url): array
     {
@@ -94,7 +126,7 @@ class SiteResolver
 
         return [
             'kind' => 'page',
-            'site' => $this->sitePayload($site),
+            'site' => $this->sitePayload($site, $page->locale, true),
             'path' => $url->path,
             'page' => [
                 'title' => $page->title,
@@ -110,7 +142,10 @@ class SiteResolver
     private function productPayload(Site $site, SiteUrl $url): array
     {
         $siteProduct = SiteProduct::query()
-            ->with('product')
+            ->with([
+                'product.media' => fn ($query) => $query->previewReady()->orderBy('sort_order')->orderBy('id'),
+                'currentPriceEvidence',
+            ])
             ->published()
             ->where('site_id', $site->id)
             ->find($url->target_id);
@@ -119,11 +154,22 @@ class SiteResolver
             return ['kind' => 'not_found', 'site' => $this->sitePayload($site)];
         }
 
+        $variantGroup = $this->variantGroupPayload($site, $siteProduct);
+        $hasCurrentPriceEvidence = $siteProduct->price !== null
+            && SiteProductPriceEvidence::query()
+                ->where('site_id', $site->id)
+                ->where('site_product_id', $siteProduct->id)
+                ->where('is_current', true)
+                ->where('calculated_price', $siteProduct->price)
+                ->where('currency', $site->currency_code)
+                ->exists();
+
         return [
             'kind' => 'product',
-            'site' => $this->sitePayload($site),
+            'site' => $this->sitePayload($site, $url->locale ?? $site->default_locale, true),
             'path' => $url->path,
             'product' => [
+                'external_id' => $siteProduct->product->external_id,
                 'name' => $siteProduct->product->name,
                 'sku' => $siteProduct->product->sku,
                 'mpn' => $siteProduct->product->mpn,
@@ -132,7 +178,10 @@ class SiteResolver
                 'attributes' => $this->publicAttributes($siteProduct->product->technical_attributes),
                 'availability' => $siteProduct->availability,
                 'price' => $siteProduct->price,
+                'price_observed_at' => $this->priceObservedAt($siteProduct, $site->currency_code),
                 'currency' => $site->currency_code,
+                'image_path' => $siteProduct->product->media->first()?->id === null ? null : '/api/v1/media/'.$siteProduct->product->media->first()->id,
+                'variant_group' => $variantGroup,
             ],
             'seo' => $this->seoPayload(
                 $site,
@@ -141,9 +190,94 @@ class SiteResolver
                 $siteProduct->id,
                 $url,
                 $siteProduct->product->name,
-                $siteProduct->price !== null && $siteProduct->availability === 'in_stock',
+                $hasCurrentPriceEvidence && $siteProduct->availability === 'in_stock',
+                $siteProduct->price,
+                $site->currency_code,
             ),
         ];
+    }
+
+    /** @return array<string, mixed>|null */
+    private function variantGroupPayload(Site $site, SiteProduct $canonicalSiteProduct): ?array
+    {
+        $family = ProductFamily::query()
+            ->where('site_id', $site->id)
+            ->where('canonical_product_id', $canonicalSiteProduct->product_id)
+            ->where('status', ProductFamily::STATUS_VERIFIED)
+            ->with([
+                'variants' => fn ($query) => $query->active()->orderBy('id'),
+                'variants.product.media' => fn ($query) => $query->previewReady()->orderBy('sort_order')->orderBy('id'),
+                'variants.product.sites' => fn ($query) => $query
+                    ->where('site_id', $site->id)
+                    ->published()
+                    ->with('currentPriceEvidence'),
+            ])
+            ->first();
+        if ($family === null) {
+            return null;
+        }
+
+        $options = $family->variants
+            ->map(function ($variant) use ($site): ?array {
+                $siteProduct = $variant->product?->sites->first();
+                if ($siteProduct === null) {
+                    return null;
+                }
+                // A family option is deliberately URL-less. If later data
+                // drift gives it a standalone URL, fail closed in the public
+                // payload instead of recreating a duplicate page.
+                if (SiteUrl::query()
+                    ->where('site_id', $site->id)
+                    ->where('target_type', 'product')
+                    ->where('target_id', $siteProduct->id)
+                    ->exists()) {
+                    return null;
+                }
+
+                return [
+                    'external_id' => $variant->product->external_id,
+                    'variant_key' => $variant->variant_key,
+                    'label' => $variant->label,
+                    'sku' => $variant->product->sku,
+                    'attributes' => $this->publicAttributes($variant->attributes) ?? [],
+                    'availability' => $siteProduct->availability,
+                    'price' => $siteProduct->price,
+                    'price_observed_at' => $this->priceObservedAt($siteProduct, $site->currency_code),
+                    'currency' => $site->currency_code,
+                    'image_path' => $variant->product->media->first()?->id === null
+                        ? null
+                        : '/api/v1/media/'.$variant->product->media->first()->id,
+                ];
+            })
+            ->filter()
+            ->values()
+            ->all();
+
+        if ($options === []) {
+            return null;
+        }
+
+        return [
+            'family_key' => $family->family_key,
+            'label' => $family->selector_label,
+            'canonical_label' => $family->canonical_label,
+            'canonical_attributes' => $this->publicAttributes($family->canonical_attributes) ?? [],
+            'options' => $options,
+        ];
+    }
+
+    private function priceObservedAt(SiteProduct $siteProduct, string $currency): ?string
+    {
+        $evidence = $siteProduct->currentPriceEvidence;
+
+        if ($siteProduct->price === null
+            || $evidence === null
+            || (string) $evidence->calculated_price !== (string) $siteProduct->price
+            || $evidence->currency !== $currency) {
+            return null;
+        }
+
+        return $evidence->observed_at?->toIso8601String();
     }
 
     /**
@@ -195,6 +329,16 @@ class SiteResolver
             $public[$key] = $this->stringifyAttributeValue($value);
         }
 
+        // `chemistry` can be an earlier category-assignment fact (AGM/GEL),
+        // while a source-backed editor has supplied the reader-facing
+        // `Технология` attribute. Rendering both produces an English internal
+        // key and a duplicate fact on the product page. Preserve chemistry
+        // for products that have no richer source-backed label, but prefer
+        // the explicit public attribute whenever it exists.
+        if (array_key_exists('Технология', $public)) {
+            unset($public['chemistry']);
+        }
+
         return $public;
     }
 
@@ -230,7 +374,7 @@ class SiteResolver
 
         return [
             'kind' => 'category',
-            'site' => $this->sitePayload($site),
+            'site' => $this->sitePayload($site, $url->locale ?? $site->default_locale, true),
             'path' => $url->path,
             'category' => [
                 'name' => $category->name ?? $category->category->name,
@@ -241,8 +385,27 @@ class SiteResolver
     }
 
     /** @return array<string, mixed> */
-    private function sitePayload(Site $site): array
+    private function sitePayload(Site $site, ?string $locale = null, bool $includeCommercialProfile = false): array
     {
+        $locale ??= $site->default_locale;
+        $availablePages = SiteUrl::query()
+            ->join('site_pages', function ($join) use ($site): void {
+                $join->on('site_urls.target_id', '=', 'site_pages.id')
+                    ->where('site_urls.target_type', '=', 'page')
+                    ->where('site_urls.site_id', '=', $site->id)
+                    ->where('site_pages.site_id', '=', $site->id);
+            })
+            ->where(function ($query) use ($locale, $site): void {
+                $query->where('site_urls.locale', $locale);
+                if ($locale === $site->default_locale) {
+                    $query->orWhereNull('site_urls.locale');
+                }
+            })
+            ->where('site_pages.locale', $locale)
+            ->where('site_pages.is_published', true)
+            ->orderBy('site_urls.path')
+            ->pluck('site_urls.path', 'site_pages.slug');
+
         return [
             'key' => $site->key,
             'domain' => $site->domain,
@@ -254,22 +417,50 @@ class SiteResolver
             // boundary as resolution. A hard-coded frontend menu can otherwise
             // link visitors (and crawlers) to planned pages which are still
             // drafts, yielding a silent collection of 404s at launch.
-            'availablePagePaths' => SiteUrl::query()
-                ->where('site_id', $site->id)
-                ->where('target_type', 'page')
-                ->whereIn('target_id', SitePage::query()
-                    ->where('site_id', $site->id)
-                    ->published()
-                    ->select('id'))
-                ->orderBy('path')
-                ->pluck('path')
-                ->values()
-                ->all(),
+            'availablePagePaths' => $availablePages->values()->all(),
+            'availablePages' => $availablePages->all(),
+            // Do not use legacy Site columns or drafts as a fallback. A
+            // commercial block is either fully verified for this locale or
+            // omitted from the public payload altogether. It is not exposed
+            // on not_found/redirect payloads while the regional site is still
+            // a draft.
+            ...($includeCommercialProfile ? ['commercialProfile' => $this->commercialProfilePayload($site, $locale)] : []),
             'locales' => $site->locales->map(fn ($locale) => [
                 'locale' => $locale->locale,
                 'language' => $locale->language,
                 'isDefault' => $locale->is_default,
             ])->values(),
+        ];
+    }
+
+    /** @return array<string, mixed>|null */
+    private function commercialProfilePayload(Site $site, string $locale): ?array
+    {
+        $facts = $site->commercialFacts()->published()->where('locale', $locale)->pluck('value', 'key');
+        $requiredFacts = ['legal_name', 'legal_address', 'delivery_terms', 'payment_terms', 'warranty_terms'];
+        foreach ($requiredFacts as $key) {
+            if (! $facts->has($key) || blank($facts->get($key))) {
+                return null;
+            }
+        }
+
+        $contacts = $site->contacts()->published()->where('locale', $locale)->get();
+        $phones = $contacts->where('type', 'phone')->pluck('value')->values()->all();
+        $email = $contacts->firstWhere('type', 'email')?->value;
+        if ($phones === [] || blank($email)) {
+            return null;
+        }
+
+        return [
+            'legalName' => $facts->get('legal_name'),
+            'legalAddress' => $facts->get('legal_address'),
+            'phones' => $phones,
+            'email' => $email,
+            'workingHours' => $contacts->firstWhere('type', 'working_hours')?->value,
+            'pickupAddress' => $contacts->first(fn (SiteContact $contact): bool => $contact->type === 'address' && $contact->label === 'Самовывоз')?->value,
+            'deliveryTerms' => $facts->get('delivery_terms'),
+            'paymentTerms' => $facts->get('payment_terms'),
+            'warrantyTerms' => $facts->get('warranty_terms'),
         ];
     }
 
@@ -282,6 +473,8 @@ class SiteResolver
         SiteUrl $url,
         string $fallbackTitle,
         bool $allowOfferSchema = false,
+        ?string $offerPrice = null,
+        ?string $offerCurrency = null,
     ): array {
         $seo = SiteSeo::query()
             ->where('site_id', $site->id)
@@ -299,22 +492,26 @@ class SiteResolver
             'description' => $seo?->description,
             'canonicalPath' => $seo?->canonical_path ?? $url->path,
             'isIndexable' => $localeEnabled && $url->is_indexable && ($seo?->is_indexable ?? true),
-            'schema' => $this->safeSchema($seo?->schema, $allowOfferSchema),
+            'schema' => $this->safeSchema($seo?->schema, $allowOfferSchema, $offerPrice, $offerCurrency),
             'hreflang' => $localeEnabled && $this->isIndexableHreflangUrl($url, $locale) && ($seo?->is_indexable ?? true)
                 ? $this->hreflangPayload($url, $locale, $site)
                 : [],
         ];
     }
 
-    private function safeSchema(mixed $schema, bool $allowOfferSchema): mixed
-    {
-        if (! is_array($schema) || $allowOfferSchema) {
+    private function safeSchema(
+        mixed $schema,
+        bool $allowOfferSchema,
+        ?string $offerPrice = null,
+        ?string $offerCurrency = null,
+    ): mixed {
+        if (! is_array($schema)) {
             return $schema;
         }
 
         if (array_is_list($schema)) {
             return array_values(array_filter(array_map(
-                fn (mixed $node) => $this->safeSchema($node, false),
+                fn (mixed $node) => $this->safeSchema($node, $allowOfferSchema, $offerPrice, $offerCurrency),
                 $schema,
             ), static fn (mixed $node): bool => $node !== null));
         }
@@ -322,17 +519,38 @@ class SiteResolver
         $type = $schema['@type'] ?? $schema['type'] ?? null;
         $types = is_array($type) ? $type : [$type];
         if (in_array('Offer', $types, true)) {
-            return null;
+            if (! $allowOfferSchema || ! $this->offerMatchesCommercialData($schema, $offerPrice, $offerCurrency)) {
+                return null;
+            }
         }
 
-        unset($schema['offers']);
         foreach ($schema as $key => $value) {
             if (is_array($value)) {
-                $schema[$key] = $this->safeSchema($value, false);
+                $safeValue = $this->safeSchema($value, $allowOfferSchema, $offerPrice, $offerCurrency);
+                if ($safeValue === null || ($key === 'offers' && $safeValue === [])) {
+                    unset($schema[$key]);
+                } else {
+                    $schema[$key] = $safeValue;
+                }
             }
         }
 
         return $schema;
+    }
+
+    /** @param array<string, mixed> $offer */
+    private function offerMatchesCommercialData(array $offer, ?string $price, ?string $currency): bool
+    {
+        if ($price === null || $currency === null || ! is_numeric($offer['price'] ?? null)) {
+            return false;
+        }
+
+        $schemaCurrency = mb_strtoupper(trim((string) ($offer['priceCurrency'] ?? '')));
+        $availability = trim((string) ($offer['availability'] ?? ''));
+
+        return round((float) $offer['price'], 2, PHP_ROUND_HALF_UP) === round((float) $price, 2, PHP_ROUND_HALF_UP)
+            && $schemaCurrency === mb_strtoupper($currency)
+            && in_array($availability, ['InStock', 'http://schema.org/InStock', 'https://schema.org/InStock'], true);
     }
 
     /** @return array<string, string> */
@@ -375,7 +593,12 @@ class SiteResolver
         }
 
         return match ($url->target_type) {
-            'page' => SitePage::query()->where('site_id', $site->id)->published()->whereKey($url->target_id)->exists(),
+            'page' => SitePage::query()
+                ->where('site_id', $site->id)
+                ->published()
+                ->where('locale', $urlLocale)
+                ->whereKey($url->target_id)
+                ->exists(),
             'product' => SiteProduct::query()->where('site_id', $site->id)->published()->whereKey($url->target_id)->exists(),
             'category' => SiteCategory::query()->where('site_id', $site->id)->published()->whereKey($url->target_id)->exists(),
             default => false,

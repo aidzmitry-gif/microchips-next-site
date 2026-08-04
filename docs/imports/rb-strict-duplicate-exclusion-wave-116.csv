@@ -1,0 +1,8 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00001344,exact_model_duplicate,КА-00001149,"Exact Delta DTM12008 model; QJZAJQK is lot/noise, while survivor preserves the only raw Bitrix relation"
+КА-00003831,exact_model_duplicate,КА-00003891,"Exact Sonnenschein GF 12-050 V model; survivor has the correctly spelled manufacturer and fuller clean 1C name"
+КА-00006114,exact_model_duplicate,КА-00005622,"Same APC SURT192RMXLBP cartridge family; -CH is a market suffix and the survivor is the existing canonical source-backed record"
+КА-00006493,exact_model_duplicate,КА-00005774,"Exact APC RBC123 identifier; survivor is the row linked one-to-one to legacy Bitrix element 20103"
+КА-00003795,exact_model_duplicate,КА-00003153,"Exact APC APCRBC140 cartridge identifier; survivor is the row linked to legacy Bitrix element 20101"
+КА-00006506,exact_model_duplicate,КА-00003153,"Exact APC APCRBC140 cartridge identifier; survivor is the row linked to legacy Bitrix element 20101"
+КА-00002367,exact_model_duplicate,ФР-00002258,"Exact CSB UPS122406 F2 model; survivor already has source-backed content and a published noindex preview"

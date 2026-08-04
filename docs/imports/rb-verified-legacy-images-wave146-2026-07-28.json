@@ -1,0 +1,138 @@
+{
+  "schema_version": 3,
+  "purpose": "Company-owned Bitrix images that passed original-resolution visual identity review for confirmed 1C products.",
+  "images": [
+    {
+      "external_id": "КА-00001895",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "HR 6-12",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00001895-detail.png",
+      "sha256": "348d79ccbbe9577bb5d46c5a920a75d71622f02862e16b0d38cd83b38c18a39f",
+      "archive_member": "_shared/upload/iblock/d5a/8qydqmb4spqnh9yixvzb2exa77skvjjo.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Delta HR 6-12, 6 V and 12 Ah are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00002376",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "model_core": "GP 6-4.5",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00002376-detail.png",
+      "sha256": "9873114185c99071d50d4fbef6950339a0e2b981ac09da31eab6cf5a4d71103f",
+      "archive_member": "_shared/upload/iblock/e4b/8ujwftuhkikvxyejmhxp50sipdgsifa6.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Ventura GP 6-4.5, 6 V and 4.5 Ah are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00003890",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "model_core": "GPL 12-45",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00003890-detail.png",
+      "sha256": "82d4afe6cb6669e643b43c07360d5a84af74c72e9f541f55c1b13d5b3a1d7e8a",
+      "archive_member": "_shared/upload/iblock/75d/j43v35ony8rtv6uc7bbrtqib5s2n6a9j.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Ventura GPL 12-45, 12 V and 45 Ah are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00002074",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "HR1221W",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00002074-detail.jpg",
+      "sha256": "30bb396f3c9542e939932158b038d5cf04fe560faaa3e435bf5ac71cc97caa72",
+      "archive_member": "_shared/upload/iblock/463/15t2ffffd3swp7s2rzpn6mw2hhk4eon9.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "CSB HR1221W and F2 terminal marking are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00003548",
+      "manufacturer": "Yuasa",
+      "identity_scope": "model_core",
+      "model_core": "NP4-12",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00003548-detail.png",
+      "sha256": "4cd08aabd136e2b208090f9eb2a2155eaa0734a0c79824fcce7a7344e8cc50d1",
+      "archive_member": "_shared/upload/iblock/0db/dfbatz9srva0kwjtomliupgopn8140io.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Yuasa NP4-12, 12 V and 4 Ah are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00002670",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "HRL1234W F2FR",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00002670-detail.png",
+      "sha256": "80bdac63c7da4b61dd8663b61d3ce6a57845f359a7aaecc0acb79c044058a0da",
+      "archive_member": "_shared/upload/iblock/94c/4p24osx75kqn30lvbvu4u4zcyctgz4a8.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "CSB HRL1234W F2FR exact model and terminal execution are visibly readable."
+    },
+    {
+      "external_id": "КА-00002317",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "FT 12-125 M",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00002317-detail.png",
+      "sha256": "204c571e7bf804ea3684d39bbaca090651b0941206ab71a569b814976b8a0d69",
+      "archive_member": "_shared/upload/iblock/3d9/6o5qwe9nbinskwhf7z4xismkx7uef3v5.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Delta FT 12-125 M, 12 V and 125 Ah are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00001863",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "FT 12-50 M",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00001863-detail.png",
+      "sha256": "5b267a407e63393777d466ad05a840a153b6c59aaedb59c33a3e21c2d9d667f3",
+      "archive_member": "_shared/upload/iblock/e10/gthff2vehvtzd5a94eaw5tacg30qhw5e.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Delta FT 12-50 M, 12 V and 50 Ah are visibly readable and match the confirmed model."
+    },
+    {
+      "external_id": "КА-00005320",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "model_core": "HR 1290W",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00005320-detail.jpg",
+      "sha256": "c8bce041e72eb724e44e0a14783f5c0ed083f854682cb6586fc5f367271ff49c",
+      "archive_member": "_shared/upload/iblock/e5c/11o8wla75ebdseclzg73mcepbpwatrxl.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Ventura HR 1290W exact model and 20 Ah label are visibly readable; the separate 1C 21 Ah discrepancy remains flagged and is not inferred from the image."
+    },
+    {
+      "external_id": "КА-00005686",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "HRL12330W",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00005686-detail.png",
+      "sha256": "530fed3709ff5708105de1d7d6969e39fc377c9767d3e575d4d633d013ff2fb6",
+      "archive_member": "_shared/upload/iblock/4e0/gp7omck49b8j1veajv04xa688cmo52k9.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "CSB HRL12330W exact model and material label are visibly readable."
+    },
+    {
+      "external_id": "КА-00006757",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "FTS 12-100 X",
+      "identity_evidence_level": "visible_exact_model_core",
+      "asset_file": "ka-00006757-detail.png",
+      "sha256": "42b415ba0f485cd4374faf569a193f7892f4801242cc75d636dcdb8885460629",
+      "archive_member": "_shared/upload/iblock/490/lb5f2o60rs6abwyd5p4a7slw3f5p1ayj.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "Delta XPERT FTS 12-100 X, 12 V and 100 Ah are visibly readable and match the confirmed model."
+    }
+  ]
+}

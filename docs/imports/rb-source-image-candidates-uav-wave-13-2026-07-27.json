@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "purpose": "Remote official image candidate only. No download into the product catalogue, licence assertion, local storage or storefront publication is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005348",
+      "source_page_url": "https://store.dji.com/au/product/dji-mavic-3-intelligent-flight-battery",
+      "source_asset_url": "https://se-cdn.djiits.com/tpc/uploads/photo/image/807c2c2a7ab230073143832888617c6a%40large.jpg",
+      "source_kind": "official DJI Store Mavic 3 Series Intelligent Flight Battery product page",
+      "verification_note": "Visual verification on 2026-07-27: official DJI asset shows two rectangular Mavic 3 flight batteries together with a Mavic 3 Cine aircraft. The batteries match the Mavic 3-series model context, but the photo is a product scene rather than an isolated pack shot. Reuse rights, local-file hash and a standalone primary-image decision remain unverified; do not publish."
+    }
+  ]
+}

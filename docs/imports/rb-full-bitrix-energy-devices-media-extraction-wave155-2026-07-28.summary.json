@@ -1,0 +1,28 @@
+{
+  "categories": [
+    "seo:rechargeable-cells",
+    "seo:chargers",
+    "seo:power-systems"
+  ],
+  "category_record_counts": {
+    "seo:chargers": 284,
+    "seo:power-systems": 687,
+    "seo:rechargeable-cells": 1130
+  },
+  "scoped_staging_records": 2101,
+  "transfer_statuses": {
+    "excluded_inactive_legacy": 5,
+    "existing_one_c_exact_link": 1,
+    "hold_duplicate_candidate": 18,
+    "hold_linked_identity_candidate": 24,
+    "hold_one_c_collision": 37,
+    "legacy_only_draft_candidate": 2016
+  },
+  "safe_legacy_drafts": 2016,
+  "records_with_media_reference": 2016,
+  "unique_selected_file_references": 2016,
+  "safe_drafts_without_media_reference": 0,
+  "safe_drafts_missing_media_index": 0,
+  "canonical_one_c_media_imports": 0,
+  "indexable_pages_changed": 0
+}

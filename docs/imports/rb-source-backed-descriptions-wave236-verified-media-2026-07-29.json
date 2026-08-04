@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "purpose": "Complete all current verified-image/missing-description RB cards from hash-pinned manufacturer-primary evidence; no commercial, publication, URL or media mutation.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1464",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 120-12",
+      "technology": "AGM VRLA",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Модель": "MM 120-12",
+        "Технология": "AGM VRLA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1493",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GP 12-12",
+      "technology": "AGM VRLA",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GP 12-12",
+        "Технология": "AGM VRLA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1526",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "model_core": "BC17-12",
+      "technology": "AGM VRLA",
+      "source_url": "https://www.bb-bat.com/en/BC.html",
+      "technical_attributes": {
+        "Модель": "BC17-12",
+        "Технология": "AGM VRLA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B. Battery Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1561",
+      "identity_scope": "model_core",
+      "manufacturer": "MNB",
+      "model_core": "MM 200-12",
+      "technology": "AGM VRLA",
+      "source_url": "https://mnb-battery.ru/pdf/MNB%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA%20%D0%BF%D0%BE%20%D1%81%D0%B2%D0%B8%D0%BD%D1%86%D1%83%20%D0%B8%20%D0%BB%D0%B8%D1%82%D0%B8%D1%8E.pdf",
+      "technical_attributes": {
+        "Модель": "MM 200-12",
+        "Технология": "AGM VRLA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "MNB Battery",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1617",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "model_core": "HR 5.8-12",
+      "technology": "высокомощная AGM VRLA",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "technical_attributes": {
+        "Модель": "HR 5.8-12",
+        "Технология": "высокомощная AGM VRLA"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1789",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A602/850",
+      "technology": "GEL VRLA с трубчатыми пластинами",
+      "source_url": "https://www.exidegroup.com/at/sites/default/files/2023-04/230404_Sonnenschein_Solar_A600_technicaldata.pdf",
+      "technical_attributes": {
+        "Модель": "A602/850",
+        "Технология": "GEL VRLA с трубчатыми пластинами"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies / Sonnenschein",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24551",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "0810-0008",
+      "technology": "CYCLON AGM с пластинами из чистого свинца",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "technical_attributes": {
+        "Модель": "0810-0008",
+        "Технология": "CYCLON AGM с пластинами из чистого свинца"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2849",
+      "identity_scope": "model_core",
+      "manufacturer": "General Security",
+      "model_core": "GS 18-12",
+      "technology": "AGM VRLA",
+      "source_url": "https://general-security.ru/product",
+      "technical_attributes": {
+        "Модель": "GS 18-12",
+        "Технология": "AGM VRLA"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "General Security",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

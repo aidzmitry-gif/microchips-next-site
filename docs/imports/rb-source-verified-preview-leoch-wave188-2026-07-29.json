@@ -1,0 +1,165 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:leoch:2OPzS100",
+      "manufacturer": "LEOCH",
+      "mpn": "2OPzS100",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-2opzs100"
+    },
+    {
+      "external_id": "manufacturer:leoch:3OPzS150",
+      "manufacturer": "LEOCH",
+      "mpn": "3OPzS150",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-3opzs150"
+    },
+    {
+      "external_id": "manufacturer:leoch:5OPzS250",
+      "manufacturer": "LEOCH",
+      "mpn": "5OPzS250",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-5opzs250"
+    },
+    {
+      "external_id": "manufacturer:leoch:6OPzS300",
+      "manufacturer": "LEOCH",
+      "mpn": "6OPzS300",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-6opzs300"
+    },
+    {
+      "external_id": "manufacturer:leoch:5OPzS350",
+      "manufacturer": "LEOCH",
+      "mpn": "5OPzS350",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-5opzs350"
+    },
+    {
+      "external_id": "manufacturer:leoch:6OPzS420",
+      "manufacturer": "LEOCH",
+      "mpn": "6OPzS420",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-6opzs420"
+    },
+    {
+      "external_id": "manufacturer:leoch:7OPzS490",
+      "manufacturer": "LEOCH",
+      "mpn": "7OPzS490",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-7opzs490"
+    },
+    {
+      "external_id": "manufacturer:leoch:6OPzS600",
+      "manufacturer": "LEOCH",
+      "mpn": "6OPzS600",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-6opzs600"
+    },
+    {
+      "external_id": "manufacturer:leoch:8OPzS800",
+      "manufacturer": "LEOCH",
+      "mpn": "8OPzS800",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-8opzs800"
+    },
+    {
+      "external_id": "manufacturer:leoch:10OPzS1000",
+      "manufacturer": "LEOCH",
+      "mpn": "10OPzS1000",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-10opzs1000"
+    },
+    {
+      "external_id": "manufacturer:leoch:12OPzS1200",
+      "manufacturer": "LEOCH",
+      "mpn": "12OPzS1200",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-12opzs1200"
+    },
+    {
+      "external_id": "manufacturer:leoch:12OPzS1500",
+      "manufacturer": "LEOCH",
+      "mpn": "12OPzS1500",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-12opzs1500"
+    },
+    {
+      "external_id": "manufacturer:leoch:16OPzS2000",
+      "manufacturer": "LEOCH",
+      "mpn": "16OPzS2000",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-16opzs2000"
+    },
+    {
+      "external_id": "manufacturer:leoch:20OPzS2500",
+      "manufacturer": "LEOCH",
+      "mpn": "20OPzS2500",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-20opzs2500"
+    },
+    {
+      "external_id": "manufacturer:leoch:24OPzS3000",
+      "manufacturer": "LEOCH",
+      "mpn": "24OPzS3000",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/OPzV%26OPzS%20Reserve%20Power%20Solution%20LB-Tubular-PB-EN-V3.3-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-24opzs3000"
+    },
+    {
+      "external_id": "manufacturer:leoch:LP4-4.0",
+      "manufacturer": "LEOCH",
+      "mpn": "LP4-4.0",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Series%20Product%20Brochure%20LB-VRLA-AGM-PB-EN-V4.5-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "leoch-lp4-4-0"
+    },
+    {
+      "external_id": "manufacturer:leoch:LP4-4.5",
+      "manufacturer": "LEOCH",
+      "mpn": "LP4-4.5",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Series%20Product%20Brochure%20LB-VRLA-AGM-PB-EN-V4.5-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "leoch-lp4-4-5"
+    },
+    {
+      "external_id": "manufacturer:leoch:LP4-10",
+      "manufacturer": "LEOCH",
+      "mpn": "LP4-10",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Series%20Product%20Brochure%20LB-VRLA-AGM-PB-EN-V4.5-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "leoch-lp4-10"
+    },
+    {
+      "external_id": "manufacturer:leoch:LP6-1.0",
+      "manufacturer": "LEOCH",
+      "mpn": "LP6-1.0",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Series%20Product%20Brochure%20LB-VRLA-AGM-PB-EN-V4.5-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "leoch-lp6-1-0"
+    },
+    {
+      "external_id": "manufacturer:leoch:LP6-1.2",
+      "manufacturer": "LEOCH",
+      "mpn": "LP6-1.2",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Series%20Product%20Brochure%20LB-VRLA-AGM-PB-EN-V4.5-202601.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "leoch-lp6-1-2"
+    }
+  ]
+}

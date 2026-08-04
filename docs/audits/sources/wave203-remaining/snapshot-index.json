@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "cino_f680bt_accessories",
+      "publisher": "Cino Group",
+      "source_url": "https://www.cino.com.tw/cn/products/cordless_cn/F680bt/f680bt_ac.html",
+      "source_kind": "official_manufacturer_html",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave203-remaining/cino-f680bt-accessories-2026-07-29.html",
+      "snapshot_sha256": "a94c49b26ad693e2a933a44be41de579aba2045113592f8d1e7ee829c6f3325b",
+      "snapshot_bytes": 11384,
+      "required_exact_tokens": [
+        "F680BT",
+        "BT2100",
+        "2.6Ah"
+      ],
+      "token_counts": {
+        "F680BT": 4,
+        "BT2100": 1,
+        "2.6Ah": 1
+      }
+    },
+    {
+      "source_id": "koamtac_kdc_accessories",
+      "publisher": "KOAMTAC, Inc.",
+      "source_url": "https://koamtac.com/wp-content/uploads/KDC_Accessories.pdf",
+      "source_kind": "official_manufacturer_pdf",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave203-remaining/koamtac-kdc-accessories-2026-07-29.pdf",
+      "snapshot_sha256": "06edd33f7f1e30baf849e6c78a42cf7bf8e0e9a5aa698541df824d0491bb83b1",
+      "snapshot_bytes": 198278,
+      "required_exact_tokens": [
+        "KDC-BAT100",
+        "KDC100/200",
+        "190mAh"
+      ],
+      "token_counts": {
+        "KDC-BAT100": 1,
+        "KDC100/200": 1,
+        "190mAh": 1
+      }
+    },
+    {
+      "source_id": "orderman5_regulatory_guide",
+      "publisher": "Orderman GmbH (part of NCR Corporation)",
+      "source_url": "https://www.orderman.com/wp-content/uploads/Orderman5.pdf",
+      "source_kind": "official_manufacturer_pdf",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave203-remaining/orderman5-regulatory-guide-2026-07-29.pdf",
+      "snapshot_sha256": "6aa86d554c0171e1c624f88e9c034192c0e9839d40879703010d0686d497c95c",
+      "snapshot_bytes": 2538012,
+      "required_exact_tokens": [
+        "5555-0105-8801",
+        "NCR Orderman5 Battery Pack",
+        "NCR Orderman5"
+      ],
+      "token_counts": {
+        "5555-0105-8801": 1,
+        "NCR Orderman5 Battery Pack": 2,
+        "NCR Orderman5": 72
+      }
+    }
+  ]
+}

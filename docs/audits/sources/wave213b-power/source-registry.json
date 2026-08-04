@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "policy": "SHA-pinned manufacturer-primary PDFs",
+  "sources": [
+    {
+      "source_id": "ELP",
+      "publisher": "Mean Well Enterprises Co., Ltd.",
+      "source_kind": "official_manufacturer_datasheet",
+      "source_url": "https://www.meanwell.com/Upload/PDF/ELP-75/ELP-75-SPEC.PDF",
+      "series": "ELP-75",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave213b-power/ELP-75-SPEC.pdf",
+      "snapshot_sha256": "25fe3088b83f753ca70f02814e19ee890b10f3133752eb919cc450a57031dd29"
+    },
+    {
+      "source_id": "EPP",
+      "publisher": "Mean Well Enterprises Co., Ltd.",
+      "source_kind": "official_manufacturer_datasheet",
+      "source_url": "https://www.meanwell.com/Upload/PDF/EPP-100/EPP-100-SPEC.PDF",
+      "series": "EPP-100",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave213b-power/EPP-100-SPEC.pdf",
+      "snapshot_sha256": "6f5c4e0bf5a3531d0fd30007ec77ebdcbf877adfb074bb5575b9f12c30ca0022"
+    },
+    {
+      "source_id": "EPS",
+      "publisher": "Mean Well Enterprises Co., Ltd.",
+      "source_kind": "official_manufacturer_datasheet",
+      "source_url": "https://www.meanwell.com/Upload/PDF/EPS-25/EPS-25-SPEC.PDF",
+      "series": "EPS-25",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave213b-power/EPS-25-SPEC.pdf",
+      "snapshot_sha256": "76ed83c0682b7064b85fb3deb9384ddd9aef1f96f854c10cb3ae01acb8531a7a"
+    },
+    {
+      "source_id": "IRM",
+      "publisher": "Mean Well Enterprises Co., Ltd.",
+      "source_kind": "official_manufacturer_datasheet",
+      "source_url": "https://www.meanwell.com/Upload/PDF/IRM-01/IRM-01-SPEC.PDF",
+      "series": "IRM-01",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave213b-power/IRM-01-SPEC.pdf",
+      "snapshot_sha256": "4cae2c13412f3c56634f6a4bbf8d48c3c7ab86d875905877dfe9036a2834963d"
+    },
+    {
+      "source_id": "RPS",
+      "publisher": "Mean Well Enterprises Co., Ltd.",
+      "source_kind": "official_manufacturer_datasheet",
+      "source_url": "https://www.meanwell.com/Upload/PDF/RPS-200/RPS-200-SPEC.PDF",
+      "series": "RPS",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave213b-power/RPS-200-SPEC.pdf",
+      "snapshot_sha256": "0e9d188e196d6317d38c9b63205ec57a917b89db339ff49cc8cc6a03a60b9037"
+    }
+  ]
+}

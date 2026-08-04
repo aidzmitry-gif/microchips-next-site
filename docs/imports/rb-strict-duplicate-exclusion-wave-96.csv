@@ -1,0 +1,4 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00005685,exact_model_duplicate,ФР-00001952,"B.B. Battery BPS 26-12; manufacturer, model, 12 V and 26 Ah match; survivor already has verified manufacturer and MPN; BPS 26-12-I1 remains separate"
+КА-00005151,exact_model_terminal_duplicate,КА-00002043,"FANSO ER14505H/S; manufacturer, exact model suffix, terminal and country match; casing and punctuation only"
+КА-00006413,exact_model_terminal_duplicate,КА-00006002,"FANSO ER26500H-LD/EHR-02; manufacturer, exact model and EHR-02 connector match; casing only"

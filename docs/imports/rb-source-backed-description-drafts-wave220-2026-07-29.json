@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave220 Russian source-backed description drafts only; model-core scope preserves catalogued identity.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002596",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A606/200",
+      "technology": "Гелевая свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A600_en.pdf",
+      "technical_attributes": {
+        "Модель": "A606/200"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "ФР-00001154",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "A502/10S",
+      "technology": "Гелевая свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2017-01/Sonnenschein_A500_en.pdf",
+      "technical_attributes": {
+        "Модель": "A502/10S"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00002879",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-75",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-75"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00001368",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-100",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-100"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00003736",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-65",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-65"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00003890",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-45",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-45"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00005185",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-55",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-55"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00004378",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "VTG 12 080 XT",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "VTG 12 080 XT"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00004769",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GT 06 270",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GT 06 270"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00002048",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GP 12-7.2",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GP 12-7.2"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00003227",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-75",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-75"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00003228",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "gpl 12-150",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "gpl 12-150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00003397",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GP6-12",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GP6-12"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00003696",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "GPL 12-200",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "GPL 12-200"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "КА-00005572",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "model_core": "FT 12-150",
+      "technology": "Герметизированная свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Модель": "FT 12-150"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

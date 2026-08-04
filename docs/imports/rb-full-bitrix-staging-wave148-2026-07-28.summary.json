@@ -1,0 +1,35 @@
+{
+  "records": 17207,
+  "active_records": 17189,
+  "status_counts": {
+    "excluded_inactive_legacy": 18,
+    "existing_one_c_exact_link": 8,
+    "hold_duplicate_candidate": 52,
+    "hold_linked_identity_candidate": 87,
+    "hold_one_c_collision": 574,
+    "legacy_only_draft_candidate": 16173,
+    "scope_excluded_electronics": 295
+  },
+  "active_category_counts": {
+    "seo:batteries-industrial": 918,
+    "seo:batteries-traction": 164,
+    "seo:batteries-ups": 1097,
+    "seo:chargers": 284,
+    "seo:electronic-components": 295,
+    "seo:flashlights": 9,
+    "seo:power-systems": 687,
+    "seo:primary-cells": 1630,
+    "seo:rechargeable-cells": 1125,
+    "seo:replacement-home": 325,
+    "seo:replacement-laptops": 3348,
+    "seo:replacement-medical": 431,
+    "seo:replacement-mobile": 5506,
+    "seo:replacement-photo": 880,
+    "seo:replacement-tools": 322,
+    "seo:replacement-transport": 129,
+    "seo:warehouse-equipment": 39
+  },
+  "publication_changes": 0,
+  "indexable_urls": 0,
+  "merges": 0
+}

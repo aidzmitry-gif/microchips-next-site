@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\LeadController;
+use App\Http\Controllers\Api\V1\LegacyCatalogPreviewController;
+use App\Http\Controllers\Api\V1\ProductMediaController;
 use App\Http\Controllers\Api\V1\ResolveSitePathController;
 use App\Http\Controllers\Api\V1\ResolveSiteRedirectController;
 use App\Http\Controllers\Api\V1\SitemapController;
@@ -11,7 +13,12 @@ Route::get('/sites/{host}/resolve', ResolveSitePathController::class);
 Route::get('/sites/{host}/redirect', ResolveSiteRedirectController::class);
 Route::get('/sites/{site}/catalog/products', [CatalogController::class, 'index']);
 Route::get('/sites/{site}/catalog/categories', [CatalogController::class, 'categories']);
+Route::get('/sites/{site}/legacy-preview/products', [LegacyCatalogPreviewController::class, 'index']);
+Route::get('/sites/{site}/legacy-preview/categories', [LegacyCatalogPreviewController::class, 'categories']);
+Route::get('/sites/{site}/legacy-preview/products/{legacyId}', [LegacyCatalogPreviewController::class, 'show'])->whereNumber('legacyId');
+Route::get('/sites/{site}/legacy-preview/media/{legacyId}', [LegacyCatalogPreviewController::class, 'media'])->whereNumber('legacyId');
 Route::get('/sites/{host}/seo/sitemap', SitemapController::class);
+Route::get('/media/{media}', ProductMediaController::class)->whereNumber('media');
 
 Route::post('/leads/quote', [LeadController::class, 'quote'])->middleware(['lead.proxy', 'throttle:leads']);
 Route::post('/leads/battery-pack-design', [LeadController::class, 'batteryPackDesign'])->middleware(['lead.proxy', 'throttle:leads']);

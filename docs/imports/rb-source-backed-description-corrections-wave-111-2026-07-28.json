@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "purpose": "Correct two previously applied DELTA cards using newer exact-model primary pages. The corrections replace stale mass, terminal and design-life values without changing price, stock, publication or identity.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002817",
+      "manufacturer": "Delta",
+      "mpn": "DT1233",
+      "display_name": "Аккумуляторная батарея Delta DT 1233, 12 В 33 А·ч",
+      "technology": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://energon.ru/akb/stationary-batteries/st-delta/delta_dt/delta_dt_1233/",
+      "source_kind": "current exact-model DELTA product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Артикул производителя": "4614010040009",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "33 А·ч (C20)",
+        "Технология": "VRLA AGM",
+        "Количество элементов": "6",
+        "Габариты": "197 × 131 × 163 мм; полная высота 180 мм",
+        "Масса": "10,1 кг",
+        "Клемма": "болт и гайка Ø 6 мм",
+        "Максимальный разрядный ток": "440 А (5 с)",
+        "Максимальный зарядный ток": "9,9 А",
+        "Температура разряда": "от −15 до +50 °C",
+        "Температура заряда": "от −10 до +50 °C",
+        "Температура хранения": "от −20 до +50 °C",
+        "Расчётный срок службы": "5 лет"
+      }
+    },
+    {
+      "external_id": "КА-00003468",
+      "manufacturer": "Delta",
+      "mpn": "DTM1226",
+      "display_name": "Аккумуляторная батарея Delta DTM 1226, 12 В 26 А·ч",
+      "technology": "герметизированная необслуживаемая свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://energon.ru/akb/stationary-batteries/st-delta/delta_dtm/delta_dtm_1226/",
+      "source_kind": "current exact-model DELTA product page and technical sheet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Артикул производителя": "4614010050013",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "26 А·ч (C20); 23,8 А·ч (C10); 22,5 А·ч (C5)",
+        "Технология": "VRLA AGM",
+        "Количество элементов": "6",
+        "Габариты": "166 × 175 × 125 мм",
+        "Масса": "8,9 кг",
+        "Клемма": "под болт M5",
+        "Максимальный разрядный ток": "300 А (5 с)",
+        "Максимальный зарядный ток": "7,8 А",
+        "Температура разряда": "от −20 до +60 °C",
+        "Температура заряда": "от −10 до +60 °C",
+        "Температура хранения": "от −20 до +60 °C",
+        "Расчётный срок службы": "8 лет"
+      }
+    }
+  ]
+}

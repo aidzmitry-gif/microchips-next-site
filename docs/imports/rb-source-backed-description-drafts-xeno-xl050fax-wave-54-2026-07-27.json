@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from XENOENERGY compliance documentation. It carries no price, stock, image-rights, local warranty or publication claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001869",
+      "manufacturer": "XENOENERGY",
+      "mpn": "XL-050F/AX",
+      "display_name": "Литий-тионилхлоридный элемент XENOENERGY XL-050F/AX",
+      "technology": "Li-SOCl2, неперезаряжаемый",
+      "source_url": "https://files.batteryjunction.com/frontend/files/xeno/un38-3-ts/XENO-XL-050F-UN38-3-TS.pdf",
+      "source_kind": "XENOENERGY XL-050F UN 38.3 test summary",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Химия": "Литий-тионилхлорид (Li-SOCl2)",
+        "Номинальное напряжение": "3,6 В",
+        "Номинальная ёмкость": "1,2 А·ч",
+        "Типоразмер": "1/2 AA",
+        "Исполнение выводов": "AX, осевые выводы",
+        "Перезаряжаемость": "Нет"
+      }
+    }
+  ]
+}

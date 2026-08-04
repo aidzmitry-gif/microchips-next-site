@@ -1,0 +1,101 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:6GFM200",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM200",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm200"
+    },
+    {
+      "external_id": "manufacturer:enersys:6GFM250",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM250",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm250"
+    },
+    {
+      "external_id": "manufacturer:enersys:6GFM300",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM300",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm300"
+    },
+    {
+      "external_id": "manufacturer:enersys:6GFM350",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM350",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm350"
+    },
+    {
+      "external_id": "manufacturer:enersys:6GFM420",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM420",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm420"
+    },
+    {
+      "external_id": "manufacturer:enersys:6GFM500",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM500",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm500"
+    },
+    {
+      "external_id": "manufacturer:enersys:6GFM600",
+      "manufacturer": "EnerSys",
+      "mpn": "6GFM600",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6gfm600"
+    },
+    {
+      "external_id": "manufacturer:enersys:3GFM800",
+      "manufacturer": "EnerSys",
+      "mpn": "3GFM800",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-3gfm800"
+    },
+    {
+      "external_id": "manufacturer:enersys:3GFM1000",
+      "manufacturer": "EnerSys",
+      "mpn": "3GFM1000",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-3gfm1000"
+    },
+    {
+      "external_id": "manufacturer:enersys:3GFM1200",
+      "manufacturer": "EnerSys",
+      "mpn": "3GFM1200",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-3gfm1200"
+    },
+    {
+      "external_id": "manufacturer:enersys:3GFM1500",
+      "manufacturer": "EnerSys",
+      "mpn": "3GFM1500",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-3gfm1500"
+    },
+    {
+      "external_id": "manufacturer:enersys:3GFM2000",
+      "manufacturer": "EnerSys",
+      "mpn": "3GFM2000",
+      "source_url": "https://www.enersys.com/49fbe8/globalassets/documents/product-documentation/powersafe/gfm/apac/powersafe-gfm-rs-02_0921.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-3gfm2000"
+    }
+  ]
+}

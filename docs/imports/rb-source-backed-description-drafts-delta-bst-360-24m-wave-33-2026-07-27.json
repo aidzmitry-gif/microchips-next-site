@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from the DELTA product catalogue. No publication, local commercial data, or image rights are asserted.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001202",
+      "manufacturer": "DELTA",
+      "mpn": "BST 360-24 M",
+      "display_name": "Солнечный модуль DELTA BST 360-24 M",
+      "technology": "Солнечный модуль серии DELTA BST",
+      "source_url": "https://www.kz.delta-batt.com/products/solnechnye-moduli/delta-bst/",
+      "source_kind": "DELTA BST manufacturer product catalogue",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Солнечный модуль",
+        "Серия": "DELTA BST",
+        "Модель": "BST 360-24 M",
+        "Номинальная мощность": "360 Вт"
+      }
+    }
+  ]
+}

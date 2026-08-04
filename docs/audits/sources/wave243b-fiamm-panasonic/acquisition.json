@@ -1,0 +1,44 @@
+[
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/fiamm-fg27004.pdf",
+    "source_url": "https://www.fiamm.co/catalog/FG27004.pdf",
+    "sha256": "56cf9f658316d2f98f5cda9d3749a979fbcee2ce022bbf2041df7cf1ffd9e270",
+    "bytes": 160919
+  },
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/fiamm-fg2a007.pdf",
+    "source_url": "https://www.fiamm.co/catalog/FG2A007.pdf",
+    "sha256": "42aadc5ae87543402f9b91a6ae2f5c9706b6c177bffb827ad0cf4b447907594b",
+    "bytes": 213718
+  },
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/panasonic-lc-r067r2p.pdf",
+    "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3533",
+    "sha256": "18e31b3928876c551e0b159cd86fadd06575d3b6adc265c9211aa1f0d257adfc",
+    "bytes": 34827
+  },
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/panasonic-lc-r063r4p.pdf",
+    "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3541",
+    "sha256": "b6c1f8b7cc5ed3459fc38a238ada6aa57f01a944fb5b5386dea517fd06a90f91",
+    "bytes": 26940
+  },
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/panasonic-lc-r0612p.pdf",
+    "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3544",
+    "sha256": "b1664de12e82d1d9f23408dc46eb4bbc99aca98377fc45ddb4f9f5979af1c249",
+    "bytes": 27252
+  },
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/panasonic-lc-p0612p.pdf",
+    "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3546",
+    "sha256": "d79b3fa568bdd0c0cd8c240ac3f3d5348a8216d6cf6ca2075009c94010327510",
+    "bytes": 34076
+  },
+  {
+    "path": "docs/audits/sources/wave243b-fiamm-panasonic/panasonic-vrla-recognized-models.pdf",
+    "source_url": "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/3529",
+    "sha256": "628ff575c494647126e96b9e2a4166b8bd2b9f0d4ea6ab275e407e452f62d284",
+    "bytes": 96702
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:XHRL12170W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12170W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12170w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12250W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12250W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12250w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12360W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12360W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12360w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12360WG",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12360WG",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12360wg"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12410W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12410W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12410w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12410WG",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12410WG",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12410wg"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12475W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12475W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12475w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12500W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12500W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12500w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12620W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12620W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12620w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12650W",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12650W",
+      "source_url": "https://csb-battery.com/product/xhrl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12650w"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12600WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12600WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12600wftfr"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12720WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12720WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12720wftfr"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12800WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12800WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12800wftfr"
+    },
+    {
+      "external_id": "manufacturer:csb:XHRL12900WFTFR",
+      "manufacturer": "CSB",
+      "mpn": "XHRL12900WFTFR",
+      "source_url": "https://csb-battery.com/product/xhrl-ft-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xhrl12900wftfr"
+    }
+  ]
+}

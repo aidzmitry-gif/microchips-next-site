@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "purpose": "FIAMM exact-model enrichment from an official FIAMM catalogue. Facts are limited to the named model and catalogue data; price, stock, warranty, image and terminal variant are not inferred beyond what is explicitly listed.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001785",
+      "identity_scope": "model_core",
+      "manufacturer": "FIAMM",
+      "model_core": "FG10451",
+      "display_name": "Аккумуляторная батарея FIAMM FG10451 6V/4.5Ah",
+      "technology": "герметизированная клапанно-регулируемая свинцово-кислотная аккумуляторная батарея AGM",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FG_web.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "4,5 А·ч (20-часовой режим)",
+        "Тип клеммы": "Faston 4,8"
+      }
+    },
+    {
+      "external_id": "ФР-00001438",
+      "identity_scope": "model_core",
+      "manufacturer": "FIAMM",
+      "model_core": "FG20722",
+      "display_name": "Аккумуляторная батарея FIAMM FG20722 12V/7.2Ah",
+      "technology": "герметизированная клапанно-регулируемая свинцово-кислотная аккумуляторная батарея AGM",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FG_web.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "7,2 А·ч (20-часовой режим)",
+        "Тип клеммы": "Faston 6,3"
+      }
+    }
+  ]
+}

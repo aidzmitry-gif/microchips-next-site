@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave243C one new exact APC source-backed description",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:23844",
+      "identity_scope": "exact",
+      "manufacturer": "APC",
+      "mpn": "RBC109",
+      "display_name": "Сменный аккумуляторный картридж APC RBC109",
+      "technology": "герметичная необслуживаемая свинцово-кислотная батарея с иммобилизованным электролитом",
+      "source_url": "https://iportal.se.com/Contents/docs/UPS-APCRBC109_Data%20sheet.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Schneider Electric",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29",
+      "technical_attributes": {
+        "Тип изделия": "сменный аккумуляторный картридж",
+        "Количество аккумуляторных блоков в цепочке": "2",
+        "Параметр Battery Volt-Amp-Hour Capacity": "9"
+      }
+    }
+  ]
+}

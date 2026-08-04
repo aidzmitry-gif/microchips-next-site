@@ -9,6 +9,7 @@ use App\Models\SiteCategory;
 use App\Models\SiteLocale;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
+use App\Models\SiteProductPriceEvidence;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
 use App\Models\SiteUrlAlternate;
@@ -61,6 +62,7 @@ class SiteResolveProductCategoryTest extends TestCase
             ->assertJsonPath('product.attributes.voltage', '12V')
             ->assertJsonPath('product.availability', 'in_stock')
             ->assertJsonPath('product.price', '199.99')
+            ->assertJsonPath('product.price_observed_at', null)
             ->assertJsonPath('product.currency', 'BYN')
             ->assertJsonPath('seo.canonicalPath', '/catalog/alpha-battery');
     }
@@ -263,6 +265,74 @@ class SiteResolveProductCategoryTest extends TestCase
         $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/draft-battery')
             ->assertOk()
             ->assertJsonPath('seo.schema.@type', 'Product')
+            ->assertJsonMissingPath('seo.schema.offers');
+    }
+
+    public function test_it_emits_offer_schema_only_when_it_matches_current_price_evidence(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $product = Product::create(['external_id' => 'ITEM-OFFER', 'slug' => 'verified-battery', 'name' => 'Verified Battery', 'status' => 'active']);
+        $siteProduct = SiteProduct::create([
+            'site_id' => $site->id,
+            'product_id' => $product->id,
+            'slug' => 'verified-battery',
+            'is_published' => true,
+            'availability' => 'in_stock',
+            'price' => '20.00',
+        ]);
+        $priceEvidence = SiteProductPriceEvidence::create([
+            'site_id' => $site->id,
+            'site_product_id' => $siteProduct->id,
+            'source' => SiteProductPriceEvidence::SOURCE_ONE_C_X2,
+            'source_price' => '10.0000',
+            'multiplier' => '2.0000',
+            'calculated_price' => '20.00',
+            'currency' => 'BYN',
+            'price_type' => 'retail',
+            'source_reference' => '1c-inventory://test/ITEM-OFFER',
+            'observed_at' => '2026-06-23T00:00:00+03:00',
+            'evidence_key' => hash('sha256', 'verified-offer'),
+            'is_current' => true,
+        ]);
+        SiteUrl::create([
+            'site_id' => $site->id,
+            'path' => '/catalog/verified-battery',
+            'locale' => 'ru-BY',
+            'target_type' => 'product',
+            'target_id' => $siteProduct->id,
+        ]);
+        $seo = SiteSeo::create([
+            'site_id' => $site->id,
+            'locale' => 'ru-BY',
+            'resource_type' => 'product',
+            'resource_id' => $siteProduct->id,
+            'canonical_path' => '/catalog/verified-battery',
+            'is_indexable' => true,
+            'schema' => ['@type' => 'Product', 'offers' => ['@type' => 'Offer', 'price' => '20.00', 'priceCurrency' => 'BYN', 'availability' => 'https://schema.org/InStock']],
+        ]);
+
+        $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/verified-battery')
+            ->assertOk()
+            ->assertJsonPath('product.price_observed_at', '2026-06-23T00:00:00+00:00')
+            ->assertJsonPath('seo.schema.offers.price', '20.00')
+            ->assertJsonPath('seo.schema.offers.priceCurrency', 'BYN');
+
+        foreach ([
+            ['calculated_price' => '21.00'],
+            ['calculated_price' => '20.00', 'currency' => 'USD'],
+            ['currency' => 'BYN', 'is_current' => false],
+        ] as $mismatch) {
+            $priceEvidence->update($mismatch);
+            $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/verified-battery')
+                ->assertOk()
+                ->assertJsonPath('product.price_observed_at', null);
+        }
+        $priceEvidence->update(['is_current' => true]);
+
+        $seo->update(['schema' => ['@type' => 'Product', 'offers' => ['@type' => 'Offer', 'price' => '21.00', 'priceCurrency' => 'BYN', 'availability' => 'https://schema.org/InStock']]]);
+
+        $this->getJson('/api/v1/sites/microchips.by/resolve?path=/catalog/verified-battery')
+            ->assertOk()
             ->assertJsonMissingPath('seo.schema.offers');
     }
 

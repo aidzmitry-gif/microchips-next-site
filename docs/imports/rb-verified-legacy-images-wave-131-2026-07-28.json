@@ -1,0 +1,126 @@
+{
+  "schema_version": 3,
+  "purpose": "Company-owned Bitrix images with visible exact identity and material rating.",
+  "images": [
+    {
+      "external_id": "КА-00001614",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00001614-detail.png",
+      "sha256": "357c3af0d09b5b7a7eb65401689f1d7b6d817acd03d3f3c72194947bd3fe1fef",
+      "archive_member": "_shared/upload/iblock/524/ehfqn09koy0u1vyduzyxsx2iyxlsk95v.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact FT 12-150 M model and 12V 150Ah rating are visibly readable and agree with the reviewed identity.",
+      "model_core": "FT 12-150 M"
+    },
+    {
+      "external_id": "КА-00002602",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00002602-detail.png",
+      "sha256": "8cecd19884d3844084672730583df3a5bfec495c6da494e0e227296cfa891998",
+      "archive_member": "_shared/upload/iblock/f81/drvu4zcuc7683k304m0zsqyhnts21i99.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact FT 12-105 M model and 12V 105Ah rating are visibly readable and agree with the reviewed identity.",
+      "model_core": "FT 12-105 M"
+    },
+    {
+      "external_id": "КА-00005185",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "asset_file": "ka-00005185-detail.jpg",
+      "sha256": "127bcaf58711658ea494488955f80e801df9c507c18a3abee67c77f8c89b4177",
+      "archive_member": "_shared/upload/iblock/2e4/433xrkdti6183247vomn1apz29h2zno6.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Ventura label visibly reads GPL 12-55 and 12V 55Ah; exact model and material rating agree with the reviewed identity.",
+      "model_core": "GPL 12-55"
+    },
+    {
+      "external_id": "ФР-00000210",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00000210-detail.png",
+      "sha256": "0dfd6b6768998d43a6e8729043908deac8a930f77d3f88fefca79826dd99aa64",
+      "archive_member": "_shared/upload/iblock/f9a/br52fwrqxjm9p3mzi5r4m86cdu401zyy.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Delta label visibly reads DTM 1205 and 12V 5Ah; exact model and material rating agree with the reviewed identity.",
+      "model_core": "DTM 1205"
+    },
+    {
+      "external_id": "ФР-00000211",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00000211-detail.png",
+      "sha256": "f770b2b1bc79f716c174b0472774bf57d11b7dba3cd33b5d2db2228e2dc87a25",
+      "archive_member": "_shared/upload/iblock/325/av728tq3b73a59pg30jd0xwa5kzsvp3l.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Delta label visibly reads DTM 12008 and 12V 0.8Ah; exact model and material rating agree with the reviewed identity.",
+      "model_core": "DTM 12008"
+    },
+    {
+      "external_id": "ФР-00000416",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00000416-detail.png",
+      "sha256": "c6a2be6a047a5ac632b9ca594242980bb311b363c355e629a099f3d148de6da1",
+      "archive_member": "_shared/upload/iblock/10c/r137jxu8xucspiozu53i6y6a2z2psbw4.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact DTM 1207 model and 12V 7.2Ah rating are visibly readable and agree with the reviewed identity.",
+      "model_core": "DTM 1207"
+    },
+    {
+      "external_id": "ФР-00001005",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00001005-detail.png",
+      "sha256": "02be8fba5fc95ef5f571a750c788408b7d3b2398901c154013d392bfd956d8ca",
+      "archive_member": "_shared/upload/iblock/25c/zf3biuzznim93mzfihkrk9ia9ocofigk.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Delta label visibly reads DT 6045 and 6V 4.5Ah; exact model and material rating agree with the reviewed identity.",
+      "model_core": "DT 6045"
+    },
+    {
+      "external_id": "ФР-00001307",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00001307-detail.png",
+      "sha256": "c508620175138357eae9b2c3d1251c56221651e0f4d6386f9533888c6be92ecf",
+      "archive_member": "_shared/upload/iblock/119/yk1fmszezy74fse2z79fanqhqppeatky.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Точная модель и рейтинг 12V 7Ah читаются на этикетке; соответствует legacy DT 1207 (7Ah).",
+      "model_core": "DT 1207"
+    },
+    {
+      "external_id": "ФР-00001438",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00001438-detail.png",
+      "sha256": "b97975abf27dcfb03d48f6fda87a63f4ad07821960a326250aefb3c8452648d7",
+      "archive_member": "_shared/upload/iblock/72c/6m3e8ziur6cbuz80499x05uyjnci0pvv.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Точная модель и ёмкость 7.2Ah читаются на этикетке; соответствует legacy FG20722 (7.2Ah).",
+      "model_core": "FG20722"
+    },
+    {
+      "external_id": "ФР-00001785",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "asset_file": "fr-00001785-detail.png",
+      "sha256": "24e3f69c2d785c823b836df945f778346dfe31f0e8506de6d7209ae785d4a1d6",
+      "archive_member": "_shared/upload/iblock/d3e/g7dh3qkc730apk0tj9uclxgccpqem9et.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Точная модель и ёмкость 4.5Ah читаются на этикетке; соответствует legacy FG10451 (4.5Ah).",
+      "model_core": "FG10451"
+    }
+  ]
+}

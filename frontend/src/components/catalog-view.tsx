@@ -1,7 +1,8 @@
-import type { CatalogCategory, CatalogPayload, CatalogProduct, CategoryPayload } from "@/lib/site-api";
-import { CategoryTree } from "@/components/category-tree";
-import { availabilityLabel, priceLabel } from "@/lib/catalog-presenters";
+import type { CatalogCategory, CatalogFacetOption, CatalogFilters, CatalogPayload, CatalogProduct, CatalogSort, CategoryPayload } from "@/lib/site-api";
+import { CatalogCategoryPanel } from "@/components/catalog-category-panel";
+import { availabilityLabel, priceEvidenceLabel, priceLabel } from "@/lib/catalog-presenters";
 import { QuoteForm } from "@/components/quote-form";
+import { CommercialProfile } from "@/components/commercial-profile";
 import Link from "next/link";
 
 type CatalogViewProps = {
@@ -9,10 +10,14 @@ type CatalogViewProps = {
   catalog: CatalogPayload;
   categories?: CatalogCategory[];
   query?: string;
+  sort?: CatalogSort;
+  filters?: CatalogFilters;
 };
 
-export function CatalogView({ category, catalog, categories = [], query = "" }: CatalogViewProps) {
+export function CatalogView({ category, catalog, categories = [], query = "", sort, filters = {} }: CatalogViewProps) {
   const { site } = category;
+  const facets = catalog.meta.facets;
+  const hasControls = Boolean(query || sort || Object.keys(filters).length);
 
   return (
     <>
@@ -27,8 +32,8 @@ export function CatalogView({ category, catalog, categories = [], query = "" }: 
           <p className="catalog-eyebrow">Каталог для {marketName(site.countryCode)}</p>
           <h1>{category.category.name}</h1>
           <p className="catalog-hero__lead">
-            Подбираем промышленные аккумуляторы и решения резервного питания под техническое задание.
-            Коммерческие условия подтверждаем для каждого запроса отдельно.
+            {category.seo.description ??
+              "Подбираем промышленное оборудование под техническое задание. Коммерческие условия подтверждаем для каждого запроса отдельно."}
           </p>
         </div>
         <div className="catalog-hero__facts" aria-label="Условия работы">
@@ -39,9 +44,7 @@ export function CatalogView({ category, catalog, categories = [], query = "" }: 
       </section>
 
       <section className="catalog-layout">
-        <aside className="catalog-layout__tree">
-          <CategoryTree categories={categories} currentPath={category.path} />
-        </aside>
+        <CatalogCategoryPanel categories={categories} currentPath={category.path} />
         <div className="catalog-section" aria-labelledby="catalog-results-title">
           <div className="catalog-toolbar">
           <div>
@@ -53,7 +56,7 @@ export function CatalogView({ category, catalog, categories = [], query = "" }: 
           </div>
           <form className="catalog-search" role="search" method="get" action={category.path}>
             <label htmlFor="catalog-search">Поиск по каталогу</label>
-            <div>
+            <div className="catalog-search__query">
               <input
                 id="catalog-search"
                 name="q"
@@ -63,13 +66,42 @@ export function CatalogView({ category, catalog, categories = [], query = "" }: 
               />
               <button type="submit">Найти</button>
             </div>
+            <label htmlFor="catalog-sort">Сортировка</label>
+            <select id="catalog-sort" name="sort" defaultValue={sort ?? ""}>
+              <option value="">{query ? "Сначала точные совпадения" : "По умолчанию"}</option>
+              <option value="name_asc">Название: А—Я</option>
+              <option value="name_desc">Название: Я—А</option>
+              {catalog.meta.price_sort_enabled && <option value="price_asc">Цена: сначала ниже</option>}
+              {catalog.meta.price_sort_enabled && <option value="price_desc">Цена: сначала выше</option>}
+            </select>
+            {facets && (
+              <fieldset className="catalog-filters">
+                <legend className="sr-only">Фильтры каталога</legend>
+                <FacetSelect id="manufacturer" label="Производитель" options={facets.manufacturer} selected={filters.manufacturer} />
+                <FacetSelect id="technology" label="Технология" options={facets.technology} selected={filters.technology} />
+                <FacetSelect id="nominal_voltage" label="Напряжение" options={facets.nominal_voltage} selected={filters.nominal_voltage} />
+                <FacetSelect id="capacity" label="Ёмкость" options={facets.capacity} selected={filters.capacity} />
+                <FacetSelect id="power" label="Мощность" options={facets.power} selected={filters.power} />
+                <FacetSelect id="input_voltage" label="Входное напряжение" options={facets.input_voltage} selected={filters.input_voltage} />
+                <FacetSelect id="output_voltage" label="Выходное напряжение" options={facets.output_voltage} selected={filters.output_voltage} />
+                <FacetSelect id="input_current" label="Входной ток" options={facets.input_current} selected={filters.input_current} />
+                <FacetSelect id="output_current" label="Выходной ток" options={facets.output_current} selected={filters.output_current} />
+                <FacetSelect id="phase" label="Фазность" options={facets.phase} selected={filters.phase} />
+                <FacetSelect id="topology" label="Топология" options={facets.topology} selected={filters.topology} />
+                <FacetSelect id="device_type" label="Тип устройства" options={facets.device_type} selected={filters.device_type} />
+              </fieldset>
+            )}
+            <div className="catalog-filter-actions">
+              <button type="submit">Применить</button>
+              {hasControls && <a href={category.path}>Сбросить</a>}
+            </div>
           </form>
           </div>
 
           {!catalog.available ? (
             <CatalogUnavailable />
           ) : catalog.data.length === 0 ? (
-            <CatalogEmpty hasQuery={Boolean(query)} />
+            <CatalogEmpty hasQuery={Boolean(query || Object.keys(filters).length)} />
           ) : (
             <>
               <div className="catalog-grid">
@@ -82,6 +114,8 @@ export function CatalogView({ category, catalog, categories = [], query = "" }: 
                 lastPage={catalog.meta.last_page}
                 path={category.path}
                 query={query}
+                sort={sort}
+                filters={filters}
               />
             </>
           )}
@@ -99,23 +133,26 @@ export function CatalogView({ category, catalog, categories = [], query = "" }: 
         </div>
         <QuoteForm site={site} subject={`Раздел каталога: ${category.category.name}`} />
       </section>
+
+      <CommercialProfile site={site} />
     </>
   );
 }
 
 export function ProductCard({ product }: { product: CatalogProduct }) {
   const productPath = product.path || null;
+  const observedPriceLabel = priceEvidenceLabel(product.price, product.price_observed_at);
   const identifiers = [
     product.sku ? ["SKU", product.sku] : null,
     product.mpn ? ["MPN", product.mpn] : null,
   ].filter((item): item is string[] => item !== null);
+  const summary = Object.entries(product.summary_attributes ?? {}).map(([key, value]) => [summaryLabel(key), value]);
 
   return (
     <article className="catalog-card">
       {productPath ? (
         <a className="catalog-card__media" href={productPath} aria-label={`Открыть ${product.name}`}>
-          <BatteryIcon />
-          <span>Изображение не опубликовано</span>
+          {product.image_path ? <img src={proxyMediaPath(product.image_path)} alt="" /> : <><BatteryIcon /><span>Изображение не опубликовано</span></>}
         </a>
       ) : (
         <div className="catalog-card__media">
@@ -128,6 +165,7 @@ export function ProductCard({ product }: { product: CatalogProduct }) {
         <h3>
           {productPath ? <a href={productPath}>{product.name}</a> : product.name}
         </h3>
+        {product.manufacturer && <p className="catalog-card__manufacturer">{product.manufacturer}</p>}
         {identifiers.length > 0 ? (
           <dl className="catalog-card__identifiers">
             {identifiers.map(([label, value]) => (
@@ -140,18 +178,59 @@ export function ProductCard({ product }: { product: CatalogProduct }) {
         ) : (
           <p className="catalog-card__verification">Идентификатор требует подтверждения</p>
         )}
+        {summary.length > 0 && (
+          <dl className="catalog-card__summary">
+            {summary.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
+          </dl>
+        )}
       </div>
       <div className="catalog-card__commercial">
         <p className="catalog-card__availability">{availabilityLabel(product.availability)}</p>
         <p className="catalog-card__price">
           {priceLabel(product.price, product.currency)}
         </p>
+        {observedPriceLabel && <p className="catalog-card__price-evidence">{observedPriceLabel}</p>}
         <a className="catalog-button" href={productPath ?? "#quote-request"}>
           {productPath ? "Открыть карточку" : "Запросить позицию"}
         </a>
       </div>
     </article>
   );
+}
+
+function FacetSelect({ id, label, options, selected }: { id: string; label: string; options?: CatalogFacetOption[]; selected?: string }) {
+  if (!options?.length) return null;
+
+  return (
+    <label htmlFor={`catalog-filter-${id}`}>
+      <span>{label}</span>
+      <select id={`catalog-filter-${id}`} name={id} defaultValue={selected ?? ""}>
+        <option value="">Все</option>
+        {options.map((option) => <option key={option.value} value={option.value}>{option.label} ({option.count})</option>)}
+      </select>
+    </label>
+  );
+}
+
+function summaryLabel(key: string) {
+  return ({
+    technology: "Технология",
+    nominal_voltage: "Напряжение",
+    capacity: "Ёмкость",
+    power: "Мощность",
+    input_voltage: "Входное напряжение",
+    output_voltage: "Выходное напряжение",
+    input_current: "Входной ток",
+    output_current: "Выходной ток",
+    phase: "Фазность",
+    topology: "Топология",
+    device_type: "Тип устройства",
+  } as Record<string, string>)[key] ?? key;
+}
+
+function proxyMediaPath(path: string): string {
+  const match = path.match(/^\/api\/v1\/media\/(\d+)$/);
+  return match ? `/api/media/${match[1]}` : "";
 }
 
 function CatalogEmpty({ hasQuery }: { hasQuery: boolean }) {
@@ -186,11 +265,15 @@ function CatalogPagination({
   lastPage,
   path,
   query,
+  sort,
+  filters,
 }: {
   currentPage: number;
   lastPage: number;
   path: string;
   query: string;
+  sort?: CatalogSort;
+  filters: CatalogFilters;
 }) {
   if (lastPage <= 1) return null;
 
@@ -198,24 +281,28 @@ function CatalogPagination({
 
   return (
     <nav className="catalog-pagination" aria-label="Страницы каталога">
-      {currentPage > 1 && <a href={pageHref(path, currentPage - 1, query)}>Назад</a>}
+      {currentPage > 1 && <a href={pageHref(path, currentPage - 1, query, sort, filters)}>Назад</a>}
       {pages.map((page) => (
         <a
           key={page}
-          href={pageHref(path, page, query)}
+          href={pageHref(path, page, query, sort, filters)}
           aria-current={page === currentPage ? "page" : undefined}
         >
           {page}
         </a>
       ))}
-      {currentPage < lastPage && <a href={pageHref(path, currentPage + 1, query)}>Далее</a>}
+      {currentPage < lastPage && <a href={pageHref(path, currentPage + 1, query, sort, filters)}>Далее</a>}
     </nav>
   );
 }
 
-function pageHref(path: string, page: number, query: string) {
+function pageHref(path: string, page: number, query: string, sort: CatalogSort | undefined, filters: CatalogFilters) {
   const params = new URLSearchParams();
   if (query) params.set("q", query);
+  if (sort) params.set("sort", sort);
+  for (const [filter, value] of Object.entries(filters)) {
+    if (value) params.set(filter, value);
+  }
   if (page > 1) params.set("page", String(page));
   const suffix = params.toString();
 

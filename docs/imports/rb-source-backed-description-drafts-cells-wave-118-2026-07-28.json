@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "purpose": "Seven exact model-core descriptions from Energizer and Panasonic primary sources. Package and terminal variants are not merged; no image rights, price, stock or local warranty is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00000337",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "4LR44",
+      "display_name": "Алкалиновая батарея Energizer 4LR44 (A544), 6 В",
+      "technology": "алкалиновый элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/a544_eu.pdf",
+      "technical_attributes": {
+        "Обозначение IEC": "4LR44",
+        "Номинальное напряжение": "6 В",
+        "Типичная ёмкость": "178 мА·ч до 3,6 В"
+      }
+    },
+    {
+      "external_id": "ФР-00001363",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "EN91",
+      "display_name": "Алкалиновая батарейка Energizer Industrial EN91, AA/LR6",
+      "technology": "алкалиновый элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/EN91_Industrial_NA.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AA",
+        "Обозначение IEC": "LR6",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C",
+        "Срок хранения по данным производителя": "до 10 лет"
+      }
+    },
+    {
+      "external_id": "ФР-00000529",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "6LR61",
+      "display_name": "Алкалиновая батарея Energizer Industrial 6LR61, 9 В",
+      "technology": "алкалиновый элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-6lr61pl_eu.pdf",
+      "technical_attributes": {
+        "Обозначение IEC": "6LR61",
+        "Номинальное напряжение": "9 В"
+      }
+    },
+    {
+      "external_id": "ФР-00000486",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "CR1632",
+      "display_name": "Литиевая батарейка Energizer CR1632, 3 В",
+      "technology": "литиевый элемент Li/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/cr1632.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "3 В",
+        "Типичная ёмкость": "130 мА·ч",
+        "Рабочая температура": "от −30 до +60 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00000292",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR03",
+      "display_name": "Алкалиновая батарейка Energizer MAX, AAA/LR03",
+      "technology": "алкалиновый элемент",
+      "source_url": "https://energizer.com/product/power/energizer-max/energizer-max-aaa-batteries-10-pack-triple-a-alkaline-batteries/",
+      "technical_attributes": {
+        "Типоразмер": "AAA",
+        "Обозначение IEC": "LR03",
+        "Срок хранения по данным производителя": "до 12 лет"
+      }
+    },
+    {
+      "external_id": "ФР-00001236",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "CR2450",
+      "display_name": "Литиевая батарейка Panasonic CR2450, 3 В",
+      "technology": "литиевый монетный элемент",
+      "source_url": "https://energy.panasonic.com/eu/business/products/lithium/coin-cr-standard/models/CR2450",
+      "technical_attributes": {
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "620 мА·ч",
+        "Габариты": "Ø24,5 × 5,0 мм",
+        "Рабочая температура": "от −30 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00001311",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "2CR5",
+      "display_name": "Литиевая батарея Panasonic 2CR5, 6 В",
+      "technology": "литиевая цилиндрическая батарея",
+      "source_url": "https://energy.panasonic.com/na/business/products/lithium/cylindrical-cr-standard/models/2CR5",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "1550 мА·ч",
+        "Габариты": "34 × 17 × 45 мм",
+        "Рабочая температура": "от −40 до +70 °C"
+      }
+    }
+  ]
+}

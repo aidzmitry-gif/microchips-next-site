@@ -1,0 +1,20 @@
+{
+  "source": "docs/audits/generated/rb-batch-catalog-triage-wave-119-final-research-clusters.csv",
+  "decision": "hold",
+  "cluster_count": 62,
+  "count_by_brand": {
+    "B.B. Battery": 1,
+    "BAE": 2,
+    "Energizer": 9,
+    "Fanso": 16,
+    "Kijo": 1,
+    "Leoch": 1,
+    "Panasonic": 6,
+    "PKCELL": 5,
+    "Robiton": 16,
+    "Saft": 1,
+    "Tekcell": 3,
+    "Ventura": 1
+  },
+  "invariant": "No hold entry is an approval to merge, publish, overwrite a specification, or apply a media asset."
+}

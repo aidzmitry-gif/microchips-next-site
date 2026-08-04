@@ -1,0 +1,18 @@
+external_id,model_token,reason
+bitrix:20088,RBC7,Exact normalized MPN already belongs to canonical product КА-00003292; legacy Bitrix duplicate held.
+bitrix:23799,RBC23,Exact normalized MPN already belongs to canonical product КА-00005164; legacy Bitrix duplicate held.
+bitrix:23811,RBC31,Exact normalized MPN already belongs to canonical product КА-00003200; legacy Bitrix duplicate held.
+bitrix:23818,APCRBC141,Exact normalized MPN already belongs to canonical product КА-00003237; legacy Bitrix duplicate held.
+bitrix:23822,RBC11,Exact normalized MPN already belongs to canonical product КА-00003351; legacy Bitrix duplicate held.
+bitrix:20100,RBC17,Pending exact Bitrix to 1C identity candidate exists; enrichment held until canonical identity resolution.
+bitrix:23785,APCRBC133,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23786,APCRBC132,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23819,RBC14,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23820,APCRBC136,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23821,APCRBC135,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23823,RBC9,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23825,RBC47,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23826,RBC46,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23827,RBC40,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23829,RBC3,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.
+bitrix:23831,RBC24,Legacy catalogue name does not preserve the exact manufacturer-primary MPN as a suffix; identity review required.

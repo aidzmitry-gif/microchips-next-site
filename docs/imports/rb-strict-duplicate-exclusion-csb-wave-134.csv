@@ -1,0 +1,3 @@
+product_external_id,reason,survivor_external_id,evidence
+ФР-00001807,exact_model_terminal_duplicate,КА-00001276,"Same CSB GP1272 F2 technical execution; only country text differs, and the survivor is the reviewed family variant with current manufacturer evidence"
+КА-00001065,exact_model_terminal_duplicate,КА-00000471,"Same CSB GP12170 B3 technical execution; only country text differs, and the survivor retains the earlier 1C identity for the future family option"

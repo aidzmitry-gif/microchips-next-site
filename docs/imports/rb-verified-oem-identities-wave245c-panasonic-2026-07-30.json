@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "target_kind": "bitrix_draft",
+  "purpose": "Wave245C exact Panasonic identities after live duplicate gate",
+  "products": [
+    {
+      "external_id": "bitrix:3232",
+      "current_name": "Аккумулятор Panasonic UP-VW0645P1 (AGM, 8Ah)",
+      "manufacturer": "Panasonic",
+      "mpn": "UP-VW0645P1",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C64.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "checked_at": "2026-07-29",
+      "product_type": "stationary VRLA AGM battery",
+      "source_snapshot_path": "../audits/sources/wave245c-panasonic/up-vw0645p1-individual-data-sheet.pdf",
+      "source_snapshot_sha256": "1d18af25aa2d1afa4aba9dcbc57a19b1c16c55a57a756ac8fee8999e4126e959"
+    }
+  ]
+}

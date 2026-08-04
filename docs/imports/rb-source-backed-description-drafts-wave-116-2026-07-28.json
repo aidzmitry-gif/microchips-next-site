@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "One canonical Delta GEL 12-55 description after excluding four exact 1C duplicates. Facts are limited to the exact manufacturer-branded model page; no price, stock, local warranty or image is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002781",
+      "manufacturer": "Delta",
+      "mpn": "GEL 12-55",
+      "display_name": "Аккумулятор Delta GEL 12-55, 12 В, 55 А·ч",
+      "technology": "герметизированный свинцово-кислотный аккумулятор AGM+GEL для буферного и циклического режима",
+      "source_url": "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-55/",
+      "source_kind": "exact Delta GEL 12-55 manufacturer-branded product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Технология": "AGM+GEL",
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "55 А·ч при 10-часовом разряде до 1,80 В/элемент",
+        "Число элементов": "6",
+        "Расчётный срок службы": "10–12 лет",
+        "Габариты": "228 × 137 × 214 мм",
+        "Масса": "16,7 кг",
+        "Тип клемм": "под болт M6",
+        "Внутреннее сопротивление": "6 мОм при полном заряде и 25 °C",
+        "Максимальный разрядный ток": "550 А в течение 5 секунд при 25 °C",
+        "Максимальный зарядный ток": "11 А",
+        "Температура разряда": "от −20 до +60 °C",
+        "Температура заряда": "от −10 до +60 °C",
+        "Температура хранения": "от −20 до +60 °C"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "Company-owned legacy Bitrix assets with exact visible model verification for the fourth noindex preview wave.",
+  "images": [
+    {
+      "external_id": "КА-00003136",
+      "mpn": "4SLA150",
+      "asset_file": "851k9kwmnvte1388z86ss0gmfiaciwr8.png",
+      "sha256": "8d8f4a9ad08617177f90c69e5d42a82e5f9d209f4c592a27a9714dae9cc34471",
+      "archive_member": "_shared/upload/iblock/af3/851k9kwmnvte1388z86ss0gmfiaciwr8.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible FIAMM label reads 4 SLA 150; it matches the verified MPN and manufacturer."
+    },
+    {
+      "external_id": "КА-00004091",
+      "mpn": "12FIT180",
+      "asset_file": "k0v2fmz9jfwwy338mkh0iifx0w07nae0.jpg",
+      "sha256": "dd806f65ef8d2655037f47aacb7285253c5a9eb947322a1bd507b9821fd1526f",
+      "archive_member": "_shared/upload/iblock/f26/k0v2fmz9jfwwy338mkh0iifx0w07nae0.jpg",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible FIAMM front label reads 12 FIT 180; it matches the verified MPN and manufacturer."
+    },
+    {
+      "external_id": "ФР-00001513",
+      "mpn": "FG21803",
+      "asset_file": "14jegjzk7onmdys40vahcl41iro0zq9e.png",
+      "sha256": "7dcdb2eb65a80bec7d0f9d57cbb48b1c0293ac355f4249ce0407ebcd0d5baf51",
+      "archive_member": "_shared/upload/iblock/b07/14jegjzk7onmdys40vahcl41iro0zq9e.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible FIAMM front label reads FG 21803, 12 V 18 Ah; it exactly matches the verified MPN and manufacturer."
+    }
+  ]
+}

@@ -70,8 +70,11 @@ Invoke-CheckedCommand -Name 'Check PHP extensions' -Command {
     }
 }
 
-$phpFiles = Get-ChildItem -Path (Join-Path $projectRoot 'backend') -Recurse -File -Filter '*.php' |
-    Where-Object { $_.FullName -notmatch '[\\/]vendor[\\/]' }
+$backendRoot = Join-Path $projectRoot 'backend'
+$phpSourceDirectories = @('app', 'config', 'database', 'public', 'resources', 'routes', 'tests') |
+    ForEach-Object { Join-Path $backendRoot $_ }
+$phpFiles = Get-ChildItem -Path $phpSourceDirectories -Recurse -File -Filter '*.php' -ErrorAction SilentlyContinue
+$phpFiles += Get-Item (Join-Path $backendRoot 'bootstrap/app.php'), (Join-Path $backendRoot 'bootstrap/providers.php')
 
 Invoke-CheckedCommand -Name 'PHP syntax lint' -Command {
     foreach ($phpFile in $phpFiles) {
@@ -90,9 +93,9 @@ if (-not (Test-Path -LiteralPath $pint) -or -not (Test-Path -LiteralPath $phpuni
 }
 
 Invoke-CheckedCommand -Name 'Laravel Pint (check mode)' -Command {
-    Push-Location (Join-Path $projectRoot 'backend')
+    Push-Location $backendRoot
     try {
-        & $php @PhpArguments $pint --test
+        & $php @PhpArguments $pint --test app config database public resources routes tests bootstrap/app.php bootstrap/providers.php
     }
     finally {
         Pop-Location

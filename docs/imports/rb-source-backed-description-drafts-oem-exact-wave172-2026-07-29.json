@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "purpose": "Minimal exact-identity enrichment for nine legacy image-backed cards from official OEM product, safety-data and support documents. Legacy capacity and compatibility claims are omitted wherever the primary source does not prove them. No price, stock, warranty or image-rights claim is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:10573",
+      "identity_scope": "exact",
+      "manufacturer": "HP",
+      "mpn": "NZ375AA",
+      "technology": "8-секционная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея HP NZ375AA",
+      "source_url": "https://h41201.www4.hp.com/AdLanding/img/cleansheet/program_special/6393_HP_EOFY_Business_Bonus_Eligible_Accesories_2014-08-05.pdf",
+      "technical_attributes": {
+        "Количество секций": "8",
+        "Подтверждённые серии ноутбуков": "HP ProBook 4510s, 4515s и 4710s"
+      }
+    },
+    {
+      "external_id": "bitrix:4774",
+      "identity_scope": "exact",
+      "manufacturer": "HP",
+      "mpn": "BQ350AA",
+      "technology": "6-секционная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея HP PH06 (BQ350AA)",
+      "source_url": "https://h41201.www4.hp.com/AdLanding/img/cleansheet/program_special/6393_HP_EOFY_Business_Bonus_Eligible_Accesories_2014-08-05.pdf",
+      "technical_attributes": {
+        "Модель батареи": "PH06",
+        "Количество секций": "6",
+        "Подтверждённые серии ноутбуков": "HP ProBook 432Xs, 442Xs, 452Xs и Compaq 620"
+      }
+    },
+    {
+      "external_id": "bitrix:4776",
+      "identity_scope": "exact",
+      "manufacturer": "Dell",
+      "mpn": "J1KND",
+      "technology": "литий-ионная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея Dell J1KND",
+      "source_url": "https://i.dell.com/sites/csdocuments/Legal_Docs/en/2019lgcsds.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "11,1 В",
+        "Номинальная энергия": "48 Вт·ч"
+      }
+    },
+    {
+      "external_id": "bitrix:4777",
+      "identity_scope": "exact",
+      "manufacturer": "Dell",
+      "mpn": "M5Y1K",
+      "technology": "литий-ионная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея Dell M5Y1K",
+      "source_url": "https://si.cdn.dell.com/sites/csdocuments/Legal_Docs/en/lges_sds_2022.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "15,2 В",
+        "Номинальная энергия": "40 Вт·ч"
+      }
+    },
+    {
+      "external_id": "bitrix:4778",
+      "identity_scope": "exact",
+      "manufacturer": "Dell",
+      "mpn": "WDX0R",
+      "technology": "литий-ионная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея Dell WDX0R",
+      "source_url": "https://i.dell.com/sites/csdocuments/Legal_Docs/en/bat-smpsds20.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "11,4 В",
+        "Номинальная ёмкость": "3500 мА·ч",
+        "Номинальная энергия": "42 Вт·ч"
+      }
+    },
+    {
+      "external_id": "bitrix:10747",
+      "identity_scope": "exact",
+      "manufacturer": "Lenovo",
+      "mpn": "L17M2PF0",
+      "technology": "литий-ионная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея Lenovo L17M2PF0",
+      "source_url": "https://static.lenovo.com/ww/docs/regulatory/msds/SDS-Simplo-2001.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "7,5 В",
+        "Номинальная энергия": "35 Вт·ч"
+      }
+    },
+    {
+      "external_id": "bitrix:10833",
+      "identity_scope": "exact",
+      "manufacturer": "Lenovo",
+      "mpn": "00HW022",
+      "technology": "литий-ионная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея Lenovo 00HW022",
+      "source_url": "https://static.lenovo.com/ww/docs/regulatory/msds/SDS-IBH-00486.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "11,25 В",
+        "Номинальная энергия": "24 Вт·ч"
+      }
+    },
+    {
+      "external_id": "bitrix:10834",
+      "identity_scope": "exact",
+      "manufacturer": "Lenovo",
+      "mpn": "00HW025",
+      "technology": "литий-ионная аккумуляторная батарея для ноутбука",
+      "display_name": "Аккумуляторная батарея Lenovo 00HW025",
+      "source_url": "https://static.lenovo.com/ww/docs/regulatory/msds/SDS-Simplo-2001.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "11,4 В",
+        "Номинальная энергия": "24 Вт·ч"
+      }
+    },
+    {
+      "external_id": "bitrix:4787",
+      "identity_scope": "model_core",
+      "manufacturer": "Sony",
+      "model_core": "NP-BG1",
+      "technology": "InfoLITHIUM G аккумулятор",
+      "display_name": "Аккумулятор Sony NP-BG1 / NP-FG1",
+      "source_url": "https://www.sony.com/electronics/support/compact-cameras-dsc-h-series/dsc-h1/articles/S1F0393",
+      "technical_attributes": {
+        "Серия аккумулятора": "InfoLITHIUM G",
+        "Официальная замена": "NP-FG1"
+      }
+    }
+  ]
+}

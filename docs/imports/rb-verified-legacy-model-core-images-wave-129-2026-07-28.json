@@ -1,0 +1,150 @@
+{
+  "schema_version": 3,
+  "purpose": "Company-owned Bitrix images with visible exact model core and material rating.",
+  "images": [
+    {
+      "external_id": "КА-00001364",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "GP1272",
+      "asset_file": "ka-00001364-detail.jpg",
+      "sha256": "e4e28a5ff5aa067383405c4d79b65149869b1d11f7dfcc2ea6033b1ed12bf6a9",
+      "archive_member": "_shared/upload/iblock/258/f60ewgzy477tvqla56wuui09fxprw49s.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "PASS: label visibly reads CSB GP 1272 F2 and 12V 7.2Ah; matches GP1272 model-core and the 7Ah legacy rating; Microchips watermark present."
+    },
+    {
+      "external_id": "КА-00001368",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "model_core": "GPL 12-100",
+      "asset_file": "ka-00001368-detail.png",
+      "sha256": "96c0ac7d71442030e6b47f834621638182d01187bff016b48024ad4e8ba749b2",
+      "archive_member": "_shared/upload/iblock/5aa/fev52w6khdtbe28qfq7fw7twmg2llc2e.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "PASS: label visibly reads GPL 12-100, nominal voltage 12V and nominal capacity 100Ah; exact match; Microchips watermark present."
+    },
+    {
+      "external_id": "КА-00001920",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "DT 1265",
+      "asset_file": "ka-00001920-detail.png",
+      "sha256": "10a022a3333fd7ec0304d3eb66730e28b932c3f67a96f4363677b31623f86349",
+      "archive_member": "_shared/upload/iblock/9e5/zjt2lhimq9vocqlblyc4gwjk5zojpx30.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "PASS: label visibly reads DELTA DT 1265 and 12V 65Ah; exact match; Microchips watermark present."
+    },
+    {
+      "external_id": "КА-00002661",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "DTM 1265 L",
+      "asset_file": "ka-00002661-detail.png",
+      "sha256": "07fe725d05e817adc20f0acee5601fe59951bf1db3743188da5fe117b7763208",
+      "archive_member": "_shared/upload/iblock/d0d/vi2b9k1jpghxonsri7hwazrbzaq3xrvx.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "PASS: label visibly reads DELTA DTM 1265 L and 12V 65Ah; exact match; Microchips watermark present."
+    },
+    {
+      "external_id": "КА-00003297",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "STC 500",
+      "asset_file": "ka-00003297-detail.png",
+      "sha256": "fea7e89c672301ca5e65b2a9d58e325a6b16089acc76005b8d7c0a5feef5c8af",
+      "archive_member": "_shared/upload/iblock/519/bc3o536snv4g2z78h9o1cl8rnnq8wu3e.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "PASS: label visibly reads DELTA XPERT STC 500 and 2V 500Ah; exact match; Microchips watermark present."
+    },
+    {
+      "external_id": "КА-00004142",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "GPL12400",
+      "asset_file": "ka-00004142-detail.png",
+      "sha256": "c714690b6b9e91584853e7442ca19ffde3d53013f83547d211cef7c70d9620cb",
+      "archive_member": "_shared/upload/iblock/398/jjswgjagqxahceipbl53dptrhso1uoe1.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "CSB label visibly reads GPL12400 and 12V 40Ah; both agree with the reviewed identity and rating."
+    },
+    {
+      "external_id": "КА-00005563",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "HRL 12-55 X",
+      "asset_file": "ka-00005563-detail.png",
+      "sha256": "8defddbc0d8c954b420f92c3da308f06babff0ad48e9aea748b9577cfd8cda7e",
+      "archive_member": "_shared/upload/iblock/645/1s8xqax196iawkyqcp0nx12gnf4b4mi7.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Delta label visibly reads HRL 12-55 X and 12V 55Ah; both agree with the reviewed identity and rating."
+    },
+    {
+      "external_id": "КА-00006069",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "model_core": "HR9-6",
+      "asset_file": "ka-00006069-detail.jpeg",
+      "sha256": "932c7229b34e8424bdf2596dbc0c323f9351f206231eef69a6c66055a8157f56",
+      "archive_member": "_shared/upload/iblock/200/lb772gp9dakxy9jr5rocm91z8l44n85w.jpeg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "B.B. Battery label visibly reads HR9-6 and the high-rate 6V/36WPC rating; no conflicting identity or rating is visible."
+    },
+    {
+      "external_id": "ФР-00000052",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "DT 6033",
+      "asset_file": "fr-00000052-detail.png",
+      "sha256": "470677bf7e4b43301ff130245acc26d4420b0575cbcaf997acc240ce59d3b1d9",
+      "archive_member": "_shared/upload/iblock/34b/1p0dze4cb0953i1gedlk39qe4mx1jn34.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact DT 6033 label and 6V 3.3Ah rating are visibly readable; agree with legacy identity."
+    },
+    {
+      "external_id": "ФР-00000902",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "DT 606",
+      "asset_file": "fr-00000902-detail.png",
+      "sha256": "7d77061cc48bc1f14fa947e283a32768a55b641acc6d14b454afd028f4eb8e91",
+      "archive_member": "_shared/upload/iblock/bf6/am63ubvre0cgjel26kivt1oja0e9dwmg.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact DT 606 label and 6V 6Ah rating are visibly readable; agree with legacy identity."
+    },
+    {
+      "external_id": "ФР-00001875",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "GP12260",
+      "asset_file": "fr-00001875-detail.png",
+      "sha256": "e91466575a1ac566c54461d8269aa272445c9a52cf378e032e2bc4f94f7b8d47",
+      "archive_member": "_shared/upload/iblock/6a9/tf3dkqhu57lco9kjdrdcujgj79p39xqg.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact GP 12260 label and 12V 26Ah rating are visibly readable; agree with legacy identity."
+    },
+    {
+      "external_id": "ФР-00002111",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "HR 12-80W",
+      "asset_file": "fr-00002111-detail.png",
+      "sha256": "c68030c89189fdad87753c7682f7d1d859dd650e3c73a59b37c663e665c6bd17",
+      "archive_member": "_shared/upload/iblock/7b7/b3sjmrnxbv3ipqz091c03ooz78p96b5i.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; exact model and rating were visually verified.",
+      "identity_evidence_level": "visible_exact_model_core",
+      "visual_verification_note": "Exact HR 12-80W label and 12V 20Ah rating are visibly readable; agree with legacy identity."
+    }
+  ]
+}

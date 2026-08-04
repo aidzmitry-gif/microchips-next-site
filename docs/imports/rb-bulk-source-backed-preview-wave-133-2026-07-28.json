@@ -1,0 +1,1933 @@
+{
+  "schema_version": 1,
+  "purpose": "Bulk source-backed noindex preview; no stock, offer or indexability claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003840",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14528/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-en1500s-ii",
+      "model_core": "EN1500S/II"
+    },
+    {
+      "external_id": "КА-00004406",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14937/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-ir12-2000s",
+      "model_core": "IR12-2000S"
+    },
+    {
+      "external_id": "КА-00003558",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/09659/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-en3000s-5-24",
+      "mpn": "EN3000S/5-24"
+    },
+    {
+      "external_id": "ФР-00000369",
+      "manufacturer": "Energizer",
+      "identity_scope": "exact",
+      "source_url": "https://data.energizer.com/pdfs/nh12-900.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "energizer-nh12-900",
+      "mpn": "NH12-900"
+    },
+    {
+      "external_id": "КА-00002048",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/documents/gp/GP_12-7.2.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gp12-7-2",
+      "mpn": "GP12-7.2",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003227",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/documents/gpl/GPL_12-75.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl12-75",
+      "mpn": "GPL12-75",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003442",
+      "manufacturer": "Casil",
+      "identity_scope": "exact",
+      "source_url": "https://www.electro51.ru/assets/files/catalogs/CASIL-Battery-Product-Catalogue.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "casil-ca1213",
+      "mpn": "CA1213",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003696",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/documents/gpl/GPL_12-200.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl12-200",
+      "mpn": "GPL12-200",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003228",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-gpl/gpl-12-150/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl12-150",
+      "mpn": "GPL12-150",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00004091",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://fiamm.ru/equipment/FIT-series/12FIT180/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fit180",
+      "mpn": "12FIT180",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00004855",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/documents/vg/VG_12-200.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-vg12-200",
+      "mpn": "VG12-200",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00005514",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-vg/vg-12-100/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-vg12-100",
+      "mpn": "VG12-100",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00005523",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-hrl12155w",
+      "mpn": "HRL12155W",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00005572",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/catalog/ventura-ft/ft-12-150/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-ft12-150",
+      "mpn": "FT12-150",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00004114",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.h-energy.ru/wa-data/public/site/manuals/akb/fiamm/fiamm_6sla100-datasheetENG.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-6sla100",
+      "mpn": "6SLA100",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00002817",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://energon.ru/akb/stationary-batteries/st-delta/delta_dt/delta_dt_1233/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt1233",
+      "mpn": "DT1233",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00004035",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/04397/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-dn500",
+      "model_core": "DN500"
+    },
+    {
+      "external_id": "КА-00006936",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14527/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-tn1000s",
+      "model_core": "TN1000S"
+    },
+    {
+      "external_id": "КА-00001967",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1215/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm1215",
+      "mpn": "DTM1215",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00005359",
+      "manufacturer": "Inspired Energy",
+      "identity_scope": "exact",
+      "source_url": "https://inspired-energy.com/products/details/3/111-ph3054hd29",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "inspired-energy-ph3054hd29",
+      "mpn": "PH3054HD29"
+    },
+    {
+      "external_id": "КА-00004377",
+      "manufacturer": "Panasonic",
+      "identity_scope": "exact",
+      "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000C230.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "panasonic-br2330",
+      "mpn": "BR2330"
+    },
+    {
+      "external_id": "КА-00003856",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "exact",
+      "source_url": "https://www.bb-batte.com/?lang=en",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-bp5-12",
+      "mpn": "BP5-12",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003136",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.cogenient.com/mfc-refdocs/Fiamm/SLA/4SLA150.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-4sla150",
+      "mpn": "4SLA150",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00001513",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.fiamm.co/catalog/FG21803.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg21803",
+      "mpn": "FG21803",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003387",
+      "manufacturer": "Парус электро",
+      "identity_scope": "exact",
+      "source_url": "https://parus-electro.ru/catalog/ibp-peremennogo-toka/sipb1ka_10_11/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "1-10-11",
+      "mpn": "СИПБ1КА.10-11"
+    },
+    {
+      "external_id": "КА-00003325",
+      "manufacturer": "OMRON",
+      "identity_scope": "exact",
+      "source_url": "https://www.ia.omron.com/products/family/2712/specification.html",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "omron-cj1w-bat01",
+      "mpn": "CJ1W-BAT01"
+    },
+    {
+      "external_id": "ФР-00002108",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.fiamm.ru/equipment/FGH-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fgh36",
+      "mpn": "12FGH36",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00005082",
+      "manufacturer": "Hiden",
+      "identity_scope": "exact",
+      "source_url": "https://www.ups-mag.ru/upload/files/ups/hiden/hiden-expert/Rukovodstvo_UDC9200S_6-10.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "hiden-expert-udc9206s",
+      "mpn": "Expert UDC9206S"
+    },
+    {
+      "external_id": "КА-00000110",
+      "manufacturer": "Maxell",
+      "identity_scope": "exact",
+      "source_url": "https://biz.maxell.com/en/primary_batteries/data_sheet/CR2032_Data_sheet_e.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "maxell-cr2032",
+      "mpn": "CR2032"
+    },
+    {
+      "external_id": "КА-00004651",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page101.html",
+      "category_slug": "catalog/power-systems/power-converters",
+      "product_slug": "mean-well-rsd-300f-12",
+      "mpn": "RSD-300F-12"
+    },
+    {
+      "external_id": "КА-00001063",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.fiamm.ru/equipment/FGH-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fgh23",
+      "mpn": "12FGH23",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00002816",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "source_url": "https://delta-batt.com/series/dtm_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1233-l",
+      "mpn": "DTM 1233 L"
+    },
+    {
+      "external_id": "ФР-00001154",
+      "manufacturer": "Sonnenschein",
+      "identity_scope": "exact",
+      "source_url": "https://www.exidegroup.com/eu/en/document/performance-durability-data-0",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "sonnenschein-a502-10s",
+      "mpn": "A502/10S",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00000106",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-12100/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt12100",
+      "mpn": "DT12100"
+    },
+    {
+      "external_id": "ФР-00002172",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt401",
+      "mpn": "DT401",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00005764",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://delta-batt.com/series/dtm/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm6012",
+      "mpn": "DTM6012",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003766",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "delta-cgd1208",
+      "mpn": "CGD1208",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003445",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "delta-cgd1233",
+      "mpn": "CGD1233",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00000337",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/a544_eu.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-4lr44",
+      "model_core": "4LR44"
+    },
+    {
+      "external_id": "КА-00005734",
+      "manufacturer": "Сайбер Электро",
+      "identity_scope": "exact",
+      "source_url": "https://xn--80acmarjf0aodcu3l.xn--p1ai/catalog/ibp-po-sfere-primeneniya/ibp-dlya-ofisa/ekspert-ii-1000r/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ii-1000",
+      "mpn": "ЭКСПЕРТ-II-1000Р"
+    },
+    {
+      "external_id": "КА-00005622",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.se.com/uk/en/product/SURT192RMXLBP/?parent-subcategory-id=88976",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-surt192rmxlbp",
+      "mpn": "SURT192RMXLBP"
+    },
+    {
+      "external_id": "КА-00001869",
+      "manufacturer": "XENOENERGY",
+      "identity_scope": "exact",
+      "source_url": "https://files.batteryjunction.com/frontend/files/xeno/un38-3-ts/XENO-XL-050F-UN38-3-TS.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "xenoenergy-xl-050f-ax",
+      "mpn": "XL-050F/AX"
+    },
+    {
+      "external_id": "КА-00003889",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.cogenient.com/mfc-refdocs/Fiamm/SLA/6SLA125.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-6sla125",
+      "mpn": "6SLA125",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00001248",
+      "manufacturer": "Electrochem",
+      "identity_scope": "exact",
+      "source_url": "https://www.electrochem.com.cn/products/primary/highrate/pmx/3B1065.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "electrochem-pmx150-aa-3b1065",
+      "mpn": "PMX150-AA-3B1065"
+    },
+    {
+      "external_id": "ФР-00001439",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://cdn.hdibattery.com/archivos/media/fg21202.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg21202",
+      "mpn": "FG21202",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00001202",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "source_url": "https://www.kz.delta-batt.com/products/solnechnye-moduli/delta-bst/",
+      "category_slug": "catalog/power-systems",
+      "product_slug": "delta-bst-360-24-m",
+      "mpn": "BST 360-24 M"
+    },
+    {
+      "external_id": "ФР-00001344",
+      "manufacturer": "Panasonic",
+      "identity_scope": "exact",
+      "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000C285.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "panasonic-cr-123a",
+      "mpn": "CR-123A"
+    },
+    {
+      "external_id": "КА-00003983",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/16034/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-tn2000s",
+      "model_core": "TN2000S"
+    },
+    {
+      "external_id": "ФР-00001952",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "exact",
+      "source_url": "https://www.bb-battery.ru/products/bps/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-bps-26-12",
+      "mpn": "BPS 26-12"
+    },
+    {
+      "external_id": "КА-00004833",
+      "manufacturer": "EcoFlow",
+      "identity_scope": "exact",
+      "source_url": "https://eu.ecoflow.com/products/delta-2-max",
+      "category_slug": "catalog/power-systems",
+      "product_slug": "ecoflow-delta-2-max",
+      "mpn": "DELTA 2 Max"
+    },
+    {
+      "external_id": "ФР-00000871",
+      "manufacturer": "LG Energy Solution",
+      "identity_scope": "exact",
+      "source_url": "https://static.dianchi.cn/uploads/2024/07/09/d2l0duirm6ycldunvo.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "lg-energy-solution-inr18650mj1",
+      "mpn": "INR18650MJ1"
+    },
+    {
+      "external_id": "КА-00003468",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://energon.ru/akb/stationary-batteries/st-delta/delta_dtm/delta_dtm_1226/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm1226",
+      "mpn": "DTM1226",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00001785",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FG_web.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg10451",
+      "model_core": "FG10451"
+    },
+    {
+      "external_id": "КА-00004242",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14931/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-ir9-500s",
+      "model_core": "IR9-500S"
+    },
+    {
+      "external_id": "КА-00006664",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/15697/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-ir12-24w",
+      "model_core": "IR12-24W"
+    },
+    {
+      "external_id": "КА-00004716",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14056/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-ak02",
+      "model_core": "AK02"
+    },
+    {
+      "external_id": "КА-00003012",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14885/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-lac612-500",
+      "model_core": "LAC612-500"
+    },
+    {
+      "external_id": "КА-00001254",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/11937/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-850",
+      "model_core": "MasterCharger 850"
+    },
+    {
+      "external_id": "ФР-00001438",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "source_url": "https://www.fiamm.ru/data/Catalogue/2022/FG_web.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20722",
+      "model_core": "FG20722"
+    },
+    {
+      "external_id": "ФР-00002258",
+      "manufacturer": "CSB Energy Technology",
+      "identity_scope": "exact",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-UPS122406-01312026.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-energy-technology-ups122406",
+      "mpn": "UPS122406"
+    },
+    {
+      "external_id": "КА-00005712",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/SE-450/SE-450-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-se-450-12",
+      "mpn": "SE-450-12"
+    },
+    {
+      "external_id": "КА-00003556",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/HDR-60/HDR-60-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-hdr-60-12",
+      "mpn": "HDR-60-12"
+    },
+    {
+      "external_id": "КА-00004375",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/17520/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-li-4-plus",
+      "mpn": "Li-4 Plus"
+    },
+    {
+      "external_id": "КА-00001214",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/17022/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-1b-usb",
+      "mpn": "MasterCharger 1B USB"
+    },
+    {
+      "external_id": "КА-00002690",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/17667/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-4t5-pro",
+      "mpn": "MasterCharger 4T5 Pro"
+    },
+    {
+      "external_id": "ФР-00001430",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/13613/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-pro",
+      "mpn": "MasterCharger Pro"
+    },
+    {
+      "external_id": "КА-00002973",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/18258/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-multicharger-lcd2",
+      "mpn": "MultiCharger LCD2"
+    },
+    {
+      "external_id": "КА-00001620",
+      "manufacturer": "CSB",
+      "identity_scope": "exact",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-GPL1272-01312026.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gpl1272",
+      "mpn": "GPL1272"
+    },
+    {
+      "external_id": "КА-00001619",
+      "manufacturer": "CSB",
+      "identity_scope": "exact",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl1225w",
+      "mpn": "HRL1225W"
+    },
+    {
+      "external_id": "КА-00004170",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/EDR-150/EDR-150-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-edr-150-24",
+      "mpn": "EDR-150-24"
+    },
+    {
+      "external_id": "КА-00002579",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-lrs-50-5",
+      "mpn": "LRS-50-5"
+    },
+    {
+      "external_id": "КА-00005640",
+      "manufacturer": "FANSO",
+      "identity_scope": "model_core",
+      "source_url": "https://www.fansobattery.com/?list_43%2F505.html=",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "fanso-er17505h",
+      "model_core": "ER17505H"
+    },
+    {
+      "external_id": "КА-00005877",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/NDR-480/NDR-480-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-ndr-480-24",
+      "mpn": "NDR-480-24"
+    },
+    {
+      "external_id": "КА-00004428",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/18521/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-multicharger2",
+      "mpn": "MultiCharger2"
+    },
+    {
+      "external_id": "КА-00001213",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/11476/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smart-2",
+      "mpn": "Smart 2"
+    },
+    {
+      "external_id": "КА-00001387",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/17262/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smart4-c3",
+      "mpn": "Smart4 C3"
+    },
+    {
+      "external_id": "КА-00004556",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/10635/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smartcharger-iv",
+      "mpn": "SmartCharger/IV"
+    },
+    {
+      "external_id": "ФР-00000866",
+      "manufacturer": "ROBITON",
+      "identity_scope": "exact",
+      "source_url": "https://www.robiton.ru/product/11072/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smartdisplay-1000",
+      "mpn": "SmartDisplay 1000"
+    },
+    {
+      "external_id": "КА-00002966",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "exact",
+      "source_url": "https://www.akku-vertrieb.ru/upload/iblock/c13/64omvw4i0fbfps4khi6fkzbn5fibypv0/BB_booklet_A4_june2025_lite_AV.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-hrc5-5-12",
+      "mpn": "HRC5.5-12"
+    },
+    {
+      "external_id": "КА-00003200",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.se.com/us/en/product/RBC31/apc-replacement-battery-cartridge-vrla-battery-9ah-48vdc-2year-warranty/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc31",
+      "mpn": "RBC31"
+    },
+    {
+      "external_id": "КА-00003011",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/18105/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-9v90-fast",
+      "model_core": "9V90 FAST"
+    },
+    {
+      "external_id": "ФР-00001866",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/11673/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-procharger1000",
+      "model_core": "ProCharger1000"
+    },
+    {
+      "external_id": "КА-00002781",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-55/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-gel-12-55",
+      "mpn": "GEL 12-55"
+    },
+    {
+      "external_id": "КА-00005689",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/BPS.html",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "b-b-battery-bps-17-12",
+      "model_core": "BPS 17-12"
+    },
+    {
+      "external_id": "КА-00003848",
+      "manufacturer": "FIAMM",
+      "identity_scope": "exact",
+      "source_url": "https://www.fiamm.ru/equipment/FIT-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-12fit60",
+      "mpn": "12FIT60"
+    },
+    {
+      "external_id": "ФР-00000571",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr20pl_eu.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-lr20",
+      "model_core": "LR20"
+    },
+    {
+      "external_id": "КА-00003292",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.apc.com/shop/tradeups/us/en/categories/power/uninterruptible-power-supply-ups-/ups-replacement-batteries/replacement-battery-cartridges/N-7ffcnm?No=80&Nrpp=40",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc7",
+      "mpn": "RBC7"
+    },
+    {
+      "external_id": "КА-00005164",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.apc.com/ca/en/download/document/SDS_ALL_APCRBC_LEAD_ACID_EU_EN/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc23",
+      "mpn": "RBC23"
+    },
+    {
+      "external_id": "КА-00005708",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.se.com/us/en/product/SRT192BP2/apc-smartups-online-srt-battery-pack-for-8-10kva-extended-runtime-model-192v/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-srt192bp2",
+      "mpn": "SRT192BP2"
+    },
+    {
+      "external_id": "КА-00005756",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1kVA-427357/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-innova-g2-1000",
+      "mpn": "Innova G2 1000"
+    },
+    {
+      "external_id": "КА-00006759",
+      "manufacturer": "CyberPower",
+      "identity_scope": "exact",
+      "source_url": "https://www.cyberpower.com/global/en/product/sku/ols1000ert2ua",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-ols1000ert2ua",
+      "mpn": "OLS1000ERT2UA"
+    },
+    {
+      "external_id": "КА-00005733",
+      "manufacturer": "CyberPower",
+      "identity_scope": "exact",
+      "source_url": "https://web2.cyberpower.com/global/en/product/sku/pr750elcd",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-pr750elcd",
+      "mpn": "PR750ELCD"
+    },
+    {
+      "external_id": "КА-00005524",
+      "manufacturer": "CyberPower",
+      "identity_scope": "exact",
+      "source_url": "https://www.cyberpower.com/VN/EN/product/sku/ut1100eg",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-ut1100eg",
+      "mpn": "UT1100EG"
+    },
+    {
+      "external_id": "КА-00006872",
+      "manufacturer": "APC by Schneider Electric",
+      "identity_scope": "exact",
+      "source_url": "https://www.se.com/uk/en/product/SMT3000IC/apc-smartups-line-interactive-3kva-tower-230v-8x-iec-c13%2B2x-iec-c19-outlets-smartconnect-port%2Bsmartslot-avr-lcd/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "apc-by-schneider-electric-smt3000ic",
+      "mpn": "SMT3000IC"
+    },
+    {
+      "external_id": "КА-00001846",
+      "manufacturer": "Eaton",
+      "identity_scope": "exact",
+      "source_url": "https://www.eaton.com/in/en-us/skuPage.9E1000I.html",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "eaton-9e1000i",
+      "mpn": "9E1000I"
+    },
+    {
+      "external_id": "КА-00002489",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/IRM-15/IRM-15-spec.pdf",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-irm-15-12",
+      "mpn": "IRM-15-12"
+    },
+    {
+      "external_id": "КА-00002488",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page49.html",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-irm-30-24",
+      "mpn": "IRM-30-24"
+    },
+    {
+      "external_id": "КА-00001286",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page5.html",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-lrs-350-24",
+      "mpn": "LRS-350-24"
+    },
+    {
+      "external_id": "КА-00002068",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/UHP-500%28R%29/UHP-500-spec.pdf",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-uhp-500-24",
+      "mpn": "UHP-500-24"
+    },
+    {
+      "external_id": "КА-00007148",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page97.html",
+      "category_slug": "catalog/power-systems/power-converters",
+      "product_slug": "mean-well-ddr-120d-24",
+      "mpn": "DDR-120D-24"
+    },
+    {
+      "external_id": "КА-00003555",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/Upload/PDF/HDR-30/HDR-30-SPEC.PDF",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "mean-well-hdr-30-12",
+      "mpn": "HDR-30-12"
+    },
+    {
+      "external_id": "КА-00004650",
+      "manufacturer": "MEAN WELL",
+      "identity_scope": "exact",
+      "source_url": "https://www.meanwell.com/catalog/product/files/basic-html/page99.html",
+      "category_slug": "catalog/power-systems/power-converters",
+      "product_slug": "mean-well-sd-350c-24",
+      "mpn": "SD-350C-24"
+    },
+    {
+      "external_id": "КА-00003237",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.apc.com/ca/fr/faqs/FA349747/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-apcrbc141",
+      "mpn": "APCRBC141"
+    },
+    {
+      "external_id": "ФР-00001994",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/hr-w/hr-12-24-w/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-24-w",
+      "mpn": "HR 12-24 W"
+    },
+    {
+      "external_id": "КА-00005774",
+      "manufacturer": "APC by Schneider Electric",
+      "identity_scope": "model_core",
+      "source_url": "https://www.apc.com/us/en/product/APCRBC123/apc-replacement-battery-cartridge-for-smartups-line-interactive-24v-7ah-leadacid-battery-2year-repair-or-replace-warranty/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "apc-by-schneider-electric-apcrbc123",
+      "model_core": "APCRBC123"
+    },
+    {
+      "external_id": "КА-00005462",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "ventura-gp-6-7-2",
+      "model_core": "GP 6-7.2"
+    },
+    {
+      "external_id": "КА-00005166",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "exact",
+      "source_url": "https://www.bb-battery.ru/products/ups/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-ups-12220w",
+      "mpn": "UPS 12220W"
+    },
+    {
+      "external_id": "КА-00004769",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "ventura-gt-06-270",
+      "mpn": "GT 06 270"
+    },
+    {
+      "external_id": "ФР-00002343",
+      "manufacturer": "CSB",
+      "identity_scope": "exact",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-UPS123606-%E2%80%93-053124.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-ups123606",
+      "mpn": "UPS123606"
+    },
+    {
+      "external_id": "КА-00003736",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12-65",
+      "model_core": "GPL 12-65"
+    },
+    {
+      "external_id": "КА-00003966",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "ventura-gt-06-235",
+      "model_core": "GT 06 235"
+    },
+    {
+      "external_id": "КА-00005195",
+      "manufacturer": "EnerSys",
+      "identity_scope": "exact",
+      "source_url": "https://www.enersys.com/en-gb/products/batteries/cyclon/cyclon/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-x-cell",
+      "mpn": "X Cell"
+    },
+    {
+      "external_id": "КА-00005320",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "ventura-hr-1290w",
+      "model_core": "HR 1290W"
+    },
+    {
+      "external_id": "КА-00004972",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "ventura-hrl-12650w",
+      "model_core": "HRL 12650W"
+    },
+    {
+      "external_id": "КА-00004762",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "ventura-vtg-06-210-xt",
+      "model_core": "VTG 06 210 XT"
+    },
+    {
+      "external_id": "КА-00002025",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/15020/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-1000nzaaa",
+      "model_core": "1000NZAAA"
+    },
+    {
+      "external_id": "КА-00005606",
+      "manufacturer": "OMRON",
+      "identity_scope": "exact",
+      "source_url": "https://www.ia.omron.com/data_pdf/cat/s8ba_u701-e1_4_9_csm1042516.pdf?id=3450",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "omron-s8ba-24d24d480sbf",
+      "mpn": "S8BA-24D24D480SBF"
+    },
+    {
+      "external_id": "ФР-00001873",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gp-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gp12120",
+      "model_core": "GP12120"
+    },
+    {
+      "external_id": "КА-00004889",
+      "manufacturer": "CyberPower",
+      "identity_scope": "exact",
+      "source_url": "https://www.cyberpower.com/global/en/product/sku/ut2200eg",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-ut2200eg",
+      "mpn": "UT2200EG"
+    },
+    {
+      "external_id": "ФР-00001011",
+      "manufacturer": "TAB",
+      "identity_scope": "exact",
+      "source_url": "https://www.tabitalia.com/public/documenti/TAB%20Small%20Traction%26Leisure.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "tab-215180",
+      "mpn": "215180"
+    },
+    {
+      "external_id": "КА-00005755",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1000-2050420/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-innova-tb-1000",
+      "mpn": "Innova TB 1000"
+    },
+    {
+      "external_id": "КА-00003995",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1050-Euro-403409/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-1050-euro",
+      "mpn": "Back Basic 1050 Euro"
+    },
+    {
+      "external_id": "КА-00003351",
+      "manufacturer": "APC",
+      "identity_scope": "exact",
+      "source_url": "https://www.se.com/us/en/product/RBC11/apc-replacement-battery-cartridge-11-with-2-year-warranty/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc11",
+      "mpn": "RBC11"
+    },
+    {
+      "external_id": "КА-00004378",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "ventura-vtg-12-080-xt",
+      "mpn": "VTG 12 080 XT"
+    },
+    {
+      "external_id": "ФР-00001236",
+      "manufacturer": "Panasonic",
+      "identity_scope": "model_core",
+      "source_url": "https://energy.panasonic.com/eu/business/products/lithium/coin-cr-standard/models/CR2450",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "panasonic-cr2450",
+      "model_core": "CR2450"
+    },
+    {
+      "external_id": "ФР-00001279",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1212/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "delta-dtm-1212",
+      "model_core": "DTM 1212"
+    },
+    {
+      "external_id": "КА-00004142",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gpl-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gpl12400",
+      "model_core": "GPL12400",
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "ФР-00001363",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/EN91_Industrial_NA.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-en91",
+      "model_core": "EN91"
+    },
+    {
+      "external_id": "ФР-00000486",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/cr1632.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-cr1632",
+      "model_core": "CR1632"
+    },
+    {
+      "external_id": "КА-00001443",
+      "manufacturer": "Panasonic",
+      "identity_scope": "model_core",
+      "source_url": "https://energy.panasonic.com/eu/business/products/lithium-ion/models/NCR18650GA",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "panasonic-ncr18650ga",
+      "model_core": "NCR18650GA"
+    },
+    {
+      "external_id": "КА-00003297",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/stc/delta-stc-500/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "delta-stc-500",
+      "model_core": "STC 500"
+    },
+    {
+      "external_id": "ФР-00002168",
+      "manufacturer": "Panasonic",
+      "identity_scope": "model_core",
+      "source_url": "https://energy.panasonic.com/dam/master/pdf/en/terminaltypes/terminallineup_EN.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "panasonic-vl2020",
+      "model_core": "VL2020"
+    },
+    {
+      "external_id": "КА-00004879",
+      "manufacturer": "Panasonic",
+      "identity_scope": "exact",
+      "source_url": "https://energy.panasonic.com/dam/master/pdf/en/terminaltypes/terminallineup_EN.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "panasonic-vl-3032-f2n",
+      "mpn": "VL-3032/F2N"
+    },
+    {
+      "external_id": "КА-00002911",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/catalog/akkumuljatory/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-1000mhaa",
+      "model_core": "1000MHAA"
+    },
+    {
+      "external_id": "КА-00005351",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/catalog/akkumuljatory/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-1100mhaaa",
+      "model_core": "1100MHAAA"
+    },
+    {
+      "external_id": "КА-00005350",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/catalog/akkumuljatory/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-1200mh4-5aa",
+      "model_core": "1200MH4/5AA"
+    },
+    {
+      "external_id": "КА-00005686",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-HRL12330W-%E2%80%93-053124.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "csb-hrl12330w",
+      "model_core": "HRL12330W"
+    },
+    {
+      "external_id": "ФР-00002345",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-HRL1234W-01312026.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "csb-hrl1234w",
+      "model_core": "HRL1234W"
+    },
+    {
+      "external_id": "КА-00000357",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/catalog/akkumuljatory/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-2200mhaa",
+      "model_core": "2200MHAA"
+    },
+    {
+      "external_id": "ФР-00001867",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/catalog/akkumuljatory/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-400mhaaa",
+      "model_core": "400MHAAA"
+    },
+    {
+      "external_id": "ФР-00000780",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/catalog/akkumuljatory/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "robiton-600mhaa",
+      "model_core": "600MHAA"
+    },
+    {
+      "external_id": "ФР-00000396",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/hr6-2450_eu.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "energizer-2450-mah",
+      "model_core": "2450 mAh"
+    },
+    {
+      "external_id": "КА-00001953",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-33/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "delta-gel-12-33",
+      "model_core": "GEL 12-33"
+    },
+    {
+      "external_id": "ФР-00002203",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/gx/delta-gx-12-24/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "delta-gx-12-24",
+      "model_core": "GX 12-24"
+    },
+    {
+      "external_id": "КА-00005771",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/gx/delta-gx-12-65/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "delta-gx-12-65",
+      "model_core": "GX 12-65"
+    },
+    {
+      "external_id": "КА-00001615",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/hr/delta-hr-12-12/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-12",
+      "model_core": "HR 12-12"
+    },
+    {
+      "external_id": "ФР-00002111",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/hr-w/delta-hr-12-80w/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-80w",
+      "model_core": "HR 12-80W"
+    },
+    {
+      "external_id": "КА-00005563",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/hrl-x/delta-hrl-12-55-x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-55-x",
+      "model_core": "HRL 12-55 X"
+    },
+    {
+      "external_id": "КА-00003244",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/product/BPS4012.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-bps40-12",
+      "model_core": "BPS40-12"
+    },
+    {
+      "external_id": "КА-00002879",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/upload/documents/gpl/GPL_12-75.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12",
+      "model_core": "GPL 12"
+    },
+    {
+      "external_id": "КА-00006069",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-hr9-6",
+      "model_core": "HR9-6"
+    },
+    {
+      "external_id": "ФР-00001307",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1207/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-1207",
+      "model_core": "DT 1207"
+    },
+    {
+      "external_id": "КА-00002292",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/product/SHR712.html",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "b-b-battery-shr7-12",
+      "model_core": "SHR7-12"
+    },
+    {
+      "external_id": "ФР-00000295",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1226/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-1226",
+      "model_core": "DT 1226"
+    },
+    {
+      "external_id": "КА-00002921",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gp-series/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "csb-gp672",
+      "model_core": "GP672"
+    },
+    {
+      "external_id": "ФР-00000639",
+      "manufacturer": "Panasonic",
+      "identity_scope": "model_core",
+      "source_url": "https://energy.panasonic.com/na/business/products/lithium/coin-cr-standard/models/CR2012",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "panasonic-cr2012",
+      "model_core": "CR2012"
+    },
+    {
+      "external_id": "КА-00005185",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12-55",
+      "model_core": "GPL 12-55"
+    },
+    {
+      "external_id": "КА-00006957",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "source_url": "https://ventura-battery.ru/produktsiya/ventura-hr/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "ventura-hr-1221w",
+      "model_core": "HR 1221W"
+    },
+    {
+      "external_id": "КА-00002676",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/17518/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-b9-500",
+      "model_core": "B9-500"
+    },
+    {
+      "external_id": "КА-00006084",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14935/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-ir12-1000s",
+      "model_core": "IR12-1000S"
+    },
+    {
+      "external_id": "КА-00005508",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/14936/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-ir12-1500s",
+      "model_core": "IR12-1500S"
+    },
+    {
+      "external_id": "ФР-00001356",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/04409/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smart-s100",
+      "model_core": "Smart S100"
+    },
+    {
+      "external_id": "КА-00005111",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/04400",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-sn500s",
+      "model_core": "SN500S"
+    },
+    {
+      "external_id": "ФР-00002236",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/17771",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-mastercharger-2b-plus",
+      "model_core": "MasterCharger 2B Plus"
+    },
+    {
+      "external_id": "ФР-00000727",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/11898/",
+      "category_slug": "catalog/power-systems/power-supplies",
+      "product_slug": "robiton-nb70w",
+      "model_core": "NB70W"
+    },
+    {
+      "external_id": "ФР-00002004",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/10592/",
+      "category_slug": "catalog/chargers",
+      "product_slug": "robiton-smart-s500",
+      "model_core": "Smart S500"
+    },
+    {
+      "external_id": "ФР-00000324",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://energizer.com/eu/uk/product/energizer-electronic-batteries-a23-e23a/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-e23a",
+      "model_core": "E23A"
+    },
+    {
+      "external_id": "КА-00001066",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/es/wp-content/uploads/2024/07/CSB-Datasheet-GP12170-%E2%80%93-053124.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gp-12170b1",
+      "model_core": "GP 12170B1"
+    },
+    {
+      "external_id": "ФР-00000495",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/386-301.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-386-301",
+      "model_core": "386-301"
+    },
+    {
+      "external_id": "КА-00005128",
+      "manufacturer": "Tekcell",
+      "identity_scope": "model_core",
+      "source_url": "https://www.vitzrocell.com/sub/sub02_01.php?cat_no=29&idx=161&mode=view&offset=12",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "tekcell-cr-123a",
+      "model_core": "CR 123A"
+    },
+    {
+      "external_id": "КА-00005046",
+      "manufacturer": "Tekcell",
+      "identity_scope": "model_core",
+      "source_url": "https://www.vitzrocell.com/sub/sub02_01.php?cat_no=&idx=12&mode=view&offset=12",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "tekcell-sw-d03",
+      "model_core": "SW D03"
+    },
+    {
+      "external_id": "ФР-00000621",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/ch1hr-2_eu.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "energizer-aaa-900-mah",
+      "model_core": "AAA 900 mAh"
+    },
+    {
+      "external_id": "ФР-00000827",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/13687",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "robiton-winner-r-fr03-sr2",
+      "model_core": "WINNER R-FR03-SR2"
+    },
+    {
+      "external_id": "КА-00004258",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/12287/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "robiton-lr14",
+      "model_core": "LR14"
+    },
+    {
+      "external_id": "КА-00003013",
+      "manufacturer": "Robiton",
+      "identity_scope": "model_core",
+      "source_url": "https://www.robiton.ru/product/17511/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "robiton-lr44",
+      "model_core": "LR44"
+    },
+    {
+      "external_id": "ФР-00001005",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-6045/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-6045",
+      "model_core": "DT 6045"
+    },
+    {
+      "external_id": "ФР-00000211",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-12008/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12008",
+      "model_core": "DTM 12008"
+    },
+    {
+      "external_id": "КА-00000989",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "source_url": "https://www.pkcell.com/product-category/li-mno2-button-cell-battery/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "pkcell-cr1616",
+      "model_core": "CR1616"
+    },
+    {
+      "external_id": "КА-00000988",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "source_url": "https://www.pkcell.com/product-category/li-mno2-button-cell-battery/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "pkcell-cr1620",
+      "model_core": "CR1620"
+    },
+    {
+      "external_id": "КА-00000998",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "source_url": "https://www.pkcell.com/product-category/alkaline-battery/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "pkcell-ag10",
+      "model_core": "AG10"
+    },
+    {
+      "external_id": "ФР-00000210",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1205/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1205",
+      "model_core": "DTM 1205"
+    },
+    {
+      "external_id": "ФР-00000416",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1207/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1207",
+      "model_core": "DTM 1207"
+    },
+    {
+      "external_id": "ФР-00000182",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1209/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "delta-dtm-1209",
+      "model_core": "DTM 1209"
+    },
+    {
+      "external_id": "КА-00003223",
+      "manufacturer": "Panasonic",
+      "identity_scope": "exact",
+      "source_url": "https://energy.panasonic.com/dam/master/pdf/en/faq/Part_Number_Comparison_Table_of_Coin_type_Rechargeable_Lithium_Batteries.pdf",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "panasonic-ml-1220-f1an",
+      "mpn": "ML-1220/F1AN"
+    },
+    {
+      "external_id": "КА-00006762",
+      "manufacturer": "Panasonic",
+      "identity_scope": "model_core",
+      "source_url": "https://www.panasonic.com/au/consumer/household/batteries/eneloop-rechargeable/bk-3mcce4ba.html",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "panasonic-bk-3mcce",
+      "model_core": "BK-3MCCE"
+    },
+    {
+      "external_id": "КА-00003142",
+      "manufacturer": "Panasonic",
+      "identity_scope": "model_core",
+      "source_url": "https://energy.panasonic.com/na/business/products/lithium/coin-br-standard/models/BR2032",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "panasonic-br2032",
+      "model_core": "BR2032"
+    },
+    {
+      "external_id": "КА-00002291",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "csb-hr1227w",
+      "model_core": "HR1227W"
+    },
+    {
+      "external_id": "КА-00003804",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "source_url": "https://www.pkcell.com/a-complete-range-of-primary-lithium-battery-solutions-providing-stable-and-long-lasting-power-support-for-industrial-instruments-and-the-internet-of-things/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "pkcell-fr03",
+      "model_core": "FR03"
+    },
+    {
+      "external_id": "ФР-00001906",
+      "manufacturer": "Saft",
+      "identity_scope": "model_core",
+      "source_url": "https://saft4u.saft.com/en/download_file/f318091b-b2a1-44b9-97c1-321cd08f2e47/English",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "saft-mp144350",
+      "model_core": "MP144350"
+    },
+    {
+      "external_id": "ФР-00000773",
+      "manufacturer": "Saft",
+      "identity_scope": "model_core",
+      "source_url": "https://saft4u.saft.com/fr/download_file/d40c9ea7-0066-4bac-a67b-cbac98316009/English",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "saft-mp176065",
+      "model_core": "MP176065"
+    },
+    {
+      "external_id": "КА-00003867",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/BPS.html",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "b-b-battery-bps-65-12",
+      "model_core": "BPS 65-12"
+    },
+    {
+      "external_id": "КА-00005516",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/en95.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-en95",
+      "model_core": "EN95"
+    },
+    {
+      "external_id": "КА-00002095",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/L92GL0725.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-fr03",
+      "model_core": "FR03"
+    },
+    {
+      "external_id": "КА-00005092",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/ind-6lr61pl_eu.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-industrial-6lr61",
+      "model_core": "Industrial 6LR61"
+    },
+    {
+      "external_id": "ФР-00000569",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr14pl_eu.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-lr14",
+      "model_core": "LR14"
+    },
+    {
+      "external_id": "КА-00005090",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr6pl_eu.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-lr06",
+      "model_core": "LR06"
+    },
+    {
+      "external_id": "КА-00007079",
+      "manufacturer": "Energizer",
+      "identity_scope": "model_core",
+      "source_url": "https://data.energizer.com/pdfs/379.pdf",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "energizer-379-sr521sw",
+      "model_core": "379 / SR521SW"
+    },
+    {
+      "external_id": "КА-00000971",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "source_url": "https://www.pkcell.com/product-category/alkaline-battery/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "pkcell-lr20",
+      "model_core": "LR20"
+    },
+    {
+      "external_id": "КА-00001008",
+      "manufacturer": "PKCELL",
+      "identity_scope": "model_core",
+      "source_url": "https://www.pkcell.com/product-category/alkaline-battery/",
+      "category_slug": "catalog/primary-cells",
+      "product_slug": "pkcell-6lr61",
+      "model_core": "6LR61"
+    },
+    {
+      "external_id": "КА-00004165",
+      "manufacturer": "B.B. Battery",
+      "identity_scope": "model_core",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "b-b-battery-hr-5-8-12",
+      "model_core": "HR 5.8-12"
+    },
+    {
+      "external_id": "ФР-00001875",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gp-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gp12260",
+      "model_core": "GP12260"
+    },
+    {
+      "external_id": "КА-00004141",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "source_url": "https://csb-battery.com/product/gp-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-gp12400",
+      "model_core": "GP12400"
+    },
+    {
+      "external_id": "ФР-00000902",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-606/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-606",
+      "model_core": "DT 606"
+    },
+    {
+      "external_id": "КА-00002661",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1265-l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1265-l",
+      "model_core": "DTM 1265 L"
+    },
+    {
+      "external_id": "КА-00004022",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm-l/delta-dtm-1275-l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1275-l",
+      "model_core": "DTM 1275 L"
+    },
+    {
+      "external_id": "КА-00002602",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-105-m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-105-m",
+      "model_core": "FT 12-105 M"
+    },
+    {
+      "external_id": "КА-00001614",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-150-m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-150-m",
+      "model_core": "FT 12-150 M"
+    },
+    {
+      "external_id": "КА-00007126",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_150_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-150-x",
+      "model_core": "FTS 12-150 X"
+    },
+    {
+      "external_id": "КА-00005187",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_180_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-180-x",
+      "model_core": "FTS 12-180 X"
+    },
+    {
+      "external_id": "КА-00006758",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_50_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-50-x",
+      "model_core": "FTS 12-50 X"
+    },
+    {
+      "external_id": "ФР-00000714",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "source_url": "https://www.delta-battery.ru/catalog/delta-gel/delta-gel-12-45/",
+      "category_slug": "catalog/rechargeable-cells",
+      "product_slug": "delta-gel-12-45",
+      "model_core": "GEL 12-45"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "purpose": "One company-owned legacy asset whose physical label confirms the unique EnerSys Cyclon X Cell catalogue identity and its 2 V, 5.0 Ah rating.",
+  "images": [
+    {
+      "external_id": "КА-00005195",
+      "mpn": "X Cell",
+      "asset_file": "ka-00005195-enersys-cyclon-x-cell.jpg",
+      "sha256": "f564a165172a4106cdbef8c39df1b6d9fcd3fa603cdc134c8d660131eb4244e1",
+      "archive_member": "_shared/upload/iblock/e2c/snrwhquxtr0olsg734yecvtzetq39aul.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup; the asset carries the Microchips watermark.",
+      "identity_evidence_level": "unique_catalog_identity_plus_visual_consistency",
+      "catalog_identity_reference": "Bitrix element 742 uniquely maps to the 1C product КА-00005195 EnerSys Cyclon X Cell; no competing RB catalogue identity was found.",
+      "visual_verification_note": "PASS: the front label visibly reads EnerSys, Cyclon, 2 VOLT 5.0 AH X CELL and SEALED-LEAD RECHARGEABLE BATTERY; these facts exactly agree with the unique catalogue identity, and a Microchips watermark is present. No separate alphanumeric manufacturer part number is claimed."
+    }
+  ]
+}

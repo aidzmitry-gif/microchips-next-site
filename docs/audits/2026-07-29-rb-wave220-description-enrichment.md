@@ -1,0 +1,7 @@
+# Wave220 source-backed Russian description enrichment
+
+Wave220 evaluates all 34 exact-source rows from Wave219-B (17) and Wave219-C (17). The existing content-staging policy accepts only SHA-pinned official manufacturer catalogues under model-core scope. Therefore 15 catalogue-backed rows (two Sonnenschein and thirteen Ventura) are description-draft candidates; 16 official product-page rows are explicitly held rather than being mislabelled as catalogues. Three Ventura rows are also held because their legacy `W` suffixes (`HRL12650W`, `HR1290W`, `HRL12155W`) do not pass the strict exact model-core boundaries of their pinned catalogue models.
+
+Every manifest row preserves its current name and structured manufacturer/MPN by using `identity_scope: model_core`. Claims are limited to the exact model and battery technology supported by its pinned catalogue. Live identity checks are read only.
+
+After the manifest-specific dry run passed, Laravel refreshed and applied all 15 source-backed descriptions. Import run `962` refreshed the drafts, run `963` validated the exact application in a rolled-back transaction, and run `964` applied 15 descriptions. Both the dry run and application report `publications_changed: 0` and `commercial_fields_changed: 0`; price, stock, media, identity and URL state were not changed. The machine-readable receipt is `docs/audits/generated/wave220-description-enrichment-application-receipt.json`.

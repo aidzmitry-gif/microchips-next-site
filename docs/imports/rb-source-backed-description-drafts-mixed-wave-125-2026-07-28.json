@@ -1,0 +1,83 @@
+{
+    "schema_version":  1,
+    "purpose":  "Wave 125 manufacturer-primary model-core facts. No terminal, package, price, image, origin or publication inference.",
+    "locale":  "ru-BY",
+    "products":  [
+                     {
+                         "external_id":  "КА-00007088",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GPL 12-45",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "GPL AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00005185",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "GPL 12-55",
+                         "technology":  "VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/podderzhka/",
+                         "source_kind":  "Official Ventura documentation index",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "GPL AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "КА-00006957",
+                         "manufacturer":  "Ventura",
+                         "identity_scope":  "model_core",
+                         "model_core":  "HR 1221W",
+                         "technology":  "high-rate VRLA AGM lead-acid battery",
+                         "source_url":  "https://ventura-battery.ru/produktsiya/ventura-hr/",
+                         "source_kind":  "Official Ventura HR series page",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "12 V",
+                                                      "Series":  "HR AGM",
+                                                      "Source limitation":  "Do not infer terminal, capacity rating condition, price or origin."
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00000621",
+                         "manufacturer":  "Energizer",
+                         "identity_scope":  "model_core",
+                         "model_core":  "AAA 900 mAh",
+                         "technology":  "secondary nickel-metal hydride cell (NiMH)",
+                         "source_url":  "https://data.energizer.com/pdfs/ch1hr-2_eu.pdf",
+                         "source_kind":  "Official Energizer charger data sheet",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Size":  "AAA",
+                                                      "Nominal capacity":  "900 mAh",
+                                                      "Source limitation":  "Document is charger-compatible battery data; commercial SKU/package is not asserted."
+                                                  }
+                     },
+                     {
+                         "external_id":  "ФР-00000396",
+                         "manufacturer":  "Energizer",
+                         "identity_scope":  "model_core",
+                         "model_core":  "2450 mAh",
+                         "technology":  "secondary nickel-metal hydride cell (NiMH)",
+                         "source_url":  "https://data.energizer.com/pdfs/hr6-2450_eu.pdf",
+                         "source_kind":  "Official Energizer HR6-2450 data sheet",
+                         "checked_at":  "2026-07-28",
+                         "technical_attributes":  {
+                                                      "Nominal voltage":  "1.2 V",
+                                                      "Rated capacity":  "2450 mAh to 1.0 V at 490 mA discharge",
+                                                      "Size":  "AA / IEC HR6",
+                                                      "Source limitation":  "Commercial package and origin are not asserted."
+                                                  }
+                     }
+                 ]
+}

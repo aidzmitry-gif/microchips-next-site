@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "policy": {
+    "primary_sources_only": true,
+    "device_compatibility_does_not_prove_replacement_pack_identity": true,
+    "exact_identity_requires_explicit_official_accessory_part": true
+  },
+  "sources": [
+    {
+      "id": "verifone-se-vx680-webshop",
+      "publisher": "Verifone Sweden AB",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "url": "https://go.verifone.com/sv/se/webshop",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/verifone-wave203/verifone-se-webshop-2026-07-29.html",
+      "snapshot_metadata_path": "docs/audits/sources/verifone-wave203/verifone-se-webshop-2026-07-29.json",
+      "snapshot_sha256": "de1a95294ce8c1c7bb89218f00de39b124a9b1db2f65d665dd3c0f1b196d0961",
+      "required_exact_tokens": [
+        "BPK268-001-01-A",
+        "VX680",
+        "Batteripack"
+      ],
+      "pinned_facts": [
+        "Official product name: Batteripack - VX680",
+        "Official article number: BPK268-001-01-A",
+        "Official terminal model: VX680"
+      ]
+    },
+    {
+      "id": "ingenico-pi20-03-battery-bulletin",
+      "publisher": "Ingenico GmbH Product Management",
+      "source_kind": "official_manufacturer_product_bulletin",
+      "url": "https://cdn.ingenico.com/binaries/content/assets/germany-smart-terminals/--3.x-pi-produktinfo/pi20-03-akkus-fur-iwl-und-move-serien.pdf",
+      "checked_at": "2026-07-29",
+      "pinned_facts": [
+        "F12432566 is the 2900mAh hard-pack battery for Move/3500 and Move/5000",
+        "F26402274 is the 2050mAh battery for iWL220, iWL250 and iWL280",
+        "F26402298 is the 2250mAh battery for iWL2x0 and Move/3500"
+      ]
+    },
+    {
+      "id": "castles-v3m2-official-product-page",
+      "publisher": "Castles Technology",
+      "source_kind": "official_manufacturer_product_page",
+      "url": "https://www.castlestech.com/ja/five-good-reasons-to-choose-castles-technology/",
+      "checked_at": "2026-07-29",
+      "pinned_facts": [
+        "V3M2 is an official Castles Linux terminal model"
+      ]
+    },
+    {
+      "id": "dejavoo-z9-official-datasheet",
+      "publisher": "Dejavoo Systems",
+      "source_kind": "official_manufacturer_datasheet",
+      "url": "https://www.dejavoosystems.com/wp-content/uploads/2021/06/dejavoo-Z9-wireless_jun-2021_NB_LR.pdf",
+      "checked_at": "2026-07-29",
+      "pinned_facts": [
+        "Z9 is an official Dejavoo wireless terminal family",
+        "The datasheet mentions a larger battery but no replacement battery part number"
+      ]
+    },
+    {
+      "id": "newpos-new8110-official-history",
+      "publisher": "NEW POS Technology",
+      "source_kind": "official_manufacturer_company_history",
+      "url": "https://www.newpostech.com/about",
+      "checked_at": "2026-07-29",
+      "pinned_facts": [
+        "NEW8110 is an official NEW POS terminal model launched in 2008",
+        "The source does not identify a replacement battery part"
+      ]
+    },
+    {
+      "id": "pax-official-terminal-portfolio",
+      "publisher": "PAX Technology",
+      "source_kind": "official_manufacturer_portfolio_article",
+      "url": "https://www.paxtechnology.com/blog/one-emv-kernel-certification-across-multiple-payment-terminal-platforms",
+      "checked_at": "2026-07-29",
+      "pinned_facts": [
+        "A920, D200, D210, S58 and S90 are official PAX terminal families",
+        "The source does not identify replacement battery part numbers"
+      ]
+    },
+    {
+      "id": "sunmi-p2-t6900-official-spec",
+      "publisher": "SUNMI",
+      "source_kind": "official_manufacturer_datasheet",
+      "url": "https://file.cdn.sunmi.com/newebsite/products/p2/specs/p2.pdf",
+      "checked_at": "2026-07-29",
+      "pinned_facts": [
+        "P2 certification model is T6900",
+        "The official removable Li-polymer battery is 7.6V and 2540mAh",
+        "The source does not identify replacement cell code 2ICP5/58/84"
+      ]
+    }
+  ]
+}

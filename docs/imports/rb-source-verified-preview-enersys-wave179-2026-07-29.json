@@ -1,0 +1,213 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:12HX25",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX25",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx25"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX80",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX80",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx80"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX105",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX105",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx105"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX100S",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX100S",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx100s"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX135",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX135",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx135"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX150",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX150",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx150"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX205",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX205",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx205"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX300",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX300",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx300"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX330",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX330",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx330"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX400",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX400",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx400"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX505",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX505",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx505"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX385+",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX385+",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx385-plus"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX450+",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX450+",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx450-plus"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX530+",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX530+",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx530-plus"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX600+",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX600+",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx600-plus"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX650F-FR+",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX650F-FR+",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx650f-fr-plus"
+    },
+    {
+      "external_id": "manufacturer:enersys:12HX700F-FR+",
+      "manufacturer": "EnerSys",
+      "mpn": "12HX700F-FR+",
+      "source_url": "https://www.enersys.com/49160e/globalassets/documents/product-documentation/datasafe/hx/emea/datasafe_HX_range_summary_emea-en-rs-ds-hx-0223.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12hx700f-fr-plus"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V30F",
+      "manufacturer": "EnerSys",
+      "mpn": "12V30F",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v30f"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V38F",
+      "manufacturer": "EnerSys",
+      "mpn": "12V38F",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v38f"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V92F-FT",
+      "manufacturer": "EnerSys",
+      "mpn": "12V92F-FT",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v92f-ft"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V100F",
+      "manufacturer": "EnerSys",
+      "mpn": "12V100F",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v100f"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V100FC",
+      "manufacturer": "EnerSys",
+      "mpn": "12V100FC",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v100fc"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V101F",
+      "manufacturer": "EnerSys",
+      "mpn": "12V101F",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v101f"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V155FS",
+      "manufacturer": "EnerSys",
+      "mpn": "12V155FS",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v155fs"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V170FS",
+      "manufacturer": "EnerSys",
+      "mpn": "12V170FS",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v170fs"
+    },
+    {
+      "external_id": "manufacturer:enersys:12V190F",
+      "manufacturer": "EnerSys",
+      "mpn": "12V190F",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-ft/amer/powersafe_vfrontterminal_batteryrangesummary.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "enersys-12v190f"
+    }
+  ]
+}

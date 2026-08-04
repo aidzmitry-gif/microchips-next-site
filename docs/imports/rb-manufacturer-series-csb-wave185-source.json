@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "locale": "ru-BY",
+  "category_external_id": "seo:batteries-industrial",
+  "category_slug": "catalog/industrial-batteries/batteries-industrial",
+  "series": [
+    {
+      "manufacturer": "CSB",
+      "series": "Calor XHT-FT 7000",
+      "models": ["XHT7000FT"],
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/06/CSB-Calor-XHT7000FT-Datasheet.pdf",
+      "technology": "VRLA AGM",
+      "category_external_id": "seo:batteries-ups",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "name_template": "Высокотемпературный аккумулятор {manufacturer} {model} Calor XHT-FT для ИБП",
+      "facts": {
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM с пластинами из чистого свинца",
+        "Назначение": "высокотемпературный высокомощный резервный режим",
+        "Корпус": "огнестойкий UL94-V0"
+      },
+      "model_facts": {
+        "XHT7000FT": {"Номинальное напряжение": "12 В", "Мощность при 5-минутном разряде": "7000 Вт", "Габариты": "558 × 126 × 255 мм", "Типичная масса": "50,9 кг"}
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "Calor XHT-FT 7700",
+      "models": ["XHT7700FT"],
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/06/CSB-Calor-XHT7700FT-Datasheet.pdf",
+      "technology": "VRLA AGM",
+      "category_external_id": "seo:batteries-ups",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "name_template": "Высокотемпературный аккумулятор {manufacturer} {model} Calor XHT-FT для ИБП",
+      "facts": {
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM с пластинами из чистого свинца",
+        "Назначение": "высокотемпературный высокомощный резервный режим",
+        "Корпус": "огнестойкий UL94-V0"
+      },
+      "model_facts": {
+        "XHT7700FT": {"Номинальное напряжение": "12 В", "Мощность при 5-минутном разряде": "7700 Вт", "Габариты": "558 × 126 × 255 мм", "Типичная масса": "54 кг"}
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "Calor XHT-FT 8000/9000",
+      "models": ["XHT8000FT", "XHT9000FT"],
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technology": "VRLA AGM",
+      "category_external_id": "seo:batteries-ups",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "name_template": "Высокотемпературный аккумулятор {manufacturer} {model} Calor XHT-FT для ИБП",
+      "facts": {
+        "Серия": "Calor XHT-FT",
+        "Технология": "VRLA AGM с пластинами из чистого свинца",
+        "Назначение": "высокотемпературный высокомощный резервный режим",
+        "Корпус": "огнестойкий UL94-V0"
+      },
+      "model_facts": {
+        "XHT8000FT": {"Номинальное напряжение": "12 В", "Мощность при 5-минутном разряде": "8000 Вт", "Типичная масса": "66,6 кг"},
+        "XHT9000FT": {"Номинальное напряжение": "12 В", "Мощность при 5-минутном разряде": "9000 Вт", "Типичная масса": "71,1 кг"}
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "XTV-WT",
+      "models": ["XTV1272F2FR-WT", "XTV12120F2FR-WT", "XTV12200FR-WT"],
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technology": "VRLA AGM",
+      "name_template": "Промышленный аккумулятор {manufacturer} {model} XTV-WT для ветроэнергетики",
+      "facts": {
+        "Серия": "XTV-WT",
+        "Технология": "VRLA AGM с пластинами из чистого свинца",
+        "Назначение": "ветроэнергетические установки",
+        "Стандарты серии": "UL1973 и UL1989",
+        "Рекомбинация газа": "до 99 %"
+      },
+      "model_facts": {
+        "XTV1272F2FR-WT": {"Номинальное напряжение": "12 В", "Номинальная ёмкость": "7,2 А·ч", "Габариты": "150,9 × 64,8 × 98,6 мм", "Типичная масса": "2,57 кг"},
+        "XTV12120F2FR-WT": {"Номинальное напряжение": "12 В", "Номинальная ёмкость": "12 А·ч", "Габариты": "151 × 98 × 101,8 мм", "Типичная масса": "4,1 кг"},
+        "XTV12200FR-WT": {"Номинальное напряжение": "12 В", "Номинальная ёмкость": "20 А·ч", "Габариты": "181 × 76 × 165 мм", "Типичная масса": "6,35 кг"}
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "RE 48V",
+      "models": ["48RE1200"],
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technology": "VRLA AGM",
+      "name_template": "Промышленная аккумуляторная батарея {manufacturer} {model} RE 48V для возобновляемой энергетики",
+      "facts": {
+        "Серия": "RE 48V",
+        "Технология": "VRLA AGM с углеродными добавками",
+        "Назначение": "возобновляемая энергетика и циклическая работа в режиме частичного заряда"
+      },
+      "model_facts": {
+        "48RE1200": {"Номинальное напряжение": "48 В", "Номинальная ёмкость": "1200 А·ч", "Типичная масса": "2007,2 кг"}
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "PowerBox Lithium-Ion",
+      "models": ["PB-300"],
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "technology": "Li-ion",
+      "category_external_id": "seo:power-systems",
+      "category_slug": "catalog/power-systems",
+      "name_template": "Промышленная система накопления энергии {manufacturer} PowerBox {model}",
+      "facts": {
+        "Серия": "PowerBox Lithium-Ion",
+        "Технология": "литий-ионная",
+        "Конструкция": "шкафная система с BMS уровня 3",
+        "Интерфейсы": "RS485, CAN, Fast Ethernet и сухой контакт"
+      },
+      "model_facts": {
+        "PB-300": {"Номинальное напряжение постоянного тока": "512 В", "Мощность при 5-минутном разряде": "320 кВт", "Номинальная энергия": "72 кВт·ч", "Габариты": "2000 × 600 × 1000 мм", "Типичная масса": "1100 кг"}
+      }
+    }
+  ]
+}

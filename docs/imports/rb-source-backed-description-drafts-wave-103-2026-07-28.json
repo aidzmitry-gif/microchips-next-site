@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "purpose": "Six exact-model battery descriptions backed by manufacturer or manufacturer-catalogue sources. No price, stock, local warranty, image-rights or indexability claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003094",
+      "manufacturer": "B.B. Battery",
+      "mpn": "BPS28-12",
+      "display_name": "Аккумулятор B.B. Battery BPS28-12, 12 В, 28 А·ч",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM",
+      "source_url": "https://www.bb-bat.com/en/product/BPS2812.html",
+      "source_kind": "B.B. Battery manufacturer product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "28 А·ч при 20-часовом разряде до 1,75 В/элемент",
+        "Технология": "VRLA AGM",
+        "Масса": "9,6 кг",
+        "Стандартная клемма": "B1, болт и гайка M5",
+        "Максимальный ток разряда": "420 А в течение 5 секунд",
+        "Габариты": "175 × 166 × 125 мм"
+      }
+    },
+    {
+      "external_id": "ФР-00001851",
+      "manufacturer": "B.B. Battery",
+      "mpn": "FTB100-12",
+      "display_name": "Фронтальный аккумулятор B.B. Battery FTB100-12, 12 В, 100 А·ч",
+      "technology": "герметизированный свинцово-кислотный аккумулятор VRLA AGM с фронтальными выводами",
+      "source_url": "https://www.bb-bat.com/en/product/FTB10012.html",
+      "source_kind": "B.B. Battery manufacturer product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "100 А·ч при 8-часовом разряде до 1,75 В/элемент",
+        "Технология": "VRLA AGM",
+        "Исполнение выводов": "фронтальное",
+        "Клемма": "I2, внутренняя резьба M6",
+        "Масса": "36,8 кг",
+        "Габариты": "394 × 110 × 285 мм",
+        "Применение": "телекоммуникационные системы, ИБП и системы постоянного тока"
+      }
+    },
+    {
+      "external_id": "КА-00001923",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HRL5.5-12",
+      "display_name": "Высокомощный аккумулятор B.B. Battery HRL5.5-12, 12 В, 5 А·ч",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM для высоких токов разряда",
+      "source_url": "https://www.bb-bat.com/en/product/HRL5512.html",
+      "source_kind": "B.B. Battery manufacturer product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "5 А·ч при 10-часовом разряде до 1,75 В/элемент",
+        "Номинальная мощность модели": "22 Вт",
+        "Технология": "VRLA AGM",
+        "Максимальный ток разряда": "75 А в течение 5 секунд",
+        "Масса": "1,8 кг",
+        "Применение": "ИБП, центры обработки данных и телекоммуникационные системы"
+      }
+    },
+    {
+      "external_id": "ФР-00002258",
+      "manufacturer": "CSB Energy Technology",
+      "mpn": "UPS122406",
+      "display_name": "Высокомощный аккумулятор CSB UPS122406 для ИБП, 12 В",
+      "technology": "герметизированный свинцово-кислотный аккумулятор VRLA AGM для высоких токов разряда в ИБП",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-UPS122406-01312026.pdf",
+      "source_kind": "official CSB UPS122406 datasheet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Технология": "VRLA AGM",
+        "Мощность при 5-минутном разряде": "38,83 Вт/элемент до 1,67 В/элемент при 25 °C",
+        "Мощность при 15-минутном разряде": "18,5 Вт/элемент до 1,67 В/элемент при 25 °C",
+        "Клемма": "F2, Faston 250",
+        "Масса": "1,46 кг",
+        "Габариты": "150,9 × 51 × 98,6 мм",
+        "Применение": "высокотоковые ИБП и резервное питание"
+      }
+    },
+    {
+      "external_id": "КА-00002966",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HRC5.5-12",
+      "display_name": "Высокомощный аккумулятор B.B. Battery HRC5.5-12, 12 В",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA для высоких токов разряда",
+      "source_url": "https://www.akku-vertrieb.ru/upload/iblock/c13/64omvw4i0fbfps4khi6fkzbn5fibypv0/BB_booklet_A4_june2025_lite_AV.pdf",
+      "source_kind": "B.B. Battery 2025 product booklet hosted by a specialist distributor",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Технология": "VRLA",
+        "Мощность при 15-минутном разряде": "132 Вт/блок до 1,6 В/элемент",
+        "Габариты корпуса": "90 × 70 × 102 мм",
+        "Полная высота": "106 мм",
+        "Масса": "1,62 кг",
+        "Клеммы": "T2, опционально T1"
+      }
+    },
+    {
+      "external_id": "ФР-00001994",
+      "manufacturer": "Delta",
+      "mpn": "HR 12-24 W",
+      "display_name": "Аккумулятор Delta HR 12-24 W для ИБП, 12 В, 6 А·ч",
+      "technology": "герметизированный необслуживаемый свинцово-кислотный аккумулятор VRLA AGM серии Delta UPS",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/hr-w/hr-12-24-w/",
+      "source_kind": "official Delta HR 12-24 W product page",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "6 А·ч",
+        "Технология": "VRLA AGM",
+        "Клемма": "F2",
+        "Габариты корпуса": "151 × 52 × 93 мм",
+        "Масса": "2,12 кг",
+        "Применение": "источники бесперебойного питания серверных и аналогичных систем"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_url": "https://go.verifone.com/sv/se/webshop",
+  "publisher": "Verifone Sweden AB",
+  "source_kind": "official_manufacturer_accessory_catalogue",
+  "snapshot_path": "docs/audits/sources/verifone-wave203/verifone-se-webshop-2026-07-29.html",
+  "snapshot_sha256": "de1a95294ce8c1c7bb89218f00de39b124a9b1db2f65d665dd3c0f1b196d0961",
+  "snapshot_bytes": 285403,
+  "content_type": "text/html",
+  "required_exact_tokens": [
+    "BPK268-001-01-A",
+    "VX680",
+    "Batteripack"
+  ],
+  "token_counts": {
+    "BPK268-001-01-A": 1,
+    "VX680": 115,
+    "Batteripack": 3
+  },
+  "acquired_at": "2026-07-29T07:18:53+00:00",
+  "network_refresh_performed": true
+}

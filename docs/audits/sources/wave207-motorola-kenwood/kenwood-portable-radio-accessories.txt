@@ -1,0 +1,181 @@
+DMR DMR
+NX-5200 NX-200(G) NX-210(G) NX-220 NX-240 NX-230EX NX-230EX TK-D200(G) TK-D240 TK-5210(G) TK-5220 NX-700H NX-720H(G) NX-740H NX-900 NX-5700 TK-D740H TK-5710(G) TK-5720 NXR-5700 NXR-700 NXR-710 TKR-D710
+NX-5300 NX-300(G) NX-410 NX-320 NX-340 NX-330EX NX-330EX TK-D300(G) TK-D340 TK-5310(G) TK-5320 NX-700 NX-720(G) NX-740 NX-901 NX-5800 TK-D740 TK-5810(G) TK-5820 NXR-5800 NXR-800 NXR-810 TKR-D810
+NX-5400 NX-411 NX-420 NX-248 (ATEX/IECEx) (CQST) TK-5410 NX-800H NX-820H(G) NX-840H NX-5900 TK-D840H TK-5910(G) NXR-900
+NX-348 TK-5410D NX-800 NX-820(G) NX-840 TK-D840 NXR-901
+NX-920(G)
+KRA-22 VHF Helical Antenna
+(short type) X X X X X X X X X X
+KRA-23 UHF Helical Antenna
+(short type) X X X X X X X X X
+KRA-26 VHF Helical Antenna
+(Capless) X X X X X X X X X X
+KRA-27 UHF Whip Antenna
+(Capless) X X X X X X X X X
+KRA-32 700/800MHz Whip Antenna X X X X
+KRA-38 800/900MHz Whip Antenna X X X X
+KRA-41 VHF Stubby Antenna X X X X X X X X
+KRA-42 UHF Stubby Antenna X X X X X X X
+KRA-43G VHF Helical Antenna
+(GPS Antenna included) X X X X X
+KRA-44G UHF Helical Antenna
+(GPS Antenna included) X X X X
+KNB-L1 Li-ion Battery Pack 7.4V/2000mAh X
+KNB-L2 Li-ion Battery Pack 7.4V/2600mAh X
+KNB-L3 Li-ion Battery Pack 7.4V/3400mAh X
+KNB-N4 Ni-MH Battery Pack 7.2V/2500mAh X
+KNB-29N Ni-MH Battery Pack 7.2V/1500mAh X X
+KNB-33L Li-ion Battery Pack 7.4V/2000mAh X X
+KNB-41NC Ni-MH Battery Pack
+(Intrinsically Safe) 7.2V/2500mAh (CSA/CSA-us) X X
+KNB-45L Li-ion Battery Pack 7.4V/2000mAh X X
+KNB-47L Li-ion Battery Pack 7.4V/1950mAh X X
+KNB-48L Li-ion Battery Pack 7.4V/2550mAh X X
+KNB-50NC Ni-MH Battery Pack
+(Intrinsically Safe) 7.2V/2000mAh (CSA/CSA-us) X X
+KNB-53N Ni-MH Battery Pack 7.2V/1400mAh X X
+KNB-54N Ni-MH Battery Pack 7.2V/2500mAh X X
+KNB-55L Li-ion Battery Pack 7.2V/1480mAh X X
+KNB-56N Ni-MH Battery Pack 7.2V/1400mAh X X
+KNB-57L Li-ion Battery Pack 7.4V/2000mAh X X
+KNB-66LC Li-ion Battery Pack
+(Intrinsically Safe) 7.4V/1880mAh (CSA) X X
+KNB-68LC Li-ion Battery Pack
+(Intrinsically Safe)
+7.2V/2000mAh
+(USTC/CQST/TIA4950/NMETR
+O)
+X
+KNB-69L Li-ion Battery Pack 7.4V/2.550mA X X
+KNB-70LEX Li-ion Battery Pack
+(Intrinsically Safe)
+7.4V/1430mAh
+(ATEX/IECEx) X(M type) X(C type)
+KNB-72LC Li-ion Battery Pack
+(Intrinsically Safe)
+7.4V/1880mAh
+(CSA/CSA-us) X X
+KNB-LS5 Li-ion Battery Pack
+(Intrinsically Safe)
+7.4V/2000mAh
+(CSA-us / TIA4950) X
+KNB-LS6 Li-ion Battery Pack
+(Intrinsically Safe)
+7.4V/2000mAh
+(CSA) X
+KBP-5 Battery Case AA x 6 pcs. X X
+KBP-6 Battery Case AA x 6 pcs. X X
+KBP-7 Battery Case AA x 6 pcs. X X
+KBP-8 Battery Case AA x 12 pcs. X
+KSC-Y32 Rapid Charger (intelligent) X
+KSC-25LS Rapid Charger X X
+KSC-256 Multiple Charger X X
+KSC-32S Rapid Charger X X X
+X  (for Types E,T
+w/KCT-69EX
+Mandatory)
+X  (for Types E,T
+w/KCT-69EX
+Mandatory)
+X X
+KSC-326S Multiple Charger X X X X X X X
+KSC-35S Rapid Charger X X
+KSC-356 Rapid Charger X X
+KSC-43 Rapid Charger X X
+KHS-21 Headset X X X
+KMC-21 Speaker Michrophone X X X
+KMC-27 Microphone X X X X
+KMC-28 12Keys Microphone X X X X
+KMC-30 Microphone X X X X X X X X X X X
+KMC-32 16Keys Microphone X X X X X X X
+KMC-35 Microphone X X X X X X X X X X X
+KMC-36 12Keys Microphone X X X X X X X
+KMC-41D Speaker Michrophone X X X X X X
+KMC-42W/WD Speaker Michrophone (IP67) X X X X X X
+KMC-45D Speaker Michrophone X X X
+KMC-46EX Speaker Michrophone (ATEX/IECEx) X X
+KMC-47GPSD GPS Speaker microphone X X X X X X
+KMC-48GPS GPS Speaker microphone X X
+KMC-53 Desktop Microphone X X X X X X X X X X
+KMC-54WD Speaker Michrophone (IP67) X
+KAP-2 Horn Alert/P.A Relay Unit X X X X
+KBH-10 Belt Clip X X X X
+KBH-11 Belt Clip X X X X X
+KBH-12 Belt Clip X X
+KBH-16EX Belt Clip (ATEX/IECEx) X X
+KCH-14 Basic Remote Control Head X
+KCH-15 Full-featured Remote Control
+Head X
+KCH-16 Handheld Control Head X
+KCH-19 Basic Control Head Kit X
+KCH-20R Featured Control Head X
+KCT-18 Ignition Sense Cable X
+X(Requires
+optional KCT-
+60)
+X(Requires
+optional KCT-
+60)
+KCT-22 Remote Control Cable X
+KCT-23 DC Power Cable X X X X X
+KCT-31 Interface Cable
+KCT-46 Ignition Sense Cable X X X X
+KCT-60 Connection Cable (D-SUB15 to MOLEX convert
+cable) X X X
+KCT-71
+Remote Control Cable
+(Availabile in 3 lengths of
+7.6m/5.2m/0.5m)
+X
+KCT-72 Connection Cable X
+KCT-73MIC External Microphone Kit X
+KCT-74PTT External PTT Kit X
+KES-3 External Speaker(3W) X X X X X X X
+KES-5 External Speaker(40W) X X X X X X X X X X X X
+KLF-2 Line Filter X X X X X X X X
+KMB-10 Key Lock Adaptor X X X X X X X X
+KMB-33 Mounting Bracket X
+KMB-5 Mounting Bracket
+KMB-9 Mounting Bracket
+KMC-9B Desktop Microphone X
+KMC-9C Desktop Microphone X X X X X X X X X X X
+KRA-40G GPS Antenna X(Only Type G) X
+KRK-10 Control Head Remote Kit X X X
+KRK-11 Handheld Control Head
+Interface Kit X
+KRK-14H Control Head Interface Kit (Adapter For The Head) X
+KRK-15B Control Head Remote Kit (Adapter For The RF Deck) X
+KRK-5 Single Control Head Remote
+Kit X
+KRK-6DH Dual Control Head Remote Kit X
+KTI-3 Network Interface Unit X
+KTI-4 Interconnect Adapter X X
+KTI-5 Network Box X X
+KXK-3 ｘ OCXO Unit X X
+VGS-1 Voice Guide & Storage Unit X X X X X X X X
+KAS-10 GPS AVL & DISPATCH
+MESSAGING SOFTWARE X X X
+KAS-12 Battery Reader X
+KAS-12PRO Upgrade Option (Management
+Feature) X
+KPG-110SM System Manager X X
+KPG-149R Repeater Monitor X X X
+KPG-150AP OTAP Manager X X X X X X X X
+KPG-180AP OTAP Manager X X
+KWD-AE31 Secure Cryptographic Module
+(AES&DES) X X X X X X X X X
+Software
+Options
+NEXEDGE DMR P25
+Antennas
+Batteries /
+Battery
+Cases
+Chargers
+Microphones
+& Headsets
+Optional
+Accessories
+Base - RepeatersMobiles RadiosPortable Radios
+NEXEDGE P25 NEXEDGEProducts
+Accessories

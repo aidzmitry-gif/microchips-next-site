@@ -1,0 +1,8 @@
+{
+    "schema_version":  1,
+    "purpose":  "Wave 127B: no primary ROBITON page/data sheet was found that establishes the exact model plus requested suffix, connector, protection or pack execution. Fail closed; see hold CSV.",
+    "locale":  "ru-BY",
+    "products":  [
+
+                 ]
+}

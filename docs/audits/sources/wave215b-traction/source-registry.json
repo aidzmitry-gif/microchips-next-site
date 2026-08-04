@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "policy": "SHA-pinned official manufacturer-primary sources only",
+  "sources": [
+    {
+      "source_id": "yuasa_vehicle_range_oct_2025",
+      "publisher": "GS Yuasa Battery Sales UK Limited",
+      "source_url": "https://www.yuasa.com/media/akeneo_connector/asset_files/L/I/LIT059_GS_Vehicle_Battery_Range_Oct_25_WEB_6b06.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave215b-traction/yuasa-vehicle-battery-range-oct-2025.pdf",
+      "snapshot_sha256": "1a3876f922484a6defb7018e1e2a39c4bfb3f6202602685dd8e74085411f5096",
+      "exact_models": [
+        "DCB105-6",
+        "DCB145-6"
+      ]
+    }
+  ],
+  "unavailable_exact_source_holds": {
+    "Minamoto": "no SHA-pinned official exact-model snapshot",
+    "Sonnenschein": "official GF/Y page was not retrievable as a pin; no source-derived identity emitted"
+  }
+}

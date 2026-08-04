@@ -51,6 +51,8 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+    volumes:
+      - media-data:/var/www/storage/app/public
     healthcheck:
       test: ["CMD", "php", "-r", "$$socket = @fsockopen('127.0.0.1', 9000); exit($$socket === false ? 1 : 0);"]
       interval: 5s
@@ -80,6 +82,12 @@ services:
     depends_on:
       backend:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "php", "artisan", "horizon:status"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
 
   nginx:
     build:
@@ -121,3 +129,4 @@ services:
 volumes:
   postgres-data:
   redis-data:
+  media-data:

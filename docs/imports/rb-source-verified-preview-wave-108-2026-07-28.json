@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "purpose": "Seven exact-model noindex UPS, UPS-battery and traction-battery previews without unverified price, stock or local warranty claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004889",
+      "manufacturer": "CyberPower",
+      "mpn": "UT2200EG",
+      "source_url": "https://www.cyberpower.com/global/en/product/sku/ut2200eg",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyberpower-ut2200eg",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001011",
+      "manufacturer": "TAB",
+      "mpn": "215180",
+      "source_url": "https://www.tabitalia.com/public/documenti/TAB%20Small%20Traction%26Leisure.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "tab-215180-golf-cart-gel",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005755",
+      "manufacturer": "IPPON",
+      "mpn": "Innova TB 1000",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1000-2050420/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-innova-tb-1000",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003995",
+      "manufacturer": "IPPON",
+      "mpn": "Back Basic 1050 Euro",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1050-Euro-403409/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-1050-euro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005606",
+      "manufacturer": "OMRON",
+      "mpn": "S8BA-24D24D480SBF",
+      "source_url": "https://www.ia.omron.com/data_pdf/cat/s8ba_u701-e1_4_9_csm1042516.pdf?id=3450",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "omron-s8ba-24d24d480sbf",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003351",
+      "manufacturer": "APC",
+      "mpn": "RBC11",
+      "source_url": "https://www.se.com/us/en/product/RBC11/apc-replacement-battery-cartridge-11-with-2-year-warranty/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "apc-rbc11",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00004378",
+      "manufacturer": "Ventura",
+      "mpn": "VTG 12 080 XT",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "ventura-vtg-12-080-xt",
+      "replace_categories": true
+    }
+  ]
+}

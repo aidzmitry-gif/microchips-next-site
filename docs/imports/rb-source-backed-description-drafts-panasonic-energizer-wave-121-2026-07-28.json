@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 121: exact model-core descriptions from Energizer and Panasonic manufacturer-primary pages and datasheets. Package, terminal, lead-wire, image, price, stock and local warranty data are deliberately excluded.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001649",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "EN92",
+      "display_name": "Щелочная батарейка Energizer EN92, AAA/LR03",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/en92.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AAA",
+        "Обозначение IEC": "LR03",
+        "Номинальное напряжение": "1,5 В"
+      }
+    },
+    {
+      "external_id": "КА-00005516",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "EN95",
+      "display_name": "Щелочная батарейка Energizer EN95, D/LR20",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/en95.pdf",
+      "technical_attributes": {
+        "Типоразмер": "D",
+        "Обозначение IEC": "LR20",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "КА-00002095",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "FR03",
+      "display_name": "Литиевая батарейка Energizer Ultimate Lithium L92, AAA/FR03",
+      "technology": "литий-железодисульфидный элемент Li/FeS₂",
+      "source_url": "https://data.energizer.com/pdfs/L92GL0725.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AAA",
+        "Обозначение IEC": "FR03",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −40 до +60 °C"
+      }
+    },
+    {
+      "external_id": "КА-00005092",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "Industrial 6LR61",
+      "display_name": "Щелочная батарея Energizer Industrial 6LR61, 9 В",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-6lr61pl_eu.pdf",
+      "technical_attributes": {
+        "Обозначение IEC": "6LR61",
+        "Номинальное напряжение": "9 В"
+      }
+    },
+    {
+      "external_id": "ФР-00000569",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR14",
+      "display_name": "Щелочная батарейка Energizer Industrial, C/LR14",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr14pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "C",
+        "Обозначение IEC": "LR14",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00000571",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR20",
+      "display_name": "Щелочная батарейка Energizer Industrial, D/LR20",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr20pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "D",
+        "Обозначение IEC": "LR20",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "КА-00005028",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR6",
+      "display_name": "Щелочная батарейка Energizer Industrial, AA/LR6",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr6pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AA",
+        "Обозначение IEC": "LR6",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00001407",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "FR6",
+      "display_name": "Литиевая батарейка Energizer Ultimate Lithium L91, AA/FR6",
+      "technology": "литий-железодисульфидный элемент Li/FeS₂",
+      "source_url": "https://data.energizer.com/pdfs/l91.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AA",
+        "Обозначение IEC": "FR6",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −40 до +60 °C"
+      }
+    },
+    {
+      "external_id": "КА-00005026",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR03",
+      "display_name": "Щелочная батарейка Energizer Industrial, AAA/LR03",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr03pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AAA",
+        "Обозначение IEC": "LR03",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00000709",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR03",
+      "display_name": "Щелочная батарейка Energizer Industrial, AAA/LR03",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr03pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AAA",
+        "Обозначение IEC": "LR03",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "КА-00005090",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR06",
+      "display_name": "Щелочная батарейка Energizer Industrial LR06, AA/LR6",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr6pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AA",
+        "Обозначение IEC": "LR6",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "КА-00007079",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "379 / SR521SW",
+      "display_name": "Серебряно-оксидный элемент Energizer 379, SR521SW",
+      "technology": "серебряно-оксидный элемент Zn/Ag₂O",
+      "source_url": "https://data.energizer.com/pdfs/379.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "1,55 В",
+        "Типичная ёмкость": "14,5 мА·ч до 1,2 В"
+      }
+    },
+    {
+      "external_id": "ФР-00000340",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR03",
+      "display_name": "Щелочная батарейка Energizer Industrial, AAA/LR03",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr03pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AAA",
+        "Обозначение IEC": "LR03",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00000266",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR6",
+      "display_name": "Щелочная батарейка Energizer Industrial, AA/LR6",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr6pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AA",
+        "Обозначение IEC": "LR6",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00000339",
+      "identity_scope": "model_core",
+      "manufacturer": "Energizer",
+      "model_core": "LR6",
+      "display_name": "Щелочная батарейка Energizer Industrial, AA/LR6",
+      "technology": "щелочной элемент Zn/MnO₂",
+      "source_url": "https://data.energizer.com/pdfs/ind-lr6pl_eu.pdf",
+      "technical_attributes": {
+        "Типоразмер": "AA",
+        "Обозначение IEC": "LR6",
+        "Номинальное напряжение": "1,5 В",
+        "Рабочая температура": "от −18 до +55 °C"
+      }
+    },
+    {
+      "external_id": "КА-00003245",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR1225",
+      "display_name": "Литиевая батарейка Panasonic BR1225, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/eu/business/products/lithium/coin-br-standard/models/BR1225",
+      "technical_attributes": {
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "48 мА·ч",
+        "Габариты": "Ø12,5 × 2,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00002532",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR1632A",
+      "display_name": "Высокотемпературная литиевая батарейка Panasonic BR1632A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/eu/business/products/lithium/coin-br-high-temp/models/BR1632A",
+      "technical_attributes": {
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "120 мА·ч",
+        "Габариты": "Ø16,0 × 3,2 мм",
+        "Рабочая температура": "от −40 до +125 °C"
+      }
+    },
+    {
+      "external_id": "КА-00003993",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004315",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004316",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004440",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004441",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004442",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004443",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004483",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00004851",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "КА-00005522",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    },
+    {
+      "external_id": "ФР-00000805",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "BR-2/3A",
+      "display_name": "Литиевая батарейка Panasonic BR-2/3A, 3 В",
+      "technology": "первичный литиевый элемент BR (poly-carbonmonofluoride)",
+      "source_url": "https://energy.panasonic.com/tw/business/products/lithium/cylindrical-br/models/BR-2-3A",
+      "technical_attributes": {
+        "Эквивалентное обозначение": "BR17335",
+        "Номинальное напряжение": "3 В",
+        "Номинальная ёмкость": "1200 мА·ч",
+        "Габариты": "Ø17,0 × 33,5 мм",
+        "Рабочая температура": "от −40 до +85 °C"
+      }
+    }
+  ]
+}

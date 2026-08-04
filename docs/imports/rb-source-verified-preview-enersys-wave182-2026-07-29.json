@@ -1,0 +1,117 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:4 OPzV 200",
+      "manufacturer": "EnerSys",
+      "mpn": "4 OPzV 200",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-4-opzv-200"
+    },
+    {
+      "external_id": "manufacturer:enersys:5 OPzV 250",
+      "manufacturer": "EnerSys",
+      "mpn": "5 OPzV 250",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-5-opzv-250"
+    },
+    {
+      "external_id": "manufacturer:enersys:6 OPzV 300",
+      "manufacturer": "EnerSys",
+      "mpn": "6 OPzV 300",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6-opzv-300"
+    },
+    {
+      "external_id": "manufacturer:enersys:5 OPzV 350",
+      "manufacturer": "EnerSys",
+      "mpn": "5 OPzV 350",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-5-opzv-350"
+    },
+    {
+      "external_id": "manufacturer:enersys:6 OPzV 420",
+      "manufacturer": "EnerSys",
+      "mpn": "6 OPzV 420",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6-opzv-420"
+    },
+    {
+      "external_id": "manufacturer:enersys:7 OPzV 490",
+      "manufacturer": "EnerSys",
+      "mpn": "7 OPzV 490",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-7-opzv-490"
+    },
+    {
+      "external_id": "manufacturer:enersys:6 OPzV 600",
+      "manufacturer": "EnerSys",
+      "mpn": "6 OPzV 600",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-6-opzv-600"
+    },
+    {
+      "external_id": "manufacturer:enersys:8 OPzV 800",
+      "manufacturer": "EnerSys",
+      "mpn": "8 OPzV 800",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-8-opzv-800"
+    },
+    {
+      "external_id": "manufacturer:enersys:10 OPzV 1000",
+      "manufacturer": "EnerSys",
+      "mpn": "10 OPzV 1000",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-10-opzv-1000"
+    },
+    {
+      "external_id": "manufacturer:enersys:12 OPzV 1200",
+      "manufacturer": "EnerSys",
+      "mpn": "12 OPzV 1200",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-12-opzv-1200"
+    },
+    {
+      "external_id": "manufacturer:enersys:12 OPzV 1500",
+      "manufacturer": "EnerSys",
+      "mpn": "12 OPzV 1500",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-12-opzv-1500"
+    },
+    {
+      "external_id": "manufacturer:enersys:16 OPzV 2000",
+      "manufacturer": "EnerSys",
+      "mpn": "16 OPzV 2000",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-16-opzv-2000"
+    },
+    {
+      "external_id": "manufacturer:enersys:20 OPzV 2500",
+      "manufacturer": "EnerSys",
+      "mpn": "20 OPzV 2500",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-20-opzv-2500"
+    },
+    {
+      "external_id": "manufacturer:enersys:24 OPzV 3000",
+      "manufacturer": "EnerSys",
+      "mpn": "24 OPzV 3000",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-24-opzv-3000"
+    }
+  ]
+}

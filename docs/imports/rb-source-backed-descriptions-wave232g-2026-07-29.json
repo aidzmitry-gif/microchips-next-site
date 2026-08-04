@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "purpose": "Two exact EnerSys descriptions from pinned official catalogues; no price, stock, warranty, publication, URL or image-rights claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:24582",
+      "identity_scope": "exact",
+      "manufacturer": "EnerSys",
+      "mpn": "0859-0016",
+      "display_name": "Аккумулятор EnerSys CYCLON Monobloc 0859-0016",
+      "technology": "герметичный свинцово-кислотный аккумулятор EnerSys CYCLON с пластинами из чистого свинца и AGM-сепаратором",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "8,0 А·ч",
+        "Конфигурация": "моноблок 1 × 6 элементов",
+        "Габариты": "276,4 × 54,1 × 102,1 мм",
+        "Масса": "2,86 кг",
+        "Технология": "герметичный свинцово-кислотный аккумулятор EnerSys CYCLON с пластинами из чистого свинца и AGM-сепаратором"
+      }
+    },
+    {
+      "external_id": "bitrix:26048",
+      "identity_scope": "model_core",
+      "manufacturer": "EnerSys",
+      "model_core": "12V70",
+      "technology": "герметизированный свинцово-кислотный аккумулятор VRLA с газовой рекомбинацией и AGM-сепаратором",
+      "source_url": "https://www.enersys.com/493bb4/globalassets/documents/product-documentation/powersafe/v-tt/emea/en-v-rs-013.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "EnerSys",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Ёмкость C10": "68 А·ч до 1,80 В/элемент при 20 °C",
+        "Ёмкость C8": "70 А·ч до 1,75 В/элемент при 25 °C",
+        "Габариты корпуса": "314 × 164 × 204 мм",
+        "Высота с соединителями": "224 мм",
+        "Масса": "24,9 кг",
+        "Внутреннее сопротивление": "6,95 мОм",
+        "Ток короткого замыкания": "1814 А",
+        "Тип вывода": "M6",
+        "Технология": "герметизированный свинцово-кислотный аккумулятор VRLA с газовой рекомбинацией и AGM-сепаратором"
+      }
+    }
+  ]
+}

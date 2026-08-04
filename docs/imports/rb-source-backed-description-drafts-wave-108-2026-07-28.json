@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "purpose": "Seven exact UPS, UPS-battery and traction-battery descriptions backed by current manufacturer evidence. No price, stock, local warranty or indexability claim is authorized.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004889",
+      "manufacturer": "CyberPower",
+      "mpn": "UT2200EG",
+      "display_name": "Линейно-интерактивный ИБП CyberPower UT2200EG, 2200 ВА / 1320 Вт",
+      "technology": "линейно-интерактивный однофазный ИБП с автоматической регулировкой напряжения AVR",
+      "source_url": "https://www.cyberpower.com/global/en/product/sku/ut2200eg",
+      "source_kind": "official CyberPower product page for the exact UT2200EG model",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Топология": "line-interactive",
+        "Полная мощность": "2200 ВА",
+        "Активная мощность": "1320 Вт",
+        "Номинальное входное напряжение": "230 В ±10 %",
+        "Диапазон входного напряжения": "167–295 В",
+        "Форма сигнала от батареи": "аппроксимированная синусоида",
+        "Время переключения": "обычно 4 мс",
+        "Выходные розетки": "4 × Schuko с батарейной поддержкой и защитой от импульсов",
+        "Форм-фактор": "башня"
+      }
+    },
+    {
+      "external_id": "ФР-00001011",
+      "manufacturer": "TAB",
+      "mpn": "215180",
+      "display_name": "Тяговый аккумулятор TAB 215180 Golf Cart GEL, 6 В, 180 А·ч C5",
+      "technology": "тяговый свинцово-кислотный аккумулятор Golf Cart с иммобилизованным гелевым электролитом",
+      "source_url": "https://www.tabitalia.com/public/documenti/TAB%20Small%20Traction%26Leisure.pdf",
+      "source_kind": "official TAB Small Traction & Leisure catalogue with the exact 215180 row",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Ёмкость C100": "235 А·ч",
+        "Ёмкость C20": "210 А·ч",
+        "Ёмкость C5": "180 А·ч",
+        "Технология": "Golf Cart GEL",
+        "Габариты": "244 × 190 × 255 мм; полная высота 276 мм",
+        "Масса": "30,9 кг"
+      }
+    },
+    {
+      "external_id": "КА-00005755",
+      "manufacturer": "IPPON",
+      "mpn": "Innova TB 1000",
+      "display_name": "Онлайн-ИБП IPPON Innova TB 1000, 1000 ВА / 900 Вт",
+      "technology": "однофазный онлайн-ИБП с двойным преобразованием и чистой синусоидой",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1000-2050420/",
+      "source_kind": "official IPPON product page for the exact Innova TB 1000 model",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Топология": "online, двойное преобразование",
+        "Количество фаз": "1/1",
+        "Полная мощность": "1000 ВА",
+        "Активная мощность": "900 Вт",
+        "Выходное напряжение": "208 / 220 / 230 / 240 В",
+        "Форма выходного сигнала": "чистая синусоида",
+        "Выходные розетки": "4 × IEC 320 C13 с батарейной поддержкой",
+        "Встроенные аккумуляторы": "2 × 12 В, 9 А·ч, свинцово-кислотные",
+        "Габариты": "140 × 324 × 184 мм",
+        "Масса": "8,5 кг"
+      }
+    },
+    {
+      "external_id": "КА-00003995",
+      "manufacturer": "IPPON",
+      "mpn": "Back Basic 1050 Euro",
+      "display_name": "Линейно-интерактивный ИБП IPPON Back Basic 1050 Euro, 1050 ВА / 600 Вт",
+      "technology": "однофазный линейно-интерактивный ИБП с автоматической регулировкой напряжения",
+      "source_url": "https://ippon.ru/catalog/item/ippon-1050-Euro-403409/",
+      "source_kind": "official IPPON product page for the exact Back Basic 1050 Euro model",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Топология": "line-interactive",
+        "Количество фаз": "1/1",
+        "Полная мощность": "1050 ВА",
+        "Активная мощность": "600 Вт",
+        "Выходное напряжение": "220 В",
+        "Форма выходного сигнала": "модифицированная синусоида",
+        "Диапазон входного напряжения": "162–275 В",
+        "Выходные розетки": "2 × EURO с батарейной поддержкой",
+        "Встроенный аккумулятор": "1 × 12 В, 9 А·ч, необслуживаемый свинцово-кислотный",
+        "Габариты": "96 × 138 × 286 мм",
+        "Масса": "4,9 кг"
+      }
+    },
+    {
+      "external_id": "КА-00005606",
+      "manufacturer": "OMRON",
+      "mpn": "S8BA-24D24D480SBF",
+      "display_name": "Контроллер ИБП постоянного тока OMRON S8BA-24D24D480SBF, 24 В, 480 Вт",
+      "technology": "контроллер ИБП постоянного тока с отдельным литий-ионным аккумуляторным модулем",
+      "source_url": "https://www.ia.omron.com/data_pdf/cat/s8ba_u701-e1_4_9_csm1042516.pdf?id=3450",
+      "source_kind": "official OMRON S8BA catalogue for the exact S8BA-24D24D480SBF control unit",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное входное напряжение": "24 В DC",
+        "Диапазон входного напряжения": "23–28 В DC",
+        "Номинальный выходной ток": "20 А",
+        "Номинальная мощность": "480 Вт",
+        "Время переключения": "без прерывания",
+        "Исполнение": "контроллер для раздельного аккумуляторного модуля",
+        "Требуемый аккумуляторный модуль": "OMRON S8BA-S480L, приобретается отдельно",
+        "Параметры модуля S8BA-S480L": "25,2 В DC, 3900 мА·ч, литий-ионный, около 1,5 кг"
+      }
+    },
+    {
+      "external_id": "КА-00003351",
+      "manufacturer": "APC",
+      "mpn": "RBC11",
+      "display_name": "Сменный аккумуляторный картридж APC RBC11, 12 В, 17 А·ч",
+      "technology": "сменный свинцово-кислотный аккумуляторный картридж для совместимых ИБП APC Smart-UPS",
+      "source_url": "https://www.se.com/us/en/product/RBC11/apc-replacement-battery-cartridge-11-with-2-year-warranty/",
+      "source_kind": "official Schneider Electric / APC product page for the exact RBC11 cartridge",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Ёмкость": "17 А·ч",
+        "Химическая система": "свинцово-кислотная",
+        "Исполнение": "сменный аккумуляторный картридж",
+        "Совместимость": "совместимые модели APC Smart-UPS; точную совместимость следует сверять по модели ИБП"
+      }
+    },
+    {
+      "external_id": "КА-00004378",
+      "manufacturer": "Ventura",
+      "mpn": "VTG 12 080 XT",
+      "display_name": "Тяговый гелевый аккумулятор Ventura VTG 12 080 XT, 12 В, 71 А·ч C5",
+      "technology": "необслуживаемый свинцово-кислотный аккумулятор серии Ventura VTG XT с электролитом TRUE GEL для тягового и стационарного применения",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "source_kind": "official Ventura industrial-battery catalogue with the exact VTG 12 080 XT row",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Ёмкость C5": "71 А·ч",
+        "Ёмкость C10": "74 А·ч",
+        "Ёмкость C20": "80 А·ч",
+        "Технология": "TRUE GEL",
+        "Назначение": "тяговое и стационарное применение",
+        "Габариты": "254 × 168 × 203 мм",
+        "Масса": "25 кг",
+        "Тип вывода": "F6 / A-Pole"
+      }
+    }
+  ]
+}

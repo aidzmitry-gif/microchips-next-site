@@ -1,0 +1,12 @@
+external_id,manufacturer,identity,identity_scope,legacy_element_id,legacy_name,detail_picture_file_id
+КА-00001895,Delta,HR 6-12,model_core,1481,"Аккумулятор Delta HR 6-12 (AGM, 12Ah)",78972
+КА-00002376,Ventura,GP 6-4.5,model_core,1607,"Аккумулятор Ventura GP 6-4.5 (AGM, 4.5Ah)",79966
+КА-00003890,Ventura,GPL 12-45,model_core,1611,"Аккумулятор Ventura GPL 12-45 (AGM, 45Ah)",80018
+КА-00002074,CSB,HR1221W,model_core,1796,"Аккумулятор CSB HR1221W F2 (AGM, 5Ah)",78906
+КА-00003548,Yuasa,NP4-12,model_core,2998,"Аккумулятор Yuasa NP 4-12 (AGM, 4Ah)",80148
+КА-00002670,CSB,HRL1234W F2FR,model_core,3258,"Аккумулятор CSB HRL1234W F2FR (AGM, 9Ah)",78872
+КА-00002317,Delta,FT 12-125 M,model_core,20151,"Аккумулятор Delta FT 12-125 M (AGM, 125Ah)",80608
+КА-00001863,Delta,FT 12-50 M,model_core,20148,"Аккумулятор Delta FT 12-50 M (AGM, 50Ah)",80600
+КА-00005320,Ventura,HR 1290W,model_core,1568,"Аккумулятор Ventura HR 1290W (AGM, 21Ah)",80032
+КА-00005686,CSB,HRL12330W,model_core,3247,"Аккумулятор CSB HRL12330W (AGM, 85Ah)",78878
+КА-00006757,Delta,FTS 12-100 X,model_core,20175,"Аккумулятор Delta XPERT FTS 12-100 X (AGM, 100Ah)",80656

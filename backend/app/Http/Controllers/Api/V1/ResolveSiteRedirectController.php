@@ -29,7 +29,7 @@ class ResolveSiteRedirectController extends Controller
             ->where('is_active', true)
             ->first();
 
-        if ($redirect === null) {
+        if ($redirect === null || ! $resolver->isSafeLocalPath($redirect->target_path)) {
             return response()->json(['kind' => 'not_found', 'locale' => $locale]);
         }
 

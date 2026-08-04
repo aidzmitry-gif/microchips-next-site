@@ -1,0 +1,173 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:exide:NVSL020190WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020190WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020190wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020245WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020245WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020245wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020305WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020305WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020305wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020380WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020380WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020380wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020450WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020450WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020450wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020550WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020550WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020550wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020660WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020660WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020660wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020765WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020765WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020765wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL020985WC0FC",
+      "manufacturer": "Exide",
+      "mpn": "NVSL020985WC0FC",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl020985wc0fc"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL021080WC0FC",
+      "manufacturer": "Exide",
+      "mpn": "NVSL021080WC0FC",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl021080wc0fc"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL021320WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL021320WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl021320wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL021410WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL021410WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl021410wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL021650WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL021650WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl021650wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL021990WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL021990WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl021990wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL022350WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL022350WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl022350wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL022500WC0FB",
+      "manufacturer": "Exide",
+      "mpn": "NVSL022500WC0FB",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl022500wc0fb"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL023100WC0FA",
+      "manufacturer": "Exide",
+      "mpn": "NVSL023100WC0FA",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl023100wc0fa"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL023350WC0FA",
+      "manufacturer": "Exide",
+      "mpn": "NVSL023350WC0FA",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl023350wc0fa"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL023850WC0FA",
+      "manufacturer": "Exide",
+      "mpn": "NVSL023850WC0FA",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl023850wc0fa"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL024100WC0FA",
+      "manufacturer": "Exide",
+      "mpn": "NVSL024100WC0FA",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl024100wc0fa"
+    },
+    {
+      "external_id": "manufacturer:exide:NVSL024600WC0FA",
+      "manufacturer": "Exide",
+      "mpn": "NVSL024600WC0FA",
+      "source_url": "https://www.exidegroup.com/en/document/classic-opzs-solar-datasheet",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "exide-nvsl024600wc0fa"
+    }
+  ]
+}

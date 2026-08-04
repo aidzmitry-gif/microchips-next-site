@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:1569",
+      "current_name": "Аккумулятор Panasonic LC-XC1222P (AGM, 22Ah)",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-XC1222P",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C70.PDF",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "checked_at": "2026-07-29",
+      "product_type": "VRLA cycle long-life battery",
+      "source_snapshot_path": "../audits/sources/wave245a-panasonic/lc-xc1222p-d4e6e6bd1c485281.pdf",
+      "source_snapshot_sha256": "d4e6e6bd1c48528148edae0dcf447fb4b079fa0b1ea004c4a5dd3ea50568ba2a"
+    },
+    {
+      "external_id": "bitrix:1580",
+      "current_name": "Аккумулятор Panasonic LC-XC1228P (AGM, 28Ah)",
+      "manufacturer": "Panasonic",
+      "mpn": "LC-XC1228P",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C61.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "checked_at": "2026-07-29",
+      "product_type": "VRLA cycle long-life battery",
+      "source_snapshot_path": "../audits/sources/wave245a-panasonic/lc-xc1228p-37a71eca02b555d2.pdf",
+      "source_snapshot_sha256": "37a71eca02b555d23ead877169849afebb075c27b9e9ecf2b5f2d7c19172ee93"
+    }
+  ]
+}

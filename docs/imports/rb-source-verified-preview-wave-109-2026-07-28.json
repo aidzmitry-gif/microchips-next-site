@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Two exact-model noindex online-UPS previews without unverified price, stock, local warranty or image claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003387",
+      "manufacturer": "Парус электро",
+      "mpn": "СИПБ1КА.10-11",
+      "source_url": "https://parus-electro.ru/catalog/ibp-peremennogo-toka/sipb1ka_10_11/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "parus-electro-sipb1ka-10-11",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005734",
+      "manufacturer": "Сайбер Электро",
+      "mpn": "ЭКСПЕРТ-II-1000Р",
+      "source_url": "https://xn--80acmarjf0aodcu3l.xn--p1ai/catalog/ibp-po-sfere-primeneniya/ibp-dlya-ofisa/ekspert-ii-1000r/",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "cyber-electro-expert-ii-1000r",
+      "replace_categories": true
+    }
+  ]
+}

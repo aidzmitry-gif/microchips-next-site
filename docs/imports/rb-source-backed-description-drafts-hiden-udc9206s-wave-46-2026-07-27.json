@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from a technical manual for the Hiden Expert UDC9200S 6-10 kVA series. It has no price, stock, image-rights, local warranty or publication claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005082",
+      "manufacturer": "Hiden",
+      "mpn": "Expert UDC9206S",
+      "display_name": "Источник бесперебойного питания Hiden Expert UDC9206S",
+      "technology": "Онлайн ИБП с двойным преобразованием",
+      "source_url": "https://www.ups-mag.ru/upload/files/ups/hiden/hiden-expert/Rukovodstvo_UDC9200S_6-10.pdf",
+      "source_kind": "Hiden Expert UDC9200S 6-10 kVA technical manual",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Топология": "On-line (двойное преобразование)",
+        "Полная мощность": "6 кВА",
+        "Активная мощность": "6 кВт",
+        "Фазность": "1 фаза на входе / 1 фаза на выходе",
+        "Диапазон входного напряжения": "110–288 В",
+        "Диапазон входной частоты": "40–70 Гц",
+        "Встроенные АКБ": "Да"
+      }
+    }
+  ]
+}

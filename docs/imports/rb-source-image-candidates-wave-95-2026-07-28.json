@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact-model official manufacturer image candidates. Identity is visually verified; commercial reuse rights remain pending, so these records must stay non-public.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003468",
+      "source_page_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1226/",
+      "source_asset_url": "https://www.delta-battery.ru/upload/iblock/05f/delta_dtm_1226.jpg",
+      "source_kind": "official manufacturer product image",
+      "verification_note": "Visible case label exactly reads DTM 1226 and 12V 26Ah. Identity passed; written commercial reuse permission remains pending."
+    },
+    {
+      "external_id": "КА-00002817",
+      "source_page_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1233/",
+      "source_asset_url": "https://www.delta-battery.ru/upload/iblock/e09/delta_dt_1233.jpg",
+      "source_kind": "official manufacturer product image",
+      "verification_note": "Visible case label exactly reads DT 1233 and 12V 33Ah. Identity passed; written commercial reuse permission remains pending."
+    },
+    {
+      "external_id": "КА-00003445",
+      "source_page_url": "https://www.delta-battery.ru/catalog/cgd/delta_cgd_1233/",
+      "source_asset_url": "https://www.delta-battery.ru/upload/iblock/b3d/eik9c69dbuiy5rssylt7tr5ebws7kvjw/delta_cgd_1233.jpg",
+      "source_kind": "official manufacturer product image",
+      "verification_note": "Visible case label exactly reads CGD 1233 and 12V / 33Ah. Identity passed; written commercial reuse permission remains pending."
+    }
+  ]
+}

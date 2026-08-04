@@ -50,6 +50,22 @@ jobs:
         shell: pwsh
         run: ./scripts/quality-gate.ps1
 
+      - name: Install Chromium for RB browser regression
+        run: pnpm --filter frontend exec playwright install --with-deps chromium
+
+      - name: Run RB desktop and mobile browser regression
+        run: pnpm --filter frontend test:e2e
+
+      - name: Upload browser regression diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report
+          path: |
+            frontend/playwright-report/
+            frontend/test-results/
+          if-no-files-found: ignore
+
       - name: Validate production deployment contour and preflight
         env:
           POSTGRES_PASSWORD: ci-only-password-not-for-production
@@ -91,9 +107,17 @@ jobs:
           php -r '$x=@simplexml_load_file("coverage.xml"); if(!$x){echo "no coverage.xml\n";exit;} $cwd=getcwd()."/"; foreach($x->xpath("//file") as $f){$n=str_replace($cwd,"",(string)$f["name"]); $u=[]; foreach($f->line as $l){ if((string)$l["type"]==="stmt" && (int)$l["count"]===0){$u[]=(int)$l["num"];} } if($u){echo $n.": ".implode(",",$u)."\n";} }'
 
   docker-smoke:
-    name: Docker build, migrate and HTTP smoke
+    name: Production Docker build, migrate and HTTP smoke
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    env:
+      POSTGRES_PASSWORD: ci-only-password-not-for-production
+      NEXT_REVALIDATE_SECRET: ci-only-revalidate-secret-with-32-characters
+      LEAD_PROXY_SECRET: ci-only-lead-proxy-secret-with-32-characters
+      DEFAULT_SITE_HOST: microchips.by
+      PUBLIC_APP_URL: https://microchips.by
+      BACKEND_PORT: '8080'
+      FRONTEND_PORT: '3000'
 
     steps:
       - name: Check out source
@@ -102,33 +126,35 @@ jobs:
       - name: Generate an ephemeral Laravel key
         run: echo "LARAVEL_APP_KEY=base64:$(openssl rand -base64 32 | tr -d '\n')" >> "$GITHUB_ENV"
 
-      - name: Build and start the complete stack
-        run: docker compose --env-file .env.example up --build --wait -d
-
-      - name: Apply PostgreSQL migrations
-        run: docker compose --env-file .env.example exec -T backend php artisan migrate --force
+      - name: Build and start the production deployment graph
+        run: |
+          docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml up --build --wait -d
+          test "$(docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml port nginx 80)" = "127.0.0.1:8080"
+          test "$(docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml port frontend 3000)" = "127.0.0.1:3000"
+          docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml exec -T worker php artisan horizon:status
 
       - name: Verify PostgreSQL backup and isolated restore
         run: docker compose --env-file .env.example exec -T postgres sh -s < scripts/verify-postgres-backup.sh
 
       - name: Verify a persisted PostgreSQL backup file
         run: |
+          docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml exec -T backend php artisan admin:bootstrap ci-backup-marker@example.invalid --name='CI backup marker' --password='ci-only-bootstrap-password-at-least-16'
           backup_dir="$(mktemp -d)"
           trap 'rm -rf "$backup_dir"' EXIT
           POSTGRES_DB=microchips POSTGRES_USER=microchips COMPOSE_ENV_FILE=.env.example POSTGRES_BACKUP_DIR="$backup_dir" ./scripts/create-postgres-backup.sh
-          POSTGRES_DB=microchips POSTGRES_USER=microchips COMPOSE_ENV_FILE=.env.example POSTGRES_BACKUP_FILE="$(find "$backup_dir" -name '*.dump' -print -quit)" ./scripts/verify-postgres-backup-file.sh
+          POSTGRES_DB=microchips POSTGRES_USER=microchips COMPOSE_ENV_FILE=.env.example POSTGRES_BACKUP_FILE="$(find "$backup_dir" -name '*.dump' -print -quit)" POSTGRES_BACKUP_EXPECT_TABLE=users POSTGRES_BACKUP_EXPECT_MIN_ROWS=1 ./scripts/verify-postgres-backup-file.sh
 
       - name: Verify backend and frontend over HTTP
         run: |
           curl --fail --silent --show-error http://127.0.0.1:8080/admin/login > /dev/null
-          curl --fail --silent --show-error http://127.0.0.1:3000/robots.txt > /dev/null
+          curl --fail --silent --show-error -H 'Host: microchips.by' http://127.0.0.1:3000/robots.txt | grep --fixed-strings 'Disallow: /'
 
       - name: Show container diagnostics on failure
         if: failure()
         run: |
-          docker compose --env-file .env.example ps
-          docker compose --env-file .env.example logs --no-color --tail=200
+          docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml ps
+          docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml logs --no-color --tail=200
 
       - name: Stop the stack
         if: always()
-        run: docker compose --env-file .env.example down --volumes
+        run: docker compose --env-file .env.example -f docker-compose.yml -f docker-compose.production.yml down --volumes

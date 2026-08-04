@@ -51,6 +51,14 @@ describe("site-api", () => {
       await expect(getCurrentHost()).resolves.toBe("direct.example.com");
     });
 
+    it("uses the configured market profile for a localhost preview", async () => {
+      process.env.DEFAULT_SITE_HOST = "microchips-by.test";
+      headersMock.mockResolvedValue(makeHeaders({ host: "localhost:3000" }));
+
+      const { getCurrentHost } = await import("./site-api");
+      await expect(getCurrentHost()).resolves.toBe("microchips-by.test");
+    });
+
     it("strips a leading www. and a trailing port, and lowercases the host", async () => {
       headersMock.mockResolvedValue(makeHeaders({ host: "WWW.Example.COM:8080" }));
 
@@ -175,7 +183,14 @@ describe("site-api", () => {
       global.fetch = fetchMock;
 
       const { fetchCatalogProducts } = await import("./site-api");
-      const result = await fetchCatalogProducts("microchips-by", { page: 2, perPage: 12, query: "AGM 120" });
+      const result = await fetchCatalogProducts("microchips-by", {
+        page: 2,
+        perPage: 12,
+        query: "AGM 120",
+        locale: "uz-UZ",
+        sort: "name_asc",
+        filters: { manufacturer: "FIAMM", technology: "AGM", nominal_voltage: "12 V", capacity: "7 Ah" },
+      });
 
       expect(result).toEqual({ ...payload, available: true });
       const calledUrl = fetchMock.mock.calls[0][0] as string;
@@ -183,6 +198,12 @@ describe("site-api", () => {
       expect(calledUrl).toContain("page=2");
       expect(calledUrl).toContain("per_page=12");
       expect(calledUrl).toContain("q=AGM+120");
+      expect(calledUrl).toContain("locale=uz-UZ");
+      expect(calledUrl).toContain("sort=name_asc");
+      expect(calledUrl).toContain("manufacturer=FIAMM");
+      expect(calledUrl).toContain("technology=AGM");
+      expect(calledUrl).toContain("nominal_voltage=12+V");
+      expect(calledUrl).toContain("capacity=7+Ah");
     });
 
     it("returns an unavailable empty catalogue on an API error", async () => {

@@ -34,8 +34,24 @@ class LeadController extends Controller
             'message' => ['nullable', 'string', 'max:5000'],
             'page_url' => ['required', 'url', 'max:2048'],
             'cart' => ['nullable', 'array', 'max:100'],
+            'cart.*' => ['array:external_id,variant_key,name,sku,quantity,attributes'],
+            'cart.*.external_id' => ['nullable', 'string', 'max:255'],
+            'cart.*.variant_key' => ['nullable', 'string', 'max:255'],
+            'cart.*.name' => ['nullable', 'string', 'max:500'],
+            'cart.*.sku' => ['nullable', 'string', 'max:255'],
+            'cart.*.quantity' => ['required', 'integer', 'min:1', 'max:100000'],
+            'cart.*.attributes' => ['nullable', 'array', 'max:50'],
+            'cart.*.attributes.*' => ['string', 'max:500'],
             'utm' => ['nullable', 'array', 'max:30'],
         ]);
+
+        foreach ($validated['cart'] ?? [] as $index => $line) {
+            if (blank($line['external_id'] ?? null) && blank($line['sku'] ?? null) && blank($line['name'] ?? null)) {
+                throw ValidationException::withMessages([
+                    "cart.{$index}" => ['Each cart line requires an external_id, sku or name.'],
+                ]);
+            }
+        }
 
         $site = Site::query()
             ->where('key', $validated['site_key'])
@@ -66,7 +82,13 @@ class LeadController extends Controller
             'status' => 'new',
         ]);
 
-        SyncLeadToBitrix24::dispatch($lead);
+        // Local inbox is the default operating mode. A CRM job is created
+        // only after an operator explicitly enables that integration for the
+        // current site, so an absent Bitrix24 account cannot manufacture
+        // retries or false external errors for an otherwise accepted lead.
+        if ($site->integrations()->where('driver', 'bitrix24')->where('is_enabled', true)->exists()) {
+            SyncLeadToBitrix24::dispatch($lead);
+        }
 
         return response()->json(['id' => $lead->id, 'status' => 'accepted'], 201);
     }

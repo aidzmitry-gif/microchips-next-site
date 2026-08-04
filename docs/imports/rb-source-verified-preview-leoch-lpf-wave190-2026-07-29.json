@@ -1,0 +1,133 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:leoch:LPF12-40",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-40",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-40"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-50",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-50",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-50"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-55",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-55",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-55"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-70",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-70",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-70"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-75",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-75",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-75"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-90",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-90",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-90"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-100",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-100",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-100"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-100A",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-100A",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-100a"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-100(P)",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-100(P)",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-100-p"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-125",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-125",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-125"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-150",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-150",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-150"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-150V",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-150V",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-150v"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-170",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-170",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-170"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-190",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-190",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-190"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-190(P)",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-190(P)",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-190-p"
+    },
+    {
+      "external_id": "manufacturer:leoch:LPF12-200",
+      "manufacturer": "LEOCH",
+      "mpn": "LPF12-200",
+      "source_url": "https://download.leoch.com/Network%20Power%20Battery/Leoch%20VRLA-AGM%20Batteries.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "leoch-lpf12-200"
+    }
+  ]
+}

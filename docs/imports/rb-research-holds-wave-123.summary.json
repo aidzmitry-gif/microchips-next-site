@@ -1,0 +1,12 @@
+{
+  "input_files": [
+    "docs\\imports\\rb-research-holds-wave-122.csv",
+    "docs\\imports\\rb-research-holds-delta-wave-123-2026-07-28.csv",
+    "docs\\imports\\rb-source-backed-description-holds-panasonic-energizer-wave-123-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-mixed-batteries-wave-123-2026-07-28.csv"
+  ],
+  "source_rows": 183,
+  "unique_hold_clusters": 180,
+  "collapsed_duplicate_rows": 3,
+  "invariant": "hold-only ledger; no catalogue, publication or database mutation"
+}

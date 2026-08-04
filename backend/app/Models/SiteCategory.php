@@ -50,6 +50,10 @@ class SiteCategory extends Model
             }
 
             $paths = self::revalidationPaths($siteCategory->site_id, [$siteCategory->id]);
+            if ($siteCategory->is_published || $siteCategory->wasChanged('is_published')) {
+                $paths[] = '/catalog';
+                $paths = array_values(array_unique($paths));
+            }
 
             SiteContentChanged::dispatch($siteCategory->site, $paths === [] ? ['/'] : $paths);
         });

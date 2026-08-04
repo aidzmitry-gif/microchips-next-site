@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "Company-owned legacy Bitrix assets with exact visible model verification.",
+  "images": [
+    {
+      "external_id": "ФР-00000005",
+      "mpn": "DT12012",
+      "asset_file": "sg1u8oo9nfa6l6iaqml12ct8x5nr1ctk.png",
+      "sha256": "b96644e5762ed935a807ee5d84946f1cde2ee7075bd3d9017366bd37cb78adc1",
+      "archive_member": "_shared/upload/iblock/2ab/sg1u8oo9nfa6l6iaqml12ct8x5nr1ctk.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads DELTA DT 12012, 12V 1.2Ah and AGM VRLA Battery; it matches the verified MPN and manufacturer."
+    },
+    {
+      "external_id": "ФР-00000106",
+      "mpn": "DT12100",
+      "asset_file": "meiqc5qbj7ss86vnubay0b4s31odpr26.png",
+      "sha256": "1d1db2723b4be6395856dd78bed9c40223fb7d6c6450c28fda6360caa10a2d81",
+      "archive_member": "_shared/upload/iblock/172/meiqc5qbj7ss86vnubay0b4s31odpr26.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads DELTA DT 12100, 12V 100Ah and AGM VRLA Battery; it matches the verified MPN and manufacturer."
+    },
+    {
+      "external_id": "КА-00001147",
+      "mpn": "DT6028",
+      "asset_file": "cadcx7q4zyx8838xv1zazsp11pvz2c9f.png",
+      "sha256": "57b400df7e899e4f44ed890e7ae65bd8cb8241445c512b600ef7b2722f70534f",
+      "archive_member": "_shared/upload/iblock/f0e/cadcx7q4zyx8838xv1zazsp11pvz2c9f.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads DELTA DT 6028, 6V 2.8Ah and AGM VRLA Battery; it matches the verified MPN and manufacturer."
+    }
+  ]
+}

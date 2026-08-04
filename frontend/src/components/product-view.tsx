@@ -1,10 +1,27 @@
+"use client";
+
 import Link from "next/link";
-import { availabilityLabel, priceLabel } from "@/lib/catalog-presenters";
+import { useState } from "react";
+import { availabilityLabel, priceEvidenceLabel, priceLabel } from "@/lib/catalog-presenters";
 import { QuoteForm } from "@/components/quote-form";
-import type { ProductPayload } from "@/lib/site-api";
+import { CommercialProfile } from "@/components/commercial-profile";
+import type { ProductPayload, QuoteCartLine } from "@/lib/site-api";
 
 export function ProductView({ payload }: { payload: ProductPayload }) {
   const { product } = payload;
+  const [selectedVariantKey, setSelectedVariantKey] = useState("");
+  const selectedVariant = product.variant_group?.options.find((option) => option.variant_key === selectedVariantKey) ?? null;
+  const commercialProduct = selectedVariant ?? product;
+  const observedPriceLabel = priceEvidenceLabel(commercialProduct.price, commercialProduct.price_observed_at);
+  const selectedImagePath = selectedVariant?.image_path ?? product.image_path;
+  const quoteCart: QuoteCartLine[] = [{
+    external_id: selectedVariant?.external_id ?? product.external_id ?? null,
+    variant_key: selectedVariant?.variant_key ?? null,
+    name: selectedVariant ? `${product.name} — ${selectedVariant.label}` : product.name,
+    sku: selectedVariant?.sku ?? product.sku,
+    quantity: 1,
+    attributes: selectedVariant?.attributes ?? product.variant_group?.canonical_attributes ?? {},
+  }];
   const attributes = Object.entries(product.attributes ?? {}).filter(
     (entry): entry is [string, string] => typeof entry[0] === "string" && typeof entry[1] === "string" && Boolean(entry[0].trim()) && Boolean(entry[1].trim()),
   );
@@ -24,9 +41,8 @@ export function ProductView({ payload }: { payload: ProductPayload }) {
           <p className="catalog-eyebrow">Карточка товара</p>
           <h1>{product.name}</h1>
 
-          <div className="product-page__media" role="img" aria-label="Изображение товара не опубликовано">
-            <ProductPlaceholderIcon />
-            <span>Изображение пока не опубликовано</span>
+          <div className="product-page__media" role={selectedImagePath ? undefined : "img"} aria-label={selectedImagePath ? undefined : "Изображение товара не опубликовано"}>
+            {selectedImagePath ? <img src={proxyMediaPath(selectedImagePath)} alt={selectedVariant ? `${product.name} — ${selectedVariant.label}` : product.name} /> : <><ProductPlaceholderIcon /><span>Изображение пока не опубликовано</span></>}
           </div>
 
           {product.description ? (
@@ -59,8 +75,41 @@ export function ProductView({ payload }: { payload: ProductPayload }) {
         </div>
 
         <aside className="product-page__aside" aria-label="Коммерческие условия">
-          <p className="catalog-card__availability">{availabilityLabel(product.availability)}</p>
-          <p className="product-page__price">{priceLabel(product.price, product.currency)}</p>
+          {product.variant_group ? (
+            <fieldset className="product-variant-selector">
+              <legend>{product.variant_group.label}</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="product-variant"
+                  value=""
+                  checked={selectedVariantKey === ""}
+                  onChange={() => setSelectedVariantKey("")}
+                />
+                <span>{product.variant_group.canonical_label}</span>
+              </label>
+              {product.variant_group.options.map((option) => (
+                <label key={option.variant_key}>
+                  <input
+                    type="radio"
+                    name="product-variant"
+                    value={option.variant_key}
+                    checked={selectedVariantKey === option.variant_key}
+                    onChange={() => setSelectedVariantKey(option.variant_key)}
+                  />
+                  <span>{option.label}</span>
+                </label>
+              ))}
+            </fieldset>
+          ) : null}
+          {selectedVariant ? (
+            <VariantFacts label={selectedVariant.label} attributes={selectedVariant.attributes} />
+          ) : product.variant_group ? (
+            <VariantFacts label={product.variant_group.canonical_label} attributes={product.variant_group.canonical_attributes} />
+          ) : null}
+          <p className="catalog-card__availability">{availabilityLabel(commercialProduct.availability)}</p>
+          <p className="product-page__price">{priceLabel(commercialProduct.price, commercialProduct.currency)}</p>
+          {observedPriceLabel && <p className="product-page__price-evidence">{observedPriceLabel}</p>}
           <p className="product-page__commercial-note">
             Итоговые условия, срок поставки и комплект документов подтверждаются в коммерческом предложении.
           </p>
@@ -76,10 +125,37 @@ export function ProductView({ payload }: { payload: ProductPayload }) {
             Укажите название товара и необходимые параметры. Менеджер сверит опубликованные данные и подготовит ответ.
           </p>
         </div>
-        <QuoteForm site={payload.site} subject={`Товар: ${product.name}`} />
+        <QuoteForm
+          site={payload.site}
+          subject={selectedVariant ? `Товар: ${product.name}\nВариант: ${selectedVariant.label}` : `Товар: ${product.name}`}
+          cart={quoteCart}
+        />
       </section>
+
+      <CommercialProfile site={payload.site} />
     </article>
   );
+}
+
+function VariantFacts({ label, attributes }: { label: string; attributes: Record<string, string> }) {
+  const facts = Object.entries(attributes).filter(([, value]) => Boolean(value.trim()));
+  if (facts.length === 0) return null;
+
+  return (
+    <dl className="product-variant-facts" aria-label={`Параметры варианта ${label}`}>
+      {facts.map(([label, value]) => (
+        <div key={label}>
+          <dt>{label}</dt>
+          <dd>{value}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+function proxyMediaPath(path: string): string {
+  const match = path.match(/^\/api\/v1\/media\/(\d+)$/);
+  return match ? `/api/media/${match[1]}` : "";
 }
 
 function ProductFact({ label, value }: { label: string; value: string | null }) {

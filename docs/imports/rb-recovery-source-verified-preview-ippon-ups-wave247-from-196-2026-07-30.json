@@ -1,0 +1,248 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:25109",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Basic 650",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-650",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:25113",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Basic 850",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-850",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25135",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Basic 1500",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-1500",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25137",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Basic 2200",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-2200",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25111",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Basic 650 S Euro",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-650-s-euro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25116",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Basic 850 S Euro",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-basic-850-s-euro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25112",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Office 400",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-office-400",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25114",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Office 600",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-office-600",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25130",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Office 1000",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-office-1000",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25120",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Verso 800",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-verso-800",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25119",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Power Pro II 500",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-power-pro-ii-500",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25124",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Power Pro II 600",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-power-pro-ii-600",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25125",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Power Pro II 700",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-power-pro-ii-700",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25129",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Power Pro II 800",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-power-pro-ii-800",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25127",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Comfo Pro II 650",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-comfo-pro-ii-650",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25128",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Comfo Pro II 850",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-comfo-pro-ii-850",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25132",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Back Comfo Pro II 1050",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-back-comfo-pro-ii-1050",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25133",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Smart Power Pro II 1200",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-smart-power-pro-ii-1200",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25139",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Smart Power Pro II 1600",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-smart-power-pro-ii-1600",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25142",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Smart Power Pro II 2200",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-smart-power-pro-ii-2200",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25138",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Smart Power Pro II 1200 Euro",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-smart-power-pro-ii-1200-euro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25140",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Smart Power Pro II 1600 Euro",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-smart-power-pro-ii-1600-euro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25141",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Smart Power Pro II 2200 Euro",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-smart-power-pro-ii-2200-euro",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:25149",
+      "manufacturer": "IPPON",
+      "identity_scope": "exact",
+      "mpn": "Innova G2 2000L",
+      "source_url": "https://static.ippon.ru/data/download/Ippon_UPS_Catalogue_II_2024.pdf",
+      "category_slug": "catalog/power-systems/ups-systems",
+      "product_slug": "ippon-innova-g2-2000l",
+      "replace_categories": true
+    }
+  ],
+  "purpose": "Wave247 fail-closed recovery replay of a previously verified noindex preview. It may retain only prices with exact current provenance evidence and never creates stock claims, Offer schema or indexable URLs.",
+  "recovery_source_manifest": "rb-source-verified-preview-ippon-ups-wave196-2026-07-29.json"
+}

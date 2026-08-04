@@ -1,0 +1,144 @@
+{
+  "checked_at": "2026-07-30",
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:1488",
+      "missing": false,
+      "name": "Аккумулятор Fiamm FG21202 (AGM, 12Ah)",
+      "manufacturer": null,
+      "mpn": null,
+      "status": "draft",
+      "site_product_count": 1,
+      "site_product_id": 619,
+      "is_published": true,
+      "availability": "on_request",
+      "price": null,
+      "price_evidence_total": 0,
+      "current_price_evidence": [],
+      "verified_media": 0,
+      "family_roles": 0,
+      "urls": [
+        {
+          "path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1488",
+          "is_indexable": false
+        }
+      ],
+      "seos": [
+        {
+          "is_indexable": false,
+          "schema": null
+        }
+      ],
+      "categories": [
+        "seo:batteries-ups"
+      ]
+    },
+    {
+      "external_id": "bitrix:1542",
+      "missing": false,
+      "name": "Аккумулятор Fiamm FG21803 (AGM, 18Ah)",
+      "manufacturer": null,
+      "mpn": null,
+      "status": "draft",
+      "site_product_count": 1,
+      "site_product_id": 672,
+      "is_published": true,
+      "availability": "on_request",
+      "price": null,
+      "price_evidence_total": 0,
+      "current_price_evidence": [],
+      "verified_media": 0,
+      "family_roles": 0,
+      "urls": [
+        {
+          "path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1542",
+          "is_indexable": false
+        }
+      ],
+      "seos": [
+        {
+          "is_indexable": false,
+          "schema": null
+        }
+      ],
+      "categories": [
+        "seo:batteries-ups"
+      ]
+    },
+    {
+      "external_id": "ФР-00001439",
+      "missing": false,
+      "name": "Аккумуляторная батарея FIAMM FG21202",
+      "manufacturer": "FIAMM",
+      "mpn": "FG21202",
+      "status": "active",
+      "site_product_count": 1,
+      "site_product_id": 17654,
+      "is_published": true,
+      "availability": "on_request",
+      "price": "85.00",
+      "price_evidence_total": 1,
+      "current_price_evidence": [
+        {
+          "calculated_price": "85.00",
+          "currency": "BYN"
+        }
+      ],
+      "verified_media": 0,
+      "family_roles": 0,
+      "urls": [
+        {
+          "path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg21202",
+          "is_indexable": false
+        }
+      ],
+      "seos": [
+        {
+          "is_indexable": false,
+          "schema": null
+        }
+      ],
+      "categories": [
+        "seo:batteries-ups"
+      ]
+    },
+    {
+      "external_id": "ФР-00001513",
+      "missing": false,
+      "name": "Аккумуляторная батарея FIAMM FG21803",
+      "manufacturer": "FIAMM",
+      "mpn": "FG21803",
+      "status": "active",
+      "site_product_count": 1,
+      "site_product_id": 17655,
+      "is_published": true,
+      "availability": "on_request",
+      "price": "65.50",
+      "price_evidence_total": 1,
+      "current_price_evidence": [
+        {
+          "calculated_price": "65.50",
+          "currency": "BYN"
+        }
+      ],
+      "verified_media": 0,
+      "family_roles": 0,
+      "urls": [
+        {
+          "path": "/catalog/industrial-batteries/batteries-ups/fiamm-fg21803",
+          "is_indexable": false
+        }
+      ],
+      "seos": [
+        {
+          "is_indexable": false,
+          "schema": null
+        }
+      ],
+      "categories": [
+        "seo:batteries-ups"
+      ]
+    }
+  ]
+}

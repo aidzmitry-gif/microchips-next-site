@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded noindex RB storefront preview of three FIAMM products with source-backed descriptions and exact legacy-image evidence. This manifest never authorizes prices, stock, Offer schema or indexability.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004114",
+      "manufacturer": "FIAMM",
+      "mpn": "6SLA100",
+      "source_url": "https://www.h-energy.ru/wa-data/public/site/manuals/akb/fiamm/fiamm_6sla100-datasheetENG.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-6sla100",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003889",
+      "manufacturer": "FIAMM",
+      "mpn": "6SLA125",
+      "source_url": "https://www.cogenient.com/mfc-refdocs/Fiamm/SLA/6SLA125.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-6sla125",
+      "replace_categories": true
+    },
+    {
+      "external_id": "ФР-00001439",
+      "manufacturer": "FIAMM",
+      "mpn": "FG21202",
+      "source_url": "https://cdn.hdibattery.com/archivos/media/fg21202.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg21202",
+      "replace_categories": true
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:VGM 11",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 11",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-11"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 18",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 18",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-18"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 24",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 24",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-24"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 30",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 30",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-30"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 40",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 40",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-40"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 48",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 48",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-48"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 55",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 55",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-55"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 65",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 65",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-65"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 75",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 75",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-75"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 90",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 90",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-90"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 110",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 110",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-110"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 125",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 125",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-125"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 140",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 140",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-140"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 160",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 160",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-160"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 185",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 185",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-185"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 205",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 205",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-205"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 225",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 225",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-225"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 250",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 250",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-250"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 270",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 270",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-270"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 300",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 300",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-300"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 320",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 320",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-320"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 340",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 340",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-340"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 355",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 355",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-355"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 380",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 380",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-380"
+    },
+    {
+      "external_id": "manufacturer:enersys:VGM 400",
+      "manufacturer": "EnerSys",
+      "mpn": "VGM 400",
+      "source_url": "https://www.enersys.com/4ab530/globalassets/documents/product-documentation/powersafe/vgm/amer/en-rs-amer-ps-vgm.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "enersys-vgm-400"
+    }
+  ]
+}

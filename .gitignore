@@ -18,6 +18,8 @@ backend/vendor/
 backend/storage/*.key
 frontend/.next/
 frontend/node_modules/
+frontend/test-results/
+frontend/playwright-report/
 docs/audits/generated/
 
 # Generated nomenclature report (binary .xlsx; zip timestamps re-dirty it on
@@ -27,3 +29,17 @@ docs/imports/microchips-nomenclature-fixes.xlsx
 # Python bytecode cache (audit/report scripts)
 __pycache__/
 *.pyc
+.pytest_cache/
+.tmp/
+.tmp-*/
+tmp/
+temp-pytest-*/
+pytest-cache-files-*/
+tmpp*/
+scripts/tests/.pytest-*/
+scripts/tests/.tmp-*/
+backend/graphify-out/
+backend/app/graphify-out/
+
+# Third-party snapshot contains a vendor-owned public API key
+docs/audits/sources/wave245c-panasonic/panasonic-industry-terms-service.html

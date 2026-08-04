@@ -5,6 +5,7 @@ const getCurrentHostMock = vi.fn();
 const fetchCatalogProductsMock = vi.fn();
 const fetchCatalogCategoriesMock = vi.fn();
 const redirectMock = vi.fn();
+const permanentRedirectMock = vi.fn();
 const notFoundMock = vi.fn();
 
 vi.mock("@/lib/site-api", () => ({
@@ -21,6 +22,7 @@ vi.mock("@/lib/site-api", () => ({
 
 vi.mock("next/navigation", () => ({
   redirect: (...args: unknown[]) => redirectMock(...args),
+  permanentRedirect: (...args: unknown[]) => permanentRedirectMock(...args),
   notFound: (...args: unknown[]) => notFoundMock(...args),
 }));
 
@@ -47,6 +49,7 @@ beforeEach(() => {
   fetchCatalogProductsMock.mockReset();
   fetchCatalogCategoriesMock.mockReset();
   redirectMock.mockReset();
+  permanentRedirectMock.mockReset();
   notFoundMock.mockReset();
   getCurrentHostMock.mockResolvedValue("microchips.by");
   fetchCatalogCategoriesMock.mockResolvedValue([]);
@@ -203,14 +206,31 @@ describe("generateMetadata", () => {
 });
 
 describe("SitePage redirect/not_found branches", () => {
-  it("calls redirect() with the target path for a redirect kind and does not render page content", async () => {
+  it("keeps a permanent resolver redirect permanent if the proxy fallback is reached", async () => {
     resolveSitePathMock.mockResolvedValue({
       kind: "redirect",
       site,
       redirect: { to: "/new-path", status: 301 },
     });
-    // redirect() throws in real Next.js to halt rendering; emulate that so
+    // permanentRedirect() throws in real Next.js to halt rendering; emulate that so
     // we can assert nothing after the call happens.
+    permanentRedirectMock.mockImplementation(() => {
+      throw new Error("NEXT_REDIRECT");
+    });
+
+    await expect(SitePage(makeParams(["old-path"]))).rejects.toThrow("NEXT_REDIRECT");
+
+    expect(permanentRedirectMock).toHaveBeenCalledWith("/new-path");
+    expect(redirectMock).not.toHaveBeenCalled();
+    expect(notFoundMock).not.toHaveBeenCalled();
+  });
+
+  it("uses the temporary redirect helper for a temporary resolver redirect", async () => {
+    resolveSitePathMock.mockResolvedValue({
+      kind: "redirect",
+      site,
+      redirect: { to: "/new-path", status: 307 },
+    });
     redirectMock.mockImplementation(() => {
       throw new Error("NEXT_REDIRECT");
     });
@@ -218,7 +238,7 @@ describe("SitePage redirect/not_found branches", () => {
     await expect(SitePage(makeParams(["old-path"]))).rejects.toThrow("NEXT_REDIRECT");
 
     expect(redirectMock).toHaveBeenCalledWith("/new-path");
-    expect(notFoundMock).not.toHaveBeenCalled();
+    expect(permanentRedirectMock).not.toHaveBeenCalled();
   });
 
   it("calls notFound() for a not_found kind", async () => {
@@ -266,7 +286,23 @@ describe("SitePage category catalogue", () => {
 
     const result = await SitePage({
       ...makeParams(["catalog", "ups"]),
-      searchParams: Promise.resolve({ page: "3", q: "  Fiamm  " }),
+      searchParams: Promise.resolve({
+        page: "3",
+        q: "  Fiamm  ",
+        sort: "name_desc",
+        manufacturer: "FIAMM",
+        technology: "AGM",
+        nominal_voltage: "12 V",
+        capacity: ["7 Ah", "ignored"],
+        power: "6 kW",
+        input_voltage: "110–288 V",
+        output_voltage: "230 V",
+        input_current: "30 A",
+        output_current: "26 A",
+        phase: "1/1",
+        topology: "On-line",
+        device_type: "UPS",
+      }),
     });
 
     expect(result).toBeTruthy();
@@ -275,6 +311,22 @@ describe("SitePage category catalogue", () => {
       perPage: 12,
       query: "Fiamm",
       category: "ups",
+      locale: "ru",
+      sort: "name_desc",
+      filters: {
+        manufacturer: "FIAMM",
+        technology: "AGM",
+        nominal_voltage: "12 V",
+        capacity: "7 Ah",
+        power: "6 kW",
+        input_voltage: "110–288 V",
+        output_voltage: "230 V",
+        input_current: "30 A",
+        output_current: "26 A",
+        phase: "1/1",
+        topology: "On-line",
+        device_type: "UPS",
+      },
     });
   });
 
@@ -308,6 +360,45 @@ describe("SitePage category catalogue", () => {
       perPage: 12,
       query: "",
       category: "ups",
+      locale: "ru",
+      sort: undefined,
+      filters: {},
+    });
+  });
+
+  it("preserves an allowed evidence-backed price sort in the catalogue request", async () => {
+    resolveSitePathMock.mockResolvedValue({
+      kind: "category",
+      site,
+      path: "/catalog/ups",
+      category: { name: "UPS", slug: "ups" },
+      seo: {
+        title: "UPS category",
+        description: null,
+        canonicalPath: "/catalog/ups",
+        isIndexable: true,
+        hreflang: {},
+      },
+    });
+    fetchCatalogProductsMock.mockResolvedValue({
+      data: [],
+      meta: { current_page: 1, last_page: 1, total: 0, price_sort_enabled: true },
+      available: true,
+    });
+
+    await SitePage({
+      ...makeParams(["catalog", "ups"]),
+      searchParams: Promise.resolve({ sort: "price_asc" }),
+    });
+
+    expect(fetchCatalogProductsMock).toHaveBeenCalledWith("rb", {
+      page: 1,
+      perPage: 12,
+      query: "",
+      category: "ups",
+      locale: "ru",
+      sort: "price_asc",
+      filters: {},
     });
   });
 });

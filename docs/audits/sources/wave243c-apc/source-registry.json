@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "model": "APCRBC109",
+      "requested_url": "https://iportal.se.com/Contents/docs/UPS-APCRBC109_Data%20sheet.pdf",
+      "final_url": "https://iportal.se.com/Contents/docs/UPS-APCRBC109_Data%20sheet.pdf",
+      "snapshot_path": "docs/audits/sources/wave243c-apc/apcrbc109.pdf",
+      "snapshot_sha256": "0490bc1d939ec5f00df80b5c595f0161811b9fdf2f00387e11fe2f6e2db7871a",
+      "bytes": 133158
+    }
+  ]
+}

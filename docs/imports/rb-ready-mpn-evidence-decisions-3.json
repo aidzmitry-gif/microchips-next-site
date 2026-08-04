@@ -1,0 +1,74 @@
+{
+  "decisions": [
+    {
+      "candidate_id": 5,
+      "external_id_1c": "КА-00003442",
+      "confirmed_mpn": "CA1213",
+      "manufacturer": "Casil",
+      "category": "AGM",
+      "source_url": "https://www.electro51.ru/assets/files/catalogs/CASIL-Battery-Product-Catalogue.pdf",
+      "source_kind": "manufacturer catalogue",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 8,
+      "external_id_1c": "ФР-00000106",
+      "confirmed_mpn": "DT12100",
+      "manufacturer": "Delta",
+      "category": "AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-12100/",
+      "source_kind": "manufacturer-branded product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 21,
+      "external_id_1c": "КА-00001967",
+      "confirmed_mpn": "DTM1215",
+      "manufacturer": "Delta",
+      "category": "AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1215/",
+      "source_kind": "manufacturer-branded product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 27,
+      "external_id_1c": "КА-00001147",
+      "confirmed_mpn": "DT6028",
+      "manufacturer": "Delta",
+      "category": "AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-6028/",
+      "source_kind": "manufacturer-branded product page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 32,
+      "external_id_1c": "КА-00003582",
+      "confirmed_mpn": "HR33-12",
+      "manufacturer": "B.B. Battery",
+      "category": "AGM",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "source_kind": "official B.B. Battery series page",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 34,
+      "external_id_1c": "КА-00003856",
+      "confirmed_mpn": "BP5-12",
+      "manufacturer": "B.B. Battery",
+      "category": "AGM",
+      "source_url": "https://www.bb-batte.com/?lang=en",
+      "source_kind": "official B.B. Battery product catalogue",
+      "checked_at": "2026-07-26"
+    },
+    {
+      "candidate_id": 48,
+      "external_id_1c": "ФР-00000462",
+      "confirmed_mpn": "СК-1218",
+      "manufacturer": "Восток PRO",
+      "category": "AGM",
+      "source_url": "https://www.elec.ru/files/2023/06/19/Katalog-Vostok-PRO.pdf",
+      "source_kind": "manufacturer catalogue",
+      "checked_at": "2026-07-26"
+    }
+  ]
+}

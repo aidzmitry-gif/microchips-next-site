@@ -1,0 +1,10 @@
+{
+  "input_files": [
+    "docs\\imports\\rb-research-holds-wave-125.csv",
+    "docs\\imports\\rb-research-holds-wave-126-new-2026-07-28.csv"
+  ],
+  "source_rows": 209,
+  "unique_hold_clusters": 209,
+  "collapsed_duplicate_rows": 0,
+  "invariant": "hold-only ledger; no catalogue, publication or database mutation"
+}

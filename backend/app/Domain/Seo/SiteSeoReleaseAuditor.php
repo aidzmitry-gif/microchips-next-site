@@ -8,10 +8,12 @@ use App\Models\SiteCommercialFact;
 use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
+use App\Models\SiteProductPriceEvidence;
 use App\Models\SiteRedirect;
 use App\Models\SiteSeo;
 use App\Models\SiteUrl;
 use App\Models\SiteUrlAlternate;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 
 /**
@@ -22,6 +24,8 @@ use Illuminate\Support\Collection;
  */
 final class SiteSeoReleaseAuditor
 {
+    private const VISIBLE_PRICE_MAX_AGE_DAYS = 30;
+
     /**
      * @return array{
      *     site: array{key: string, domain: string, countryCode: string},
@@ -43,8 +47,10 @@ final class SiteSeoReleaseAuditor
 
             $seo = $this->seoForUrl($url, $context);
 
+            $this->validateSeoRecord($issues, $url, $seo);
             $this->validateCanonical($issues, $site, $url, $seo);
             $this->validateIndexability($issues, $url, $seo, $context);
+            $this->validateVisibleProductPriceFreshness($issues, $site, $url);
             $this->validateOfferSchema($issues, $site, $url, $seo);
         }
 
@@ -64,6 +70,7 @@ final class SiteSeoReleaseAuditor
         }
 
         $this->validateRegionalCommercialProfile($issues, $site, $context);
+        $this->validatePublishedLeafCategoriesHaveProducts($issues, $site);
 
         $this->validateRedirects($issues, $context);
         $alternateCount = $this->validateHreflang($issues, $context);
@@ -78,7 +85,7 @@ final class SiteSeoReleaseAuditor
             'generatedAt' => now()->toAtomString(),
             'passed' => $issues === [],
             'summary' => [
-                'checkedUrls' => $context['urls']->count(),
+                'checkedUrls' => $context['checkedUrlCount'],
                 'sitemapUrls' => $sitemapUrls->count(),
                 'checkedRedirects' => $context['redirects']->count(),
                 'checkedHreflangAlternates' => $alternateCount,
@@ -95,8 +102,67 @@ final class SiteSeoReleaseAuditor
     }
 
     /**
+     * A numeric price can be shown on a noindex migration preview, but it may
+     * not be released into the index without fresh, matching provenance. This
+     * is intentionally independent of Offer eligibility: a fresh price does
+     * not claim availability or create an Offer.
+     *
+     * @param  list<array{severity: string, code: string, message: string, path: ?string, context: array<string, mixed>}>  $issues
+     */
+    private function validateVisibleProductPriceFreshness(array &$issues, Site $site, SiteUrl $url): void
+    {
+        if ($url->target_type !== 'product' || $url->target_id === null) {
+            return;
+        }
+
+        $product = SiteProduct::query()
+            ->where('site_id', $site->id)
+            ->find($url->target_id);
+        if ($product === null || $product->price === null) {
+            return;
+        }
+
+        $evidence = SiteProductPriceEvidence::query()
+            ->where('site_id', $site->id)
+            ->where('site_product_id', $product->id)
+            ->where('is_current', true)
+            ->where('calculated_price', $product->price)
+            ->where('currency', $site->currency_code)
+            ->latest('observed_at')
+            ->first();
+
+        if ($evidence === null || $evidence->observed_at === null) {
+            $this->issue(
+                $issues,
+                'SEO_VISIBLE_PRICE_EVIDENCE_MISSING',
+                'An indexable product with a visible local price requires current provenance evidence matching its price and currency.',
+                $url->path,
+                ['targetId' => $url->target_id],
+            );
+
+            return;
+        }
+
+        $freshAfter = now()->subDays(self::VISIBLE_PRICE_MAX_AGE_DAYS);
+        if ($evidence->observed_at->lt($freshAfter)) {
+            $this->issue(
+                $issues,
+                'SEO_VISIBLE_PRICE_EVIDENCE_STALE',
+                'An indexable product price must have matching provenance evidence observed within the last 30 days.',
+                $url->path,
+                [
+                    'targetId' => $url->target_id,
+                    'observedAt' => $evidence->observed_at->toAtomString(),
+                    'freshAfter' => $freshAfter->toAtomString(),
+                ],
+            );
+        }
+    }
+
+    /**
      * @return array{
      *     site: Site,
+     *     checkedUrlCount: int,
      *     urls: Collection<int, SiteUrl>,
      *     urlsByPath: Collection<string, SiteUrl>,
      *     redirects: Collection<int, SiteRedirect>,
@@ -110,29 +176,94 @@ final class SiteSeoReleaseAuditor
     {
         $site->loadMissing('locales');
 
-        $urls = SiteUrl::query()
+        $checkedUrlCount = SiteUrl::query()
             ->where('site_id', $site->id)
-            ->orderBy('path')
-            ->get();
+            ->count();
         $redirects = SiteRedirect::query()
+            ->select(['id', 'site_id', 'source_path', 'target_path', 'status_code', 'purpose'])
             ->where('site_id', $site->id)
             ->where('is_active', true)
             ->orderBy('source_path')
             ->get();
+        $redirectTargetPaths = $redirects->pluck('target_path')->unique()->values()->all();
+
+        // Noindex URLs do not participate in the release surface unless an
+        // active redirect resolves to them. Keeping every hydrated URL and SEO
+        // model made the audit grow with the entire migration inventory rather
+        // than the public surface (and exhausted PHP's default 128 MB limit).
+        $urls = SiteUrl::query()
+            ->select(['id', 'site_id', 'path', 'locale', 'target_type', 'target_id', 'is_indexable', 'updated_at'])
+            ->where('site_id', $site->id)
+            ->where(function (Builder $query) use ($redirectTargetPaths): void {
+                $query->where('is_indexable', true);
+                if ($redirectTargetPaths !== []) {
+                    $query->orWhereIn('path', $redirectTargetPaths);
+                }
+            })
+            ->orderBy('path')
+            ->get();
 
         return [
             'site' => $site,
+            'checkedUrlCount' => $checkedUrlCount,
             'urls' => $urls,
             'urlsByPath' => $urls->keyBy('path'),
             'redirects' => $redirects,
             'redirectsBySource' => $redirects->keyBy('source_path'),
-            'seoByResource' => SiteSeo::query()
-                ->where('site_id', $site->id)
-                ->get()
-                ->keyBy(fn (SiteSeo $seo) => $this->seoKey($seo->resource_type, $seo->resource_id, $seo->locale)),
+            'seoByResource' => $this->seoByResource($site, $urls),
             'publishedTargetIds' => $this->publishedTargetIds($site, $urls),
             'duplicateIndexableResources' => $this->duplicateIndexableResources($site, $urls),
         ];
+    }
+
+    /**
+     * Only indexable URL resources need SEO records in the release context.
+     * Redirect-only noindex targets are validated as published resources, while
+     * hreflang records perform their own target SEO lookup.
+     *
+     * @param  Collection<int, SiteUrl>  $urls
+     * @return Collection<string, SiteSeo>
+     */
+    private function seoByResource(Site $site, Collection $urls): Collection
+    {
+        $groups = $urls
+            ->filter(fn (SiteUrl $url): bool => $url->is_indexable)
+            ->groupBy(fn (SiteUrl $url): string => $url->target_type.'|'.$this->localeFor($url, $site));
+
+        if ($groups->isEmpty()) {
+            return collect();
+        }
+
+        return SiteSeo::query()
+            ->select(['id', 'site_id', 'locale', 'resource_type', 'resource_id', 'canonical_path', 'is_indexable', 'schema'])
+            ->where('site_id', $site->id)
+            ->where(function (Builder $query) use ($groups, $site): void {
+                foreach ($groups as $group) {
+                    /** @var Collection<int, SiteUrl> $group */
+                    /** @var SiteUrl $first */
+                    $first = $group->first();
+                    $resourceIds = $group->pluck('target_id')->filter()->unique()->values()->all();
+                    $hasNullResource = $group->contains(fn (SiteUrl $url): bool => $url->target_id === null);
+
+                    $query->orWhere(function (Builder $resourceQuery) use ($first, $site, $resourceIds, $hasNullResource): void {
+                        $resourceQuery
+                            ->where('resource_type', $first->target_type)
+                            ->where('locale', $this->localeFor($first, $site))
+                            ->where(function (Builder $idQuery) use ($resourceIds, $hasNullResource): void {
+                                if ($resourceIds !== []) {
+                                    $idQuery->whereIn('resource_id', $resourceIds);
+                                }
+                                if ($hasNullResource) {
+                                    $resourceIds === []
+                                        ? $idQuery->whereNull('resource_id')
+                                        : $idQuery->orWhereNull('resource_id');
+                                }
+                            });
+                    });
+                }
+            })
+            ->get()
+            ->keyBy(fn (SiteSeo $seo) => $this->seoKey($seo->resource_type, $seo->resource_id, $seo->locale));
     }
 
     /** @param Collection<int, SiteUrl> $urls
@@ -204,6 +335,33 @@ final class SiteSeoReleaseAuditor
     {
         return $context['seoByResource']->get(
             $this->seoKey($url->target_type, $url->target_id, $this->localeFor($url, $context['site'])),
+        );
+    }
+
+    /**
+     * A public URL must have an explicit site-scoped SEO record. Falling back
+     * to the URL path hides missing title/robots/schema ownership and lets a
+     * partial import enter the sitemap. Draft/noindex URLs remain allowed to
+     * omit an SEO record because they are not a public SEO surface.
+     *
+     * @param  list<array{severity: string, code: string, message: string, path: ?string, context: array<string, mixed>}>  $issues
+     */
+    private function validateSeoRecord(array &$issues, SiteUrl $url, ?SiteSeo $seo): void
+    {
+        if ($seo !== null) {
+            return;
+        }
+
+        $this->issue(
+            $issues,
+            'SEO_INDEXABLE_URL_SEO_RECORD_MISSING',
+            'An indexable URL must have an explicit site-scoped SEO record before it can enter the sitemap.',
+            $url->path,
+            [
+                'targetType' => $url->target_type,
+                'targetId' => $url->target_id,
+                'locale' => $url->locale,
+            ],
         );
     }
 
@@ -355,7 +513,76 @@ final class SiteSeoReleaseAuditor
                 $url->path,
                 ['targetId' => $url->target_id],
             );
+
+            return;
         }
+
+        $hasCurrentEvidence = SiteProductPriceEvidence::query()
+            ->where('site_id', $site->id)
+            ->where('site_product_id', $product->id)
+            ->where('is_current', true)
+            ->where('calculated_price', $product->price)
+            ->where('currency', $site->currency_code)
+            ->exists();
+        if (! $hasCurrentEvidence) {
+            $this->issue(
+                $issues,
+                'SEO_OFFER_SCHEMA_PRICE_EVIDENCE_MISSING',
+                'Offer schema requires current provenance evidence matching the visible local price and currency.',
+                $url->path,
+                ['targetId' => $url->target_id],
+            );
+
+            return;
+        }
+
+        foreach ($this->offerSchemas($seo->schema) as $offer) {
+            if (! $this->offerMatchesCommercialData($offer, (string) $product->price, $site->currency_code)) {
+                $this->issue(
+                    $issues,
+                    'SEO_OFFER_SCHEMA_COMMERCIAL_DATA_MISMATCH',
+                    'Offer price, currency and availability must match the visible, evidence-backed local commercial data.',
+                    $url->path,
+                    ['targetId' => $url->target_id],
+                );
+
+                break;
+            }
+        }
+    }
+
+    /** @return list<array<string, mixed>> */
+    private function offerSchemas(mixed $schema): array
+    {
+        if (! is_array($schema)) {
+            return [];
+        }
+
+        $offers = [];
+        $type = $schema['@type'] ?? $schema['type'] ?? null;
+        if (! array_is_list($schema) && in_array('Offer', is_array($type) ? $type : [$type], true)) {
+            $offers[] = $schema;
+        }
+        foreach ($schema as $value) {
+            $offers = [...$offers, ...$this->offerSchemas($value)];
+        }
+
+        return $offers;
+    }
+
+    /** @param array<string, mixed> $offer */
+    private function offerMatchesCommercialData(array $offer, string $price, string $currency): bool
+    {
+        if (! is_numeric($offer['price'] ?? null)) {
+            return false;
+        }
+
+        $schemaCurrency = mb_strtoupper(trim((string) ($offer['priceCurrency'] ?? '')));
+        $availability = trim((string) ($offer['availability'] ?? ''));
+
+        return round((float) $offer['price'], 2, PHP_ROUND_HALF_UP) === round((float) $price, 2, PHP_ROUND_HALF_UP)
+            && $schemaCurrency === mb_strtoupper($currency)
+            && in_array($availability, ['InStock', 'http://schema.org/InStock', 'https://schema.org/InStock'], true);
     }
 
     /**
@@ -407,6 +634,46 @@ final class SiteSeoReleaseAuditor
             if ($requiresTerms && $missingTerms !== []) {
                 $this->issue($issues, 'SEO_SITE_COMMERCIAL_TERMS_INCOMPLETE', 'Indexable commercial pages require verified local delivery and payment terms.', null, ['locale' => $locale, 'missingFacts' => $missingTerms]);
             }
+
+            $requiresWarrantyTerms = $localeUrls->contains(
+                fn (SiteUrl $url) => in_array($url->path, ['/warranty', '/warranty-and-documents'], true),
+            );
+            if ($requiresWarrantyTerms && ! $facts->has('warranty_terms')) {
+                $this->issue($issues, 'SEO_SITE_WARRANTY_TERMS_INCOMPLETE', 'An indexable warranty page requires verified local warranty and returns terms.', null, ['locale' => $locale, 'missingFacts' => ['warranty_terms']]);
+            }
+        }
+    }
+
+    /**
+     * A published leaf category without a published product is an empty
+     * landing page. Parent categories are deliberately exempt when they have
+     * published children, because their buyer value is the navigation tree.
+     *
+     * @param  list<array{severity: string, code: string, message: string, path: ?string, context: array<string, mixed>}>  $issues
+     */
+    private function validatePublishedLeafCategoriesHaveProducts(array &$issues, Site $site): void
+    {
+        $categories = SiteCategory::query()
+            ->with('category')
+            ->where('site_id', $site->id)
+            ->published()
+            ->get();
+        $publishedCanonicalIds = $categories->pluck('category_id')->filter()->all();
+
+        foreach ($categories as $category) {
+            $hasPublishedChild = $category->category !== null
+                && $categories->contains(fn (SiteCategory $candidate): bool => $candidate->category?->parent_id === $category->category_id);
+            if ($hasPublishedChild || $category->products()->where('site_products.is_published', true)->exists()) {
+                continue;
+            }
+
+            $this->issue(
+                $issues,
+                'SEO_PUBLISHED_CATEGORY_EMPTY',
+                'A published leaf category must contain at least one published product.',
+                null,
+                ['siteCategoryId' => $category->id, 'externalId' => $category->external_id, 'publishedCanonicalIds' => $publishedCanonicalIds],
+            );
         }
     }
 
@@ -437,6 +704,16 @@ final class SiteSeoReleaseAuditor
     private function validateRedirects(array &$issues, array $context): void
     {
         foreach ($context['redirects'] as $redirect) {
+            if (! in_array($redirect->purpose, [SiteRedirect::PURPOSE_SEO, SiteRedirect::PURPOSE_PREVIEW], true)) {
+                $this->issue(
+                    $issues,
+                    'SEO_REDIRECT_PURPOSE_INVALID',
+                    'Redirect purpose must be seo or preview.',
+                    $redirect->source_path,
+                    ['redirectId' => $redirect->id, 'purpose' => $redirect->purpose],
+                );
+            }
+
             if (! $this->isSafeLocalPath($redirect->source_path)) {
                 $this->issue(
                     $issues,
@@ -500,11 +777,16 @@ final class SiteSeoReleaseAuditor
             }
 
             $target = $context['urlsByPath']->get($redirect->target_path);
-            if ($target === null || ! $target->is_indexable || ! $this->targetIsPublished($target, $context)) {
+            $requiresIndexableTarget = $redirect->purpose !== SiteRedirect::PURPOSE_PREVIEW;
+            if ($target === null
+                || ! $this->targetIsPublished($target, $context)
+                || ($requiresIndexableTarget && ! $target->is_indexable)) {
                 $this->issue(
                     $issues,
                     'SEO_REDIRECT_TARGET_NOT_RESOLVABLE',
-                    'Redirect target must resolve to an indexable published URL on the same site.',
+                    $requiresIndexableTarget
+                        ? 'SEO redirect target must resolve to an indexable published URL on the same site.'
+                        : 'Preview redirect target must resolve to a published URL on the same site.',
                     $redirect->source_path,
                     ['redirectId' => $redirect->id, 'target' => $redirect->target_path],
                 );
@@ -518,17 +800,12 @@ final class SiteSeoReleaseAuditor
      */
     private function validateHreflang(array &$issues, array $context): int
     {
-        $sourceIds = $context['urls']->pluck('id')->all();
-        if ($sourceIds === []) {
-            return 0;
-        }
-
         $alternates = SiteUrlAlternate::query()
             ->with([
                 'sourceUrl.site.locales',
                 'alternateUrl.site.locales',
             ])
-            ->whereIn('source_url_id', $sourceIds)
+            ->whereHas('sourceUrl', fn (Builder $query) => $query->where('site_id', $context['site']->id))
             ->get();
         $alternateIds = $alternates->pluck('alternate_url_id')->unique()->values()->all();
         $reverseKeys = SiteUrlAlternate::query()
@@ -662,7 +939,7 @@ final class SiteSeoReleaseAuditor
             ->where('resource_type', $url->target_type)
             ->where('resource_id', $url->target_id)
             ->first();
-        if (($seo?->is_indexable ?? true) === false || ! $this->isSelfCanonical($url, $seo)) {
+        if ($seo === null || ! $seo->is_indexable || ! $this->isSelfCanonical($url, $seo)) {
             return false;
         }
 
@@ -690,7 +967,7 @@ final class SiteSeoReleaseAuditor
             ->filter(function (SiteUrl $url) use ($context): bool {
                 $seo = $this->seoForUrl($url, $context);
 
-                return ($seo?->is_indexable ?? true) && $this->isSelfCanonical($url, $seo);
+                return $seo !== null && $seo->is_indexable && $this->isSelfCanonical($url, $seo);
             })
             ->sortBy('path')
             ->values();

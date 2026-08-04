@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Collapse one exact same-model, same-voltage and same-capacity Bitrix duplicate while preserving a 301 path and the shared Product identity.",
+  "duplicates": [
+    {
+      "survivor_external_id": "bitrix:12149",
+      "duplicate_external_id": "bitrix:24052",
+      "survivor_name": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u043d\u0430\u044f \u0431\u0430\u0442\u0430\u0440\u0435\u044f CS-MC90BX \u0434\u043b\u044f \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430 \u0441\u0431\u043e\u0440\u0430 \u0434\u0430\u043d\u043d\u044b\u0445 Motorola MC9000 7.4V 3400mAh",
+      "duplicate_name": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u043d\u0430\u044f \u0431\u0430\u0442\u0430\u0440\u0435\u044f CS-MC90BX \u0434\u043b\u044f \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b\u0430 \u0441\u0431\u043e\u0440\u0430 \u0434\u0430\u043d\u043d\u044b\u0445 Symbol MC9000 7.4V 3400mAh",
+      "survivor_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12149",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-24052",
+      "model_core": "CS-MC90BX",
+      "voltage": "7.4V",
+      "capacity": "3400mAh",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-industrial"
+      ],
+      "decision_reason": "Exact Cameron Sino model token, voltage, capacity and MC9000 compatibility match; Motorola and Symbol are aliases in the compatible device lineage.",
+      "evidence_refs": [
+        "docs/audits/generated/wave201-cameron-sino-duplicate-partition.csv",
+        "docs/audits/generated/wave201-cameron-sino-source-registry.csv",
+        "docs/imports/rb-full-bitrix-staging-wave148-2026-07-28.json"
+      ]
+    }
+  ]
+}

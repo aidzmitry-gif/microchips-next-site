@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "purpose": "Three model-specific Delta DT editorial drafts from traceable public technical sources. No publication, price, stock, image or Offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00000005",
+      "manufacturer": "Delta",
+      "mpn": "DT12012",
+      "display_name": "Аккумуляторная батарея Delta DT 12012",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://delta-russia.ru/akkumuljatory/dt/",
+      "source_kind": "DELTA DT product catalogue with model-specific voltage, capacity and AGM technology",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "1,2 Ah",
+        "Технология": "VRLA AGM",
+        "Применение": "слаботочные системы и резервное питание"
+      }
+    },
+    {
+      "external_id": "ФР-00000106",
+      "manufacturer": "Delta",
+      "mpn": "DT12100",
+      "display_name": "Аккумуляторная батарея Delta DT 12100",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-12100/",
+      "source_kind": "model-specific Delta DT technical page; commercial facts intentionally excluded",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 V",
+        "Номинальная ёмкость": "100 Ah",
+        "Технология": "VRLA AGM",
+        "Применение": "резервное питание и стационарные системы"
+      }
+    },
+    {
+      "external_id": "КА-00001147",
+      "manufacturer": "Delta",
+      "mpn": "DT6028",
+      "display_name": "Аккумуляторная батарея Delta DT 6028",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-6028/",
+      "source_kind": "model-specific Delta DT technical page; commercial facts intentionally excluded",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 V",
+        "Номинальная ёмкость": "2,8 Ah",
+        "Технология": "VRLA AGM",
+        "Применение": "системы безопасности и резервное питание"
+      }
+    }
+  ]
+}

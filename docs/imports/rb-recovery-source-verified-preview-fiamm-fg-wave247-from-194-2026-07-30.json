@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave247 fail-closed recovery replay of a previously verified noindex preview. It may retain only prices with exact current provenance evidence and never creates stock claims, Offer schema or indexable URLs.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1405",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG10121",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg10121",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:2939",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG10301",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg10301",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:2960",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG10381",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg10381",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:3179",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG10721",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg10721",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:1485",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG11201",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg11201",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:1486",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG11202",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg11202",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:1406",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG20121",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20121",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:1407",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG20121A",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20121a",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:1546",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG20201",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20201",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:2866",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG20271",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20271",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:2954",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG20341",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20341",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:3180",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG20721",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg20721",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:1487",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG21201",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg21201",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:2931",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG22703",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg22703",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "bitrix:3048",
+      "manufacturer": "FIAMM",
+      "identity_scope": "model_core",
+      "model_core": "FG24204",
+      "source_url": "https://www.fiamm.ru/equipment/FG-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "fiamm-fg24204",
+      "replace_categories": true,
+      "allow_verified_price": true
+    }
+  ],
+  "recovery_source_manifest": "rb-source-verified-preview-fiamm-fg-wave194-2026-07-29.json"
+}

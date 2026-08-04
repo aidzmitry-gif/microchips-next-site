@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SiteRedirect extends Model
 {
-    protected $fillable = ['site_id', 'source_path', 'target_path', 'status_code', 'is_active'];
+    public const PURPOSE_SEO = 'seo';
+
+    public const PURPOSE_PREVIEW = 'preview';
+
+    protected $fillable = ['site_id', 'source_path', 'target_path', 'status_code', 'purpose', 'is_active'];
 
     protected function casts(): array
     {

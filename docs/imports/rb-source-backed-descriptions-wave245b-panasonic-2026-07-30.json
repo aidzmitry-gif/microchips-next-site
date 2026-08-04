@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave245B exact Panasonic description drafts",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:1596",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "model_core": "LC-XC1238P",
+      "technology": "VRLA AGM",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C62.pdf",
+      "technical_attributes": {
+        "Модель": "LC-XC1238P",
+        "Номинальное напряжение, В": "12",
+        "Номинальная ёмкость (20-часовой режим), А·ч": "38.0"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Industry Europe",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

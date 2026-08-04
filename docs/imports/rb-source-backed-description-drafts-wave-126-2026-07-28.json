@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "purpose": "Research-only, exact manufacturer-backed identity facts. No price, stock, image, publication state or unverified terminal/tab construction is asserted.",
+  "locale": "ru-BY",
+  "products": [
+    {"external_id":"КА-00003223","identity_scope":"exact","manufacturer":"Panasonic","mpn":"ML-1220/F1AN","display_name":"Panasonic ML-1220/F1AN","technology":"rechargeable manganese-lithium coin battery","source_url":"https://energy.panasonic.com/dam/master/pdf/en/faq/Part_Number_Comparison_Table_of_Coin_type_Rechargeable_Lithium_Batteries.pdf","technical_attributes":{"part_number":"ML-1220/F1AN","identity_evidence":"official current part-number listing","series":"ML coin-type rechargeable lithium"}}
+  ]
+}

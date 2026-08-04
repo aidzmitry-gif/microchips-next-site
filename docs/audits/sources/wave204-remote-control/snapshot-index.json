@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "autec_mbm06mh_manual",
+      "publisher": "AUTEC Srl",
+      "source_url": "https://store.autecsafety.com/get-product-attachment/?file=920&language=106",
+      "source_kind": "official_manufacturer_pdf",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-remote-control/autec-mbm06mh-manual-2026-07-29.pdf",
+      "snapshot_sha256": "2691b42baca6c5ac1e99bb007f59301a89b7d114b49968074d7256f89735dc2d",
+      "snapshot_bytes": 1558464,
+      "required_exact_tokens": [
+        "MBM06MH",
+        "Ni-MH",
+        "7.2V",
+        "750mAh"
+      ],
+      "token_counts": {
+        "MBM06MH": 9,
+        "Ni-MH": 1,
+        "7.2V": 1,
+        "750mAh": 1
+      }
+    },
+    {
+      "source_id": "autec_nc_mh0707l_manual",
+      "publisher": "AUTEC Srl",
+      "source_url": "https://store.autecsafety.com/get-product-attachment/?file=902&language=106",
+      "source_kind": "official_manufacturer_pdf",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-remote-control/autec-nc-mh0707l-manual-2026-07-29.pdf",
+      "snapshot_sha256": "c17cfe81e8e5814edfdbf0130f8fa76a8052ba21901a9c2d920f9c506bd7288a",
+      "snapshot_bytes": 1131937,
+      "required_exact_tokens": [
+        "NC0707L",
+        "MH0707L",
+        "NiCd 7.2 Vdc (0.7 Ah)",
+        "NiMH 7.2 Vdc (1.3 Ah)"
+      ],
+      "token_counts": {
+        "NC0707L": 35,
+        "MH0707L": 35,
+        "NiCd 7.2 Vdc (0.7 Ah)": 4,
+        "NiMH 7.2 Vdc (1.3 Ah)": 4
+      }
+    },
+    {
+      "source_id": "autec_official_battery_store",
+      "publisher": "AUTEC Srl",
+      "source_url": "https://store.autecsafety.com/en/batteries/",
+      "source_kind": "official_manufacturer_html",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-remote-control/autec-official-battery-store-2026-07-29.html",
+      "snapshot_sha256": "6c6d705ed564d42f5c9644608fe23c64f2383d9d947643ea0ae4db08198512b7",
+      "snapshot_bytes": 215056,
+      "required_exact_tokens": [
+        "LBM02MH",
+        "MBM06MH",
+        "MH0707L"
+      ],
+      "token_counts": {
+        "LBM02MH": 2,
+        "MBM06MH": 2,
+        "MH0707L": 2
+      }
+    },
+    {
+      "source_id": "autec_official_lithium_store",
+      "publisher": "AUTEC Srl",
+      "source_url": "https://store.autecsafety.com/en/li-ion-battery/",
+      "source_kind": "official_manufacturer_html",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-remote-control/autec-official-lithium-store-2026-07-29.html",
+      "snapshot_sha256": "00817b0e94d457ea0cb70aeffe8b94ab5b3a22513c23af19b58d15b90266edff",
+      "snapshot_bytes": 227913,
+      "required_exact_tokens": [
+        "AIRBM3V7L",
+        "LI BATTERY",
+        "LPM02",
+        "LI-ION BATTERY"
+      ],
+      "token_counts": {
+        "AIRBM3V7L": 2,
+        "LI BATTERY": 2,
+        "LPM02": 2,
+        "LI-ION BATTERY": 10
+      }
+    },
+    {
+      "source_id": "elca_official_battery_store",
+      "publisher": "ELCA Srl",
+      "source_url": "https://store.elcaradio.com/en/page/2",
+      "source_kind": "official_manufacturer_html",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-remote-control/elca-official-battery-store-2026-07-29.html",
+      "snapshot_sha256": "e3ad5bd92a0a8182819fa374c594c9e4b815d721b961e80fab26131a52927e81",
+      "snapshot_bytes": 37428,
+      "required_exact_tokens": [
+        "PINC-07MH",
+        "0401BA000112",
+        "PINC-GEH",
+        "0401BA000113"
+      ],
+      "token_counts": {
+        "PINC-07MH": 2,
+        "0401BA000112": 6,
+        "PINC-GEH": 2,
+        "0401BA000113": 6
+      }
+    },
+    {
+      "source_id": "hiab_red_parts_batteries",
+      "publisher": "Hiab",
+      "source_url": "https://webshop.hiab.com/en/hiab-red-parts/",
+      "source_kind": "official_manufacturer_html",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave204-remote-control/hiab-red-parts-batteries-2026-07-29.html",
+      "snapshot_sha256": "f79e92c3a481f6241af0e4a3f3ca4b6207b618d12e49df302fa93e78531a4945",
+      "snapshot_bytes": 88103,
+      "required_exact_tokens": [
+        "9836721B",
+        "3786692B",
+        "9847669B",
+        "COMBIDRIVE BATTERY",
+        "XS DRIVE BATTERY",
+        "HIDRIVE BATTERY"
+      ],
+      "token_counts": {
+        "9836721B": 4,
+        "3786692B": 4,
+        "9847669B": 4,
+        "COMBIDRIVE BATTERY": 2,
+        "XS DRIVE BATTERY": 2,
+        "HIDRIVE BATTERY": 2
+      }
+    }
+  ]
+}

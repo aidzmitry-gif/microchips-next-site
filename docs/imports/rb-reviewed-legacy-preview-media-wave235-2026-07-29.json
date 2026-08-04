@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "purpose": "Promote only company-owned legacy assets with a unique binary and a complete exact MPN visibly confirmed at original resolution.",
+  "locale": "ru-BY",
+  "images": [
+    {
+      "external_id": "bitrix:11753",
+      "media_id": 6290,
+      "content_sha256": "26bf604fa0d27f84d5260e0e7fde04543e8d93be891cd2e8a35d0e67fb6abb69",
+      "storage_path": "legacy-staging/rb/bitrix-11753-40114.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "LiFe18650",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: Robiton LiFe18650 is visible on the cell label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1464",
+      "media_id": 222,
+      "content_sha256": "41da77e2a0de1ec43de3e921529a88be115db0f5f2455813a17a231fcaeb8a73",
+      "storage_path": "legacy-staging/rb/bitrix-1464-79608.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "MM 120-12",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: MNB MM 120-12 is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1493",
+      "media_id": 250,
+      "content_sha256": "609032104cac9d4f516ff3ba4265168ec8fba21e3954abe0e17ee8984d76f10b",
+      "storage_path": "legacy-staging/rb/bitrix-1493-79996.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "GP 12-12",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: Ventura GP 12-12 is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1526",
+      "media_id": 280,
+      "content_sha256": "d649e3e9751ebc7e00aa42b79de63309a648f31ea0d70d3029ef5476c8967dae",
+      "storage_path": "legacy-staging/rb/bitrix-1526-78830.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "BC17-12",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: BB Battery BC17-12 is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1561",
+      "media_id": 313,
+      "content_sha256": "36c873dd54063e84241ac6c54f18895b765eaa897e1562c22c1cea16414fa3f5",
+      "storage_path": "legacy-staging/rb/bitrix-1561-89479.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "MM 200-12",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: MNB MM 200-12 is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1617",
+      "media_id": 358,
+      "content_sha256": "3a8ad958927b76d97c0ef3bd19714c2a8c15963c5beb21fc71c663bfc6a4549b",
+      "storage_path": "legacy-staging/rb/bitrix-1617-78814.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "HR 5.8-12",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: BB Battery HR5.8-12 is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:24551",
+      "media_id": 1162,
+      "content_sha256": "3967c71e8416102ac606e970a75b2b7926090bdf1d3e0dfe7312e457871a791e",
+      "storage_path": "legacy-staging/rb/bitrix-24551-82969.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "0810-0008",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: EnerSys 0810-0008 is visible on the pack label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2952",
+      "media_id": 709,
+      "content_sha256": "470677bf7e4b43301ff130245acc26d4420b0575cbcaf997acc240ce59d3b1d9",
+      "storage_path": "legacy-staging/rb/bitrix-2952-78962.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "DT 6033",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: Delta DT 6033 is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:4776",
+      "media_id": 12135,
+      "content_sha256": "03b1dd36f42a5b81d6722b3f3ef5a23c381f03e0e151047706d8b616fd1cc216",
+      "storage_path": "legacy-staging/rb/bitrix-4776-11995.webp",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "identity_scope": "exact",
+      "mpn": "J1KND",
+      "identity_evidence_level": "visible_exact_mpn",
+      "visual_verification_note": "Original-resolution and contact-sheet review: Dell Type J1KND is visible on the battery label.",
+      "reviewed_at": "2026-07-29"
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave230-C frozen verified-media source-backed description drafts; bounded model-core scope when the exact name-end contract does not pass.",
+  "locale": "ru-BY",
+  "application_contract": {
+    "stage_only": true,
+    "refresh_existing": true,
+    "refresh_applied": true,
+    "database_apply": false
+  },
+  "products": [
+    {
+      "external_id": "bitrix:1164",
+      "identity_scope": "model_core",
+      "manufacturer": "Panasonic",
+      "technology": "VRLA AGM",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/custom-upload/Energy%20%26%20Building/Batteries/Secondary%20Batteries/Valve%20Regulated%20Lead-Acid%20Batteries/Panasonic%20VRLA%20Batteries%20VRLA%20Handbook.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Panasonic Industry Europe GmbH",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "LC-P1220P"
+    },
+    {
+      "external_id": "bitrix:1397",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/1409843489126408192.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA1208"
+    },
+    {
+      "external_id": "bitrix:1413",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07630/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA12-1.3"
+    },
+    {
+      "external_id": "bitrix:1414",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07624/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA6-1.3"
+    },
+    {
+      "external_id": "bitrix:1415",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 12-1.3"
+    },
+    {
+      "external_id": "bitrix:1416",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 6-1.3"
+    },
+    {
+      "external_id": "bitrix:1438",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GPL 12-100"
+    },
+    {
+      "external_id": "bitrix:1472",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/89.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA12120"
+    },
+    {
+      "external_id": "bitrix:1491",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07635/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA12-12"
+    },
+    {
+      "external_id": "bitrix:1492",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07628/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA6-12"
+    },
+    {
+      "external_id": "bitrix:1527",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dtm/dtm-1217/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "DTM 1217"
+    },
+    {
+      "external_id": "bitrix:1536",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/70.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA12180"
+    },
+    {
+      "external_id": "bitrix:1544",
+      "identity_scope": "model_core",
+      "manufacturer": "ROBITON",
+      "technology": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием",
+      "source_url": "https://www.robiton.ru/product/07636/",
+      "technical_attributes": {
+        "Технология": "герметизированная свинцово-кислотная аккумуляторная батарея с клапанным регулированием"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "ROBITON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "VRLA12-18"
+    },
+    {
+      "external_id": "bitrix:1545",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 12-18"
+    },
+    {
+      "external_id": "bitrix:1547",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/41.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA1222"
+    },
+    {
+      "external_id": "bitrix:1549",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dtm/dtm-12022/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "DTM 12022"
+    },
+    {
+      "external_id": "bitrix:1558",
+      "identity_scope": "model_core",
+      "manufacturer": "Delta",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-12200/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "DT 12200"
+    },
+    {
+      "external_id": "bitrix:1575",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GPL 12-250"
+    },
+    {
+      "external_id": "bitrix:1582",
+      "identity_scope": "model_core",
+      "manufacturer": "Casil",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://en.casilbattery.com/product_detail/61.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Chee Yuen Plastic Products (Huizhou) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "CA1233"
+    },
+    {
+      "external_id": "bitrix:1592",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GPL 12-33"
+    },
+    {
+      "external_id": "bitrix:1606",
+      "identity_scope": "model_core",
+      "manufacturer": "Ventura",
+      "technology": "VRLA AGM",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "technical_attributes": {
+        "Технология": "VRLA AGM"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Ventura",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "GP 12-4.5"
+    },
+    {
+      "external_id": "bitrix:1612",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HRL.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HRL 50-12"
+    },
+    {
+      "external_id": "bitrix:1625",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/BC.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "BC 7.2-12"
+    },
+    {
+      "external_id": "bitrix:1631",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HRL.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HRL 75-12"
+    },
+    {
+      "external_id": "bitrix:1640",
+      "identity_scope": "model_core",
+      "manufacturer": "B.B. Battery",
+      "technology": "свинцово-кислотная аккумуляторная батарея",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "technical_attributes": {
+        "Технология": "свинцово-кислотная аккумуляторная батарея"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HR 9-12"
+    },
+    {
+      "external_id": "bitrix:20141",
+      "identity_scope": "model_core",
+      "manufacturer": "DELTA",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_55_x/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "HRL 12-55 X"
+    },
+    {
+      "external_id": "bitrix:20150",
+      "identity_scope": "model_core",
+      "manufacturer": "DELTA",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ft_12_105_m/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "FT 12-105 M"
+    },
+    {
+      "external_id": "bitrix:20152",
+      "identity_scope": "model_core",
+      "manufacturer": "DELTA",
+      "technology": "AGM",
+      "source_url": "https://delta-batt.com/products/ft_12_150_m/",
+      "technical_attributes": {
+        "Технология": "AGM"
+      },
+      "source_kind": "official_manufacturer_product_page",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29",
+      "model_core": "FT 12-150 M"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "decisions": [
+    {
+      "candidate_id": 62,
+      "external_id_1c": "КА-00004142",
+      "confirmed_mpn": "GPL12400",
+      "manufacturer": "CSB",
+      "category": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-GPL12400-%E2%80%93-053124.pdf",
+      "source_kind": "official CSB GPL12400 technical datasheet",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "candidate_id": 78,
+      "external_id_1c": "ФР-00001144",
+      "confirmed_mpn": "LC-R127R2PG1",
+      "manufacturer": "Panasonic",
+      "category": "VRLA AGM",
+      "source_url": "https://eu.industrial.panasonic.com/sites/default/pidseu/files/downloads/files/panasonic-batteries-vrla-for-professionals_interactive.pdf",
+      "source_kind": "official Panasonic VRLA catalogue",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "candidate_id": 80,
+      "external_id_1c": "ФР-00002243",
+      "confirmed_mpn": "XP12V2500",
+      "manufacturer": "Sprinter",
+      "category": "VRLA AGM",
+      "source_url": "https://www.exidegroup.com/eu/sites/default/files/2020-05/GNB_NP_Sprinter%20P-XP_EN_2.pdf",
+      "source_kind": "official Exide Sprinter P/XP technical catalogue",
+      "checked_at": "2026-07-28"
+    },
+    {
+      "candidate_id": 101,
+      "external_id_1c": "КА-00005871",
+      "confirmed_mpn": "HRL12-170W",
+      "manufacturer": "Delta",
+      "category": "VRLA AGM",
+      "source_url": "https://www.delta-battery.ru/catalog/hrl-w-xpert/delta-hrl-12-170-w-xpert/",
+      "source_kind": "manufacturer-branded Delta product page",
+      "checked_at": "2026-07-28"
+    }
+  ]
+}

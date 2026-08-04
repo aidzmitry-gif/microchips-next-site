@@ -15,7 +15,8 @@ class StageOneCCatalog extends Command
 {
     protected $signature = 'catalog:stage-1c
                             {file? : Absolute or project-relative path to a 1C CSV export}
-                            {--delimiter=; : Single-character CSV delimiter}';
+                            {--delimiter=; : Single-character CSV delimiter}
+                            {--exclude=* : CSV manifest(s) with external_id or product_external_id to retain as excluded audit rows}';
 
     protected $description = 'Validate and stage a 1C catalogue CSV without publishing any product to a regional site';
 
@@ -41,6 +42,8 @@ class StageOneCCatalog extends Command
             return self::FAILURE;
         }
 
+        $excludedExternalIds = $this->excludedExternalIds((array) $this->option('exclude'));
+
         $handle = fopen($file, 'rb');
         if ($handle === false) {
             throw new RuntimeException("Unable to open {$file}.");
@@ -60,6 +63,10 @@ class StageOneCCatalog extends Command
             }
 
             $headers = array_map(fn ($header) => $this->normalizeHeader((string) $header), $headers);
+            if (count($headers) !== count(array_unique($headers))) {
+                throw new RuntimeException('The CSV header contains duplicate normalized column names.');
+            }
+
             /** @var array<string, list<int>> $seen */
             $seen = [];
             $rowNumber = 1;
@@ -94,21 +101,27 @@ class StageOneCCatalog extends Command
 
                 $validation = $this->validator->normalizeAndValidate($payload);
                 $externalId = $validation['data']['external_id'] ?? null;
+                $externalIdKey = ProductIdentity::normalize($externalId);
+                $isExcluded = $externalIdKey !== null && isset($excludedExternalIds[$externalIdKey]);
                 $record = StagedImportRecord::create([
                     'import_run_id' => $run->id,
                     'row_number' => $rowNumber,
                     'entity_type' => 'product',
-                    'external_id' => filled($externalId) ? (string) $externalId : null,
+                    'external_id' => $externalIdKey !== null ? (string) $externalId : null,
                     'payload' => $payload,
                     'normalized_payload' => $validation['data'],
                     'validation_errors' => $validation['errors'],
-                    'status' => $validation['errors'] === [] ? 'ready_for_review' : 'invalid',
-                    'error' => $validation['errors'] === [] ? null : implode(' ', $validation['errors']),
+                    'status' => $isExcluded ? 'excluded' : ($validation['errors'] === [] ? 'ready_for_review' : 'invalid'),
+                    'error' => $isExcluded
+                        ? 'Excluded by the supplied manifest before review and publication.'
+                        : ($validation['errors'] === [] ? null : implode(' ', $validation['errors'])),
                 ]);
                 $processed++;
 
-                foreach ($this->matchKeys($validation['data']) as $matchKey) {
-                    $seen[$matchKey][] = $record->id;
+                if (! $isExcluded && $validation['errors'] === []) {
+                    foreach ($this->matchKeys($validation['data']) as $matchKey) {
+                        $seen[$matchKey][] = $record->id;
+                    }
                 }
             }
 
@@ -148,6 +161,7 @@ class StageOneCCatalog extends Command
                     'duplicate_conflicts' => $conflicts,
                     'ready_for_review' => StagedImportRecord::query()->where('import_run_id', $run->id)->where('status', 'ready_for_review')->count(),
                     'invalid' => StagedImportRecord::query()->where('import_run_id', $run->id)->where('status', 'invalid')->count(),
+                    'excluded' => StagedImportRecord::query()->where('import_run_id', $run->id)->where('status', 'excluded')->count(),
                 ],
                 'finished_at' => now(),
             ]);
@@ -170,15 +184,23 @@ class StageOneCCatalog extends Command
     {
         $keys = [];
 
-        foreach (ProductIdentity::FIELDS as $field) {
+        $externalId = ProductIdentity::normalize($normalizedPayload['external_id'] ?? null);
+        if ($externalId !== null) {
+            $keys[] = 'external_id:'.$externalId;
+        }
+
+        foreach (['sku', 'mpn'] as $field) {
             $fingerprint = ProductIdentity::normalize($normalizedPayload[$field] ?? null);
 
             if ($fingerprint !== null) {
-                $keys[] = $field.':'.$fingerprint;
+                // SKU and MPN share one identity namespace. A value cannot be
+                // safely reused merely because one source calls it SKU and the
+                // other calls it MPN.
+                $keys[] = 'identifier:'.$fingerprint;
             }
         }
 
-        return $keys;
+        return array_values(array_unique($keys));
     }
 
     /**
@@ -198,10 +220,17 @@ class StageOneCCatalog extends Command
 
         $record = StagedImportRecord::query()->find($stagedRecordIds[0]);
         $externalId = ProductIdentity::normalize($record?->normalized_payload['external_id'] ?? null);
-        $normalizedColumn = $field.'_normalized';
 
         return Product::query()
-            ->where($normalizedColumn, $value)
+            ->where(function ($query) use ($field, $value): void {
+                if ($field === 'identifier') {
+                    $query->where('sku_normalized', $value)->orWhere('mpn_normalized', $value);
+
+                    return;
+                }
+
+                $query->where($field.'_normalized', $value);
+            })
             ->when($externalId !== null, fn ($query) => $query->where(fn ($query) => $query->whereNull('external_id_normalized')->orWhere('external_id_normalized', '!=', $externalId)))
             ->pluck('id')
             ->map(static fn (mixed $id): int => (int) $id)
@@ -211,5 +240,46 @@ class StageOneCCatalog extends Command
     private function normalizeHeader(string $header): string
     {
         return mb_strtolower(trim(preg_replace('/^\xEF\xBB\xBF/', '', $header) ?? $header));
+    }
+
+    /** @param list<string> $files @return array<string, true> */
+    private function excludedExternalIds(array $files): array
+    {
+        $excluded = [];
+
+        foreach ($files as $file) {
+            if (! is_string($file) || blank($file) || ! is_file($file)) {
+                throw new RuntimeException('Every --exclude value must be a readable CSV manifest.');
+            }
+
+            $handle = fopen($file, 'rb');
+            if ($handle === false) {
+                throw new RuntimeException("Unable to open exclusion manifest {$file}.");
+            }
+
+            try {
+                $headers = fgetcsv($handle);
+                if ($headers === false) {
+                    throw new RuntimeException("Exclusion manifest {$file} has no header row.");
+                }
+                $headers = array_map(fn (string $header): string => $this->normalizeHeader($header), $headers);
+                $column = array_search('product_external_id', $headers, true);
+                $column = $column === false ? array_search('external_id', $headers, true) : $column;
+                if ($column === false) {
+                    throw new RuntimeException("Exclusion manifest {$file} requires product_external_id or external_id.");
+                }
+
+                while (($row = fgetcsv($handle)) !== false) {
+                    $externalId = ProductIdentity::normalize($row[$column] ?? null);
+                    if ($externalId !== null) {
+                        $excluded[$externalId] = true;
+                    }
+                }
+            } finally {
+                fclose($handle);
+            }
+        }
+
+        return $excluded;
     }
 }

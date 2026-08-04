@@ -1,0 +1,3 @@
+product_external_id;source;source_price;currency;observed_at;source_reference;source_external_id;multiplier;price_type
+КА-00001063;legacy_site;46;BYN;2026-06-23T00:00:00+03:00;bitrix-backup://2026-06-23/element/3063;3063;1;legacy_public_price
+ФР-00002108;legacy_site;126;BYN;2026-06-23T00:00:00+03:00;bitrix-backup://2026-06-23/element/3266;3266;1;legacy_public_price

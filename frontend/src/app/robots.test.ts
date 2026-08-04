@@ -29,7 +29,7 @@ describe("robots route", () => {
     expect(getCurrentHostMock).toHaveBeenCalledTimes(1);
     expect(resolveSitePathMock).toHaveBeenCalledWith("microchips.by", "/");
     expect(result).toEqual({
-      rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/search", "/filter"] },
+      rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/search", "/filter", "/legacy-preview/"] },
       sitemap: "https://microchips.by/sitemap.xml",
     });
   });

@@ -75,7 +75,7 @@ class RealCoverageRemainderTest extends TestCase
 
     public function test_validator_flags_a_row_with_neither_sku_nor_mpn(): void
     {
-        $result = (new StageProductValidator)->normalizeAndValidate(['external_id' => '1c-1', 'name' => 'No identifier']);
+        $result = (new StageProductValidator)->normalizeAndValidate(['name' => 'No identifier']);
 
         $this->assertArrayHasKey('identifier', $result['errors']);
     }

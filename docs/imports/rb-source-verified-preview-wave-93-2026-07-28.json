@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "purpose": "Four source-verified DELTA noindex preview pages with prices allowed only through matching current provenance evidence.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00003468",
+      "manufacturer": "Delta",
+      "mpn": "DTM1226",
+      "source_url": "https://www.delta-battery.ru/catalog/dtm/delta-dtm-1226/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm1226",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00002817",
+      "manufacturer": "Delta",
+      "mpn": "DT1233",
+      "source_url": "https://www.delta-battery.ru/catalog/dt/delta-dt-1233/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt1233",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003766",
+      "manufacturer": "Delta",
+      "mpn": "CGD1208",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "delta-cgd1208",
+      "replace_categories": true,
+      "allow_verified_price": true
+    },
+    {
+      "external_id": "КА-00003445",
+      "manufacturer": "Delta",
+      "mpn": "CGD1233",
+      "source_url": "https://delta-batt.com/catalog/akkumulyatory_statsionarnye/filter/series-cgd/general-scope-alternativnaya_energetika/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "delta-cgd1233",
+      "replace_categories": true,
+      "allow_verified_price": true
+    }
+  ]
+}

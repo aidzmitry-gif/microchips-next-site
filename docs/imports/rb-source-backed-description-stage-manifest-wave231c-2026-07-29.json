@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave231-C exact two-row manufacturer-primary source refresh after corrected Sonnenschein MPNs; bounded model_core only.",
+  "locale": "ru-BY",
+  "application_contract": {
+    "stage_only": true,
+    "refresh_existing": true,
+    "refresh_applied": true,
+    "database_apply": false
+  },
+  "products": [
+    {
+      "external_id": "bitrix:2831",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/17 G5",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость C100": "17 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3117",
+      "identity_scope": "model_core",
+      "manufacturer": "Sonnenschein",
+      "model_core": "S 12/6.6 S",
+      "technology": "GEL",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость C100": "6,6 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "Exide Technologies",
+      "manufacturer_primary": true,
+      "evidence_scope": "model_core",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

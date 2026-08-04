@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 198: exact first-party DELTA product-page enrichment for existing namespaced Bitrix drafts only. No price, availability, image, indexability or Offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:20128",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "CGD 1212",
+      "source_url": "https://delta-batt.com/products/cgd_1212/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-cgd-1212",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1538",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DT 1218",
+      "source_url": "https://delta-batt.com/products/dt_1218/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-1218",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1402",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DT 6012",
+      "source_url": "https://delta-batt.com/products/dt_6012/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dt-6012",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1403",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12012",
+      "source_url": "https://delta-batt.com/products/dtm_12012/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12012",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:2940",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12032",
+      "source_url": "https://delta-batt.com/products/dtm_12032/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12032",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3006",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12045",
+      "source_url": "https://delta-batt.com/products/dtm_12045/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12045",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1420",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12100 L",
+      "source_url": "https://delta-batt.com/products/dtm_12100_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12100-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1459",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12120 L",
+      "source_url": "https://delta-batt.com/products/dtm_12120_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12120-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1559",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12200 L",
+      "source_url": "https://delta-batt.com/products/dtm_12200_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12200-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:2907",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 12250 L",
+      "source_url": "https://delta-batt.com/products/dtm_12250_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-12250-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3030",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 1240 L",
+      "source_url": "https://delta-batt.com/products/dtm_1240_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1240-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3090",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 1255 L",
+      "source_url": "https://delta-batt.com/products/dtm_1255_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1255-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3274",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 1290 L",
+      "source_url": "https://delta-batt.com/products/dtm_1290_l/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-1290-l",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:2941",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 6032",
+      "source_url": "https://delta-batt.com/products/dtm_6032/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-6032",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3007",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 6045",
+      "source_url": "https://delta-batt.com/products/dtm_6045/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-6045",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1478",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "DTM 612",
+      "source_url": "https://delta-batt.com/products/dtm_612/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-dtm-612",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20153",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "FT 12-180 M",
+      "source_url": "https://delta-batt.com/products/ft_12_180_m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-180-m",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20126",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-100",
+      "source_url": "https://delta-batt.com/products/hr_12_100/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-100",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20122",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-15",
+      "source_url": "https://delta-batt.com/products/hr_12_15/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-15",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:1539",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-18",
+      "source_url": "https://delta-batt.com/products/hr_12_18/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-18",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3008",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-4.5",
+      "source_url": "https://delta-batt.com/products/hr_12_4_5/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-4-5",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20124",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-40",
+      "source_url": "https://delta-batt.com/products/hr_12_40/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-40",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3062",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-5",
+      "source_url": "https://delta-batt.com/products/hr_12_5/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-5",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3077",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-5.8",
+      "source_url": "https://delta-batt.com/products/hr_12_5_8/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-5-8",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20125",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-65",
+      "source_url": "https://delta-batt.com/products/hr_12_65/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-65",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3263",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 12-9",
+      "source_url": "https://delta-batt.com/products/hr_12_9/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-12-9",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20121",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 6-15",
+      "source_url": "https://delta-batt.com/products/hr_6_15/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-6-15",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:3176",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HR 6-7.2",
+      "source_url": "https://delta-batt.com/products/hr_6_7_2/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-6-7-2",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20146",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-100 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_100_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-100-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20136",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-12 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_12_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-12-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20147",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-140 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_140_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-140-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20133",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-180 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_180_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-180-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20138",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-26 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_26_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-26-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20139",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-33 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_33_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-33-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20140",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-45 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_45_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-45-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20142",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-65 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_65_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-65-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20134",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-7.2 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_7_2_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-7-2-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20143",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-75 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_75_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-75-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20144",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-80 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_80_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-80-x",
+      "replace_categories": true
+    },
+    {
+      "external_id": "bitrix:20145",
+      "manufacturer": "DELTA",
+      "identity_scope": "exact",
+      "mpn": "HRL 12-90 X",
+      "source_url": "https://delta-batt.com/products/hrl_12_90_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hrl-12-90-x",
+      "replace_categories": true
+    }
+  ]
+}

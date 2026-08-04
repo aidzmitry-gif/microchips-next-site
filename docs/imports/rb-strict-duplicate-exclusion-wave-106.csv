@@ -1,0 +1,3 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00004009,exact_replacement_cartridge_duplicate,КА-00003237,"Exact APC APCRBC141 replacement-cartridge MPN; survivor is already source-backed and published with verified media"
+КА-00004503,exact_replacement_cartridge_duplicate,КА-00003237,"Exact APC APCRBC141 replacement-cartridge MPN; the 12 V / 5 Ah wording describes internal battery blocks rather than a distinct cartridge identity"

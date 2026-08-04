@@ -1,0 +1,5 @@
+﻿external_id,parent_external_id,name,path
+seo:power-systems,,Системы и источники питания,catalog/power-systems
+seo:ups-systems,seo:power-systems,Источники бесперебойного питания (ИБП),catalog/power-systems/ups-systems
+seo:power-supplies,seo:power-systems,Блоки и источники питания,catalog/power-systems/power-supplies
+seo:power-converters,seo:power-systems,Преобразователи напряжения и инверторы,catalog/power-systems/power-converters

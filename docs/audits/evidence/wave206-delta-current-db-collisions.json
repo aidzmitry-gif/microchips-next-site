@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "observed_at": "2026-07-29",
+  "source": "read_only_laravel_products_query_after_wave206_parallel_apply",
+  "normalization": "ProductIdentity::normalize",
+  "collisions": [
+    {
+      "candidate_external_id": "bitrix:1400",
+      "candidate_mpn": "DT 401",
+      "normalized_identifier": "dt401",
+      "matching_field": "mpn",
+      "conflicting_product_id": 24,
+      "conflicting_external_id": "ФР-00002172",
+      "conflicting_name": "Аккумуляторная батарея Delta DT 401"
+    },
+    {
+      "candidate_external_id": "bitrix:1401",
+      "candidate_mpn": "DT 12012",
+      "normalized_identifier": "dt12012",
+      "matching_field": "sku_and_mpn",
+      "conflicting_product_id": 1,
+      "conflicting_external_id": "ФР-00000005",
+      "conflicting_name": "Аккумуляторная батарея Delta DT 12012"
+    },
+    {
+      "candidate_external_id": "bitrix:1419",
+      "candidate_mpn": "DT 12100",
+      "normalized_identifier": "dt12100",
+      "matching_field": "mpn",
+      "conflicting_product_id": 45,
+      "conflicting_external_id": "ФР-00000106",
+      "conflicting_name": "Аккумуляторная батарея Delta DT 12100"
+    },
+    {
+      "candidate_external_id": "bitrix:1421",
+      "candidate_mpn": "FTS 12-100X",
+      "normalized_identifier": "fts12100x",
+      "matching_field": "mpn",
+      "conflicting_product_id": 6659,
+      "conflicting_external_id": "КА-00006757",
+      "conflicting_name": "Аккумулятор Delta FTS 12-100 X, 12 В, 100 А·ч"
+    },
+    {
+      "candidate_external_id": "bitrix:1475",
+      "candidate_mpn": "DT 1212",
+      "normalized_identifier": "dt1212",
+      "matching_field": "sku",
+      "conflicting_product_id": 4,
+      "conflicting_external_id": "ФР-00000243",
+      "conflicting_name": "Аккумуляторная батарея Delta DT1212 12В 12Ач Страна ввоза: РФ"
+    },
+    {
+      "candidate_external_id": "bitrix:1476",
+      "candidate_mpn": "DT 612",
+      "normalized_identifier": "dt612",
+      "matching_field": "sku",
+      "conflicting_product_id": 5,
+      "conflicting_external_id": "ФР-00000233",
+      "conflicting_name": "Аккумуляторная батарея Delta DT 612 6В, 12Ач Страна ввоза: РФ."
+    },
+    {
+      "candidate_external_id": "bitrix:1481",
+      "candidate_mpn": "HR 6-12",
+      "normalized_identifier": "hr612",
+      "matching_field": "mpn",
+      "conflicting_product_id": 1895,
+      "conflicting_external_id": "КА-00001895",
+      "conflicting_name": "Аккумулятор Delta HR 6-12, 6 В, 12 А·ч"
+    },
+    {
+      "candidate_external_id": "bitrix:1504",
+      "candidate_mpn": "DTM 12150 L",
+      "normalized_identifier": "dtm12150l",
+      "matching_field": "mpn",
+      "conflicting_product_id": 29,
+      "conflicting_external_id": "ФР-00002021",
+      "conflicting_name": "Аккумуляторная батарея Delta DTM 12150 L"
+    },
+    {
+      "candidate_external_id": "bitrix:1556",
+      "candidate_mpn": "DT 6028",
+      "normalized_identifier": "dt6028",
+      "matching_field": "mpn",
+      "conflicting_product_id": 47,
+      "conflicting_external_id": "КА-00001147",
+      "conflicting_name": "Аккумуляторная батарея Delta DT 6028"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+product_external_id,manufacturer,mpn,category_external_id,has_applied_description
+manufacturer:acme:M1,Acme,M1,seo:batteries-ups,true
+КА-1,Acme,M2,seo:primary-cells,true
+bitrix:1,Acme,M3,seo:batteries-ups,true

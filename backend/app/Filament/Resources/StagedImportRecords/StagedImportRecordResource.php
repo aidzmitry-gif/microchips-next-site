@@ -19,7 +19,7 @@ class StagedImportRecordResource extends Resource
 {
     protected static ?string $model = StagedImportRecord::class;
 
-    protected static ?string $navigationLabel = 'Импорт 1С: записи';
+    protected static ?string $navigationLabel = 'Импорт: записи и снимки';
 
     protected static ?string $modelLabel = 'запись импорта';
 
@@ -36,6 +36,23 @@ class StagedImportRecordResource extends Resource
                 TextColumn::make('row_number')->label('Строка')->sortable(),
                 TextColumn::make('external_id')->label('ID 1С')->searchable()->toggleable(),
                 TextColumn::make('normalized_payload.name')->label('Товар')->searchable()->limit(48),
+                TextColumn::make('payload.legacy_name')
+                    ->label('Товар Bitrix')
+                    ->searchable()
+                    ->limit(56)
+                    ->toggleable(),
+                TextColumn::make('payload.one_c_external_id')
+                    ->label('Связь 1С')
+                    ->searchable()
+                    ->toggleable(),
+                TextColumn::make('payload.transfer_status')
+                    ->label('Статус переноса')
+                    ->badge()
+                    ->toggleable(),
+                TextColumn::make('payload.legacy_url_candidate')
+                    ->label('Старый URL')
+                    ->limit(48)
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('normalized_payload.sku')->label('Артикул')->searchable()->toggleable(),
                 TextColumn::make('status')->label('Статус')->badge(),
                 TextColumn::make('validation_errors')
@@ -49,8 +66,10 @@ class StagedImportRecordResource extends Resource
                     'ready_for_review' => 'Готово к проверке',
                     'invalid' => 'Ошибка валидации',
                     'duplicate' => 'Конфликт дубликата',
+                    'excluded' => 'Исключено по реестру',
                     'reviewed' => 'Проверено',
                     'published' => 'Добавлено в сайт',
+                    'staged_evidence' => 'Снимок Bitrix (без публикации)',
                 ]),
                 SelectFilter::make('import_run_id')->label('Прогон')->relationship('importRun', 'id'),
             ])

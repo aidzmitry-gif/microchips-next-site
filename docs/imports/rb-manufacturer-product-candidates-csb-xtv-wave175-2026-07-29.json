@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Net-new B2B reserve-power candidates from the official CSB XTV series page. These models were absent from the current Bitrix plus 1C catalog at the time of review. Candidate creation does not publish, price or index them.",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:XTV1272",
+      "manufacturer": "CSB",
+      "mpn": "XTV1272",
+      "name": "Аккумулятор CSB XTV1272 для резервного питания",
+      "slug": "csb-xtv1272",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV1285",
+      "manufacturer": "CSB",
+      "mpn": "XTV1285",
+      "name": "Аккумулятор CSB XTV1285 для резервного питания",
+      "slug": "csb-xtv1285",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12120",
+      "manufacturer": "CSB",
+      "mpn": "XTV12120",
+      "name": "Аккумулятор CSB XTV12120 для резервного питания",
+      "slug": "csb-xtv12120",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12200",
+      "manufacturer": "CSB",
+      "mpn": "XTV12200",
+      "name": "Аккумулятор CSB XTV12200 для резервного питания",
+      "slug": "csb-xtv12200",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12550",
+      "manufacturer": "CSB",
+      "mpn": "XTV12550",
+      "name": "Аккумулятор CSB XTV12550 для резервного питания",
+      "slug": "csb-xtv12550",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12800",
+      "manufacturer": "CSB",
+      "mpn": "XTV12800",
+      "name": "Аккумулятор CSB XTV12800 для резервного питания",
+      "slug": "csb-xtv12800",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV121000",
+      "manufacturer": "CSB",
+      "mpn": "XTV121000",
+      "name": "Аккумулятор CSB XTV121000 для резервного питания",
+      "slug": "csb-xtv121000",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    },
+    {
+      "external_id": "manufacturer:csb:XTV121100",
+      "manufacturer": "CSB",
+      "mpn": "XTV121100",
+      "name": "Аккумулятор CSB XTV121100 для резервного питания",
+      "slug": "csb-xtv121100",
+      "category_external_id": "seo:batteries-ups",
+      "source_url": "https://csb-battery.com/product/xtv-series/",
+      "technical_attributes": {"Серия": "XTV", "Технология": "VRLA AGM", "Номинальное напряжение": "12 В"}
+    }
+  ]
+}

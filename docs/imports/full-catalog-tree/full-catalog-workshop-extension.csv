@@ -1,0 +1,5 @@
+external_id,parent_external_id,name,path
+seo:industrial-supplies,,Материалы и инструмент для производства,catalog/industrial-supplies
+seo:fasteners,seo:industrial-supplies,Крепёж и монтаж,catalog/industrial-supplies/fasteners
+seo:workshop-tools,seo:industrial-supplies,Ручной и монтажный инструмент,catalog/industrial-supplies/workshop-tools
+seo:assembly-materials,seo:industrial-supplies,Материалы для сборки и обслуживания,catalog/industrial-supplies/assembly-materials

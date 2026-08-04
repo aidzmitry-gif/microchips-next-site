@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Collapse only Wave242 official-source exact Delta legacy duplicates into their existing canonical RB owner.",
+  "duplicates": [
+    {
+      "survivor_external_id": "ФР-00002172",
+      "duplicate_external_id": "bitrix:1400",
+      "survivor_name": "Аккумуляторная батарея Delta DT 401",
+      "duplicate_name": "Аккумулятор Delta DT 401 (AGM, 1Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/delta-dt401",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1400",
+      "model_core": "DT 401",
+      "voltage": "4V",
+      "capacity": "1Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "Delta",
+      "survivor_mpn": "DT401",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "source_evidence_path": "docs/audits/generated/rb-wave242-delta-hold-research-ledger.csv",
+      "source_evidence_sha256": "4712d85fad7452d6ae1c1dc3ac91c246645f9ae393fc49cba39bbfa1bcbe3a87",
+      "source_snapshot_path": "docs/audits/sources/wave242-delta/dt-8a836b25d451ddf3.html",
+      "source_snapshot_sha256": "8a836b25d451ddf38b179b9639fe334f7eacb40db0e65e275a025ff15b656142",
+      "decision_reason": "Wave242 exact official Delta model and electrical row matches the legacy title; the canonical live owner has the same normalized Delta MPN and preserves the market URL, content and commercial evidence."
+    },
+    {
+      "survivor_external_id": "ФР-00000005",
+      "duplicate_external_id": "bitrix:1401",
+      "survivor_name": "Аккумуляторная батарея Delta DT 12012",
+      "duplicate_name": "Аккумулятор Delta DT 12012 (AGM, 1.2Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/delta-dt12012",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1401",
+      "model_core": "DT 12012",
+      "voltage": "12V",
+      "capacity": "1.2Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "Delta",
+      "survivor_mpn": "DT12012",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "source_evidence_path": "docs/audits/generated/rb-wave242-delta-hold-research-ledger.csv",
+      "source_evidence_sha256": "4712d85fad7452d6ae1c1dc3ac91c246645f9ae393fc49cba39bbfa1bcbe3a87",
+      "source_snapshot_path": "docs/audits/sources/wave242-delta/dt-8a836b25d451ddf3.html",
+      "source_snapshot_sha256": "8a836b25d451ddf38b179b9639fe334f7eacb40db0e65e275a025ff15b656142",
+      "decision_reason": "Wave242 exact official Delta model and electrical row matches the legacy title; the canonical live owner has the same normalized Delta MPN and preserves the market URL, content and commercial evidence."
+    },
+    {
+      "survivor_external_id": "КА-00001147",
+      "duplicate_external_id": "bitrix:1556",
+      "survivor_name": "Аккумуляторная батарея Delta DT 6028",
+      "duplicate_name": "Аккумулятор Delta DT 6028 (AGM, 2.8Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/delta-dt6028",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-1556",
+      "model_core": "DT 6028",
+      "voltage": "6V",
+      "capacity": "2.8Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "Delta",
+      "survivor_mpn": "DT6028",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "source_evidence_path": "docs/audits/generated/rb-wave242-delta-hold-research-ledger.csv",
+      "source_evidence_sha256": "4712d85fad7452d6ae1c1dc3ac91c246645f9ae393fc49cba39bbfa1bcbe3a87",
+      "source_snapshot_path": "docs/audits/sources/wave242-delta/dt-8a836b25d451ddf3.html",
+      "source_snapshot_sha256": "8a836b25d451ddf38b179b9639fe334f7eacb40db0e65e275a025ff15b656142",
+      "decision_reason": "Wave242 exact official Delta model and electrical row matches the legacy title; the canonical live owner has the same normalized Delta MPN and preserves the market URL, content and commercial evidence."
+    },
+    {
+      "survivor_external_id": "КА-00002317",
+      "duplicate_external_id": "bitrix:20151",
+      "survivor_name": "Аккумулятор Delta FT 12-125 M, 12 В, 125 А·ч",
+      "duplicate_name": "Аккумулятор Delta FT 12-125 M (AGM, 125Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/delta-ft-12-125-m",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-20151",
+      "model_core": "FT 12-125 M",
+      "voltage": "12V",
+      "capacity": "125Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "Delta",
+      "survivor_mpn": "FT 12-125 M",
+      "source_url": "https://delta-batt.com/series/ft_m/",
+      "source_evidence_path": "docs/audits/generated/rb-wave242-delta-hold-research-ledger.csv",
+      "source_evidence_sha256": "4712d85fad7452d6ae1c1dc3ac91c246645f9ae393fc49cba39bbfa1bcbe3a87",
+      "source_snapshot_path": "docs/audits/sources/wave242-delta/ft_m-7e2a9580bb0a839f.html",
+      "source_snapshot_sha256": "7e2a9580bb0a839f147682dde9061ec40b511ed4e56dfe9133d2b1602a29d559",
+      "decision_reason": "Wave242 exact official Delta model and electrical row matches the legacy title; the canonical live owner has the same normalized Delta MPN and preserves the market URL, content and commercial evidence."
+    },
+    {
+      "survivor_external_id": "КА-00003468",
+      "duplicate_external_id": "bitrix:2915",
+      "survivor_name": "Аккумуляторная батарея Delta DTM 1226, 12 В 26 А·ч",
+      "duplicate_name": "Аккумулятор Delta DTM 1226 (AGM, 26Ah)",
+      "survivor_path": "/catalog/industrial-batteries/batteries-ups/delta-dtm1226",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-ups/legacy-bitrix-2915",
+      "model_core": "DTM 1226",
+      "voltage": "12V",
+      "capacity": "26Ah",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "duplicate_category_external_ids": [
+        "seo:batteries-ups"
+      ],
+      "manufacturer": "Delta",
+      "survivor_mpn": "DTM1226",
+      "source_url": "https://delta-batt.com/series/dtm/",
+      "source_evidence_path": "docs/audits/generated/rb-wave242-delta-hold-research-ledger.csv",
+      "source_evidence_sha256": "4712d85fad7452d6ae1c1dc3ac91c246645f9ae393fc49cba39bbfa1bcbe3a87",
+      "source_snapshot_path": "docs/audits/sources/wave242-delta/dtm-a6be74185190c1e1.html",
+      "source_snapshot_sha256": "a6be74185190c1e19c537da7b51fffbaef1b87f28830d294215def669b8ac62c",
+      "decision_reason": "Wave242 exact official Delta model and electrical row matches the legacy title; the canonical live owner has the same normalized Delta MPN and preserves the market URL, content and commercial evidence."
+    }
+  ]
+}

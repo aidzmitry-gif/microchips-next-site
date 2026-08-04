@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:VGL 12",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 12",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 12 Ni-Cd",
+      "slug": "enersys-vgl-12",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "12 А·ч",
+        "Габариты": "46 × 85 × 167 мм",
+        "Типичная масса": "1 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 20",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 20",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 20 Ni-Cd",
+      "slug": "enersys-vgl-20",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "20 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,4 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 25",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 25",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 25 Ni-Cd",
+      "slug": "enersys-vgl-25",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "25 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 35",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 35",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 35 Ni-Cd",
+      "slug": "enersys-vgl-35",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "35 А·ч",
+        "Габариты": "46 × 85 × 237 мм",
+        "Типичная масса": "1,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 45",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 45",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 45 Ni-Cd",
+      "slug": "enersys-vgl-45",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "45 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 50",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 50",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 50 Ni-Cd",
+      "slug": "enersys-vgl-50",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "50 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 60",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 60",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 60 Ni-Cd",
+      "slug": "enersys-vgl-60",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "60 А·ч",
+        "Габариты": "85 × 85 × 237 мм",
+        "Типичная масса": "2,9 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 70",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 70",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 70 Ni-Cd",
+      "slug": "enersys-vgl-70",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "70 А·ч",
+        "Габариты": "53 × 134 × 364 мм",
+        "Типичная масса": "4,9 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 80",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 80",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 80 Ni-Cd",
+      "slug": "enersys-vgl-80",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "80 А·ч",
+        "Габариты": "53 × 134 × 364 мм",
+        "Типичная масса": "5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 100",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 100",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 100 Ni-Cd",
+      "slug": "enersys-vgl-100",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "100 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 120",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 120",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 120 Ni-Cd",
+      "slug": "enersys-vgl-120",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "120 А·ч",
+        "Габариты": "69 × 134 × 364 мм",
+        "Типичная масса": "6,3 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 135",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 135",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 135 Ni-Cd",
+      "slug": "enersys-vgl-135",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "135 А·ч",
+        "Габариты": "70 × 164 × 364 мм",
+        "Типичная масса": "7,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 155",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 155",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 155 Ni-Cd",
+      "slug": "enersys-vgl-155",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "155 А·ч",
+        "Габариты": "70 × 164 × 364 мм",
+        "Типичная масса": "7,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 175",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 175",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 175 Ni-Cd",
+      "slug": "enersys-vgl-175",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "175 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,4 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 205",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 205",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 205 Ni-Cd",
+      "slug": "enersys-vgl-205",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "205 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "10,8 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 225",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 225",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 225 Ni-Cd",
+      "slug": "enersys-vgl-225",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "225 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "11,1 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 245",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 245",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 245 Ni-Cd",
+      "slug": "enersys-vgl-245",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "245 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "11,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 255",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 255",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 255 Ni-Cd",
+      "slug": "enersys-vgl-255",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "255 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "11,7 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 275",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 275",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 275 Ni-Cd",
+      "slug": "enersys-vgl-275",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "275 А·ч",
+        "Габариты": "108 × 164 × 364 мм",
+        "Типичная масса": "12,2 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 300",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 300",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 300 Ni-Cd",
+      "slug": "enersys-vgl-300",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "300 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "16,2 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 330",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 330",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 330 Ni-Cd",
+      "slug": "enersys-vgl-330",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "330 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "16,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 350",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 350",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 350 Ni-Cd",
+      "slug": "enersys-vgl-350",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "350 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "17 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 375",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 375",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 375 Ni-Cd",
+      "slug": "enersys-vgl-375",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "375 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "17,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 390",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 390",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 390 Ni-Cd",
+      "slug": "enersys-vgl-390",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "390 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "18 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:VGL 420",
+      "manufacturer": "EnerSys",
+      "mpn": "VGL 420",
+      "source_url": "https://www.enersys.com/49a681/globalassets/documents/product-documentation/powersafe/vgl/amer/en-rs-amer-ps-vgl-0524.pdf",
+      "name": "Промышленный аккумуляторный элемент EnerSys PowerSafe VGL 420 Ni-Cd",
+      "slug": "enersys-vgl-420",
+      "category_external_id": "seo:batteries-industrial",
+      "technical_attributes": {
+        "Серия": "PowerSafe VGL",
+        "Технология": "клапанно-регулируемый Ni-Cd с карманными пластинами",
+        "Конструкция": "верхние выводы",
+        "Диапазон разряда серии": "от 1 до 100 часов",
+        "Рекомбинация газа": "до 90 %",
+        "Рабочая температура серии": "от −30 до +50 °C",
+        "Условия номинальной ёмкости": "5-часовой разряд до 1,00 В на элемент при 20 °C",
+        "Номинальная ёмкость": "420 А·ч",
+        "Габариты": "164 × 158 × 364 мм",
+        "Типичная масса": "18,5 кг"
+      }
+    }
+  ]
+}

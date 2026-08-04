@@ -1,9 +1,11 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 const revalidatePathMock = vi.fn();
+const revalidateTagMock = vi.fn();
 
 vi.mock("next/cache", () => ({
   revalidatePath: (path: string) => revalidatePathMock(path),
+  revalidateTag: (tag: string, profile: { expire: number }) => revalidateTagMock(tag, profile),
 }));
 
 const ORIGINAL_SECRET = process.env.NEXT_REVALIDATE_SECRET;
@@ -33,6 +35,7 @@ function makeRequest(options: { body?: unknown; rawBody?: string; authorization?
 describe("POST /api/revalidate", () => {
   beforeEach(() => {
     revalidatePathMock.mockClear();
+    revalidateTagMock.mockClear();
     process.env.NEXT_REVALIDATE_SECRET = TEST_SECRET;
   });
 
@@ -99,7 +102,7 @@ describe("POST /api/revalidate", () => {
     const json = await response.json();
 
     expect(response.status).toBe(200);
-    expect(json).toEqual({ revalidated: ["/valid", "/another-valid"] });
+    expect(json).toEqual({ revalidated: ["/valid", "/another-valid"], tags: [] });
     expect(revalidatePathMock).toHaveBeenCalledTimes(2);
     expect(revalidatePathMock).toHaveBeenNthCalledWith(1, "/valid");
     expect(revalidatePathMock).toHaveBeenNthCalledWith(2, "/another-valid");
@@ -113,14 +116,18 @@ describe("POST /api/revalidate", () => {
     const json = await response.json();
 
     expect(response.status).toBe(200);
-    expect(json).toEqual({ revalidated: [] });
+    expect(json).toEqual({ revalidated: [], tags: [] });
     expect(revalidatePathMock).not.toHaveBeenCalled();
   });
 
   it("revalidates successfully with a valid bearer secret and valid paths", async () => {
     const { POST } = await import("./route");
     const request = makeRequest({
-      body: { paths: ["/catalog", "/catalog/battery"] },
+      body: {
+        paths: ["/catalog", "/catalog/battery"],
+        site_key: "microchips-by",
+        site_domain: "microchips-by.test",
+      },
       authorization: `Bearer ${TEST_SECRET}`,
     });
 
@@ -128,9 +135,27 @@ describe("POST /api/revalidate", () => {
     const json = await response.json();
 
     expect(response.status).toBe(200);
-    expect(json).toEqual({ revalidated: ["/catalog", "/catalog/battery"] });
+    expect(json).toEqual({
+      revalidated: ["/catalog", "/catalog/battery"],
+      tags: ["site:microchips-by", "catalog:microchips-by", "site:microchips-by.test"],
+    });
     expect(revalidatePathMock).toHaveBeenCalledTimes(2);
     expect(revalidatePathMock).toHaveBeenCalledWith("/catalog");
     expect(revalidatePathMock).toHaveBeenCalledWith("/catalog/battery");
+    expect(revalidateTagMock).toHaveBeenCalledTimes(3);
+    expect(revalidateTagMock).toHaveBeenCalledWith("catalog:microchips-by", { expire: 0 });
+  });
+
+  it("ignores unsafe cache tag values", async () => {
+    const { POST } = await import("./route");
+    const request = makeRequest({
+      body: { paths: ["/catalog"], site_key: "../../unsafe", site_domain: "bad value" },
+      authorization: `Bearer ${TEST_SECRET}`,
+    });
+
+    const response = await POST(request);
+
+    await expect(response.json()).resolves.toEqual({ revalidated: ["/catalog"], tags: [] });
+    expect(revalidateTagMock).not.toHaveBeenCalled();
   });
 });

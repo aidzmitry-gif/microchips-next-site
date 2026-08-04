@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific Philips lighting editorial drafts from official Philips Lighting product specification sheets. No commercial facts, image rights claim or indexability authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00000559",
+      "manufacturer": "Philips",
+      "mpn": "TL-D 18W/33-640 1SL/25",
+      "display_name": "Лампа Philips TL-D 18W/33-640 1SL/25",
+      "technology": "Линейная люминесцентная лампа T8",
+      "source_url": "https://www.assets.lighting.philips.com/is/content/PhilipsLighting/fp928048003382-pss-en_sg",
+      "source_kind": "Official Philips Lighting model-specific product specification sheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Мощность": "18 W",
+        "Цоколь": "G13",
+        "Форма колбы": "T8, 26 мм",
+        "Световой поток": "1200 лм",
+        "Цветовая температура": "4100 K",
+        "Индекс цветопередачи": "63",
+        "Номинальный срок службы": "13000 ч",
+        "Напряжение": "59 V"
+      }
+    },
+    {
+      "external_id": "ФР-00000561",
+      "manufacturer": "Philips",
+      "mpn": "TL-D 36W/54-765 1SL/25",
+      "display_name": "Лампа Philips TL-D 36W/54-765 1SL/25",
+      "technology": "Линейная люминесцентная лампа T8",
+      "source_url": "https://www.assets.lighting.philips.com/is/content/PhilipsLighting/fp928048505422-pss-en_us",
+      "source_kind": "Official Philips Lighting model-specific product specification sheet",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Мощность": "36 W",
+        "Цоколь": "G13",
+        "Форма колбы": "T8, 26 мм",
+        "Световой поток": "2500 лм",
+        "Цветовая температура": "6200 K",
+        "Индекс цветопередачи": "75",
+        "Номинальный срок службы": "13000 ч",
+        "Напряжение": "103 V"
+      }
+    }
+  ]
+}

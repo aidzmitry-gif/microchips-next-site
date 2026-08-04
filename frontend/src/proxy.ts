@@ -8,10 +8,11 @@ const apiBaseUrl = (process.env.LARAVEL_API_URL ?? "http://localhost:8000").repl
 const redirectLookupTimeoutMs = 1_500;
 
 export async function proxy(request: NextRequest) {
-  const host = (request.headers.get("x-forwarded-host")?.split(",")[0] ?? request.headers.get("host") ?? request.nextUrl.hostname)
+  const requestHost = (request.headers.get("x-forwarded-host")?.split(",")[0] ?? request.headers.get("host") ?? request.nextUrl.hostname)
     .toLowerCase()
     .replace(/^www\./, "")
     .replace(/:\d+$/, "");
+  const host = resolveSiteHost(requestHost);
 
   if (!host) return NextResponse.next();
 
@@ -38,6 +39,15 @@ export async function proxy(request: NextRequest) {
   } catch {
     return redirectServiceUnavailable();
   }
+}
+
+function resolveSiteHost(requestHost: string): string {
+  if (!["localhost", "127.0.0.1", "::1"].includes(requestHost)) return requestHost;
+
+  return (process.env.DEFAULT_SITE_HOST ?? requestHost)
+    .toLowerCase()
+    .replace(/^www\./, "")
+    .replace(/:\d+$/, "");
 }
 
 function redirectServiceUnavailable(): NextResponse {

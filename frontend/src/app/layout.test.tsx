@@ -4,7 +4,8 @@ const { headersMock } = vi.hoisted(() => ({ headersMock: vi.fn() }));
 
 vi.mock("next/headers", () => ({ headers: headersMock }));
 
-const { default: RootLayout, languageForLocale } = await import("./layout");
+const { default: RootLayout } = await import("./layout");
+const { languageForLocale } = await import("@/lib/locale");
 
 afterEach(() => headersMock.mockReset());
 

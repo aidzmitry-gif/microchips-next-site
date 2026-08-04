@@ -1,0 +1,12 @@
+{
+  "input_files": [
+    "docs\\imports\\rb-research-holds-wave-126.csv",
+    "docs\\imports\\rb-research-holds-robiton-a-wave-127-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-robiton-b-wave-127-2026-07-28.csv",
+    "docs\\imports\\rb-research-holds-panasonic-pkcell-wave-127-2026-07-28.csv"
+  ],
+  "source_rows": 256,
+  "unique_hold_clusters": 251,
+  "collapsed_duplicate_rows": 5,
+  "invariant": "hold-only ledger; no catalogue, publication or database mutation"
+}

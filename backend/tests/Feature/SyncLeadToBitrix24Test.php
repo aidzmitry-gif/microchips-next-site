@@ -65,6 +65,46 @@ class SyncLeadToBitrix24Test extends TestCase
         $this->assertNull($lead->external_id);
     }
 
+    public function test_an_http_success_without_a_valid_bitrix_lead_id_records_an_error_and_retries(): void
+    {
+        Http::fake([
+            self::WEBHOOK_URL => Http::response(['error' => 'INVALID_CREDENTIALS'], 200),
+        ]);
+
+        $site = $this->site();
+        $this->integration($site);
+        $lead = $this->lead($site);
+
+        try {
+            (new SyncLeadToBitrix24($lead))->handle();
+            $this->fail('A Bitrix24 response without a valid lead ID must not be treated as a successful sync.');
+        } catch (\RuntimeException $exception) {
+            $this->assertSame('Bitrix24 did not return a valid lead ID: INVALID_CREDENTIALS', $exception->getMessage());
+        }
+
+        $this->assertDatabaseHas('leads', [
+            'id' => $lead->id,
+            'external_id' => null,
+            'external_error' => 'Bitrix24 did not return a valid lead ID: INVALID_CREDENTIALS',
+        ]);
+    }
+
+    public function test_an_unconfigured_integration_is_visible_on_the_persisted_lead(): void
+    {
+        $site = $this->site();
+        $lead = $this->lead($site);
+
+        Http::fake();
+        (new SyncLeadToBitrix24($lead))->handle();
+
+        Http::assertNothingSent();
+        $this->assertDatabaseHas('leads', [
+            'id' => $lead->id,
+            'external_id' => null,
+            'external_error' => 'Bitrix24 integration is not enabled for this site.',
+        ]);
+    }
+
     public function test_it_never_posts_to_a_legacy_or_tampered_non_bitrix_webhook_url(): void
     {
         $site = $this->site();

@@ -31,8 +31,8 @@ class StageProductValidator
             $errors['name'] = 'Product name is required.';
         }
 
-        if ($sku === null && $mpn === null) {
-            $errors['identifier'] = 'At least one product identifier (SKU or MPN) is required.';
+        if ($externalId === null && $sku === null && $mpn === null) {
+            $errors['identifier'] = 'At least one stable identifier (1C external ID, SKU or MPN) is required.';
         }
 
         $slug = $sourceSlug ?: ($name === null ? null : Str::slug($name));

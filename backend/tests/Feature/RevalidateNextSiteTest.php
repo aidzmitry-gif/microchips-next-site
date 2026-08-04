@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Jobs\RevalidateNextSite;
+use App\Models\Site;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Support\Facades\Http;
@@ -38,12 +39,23 @@ class RevalidateNextSiteTest extends TestCase
             'next.example.test/*' => Http::response(['revalidated' => true], 200),
         ]);
 
-        (new RevalidateNextSite(7, ['/catalog/alpha-battery', '/catalog/alpha-battery']))->handle();
+        $site = Site::query()->create([
+            'key' => 'microchips-by',
+            'domain' => 'microchips-by.test',
+            'country_code' => 'BY',
+            'currency_code' => 'BYN',
+            'default_locale' => 'ru-BY',
+            'name' => 'Microchips Беларусь',
+        ]);
+
+        (new RevalidateNextSite($site->id, ['/catalog/alpha-battery', '/catalog/alpha-battery']))->handle();
 
         Http::assertSent(function ($request) {
             return $request->url() === 'https://next.example.test/api/revalidate'
                 && $request->hasHeader('Authorization', 'Bearer super-secret-token')
-                && $request['paths'] === ['/catalog/alpha-battery'];
+                && $request['paths'] === ['/catalog/alpha-battery']
+                && $request['site_key'] === 'microchips-by'
+                && $request['site_domain'] === 'microchips-by.test';
         });
     }
 

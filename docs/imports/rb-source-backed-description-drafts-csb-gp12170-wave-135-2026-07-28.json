@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 135 current manufacturer evidence for the CSB GP12170 B1 and B3 terminal executions. Capacity is deliberately omitted because the current datasheet values differ by discharge regime and revision.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001066",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP12170",
+      "display_name": "Аккумулятор CSB GP12170 B1",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-GP12170-01312026.pdf",
+      "remove_technical_attributes": [
+        "Номинальная ёмкость"
+      ],
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Технология": "VRLA AGM",
+        "Габариты": "181 × 76,2 × 167 мм",
+        "Масса": "около 5,50 кг",
+        "Максимальный ток заряда": "5,10 А",
+        "Расчётный срок службы": "до 5 лет в буферном режиме при 25 °C",
+        "Тип вывода": "B1 / M5"
+      }
+    },
+    {
+      "external_id": "КА-00000471",
+      "identity_scope": "model_core",
+      "manufacturer": "CSB",
+      "model_core": "GP12170",
+      "display_name": "Аккумулятор CSB GP12170 B3",
+      "technology": "VRLA AGM",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-GP12170-01312026.pdf",
+      "remove_technical_attributes": [
+        "Nominal voltage",
+        "Nominal capacity",
+        "Source limitation"
+      ],
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Технология": "VRLA AGM",
+        "Габариты": "181 × 76,2 × 167 мм",
+        "Масса": "около 5,50 кг",
+        "Максимальный ток заряда": "5,10 А",
+        "Расчётный срок службы": "до 5 лет в буферном режиме при 25 °C",
+        "Тип вывода": "B3 / M5"
+      }
+    }
+  ]
+}

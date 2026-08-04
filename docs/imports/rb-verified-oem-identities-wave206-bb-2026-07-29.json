@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:1519",
+      "current_name": "Аккумулятор B.B. Battery HR 15-12 (AGM, 15Ah)",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HR15-12",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "B.B. Battery Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "Valve-regulated lead-acid battery",
+      "source_snapshot_path": "../audits/sources/wave206-fiamm-bb-csb/bb-hr-series-2026-07-29.html",
+      "source_snapshot_sha256": "bd379d1ecac28698be0ea7bf271c63732251131464db1bf994d7ae5f73fe2c68"
+    },
+    {
+      "external_id": "bitrix:1526",
+      "current_name": "Аккумулятор B.B. Battery BC 17-12 (AGM, 17Ah)",
+      "manufacturer": "B.B. Battery",
+      "mpn": "BC17-12",
+      "source_url": "https://www.bb-bat.com/en/BC.html",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "B.B. Battery Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "Valve-regulated lead-acid battery",
+      "source_snapshot_path": "../audits/sources/wave206-fiamm-bb-csb/bb-bc-series-2026-07-29.html",
+      "source_snapshot_sha256": "9f42041705a2c87c54e4cda7346eba8fcdfd6cada985e21beb94683a5b8892f4"
+    },
+    {
+      "external_id": "bitrix:1565",
+      "current_name": "Аккумулятор B.B. Battery HR 22-12 (AGM, 22Ah)",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HR22-12",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "B.B. Battery Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "Valve-regulated lead-acid battery",
+      "source_snapshot_path": "../audits/sources/wave206-fiamm-bb-csb/bb-hr-series-2026-07-29.html",
+      "source_snapshot_sha256": "bd379d1ecac28698be0ea7bf271c63732251131464db1bf994d7ae5f73fe2c68"
+    },
+    {
+      "external_id": "bitrix:1587",
+      "current_name": "Аккумулятор B.B. Battery HR 4-12 (AGM, 3.5Ah)",
+      "manufacturer": "B.B. Battery",
+      "mpn": "HR4-12",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "B.B. Battery Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "Valve-regulated lead-acid battery",
+      "source_snapshot_path": "../audits/sources/wave206-fiamm-bb-csb/bb-hr-series-2026-07-29.html",
+      "source_snapshot_sha256": "bd379d1ecac28698be0ea7bf271c63732251131464db1bf994d7ae5f73fe2c68"
+    },
+    {
+      "external_id": "bitrix:1593",
+      "current_name": "Аккумулятор B.B. Battery BPS 40-12 (AGM, 40Ah)",
+      "manufacturer": "B.B. Battery",
+      "mpn": "BPS40-12",
+      "source_url": "https://www.bb-bat.com/en/BPS.html",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "B.B. Battery Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "Valve-regulated lead-acid battery",
+      "source_snapshot_path": "../audits/sources/wave206-fiamm-bb-csb/bb-bps-series-2026-07-29.html",
+      "source_snapshot_sha256": "37ea5644ba5c706955df4023eeee74b3ee7448ca0ef3b17f1769af0a108dc773"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "locale": "ru-BY",
+  "category_external_id": "seo:batteries-ups",
+  "category_slug": "catalog/industrial-batteries/batteries-ups",
+  "series": [
+    {
+      "manufacturer": "CSB",
+      "series": "XPL",
+      "models": ["XPL2000", "XPL2200", "XPL2700", "XPL3500", "XPL4200", "XPL4700", "XPL5700", "XPL6700"],
+      "source_url": "https://csb-battery.com/product/xpl-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Аккумулятор {manufacturer} {model} для ИБП и центров обработки данных",
+      "facts": {
+        "Серия": "XPL",
+        "Технология": "VRLA AGM",
+        "Конструкция": "верхнее расположение выводов и тонкопластинчатая конструкция с чистым свинцом",
+        "Назначение": "высокомощное резервное питание ИБП",
+        "Расчётный срок службы серии": "до 10 лет в буферном режиме"
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "XPL-FT",
+      "models": ["XPL7000FT", "XPL7700FT", "XPL8000FT", "XPL9000FT"],
+      "source_url": "https://csb-battery.com/product/xpl-ft-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Аккумулятор {manufacturer} {model} с фронтальными выводами для ИБП и ЦОД",
+      "facts": {
+        "Серия": "XPL-FT",
+        "Технология": "VRLA AGM",
+        "Номинальное напряжение": "12 В",
+        "Конструкция": "фронтальные выводы и чистый свинец",
+        "Назначение": "высокомощное резервное питание центров обработки данных",
+        "Расчётный срок службы серии": "до 10 лет в буферном режиме"
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "HR",
+      "models": ["HR1218W", "HR1232W"],
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Аккумулятор {manufacturer} {model} для ИБП",
+      "facts": {
+        "Серия": "HR",
+        "Технология": "VRLA AGM",
+        "Назначение": "резервное питание персональных и корпоративных ИБП небольшой мощности",
+        "Расчётный срок службы серии": "до 5 лет в буферном режиме"
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "HRL",
+      "models": ["HRL1250W", "HRL12150WG", "HRL12330WG", "HRL12540W"],
+      "source_url": "https://csb-battery.com/product/hrl-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Аккумулятор {manufacturer} {model} для высокомощных ИБП",
+      "facts": {
+        "Серия": "HRL",
+        "Технология": "VRLA AGM",
+        "Конструкция": "тонкопластинчатая конструкция с чистым свинцом",
+        "Назначение": "высокомощное резервное питание",
+        "Расчётный срок службы серии": "до 10 лет в буферном режиме"
+      }
+    },
+    {
+      "manufacturer": "CSB",
+      "series": "UPS",
+      "models": ["UPS123607", "UPS12460", "UPS12580", "RUM6290"],
+      "source_url": "https://csb-battery.com/product/ups-series/",
+      "technology": "VRLA AGM",
+      "name_template": "Аккумулятор {manufacturer} {model} для высокомощных ИБП и ЦОД",
+      "facts": {
+        "Серия": "UPS",
+        "Технология": "VRLA AGM",
+        "Назначение": "высокомощный разряд в системах ИБП и центрах обработки данных",
+        "Расчётный срок службы серии": "до 5 лет в буферном режиме"
+      }
+    }
+  ]
+}

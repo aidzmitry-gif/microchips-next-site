@@ -1,0 +1,22 @@
+{
+  "categories": [
+    "seo:replacement-laptops"
+  ],
+  "category_record_counts": {
+    "seo:replacement-laptops": 3348
+  },
+  "scoped_staging_records": 3348,
+  "transfer_statuses": {
+    "hold_duplicate_candidate": 2,
+    "hold_linked_identity_candidate": 7,
+    "hold_one_c_collision": 133,
+    "legacy_only_draft_candidate": 3206
+  },
+  "safe_legacy_drafts": 3206,
+  "records_with_media_reference": 3205,
+  "unique_selected_file_references": 3205,
+  "safe_drafts_without_media_reference": 1,
+  "safe_drafts_missing_media_index": 0,
+  "canonical_one_c_media_imports": 0,
+  "indexable_pages_changed": 0
+}

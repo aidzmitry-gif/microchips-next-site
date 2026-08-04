@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft for a rechargeable LG Energy Solution cell. The specification document identifies the manufacturer and model; no price, stock, warranty, image-rights claim or publication authorization is included.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00000871",
+      "manufacturer": "LG Energy Solution",
+      "mpn": "INR18650MJ1",
+      "display_name": "Аккумуляторный элемент LG Energy Solution INR18650MJ1 3500 мА·ч",
+      "technology": "Перезаряжаемый литий-ионный цилиндрический элемент",
+      "source_url": "https://static.dianchi.cn/uploads/2024/07/09/d2l0duirm6ycldunvo.pdf",
+      "source_kind": "LG Energy Solution INR18650MJ1 product specification, revision 8",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Тип": "Перезаряжаемый литий-ионный цилиндрический элемент",
+        "Типоразмер": "18650",
+        "Номинальное напряжение": "3,635 В",
+        "Номинальная ёмкость": "3500 мА·ч",
+        "Минимальная ёмкость": "3350 мА·ч",
+        "Максимальное напряжение заряда": "4,2 В",
+        "Максимальный ток разряда": "10 А",
+        "Максимальный диаметр": "18,5 мм",
+        "Максимальная высота": "65,2 мм",
+        "Максимальная масса": "49 г"
+      }
+    }
+  ]
+}

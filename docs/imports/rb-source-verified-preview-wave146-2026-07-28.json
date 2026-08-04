@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "purpose": "Noindex preview for confirmed Bitrix-to-1C identities with applied source-backed descriptions and visually verified legacy media.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00001863",
+      "manufacturer": "Delta",
+      "identity_scope": "model_core",
+      "model_core": "FT 12-50 M",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta_ft_12_50_m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-50-m",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00001895",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "mpn": "HR 6-12",
+      "source_url": "https://www.delta-battery.ru/catalog/hr/delta-hr-6-12/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-hr-6-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002074",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "HR1221W",
+      "source_url": "https://csb-battery.com/product/hr-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hr1221w",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002317",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "mpn": "FT 12-125 M",
+      "source_url": "https://www.delta-battery.ru/catalog/ft-m/delta-ft-12-125-m/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-ft-12-125-m",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002376",
+      "manufacturer": "Ventura",
+      "identity_scope": "exact",
+      "mpn": "GP 6-4.5",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gp-6-4-5",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00002670",
+      "manufacturer": "CSB",
+      "identity_scope": "exact",
+      "mpn": "HRL1234W F2FR",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-HRL1234W-%E2%80%93-053124.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl1234w-f2fr",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003548",
+      "manufacturer": "Yuasa",
+      "identity_scope": "exact",
+      "mpn": "NP4-12",
+      "source_url": "https://www.yuasa.com/uk/np4-12",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "yuasa-np4-12",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00003890",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "model_core": "GPL 12-45",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-gpl-12-45",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005320",
+      "manufacturer": "Ventura",
+      "identity_scope": "model_core",
+      "model_core": "HR 1290W",
+      "source_url": "https://ventura-battery.ru/podderzhka/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "ventura-hr-1290w",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00005686",
+      "manufacturer": "CSB",
+      "identity_scope": "model_core",
+      "model_core": "HRL12330W",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2024/07/CSB-Datasheet-HRL12330W-%E2%80%93-053124.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-hrl12330w",
+      "replace_categories": true
+    },
+    {
+      "external_id": "КА-00006757",
+      "manufacturer": "Delta",
+      "identity_scope": "exact",
+      "mpn": "FTS 12-100 X",
+      "source_url": "https://www.delta-battery.ru/catalog/fts-x/delta_fts_12_100_x/",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "delta-fts-12-100-x",
+      "replace_categories": true
+    }
+  ]
+}

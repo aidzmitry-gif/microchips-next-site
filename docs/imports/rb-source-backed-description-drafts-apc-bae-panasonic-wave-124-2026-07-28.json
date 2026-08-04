@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "purpose": "Research-only source-backed model-core facts. No price, stock, image, publication state or unverified construction facts are asserted.",
+  "locale": "ru-BY",
+  "products": [
+    {"external_id":"КА-00005774","identity_scope":"model_core","manufacturer":"APC by Schneider Electric","model_core":"APCRBC123","display_name":"APC Replacement Battery Cartridge APCRBC123","technology":"lead-acid replacement battery cartridge","source_url":"https://www.apc.com/us/en/product/APCRBC123/apc-replacement-battery-cartridge-for-smartups-line-interactive-24v-7ah-leadacid-battery-2year-repair-or-replace-warranty/","technical_attributes":{"nominal_voltage":"24 Vdc","nominal_capacity":"7 Ah","compatible_system":"APC Back-UPS and Smart-UPS Line Interactive","warranty":"2 years"}}
+  ]
+}

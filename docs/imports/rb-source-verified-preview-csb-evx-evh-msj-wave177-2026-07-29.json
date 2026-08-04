@@ -1,0 +1,197 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:EVX1272",
+      "manufacturer": "CSB",
+      "mpn": "EVX1272",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx1272"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12120",
+      "manufacturer": "CSB",
+      "mpn": "EVX12120",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12120"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12170",
+      "manufacturer": "CSB",
+      "mpn": "EVX12170",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12170"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12200",
+      "manufacturer": "CSB",
+      "mpn": "EVX12200",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12200"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12260",
+      "manufacturer": "CSB",
+      "mpn": "EVX12260",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12260"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12300",
+      "manufacturer": "CSB",
+      "mpn": "EVX12300",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12300"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12340",
+      "manufacturer": "CSB",
+      "mpn": "EVX12340",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12340"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12400",
+      "manufacturer": "CSB",
+      "mpn": "EVX12400",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12400"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12520",
+      "manufacturer": "CSB",
+      "mpn": "EVX12520",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12520"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12650",
+      "manufacturer": "CSB",
+      "mpn": "EVX12650",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12650"
+    },
+    {
+      "external_id": "manufacturer:csb:EVX12750",
+      "manufacturer": "CSB",
+      "mpn": "EVX12750",
+      "source_url": "https://csb-battery.com/product/evx-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evx12750"
+    },
+    {
+      "external_id": "manufacturer:csb:EVH12140",
+      "manufacturer": "CSB",
+      "mpn": "EVH12140",
+      "source_url": "https://csb-battery.com/product/evh-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evh12140"
+    },
+    {
+      "external_id": "manufacturer:csb:EVH12150",
+      "manufacturer": "CSB",
+      "mpn": "EVH12150",
+      "source_url": "https://csb-battery.com/product/evh-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evh12150"
+    },
+    {
+      "external_id": "manufacturer:csb:EVH12240",
+      "manufacturer": "CSB",
+      "mpn": "EVH12240",
+      "source_url": "https://csb-battery.com/product/evh-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evh12240"
+    },
+    {
+      "external_id": "manufacturer:csb:EVH12390",
+      "manufacturer": "CSB",
+      "mpn": "EVH12390",
+      "source_url": "https://csb-battery.com/product/evh-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-traction",
+      "product_slug": "csb-evh12390"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-150",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-150",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-150"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-200",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-200",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-200"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-260",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-260",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-260"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-300",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-300",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-300"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-400",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-400",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-400"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-500",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-500",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-500"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-650",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-650",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-650"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-800",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-800",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-800"
+    },
+    {
+      "external_id": "manufacturer:csb:MSJ-1000",
+      "manufacturer": "CSB",
+      "mpn": "MSJ-1000",
+      "source_url": "https://csb-battery.com/product/msj-series/",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-msj-1000"
+    }
+  ]
+}

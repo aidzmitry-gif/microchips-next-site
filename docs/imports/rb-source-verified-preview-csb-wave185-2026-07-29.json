@@ -1,0 +1,77 @@
+{
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:csb:XHT7000FT",
+      "manufacturer": "CSB",
+      "mpn": "XHT7000FT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/06/CSB-Calor-XHT7000FT-Datasheet.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xht7000ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT7700FT",
+      "manufacturer": "CSB",
+      "mpn": "XHT7700FT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/06/CSB-Calor-XHT7700FT-Datasheet.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xht7700ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT8000FT",
+      "manufacturer": "CSB",
+      "mpn": "XHT8000FT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xht8000ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XHT9000FT",
+      "manufacturer": "CSB",
+      "mpn": "XHT9000FT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-ups",
+      "product_slug": "csb-xht9000ft"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV1272F2FR-WT",
+      "manufacturer": "CSB",
+      "mpn": "XTV1272F2FR-WT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-xtv1272f2fr-wt"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12120F2FR-WT",
+      "manufacturer": "CSB",
+      "mpn": "XTV12120F2FR-WT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-xtv12120f2fr-wt"
+    },
+    {
+      "external_id": "manufacturer:csb:XTV12200FR-WT",
+      "manufacturer": "CSB",
+      "mpn": "XTV12200FR-WT",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-xtv12200fr-wt"
+    },
+    {
+      "external_id": "manufacturer:csb:48RE1200",
+      "manufacturer": "CSB",
+      "mpn": "48RE1200",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/industrial-batteries/batteries-industrial",
+      "product_slug": "csb-48re1200"
+    },
+    {
+      "external_id": "manufacturer:csb:PB-300",
+      "manufacturer": "CSB",
+      "mpn": "PB-300",
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Catalog-2026-Digital-Spread-1.pdf",
+      "category_slug": "catalog/power-systems",
+      "product_slug": "csb-pb-300"
+    }
+  ]
+}

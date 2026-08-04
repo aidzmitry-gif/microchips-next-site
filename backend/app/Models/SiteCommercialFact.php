@@ -10,7 +10,7 @@ use Illuminate\Validation\ValidationException;
 
 class SiteCommercialFact extends Model
 {
-    public const KEYS = ['legal_name', 'legal_address', 'delivery_terms', 'payment_terms'];
+    public const KEYS = ['legal_name', 'legal_address', 'delivery_terms', 'payment_terms', 'warranty_terms'];
 
     protected $fillable = [
         'site_id', 'locale', 'key', 'value', 'is_published', 'verified_at', 'verified_by', 'verification_note',
@@ -100,7 +100,7 @@ class SiteCommercialFact extends Model
     private static function revalidate(self $fact): void
     {
         if ($fact->site !== null) {
-            SiteContentChanged::dispatch($fact->site, ['/', '/contacts', '/delivery', '/payment', '/sitemap.xml']);
+            SiteContentChanged::dispatch($fact->site, ['/', '/contacts', '/delivery', '/payment', '/warranty', '/warranty-and-documents', '/sitemap.xml']);
         }
     }
 }

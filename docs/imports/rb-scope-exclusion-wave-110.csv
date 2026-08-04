@@ -1,0 +1,7 @@
+product_external_id,reason,survivor_external_id,evidence
+КА-00004699,exact_traction_battery_duplicate,КА-00004649,"Same 24x4PzS420 configuration, 827x519x625 case and NAKI 321162.554 identity"
+КА-00003593,exact_traction_battery_duplicate,КА-00003672,"Same 24x4PzS460 configuration, 48 V 460 Ah and 968x527x645 case identity"
+КА-00005102,service_not_catalogue_product,,"Loading and unloading service performed by forklift; not a separately identifiable good"
+КА-00005192,outside_rb_battery_catalogue_scope,,"Complete CPD20 electric forklift, not an accumulator or reserve-power product"
+КА-00005999,outside_rb_battery_catalogue_scope,,"Complete HILIFT OP15 electric forklift, not an accumulator or reserve-power product"
+КА-00004721,invalid_forklift_catalogue_record,,"Complete forklift row with implausible 1600-ton wording; not safe catalogue inventory"

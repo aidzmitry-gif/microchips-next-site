@@ -1,12 +1,22 @@
 ﻿[CmdletBinding(SupportsShouldProcess = $true)]
 param(
     [string]$SourceRoot = '',
-    [string]$OutputDir = (Join-Path (Split-Path $PSScriptRoot -Parent) 'docs\audits\generated'),
+    # PS 5.1 does not reliably initialize $PSScriptRoot while parameter
+    # default expressions are evaluated. Resolve the default in script scope
+    # below so -RunSelfTest works without an unrelated -OutputDir override.
+    [string]$OutputDir = '',
     [switch]$RunSelfTest
 )
 
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
+
+if ([string]::IsNullOrWhiteSpace($OutputDir)) {
+    if ([string]::IsNullOrWhiteSpace($PSScriptRoot)) {
+        throw 'Unable to resolve the extractor directory for the default OutputDir. Specify -OutputDir explicitly.'
+    }
+    $OutputDir = Join-Path (Split-Path $PSScriptRoot -Parent) 'docs\audits\generated'
+}
 
 $catalogIblockIds = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
 [void]$catalogIblockIds.Add('26')
@@ -192,7 +202,12 @@ function ConvertFrom-MySqlTuple {
     }
 
     $body = $trimmed.Substring(1, $trimmed.Length - 2)
-    $tokens = [System.Collections.Generic.List[object]]::new()
+    # Keep raw tokens while scanning, then unescape them in one local loop.
+    # Calling ConvertFrom-MySqlToken for every field makes the 22k-row element
+    # table disproportionately slow in Windows PowerShell 5.1 (hundreds of
+    # thousands of script-function invocations before Pass 3 can be printed).
+    # The conversion rules below deliberately match ConvertFrom-MySqlToken.
+    $rawTokens = [System.Collections.Generic.List[string]]::new()
     $current = [System.Text.StringBuilder]::new()
     $singleQuote = [char]39
     $backslash = [char]92
@@ -226,7 +241,7 @@ function ConvertFrom-MySqlTuple {
             [void]$current.Append($character)
         }
         elseif ($character -eq ',') {
-            $tokens.Add((ConvertFrom-MySqlToken -Token $current.ToString()))
+            $rawTokens.Add($current.ToString())
             [void]$current.Clear()
         }
         else {
@@ -238,7 +253,58 @@ function ConvertFrom-MySqlTuple {
         throw 'Unclosed quoted value while reading a MySQL tuple.'
     }
 
-    $tokens.Add((ConvertFrom-MySqlToken -Token $current.ToString()))
+    $rawTokens.Add($current.ToString())
+
+    $tokens = [System.Collections.Generic.List[object]]::new()
+    foreach ($rawToken in $rawTokens) {
+        $value = $rawToken.Trim()
+        if ($value -eq 'NULL') {
+            $tokens.Add($null)
+            continue
+        }
+
+        if ($value.Length -lt 2 -or $value[0] -ne $singleQuote -or $value[$value.Length - 1] -ne $singleQuote) {
+            $tokens.Add($value)
+            continue
+        }
+
+        $raw = $value.Substring(1, $value.Length - 2)
+        $unescaped = [System.Text.StringBuilder]::new($raw.Length)
+        for ($rawIndex = 0; $rawIndex -lt $raw.Length; $rawIndex++) {
+            $rawCharacter = $raw[$rawIndex]
+            if ($rawCharacter -ne $backslash -or $rawIndex -eq ($raw.Length - 1)) {
+                [void]$unescaped.Append($rawCharacter)
+                continue
+            }
+
+            $rawIndex++
+            $escapedCharacter = $raw[$rawIndex]
+            if ($escapedCharacter -eq '0') {
+                [void]$unescaped.Append([char]0)
+            }
+            elseif ($escapedCharacter -eq 'b') {
+                [void]$unescaped.Append([char]8)
+            }
+            elseif ($escapedCharacter -eq 'n') {
+                [void]$unescaped.Append([Environment]::NewLine)
+            }
+            elseif ($escapedCharacter -eq 'r') {
+                [void]$unescaped.Append([char]13)
+            }
+            elseif ($escapedCharacter -eq 't') {
+                [void]$unescaped.Append([char]9)
+            }
+            elseif ($escapedCharacter -eq 'Z') {
+                [void]$unescaped.Append([char]26)
+            }
+            else {
+                [void]$unescaped.Append($escapedCharacter)
+            }
+        }
+
+        $tokens.Add($unescaped.ToString())
+    }
+
     Write-Output -NoEnumerate ([object[]]$tokens.ToArray())
 }
 
@@ -793,6 +859,7 @@ if ($firstFocusSectionIds.Count -eq 0) {
 Write-Output 'Pass 2/5: reading catalog elements and retaining source identities.'
 $catalogElements = @{}
 $offerElements = @{}
+$elementRowProgress = [PSCustomObject]@{ count = 0 }
 # Every element in the dump, regardless of iblock, so that reference/lookup
 # infoblocks (e.g. a brand directory) can be resolved by ID later. This is a
 # read-only, general-purpose ID->{name, iblock_id} index, not specific to any
@@ -811,6 +878,11 @@ $offerActiveElementCounts = @{
 }
 Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element' -ExpectedColumns $expectedTableColumns['b_iblock_element'] -RowHandler {
     param([string[]]$Row)
+
+    $elementRowProgress.count++
+    if (($elementRowProgress.count % 1000) -eq 0) {
+        Write-Output "Pass 2/5 progress: parsed $($elementRowProgress.count) b_iblock_element rows."
+    }
 
     $iblockId = Get-RowValue -Row $Row -Index 5
     $id = Get-RowValue -Row $Row -Index 0
@@ -852,7 +924,12 @@ Invoke-MySqlDumpTable -DumpPath $dumpPath -Table 'b_iblock_element' -ExpectedCol
         active                   = Get-RowValue -Row $Row -Index 7
         name                     = Get-RowValue -Row $Row -Index 11
         preview_picture_file_id  = Get-RowValue -Row $Row -Index 12
+        preview_text             = Get-RowValue -Row $Row -Index 13
+        preview_text_type        = Get-RowValue -Row $Row -Index 14
         detail_picture_file_id   = Get-RowValue -Row $Row -Index 15
+        detail_text              = Get-RowValue -Row $Row -Index 16
+        detail_text_type         = Get-RowValue -Row $Row -Index 17
+        searchable_content       = Get-RowValue -Row $Row -Index 18
         legacy_xml_id            = Get-RowValue -Row $Row -Index 26
         legacy_code              = Get-RowValue -Row $Row -Index 27
     }
@@ -1097,6 +1174,68 @@ $qualityRows = foreach ($element in $selectedElements) {
     }
 }
 
+# Keep a compact, source-exact media index for the complete catalog alongside
+# the narrower B2B audit. This does not approve or publish any image: it only
+# preserves the PREVIEW_PICTURE/DETAIL_PICTURE relation of each Bitrix element
+# so later category waves do not have to infer media identity from names.
+$fullCatalogMediaRows = foreach ($element in $catalogElements.Values) {
+    [PSCustomObject][ordered]@{
+        legacy_element_id       = $element.legacy_element_id
+        legacy_iblock_id        = $element.legacy_iblock_id
+        active                   = $element.active
+        name                     = $element.name
+        primary_section_id       = $element.primary_section_id
+        preview_picture_file_id  = $element.preview_picture_file_id
+        detail_picture_file_id   = $element.detail_picture_file_id
+        has_media_reference      = ([string](-not (
+            [string]::IsNullOrWhiteSpace($element.detail_picture_file_id) -and
+            [string]::IsNullOrWhiteSpace($element.preview_picture_file_id)
+        ))).ToLowerInvariant()
+        evidence_status          = 'exact_bitrix_element_media_reference_not_visual_verification'
+    }
+}
+
+# Preserve the complete catalogue's editorial text separately from the compact
+# identity/media index. This is company-owned legacy evidence only: consumers
+# must sanitize it, keep the target page noindex and must not treat the copy as
+# manufacturer-verified technical facts.
+$fullCatalogContentRows = foreach ($element in $catalogElements.Values) {
+    [PSCustomObject][ordered]@{
+        legacy_element_id  = $element.legacy_element_id
+        legacy_iblock_id   = $element.legacy_iblock_id
+        active              = $element.active
+        name                = $element.name
+        preview_text_type   = $element.preview_text_type
+        preview_text        = $element.preview_text
+        detail_text_type    = $element.detail_text_type
+        detail_text         = $element.detail_text
+        has_preview_text    = ([string](-not [string]::IsNullOrWhiteSpace($element.preview_text))).ToLowerInvariant()
+        has_detail_text     = ([string](-not [string]::IsNullOrWhiteSpace($element.detail_text))).ToLowerInvariant()
+        evidence_status     = 'company_owned_legacy_text_requires_sanitization_noindex_only'
+    }
+}
+
+# Keep legacy editorial fields in a separate evidence artifact. They are not
+# trusted product facts and must never be rendered or applied directly. The
+# later staging builder sanitizes and reviews them while preserving provenance.
+$contentRows = foreach ($element in $selectedElements) {
+    $sourceElement = $catalogElements[[string]$element.legacy_element_id]
+    [PSCustomObject][ordered]@{
+        legacy_element_id  = $element.legacy_element_id
+        legacy_iblock_id   = $element.legacy_iblock_id
+        active              = $element.active
+        name                = $element.name
+        preview_text_type   = $sourceElement.preview_text_type
+        preview_text        = $sourceElement.preview_text
+        detail_text_type    = $sourceElement.detail_text_type
+        detail_text         = $sourceElement.detail_text
+        searchable_content  = $sourceElement.searchable_content
+        has_preview_text    = ([string](-not [string]::IsNullOrWhiteSpace($sourceElement.preview_text))).ToLowerInvariant()
+        has_detail_text     = ([string](-not [string]::IsNullOrWhiteSpace($sourceElement.detail_text))).ToLowerInvariant()
+        evidence_status     = 'legacy_untrusted_requires_sanitization_and_review'
+    }
+}
+
 $elementLinkPropertyValues = @($propertyValues | Where-Object { $_.source_value_resolved_status -ne 'not_applicable' })
 $elementLinkResolvedCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'resolved' }).Count
 $elementLinkEmptyCount = @($elementLinkPropertyValues | Where-Object { $_.source_value_resolved_status -eq 'empty' }).Count
@@ -1153,6 +1292,11 @@ $sourceSnapshot = [PSCustomObject][ordered]@{
     selected_inactive_products   = @($selectedElements | Where-Object active -ne 'Y').Count
     selected_from_iblock_26      = @($selectedElements | Where-Object legacy_iblock_id -eq '26').Count
     selected_from_iblock_65      = @($selectedElements | Where-Object legacy_iblock_id -eq '65').Count
+    full_catalog_elements        = @($fullCatalogMediaRows).Count
+    full_catalog_active_elements = @($fullCatalogMediaRows | Where-Object active -eq 'Y').Count
+    full_catalog_with_media_reference = @($fullCatalogMediaRows | Where-Object has_media_reference -eq 'true').Count
+    full_catalog_with_preview_text = @($fullCatalogContentRows | Where-Object has_preview_text -eq 'true').Count
+    full_catalog_with_detail_text = @($fullCatalogContentRows | Where-Object has_detail_text -eq 'true').Count
     first_focus_products_any_section_membership = $firstFocusRows.Count
     first_focus_products_primary_section_membership = $firstFocusPrimaryRows.Count
     first_focus_products_additional_membership_primary_in_other_target_section = $firstFocusAdditionalFromOtherTargetRows.Count
@@ -1167,6 +1311,8 @@ $sourceSnapshot = [PSCustomObject][ordered]@{
     element_link_name_missing    = $elementLinkNameMissingCount
     without_media_reference      = @($qualityRows | Where-Object { $_.issue_codes -match 'missing_media_reference' }).Count
     without_identity_property    = @($qualityRows | Where-Object { $_.issue_codes -match 'missing_sku_mpn_article_property' }).Count
+    with_preview_text             = @($contentRows | Where-Object has_preview_text -eq 'true').Count
+    with_detail_text              = @($contentRows | Where-Object has_detail_text -eq 'true').Count
     review_status                = 'all_rows_need_review'
 }
 
@@ -1188,12 +1334,18 @@ New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
     Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-sections.csv') -NoTypeInformation -Encoding utf8
 @($selectedElements | Sort-Object legacy_iblock_id, legacy_element_id) |
     Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-products.csv') -NoTypeInformation -Encoding utf8
+@($fullCatalogMediaRows | Sort-Object legacy_iblock_id, legacy_element_id) |
+    Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-full-catalog-media-index.csv') -NoTypeInformation -Encoding utf8
+@($fullCatalogContentRows | Sort-Object legacy_iblock_id, legacy_element_id) |
+    Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-full-catalog-content.csv') -NoTypeInformation -Encoding utf8
 @($properties.Values | Sort-Object legacy_iblock_id, property_name) |
     Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-properties.csv') -NoTypeInformation -Encoding utf8
 @($propertyValues | Sort-Object legacy_element_id, legacy_property_id) |
     Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-property-values.csv') -NoTypeInformation -Encoding utf8
 @($qualityRows | Sort-Object legacy_iblock_id, legacy_element_id) |
     Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-quality.csv') -NoTypeInformation -Encoding utf8
+@($contentRows | Sort-Object legacy_iblock_id, legacy_element_id) |
+    Export-Csv -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-content.csv') -NoTypeInformation -Encoding utf8
 $sourceSnapshot | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $OutputDir 'bitrix-b2b-catalog-summary.json') -Encoding utf8
 
 Write-Output "Created read-only B2B audit artifacts in $OutputDir"

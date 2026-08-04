@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "Company-owned legacy Bitrix assets with exact visible model verification. Each image was manually inspected at original resolution; no retailer asset is used.",
+  "images": [
+    {
+      "external_id": "КА-00005764",
+      "mpn": "DTM6012",
+      "asset_file": "x91sg6ie5m2w1z77t3r11w28mrq2nisi.png",
+      "sha256": "7808a387f927e22350c36c7e531283f022f39ff16f1407c071b7a4ac10ce2467",
+      "archive_member": "_shared/upload/iblock/1c1/x91sg6ie5m2w1z77t3r11w28mrq2nisi.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads DELTA DTM 6012, 6V 1.2Ah; matches the verified MPN and manufacturer."
+    },
+    {
+      "external_id": "ФР-00002172",
+      "mpn": "DT401",
+      "asset_file": "mnkoswjhq0uivl50a5g3flo5kz61rq6x.png",
+      "sha256": "38434c440251c72f42ff9b3fff1b27596f9853fe1ec2a664a361d03c0819d788",
+      "archive_member": "_shared/upload/iblock/cf4/mnkoswjhq0uivl50a5g3flo5kz61rq6x.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads DELTA DT 401, 4V 1Ah; matches the verified MPN and manufacturer."
+    },
+    {
+      "external_id": "ФР-00002108",
+      "mpn": "12FGH36",
+      "asset_file": "5g1tya358pbehkp6sxsgp2wg72yy374x.png",
+      "sha256": "ef6b1cd9b27cac50dae9c068c44dea4850c058f3881947b9395acf98d3081979",
+      "archive_member": "_shared/upload/iblock/07e/5g1tya358pbehkp6sxsgp2wg72yy374x.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads FIAMM 12FGH36 and 12V 9.0Ah; matches the verified MPN and manufacturer."
+    }
+  ]
+}

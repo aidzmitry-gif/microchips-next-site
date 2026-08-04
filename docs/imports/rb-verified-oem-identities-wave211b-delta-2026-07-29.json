@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:3212",
+      "current_name": "Аккумулятор Delta DT 1275 (AGM, 75Ah)",
+      "manufacturer": "Delta",
+      "mpn": "DT 1275",
+      "source_url": "https://delta-batt.com/catalog/statsionarnye/dt/dt-1275/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "stationary sealed rechargeable battery",
+      "source_snapshot_path": "../audits/sources/wave211b-delta/c28d0464b2e5e497.html",
+      "source_snapshot_sha256": "af91fc3956d6e6446090988b9a303e40b6a6dcf07f6aedda1e9809a550672f59"
+    }
+  ]
+}

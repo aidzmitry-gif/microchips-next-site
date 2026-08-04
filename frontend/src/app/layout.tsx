@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
+import { languageForLocale } from "@/lib/locale";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,8 +23,4 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
-}
-
-export function languageForLocale(value: string | null): string {
-  return value && /^[a-z]{2,3}$/i.test(value) ? value.toLowerCase() : "ru";
 }

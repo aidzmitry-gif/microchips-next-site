@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "batch": "wave204_legacy_industrial_traction_cells",
+  "scope": {
+    "input_family": "legacy_industrial_traction_cells",
+    "expected_rows": 34
+  },
+  "policy": {
+    "primary_manufacturer_sources_only": true,
+    "exact_model_chemistry_capacity_required": true,
+    "exact_safe_requires_pinned_snapshot_sha_and_tokens": true,
+    "database_mutations": 0
+  },
+  "sources": [
+    {
+      "source_id": "danfoss-rct-rechargeable-batteries-2025",
+      "source_tier": "manufacturer_datasheet_primary",
+      "source_publisher": "Danfoss A/S",
+      "source_url": "https://assets.danfoss.com/documents/latest/465384/BC515657459048en-000101.pdf",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/danfoss-rct-rechargeable-batteries.pdf",
+      "snapshot_sha256": "0e55380c36e310caa4a0f237da0117cff22b56a3d9de23776793947f624a5cff"
+    },
+    {
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_tier": "manufacturer_datasheet_primary",
+      "source_publisher": "Курский аккумуляторный завод",
+      "source_url": "https://gk-kaz.ru/xelite/wp-content/uploads/2020/12/Tehnicheskie-harakteristiki-TNZH-TNK.pdf",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/kaz-traction-tnzh-tnk.pdf",
+      "snapshot_sha256": "ebb295f3f11fafc5db1ef3e28faf0f990a6599658f8a7a3187bde5385b0b6a82"
+    },
+    {
+      "source_id": "energiya-company-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "ПАО «Энергия»",
+      "source_url": "https://jsc-energiya.com/expo/4.pdf",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/energiya-company-products.pdf",
+      "snapshot_sha256": "b2366adb6cc768aabfc2e2ecc5744037588c0ef4db80d7c4c06434466a042443"
+    },
+    {
+      "source_id": "niai-nicd-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "АО «НИАИ «Источник»",
+      "source_url": "https://www.niai.ru/products/ni-ca-accumulators-and-batteries",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/niai-nicd-products.html",
+      "snapshot_sha256": "eec52b948d24258314f960d3432a3370a1de74132361109991c0fedbb9917e5c"
+    },
+    {
+      "source_id": "niai-nimh-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "АО «НИАИ «Источник»",
+      "source_url": "https://www.niai.ru/products/ni-metal-hydride-accumulators-and-batteries",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/niai-nimh-products.html",
+      "snapshot_sha256": "b6d5f31697690d2f34e710d7329e323662d75c6cf3390a76a1348e2b7f6b6ca1"
+    },
+    {
+      "source_id": "niai-liion-products",
+      "source_tier": "manufacturer_catalogue_primary",
+      "source_publisher": "АО «НИАИ «Источник»",
+      "source_url": "https://www.niai.ru/products/lithium-ion-accumulators-and-batteries",
+      "snapshot_path": "docs/audits/sources/wave204-industrial-cells/niai-liion-products.html",
+      "snapshot_sha256": "1242198192a986d50fff1d412a1d351d409e77a687249de88ab41df42e74920d"
+    }
+  ],
+  "evidence": [
+    {
+      "product_external_id": "bitrix:2239",
+      "classification": "exact_safe",
+      "source_id": "danfoss-rct-rechargeable-batteries-2025",
+      "identity_assertion": "exact_oem_part",
+      "replacement_manufacturer": "Danfoss",
+      "replacement_mpn": "BT06K ATEX",
+      "chemistry": "NiMH",
+      "capacity_mah": 600,
+      "voltage_v": 4.8,
+      "required_exact_tokens": ["BT06K ATEX", "NiMH", "600mAh", "4,8 Vdc"],
+      "related_distinct_variants": [
+        {
+          "product_external_id": "bitrix:20078",
+          "reason": "The other legacy row is the standard BT06K variant; the official datasheet distinguishes it from BT06K ATEX."
+        }
+      ],
+      "source_assertion": "The official rechargeable-battery datasheet lists BT06K ATEX as NiMH, 600 mAh, 4.8 Vdc.",
+      "unsupported_legacy_claims": "legacy manufacturer token АТЕХ; price; availability; warranty",
+      "conflict_reason": ""
+    },
+    {
+      "product_external_id": "bitrix:2278",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 28ТНЖ-250М-У2, while the legacy title says 28ТНЖ-250П-У2.",
+      "unsupported_legacy_claims": "exact suffix П; FL alias",
+      "conflict_reason": "Official suffix М differs from legacy suffix П."
+    },
+    {
+      "product_external_id": "bitrix:2285",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 30ТНЖ-250М-У2, while the legacy title says 30ТНЖ-250П-У2.",
+      "unsupported_legacy_claims": "exact suffix П; FL alias",
+      "conflict_reason": "Official suffix М differs from legacy suffix П."
+    },
+    {
+      "product_external_id": "bitrix:2286",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 34ТНЖ-300ВМ-У2, while the legacy title says 34ТНЖ-300ВМП-У2.",
+      "unsupported_legacy_claims": "exact suffix ВМП; FL alias",
+      "conflict_reason": "Legacy designation adds П to the official ВМ suffix."
+    },
+    {
+      "product_external_id": "bitrix:2287",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 36ТНЖ-300ВМ-У2, while the legacy title says 36ТНЖ-300ВМП-У2.",
+      "unsupported_legacy_claims": "exact suffix ВМП; FL alias",
+      "conflict_reason": "Legacy designation adds П to the official ВМ suffix."
+    },
+    {
+      "product_external_id": "bitrix:2290",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 40ТНЖ-300-У2; the legacy title says 40ВНЖ-300П-У2.",
+      "unsupported_legacy_claims": "ВНЖ series token; suffix П; FL alias",
+      "conflict_reason": "The legacy series and suffix do not match the official designation."
+    },
+    {
+      "product_external_id": "bitrix:2292",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 40ТНЖ-400М-У2, while the legacy title says 40ТНЖ-400П-У2.",
+      "unsupported_legacy_claims": "exact suffix П; FL alias",
+      "conflict_reason": "Official suffix М differs from legacy suffix П."
+    },
+    {
+      "product_external_id": "bitrix:2293",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 40ТНЖ-450-У2, while the legacy title says 40ТНЖ-450П-У2.",
+      "unsupported_legacy_claims": "exact suffix П; FL alias",
+      "conflict_reason": "The legacy suffix П is absent from the official designation."
+    },
+    {
+      "product_external_id": "bitrix:2294",
+      "classification": "conflict",
+      "source_id": "kaz-traction-tnzh-tnk",
+      "source_assertion": "The official table lists 40ТНЖ-500-У2, while the legacy title says 40ТНЖК-500П-У2.",
+      "unsupported_legacy_claims": "ТНЖК system token; suffix П; FL alias",
+      "conflict_reason": "The legacy electrochemical-series token and suffix do not match the official designation."
+    }
+  ],
+  "no_evidence_groups": [
+    {
+      "product_external_ids": ["bitrix:2279", "bitrix:2280", "bitrix:2281", "bitrix:2282", "bitrix:2284", "bitrix:2289", "bitrix:2307", "bitrix:2309", "bitrix:2310", "bitrix:2311", "bitrix:2312", "bitrix:2313"],
+      "checked_source_ids": ["energiya-company-products"],
+      "unsupported_legacy_claims": "exact ЛИА model; chemistry; capacity; manufacturer",
+      "reason": "The pinned official manufacturer catalogue confirms lithium-ion production but does not enumerate these exact legacy ЛИА designations with model, chemistry and capacity together."
+    },
+    {
+      "product_external_ids": ["bitrix:2266", "bitrix:2271", "bitrix:2338", "bitrix:2345", "bitrix:2346", "bitrix:2347"],
+      "checked_source_ids": ["niai-nicd-products", "niai-nimh-products"],
+      "unsupported_legacy_claims": "exact model; chemistry; capacity; manufacturer",
+      "reason": "The pinned official manufacturer catalogue pages describe electrochemical families but do not enumerate the exact НКГЦ/МГП/МГЦ legacy model and capacity."
+    },
+    {
+      "product_external_ids": ["bitrix:2276", "bitrix:2277", "bitrix:2288", "bitrix:2291", "bitrix:2365", "bitrix:2366"],
+      "checked_source_ids": ["kaz-traction-tnzh-tnk"],
+      "unsupported_legacy_claims": "exact model; FL alias; chemistry; capacity; manufacturer",
+      "reason": "The pinned official KAZ catalogue does not contain the exact legacy designation; nearby series are insufficient for identity."
+    },
+    {
+      "product_external_ids": ["bitrix:2389"],
+      "checked_source_ids": [],
+      "unsupported_legacy_claims": "manufacturer; exact model; chemistry; capacity; voltage",
+      "reason": "No primary manufacturer datasheet or catalogue was found for the ambiguous legacy designation Гарантия 14/24-1."
+    }
+  ]
+}

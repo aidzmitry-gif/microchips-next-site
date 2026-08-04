@@ -32,7 +32,7 @@ CSV, 'mpn-collision.csv');
         $this->assertSame(1, $run->summary['duplicate_conflicts']);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('mpn:mpn100', $conflict->match_key);
+        $this->assertSame('identifier:mpn100', $conflict->match_key);
         $this->assertCount(2, $conflict->candidate_ids['staged_record_ids']);
         $this->assertSame([], $conflict->candidate_ids['product_ids']);
 
@@ -69,7 +69,7 @@ CSV, 'mpn-external-id-mismatch.csv');
         $this->assertSame('needs_review', $run->status);
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('mpn:mpn200', $conflict->match_key);
+        $this->assertSame('identifier:mpn200', $conflict->match_key);
         $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
 
         $this->assertDatabaseHas('staged_import_records', [
@@ -94,8 +94,67 @@ CSV, 'mpn-external-id-mismatch.csv');
         $this->artisan('catalog:stage-1c', ['file' => $file, '--delimiter' => ';'])->assertSuccessful();
 
         $conflict = DuplicateConflict::query()->sole();
-        $this->assertSame('sku:dt12012', $conflict->match_key);
+        $this->assertSame('identifier:dt12012', $conflict->match_key);
         $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
+    }
+
+    public function test_a_staged_sku_collides_with_an_existing_mpn_in_the_shared_identifier_namespace(): void
+    {
+        $existing = Product::create([
+            'external_id' => '1c-other',
+            'mpn' => 'IDENTIFIER-100',
+            'slug' => 'existing-identifier-product',
+            'name' => 'Existing identifier product',
+            'status' => 'active',
+        ]);
+
+        $file = $this->csvFile("external_id;name;sku\n1c-real;Incoming product;IDENTIFIER-100\n", 'sku-to-mpn-collision.csv');
+
+        $this->artisan('catalog:stage-1c', ['file' => $file, '--delimiter' => ';'])->assertSuccessful();
+
+        $run = ImportRun::query()->sole();
+        $this->assertSame('needs_review', $run->status);
+        $conflict = DuplicateConflict::query()->sole();
+        $this->assertSame('identifier:identifier100', $conflict->match_key);
+        $this->assertSame([$existing->id], $conflict->candidate_ids['product_ids']);
+        $this->assertDatabaseHas('staged_import_records', ['import_run_id' => $run->id, 'external_id' => '1c-real', 'status' => 'duplicate']);
+    }
+
+    public function test_staged_sku_and_mpn_with_the_same_value_are_a_single_cross_field_conflict(): void
+    {
+        $file = $this->csvFile(<<<'CSV'
+external_id;name;sku;mpn
+1c-sku;SKU source;IDENTIFIER-200;
+1c-mpn;MPN source;;IDENTIFIER-200
+CSV, 'sku-to-mpn-staged-collision.csv');
+
+        $this->artisan('catalog:stage-1c', ['file' => $file, '--delimiter' => ';'])->assertSuccessful();
+
+        $run = ImportRun::query()->sole();
+        $this->assertSame('needs_review', $run->status);
+        $this->assertSame(1, $run->summary['duplicate_conflicts']);
+        $conflict = DuplicateConflict::query()->sole();
+        $this->assertSame('identifier:identifier200', $conflict->match_key);
+        $this->assertCount(2, $conflict->candidate_ids['staged_record_ids']);
+        $this->assertDatabaseCount('staged_import_records', 2);
+        $this->assertSame(2, StagedImportRecord::query()->where('status', 'duplicate')->count());
+    }
+
+    public function test_duplicate_normalized_csv_headers_fail_closed_before_any_row_is_staged(): void
+    {
+        $file = $this->csvFile("external_id;name;sku;SKU\n1c-real;Incoming product;SKU-1;SKU-2\n", 'duplicate-normalized-header.csv');
+
+        try {
+            $this->artisan('catalog:stage-1c', ['file' => $file, '--delimiter' => ';'])->run();
+            $this->fail('Expected duplicate normalized CSV headers to fail the import.');
+        } catch (\RuntimeException $exception) {
+            $this->assertSame('The CSV header contains duplicate normalized column names.', $exception->getMessage());
+        }
+
+        $run = ImportRun::query()->sole();
+        $this->assertSame('failed', $run->status);
+        $this->assertSame('The CSV header contains duplicate normalized column names.', $run->summary['error']);
+        $this->assertDatabaseCount('staged_import_records', 0);
     }
 
     public function test_publishing_a_known_external_id_updates_non_identity_data_and_reuses_the_existing_site_product(): void

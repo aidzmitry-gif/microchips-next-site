@@ -15,10 +15,10 @@
 
 ## Быстрый запуск в Docker
 
-1. Скопируйте `.env.example` в `.env` и задайте сильные `POSTGRES_PASSWORD`, `LARAVEL_APP_KEY` и `NEXT_REVALIDATE_SECRET`.
+1. Скопируйте `.env.example` в `.env` и задайте сильные `POSTGRES_PASSWORD`, `LARAVEL_APP_KEY`, `NEXT_REVALIDATE_SECRET` и отдельный `LEAD_PROXY_SECRET`.
 2. Запустите `docker compose up --build -d`.
 3. Выполните `docker compose run --rm backend php artisan migrate --seed --force`.
-4. Откройте `http://localhost:3000` для витрины и `http://localhost:8080/admin` для Laravel/Filament.
+4. Для витрины добавьте в локальный файл hosts строку `127.0.0.1 microchips-by.test` и откройте `http://microchips-by.test:3000`; сайт намеренно определяется по hostname. `http://localhost:3000` вернёт 404, а `http://localhost:8080/admin` открывает Laravel/Filament.
 
 Тестовый пользователь создаётся только для стенда: `admin@microchips.test`. Перед любым внешним доступом задайте `INITIAL_ADMIN_PASSWORD` и замените этот пароль. Horizon запускается только в Linux-контейнере: его `pcntl` и `posix` недоступны в Windows PHP.
 

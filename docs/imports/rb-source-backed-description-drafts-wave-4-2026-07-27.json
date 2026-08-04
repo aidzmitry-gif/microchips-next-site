@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "purpose": "One bounded primary-manufacturer editorial draft refresh. No publication, price, stock, image or offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00002172",
+      "manufacturer": "Delta",
+      "mpn": "DT401",
+      "technology": "герметичная свинцово-кислотная аккумуляторная батарея VRLA AGM",
+      "source_url": "https://delta-batt.com/series/dt/",
+      "source_kind": "official DELTA DT series catalogue",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "4 V",
+        "Номинальная ёмкость": "1 Ah",
+        "Габариты": "35 × 22 × 64 мм",
+        "Масса": "0,1 кг",
+        "Применение": "слаботочные системы, охранно-пожарные системы и контроль доступа"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:1450",
+      "current_name": "Аккумулятор Delta CT 1216.1 (AGM, 16Ah)",
+      "manufacturer": "Delta",
+      "mpn": "CT 1216.1",
+      "source_url": "https://delta-batt.com/products/ct_1216_1/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "starter AGM battery for motorcycles",
+      "source_snapshot_path": "../audits/sources/wave243a-delta/bitrix-1450-70d045ef4fbf55c4.html",
+      "source_snapshot_sha256": "70d045ef4fbf55c4d571f8927045d4368deaee3f8d62b2470ac3053c4868b4fe"
+    },
+    {
+      "external_id": "bitrix:1452",
+      "current_name": "Аккумулятор Delta CT 1220.1 (AGM, 20Ah)",
+      "manufacturer": "Delta",
+      "mpn": "CT 1220.1",
+      "source_url": "https://delta-batt.com/products/ct_1220_1/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "starter AGM battery for motorcycles",
+      "source_snapshot_path": "../audits/sources/wave243a-delta/bitrix-1452-82dad64cbccdf889.html",
+      "source_snapshot_sha256": "82dad64cbccdf88979645e1df360d82b80e04589ded581c1494d2f11f21c8a76"
+    },
+    {
+      "external_id": "bitrix:1523",
+      "current_name": "Аккумулятор Delta CT 1216 (AGM, 16Ah)",
+      "manufacturer": "Delta",
+      "mpn": "CT 1216",
+      "source_url": "https://delta-batt.com/products/ct_1216/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "starter AGM battery for motorcycles",
+      "source_snapshot_path": "../audits/sources/wave243a-delta/bitrix-1523-33ac49b9095b2091.html",
+      "source_snapshot_sha256": "33ac49b9095b209126e4af4fc5d27b334751c114691694fc05d405d3dda064c1"
+    },
+    {
+      "external_id": "bitrix:1537",
+      "current_name": "Аккумулятор Delta CT 1218 (AGM, 18Ah)",
+      "manufacturer": "Delta",
+      "mpn": "CT 1218",
+      "source_url": "https://delta-batt.com/products/ct_1218/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "starter AGM battery for motorcycles",
+      "source_snapshot_path": "../audits/sources/wave243a-delta/bitrix-1537-f792c60ee1324191.html",
+      "source_snapshot_sha256": "f792c60ee132419128e8839f5379bcbb02b6e378b1e920c0ae81c6217ed56052"
+    },
+    {
+      "external_id": "bitrix:2890",
+      "current_name": "Аккумулятор Delta CT 1220 (AGM, 20Ah)",
+      "manufacturer": "Delta",
+      "mpn": "CT 1220",
+      "source_url": "https://delta-batt.com/products/ct_1220/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "starter AGM battery for motorcycles",
+      "source_snapshot_path": "../audits/sources/wave243a-delta/bitrix-2890-45d472b9f1b3894a.html",
+      "source_snapshot_sha256": "45d472b9f1b3894a9d4abf23c3934a4ed47fd9c5224fca4cb01e97e0e16eeb33"
+    },
+    {
+      "external_id": "bitrix:2963",
+      "current_name": "Аккумулятор Delta CT 1230 (AGM, 30Ah)",
+      "manufacturer": "Delta",
+      "mpn": "CT 1230",
+      "source_url": "https://delta-batt.com/products/ct_1230/",
+      "source_kind": "official_manufacturer_product_page",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "checked_at": "2026-07-29",
+      "product_type": "starter AGM battery for motorcycles",
+      "source_snapshot_path": "../audits/sources/wave243a-delta/bitrix-2963-858f1461d3880ede.html",
+      "source_snapshot_sha256": "858f1461d3880ede0a644bdea884dd45848430eedf6b2d93ad7cc047e3e682df"
+    }
+  ]
+}

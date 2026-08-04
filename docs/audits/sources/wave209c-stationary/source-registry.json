@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "bb_bc",
+      "publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "source_url": "https://www.bb-bat.com/en/BC.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-fiamm-bb-csb/bb-bc-series-2026-07-29.html",
+      "snapshot_sha256": "9f42041705a2c87c54e4cda7346eba8fcdfd6cada985e21beb94683a5b8892f4",
+      "text_path": "docs/audits/sources/wave206-fiamm-bb-csb/bb-bc-series-2026-07-29.html",
+      "text_sha256": "9f42041705a2c87c54e4cda7346eba8fcdfd6cada985e21beb94683a5b8892f4"
+    },
+    {
+      "source_id": "bb_hr",
+      "publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "source_url": "https://www.bb-bat.com/en/HR.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-fiamm-bb-csb/bb-hr-series-2026-07-29.html",
+      "snapshot_sha256": "bd379d1ecac28698be0ea7bf271c63732251131464db1bf994d7ae5f73fe2c68",
+      "text_path": "docs/audits/sources/wave206-fiamm-bb-csb/bb-hr-series-2026-07-29.html",
+      "text_sha256": "bd379d1ecac28698be0ea7bf271c63732251131464db1bf994d7ae5f73fe2c68"
+    },
+    {
+      "source_id": "bb_hrl",
+      "publisher": "B.B.Battery (Taiwan) Co., Ltd.",
+      "source_url": "https://www.bb-bat.com/en/HRL.html",
+      "source_kind": "official_manufacturer_product_page",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-fiamm-bb-csb/bb-hrl-series-2026-07-29.html",
+      "snapshot_sha256": "e4385257ad3473fa46e0cc915219fd2ecc21c0625f9399994a1a0834d5b0c000",
+      "text_path": "docs/audits/sources/wave206-fiamm-bb-csb/bb-hrl-series-2026-07-29.html",
+      "text_sha256": "e4385257ad3473fa46e0cc915219fd2ecc21c0625f9399994a1a0834d5b0c000"
+    },
+    {
+      "source_id": "ventura_2023",
+      "publisher": "Ventura",
+      "source_url": "https://ventura-battery.ru/upload/iblock/836/n52d2cyekiv52rav9o0vwctttvggje9j/Catalog_Ventura_2023.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "checked_at": "2026-07-29",
+      "snapshot_path": "docs/audits/sources/wave206-panasonic-ventura-mnb/ventura-catalogue-2023.pdf",
+      "snapshot_sha256": "68d09cc1255c5b8fbec04c669701ca21616ae501484d043dbc6fb512ae3ea839",
+      "text_path": "docs/audits/sources/wave206-panasonic-ventura-mnb/ventura-catalogue-2023.txt",
+      "text_sha256": "005fb1d171d5aee334eaffaac058e92aa96898dc543836e0c9e5b0da0709eae7"
+    }
+  ]
+}

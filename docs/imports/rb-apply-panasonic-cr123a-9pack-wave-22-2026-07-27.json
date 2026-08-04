@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "ФР-00001344",
+      "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000C285.pdf"
+    }
+  ]
+}

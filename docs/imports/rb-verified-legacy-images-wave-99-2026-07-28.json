@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "One exact-model, visually verified company-owned Bitrix image for RB preview wave 99. Ambiguous images remain excluded.",
+  "images": [
+    {
+      "external_id": "КА-00006847",
+      "mpn": "CS-ZDS360BL",
+      "asset_file": "ka-00006847-cs-zds360bl.jpg",
+      "sha256": "359fa4814e4039391df78f11abf94b78defb8500ad0f30f999acdc7034b1193e",
+      "archive_member": "_shared/upload/iblock/ff0/it2we12g5z3m44injelpfbkl4gk95fg4.jpg",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "visual_verification_note": "PASS: the product label visibly reads Cameron Sino, Model No. CS-ZDS360BL, 3.7Vdc, 2200mAh and 8.14Wh; the exact MPN matches the canonical product. The image is a compatible replacement battery and is not represented as OEM Zebra."
+    }
+  ]
+}

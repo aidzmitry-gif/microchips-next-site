@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from Inspired Energy product documentation. It carries no price, stock, image-rights, local warranty or publication claim.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00005359",
+      "manufacturer": "Inspired Energy",
+      "mpn": "PH3054HD29",
+      "display_name": "Интеллектуальный литий-ионный аккумуляторный модуль Inspired Energy PH3054HD29",
+      "technology": "Литий-ионный аккумуляторный модуль 4S2P",
+      "source_url": "https://inspired-energy.com/products/details/3/111-ph3054hd29",
+      "source_kind": "Inspired Energy PH3054HD29 product page",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "14,4 В",
+        "Номинальная ёмкость": "5,6 А·ч",
+        "Энергия": "81 Вт·ч",
+        "Максимальный ток": "20 А",
+        "Максимальная мощность": "200 Вт",
+        "Химия и конфигурация": "8 Li-ion 18650, 4S2P",
+        "Габариты": "168,1 × 81,8 × 27,7 мм"
+      }
+    }
+  ]
+}

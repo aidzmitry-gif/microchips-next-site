@@ -1,12 +1,12 @@
 "use client";
 
 import { FormEvent, useId, useState } from "react";
-import type { SiteProfile } from "@/lib/site-api";
+import type { QuoteCartLine, SiteProfile } from "@/lib/site-api";
 
 type QuoteFormProps = {
   site: SiteProfile;
   subject: string;
-  cart?: unknown[];
+  cart?: QuoteCartLine[];
 };
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
@@ -104,7 +104,7 @@ export function QuoteForm({ site, subject, cart = [] }: QuoteFormProps) {
 }
 
 function canonicalPageUrl(domain: string): string {
-  return new URL(`${window.location.pathname}${window.location.search}`, `https://${domain}`).toString();
+  return new URL(window.location.pathname, `https://${domain}`).toString();
 }
 
 function currentUtm(): Record<string, string> {

@@ -43,6 +43,19 @@ describe("SiteHeader", () => {
     expect(screen.getAllByRole("link", { name: "Контакты" }).length).toBeGreaterThanOrEqual(2);
   });
 
+  it("uses the selected locale's verified navigation paths", () => {
+    render(
+      <SiteHeader
+        site={{ ...site, availablePagePaths: [], availablePages: { delivery: "/uz/delivery", contacts: "/uz/contacts" } }}
+        currentPath="/uz/contacts"
+        currentLocale="uz-UZ"
+      />,
+    );
+
+    expect(screen.getAllByRole("link", { name: "Доставка и оплата" })[0].getAttribute("href")).toBe("/uz/delivery");
+    expect(screen.getAllByRole("link", { name: "Контакты" })[0].getAttribute("href")).toBe("/uz/contacts");
+  });
+
   it("shows only verified https hreflang alternatives as the locale switcher", () => {
     render(
       <SiteHeader

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "Collapse four strict Motorola/Symbol alias duplicate pairs while preserving the Motorola preview URL as survivor and creating permanent redirects.",
+  "duplicates": [
+    {
+      "survivor_external_id": "bitrix:12130",
+      "duplicate_external_id": "bitrix:24006",
+      "survivor_name": "Аккумулятор для Motorola MC3090, MC3000, MC3070, MC30X0, MC3100, MC3190, (Btrymc30La), 2740mAh, 3.7V",
+      "duplicate_name": "Аккумулятор для Symbol MC3090, MC3000, MC3070, MC30X0, MC3100, MC3190, (Btrymc30La), 2740mAh, 3.7V",
+      "survivor_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12130",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-24006",
+      "model_core": "BTRYMC30LA",
+      "voltage": "3.7V",
+      "capacity": "2740mAh",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-industrial"
+      ],
+      "decision_reason": "The two legacy rows are identical after replacing Motorola with Symbol and share the same strict model/voltage/capacity group. This duplicate collapse does not verify or publish the disputed technical claims.",
+      "evidence_refs": [
+        "docs/audits/generated/rb-wave202-commercial-duplicate-guard.csv",
+        "docs/audits/generated/wave202-zebra-legacy-mobile-computers-evidence.csv",
+        "docs/imports/rb-full-bitrix-staging-wave148-2026-07-28.json"
+      ]
+    },
+    {
+      "survivor_external_id": "bitrix:12146",
+      "duplicate_external_id": "bitrix:24007",
+      "survivor_name": "Аккумулятор для Motorola MC3090, MC3000, MC3070, MC30X0, MC3100, MC3190, (Btrymc30La), 4800mAh, 3.7V",
+      "duplicate_name": "Аккумулятор для Symbol MC3090, MC3000, MC3070, MC30X0, MC3100, MC3190, (Btrymc30La), 4800mAh, 3.7V",
+      "survivor_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12146",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-24007",
+      "model_core": "BTRYMC30LA",
+      "voltage": "3.7V",
+      "capacity": "4800mAh",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-industrial"
+      ],
+      "decision_reason": "The two legacy rows are identical after replacing Motorola with Symbol and share the same strict model/voltage/capacity group. This duplicate collapse does not verify or publish the disputed technical claims.",
+      "evidence_refs": [
+        "docs/audits/generated/rb-wave202-commercial-duplicate-guard.csv",
+        "docs/audits/generated/wave202-zebra-legacy-mobile-computers-evidence.csv",
+        "docs/imports/rb-full-bitrix-staging-wave148-2026-07-28.json"
+      ]
+    },
+    {
+      "survivor_external_id": "bitrix:12139",
+      "duplicate_external_id": "bitrix:24008",
+      "survivor_name": "Аккумулятор для Motorola MC3300, MC3200, (BTRY-MC32-52MA-01), 5200mAh, 3.7V",
+      "duplicate_name": "Аккумулятор для Symbol MC3300, MC3200, (BTRY-MC32-52MA-01), 5200mAh, 3.7V",
+      "survivor_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12139",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-24008",
+      "model_core": "BTRY-MC32-52MA-01",
+      "voltage": "3.7V",
+      "capacity": "5200mAh",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-industrial"
+      ],
+      "decision_reason": "The two legacy rows are identical after replacing Motorola with Symbol and share the same strict model/voltage/capacity group. This duplicate collapse does not verify or publish the disputed technical claims.",
+      "evidence_refs": [
+        "docs/audits/generated/rb-wave202-commercial-duplicate-guard.csv",
+        "docs/audits/generated/wave202-zebra-legacy-mobile-computers-evidence.csv",
+        "docs/imports/rb-full-bitrix-staging-wave148-2026-07-28.json"
+      ]
+    },
+    {
+      "survivor_external_id": "bitrix:12142",
+      "duplicate_external_id": "bitrix:24009",
+      "survivor_name": "Аккумулятор для Motorola MC55, MC55A0, MC5590, MC5574, MC65, MC67, (BTRY-MC55EAB00), 3600mAh, 3.7V",
+      "duplicate_name": "Аккумулятор для Symbol MC55, MC55A0, MC5590, MC5574, MC65, MC67, (BTRY-MC55EAB00), 3600mAh, 3.7V",
+      "survivor_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-12142",
+      "duplicate_path": "/catalog/industrial-batteries/batteries-industrial/legacy-bitrix-24009",
+      "model_core": "BTRY-MC55EAB00",
+      "voltage": "3.7V",
+      "capacity": "3600mAh",
+      "availability": "on_request",
+      "category_external_ids": [
+        "seo:batteries-industrial"
+      ],
+      "decision_reason": "The two legacy rows are identical after replacing Motorola with Symbol and share the same strict model/voltage/capacity group. This duplicate collapse does not verify or publish the disputed technical claims.",
+      "evidence_refs": [
+        "docs/audits/generated/rb-wave202-commercial-duplicate-guard.csv",
+        "docs/audits/generated/wave202-zebra-legacy-mobile-computers-evidence.csv",
+        "docs/imports/rb-full-bitrix-staging-wave148-2026-07-28.json"
+      ]
+    }
+  ]
+}

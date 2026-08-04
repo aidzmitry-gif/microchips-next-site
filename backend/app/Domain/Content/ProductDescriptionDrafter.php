@@ -21,6 +21,8 @@ class ProductDescriptionDrafter
         'technology',
         'applications',
         'technical_attributes',
+        'removed_technical_attributes',
+        'source_evidence',
     ];
 
     private const IDENTITY_FIELDS = ['name', 'sku', 'mpn'];
@@ -32,10 +34,10 @@ class ProductDescriptionDrafter
      * "RBC<124>" into "RBC&lt;124&gt;" — an entity-escaped string is no
      * longer the same identifier.
      */
-    private const UNNORMALIZED_FIELDS = ['name', 'sku', 'mpn', 'manufacturer'];
+    private const UNNORMALIZED_FIELDS = ['name', 'sku', 'mpn', 'manufacturer', 'source_evidence'];
 
     /** Metadata keys `normalizeFields()` may append; never treated as a verified descriptive fact. */
-    private const META_FIELDS = ['_rejected_fields', '_sanitization'];
+    private const META_FIELDS = ['_rejected_fields', '_sanitization', 'source_evidence', 'removed_technical_attributes'];
 
     public function __construct(
         private readonly DescriptionHtmlNormalizer $normalizer = new DescriptionHtmlNormalizer,
@@ -53,7 +55,11 @@ class ProductDescriptionDrafter
         ?Product $product = null,
         ?StagedImportRecord $stagedRecord = null,
         string $locale = 'ru-BY',
+        ?array $sourceEvidence = null,
     ): ProductDescriptionDraft {
+        if ($sourceEvidence !== null) {
+            $verifiedFields['source_evidence'] = $sourceEvidence;
+        }
         $fields = $this->normalizeFields($verifiedFields);
         $sources = $this->normalizeSources($sourceUrls);
         $title = $fields['name'] ?? $product?->name ?? 'Без названия';
@@ -67,6 +73,12 @@ class ProductDescriptionDrafter
             'content' => $rejectionReason === null ? $this->compose($fields) : null,
             'verified_fields' => $fields,
             'source_urls' => $sources,
+            'source_kind' => $sourceEvidence['source_kind'] ?? null,
+            'source_tier' => $sourceEvidence['source_tier'] ?? null,
+            'source_publisher' => $sourceEvidence['source_publisher'] ?? null,
+            'manufacturer_primary' => $sourceEvidence['manufacturer_primary'] ?? null,
+            'identity_scope' => $sourceEvidence['identity_scope'] ?? null,
+            'source_checked_at' => $sourceEvidence['checked_at'] ?? null,
             'status' => $rejectionReason === null ? 'draft' : 'rejected',
             'rejection_reason' => $rejectionReason,
         ]);

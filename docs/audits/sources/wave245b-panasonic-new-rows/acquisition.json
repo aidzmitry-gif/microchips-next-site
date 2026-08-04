@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-30",
+  "prior_exclusions_sha256": "bb2b3e8c83da54097a16099cbc0b5f07417ad339a2f30def360971abe6961782",
+  "sources": [
+    {
+      "id": "vrla-handbook-media-portal",
+      "url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C62.pdf",
+      "expected_models": [
+        "LC-XC1238P/AP"
+      ],
+      "role": "exact_individual_datasheet_and_image_candidate",
+      "source_url": "https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf2/ACD4000/ACD4000C62.pdf",
+      "source_kind": "official_manufacturer_pdf",
+      "source_publisher": "Panasonic Industry Europe",
+      "manufacturer_primary": true,
+      "snapshot_path": "docs/audits/sources/wave245b-panasonic-new-rows/vrla-handbook-media-portal-675e1c2d2f372d34.pdf",
+      "snapshot_sha256": "675e1c2d2f372d34e016b5b7a03888a2d7c15d03dd40184f86e293d8f87cb233",
+      "bytes": 250921,
+      "content_type": "application/pdf"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "id": "short-form-catalog",
+      "url": "https://eu.industrial.panasonic.com/sites/default/pidseu/files/downloads/files/panasonic-batteries-short-form-catalog-2018-for-professionals_interactive_08_11_18.pdf",
+      "expected_models": [
+        "LC-XC1238P/AP",
+        "LC-XD1217PG/APG"
+      ],
+      "role": "exact_model_specification",
+      "reason": "NOT_PDF_RESPONSE",
+      "response_sha256": "5b7801a02b3b8767173e0c6607ceae660d4461baa822b54ae6ab127c45d9627b",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 1046883
+    },
+    {
+      "id": "vrla-handbook-media-portal-xd1217-discovery",
+      "expected_models": [
+        "LC-XD1217PG/APG"
+      ],
+      "reason": "NO_NEW_EXACT_OFFICIAL_PDF_IN_BOUNDED_DISCOVERY"
+    }
+  ],
+  "xd1217_discovery": {
+    "candidate_urls": 96,
+    "exact_matches": 0
+  }
+}

@@ -1,4 +1,5 @@
 import { CategoryTree } from "@/components/category-tree";
+import { CatalogMegaMenu } from "@/components/catalog-mega-menu";
 import type { CatalogCategory, SiteProfile } from "@/lib/site-api";
 import Link from "next/link";
 
@@ -17,17 +18,18 @@ export function SiteHeader({
 }) {
   const localeLinks = Object.entries(localeAlternates).filter(([locale, href]) => locale !== currentLocale && isSafeAbsoluteUrl(href));
   const availablePages = new Set(site.availablePagePaths ?? []);
+  const pagePath = (slug: string, legacyPath: string) => site.availablePages?.[slug] ?? (availablePages.has(legacyPath) ? legacyPath : null);
   const navigation = [
-    { path: "/solutions", label: "Решения" },
-    { path: "/delivery", label: "Доставка и оплата" },
-    { path: "/warranty-and-documents", label: "Гарантия и документы" },
-    { path: "/services", label: "Услуги" },
-  ].filter(({ path }) => availablePages.has(path));
+    { slug: "solutions", path: pagePath("solutions", "/solutions"), label: "Решения" },
+    { slug: "delivery", path: pagePath("delivery", "/delivery"), label: "Доставка и оплата" },
+    { slug: "warranty-and-documents", path: pagePath("warranty-and-documents", "/warranty-and-documents"), label: "Гарантия и документы" },
+    { slug: "services", path: pagePath("services", "/services"), label: "Услуги" },
+  ].filter((page): page is { slug: string; path: string; label: string } => page.path !== null);
   const companyPages = [
-    { path: "/about", label: "О компании" },
-    { path: "/contacts", label: "Контакты и реквизиты" },
-  ].filter(({ path }) => availablePages.has(path));
-  const hasContacts = availablePages.has("/contacts");
+    { slug: "about", path: pagePath("about", "/about"), label: "О компании" },
+    { slug: "contacts", path: pagePath("contacts", "/contacts"), label: "Контакты и реквизиты" },
+  ].filter((page): page is { slug: string; path: string; label: string } => page.path !== null);
+  const contactsPath = pagePath("contacts", "/contacts");
   return (
     <header className="site-header">
       {localeLinks.length > 0 && (
@@ -55,7 +57,7 @@ export function SiteHeader({
         <details className="desktop-nav__catalog">
           <summary>Каталог</summary>
           <div className="desktop-nav__mega">
-            <CategoryTree categories={categories} currentPath={currentPath} />
+            <CatalogMegaMenu categories={categories} currentPath={currentPath} />
           </div>
         </details>
         {navigation.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}
@@ -65,7 +67,7 @@ export function SiteHeader({
             <div>{companyPages.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}</div>
           </details>
         )}
-        {hasContacts && <Link href="/contacts">Контакты</Link>}
+        {contactsPath && <Link href={contactsPath}>Контакты</Link>}
       </nav>
 
       <details className="mobile-nav">
@@ -82,7 +84,7 @@ export function SiteHeader({
               <div className="mobile-nav__nested">{companyPages.map(({ path, label }) => <Link key={path} href={path}>{label}</Link>)}</div>
             </details>
           )}
-          {hasContacts && <Link href="/contacts">Контакты</Link>}
+          {contactsPath && <Link href={contactsPath}>Контакты</Link>}
           <a className="catalog-button" href="#quote-request">Запросить КП</a>
         </div>
       </details>

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "purpose": "Official manufacturer image candidate. This manifest records a pending source only; it does not grant reuse rights, download, publish or visually approve the asset.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004833",
+      "source_page_url": "https://eu.ecoflow.com/products/delta-2-max",
+      "source_asset_url": "https://eu.ecoflow.com/cdn/shop/files/delta-2-max-portable-power-station-52080502702423_530x530.png?v=1691661701",
+      "source_kind": "EcoFlow official DELTA 2 Max product-page primary gallery asset",
+      "verification_note": "The official product page labels this gallery asset as DELTA 2 Max Portable Power Station. Candidate remains pending: direct-file inspection, visual model match and rights basis are still required before download or publication."
+    }
+  ]
+}

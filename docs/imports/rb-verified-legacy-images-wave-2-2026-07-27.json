@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "Company-owned legacy Bitrix asset with exact visible model verification.",
+  "images": [
+    {
+      "external_id": "КА-00001063",
+      "mpn": "12FGH23",
+      "asset_file": "verz6oz3mwtim2lln58l8k5hpr10w9dp.png",
+      "sha256": "4d1e49b7dcc7891ed4d2b81d4fab737f52a07f28b618e5ea8e6fe3e0cd2e2996",
+      "archive_member": "_shared/upload/iblock/e53/verz6oz3mwtim2lln58l8k5hpr10w9dp.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup; the asset carries the Microchips watermark.",
+      "visual_verification_note": "Visible label reads FIAMM 12FGH23 and 12V 5Ah; matches the verified MPN and manufacturer."
+    }
+  ]
+}

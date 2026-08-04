@@ -6,6 +6,7 @@ use App\Events\SiteContentChanged;
 use App\Jobs\RevalidateNextSite;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
@@ -32,6 +33,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Event::listen(SiteContentChanged::class, function (SiteContentChanged $event): void {
+            Cache::increment('catalog:facet-version:'.$event->site->id);
             RevalidateNextSite::dispatch($event->site->id, $event->paths);
         });
     }

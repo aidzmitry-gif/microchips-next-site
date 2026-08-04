@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-29",
+  "sources": [
+    {
+      "source_id": "kenwood_ksc35s_service_manual",
+      "publisher": "JVCKENWOOD Corporation",
+      "source_url": "https://kasc.kenwood.com/files/prod/2150/5/KSC-35SE_EU_B51-8947-00.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "snapshot_path": "docs/audits/sources/wave207-motorola-kenwood/kenwood-ksc35s-service-manual.pdf",
+      "snapshot_sha256": "8784d5c986c39490d18e6edd4c4ed392670acdeef5f570d3d18c436909038d21",
+      "extracted_text_path": "docs/audits/sources/wave207-motorola-kenwood/kenwood-ksc35s-service-manual.txt",
+      "extracted_text_sha256": "af5901b2e6cf29020b345879b37999da6d71127b78af6bdbd2b09abd838d42f6"
+    },
+    {
+      "source_id": "kenwood_portable_radio_accessories_2015",
+      "publisher": "JVCKENWOOD Corporation",
+      "source_url": "https://comms.kenwood.com/en/common/pdf/products/accessories.pdf",
+      "source_kind": "official_manufacturer_accessory_catalogue",
+      "snapshot_path": "docs/audits/sources/wave207-motorola-kenwood/kenwood-portable-radio-accessories.pdf",
+      "snapshot_sha256": "03049c4f0834b6d03241556dd4ef2534526d23e43fb8f93720ac4edb579ad2bb",
+      "extracted_text_path": "docs/audits/sources/wave207-motorola-kenwood/kenwood-portable-radio-accessories.txt",
+      "extracted_text_sha256": "36e102add1f5232678cad1318b5812a359020e15e1caf2a54536d1a2f08a7fa2"
+    }
+  ],
+  "acquisition_failures": [
+    {
+      "source_id": "motorola_mototrbo_energy_buyers_guide",
+      "source_url": "https://www.motorolasolutions.com/content/dam/msi/docs/EA_Collaterals/ENGLISH/Accessories/MOTOTRBO_Energy_Buyers_Guide_ENG.pdf",
+      "error_type": "HTTPError",
+      "reason": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+    },
+    {
+      "source_id": "motorola_commercial_radio_accessory_catalog",
+      "source_url": "https://www.motorolasolutions.com/content/dam/msi/Products/two-way-radios/MOTOTRBO_Commercial_Tier_Accessory_Catalog.pdf",
+      "error_type": "HTTPError",
+      "reason": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+    },
+    {
+      "source_id": "motorola_low_tier_accessory_catalog",
+      "source_url": "https://www.motorolasolutions.com/content/dam/msi/docs/business/products/two-way_radios/portable_radios/_documents/static_files/low_tier_accessory_catalog_commercial.pdf",
+      "error_type": "HTTPError",
+      "reason": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+    }
+  ]
+}

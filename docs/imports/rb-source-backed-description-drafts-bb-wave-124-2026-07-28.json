@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "Safe B.B. Battery model-core enrichment from B.B.Battery (Taiwan) Co., Ltd. manufacturer series pages. Terminal suffixes, package, price, image, warranty, stock and publication status are not inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {"external_id":"КА-00005295","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"BPS 12-12","technology":"герметизированная клапанно-регулируемая свинцово-кислотная батарея общего назначения","source_url":"https://www.bb-bat.com/en/BPS.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"12 А·ч"}},
+    {"external_id":"КА-00005689","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"BPS 17-12","technology":"герметизированная клапанно-регулируемая свинцово-кислотная батарея общего назначения","source_url":"https://www.bb-bat.com/en/BPS.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"17 А·ч"}},
+    {"external_id":"КА-00002920","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"BPS 7-12","technology":"герметизированная клапанно-регулируемая свинцово-кислотная батарея общего назначения","source_url":"https://www.bb-bat.com/en/BPS.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"7 А·ч"}},
+    {"external_id":"КА-00002968","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"FTB 100-12","technology":"фронтально-терминальная узкая свинцово-кислотная батарея","source_url":"https://www.bb-bat.com/en/FTB.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"100 А·ч"}},
+    {"external_id":"КА-00003032","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"FTB 100-12","technology":"фронтально-терминальная узкая свинцово-кислотная батарея","source_url":"https://www.bb-bat.com/en/FTB.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная ёмкость":"100 А·ч"}},
+    {"external_id":"КА-00005690","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"HR 33-12","technology":"высокомощная клапанно-регулируемая герметизированная свинцово-кислотная батарея","source_url":"https://www.bb-bat.com/en/HR.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная мощность":"132 Вт"}},
+    {"external_id":"КА-00003847","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"HRL 5.5-12","technology":"высокомощная долговечная клапанно-регулируемая герметизированная свинцово-кислотная батарея","source_url":"https://www.bb-bat.com/en/HRL.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная мощность":"22 Вт"}},
+    {"external_id":"КА-00005688","identity_scope":"model_core","manufacturer":"B.B. Battery","model_core":"HRL 9-12","technology":"высокомощная долговечная клапанно-регулируемая герметизированная свинцово-кислотная батарея","source_url":"https://www.bb-bat.com/en/HRL.html","technical_attributes":{"Номинальное напряжение":"12 В","Номинальная мощность":"36 Вт"}}
+  ]
+}

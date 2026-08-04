@@ -4,10 +4,13 @@ namespace Tests\Feature;
 
 use App\Models\Product;
 use App\Models\Site;
+use App\Models\SiteCommercialFact;
+use App\Models\SiteContact;
 use App\Models\SitePage;
 use App\Models\SiteProduct;
 use App\Models\SiteRedirect;
 use App\Models\SiteUrl;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -37,6 +40,52 @@ class MultiSiteApiTest extends TestCase
             ->assertJsonPath('page.h1', 'Доставка')
             ->assertJsonPath('seo.locale', 'ru-BY')
             ->assertJsonPath('seo.canonicalPath', '/delivery');
+    }
+
+    public function test_site_payload_exposes_a_complete_verified_commercial_profile_without_legacy_fallbacks(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $site->locales()->create(['locale' => 'ru-BY', 'language' => 'ru', 'is_default' => true, 'is_enabled' => true]);
+        $page = SitePage::create(['site_id' => $site->id, 'locale' => 'ru-BY', 'slug' => 'delivery', 'title' => 'Доставка', 'h1' => 'Доставка', 'is_published' => true]);
+        SiteUrl::create(['site_id' => $site->id, 'path' => '/delivery', 'locale' => 'ru-BY', 'target_type' => 'page', 'target_id' => $page->id]);
+
+        $this->getJson('/api/v1/sites/microchips.by/resolve?path=/delivery')
+            ->assertOk()
+            ->assertJsonPath('site.commercialProfile', null);
+
+        $verifier = User::factory()->create(['is_admin' => true]);
+        foreach ([
+            ['type' => 'phone', 'label' => 'Основной телефон', 'value' => '+375 (33) 347-75-10'],
+            ['type' => 'email', 'label' => 'E-mail', 'value' => 'order@microchips.by'],
+            ['type' => 'working_hours', 'label' => 'Режим работы', 'value' => 'пн–пт 9:00–17:00'],
+            ['type' => 'address', 'label' => 'Самовывоз', 'value' => 'Минск, офис 408'],
+        ] as $contact) {
+            $record = SiteContact::create(['site_id' => $site->id, 'locale' => 'ru-BY', 'city' => 'Минск', ...$contact]);
+            $record->publish($verifier, 'Подтверждено владельцем.');
+        }
+        foreach (['legal_name' => 'ООО «Аккумуляторные решения»', 'legal_address' => 'Минск, пом. 407', 'delivery_terms' => 'Условия доставки', 'payment_terms' => 'Условия оплаты', 'warranty_terms' => 'Условия гарантии'] as $key => $value) {
+            $record = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => 'ru-BY', 'key' => $key, 'value' => $value]);
+            $record->publish($verifier, 'Подтверждено владельцем.');
+        }
+
+        $this->getJson('/api/v1/sites/microchips.by/resolve?path=/delivery')
+            ->assertOk()
+            ->assertJsonPath('site.commercialProfile.legalName', 'ООО «Аккумуляторные решения»')
+            ->assertJsonPath('site.commercialProfile.pickupAddress', 'Минск, офис 408')
+            ->assertJsonPath('site.commercialProfile.warrantyTerms', 'Условия гарантии')
+            ->assertJsonMissingPath('site.legal_name');
+    }
+
+    public function test_not_found_site_payload_never_exposes_verified_commercial_profile(): void
+    {
+        $site = $this->site('microchips-by', 'microchips.by', 'BY', 'BYN', 'ru-BY');
+        $fact = SiteCommercialFact::create(['site_id' => $site->id, 'locale' => 'ru-BY', 'key' => 'legal_name', 'value' => 'ООО «Аккумуляторные решения»']);
+        $fact->publish(User::factory()->create(['is_admin' => true]), 'Подтверждено владельцем.');
+
+        $this->getJson('/api/v1/sites/microchips.by/resolve?path=/not-published')
+            ->assertOk()
+            ->assertJsonPath('kind', 'not_found')
+            ->assertJsonMissingPath('site.commercialProfile');
     }
 
     public function test_it_returns_a_structured_redirect_instead_of_guessing_a_page(): void

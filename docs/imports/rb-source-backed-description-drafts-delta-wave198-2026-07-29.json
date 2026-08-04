@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "purpose": "Wave 198: exact first-party DELTA product-page enrichment for existing namespaced Bitrix drafts only. No price, availability, image, indexability or Offer authorization.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "bitrix:20128",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "CGD 1212",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/cgd_1212/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1538",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DT 1218",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dt_1218/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "18 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1402",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DT 6012",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dt_6012/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "1.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1403",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12012",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12012/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "1.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2940",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12032",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12032/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "3.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3006",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12045",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12045/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "4.5 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1420",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12100 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12100_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "100 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1459",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12120 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12120_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "120 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1559",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12200 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12200_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "200 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2907",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 12250 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_12250_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "250 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3030",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 1240 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_1240_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "40 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3090",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 1255 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_1255_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "55 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3274",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 1290 L",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_1290_l/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "90 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:2941",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 6032",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_6032/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "3.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3007",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 6045",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_6045/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "4.5 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1478",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 612",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/dtm_612/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20153",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "FT 12-180 M",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/ft_12_180_m/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "180 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20126",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-100",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_100/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "100 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20122",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-15",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_15/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "15 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:1539",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-18",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_18/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "18 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3008",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-4.5",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_4_5/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "4.5 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20124",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-40",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_40/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "45 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3062",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-5",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_5/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "5 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3077",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-5.8",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_5_8/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "5.8 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20125",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-65",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_65/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "65 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3263",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 12-9",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_12_9/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "9 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20121",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 6-15",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_6_15/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "15 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:3176",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HR 6-7.2",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hr_6_7_2/",
+      "technical_attributes": {
+        "Номинальное напряжение": "6 В",
+        "Номинальная ёмкость": "7.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20146",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-100 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_100_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "100 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20136",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-12 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_12_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "12 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20147",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-140 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_140_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "140 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20133",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-180 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_180_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "180 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20138",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-26 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_26_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "28 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20139",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-33 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_33_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "33 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20140",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-45 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_45_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "45 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20142",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-65 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_65_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "65 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20134",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-7.2 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_7_2_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "7.2 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20143",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-75 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_75_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "75 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20144",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-80 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_80_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "80 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    },
+    {
+      "external_id": "bitrix:20145",
+      "identity_scope": "exact",
+      "manufacturer": "DELTA",
+      "mpn": "HRL 12-90 X",
+      "technology": "VRLA AGM",
+      "source_url": "https://delta-batt.com/products/hrl_12_90_x/",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "90 А·ч"
+      },
+      "source_kind": "official_manufacturer_catalogue",
+      "source_tier": "manufacturer_primary",
+      "source_publisher": "DELTA Battery / ENERGON",
+      "manufacturer_primary": true,
+      "evidence_scope": "exact_model",
+      "checked_at": "2026-07-29"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "One exact-model Cameron Sino replacement-battery noindex preview without unverified price, stock, warranty or OEM claims.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00006847",
+      "manufacturer": "Cameron Sino",
+      "mpn": "CS-ZDS360BL",
+      "source_url": "https://www.cameronsino.ru/",
+      "category_slug": "catalog/replacement-batteries",
+      "product_slug": "cameron-sino-cs-zds360bl",
+      "replace_categories": true
+    }
+  ]
+}

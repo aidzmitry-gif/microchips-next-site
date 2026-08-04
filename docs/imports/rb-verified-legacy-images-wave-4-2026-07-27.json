@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "Company-owned legacy Bitrix assets with exact visible model verification for the third noindex preview wave.",
+  "images": [
+    {
+      "external_id": "КА-00004114",
+      "mpn": "6SLA100",
+      "asset_file": "0tkt24efiafhhj1ybf5rbsrwfc2m0vqq.png",
+      "sha256": "522135fc32f6ecc36274d2fc6aafba19ef1076b77a92d2e439368f3fa9708ada",
+      "archive_member": "_shared/upload/iblock/566/0tkt24efiafhhj1ybf5rbsrwfc2m0vqq.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible FIAMM label reads 6 SLA 100; the blue six-volt monobloc form factor is consistent with the verified FIAMM 6SLA100 datasheet."
+    },
+    {
+      "external_id": "КА-00003889",
+      "mpn": "6SLA125",
+      "asset_file": "ofb4clkcadudey9kdcfl7kkmgglnwqwu.png",
+      "sha256": "839dfc0b6b42b91f14ad11f41f2ca7eeeaabd00fd42bd9fedad3b3c7e6010e7b",
+      "archive_member": "_shared/upload/iblock/202/ofb4clkcadudey9kdcfl7kkmgglnwqwu.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible FIAMM label reads 6 SLA 125; the blue six-volt monobloc form factor is consistent with the verified FIAMM 6SLA125 datasheet."
+    },
+    {
+      "external_id": "ФР-00001439",
+      "mpn": "FG21202",
+      "asset_file": "hr3p7b8kjidq9o0cazuzlafdlawqr2oi.png",
+      "sha256": "5579d160a33fdb696fffde857d58dd63a199dda937ee935884ba95aed702a2e5",
+      "archive_member": "_shared/upload/iblock/7a8/hr3p7b8kjidq9o0cazuzlafdlawqr2oi.png",
+      "rights_basis": "Company-owned Microchips legacy upload backup.",
+      "visual_verification_note": "Visible front label reads FIAMM FG 21202, 12 V 12 Ah; it exactly matches the verified MPN and manufacturer."
+    }
+  ]
+}

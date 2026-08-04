@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "purpose": "One exact Delta Electronics Amplon RT UPS description verified against the current official model-specific manual and official technical leaflet. No image, stock, local warranty or price is inferred.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00004707",
+      "manufacturer": "Delta Electronics",
+      "mpn": "UPS302R2RT2B035",
+      "display_name": "Онлайн-ИБП Delta Amplon RT UPS302R2RT2B035, 3000 ВА / 2700 Вт",
+      "technology": "однофазный онлайн-ИБП двойного преобразования с чистой синусоидой и нулевым временем переключения",
+      "source_url": "https://www.deltapowersolutions.com/media/download/Manual-UPS-RT-1-3kVA-new-en-us.pdf",
+      "source_kind": "official Delta model-specific user manual and RT 1–3 kVA technical leaflet",
+      "checked_at": "2026-07-28",
+      "technical_attributes": {
+        "Топология": "online, двойное преобразование",
+        "Количество фаз": "1/1",
+        "Полная мощность": "3000 ВА",
+        "Активная мощность": "2700 Вт",
+        "Коэффициент мощности выхода": "0,9",
+        "Номинальное входное напряжение": "200 / 208 / 220 / 230 / 240 В AC",
+        "Диапазон входного напряжения": "175–280 В при полной нагрузке; 120–175 В при нагрузке 70–100%",
+        "Диапазон входной частоты": "40–70 Гц",
+        "Выходное напряжение": "200 / 208 / 220 / 230 / 240 В AC, стабилизация ±1% при линейной нагрузке",
+        "Форма выходного сигнала": "чистая синусоида",
+        "Выходные розетки": "6 × IEC C13 и 1 × IEC C19",
+        "Напряжение батарейной шины": "72 В DC",
+        "Встроенные аккумуляторы": "герметизированные свинцово-кислотные, 12 В / 9 А·ч",
+        "Типовое время автономной работы": "7 минут при нагрузке 75%",
+        "Время заряда": "3 часа до 90%",
+        "Интерфейсы": "SMART Slot, RS-232, USB, REPO",
+        "Форм-фактор": "Rack/Tower, 2U",
+        "Габариты": "440 × 610 × 89 мм",
+        "Масса": "28 кг",
+        "Рабочая температура": "от 0 до +50 °C; при 40–50 °C требуется снижение нагрузки"
+      }
+    }
+  ]
+}

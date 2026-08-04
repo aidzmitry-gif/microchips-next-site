@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "products": [
+    {
+      "external_id": "bitrix:24517",
+      "current_name": "Аккумулятор EnerSys Cyclon BC Cell (AGM, 25 Ah)",
+      "manufacturer": "EnerSys",
+      "mpn": "Cyclon BC Cell",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "EnerSys",
+      "checked_at": "2026-07-29",
+      "product_type": "stationary battery",
+      "source_snapshot_path": "../audits/sources/wave209a/enersys-cyclon-selection-guide.pdf",
+      "source_snapshot_sha256": "3c6ecbb7f5379fccd8c2f5e31b999ac6f4d62117377b56b5f1e9df578e8fec5f"
+    },
+    {
+      "external_id": "bitrix:24518",
+      "current_name": "Аккумулятор EnerSys Cyclon E Cell (AGM, 8 Ah, 2V)",
+      "manufacturer": "EnerSys",
+      "mpn": "Cyclon E Cell",
+      "source_url": "https://www.enersys.com/493c0d/globalassets/documents/product-documentation/cyclon/emea/en-cyc-sg-004_0614.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "EnerSys",
+      "checked_at": "2026-07-29",
+      "product_type": "stationary battery",
+      "source_snapshot_path": "../audits/sources/wave209a/enersys-cyclon-selection-guide.pdf",
+      "source_snapshot_sha256": "3c6ecbb7f5379fccd8c2f5e31b999ac6f4d62117377b56b5f1e9df578e8fec5f"
+    }
+  ],
+  "policy": "Exact-safe only: two source-proven EnerSys series; medical packs remain held."
+}

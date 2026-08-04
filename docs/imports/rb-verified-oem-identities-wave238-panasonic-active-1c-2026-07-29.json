@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "target_kind": "active_1c",
+  "checked_at": "2026-07-29",
+  "products": [
+    {
+      "external_id": "КА-00003142",
+      "current_name": "Panasonic BR2032",
+      "manufacturer": "Panasonic",
+      "mpn": "BR2032",
+      "source_url": "https://energy.panasonic.com/dam/master/pdf/en/material/lithium/Introduction_of_coin_type_primary_lithium_batteries_EN.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Energy Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "coin-type primary lithium battery",
+      "source_snapshot_path": "../audits/sources/panasonic-wave200/Introduction_coin_primary_lithium_EN.pdf",
+      "source_snapshot_sha256": "1ce9b9fa72a6263f34cf2390726ddb009759c04303c1d3f39bc981473af5f343"
+    },
+    {
+      "external_id": "ФР-00000639",
+      "current_name": "Panasonic CR2012",
+      "manufacturer": "Panasonic",
+      "mpn": "CR2012",
+      "source_url": "https://energy.panasonic.com/dam/master/pdf/en/material/lithium/Introduction_of_coin_type_primary_lithium_batteries_EN.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Energy Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "coin-type primary lithium battery",
+      "source_snapshot_path": "../audits/sources/panasonic-wave200/Introduction_coin_primary_lithium_EN.pdf",
+      "source_snapshot_sha256": "1ce9b9fa72a6263f34cf2390726ddb009759c04303c1d3f39bc981473af5f343"
+    },
+    {
+      "external_id": "ФР-00001236",
+      "current_name": "Литиевая батарейка Panasonic CR2450, 3 В",
+      "manufacturer": "Panasonic",
+      "mpn": "CR2450",
+      "source_url": "https://energy.panasonic.com/dam/master/pdf/en/material/lithium/Introduction_of_coin_type_primary_lithium_batteries_EN.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_publisher": "Panasonic Energy Co., Ltd.",
+      "checked_at": "2026-07-29",
+      "product_type": "coin-type primary lithium battery",
+      "source_snapshot_path": "../audits/sources/panasonic-wave200/Introduction_coin_primary_lithium_EN.pdf",
+      "source_snapshot_sha256": "1ce9b9fa72a6263f34cf2390726ddb009759c04303c1d3f39bc981473af5f343"
+    }
+  ]
+}

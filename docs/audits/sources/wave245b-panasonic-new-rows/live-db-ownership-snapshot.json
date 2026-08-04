@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-07-30",
+  "site_key": "microchips-by",
+  "target_rows": [
+    {
+      "external_id": "bitrix:1159",
+      "name": "Аккумулятор Panasonic LC-XD1217PG (AGM, 17Ah)",
+      "manufacturer": null,
+      "mpn": null,
+      "status": "draft",
+      "site_product_count": 1,
+      "site_product_id": 9472,
+      "is_published": true,
+      "availability": "on_request",
+      "price": "173.00",
+      "verified_published_media_count": 0
+    },
+    {
+      "external_id": "bitrix:1596",
+      "name": "Аккумулятор Panasonic LC-XC1238P (AGM, 38Ah)",
+      "manufacturer": null,
+      "mpn": null,
+      "status": "draft",
+      "site_product_count": 1,
+      "site_product_id": 9838,
+      "is_published": true,
+      "availability": "on_request",
+      "price": "433.00",
+      "verified_published_media_count": 0
+    }
+  ],
+  "exact_model_candidates": [
+    {
+      "external_id": "bitrix:1159",
+      "name": "Аккумулятор Panasonic LC-XD1217PG (AGM, 17Ah)",
+      "manufacturer": null,
+      "mpn": null,
+      "status": "draft"
+    },
+    {
+      "external_id": "bitrix:1596",
+      "name": "Аккумулятор Panasonic LC-XC1238P (AGM, 38Ah)",
+      "manufacturer": null,
+      "mpn": null,
+      "status": "draft"
+    }
+  ],
+  "exact_non_target_owner_candidates": [],
+  "ownership_decision": "NO_EXACT_1C_OWNER"
+}

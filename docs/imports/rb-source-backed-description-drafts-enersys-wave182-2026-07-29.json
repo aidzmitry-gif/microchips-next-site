@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "manufacturer:enersys:4 OPzV 200",
+      "manufacturer": "EnerSys",
+      "mpn": "4 OPzV 200",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 4 OPzV 200 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "215 А·ч",
+        "Габариты": "103 × 206 × 403 мм",
+        "Типичная масса": "19,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:5 OPzV 250",
+      "manufacturer": "EnerSys",
+      "mpn": "5 OPzV 250",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 5 OPzV 250 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "265 А·ч",
+        "Габариты": "124 × 206 × 403 мм",
+        "Типичная масса": "23,6 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:6 OPzV 300",
+      "manufacturer": "EnerSys",
+      "mpn": "6 OPzV 300",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 6 OPzV 300 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "320 А·ч",
+        "Габариты": "145 × 206 × 403 мм",
+        "Типичная масса": "28 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:5 OPzV 350",
+      "manufacturer": "EnerSys",
+      "mpn": "5 OPzV 350",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 5 OPzV 350 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "385 А·ч",
+        "Габариты": "124 × 206 × 520 мм",
+        "Типичная масса": "31 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:6 OPzV 420",
+      "manufacturer": "EnerSys",
+      "mpn": "6 OPzV 420",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 6 OPzV 420 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "465 А·ч",
+        "Габариты": "145 × 206 × 520 мм",
+        "Типичная масса": "36,5 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:7 OPzV 490",
+      "manufacturer": "EnerSys",
+      "mpn": "7 OPzV 490",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 7 OPzV 490 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "540 А·ч",
+        "Габариты": "166 × 206 × 520 мм",
+        "Типичная масса": "42 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:6 OPzV 600",
+      "manufacturer": "EnerSys",
+      "mpn": "6 OPzV 600",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 6 OPzV 600 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "705 А·ч",
+        "Габариты": "145 × 206 × 695 мм",
+        "Типичная масса": "50 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:8 OPzV 800",
+      "manufacturer": "EnerSys",
+      "mpn": "8 OPzV 800",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 8 OPzV 800 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "940 А·ч",
+        "Габариты": "210 × 191 × 695 мм",
+        "Типичная масса": "68 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:10 OPzV 1000",
+      "manufacturer": "EnerSys",
+      "mpn": "10 OPzV 1000",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 10 OPzV 1000 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "1170 А·ч",
+        "Габариты": "210 × 233 × 695 мм",
+        "Типичная масса": "82 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:12 OPzV 1200",
+      "manufacturer": "EnerSys",
+      "mpn": "12 OPzV 1200",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 12 OPzV 1200 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "1410 А·ч",
+        "Габариты": "210 × 275 × 695 мм",
+        "Типичная масса": "97 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:12 OPzV 1500",
+      "manufacturer": "EnerSys",
+      "mpn": "12 OPzV 1500",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 12 OPzV 1500 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "1580 А·ч",
+        "Габариты": "210 × 275 × 845 мм",
+        "Типичная масса": "120 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:16 OPzV 2000",
+      "manufacturer": "EnerSys",
+      "mpn": "16 OPzV 2000",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 16 OPzV 2000 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "2110 А·ч",
+        "Габариты": "212 × 397 × 820 мм",
+        "Типичная масса": "165 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:20 OPzV 2500",
+      "manufacturer": "EnerSys",
+      "mpn": "20 OPzV 2500",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 20 OPzV 2500 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "2640 А·ч",
+        "Габариты": "212 × 487 × 820 мм",
+        "Типичная масса": "200 кг"
+      }
+    },
+    {
+      "external_id": "manufacturer:enersys:24 OPzV 3000",
+      "manufacturer": "EnerSys",
+      "mpn": "24 OPzV 3000",
+      "source_url": "https://www.enersys.com/4acdcc/globalassets/documents/product-documentation/powersafe/opzv/amer/en-rs-amer-ps-opzv-0923.pdf",
+      "technology": "VRLA GEL",
+      "display_name": "Промышленный аккумулятор EnerSys PowerSafe 24 OPzV 3000 серии OPzV",
+      "technical_attributes": {
+        "Серия": "PowerSafe OPzV",
+        "Технология": "VRLA GEL с трубчатыми положительными пластинами",
+        "Номинальное напряжение": "2 В",
+        "Назначение": "телекоммуникации, электростанции и распределительные системы, сигнализация, вычислительные системы, аварийное освещение и автоматизация",
+        "Установка": "вертикальная или горизонтальная",
+        "Обслуживание": "долив воды не требуется",
+        "Расчётный срок службы серии": "20 лет при 20 °C",
+        "Стандарты": "IEC 60896-21/22, DIN 40742",
+        "Номинальная ёмкость C10": "3170 А·ч",
+        "Габариты": "212 × 576 × 820 мм",
+        "Типичная масса": "240 кг"
+      }
+    }
+  ]
+}

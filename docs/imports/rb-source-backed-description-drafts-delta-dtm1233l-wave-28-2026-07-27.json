@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "purpose": "Model-specific editorial draft from DELTA's DTM L specification. No local price, stock, warranty, image-rights claim or publication authorization is included.",
+  "locale": "ru-BY",
+  "products": [
+    {
+      "external_id": "КА-00002816",
+      "manufacturer": "DELTA",
+      "mpn": "DTM 1233 L",
+      "display_name": "Аккумулятор DELTA DTM 1233 L 12 В 33 А·ч",
+      "technology": "Герметизированный необслуживаемый свинцово-кислотный аккумулятор AGM с VRLA-клапанами",
+      "source_url": "https://delta-batt.com/series/dtm_l/",
+      "source_kind": "DELTA DTM L manufacturer series catalogue, model DTM 1233 L",
+      "checked_at": "2026-07-27",
+      "technical_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Номинальная ёмкость": "33 А·ч",
+        "Технология": "AGM",
+        "Тип": "VRLA, герметизированный необслуживаемый свинцово-кислотный аккумулятор",
+        "Серия": "Long Life",
+        "Расчётный срок службы": "до 12 лет",
+        "Длина": "195 мм",
+        "Ширина": "130 мм",
+        "Высота": "155 мм",
+        "Масса": "10,1 кг"
+      }
+    }
+  ]
+}

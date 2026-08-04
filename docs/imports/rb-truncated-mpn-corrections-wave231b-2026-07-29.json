@@ -1,0 +1,49 @@
+{
+  "locale": "ru-BY",
+  "corrections": [
+    {
+      "external_id": "bitrix:2831",
+      "current_name": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 Sonnenschein Dryfit Solar S 12/17 G5 \u0434\u043b\u044f \u0418\u0411\u041f (GEL, 17Ah)",
+      "manufacturer": "Sonnenschein",
+      "current_mpn": "S 12/17",
+      "corrected_mpn": "S 12/17 G5",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_snapshot_path": "exide-sonnenschein-solar-block.pdf",
+      "source_snapshot_sha256": "f065a4727d47d515d3bc9d8df09bbe4b8567ac53c7101806819287590ce80730",
+      "source_extraction_path": "rb-truncated-mpn-corrections-wave231b-2026-07-29.extraction.txt",
+      "source_extraction_sha256": "64448fee7bdb38e81d08ab34e2f35dcb813daa36568744da911d051cdcddecbc",
+      "source_evidence_text": "S12/17 G5 NGS0120017HS0BA 12 17.0 0.17",
+      "source_evidence_text_sha256": "d73d4c33ca8fc6453abd43c8cd66553120bc94ecfd30697270fe5789353cb62f",
+      "media_id": 607,
+      "media_content_sha256": "97f2f74e7bf600ef4fbeb9d9716d5133957ea283cd656b8a7294069fb90882d9",
+      "storage_path": "legacy-staging/rb/bitrix-2831-80378.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "observed_visible_mpn": "S12/17 G5",
+      "checked_at": "2026-07-29",
+      "review_note": "Wave231-A: official Exide text and company-owned visible label prove a strict legacy MPN truncation."
+    },
+    {
+      "external_id": "bitrix:3117",
+      "current_name": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 Sonnenschein Dryfit Solar S 12/6.6 S \u0434\u043b\u044f \u0418\u0411\u041f (GEL, 6.6Ah)",
+      "manufacturer": "Sonnenschein",
+      "current_mpn": "S 12/6",
+      "corrected_mpn": "S 12/6.6 S",
+      "source_url": "https://www.exidegroup.com/sites/default/files/2017-01/Sonnenschein_SOLAR_en.pdf",
+      "source_kind": "official_manufacturer_catalogue",
+      "source_snapshot_path": "exide-sonnenschein-solar-block.pdf",
+      "source_snapshot_sha256": "f065a4727d47d515d3bc9d8df09bbe4b8567ac53c7101806819287590ce80730",
+      "source_extraction_path": "rb-truncated-mpn-corrections-wave231b-2026-07-29.extraction.txt",
+      "source_extraction_sha256": "64448fee7bdb38e81d08ab34e2f35dcb813daa36568744da911d051cdcddecbc",
+      "source_evidence_text": "S12/6.6 S NGS01206D6HS0SA 12 6.60 0.06",
+      "source_evidence_text_sha256": "3c7fd80a52a408433e5577b7cce2d54c8043327f3bd2ee147782c8311df4a591",
+      "media_id": 834,
+      "media_content_sha256": "d55a893ff54034b9a2cebc3827e57ea4c862b5dccd5ac3a7edfe1b6bf8bf713c",
+      "storage_path": "legacy-staging/rb/bitrix-3117-80322.png",
+      "rights_basis": "Company-owned Microchips legacy Bitrix upload backup.",
+      "observed_visible_mpn": "S12/6.6 S",
+      "checked_at": "2026-07-29",
+      "review_note": "Wave231-A: official Exide text and company-owned visible label prove a strict legacy MPN truncation."
+    }
+  ]
+}

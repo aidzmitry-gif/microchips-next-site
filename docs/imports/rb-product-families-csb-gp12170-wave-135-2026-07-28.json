@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "site_key": "microchips-by",
+  "purpose": "One noindex canonical GP12170 page with explicit B1 and B3 terminal choices; no child URL is created.",
+  "families": [
+    {
+      "family_key": "csb-gp12170",
+      "name": "CSB GP12170",
+      "canonical_external_id": "КА-00001066",
+      "manufacturer": "CSB",
+      "model_core": "GP12170",
+      "selector_label": "Тип вывода",
+      "canonical_label": "B1 / M5",
+      "canonical_attributes": {
+        "Тип вывода": "B1 / M5"
+      },
+      "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-GP12170-01312026.pdf",
+      "shared_attributes": {
+        "Номинальное напряжение": "12 В",
+        "Технология": "VRLA AGM",
+        "Габариты": "181 × 76,2 × 167 мм",
+        "Масса": "около 5,50 кг",
+        "Максимальный ток заряда": "5,10 А",
+        "Расчётный срок службы": "до 5 лет в буферном режиме при 25 °C"
+      },
+      "variants": [
+        {
+          "external_id": "КА-00000471",
+          "variant_key": "b3-m5",
+          "label": "B3 / M5",
+          "source_url": "https://csb-battery.com/wp-content/uploads/2026/03/CSB-Datasheet-GP12170-01312026.pdf",
+          "attributes": {
+            "Тип вывода": "B3 / M5"
+          }
+        }
+      ]
+    }
+  ]
+}
