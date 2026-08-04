@@ -78,11 +78,14 @@ $phpFiles += Get-Item (Join-Path $backendRoot 'bootstrap/app.php'), (Join-Path $
 
 Invoke-CheckedCommand -Name 'PHP syntax lint' -Command {
     foreach ($phpFile in $phpFiles) {
-        & $php @PhpArguments -l $phpFile.FullName
+        $syntaxOutput = & $php @PhpArguments -l $phpFile.FullName 2>&1
         if ($LASTEXITCODE -ne 0) {
+            $syntaxOutput | Write-Host
             throw "PHP syntax lint failed for $($phpFile.FullName)."
         }
     }
+
+    Write-Host "PHP syntax OK ($($phpFiles.Count) files)."
 }
 
 $pint = Join-Path $projectRoot 'backend/vendor/bin/pint'

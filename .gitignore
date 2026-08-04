@@ -38,6 +38,8 @@ pytest-cache-files-*/
 tmpp*/
 scripts/tests/.pytest-*/
 scripts/tests/.tmp-*/
+scripts/tests/.wave243-delta-*/
+scripts/tests/wave243-delta-*/
 backend/graphify-out/
 backend/app/graphify-out/
 
